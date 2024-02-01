@@ -59,7 +59,7 @@ const TopHeader =()=>{
                   >
                     {" "}
                     <img
-                      width={300}
+                      width={350}
                       className="header-logo"
                       alt="CIRCULAR COUTURE logo"
                       src="/images/CC TM Logo.png"
@@ -117,7 +117,7 @@ const TopHeader =()=>{
             className="navbar navbar-menu-section"
             data-controller="mega-menu-contents"
           >
-            <div className="row no-gutters fixed-container p-0 pb-3 flex-nowrap">
+            <div className="row no-gutters fixed-container p-0 py-3 flex-nowrap">
               <div className="links-wrapper text-uppercase">
                 <div className="" />
                 <div className="col-12 row no-gutters p-0 justify-content-around align-items-center mr-3">
