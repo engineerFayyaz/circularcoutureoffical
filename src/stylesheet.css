@@ -9694,181 +9694,135 @@ a.text-dark:focus {
 
 @font-face {
     font-family: "Playfair DisplaySC Regular";
-    src: url(/assets/PlayfairDisplaySC-Regular-94efda55f6fb264188b744fdfce37391ee182e196105eac1d32aa796a6d3fe39.otf) format("truetype");
     font-family: "Dubiel";
-    src: url(/assets/Dubiel-806988a4f23f844f75a9fb93c825cf6461442988bc273539b290b458bcfcaeff.ttf) format("truetype");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'White Oleander';
-    src: url(/assets/Nicky-Laatz----White-Oleander-297c5a5ddf74aaa674120b4c62a02af481ad6f07a9979503169c8977877946bf.otf) format("opentype");
     font-weight: 400;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Lato-web', sans-serif;
-    src: url(/assets/Lato/Lato-Black-998d863a2ccf7163389b70eb70fe32f12bded7a07dfff35e98108a3b74107ec1.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-BlackItalic-103cd5bbcc8089f56a43a880fe2b65befd949020fdbf01e98ac6029d925995df.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Bold-8aac3e28b18656067c23d6de1697f47a19866919ac0ea096dcad931129244a90.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-BoldItalic-0d63a5efc559d973e85b2d2f2de635a41cc7780e604d47d12e6b7addc06f6df8.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Hairline-919cf6e73a07f95bf009c4386d2063851798e9b4b89f840bdb9fa2fdac5ec564.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-HairlineItalic-bdaeaeb9d50d4b0f13bcae4849d80dd322f94590675d752a06891433a3dbe6ad.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Heavy-bb7499a114b466758dd3849e5711cf48b62a9fe7c6b9d258cbbb02f8f27ad6f5.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-HeavyItalic-e34839b9e5d52a0a8247a691d3c7160ee78a613064587eb742a287bed298894d.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Italic-61ecb8e87168fbecf4ccf79824a891fa79c6ce81038692636ee2465ce868f84c.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Light-79bb619f6109c6ecb042fa01500ba67111551b531f3efbc8174767ab7df03f79.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Medium-e628bf71a68ad8bf9fa93a4e0a04a4cc376564d0f1985e861e90083b4ef2cdfa.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-MediumItalic-e8a6ac332ee558640b0510987ea96100ebefcddd932492f52332e39e21b3482a.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Regular-2cb12ae895178f5661b1cebdeb105b6a246bf4e9ef13c0ce0f46c1a494447da2.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Semibold-b29d812b1b50192e4ebad973a0a1f712235fa229de82209b82a2b0cc52ee20b0.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-SemiboldItalic-955e33c7b3fe435cd6334956a7117ffcb15a98e5b090db1c3150fd49f5856549.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-Thin-ae9ab4686fbfa32d4693c3543bdbd229efdf437e8c49b3d7efc096627bc6afc8.ttf) format("truetype");
-    src: url(/assets/Lato/Lato-ThinItalic-d9e1843f1faaeab41b587062dbc0bdce4fac6d2e2e36a556058a5f7f653cfbf7.ttf) format("truetype")
-}
+   }
 
 @font-face {
     font-family: 'Unthrift';
-    src: url(/assets/Unthrift/UnthriftFirPersonal-a1a519f5272590725556e9da8277d270897ac6eb5d3932a03a209ed1fdf38e6a.ttf) format("truetype");
-    src: url(/assets/Unthrift/UnthriftSecPersonal-54cd22fabe1a1b31c20c8f2b88b7cb819b8344de426b8e031a625cf59023158f.ttf) format("truetype")
-}
+   }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-Bold-813b0cce2e56f1fbc75dec976f0e5fa2da5a5d76bcbb5ec9f9066719d8acc6f0.eot);
-    src: url(/assets/AvenirNext/AvenirNext-Bold-813b0cce2e56f1fbc75dec976f0e5fa2da5a5d76bcbb5ec9f9066719d8acc6f0.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-Bold-d8ff3b059d20d8ab555e0a4aa7d299868bd67e0e737548f6da83b2c7d62b706d.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-Bold-7323de6869ab2b16c8e5ca9674b859fa9d6141e8f35c14d46668f24c363fa80e.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-Bold-be2514f18111cbfba32f36d9e2a67e53751326364b2de8e1792827bd36445633.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-Bold-526126a38c5d87e948f2f63c9f2c42affa4aba922ec90e96bc59f343720c6e7e.svg#AvenirNext-Bold) format("svg");
-    font-weight: bold;
+     font-weight: bold;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next Demi';
-    src: url(/assets/AvenirNext/AvenirNext-DemiBoldItalic-3ec0ea5e97fc35a28e1d028c1d9debd05767e4d8c189e9d97672f334b1ebbb5b.eot);
-    src: url(/assets/AvenirNext/AvenirNext-DemiBoldItalic-3ec0ea5e97fc35a28e1d028c1d9debd05767e4d8c189e9d97672f334b1ebbb5b.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-DemiBoldItalic-5465168553044af4d0cb7375135383332f4d90f5e9ac231a2122588aded9e5e8.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-DemiBoldItalic-d69605adb608e51bc49474b5fcad83c7ea506fb6347341ec23ed5a8be1710efc.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-DemiBoldItalic-b608307ef1cbed6053a7a69256f888d0d7c19464e5f4c06649433c344602fc46.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-DemiBoldItalic-8503544e3d1ea28c27360d563905a1553d93f8cfe23025a15a888ea9c23a0ed7.svg#AvenirNext-DemiBoldItalic) format("svg");
     font-weight: 600;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next Demi';
-    src: url(/assets/AvenirNext/AvenirNext-DemiBold-551cd502ada17e6e6aa70b1459eb895833e63bd503e6aea54e391c1f42cdbc8e.eot);
-    src: url(/assets/AvenirNext/AvenirNext-DemiBold-551cd502ada17e6e6aa70b1459eb895833e63bd503e6aea54e391c1f42cdbc8e.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-DemiBold-ab59ce9f5972ead5adb5d6f99d79c257ae4585f85bd6d75581ceb1658a8c23b1.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-DemiBold-6b80f4967ea0bf6ebff8f7b33b2a9ff47f4686c8b4c67c764ae912c9fd3844f2.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-DemiBold-32501cc8121c610a82362fb7983c424b368d892bc142d12ab88fcd853a211d51.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-DemiBold-5757d2c7bff757385b6067f0db1e5fe752fafb8476bc1f185e37abbae701795d.svg#AvenirNext-DemiBold) format("svg");
-    font-weight: 600;
+     font-weight: 600;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-HeavyItalic-b1dc564b059003609933c7df8097bbfd2c122ea822f8167b6bfc0afd9d6ae803.eot);
-    src: url(/assets/AvenirNext/AvenirNext-HeavyItalic-b1dc564b059003609933c7df8097bbfd2c122ea822f8167b6bfc0afd9d6ae803.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-HeavyItalic-8e6d54b6d37910ccc51f12466fe653449039869a6b23663c497130240cfc0a8e.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-HeavyItalic-4ec2f653d24c6b511521b17d148132ce8f44a416a548d36a8615138674cb109b.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-HeavyItalic-18d01f8712ebc2c8e5a5680d9c104b1c75936e4c2675aec8aacbc5b982ac1064.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-HeavyItalic-bf78423277f3e13caf0651c0d41c04d87a734482d9766d0108a8623694289d8a.svg#AvenirNext-HeavyItalic) format("svg");
-    font-weight: 900;
+   font-weight: 900;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-Regular-130da6158594c07a3ad08703aac07021990250e216131386f151d379671c945a.eot);
-    src: url(/assets/AvenirNext/AvenirNext-Regular-130da6158594c07a3ad08703aac07021990250e216131386f151d379671c945a.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-Regular-49a534a75bda7542595f324d46a848241cd15d648e67f328d1b835437be6ab80.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-Regular-08f2a544a2b927479ddab1d18e84a09e1ab6b64856b36872713d04ecd1e97bf9.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-Regular-dc888d1aac1573584125beacd9c878ff6dd6418c529f573ec68412966d0b4674.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-Regular-a2326f58a05a815aef1762b4b9c0ae172ccda23b5fadf2d45ed38b21291353fc.svg#AvenirNext-Regular) format("svg");
-    font-weight: normal;
+     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-Medium-0d226e126fef3c34a5e2b6e89f4ab76e20d0740deabfe3ce504e569fdf1fdd70.eot);
-    src: url(/assets/AvenirNext/AvenirNext-Medium-0d226e126fef3c34a5e2b6e89f4ab76e20d0740deabfe3ce504e569fdf1fdd70.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-Medium-ca5d5159e66e182a6a59db857adcd5bab5d2da1c7942f33b50f1ac0ac3a1be4f.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-Medium-4389edd40fa0fd3e307257761bede3a772689f72175f76eb8f4c408ffcf0bd3f.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-Medium-42545d5ba017c1f7487720ffa0526a16496242dddb0c9c9aeaf9a2379992b668.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-Medium-79d079b10c7c1518944cba7bf4fa3e1f35cfb6d43c0737c013631dcc713023fa.svg#AvenirNext-Medium) format("svg");
     font-weight: 500;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-Heavy-4ba779adf9d126be7aa9f673b1e3953ea8027ed0aaf945896d4e9ad052bc5408.eot);
-    src: url(/assets/AvenirNext/AvenirNext-Heavy-4ba779adf9d126be7aa9f673b1e3953ea8027ed0aaf945896d4e9ad052bc5408.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-Heavy-f5a288c7b6a154b47720219ee44548ad79871b3c6809b961fd104d58a0a416bf.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-Heavy-8ccd1843e73fbf782cabff9f9133a5882fb4c6c36785eabf87a34bc46fff46d8.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-Heavy-6b9145ebdac712109a8cae3e492f15f9b34fca8e65a2a53c3e5a2b278f732cc5.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-Heavy-4bfc5185e0c4ac652304d5804b420bc0908d7ce39de89b1cd07f4009161a63bd.svg#AvenirNext-Heavy) format("svg");
-    font-weight: 900;
+     font-weight: 900;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-Italic-cfa6b7e027a41916a79e21fe23055441d4385928eb30a249f9f38652e3b0686e.eot);
-    src: url(/assets/AvenirNext/AvenirNext-Italic-cfa6b7e027a41916a79e21fe23055441d4385928eb30a249f9f38652e3b0686e.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-Italic-ac8d500dc8c8102e7f1446eb8575d1e038fb86817160af515bfc2a36e7505fdd.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-Italic-b9c60e29ec79924a996d84928530dd6cf36910605f40778cf9dd212bb1a88fdb.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-Italic-6083989e7302c0bafe5c98ce43d51831a94e3026dc5786f98084886ee110941a.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-Italic-1e08f5b1b9075c3716a6b9b58a863a9c589384b74d89cbff286025799a41a9e7.svg#AvenirNext-Italic) format("svg");
-    font-weight: normal;
+     font-weight: normal;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-BoldItalic-ce19583b88f13e787db3343a6615e08ad30841565cac52efac22a3a0e017c5ec.eot);
-    src: url(/assets/AvenirNext/AvenirNext-BoldItalic-ce19583b88f13e787db3343a6615e08ad30841565cac52efac22a3a0e017c5ec.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-BoldItalic-8998b81d285cc1eeb4b39b9fe4ffb7ce8511ff9dfc7e539a6682149a939c7dc2.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-BoldItalic-c6b5c4c4072009134cf769033cfc8aab58fb97d01e206a03e1b394c4b59f4697.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-BoldItalic-7039504c3d0ed4f0c3e9aa72fecddd65dffeea9f653e2b11a9a4a85476baf167.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-BoldItalic-df75c18c9ef1a6efdb57d323aebf1a071a2adb0b92698dc902e5b56b166f6343.svg#AvenirNext-BoldItalic) format("svg");
-    font-weight: bold;
+     font-weight: bold;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next Ultra';
-    src: url(/assets/AvenirNext/AvenirNext-UltraLight-0deeac1159692ed8a5b9dc90eb8c2bcf3df68d33c8c9c6c36b9afeba085e5980.eot);
-    src: url(/assets/AvenirNext/AvenirNext-UltraLight-0deeac1159692ed8a5b9dc90eb8c2bcf3df68d33c8c9c6c36b9afeba085e5980.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-UltraLight-234e18d686e48c06a84cddf15574848d72bf628eef5524616d48f809d6cbb05d.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-UltraLight-0b95aba64c412cbaf3c509d76f67b226c5a19555ebf012a0666ea82743c192af.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-UltraLight-ceb1e52caf6f3d98f6c2083d0b6f05f93bff35cc07e303b95dbf390a67075b78.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-UltraLight-b523256026095e6709a7c2a7249257b156f442442fd31a629d7ca02d7dfc3a85.svg#AvenirNext-UltraLight) format("svg");
-    font-weight: 200;
+      font-weight: 200;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next';
-    src: url(/assets/AvenirNext/AvenirNext-MediumItalic-22c894a006628085436e358e91afa65d6ca7a550632aedc0c362feed3cefe208.eot);
-    src: url(/assets/AvenirNext/AvenirNext-MediumItalic-22c894a006628085436e358e91afa65d6ca7a550632aedc0c362feed3cefe208.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-MediumItalic-bcc2fb5c72fd6b03f22621fb404a6503957ab26191381c1011f83d13120896c1.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-MediumItalic-f9a501a29e192e7653a5e8db050a0eeaa6fed705aa44be07bbfe81b968d92395.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-MediumItalic-00b1e036963bc5cf266b9550c33f7a3885462b608ac6f208b811a1677e1229c6.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-MediumItalic-51d9f111ab8c46cc01896792e2642c2bf93de40312e0872bdda4845c6f82683a.svg#AvenirNext-MediumItalic) format("svg");
     font-weight: 500;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next Ultra';
-    src: url(/assets/AvenirNext/AvenirNext-UltraLightItalic-2199fc7aa747601186f360ac04b761b59d24de5597f06cfa01c65fe138fff7ce.eot);
-    src: url(/assets/AvenirNext/AvenirNext-UltraLightItalic-2199fc7aa747601186f360ac04b761b59d24de5597f06cfa01c65fe138fff7ce.eot?#iefix) format("embedded-opentype"), url(/assets/AvenirNext/AvenirNext-UltraLightItalic-396cae9649f7980f4d479c68c485d861f748d9c69b39b337c7de975a9ecc1e67.woff2) format("woff2"), url(/assets/AvenirNext/AvenirNext-UltraLightItalic-6dc1b2df28090a9cec3519042a1e47d49e5645e665132f4daed8d9ee1ca7f853.woff) format("woff"), url(/assets/AvenirNext/AvenirNext-UltraLightItalic-7f42993fbe83947bacc435ab9a3980cd5eab3c193d6c0c8f33be8eb1735fcd0a.ttf) format("truetype"), url(/assets/AvenirNext/AvenirNext-UltraLightItalic-c1a23816820acd7e28388526b388c43fdcd2c74e50e228649d3d7796526c6aeb.svg#AvenirNext-UltraLightItalic) format("svg");
     font-weight: 200;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Silver South Script Alt';
-    src: url(/assets/SilverSouthScriptAlt/Silver-South-Script-Alt-6c40eb02dbe7c6bf74eafaad26813358d303977251464dee23456eb1341b3e04.ttf) format("truetype")
+    /* src: url(/assets/SilverSouthScriptAlt/Silver-South-Script-Alt-6c40eb02dbe7c6bf74eafaad26813358d303977251464dee23456eb1341b3e04.ttf) format("truetype") */
 }
 
 @font-face {
     font-family: 'Havenbrook 2 Demibold';
-    src: url(/assets/Havenbrook-Demibold/font-193f5de7df931ffa7883c2db99103d83ef49997dd87f235910433028ddf6469a.woff2) format("woff2"), url(/assets/Havenbrook-Demibold/font-75569795a5b1d6815d7d614d20bdb8e2d614d633a205750b53fed5fe6becf1c5.woff) format("woff");
+    /* src: url(/assets/Havenbrook-Demibold/font-193f5de7df931ffa7883c2db99103d83ef49997dd87f235910433028ddf6469a.woff2) format("woff2"), url(/assets/Havenbrook-Demibold/font-75569795a5b1d6815d7d614d20bdb8e2d614d633a205750b53fed5fe6becf1c5.woff) format("woff"); */
     font-display: swap
 }
 
 @font-face {
     font-family: 'Havenbrook 8 Bold';
-    src: url(/assets/HavenbrookExpd-Bold/font-a86678ebf4b5a420b58c03d071ad4fad97922479001b36b615dd824ed3ee86e1.woff2) format("woff2"), url(/assets/HavenbrookExpd-Bold/font-2f2fbc121bf951fd6f393a963ba53880f714b966af528f4a18bb7bca258f260e.woff) format("woff");
+    /* src: url(/assets/HavenbrookExpd-Bold/font-a86678ebf4b5a420b58c03d071ad4fad97922479001b36b615dd824ed3ee86e1.woff2) format("woff2"), url(/assets/HavenbrookExpd-Bold/font-2f2fbc121bf951fd6f393a963ba53880f714b966af528f4a18bb7bca258f260e.woff) format("woff"); */
     font-display: swap
 }
 
 @font-face {
     font-family: 'europa-light';
-    src: url(/assets/europa-light-webfont-c7b55ccd303da8950f710c5d632de87c19f43c7661d4e8da996d18ffae3f7d2f.ttf) format("truetype");
+    /* src: url(/assets/europa-light-webfont-c7b55ccd303da8950f710c5d632de87c19f43c7661d4e8da996d18ffae3f7d2f.ttf) format("truetype"); */
     font-display: swap
 }
 
 @font-face {
     font-family: 'europa-regular';
-    src: url(/assets/europa-regular-webfont-f1177a7fefba2a8043aae758d5dccff6c4a90c5cbce030c5e0c359cdd6a25bc6.ttf) format("truetype");
+    /* src: url(/assets/europa-regular-webfont-f1177a7fefba2a8043aae758d5dccff6c4a90c5cbce030c5e0c359cdd6a25bc6.ttf) format("truetype"); */
     font-display: swap
 }
 
 @font-face {
     font-family: 'europa-bold';
-    src: url(/assets/europa-bold-webfont-43228d712cedf0da8f030374c8fc2dc80140cf116425d3a79b3372cb55b04ee2.ttf) format("truetype");
+    /* src: url(/assets/europa-bold-webfont-43228d712cedf0da8f030374c8fc2dc80140cf116425d3a79b3372cb55b04ee2.ttf) format("truetype"); */
     font-display: swap
 }
 
 @font-face {
     font-family: 'Crystal Sky';
-    src: url(/assets/CrystalSky/font-dadc7f9de134bf5aad93de92defc7ce99fea44a783435bb3740666d650b835c9.woff2) format("woff2"), url(/assets/CrystalSky/font-12e5b5c3bf50556a2a00e2e2899ac20884b16d33f0d6f42e5fe072c2237b5fa4.woff) format("woff")
+    /* src: url(/assets/CrystalSky/font-dadc7f9de134bf5aad93de92defc7ce99fea44a783435bb3740666d650b835c9.woff2) format("woff2"), url(/assets/CrystalSky/font-12e5b5c3bf50556a2a00e2e2899ac20884b16d33f0d6f42e5fe072c2237b5fa4.woff) format("woff") */
 }
 
 .font-havenbrook-demibold {
@@ -10124,16 +10078,13 @@ body.component-based-page h4 {
 }
 
 .slick-loading .slick-list {
-    background: #fff url(/assets/slick/ajax-loader-01079cb9dd32ff47aa6995d6da78186868ad8ed9000692a9e3e58dcac9715d7c.gif) center center no-repeat
-}
+    background: #fff }
 
 @font-face {
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-    src: url(/assets/slick-18e4327fcdd8a0df880a465a2b6bb99fa39f23892c3a96f2c388f378f4bf6562.eot);
-    src: url(/assets/slick-18e4327fcdd8a0df880a465a2b6bb99fa39f23892c3a96f2c388f378f4bf6562.eot?#iefix) format("embedded-opentype"), url(/assets/slick-f49f279637e425f10e4bbc8f0aed858fa54117ad5a41f477ff1159db93a61114.woff) format("woff"), url(/assets/slick-1b2af5a0c8f7bca97c993990faa92e025e322bf6bb8d885533639b385e37e7b9.ttf) format("truetype"), url(/assets/slick-fda00f7ada1844ad9ec78a4bb7a7a2f0ae5e035dea98584bf9466ce7ee32d3f1.svg#slick) format("svg")
-}
+   }
 
 .slick-prev,
 .slick-next {
@@ -11055,7 +11006,7 @@ div.component.breadcrumb ul.breadcrumb-lists>li.breadcrumb-list+::before {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     color: #6c757d;
-    content: url(/assets/components/vector-ab097f5da37ad5086a0f1891b33f87b87d221c05cd2305ae0db28ec0598b2c88.svg)
+    /* content: url(/assets/components/vector-ab097f5da37ad5086a0f1891b33f87b87d221c05cd2305ae0db28ec0598b2c88.svg) */
 }
 
 div.component.breadcrumb ul.breadcrumb-lists>li.breadcrumb-list>a.breadcrumb-link {
@@ -12372,7 +12323,7 @@ div.component.dropdown .error-message {
 
 .collage-container .component {
     height: 600px;
-    background-image: url(../images/background-images/f12a250d4c.jpg), url(../images/background-images/bg3.jpg);
+    background-image: url(../public/images/background-images/f12a250d4c.jpg), url(../public/images/background-images/bg3.jpg);
     background-position: left, right;
     background-repeat: no-repeat;
     background-size: 50% 100%, 50% 100%;
@@ -12751,8 +12702,7 @@ div.component.input.icon.-pounds::after {
     position: absolute;
     left: 12px;
     top: 12px;
-    background: url(/assets/components/pound-08371ab59ab1b206e4887985f4b83734df1a23bd8fc8ec9cdbcba75044c28602.svg) no-repeat 50% 50%;
-    background-size: contain
+        background-size: contain
 }
 
 div.component.input.icon.-pounds>.component.default-colour {
@@ -14570,7 +14520,7 @@ div.component.product-rent>label.header>h5.title>div.retail>span.price::after {
     margin-left: 8px;
     margin-right: 8px;
     color: #666666;
-    content: url(/assets/components/dot-6a0c3c1dcf4abc482ae1556e93de75310b70ba9dfa9d9a062e566ba5d6a01099.svg)
+    /* content: url(/assets/components/dot-6a0c3c1dcf4abc482ae1556e93de75310b70ba9dfa9d9a062e566ba5d6a01099.svg) */
 }
 
 div.component.product-rent>label.header>h5.title>div.retail>span.saves {
@@ -15845,7 +15795,6 @@ hr {
     border-color: #c7b6a2;
     border-radius: 100px;
     background-color: #fff;
-    background-image: url(/assets/circular-couture-map-icon-195572eb14d8b7a04c08c9230600ff433a9b7d7fdc6380f87f4e455974da47b2.svg);
     background-position: 50% 50%;
     background-size: 35px;
     background-repeat: no-repeat;
@@ -15855,8 +15804,7 @@ hr {
 
 .btn-mobile-map.shut-map {
     right: -100px;
-    background-image: url(/assets/cross-b35b1b0ef007f4cec75c97bb56fb9386f14df38203a66f295f91ddf63c19b268.svg);
-    background-size: 25px
+     background-size: 25px
 }
 
 @media (max-width: 767.98px) {
@@ -16301,15 +16249,14 @@ hr {
 
 .checkbox-toggle .checkbox:before {
     -moz-appearance: initial;
-    content: url(/assets/toggle-off-619975ee39a68f9db10128d755de8b8969b3e5b57d2eaea2bd1a1fc57babe8b9.svg);
-    visibility: visible;
+  visibility: visible;
     position: absolute;
     top: -1px
 }
 
 .checkbox-toggle .checkbox:checked::before {
     -moz-appearance: initial;
-    content: url(/assets/toggle-on-fea654c478e658ff9ace6b30823085f30ba4c497a3875050ad97e0c1fb816e0d.svg)
+    /* content: url(/assets/toggle-on-fea654c478e658ff9ace6b30823085f30ba4c497a3875050ad97e0c1fb816e0d.svg) */
 }
 
 .checkbox-toggle .text {
@@ -16332,7 +16279,7 @@ hr {
 
 .big-checkbox-toggle .checkbox:before {
     -moz-appearance: initial;
-    content: url(/assets/big-toggle-off-dd2f5523e3aeb72e84c37d9fdef2ae3c15cf7d7b18d3a2f448a6a04b01cb05bc.svg);
+    /* content: url(/assets/big-toggle-off-dd2f5523e3aeb72e84c37d9fdef2ae3c15cf7d7b18d3a2f448a6a04b01cb05bc.svg); */
     visibility: visible;
     position: absolute;
     top: -1px
@@ -16340,7 +16287,7 @@ hr {
 
 .big-checkbox-toggle .checkbox:checked::before {
     -moz-appearance: initial;
-    content: url(/assets/big-toggle-on-1fe8ed24e6cd65e671a1a67d513bcee34f68ca2fd4e4004cf8c726ee993d8c93.svg)
+    /* content: url(/assets/big-toggle-on-1fe8ed24e6cd65e671a1a67d513bcee34f68ca2fd4e4004cf8c726ee993d8c93.svg) */
 }
 
 .big-checkbox-toggle .text {
@@ -20082,8 +20029,7 @@ hr {
 }
 
 .profile-images-wrapper {
-    background: url(/assets/loader-49f5d4438fdb912c748fc7d241e8adf4ceb191c6bd2af893e5824b99f284a8b1.gif) center center no-repeat;
-    background-size: 50%;
+     background-size: 50%;
     border-radius: 50%;
     margin-bottom: 20px;
     width: 100%;
@@ -21193,7 +21139,6 @@ hr {
 }
 
 .search-map-section .listing-infowindow-content__img-listing-photo {
-    background: url(/assets/loader-gold-a5d4ff0d85c47710d2749d214babe8842014f5026f57bd9473023352d257e8dd.gif) center center no-repeat;
     background-size: 100%;
     display: block;
     -o-object-fit: contain;
@@ -21231,7 +21176,6 @@ hr {
 }
 
 .search-map-section .listing-infowindow-content__img-lender-photo {
-    background: url(/assets/loader-gold-a5d4ff0d85c47710d2749d214babe8842014f5026f57bd9473023352d257e8dd.gif) center center no-repeat;
     background-size: 100%;
     height: 40px;
     width: 40px;
@@ -21331,7 +21275,6 @@ hr {
 
 .search-map-section .hub-marker {
     background-color: #dcbcb8;
-    background-image: url(/assets/dry-cleaning-hub-overlay-icon-4225a03cbf2e98903e6aaf9ec29ab79606a93f50adc84d506e8280f1df895060.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24888,14 +24831,14 @@ div.filter-bar select {
 
 .listing-results-wrapper .back-to-top {
     cursor: pointer;
-    background: url(/svg/feather-arrow-up-circle.png);
+    /* background: url(/svg/feather-arrow-up-circle.png); */
     background-size: cover;
     height: 30px;
     width: 30px
 }
 
 .listing-results-wrapper .back-to-top:hover {
-    background: url(/svg/feather-arrow-up-circle-active.png);
+    /* background: url(/svg/feather-arrow-up-circle-active.png); */
     background-size: cover
 }
 
@@ -26212,7 +26155,7 @@ div.filter-bar select {
 
 .special-edit-section .full-image-divider {
     height: 480px;
-    background-image: url(/new_design/hannah-banner.jpg);
+    /* background-image: url(/new_design/hannah-banner.jpg); */
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat
@@ -26272,7 +26215,7 @@ div.filter-bar select {
 }
 
 .standard-edit-section .image-header {
-    background-image: url(/new_design/asos-4505-tall-ski-salopettes-fashionlushblog.jpg);
+    /* background-image: url(/new_design/asos-4505-tall-ski-salopettes-fashionlushblog.jpg); */
     background-size: cover
 }
 
@@ -26707,7 +26650,7 @@ div.filter-bar select {
 
 .hero-card .hero-1,
 .hero-card .hero-4 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url(/new_design/3T7A8946-Edit.jpg)
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url()
 }
 
 .hero-card .hero-1 {
@@ -26727,12 +26670,12 @@ div.filter-bar select {
 
 .hero-card .hero-2,
 .hero-card .hero-5 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url(/new_design/Screenshot-2019-11-28-at-14.42.39.png)
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url()
 }
 
 .hero-card .hero-3,
 .hero-card .hero-6 {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url(/new_design/3T7A8897-Edit.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url();
     background-attachment: scroll, scroll
 }
 
@@ -28435,7 +28378,7 @@ div.filter-bar select {
 
 .how-it-works-snippet__mobile>.row {
     min-height: 62vh;
-    background: url(/designer.png) no-repeat center center fixed
+    background: url(../public/images/background-images/bg3.jpg) no-repeat center center fixed
 }
 
 .how-it-works-snippet__question {
@@ -30622,8 +30565,7 @@ body.regular-backdrop .modal-backdrop {
 }
 
 .request-form .request-input.-with-date-icon {
-    background-image: url(/assets/feather-calendar-bef3ad87fe2754cf58537a7b7423a0d4f3d619061eb143941d9d72006cb36981.svg);
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
     background-position: 96% 50%;
     background-size: 12px;
     padding: 9px 0px 11px 17px;
@@ -33419,7 +33361,6 @@ img {
 .images-wrapper {
     position: relative;
     display: inline-block;
-    background: url(/assets/loader-49f5d4438fdb912c748fc7d241e8adf4ceb191c6bd2af893e5824b99f284a8b1.gif) center center no-repeat;
     background-size: 50%;
     width: 187px;
     padding: 5px;
@@ -37390,8 +37331,7 @@ html .ui-button.ui-state-disabled:active,
 }
 
 .input-icon.-link {
-    background-image: url(/assets/link-icon-1b3f605fc16eb1b815975015953fdf4354d83cf6ddc8298314ca42322e0e8202.svg)
-}
+   }
 
 div#uk-mobile-input span.input-group-text {
     color: #fefdfd;
@@ -40815,7 +40755,6 @@ div#uk-mobile-input span.mobile-input-system-requirement {
 }
 
 .custom-input.-with-date-icon {
-    background-image: url(/assets/feather-calendar-bef3ad87fe2754cf58537a7b7423a0d4f3d619061eb143941d9d72006cb36981.svg);
     background-repeat: no-repeat;
     background-position: 96% 50%;
     background-size: 12px;
@@ -50465,8 +50404,7 @@ div#uk-mobile-input span.mobile-input-system-requirement {
 }
 
 .dashboard-page .input-icon.-link {
-    background-image: url(/assets/link-icon-1b3f605fc16eb1b815975015953fdf4354d83cf6ddc8298314ca42322e0e8202.svg)
-}
+   }
 
 .dashboard-page .referral-link {
     background-color: #FAF9F7 !important
@@ -52694,7 +52632,6 @@ div#uk-mobile-input span.mobile-input-system-requirement {
 
 .rounded-img-wrapper.-with-verified-icon span.verified-icon:after {
     content: ' ';
-    background: url(/assets/messages/verified-af10d4f73d3ede8c53090744adb5ca849097b3e3f2a29394004aedc3536ba41e.svg);
     background-repeat: no-repeat;
     height: 25px;
     position: absolute;
@@ -58391,7 +58328,7 @@ button:disabled,
 /* banner 2 */
 .component-container-2 .single-image {
     height: 500px !important;
-    background-image: url(../images/background-images/f12a250d4c.jpg) !important;
+    background-image: url(../public/images/background-images/f12a250d4c.jpg) !important;
     background-size: cover !important;
     background-position: center center !important;
 }
@@ -58443,7 +58380,7 @@ button:disabled,
 
 .collage-main .collage-single {
     height: 450px;
-    background-image: url(../images/background-images/collage.png);
+    background-image: url(../public/images/background-images/collage.png);
     background-repeat: no-repeat;
     background-size: cover;
 
