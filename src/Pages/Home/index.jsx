@@ -20,13 +20,13 @@ const Home = () => {
                   <div className="button-component">
                     <a
                       className="btn btn-primary -white rounded-0 text-uppercase header-btn"
-                      href="how-to-rent.html"
+                      href="/HowToLend"
                     >
                       RENT / BUY
                     </a>
                     <a
                       className="btn btn-primary -white rounded-0 text-uppercase header-btn"
-                      href="selling-or-renting.html"
+                      href="/SellingOrRenting"
                     >
                       BUY / SELL
                     </a>
@@ -53,7 +53,7 @@ const Home = () => {
                   {/* Product Item 1 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="product-details-page.html">
+                      <a href="/ProductDetail">
                         <img
                           src="images/product-images/p1.png"
                           className="img-fluid"
@@ -80,7 +80,7 @@ const Home = () => {
                   {/* Product Item 2 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="product-details-page.html">
+                      <a href="/ProductDetail">
                         <img
                           src="images/product-images/p2.png"
                           className="img-fluid"
@@ -107,7 +107,7 @@ const Home = () => {
                   {/* Product Item 3 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="product-details-page.html">
+                      <a href="/ProductDetail">
                         <img
                           src="images/product-images/p3.png"
                           className="img-fluid"
@@ -136,7 +136,7 @@ const Home = () => {
                   {/* Product Item 4 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="product-details-page.html">
+                      <a href="/ProductDetail">
                         {" "}
                         <img
                           src="images/product-images/p4.png"
@@ -188,7 +188,7 @@ const Home = () => {
                     <div className="button-component">
                       <a
                         className="btn  rounded-0 text-uppercase header-btn"
-                        href="how-to-lend.html"
+                        href="/HowToLend"
                       >
                         HOW IT WORKS
                       </a>
@@ -237,7 +237,7 @@ const Home = () => {
               </div>
               <div className="row text-center my-5 mx-auto d-flex align-items-center justify-content-center">
                 <div className="shop-all text-center">
-                  <a href="collections/new_arrivals.html">
+                  <a href="/Collections/NewArrival">
                     <button className="btn bg-light py-2 px-5">Shop All</button>
                   </a>
                 </div>
@@ -253,7 +253,7 @@ const Home = () => {
                   style={{ paddingLeft: "35rem !important" }}
                 >
                   <h4 className="title">AUTUMN '23</h4>
-                  <a href="collections/resale.html">
+                  <a href="/Collections/Resale">
                     <button className="btn bg-light text-dark">
                       VIEW COLLECTION
                     </button>
@@ -323,24 +323,6 @@ const Home = () => {
               </div>
             </div>
           </section>
-          <div className="row  mx-0 mt-5 py-4">
-            <div className=" col-lg-8 mx-auto d-flex justify-content-center flex-column guest-list-button">
-              <h1 className="mt-2">
-                <span>guest list</span>
-              </h1>
-              <h5 className="mt-3">
-                <span>
-                  Join our guest list for the latest in trending and fashion
-                  updates.
-                </span>
-              </h5>
-              <input className="mt-5" type="text" placeholder=" Email" />
-              <a href="list-item-step-two.html">
-                {" "}
-                <button className="mt-4 mb-4 btn-signup1">sign up</button>
-              </a>
-            </div>
-          </div>
         </div>
         <EmailSubscription />
        <Footer/>

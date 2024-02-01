@@ -2643,7 +2643,7 @@ const TermsOfService = () => {
         placeholder=" Email"
         type="text"
       />
-      <a href="list-item-step-two.html">
+      <a href="/ListItems/ListStepTwo">
         {' '}
         <button className="mt-4 mb-4 btn-signup1">
           sign up

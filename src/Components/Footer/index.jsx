@@ -14,7 +14,7 @@ const Footer =()=>{
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-3">
-                        <a className="link" href="about-us.html">
+                        <a className="link" href="/About">
                           Our story
                         </a>
                       </li>
@@ -22,13 +22,13 @@ const Footer =()=>{
                         <a
                           target="_blank"
                           className="link"
-                          href="sustainability.html"
+                          href="/Sustainability"
                         >
                           sustainability
                         </a>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="how-to-lend.html">
+                        <a className="link" href="/HowToLend">
                           How it works
                         </a>
                       </li>
@@ -49,12 +49,12 @@ const Footer =()=>{
                         </a>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="terms-of-service.html">
+                        <a className="link" href="/TermsOfService">
                           Our service
                         </a>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="cookie-policy.html">
+                        <a className="link" href="/CookiePolicy">
                           Returns policy
                         </a>
                       </li>
@@ -70,17 +70,17 @@ const Footer =()=>{
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-3">
-                        <a className="link" href="selling-or-renting.html">
+                        <a className="link" href="/SellingOrRenting">
                           How to sell?
                         </a>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="about-us.html">
+                        <a className="link" href="/About">
                           Our selling advice
                         </a>
                       </li>
                       <li>
-                        <a className="link" href="selling-or-renting.html">
+                        <a className="link" href="/SellingOrRenting">
                           Sell an item
                         </a>
                       </li>

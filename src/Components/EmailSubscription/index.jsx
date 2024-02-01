@@ -20,10 +20,11 @@ const EmailSubscription = () =>{
       className="mt-5"
       placeholder=" Email"
       type="text"
+      required
     />
-    <a href="list-item-step-two.html">
+    <a href="#">
       {' '}
-      <button className="mt-4 mb-4 btn-signup1">
+      <button className="mt-4 mb-4 btn-signup1" type="submit">
         sign up
       </button>
     </a>

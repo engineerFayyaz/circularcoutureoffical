@@ -45,7 +45,7 @@ const TopHeader =()=>{
                       {" "}
                       <a
                         className="default-link -md link text-uppercase"
-                        href="how-to-lend.html"
+                        href="/HowToLend"
                       >
                         How it works
                       </a>{" "}
@@ -55,7 +55,7 @@ const TopHeader =()=>{
                 <div className="col-md-4 text-center">
                   <a
                     className="nav-link mx-0 p-0 d-inline-block logo"
-                    href="index.html"
+                    href="/Home"
                   >
                     {" "}
                     <img
@@ -88,7 +88,7 @@ const TopHeader =()=>{
                 </span>
               </div>
               <div className="col-4 text-center">
-                <a href="index.html">
+                <a href="/Home">
                   {" "}
                   <img
                     alt="CIRCULAR COUTURE Logo"
@@ -127,7 +127,7 @@ const TopHeader =()=>{
                     data-target-link-content=".link-content.-just-in"
                     data-action="mouseover->mega-menu-contents#showMenu"
                     data-target-mega-menu="justIn"
-                    href="collections/new_arrivals.html"
+                    href="/Collections/NewArrival"
                   >
                     New In
                   </a>
@@ -137,7 +137,7 @@ const TopHeader =()=>{
                     data-target-link-content=".link-content.-designers"
                     data-action="mouseover->mega-menu-contents#showMenu"
                     data-target-mega-menu="designers"
-                    href="designers.html"
+                    href="/Designer"
                   >
                     Designers
                   </a>
@@ -157,7 +157,7 @@ const TopHeader =()=>{
                     data-target-link-content=".link-content.-accessories"
                     data-action="mouseover->mega-menu-contents#showMenu"
                     data-target-mega-menu="accessories"
-                    href="collections/accessories.html"
+                    href="/Collections/Accessories"
                   >
                     Accessories
                   </a>
@@ -165,7 +165,7 @@ const TopHeader =()=>{
                     data-action="mouseover->mega-menu-contents#hideMenu"
                     target="_top"
                     className="nav-link "
-                    href="collections/resale.html"
+                    href="/Collections/Resale"
                   >
                     Resale
                   </a>
@@ -173,7 +173,7 @@ const TopHeader =()=>{
                     data-action="mouseover->mega-menu-contents#hideMenu"
                     target="_top"
                     className="nav-link"
-                    href="edits.html"
+                    href="/Edits"
                   >
                     Edits
                   </a>
@@ -181,7 +181,7 @@ const TopHeader =()=>{
                     data-action="mouseover->mega-menu-contents#hideMenu"
                     target="_top"
                     className="nav-link"
-                    href="list-item-step-one.html"
+                    href="/ListItems/ListStepOne"
                   >
                     List By Wardrobe
                   </a>
@@ -216,28 +216,28 @@ const TopHeader =()=>{
                         </div>
                         <div className="body">
                           {" "}
-                          <a target="_top" href="collections/clothing.html">
+                          <a target="_top" href="/Collections/Clothing">
                             All Clothing
                           </a>
-                          <a target="_top " href="#">
+                          <a target="_top " href="/Collections/Dresses">
                             Dresses
                           </a>
-                          <a target="_top " href="#">
+                          <a target="_top " href="/Collections/Tops">
                             Tops
                           </a>
-                          <a target="_top" href="#">
+                          <a target="_top" href="/Collections/Skirts">
                             Skirts
                           </a>
-                          <a target="_top" href="#">
-                            Trouscrs
+                          <a target="_top" href="/Collections/Trousers">
+                            Trousers
                           </a>
-                          <a target="_top" href="#">
+                          <a target="_top" href="/Collections/Sweaters">
                             Sweaters
                           </a>
-                          <a target="_top" href="#">
+                          <a target="_top" href="/Collections/OuterWear">
                             Outerwear
                           </a>
-                          <a target="_top" href="#">
+                          <a target="_top" href="/Collections/JumpSuit">
                             Jumpsuits
                           </a>
                         </div>
@@ -251,22 +251,22 @@ const TopHeader =()=>{
                         </div>
                         <div className="body">
                           {" "}
-                          <a target="_top" href="collections/new_arrivals.html">
+                          <a target="_top" href="/Collections/NewArrival">
                             All Dresses
                           </a>
-                          <a target="_top " href="#">
+                          <a target="_top " href="/Collections/DressMini">
                             Mini
                           </a>
-                          <a target="_top " href="#">
+                          <a target="_top " href="/Collections/DressKneeLength">
                             Kee Length
                           </a>
-                          <a target="_top" href="#">
+                          <a target="_top" href="/Collections/DressMidi">
                             Midi
                           </a>
-                          <a target="_top" href="#">
+                          <a target="_top" href="/Collections/DressMaxi">
                             Maxi
                           </a>
-                          <a target="_top" href="#">
+                          <a target="_top" href="/Collections/DressGowns">
                             Gowns
                           </a>
                         </div>
@@ -392,7 +392,7 @@ const TopHeader =()=>{
                     <ul className="list-unstyled text-uppercase">
                       <li>
                         <a
-                          href="collections/new_arrivals.html"
+                          href="/Collections/NewArrival"
                           className=" d-block w-100"
                         >
                           New In
@@ -416,7 +416,7 @@ const TopHeader =()=>{
                       <li>
                         <a
                           className="arrow d-block w-100"
-                          href="collections/clothing.html"
+                          href="/Collections/Clothing"
                           data-toggle="modal"
                           data-target="#designers_menu"
                         >
@@ -426,43 +426,43 @@ const TopHeader =()=>{
                       {/* <li><a class="d-block w-100" href="/collections/bags">Bags</a></li> */}
                       <li>
                         <a
-                          href="collections/accessories.html"
+                          href="/Collections/Accessories"
                           className="arrow d-block w-100"
                         >
                           Accessories
                         </a>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="edits.html">
+                        <a className="d-block w-100" href="Edits">
                           Edits
                         </a>
                       </li>
                       <li>
                         <a
                           className="d-block  text-circular-couture-ligh w-100"
-                          href="collections/resale.html"
+                          href="/Collections/Resale"
                         >
                           Resale
                         </a>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="lenders.html">
+                        <a className="d-block w-100" href="/Lender">
                           Lenders
                         </a>
                       </li>
                       <li className="devider" />
                       <li>
-                        <a className="d-block w-100" href="how-to-rent.html">
+                        <a className="d-block w-100" href="/HowToRent">
                           How it works
                         </a>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="sustainability.html">
+                        <a className="d-block w-100" href="/Sustainability">
                           Sustainability
                         </a>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="about-us.html">
+                        <a className="d-block w-100" href="/About">
                           About Us
                         </a>
                       </li>
@@ -571,24 +571,24 @@ const TopHeader =()=>{
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <a href="collections/dressses.html">ALL DRESSES</a>
+                        <a href="/Collections/Dresses">ALL DRESSES</a>
                       </li>
                       <li>
-                        <a href="collections/dress-mini.html">MINI </a>
+                        <a href="/Collections/DressMini">MINI </a>
                       </li>
                       <li>
-                        <a href="collections/dress-kneelength.html">
+                        <a href="/Collections/DressKneeLength">
                           KEE LENGTH
                         </a>
                       </li>
                       <li>
-                        <a href="collections/dress-midi.html">MIDI</a>
+                        <a href="/Collections/DressMidi">MIDI</a>
                       </li>
                       <li>
-                        <a href="collections/dress-maxi.html">MAXI</a>
+                        <a href="/Collections/DressMaxi">MAXI</a>
                       </li>
                       <li>
-                        <a href="collections/dress-gowns.html">GOWNS</a>
+                        <a href="/Collections/DressGowns">GOWNS</a>
                       </li>
                     </ul>
                   </div>
@@ -627,28 +627,28 @@ const TopHeader =()=>{
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <a href="collections/clothing.html">ALL CLOTHING</a>
+                        <a href="/Collections/Clothing">ALL CLOTHING</a>
                       </li>
                       <li>
-                        <a href="collections/dressses.html">DRESSES</a>
+                        <a href="/Collections/Dresses">DRESSES</a>
                       </li>
                       <li>
-                        <a href="collections/tops.html">TOPS </a>
+                        <a href="/Collections/Tops">TOPS </a>
                       </li>
                       <li>
-                        <a href="collections/shirts.html">SHIRTS</a>
+                        <a href="/Collections/Skirts">SHIRTS</a>
                       </li>
                       <li>
-                        <a href="collections/trouser.html">TROUSERS</a>
+                        <a href="/Collections/Trousers">TROUSERS</a>
                       </li>
                       <li>
-                        <a href="collections/sweaters.html">SWEATERS</a>
+                        <a href="/Collections/Sweaters">SWEATERS</a>
                       </li>
                       <li>
-                        <a href="collections/outerwear.html">OUTERWEAR</a>
+                        <a href="/Collections/OuterWear">OUTERWEAR</a>
                       </li>
                       <li>
-                        <a href="collections/jumpsuits.html">JUMPSUITS</a>
+                        <a href="/Collections/JumpSuit">JUMPSUITS</a>
                       </li>
                       {/* <li><a class="with-border-bottom" href="/collections/clothing">view all</a></li> */}
                     </ul>
@@ -666,31 +666,7 @@ const TopHeader =()=>{
               </div>
             </div>
           </div>
-          {/* <div class="modal filter-modal mobile-menu-modal left fade -sub-modal" id="accessories_menu" tabindex="-1"
-      role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog m-0 " role="document">
-          <div class="modal-content rounded-0 border-0">
-              <div class="modal-body text-uppercase">
-                  <div class="content">
-                      <div class="text-center menu-header position-relative" data-dismiss="modal"
-                          data-toggle="modal" data-target="#--mobile_nav_modal">Accessories</div>
-                      <ul class="list-unstyled">
-                          <li><a href="/collections/bags">BAGS</a></li>
-                          <li><a href="/search?listing%5Bsearch_for%5D=belts">BELTS</a></li>
-                          <li><a href="/edits/the-jewellery-edit">JEWELLERY</a></li>
-                          <li><a href="/search?listing%5Bsearch_for%5D=scarf">SCARVES</a></li>
-                          <li><a href="/collections/shoes">SHOES</a></li>
-                          <li><a href="/search?listing%5Bsearch_for%5D=sunglasses">SUNGLASSES</a></li>
-                          <li><a href="/search?listing%5Bsearch_for%5D=wallets">WALLETS</a></li>
-                          <li><a class="with-border-bottom" href="/collections/accessories">view all</a></li>
-                      </ul>
-                  </div>
-                  <div class="closer" data-action="click->mobile-nav#closeAllModals"> <span
-                          class="text-uppercase text-center close-text">tap to close</span> </div>
-              </div>
-          </div>
-      </div>
-  </div> */}
+
           <div
             id="how-credit-works-modal"
             className="component modal how-credit-works-modal fade"
@@ -1146,7 +1122,7 @@ const TopHeader =()=>{
                             </span>
                             's{" "}
                             <a
-                              href="/terms-of-service"
+                              href="/TermsOfService"
                               target="_blank"
                               className="btn-circular-couture"
                             >
@@ -1154,7 +1130,7 @@ const TopHeader =()=>{
                             </a>{" "}
                             and{" "}
                             <a
-                              href="/privacy-policy"
+                              href="/CookiePolicy"
                               target="_blank"
                               className="btn-circular-couture"
                             >

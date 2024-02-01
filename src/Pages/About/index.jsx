@@ -103,7 +103,7 @@ const About = () => {
                 We’re proud members of{' '}
                 <a
                   className="text-circularcouture-light-red"
-                  href="https://ecologi.com/circularcouture"
+                  href="#"
                   target="_blank"
                 >
                   Ecologi

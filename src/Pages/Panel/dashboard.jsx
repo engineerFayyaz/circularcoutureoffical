@@ -56,7 +56,7 @@ const Dashboard = () =>{
               <li className="dashboard-index-item active">
                 <a
                   className="text-uppercase"
-                  href="/dashboard"
+                  href="/Panel/Dashboard"
                 >
                   Dashboard
                 </a>
@@ -64,7 +64,7 @@ const Dashboard = () =>{
               <li className="renting-index-item lending-index-item">
                 <a
                   className="text-uppercase"
-                  href="/lending.html"
+                  href="/Panel/lending"
                 >
                   <turbo-frame
                     id="renting_and_lending_count_frame"
@@ -78,7 +78,7 @@ const Dashboard = () =>{
               <li className="purchases-index-item">
                 <a
                   className="text-uppercase"
-                  href="/purchases?page=buyer"
+                  href="#"
                 >
                   <turbo-frame
                     id="buying_and_selling_count_frame"
@@ -92,7 +92,7 @@ const Dashboard = () =>{
               <li className="listings-index-item">
                 <a
                   className="text-uppercase"
-                  href="/listings.html"
+                  href="/Panel/listing"
                 >
                   Wardrobe
                 </a>
@@ -100,7 +100,7 @@ const Dashboard = () =>{
               <li className="messages_v2-index-item messages_v2-show-item">
                 <a
                   className="text-uppercase"
-                  href="/messages.html"
+                  href="/Panel/Messege"
                 >
                   {' '}Messages{' '}
                   <span
@@ -112,7 +112,7 @@ const Dashboard = () =>{
               <li className="wishlist-index-item">
                 <a
                   className="text-uppercase"
-                  href="/wishlist.html"
+                  href="/Panel/Wishlist"
                 >
                   Wishlists
                 </a>
@@ -120,7 +120,7 @@ const Dashboard = () =>{
               <li className="referrals-index-item">
                 <a
                   className="text-uppercase"
-                  href="/referrals.html"
+                  href="/Panel/Referral"
                 >
                   Give £10, Get £10
                 </a>
@@ -136,7 +136,7 @@ const Dashboard = () =>{
               <li className="profile-index-item">
                 <a
                   className="text-uppercase"
-                  href="/profile.html"
+                  href="/Panel/Profile"
                 >
                   Edit My Profile
                 </a>
@@ -144,7 +144,7 @@ const Dashboard = () =>{
               <li className="account-index-item">
                 <a
                   className="text-uppercase"
-                  href="/account.html"
+                  href="/Panel/Account"
                 >
                   My Account
                 </a>
@@ -158,7 +158,7 @@ const Dashboard = () =>{
       <div className="media dashboard-users-media">
         <a
           className="edit-account-btn"
-          href="/account.html"
+          href="/Panel/Account"
         >
           <img
             className="avatar rounded-circle mr-3"
@@ -305,7 +305,7 @@ const Dashboard = () =>{
         >
           <a
             className="give-get-button-component give-get-button-hover button primary btn-block"
-            href="/referrals.html"
+            href="/Panel/Referral"
           >
             <div className="d-flex justify-content-center pitch-black align-items-center">
               <img
@@ -386,7 +386,7 @@ const Dashboard = () =>{
           <div className="give-get-button-desktop">
             <a
               className="give-get-button-component give-get-button-hover button primary button-width"
-              href="/referrals.html"
+              href="/Panel/Referral"
             >
               <div className="d-flex justify-content-center pitch-black align-items-center">
                 <img
@@ -408,7 +408,7 @@ const Dashboard = () =>{
         <li className="dashboard-link active">
           <a
             className="text-uppercase"
-            href="/dashboard"
+            href="/Panel/Dashboard"
           >
             Dashboard
           </a>
@@ -416,7 +416,7 @@ const Dashboard = () =>{
         <li className="renting-link lending-link">
           <a
             className="text-uppercase"
-            href="/lending.html"
+            href="/Panel/lending"
           >
             <turbo-frame
               complete=""
@@ -431,7 +431,7 @@ const Dashboard = () =>{
         <li className="purchases-link">
           <a
             className="text-uppercase"
-            href="/purchases?page=buyer"
+            href="#"
           >
             <turbo-frame
               complete=""
@@ -446,7 +446,7 @@ const Dashboard = () =>{
         <li className="listings-link">
           <a
             className="text-uppercase"
-            href="/listing"
+            href="/Panel/listing"
           >
             Wardrobe
           </a>
@@ -466,7 +466,7 @@ const Dashboard = () =>{
         <li className="wishlist-link">
           <a
             className="text-uppercase"
-            href="/wishlist.html"
+            href="/Panel/Wishlist"
           >
             Wishlists
           </a>
@@ -474,7 +474,7 @@ const Dashboard = () =>{
         <li className="referrals-link">
           <a
             className="text-uppercase"
-            href="/referrals.html"
+            href="/Panel/Referral"
           >
             Give £10, Get £10
           </a>
@@ -482,7 +482,7 @@ const Dashboard = () =>{
         <li className="profile-link">
           <a
             className="text-uppercase"
-            href="/profile.html"
+            href="/Panel/Profile"
           >
             Edit My Profile
           </a>
@@ -493,7 +493,7 @@ const Dashboard = () =>{
         >
           <a
             className="text-uppercase"
-            href="/account.html"
+            href="/Panel/Account"
           >
             My Account
           </a>
@@ -698,7 +698,7 @@ const Dashboard = () =>{
                     your wardrobe{' '}
                     <a
                       className="blur-content-link"
-                      href="/listings.html"
+                      href="/Panel/listing"
                       target="_top"
                     >
                       here

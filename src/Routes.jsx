@@ -31,6 +31,18 @@ import CookiePolicy from "./Pages/CookiePolicy";
 import TermsOfService from "./Pages/TermsOfService";
 import Career from "./Pages/Career";
 import Edits from "./Pages/Edits";
+import HowToLend from "./Pages/HowToLend";
+import HowToRent from "./Pages/HowToRent";
+import Lender from "./Pages/Lender";
+import ListStepOne from "./Pages/ListItems/ListStepOne";
+import ListStepOneNext from "./Pages/ListItems/ListStepOneNext";
+import ListStepTwo from "./Pages/ListItems/ListStepTwo";
+import ListStepTwoNext from "./Pages/ListItems/ListStepTwoNext";
+import ListStepThree from "./Pages/ListItems/ListStepThree";
+import Membership from "./Pages/Membership";
+import SellingOrRenting from "./Pages/SellingOrRenting";
+import Sustainability from "./Pages/Sustainability";
+import ProductDetail from "./Pages/ProductDetail";
 
 const ProjectRoutes =()=>{
     return(
@@ -68,6 +80,18 @@ const ProjectRoutes =()=>{
         <Route path="/TermsOfService" element={<TermsOfService/>} /> 
         <Route path="/Career" element={<Career/>} /> 
         <Route path="/Edits" element={<Edits />} /> 
+        <Route path="/HowToLend" element={<HowToLend />} /> 
+        <Route path="/HowToRent" element={<HowToRent />} /> 
+        <Route path="/Lender" element={<Lender />} /> 
+        <Route path="/ListItems/ListStepOne" element={<ListStepOne />} /> 
+        <Route path="/ListItems/ListStepOneNext" element={<ListStepOneNext />} /> 
+        <Route path="/ListItems/ListStepTwo" element={<ListStepTwo />} /> 
+        <Route path="/ListItems/ListStepTwoNext" element={<ListStepTwoNext />} /> 
+        <Route path="/ListItems/ListStepThree" element={<ListStepThree />} /> 
+        <Route path="/Membership" element={<Membership />} /> 
+        <Route path="/SellingorRenting" element={<SellingOrRenting />} /> 
+        <Route path="/Sustainability" element={<Sustainability />} /> 
+        <Route path="/ProductDetail" element={<ProductDetail />} /> 
 
         </Routes>
         </Router>

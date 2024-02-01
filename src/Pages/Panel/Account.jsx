@@ -57,7 +57,7 @@ const Account = () =>{
               <li className="dashboard-index-item">
                 <a
                   className="text-uppercase"
-                  href="/dashboard"
+                  href="/Panel/Dashboard"
                 >
                   Dashboard
                 </a>
@@ -65,7 +65,7 @@ const Account = () =>{
               <li className="renting-index-item lending-index-item">
                 <a
                   className="text-uppercase"
-                  href="/lending.html"
+                  href="/Panel/lending"
                 >
                   <turbo-frame
                     id="renting_and_lending_count_frame"
@@ -79,7 +79,7 @@ const Account = () =>{
               <li className="purchases-index-item">
                 <a
                   className="text-uppercase"
-                  href="/purchases?page=buyer"
+                  href="#"
                 >
                   <turbo-frame
                     id="buying_and_selling_count_frame"
@@ -93,7 +93,7 @@ const Account = () =>{
               <li className="listings-index-item">
                 <a
                   className="text-uppercase"
-                  href="/listings.html"
+                  href="/Panel/listing"
                 >
                   Wardrobe
                 </a>
@@ -101,7 +101,7 @@ const Account = () =>{
               <li className="messages_v2-index-item messages_v2-show-item">
                 <a
                   className="text-uppercase"
-                  href="/messages.html"
+                  href="/Panel/Messege"
                 >
                   {' '}Messages{' '}
                   <span
@@ -113,7 +113,7 @@ const Account = () =>{
               <li className="wishlist-index-item">
                 <a
                   className="text-uppercase"
-                  href="/wishlist.html"
+                  href="/Panel/Wishlist"
                 >
                   Wishlists
                 </a>
@@ -121,7 +121,7 @@ const Account = () =>{
               <li className="referrals-index-item">
                 <a
                   className="text-uppercase"
-                  href="/referrals.html"
+                  href="/Panel/Referral"
                 >
                   Give £10, Get £10
                 </a>
@@ -137,7 +137,7 @@ const Account = () =>{
               <li className="profile-index-item">
                 <a
                   className="text-uppercase"
-                  href="/profile.html"
+                  href="/Panel/Profile"
                 >
                   Edit My Profile
                 </a>
@@ -145,7 +145,7 @@ const Account = () =>{
               <li className="account-index-item active">
                 <a
                   className="text-uppercase"
-                  href="/account.html"
+                  href="/Panel/Account"
                 >
                   My Account
                 </a>
@@ -159,7 +159,7 @@ const Account = () =>{
       <div className="media dashboard-users-media">
         <a
           className="edit-account-btn"
-          href="/account.html"
+          href="/Panel/Account"
         >
           <img
             className="avatar rounded-circle mr-3"
@@ -306,7 +306,7 @@ const Account = () =>{
         >
           <a
             className="give-get-button-component give-get-button-hover button primary btn-block"
-            href="/referrals.html"
+            href="/Panel/Referral"
           >
             <div className="d-flex justify-content-center pitch-black align-items-center">
               <img
@@ -387,7 +387,7 @@ const Account = () =>{
           <div className="give-get-button-desktop">
             <a
               className="give-get-button-component give-get-button-hover button primary button-width"
-              href="/referrals.html"
+              href="/Panel/Referral"
             >
               <div className="d-flex justify-content-center pitch-black align-items-center">
                 <img
@@ -409,7 +409,7 @@ const Account = () =>{
         <li className="dashboard-link">
           <a
             className="text-uppercase"
-            href="/dashboard"
+            href="/Panel/Dashboard"
           >
             Dashboard
           </a>
@@ -417,7 +417,7 @@ const Account = () =>{
         <li className="renting-link lending-link">
           <a
             className="text-uppercase"
-            href="/lending.html"
+            href="/Panel/lending"
           >
             <turbo-frame
               complete=""
@@ -432,7 +432,7 @@ const Account = () =>{
         <li className="purchases-link">
           <a
             className="text-uppercase"
-            href="/purchases?page=buyer"
+            href="#"
           >
             <turbo-frame
               complete=""
@@ -447,7 +447,7 @@ const Account = () =>{
         <li className="listings-link">
           <a
             className="text-uppercase"
-            href="/listings.html"
+            href="/Panel/listing"
           >
             Wardrobe
           </a>
@@ -455,7 +455,7 @@ const Account = () =>{
         <li className="messages-link messages_v2-link">
           <a
             className="text-uppercase"
-            href="/messages.html"
+            href="/Panel/Messege"
           >
             {' '}Messages{' '}
             <span
@@ -467,7 +467,7 @@ const Account = () =>{
         <li className="wishlist-link">
           <a
             className="text-uppercase"
-            href="/wishlist.html"
+            href="/Panel/Wishlist"
           >
             Wishlists
           </a>
@@ -475,7 +475,7 @@ const Account = () =>{
         <li className="referrals-link">
           <a
             className="text-uppercase"
-            href="/referrals.html"
+            href="/Panel/Referral"
           >
             Give £10, Get £10
           </a>
@@ -483,7 +483,7 @@ const Account = () =>{
         <li className="profile-link">
           <a
             className="text-uppercase"
-            href="/profile.html"
+            href="/Panel/Profile"
           >
             Edit My Profile
           </a>
@@ -494,7 +494,7 @@ const Account = () =>{
         >
           <a
             className="text-uppercase"
-            href="/account.html"
+            href="/Panel/Account"
           >
             My Account
           </a>
