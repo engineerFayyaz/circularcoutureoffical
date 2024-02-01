@@ -1,13 +1,14 @@
 import React from "react";
-import TopHeader from "../../Components/TopHeader";
-import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
+import Footer from "../../Components/Footer";
+import TopHeader from "../../Components/TopHeader";
 
-const NewArrival=()=>{
-    return(
+const DressGowns = () => {
+
+    return (
         <>
-        <TopHeader/>
-        <div className="main-container collection-search overflow-auto">
+        <TopHeader />
+           <div className="main-container collection-search overflow-auto">
         <div className="search-page">
           <div className="static-page-header-bar">
             <div className="filter-container mx-auto">
@@ -17,7 +18,7 @@ const NewArrival=()=>{
               >
                 <div>
                   <h1 className="title">
-                    New Arrivals
+                    Dress Gowns
                   </h1>
                   <div
                     className="description mt-2 transition collapsed"
@@ -18563,9 +18564,8 @@ const NewArrival=()=>{
         </div>
       </div>
       <EmailSubscription />
-      <Footer/>
-      </>
-
+      <Footer />
+        </>
     )
-};
-export default NewArrival;
+}
+export default DressGowns;
