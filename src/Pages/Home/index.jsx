@@ -343,7 +343,6 @@ const Home = () => {
           </div>
         </div>
        <Footer/>
-        {/* Modal */}
         
       </>
     </>
