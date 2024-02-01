@@ -3,11 +3,12 @@ import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
 
-const NewArrival=()=>{
-    return(
+const JumpSuit = () =>
+{
+    return (
         <>
-        <TopHeader/>
-        <div className="main-container collection-search overflow-auto">
+          <TopHeader />
+           <div className="main-container collection-search overflow-auto">
         <div className="search-page">
           <div className="static-page-header-bar">
             <div className="filter-container mx-auto">
@@ -17,7 +18,7 @@ const NewArrival=()=>{
               >
                 <div>
                   <h1 className="title">
-                    New Arrivals
+                    All JumpSuits
                   </h1>
                   <div
                     className="description mt-2 transition collapsed"
@@ -18563,9 +18564,8 @@ const NewArrival=()=>{
         </div>
       </div>
       <EmailSubscription />
-      <Footer/>
-      </>
-
+      <Footer />
+        </>
     )
-};
-export default NewArrival;
+}
+export default JumpSuit;

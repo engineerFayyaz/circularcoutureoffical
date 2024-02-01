@@ -1,12 +1,12 @@
 import React from "react";
-import TopHeader from "../../Components/TopHeader";
-import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
+import Footer from "../../Components/Footer";
+import TopHeader from "../../Components/TopHeader";
 
-const NewArrival=()=>{
-    return(
+const Clothing = () =>{
+    return (
         <>
-        <TopHeader/>
+        <TopHeader />
         <div className="main-container collection-search overflow-auto">
         <div className="search-page">
           <div className="static-page-header-bar">
@@ -17,7 +17,7 @@ const NewArrival=()=>{
               >
                 <div>
                   <h1 className="title">
-                    New Arrivals
+                    Our All Clothings 
                   </h1>
                   <div
                     className="description mt-2 transition collapsed"
@@ -18562,10 +18562,11 @@ const NewArrival=()=>{
           </div>
         </div>
       </div>
-      <EmailSubscription />
-      <Footer/>
-      </>
-
+        
+        <EmailSubscription />
+        <Footer />
+        </>
     )
-};
-export default NewArrival;
+
+}
+export default Clothing;

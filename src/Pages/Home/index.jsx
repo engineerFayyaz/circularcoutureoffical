@@ -1,7 +1,7 @@
 import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
-
+import EmailSubscription from "../../Components/EmailSubscription";
 const Home = () => {
   return (
     <>
@@ -342,6 +342,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <EmailSubscription />
        <Footer/>
         
       </>

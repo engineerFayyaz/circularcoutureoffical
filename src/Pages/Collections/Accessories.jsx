@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
 
-const NewArrival=()=>{
+const Accessories=()=>{
     return(
         <>
         <TopHeader/>
@@ -17,7 +17,7 @@ const NewArrival=()=>{
               >
                 <div>
                   <h1 className="title">
-                    New Arrivals
+                    Our All Accessories
                   </h1>
                   <div
                     className="description mt-2 transition collapsed"
@@ -18568,4 +18568,4 @@ const NewArrival=()=>{
 
     )
 };
-export default NewArrival;
+export default Accessories;
