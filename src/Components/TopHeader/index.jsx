@@ -399,7 +399,7 @@ const TopHeader =()=>{
                         </a>
                       </li>
                       <li>
-                        <a href="designers.html" className=" d-block w-100">
+                        <a href="/Designer" className=" d-block w-100">
                           Designers
                         </a>
                       </li>
@@ -416,7 +416,7 @@ const TopHeader =()=>{
                       <li>
                         <a
                           className="arrow d-block w-100"
-                          href="/Collections/Clothing"
+                          href="/Collections/Dresses"
                           data-toggle="modal"
                           data-target="#designers_menu"
                         >
@@ -433,7 +433,7 @@ const TopHeader =()=>{
                         </a>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="Edits">
+                        <a className="d-block w-100" href="/Edits">
                           Edits
                         </a>
                       </li>
@@ -452,7 +452,7 @@ const TopHeader =()=>{
                       </li>
                       <li className="devider" />
                       <li>
-                        <a className="d-block w-100" href="/HowToRent">
+                        <a className="d-block w-100" href="/HowToLend">
                           How it works
                         </a>
                       </li>

@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 
-const Lending = () =>{
+const Renting = () =>{
 
     return (
         <>
@@ -644,16 +644,16 @@ const Lending = () =>{
         <div className="row">
           <div className="col-6 text-right left-button">
             <a
-              className="btn btn-primary -dark-red mb-2 button-width"
-              href="#"
+              className="btn btn-outline-primary -dark-red mb-2 button-width"
+              href="/Panel/Lending"
             >
               Lender View
             </a>
           </div>
           <div className="col-6 text-left right-button">
             <a
-              className="btn btn-outline-primary -dark-red mb-2 button-width"
-              href="/panel/Renting"
+              className="btn btn-primary -dark-red mb-2 button-width"
+              href="/renting"
             >
               Renter View
             </a>
@@ -664,7 +664,7 @@ const Lending = () =>{
         <div className="col-lg-12">
           <div className="dashboard-no-data text-center text-uppercase">
             <h5 className="mb-4">
-              Once you start lending,{' '}
+              Once you start Renting,{' '}
               <br />
               all your orders will be accessible here.{' '}
             </h5>
@@ -687,4 +687,4 @@ const Lending = () =>{
     )
 }
 
-export default Lending;
+export default Renting;

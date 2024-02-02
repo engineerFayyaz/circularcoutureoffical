@@ -650,7 +650,7 @@ const Listing = () =>{
             >
               <a
                 className="btn btn-primary -dark-red py-2 mb-2 ml-2 desktop-only"
-                href="/listings.html/new"
+                href="/ListingNew"
               >
                 List a new item
               </a>
@@ -680,7 +680,7 @@ const Listing = () =>{
                     </h5>
                     <a
                       className="btn btn-primary -dark-red px-5"
-                      href="/listings.html/new"
+                      href="/ListingNew"
                     >
                       LIST A NEW ITEM
                     </a>

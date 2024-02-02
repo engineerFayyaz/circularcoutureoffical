@@ -32,7 +32,7 @@ const HowToLend = () =>{
           <div className="">
             <a
               className="btn btn-primary -white rounded-0 text-uppercase "
-              href="#"
+              href="/About"
             >
               LEARN MORE
             </a>
@@ -172,9 +172,9 @@ const HowToLend = () =>{
     </div>
   </section>
   <div className="start-lending text-center my-5">
-    <button className="px-4 bg-light text-dark py-1">
-      {' '}START LENDING
-    </button>
+   <a href="/ListingNew"><button className="px-4 bg-light text-dark py-1">
+      START LENDING
+    </button> </a>
   </div>
   <section>
     <div className=" component-container-2 mt-5">
@@ -216,7 +216,7 @@ const HowToLend = () =>{
             <div className="button-component ">
               <a
                 className="btn rounded-0 text-uppercase header-btn ml-4"
-                href="/HowToLend"
+                href="/ListingNew"
               >
                 START LENDING
               </a>

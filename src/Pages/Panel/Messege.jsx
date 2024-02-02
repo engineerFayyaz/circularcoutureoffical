@@ -691,7 +691,7 @@ const Messege = () =>{
                 </p>
                 <a
                   className="btn btn-primary -dark-red d-block mx-auto"
-                  href="/collections/new_arrivals"
+                  href="/collections/newarrival"
                 >
                   FIND AN ITEM
                 </a>

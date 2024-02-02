@@ -43,6 +43,8 @@ import Membership from "./Pages/Membership";
 import SellingOrRenting from "./Pages/SellingOrRenting";
 import Sustainability from "./Pages/Sustainability";
 import ProductDetail from "./Pages/ProductDetail";
+import ListingNew from "./Pages/ListingNew";
+import Renting from "./Pages/Panel/Renting";
 
 const ProjectRoutes =()=>{
     return(
@@ -92,6 +94,8 @@ const ProjectRoutes =()=>{
         <Route path="/SellingorRenting" element={<SellingOrRenting />} /> 
         <Route path="/Sustainability" element={<Sustainability />} /> 
         <Route path="/ProductDetail" element={<ProductDetail />} /> 
+        <Route path="/ListingNew" element={<ListingNew />} /> 
+        <Route path="/Panel/Renting" element={<Renting />} /> 
 
         </Routes>
         </Router>
