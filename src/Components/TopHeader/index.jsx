@@ -1531,14 +1531,19 @@ const TopHeader =()=>{
                                 </label>
                               </div>
                             </div>
-                            <input
+                          
+                            {/* <input
                               type="submit"
                               name="commit"
                               defaultValue="sign in"
                               className="btn btn-primary btn-block -dark-red mb-4 js-auth-button"
                               data-disable-with="signing in..."
                               data-target="sign-in.button"
-                            />
+                            /> */}
+                           <a href="/panel/dashboard"
+                           className="btn btn-primary btn-block -dark-red mb-4 "
+                           type="submit"
+                           >Sign In</a>
                           </form>
                         </div>
                         <div className="col-lg-12 text-uppercase text-center">

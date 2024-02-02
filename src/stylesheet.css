@@ -58386,21 +58386,21 @@ button:disabled,
 
 }
 
-.collage-main .collage-single .collage-content {
-    padding-left: 30rem;
+.collage-main .collage-single .collage-content-home {
+    padding-left: 35rem !important;
 }
 
 .collage-main .collage-single .collage-content .title {
     color: black;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 50px;
     text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 4px;
 }
 
 .collage-main .collage-single .collage-content .btn {
-    font-size: 15px;
+    font-size: 17px;
     color: black;
     font-weight: 600;
 }

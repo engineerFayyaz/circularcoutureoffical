@@ -249,7 +249,7 @@ const Home = () => {
             <div className="container collage-main my-5">
               <div className="row collage-single d-flex align-items-center justify-content-center">
                 <div
-                  className="collage-content text-center"
+                  className="collage-content collage-content-home text-center"
                   style={{ paddingLeft: "35rem !important" }}
                 >
                   <h4 className="title">AUTUMN '23</h4>

@@ -50,7 +50,7 @@ const HowToLend = () =>{
               {' '}HOW TO SELL
             </button>
           </a>
-          <a href="/HowToLend">
+          <a href="/HowToLend" className="pl-1">
             <button className="px-4 bg-light text-light py-1 active">
               {' '}HOW TO LEND
             </button>
