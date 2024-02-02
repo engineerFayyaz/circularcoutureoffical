@@ -32,7 +32,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Sky-Edits"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/yt4vncneg05yydin5paqosfcmscu)',
                     backgroundSize: 'cover',
@@ -43,7 +43,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Sky-Edits">
                   <h3>
                     The Ski Edit{' '}
                   </h3>
@@ -57,7 +57,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Nap-Edits"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/94hhuayyz4rleglibem8r6gqj1uw)',
                     backgroundSize: 'cover',
@@ -68,7 +68,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Nap-Edits">
                   <h3>
                     NET-A-PORTER
                   </h3>

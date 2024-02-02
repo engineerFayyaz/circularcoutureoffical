@@ -45,6 +45,8 @@ import Sustainability from "./Pages/Sustainability";
 import ProductDetail from "./Pages/ProductDetail";
 import ListingNew from "./Pages/ListingNew";
 import Renting from "./Pages/Panel/Renting";
+import SkyEdits from "./Pages/Edits/Sky-Edits";
+import NapEdits from "./Pages/Edits/Nap-Edits";
 
 const ProjectRoutes =()=>{
     return(
@@ -96,7 +98,9 @@ const ProjectRoutes =()=>{
         <Route path="/ProductDetail" element={<ProductDetail />} /> 
         <Route path="/ListingNew" element={<ListingNew />} /> 
         <Route path="/Panel/Renting" element={<Renting />} /> 
-
+        <Route path="/Edits/Sky-Edits" element={<SkyEdits />} /> 
+        <Route path="/Edits/Nap-Edits" element={<NapEdits />} /> 
+        
         </Routes>
         </Router>
     </React.Suspense>
