@@ -47,6 +47,16 @@ import ListingNew from "./Pages/ListingNew";
 import Renting from "./Pages/Panel/Renting";
 import SkyEdits from "./Pages/Edits/Sky-Edits";
 import NapEdits from "./Pages/Edits/Nap-Edits";
+import NitWear from "./Pages/Edits/Nit-Wear";
+import WorkwearSuiting from "./Pages/Edits/Workwear-Suiting";
+import PartyEdits from "./Pages/Edits/Party-Edits";
+import HotCircular from "./Pages/Edits/Hot-On-Circular";
+import DayTimeParty from "./Pages/Edits/Day-Time-Party-Edit";
+import BlackTie from "./Pages/Edits/Black-Tie-Edit";
+import NextBirthday from "./Pages/Edits/Next-Birthday";
+import BrideEdit from "./Pages/Edits/Bridal-Edit";
+import BridesmaidEdit from "./Pages/Edits/Bridesmaid-Edit";
+import MotherBride from "./Pages/Edits/Mother-Bride";
 
 const ProjectRoutes =()=>{
     return(
@@ -101,6 +111,19 @@ const ProjectRoutes =()=>{
         <Route path="/Panel/Renting" element={<Renting />} /> 
         <Route path="/Edits/Sky-Edits" element={<SkyEdits />} /> 
         <Route path="/Edits/Nap-Edits" element={<NapEdits />} /> 
+        <Route path="/Edits/Nit-Wear" element={<NitWear />} /> 
+        <Route path="/Edits/Workwear-Suiting" element={<WorkwearSuiting />} /> 
+        <Route path="/Edits/Party-Edits" element={<PartyEdits />} /> 
+        <Route path="/Edits/Hot-On-Circular" element={<HotCircular />} /> 
+        <Route path="/Edits/Day-Time-Party-Edit" element={<DayTimeParty />} /> 
+        <Route path="/Edits/Black-Tie-Edit" element={<BlackTie />} /> 
+        <Route path="/Edits/Next-Birthday" element={<NextBirthday />} /> 
+        <Route path="/Edits/Bride-Edit" element={<BrideEdit />} /> 
+        <Route path="/Edits/Bridesmaid-Edit" element={<BridesmaidEdit />} /> 
+        <Route path="/Edits/Mother-Bride" element={<MotherBride />} /> 
+
+
+
 
         </Routes>
         </Router>

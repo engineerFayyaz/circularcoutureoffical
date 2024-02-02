@@ -82,7 +82,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Nit-Wear"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/s1glwgyuntlkzwck1mo8xrkl74ka)',
                     backgroundSize: 'cover',
@@ -93,7 +93,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Nit-Wear">
                   <h3>
                     Knitwear
                   </h3>
@@ -107,7 +107,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Workwear-Suiting"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/s2i2148s8qvm5j7l04isacnc5d6b)',
                     backgroundSize: 'cover',
@@ -118,7 +118,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Workwear-Suiting">
                   <h3>
                     Workwear Suiting
                   </h3>
@@ -132,7 +132,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Party-Edits"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/8dkpnokcnmbrwm4upl4dfna4hbul)',
                     backgroundSize: 'cover',
@@ -143,7 +143,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Party-Edits">
                   <h3>
                     The Party Edit
                   </h3>
@@ -157,7 +157,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Hot-On-Circular"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/qcql5ezrq5vq0y57tyl6d3ke07r4)',
                     backgroundSize: 'cover',
@@ -168,7 +168,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Hot-On-Circular">
                   <h3>
                     Hot On CIRCULAR COUTURE
                   </h3>
@@ -182,7 +182,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Day-Time-Party-Edit"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/ix6v29cjv3dzfngow02dmefxy315)',
                     backgroundSize: 'cover',
@@ -193,7 +193,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Day-Time-Party-Edit">
                   <h3>
                     The Daytime Party Edit
                   </h3>
@@ -207,7 +207,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Black-Tie-Edit"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/pbps4y0eqmdtbhf9fxmwgci38htj)',
                     backgroundSize: 'cover',
@@ -218,7 +218,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Black-Tie-Edit">
                   <h3>
                     Black Tie
                   </h3>
@@ -232,7 +232,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Next-Birthday"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/ukqnt49bmutnwhglty70kmp52gti)',
                     backgroundSize: 'cover',
@@ -243,7 +243,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Next-Birthday">
                   <h3>
                     Your Next Birthday Outfit
                   </h3>
@@ -257,7 +257,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Bride-Edit"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/532nt9g2aqdw2pjytzvmmpbm6skv)',
                     backgroundSize: 'cover',
@@ -268,7 +268,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Bride-Edit">
                   <h3>
                     The Bride Edit
                   </h3>
@@ -282,7 +282,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Bridesmaid-Edit"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/6porgr96ubeg869zxux4cr1xxi66)',
                     backgroundSize: 'cover',
@@ -293,7 +293,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Bridesmaid-Edit">
                   <h3>
                     The Bridesmaid Edit
                   </h3>
@@ -307,7 +307,7 @@ const Edits = () => {
               <div className="card-body p-0">
                 <a
                   className="image-card edits-one mb-0"
-                  href="#"
+                  href="/Edits/Mother-Bride"
                   style={{
                     backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_544,q_auto:best/y6jbaebro0nfsczalbt05cmy8dny)',
                     backgroundSize: 'cover',
@@ -318,7 +318,7 @@ const Edits = () => {
                 </a>
               </div>
               <div className="card-footer rounded-0 p-0 border-0">
-                <a href="#">
+                <a href="/Edits/Mother-Bride">
                   <h3>
                     Mother of the Bride Outfits
                   </h3>
