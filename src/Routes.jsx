@@ -53,6 +53,7 @@ const ProjectRoutes =()=>{
     <React.Suspense fallback={<>Loading...</>}>
         <Router>
         <Routes>
+        <Route path="" element={<Home />} />  
         <Route path="/Home" element={<Home />} />  
         <Route path="/Collections/NewArrival" element={<NewArrival/>}/>     
         <Route path="/Collections/Accessories" element={<Accessories/>} />       
@@ -100,7 +101,7 @@ const ProjectRoutes =()=>{
         <Route path="/Panel/Renting" element={<Renting />} /> 
         <Route path="/Edits/Sky-Edits" element={<SkyEdits />} /> 
         <Route path="/Edits/Nap-Edits" element={<NapEdits />} /> 
-        
+
         </Routes>
         </Router>
     </React.Suspense>
