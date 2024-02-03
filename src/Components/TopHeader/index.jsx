@@ -147,7 +147,7 @@ const TopHeader =()=>{
                     data-target-link-content=".link-content.-clothing"
                     data-action="mouseover->mega-menu-contents#showMenu"
                     data-target-mega-menu="clothing"
-                    href="javascript:void(0);"
+                    href="/Collections/clothing"
                   >
                     Clothing
                   </a>

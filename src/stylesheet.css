@@ -9707,15 +9707,15 @@ a.text-dark:focus {
 
 @font-face {
     font-family: 'Lato-web', sans-serif;
-   }
+}
 
 @font-face {
     font-family: 'Unthrift';
-   }
+}
 
 @font-face {
     font-family: 'Avenir Next';
-     font-weight: bold;
+    font-weight: bold;
     font-style: normal
 }
 
@@ -9727,19 +9727,19 @@ a.text-dark:focus {
 
 @font-face {
     font-family: 'Avenir Next Demi';
-     font-weight: 600;
+    font-weight: 600;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next';
-   font-weight: 900;
+    font-weight: 900;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next';
-     font-weight: normal;
+    font-weight: normal;
     font-style: normal
 }
 
@@ -9751,25 +9751,25 @@ a.text-dark:focus {
 
 @font-face {
     font-family: 'Avenir Next';
-     font-weight: 900;
+    font-weight: 900;
     font-style: normal
 }
 
 @font-face {
     font-family: 'Avenir Next';
-     font-weight: normal;
+    font-weight: normal;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next';
-     font-weight: bold;
+    font-weight: bold;
     font-style: italic
 }
 
 @font-face {
     font-family: 'Avenir Next Ultra';
-      font-weight: 200;
+    font-weight: 200;
     font-style: normal
 }
 
@@ -10078,13 +10078,14 @@ body.component-based-page h4 {
 }
 
 .slick-loading .slick-list {
-    background: #fff }
+    background: #fff
+}
 
 @font-face {
     font-family: 'slick';
     font-weight: normal;
     font-style: normal;
-   }
+}
 
 .slick-prev,
 .slick-next {
@@ -12702,7 +12703,7 @@ div.component.input.icon.-pounds::after {
     position: absolute;
     left: 12px;
     top: 12px;
-        background-size: contain
+    background-size: contain
 }
 
 div.component.input.icon.-pounds>.component.default-colour {
@@ -15804,7 +15805,7 @@ hr {
 
 .btn-mobile-map.shut-map {
     right: -100px;
-     background-size: 25px
+    background-size: 25px
 }
 
 @media (max-width: 767.98px) {
@@ -16249,7 +16250,7 @@ hr {
 
 .checkbox-toggle .checkbox:before {
     -moz-appearance: initial;
-  visibility: visible;
+    visibility: visible;
     position: absolute;
     top: -1px
 }
@@ -20029,7 +20030,7 @@ hr {
 }
 
 .profile-images-wrapper {
-     background-size: 50%;
+    background-size: 50%;
     border-radius: 50%;
     margin-bottom: 20px;
     width: 100%;
@@ -30565,7 +30566,7 @@ body.regular-backdrop .modal-backdrop {
 }
 
 .request-form .request-input.-with-date-icon {
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: 96% 50%;
     background-size: 12px;
     padding: 9px 0px 11px 17px;
@@ -36493,19 +36494,21 @@ img {
 .fixed-top {
     transition: transform 0.4s
 }
+
 .fixed-top {
-    .top-header{
+    .top-header {
         background-color: black !important;
     }
-.four-icon{
-    gap: 13px;
-    padding-right: 20px;
 
-    i{
-        color: white;
-        font-size: 16px;
+    .four-icon {
+        gap: 13px;
+        padding-right: 20px;
+
+        i {
+            color: white;
+            font-size: 16px;
+        }
     }
-}
 }
 
 .scroll-down {
@@ -37330,8 +37333,7 @@ html .ui-button.ui-state-disabled:active,
     background-position: 20px center
 }
 
-.input-icon.-link {
-   }
+.input-icon.-link {}
 
 div#uk-mobile-input span.input-group-text {
     color: #fefdfd;
@@ -50403,8 +50405,7 @@ div#uk-mobile-input span.mobile-input-system-requirement {
     background-position: 20px center
 }
 
-.dashboard-page .input-icon.-link {
-   }
+.dashboard-page .input-icon.-link {}
 
 .dashboard-page .referral-link {
     background-color: #FAF9F7 !important
@@ -58617,14 +58618,14 @@ button:disabled,
 
 /* accordian css */
 /* Accordion container */
-  
-  /* Accordion item */
-  .accordion-item {
+
+/* Accordion item */
+.accordion-item {
     border-bottom: 1px solid lightgray;
-  }
-  
-  /* Accordion button */
-  .accordion button {
+}
+
+/* Accordion button */
+.accordion button {
     position: relative;
     display: block;
     text-align: left;
@@ -58637,25 +58638,26 @@ button:disabled,
     border: none;
     background: none;
     outline: none;
-  }
-  
-  /* Accordion button hover and focus styles */
-  .accordian-main h2{
+}
+
+/* Accordion button hover and focus styles */
+.accordian-main h2 {
     font-family: 'Baskervville', serif;
-  }
-  .accordion button:hover,
-  .accordion button:focus {
+}
+
+.accordion button:hover,
+.accordion button:focus {
     cursor: pointer;
     color: black;
-  }
-  
-  /* Accordion title */
-  .accordion .accordion-title {
+}
+
+/* Accordion title */
+.accordion .accordion-title {
     padding: 1em 1.5em 1em 0;
-  }
-  
-  /* Accordion icon */
-  .accordion .icon {
+}
+
+/* Accordion icon */
+.accordion .icon {
     display: inline-block;
     position: absolute;
     top: 18px;
@@ -58664,10 +58666,10 @@ button:disabled,
     height: 22px;
     border: 1px solid;
     border-radius: 22px;
-  }
-  
-  /* Accordion icon elements */
-  .accordion .icon::before {
+}
+
+/* Accordion icon elements */
+.accordion .icon::before {
     display: block;
     position: absolute;
     content: '';
@@ -58676,9 +58678,9 @@ button:disabled,
     width: 10px;
     height: 2px;
     background: currentColor;
-  }
-  
-  .accordion .icon::after {
+}
+
+.accordion .icon::after {
     display: block;
     position: absolute;
     content: '';
@@ -58687,60 +58689,62 @@ button:disabled,
     width: 2px;
     height: 10px;
     background: currentColor;
-  }
-  
-  /* Accordion content */
-  .accordion-content {
+}
+
+/* Accordion content */
+.accordion-content {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
-  }
-  
-  /* Accordion content when expanded */
-  .accordion button[aria-expanded='true'] + .accordion-content {
+}
+
+/* Accordion content when expanded */
+.accordion button[aria-expanded='true']+.accordion-content {
     opacity: 1;
     max-height: 9em;
-  }
-  
-  /* Accordion content paragraph */
-  .accordion-content p {
+}
+
+/* Accordion content paragraph */
+.accordion-content p {
     font-size: 1rem;
     font-weight: 300;
     margin: 1em 0;
     color: black;
 
 
-  }
-  
-  /* Accordion button when expanded */
-  .accordion button[aria-expanded='true'] {
-    color: #292929;
-  }
-  
-  /* Accordion icon after expansion */
-  .accordion button[aria-expanded='true'] .icon::after {
-    width: 0;
-  }
+}
 
-  button.bg-light{
+/* Accordion button when expanded */
+.accordion button[aria-expanded='true'] {
+    color: #292929;
+}
+
+/* Accordion icon after expansion */
+.accordion button[aria-expanded='true'] .icon::after {
+    width: 0;
+}
+
+button.bg-light {
     background-color: white !important;
     color: black !important;
     border: 2px solid black !important;
     transition: all 300ms ease-in-out;
     cursor: pointer;
-  }
-  button.bg-light.active{
+}
+
+button.bg-light.active {
     background-color: black !important;
     color: white !important;
-  }
-  button.bg-light:hover{
-    background-color:black !important;
+}
+
+button.bg-light:hover {
+    background-color: black !important;
     color: white !important;
-  }
-  
-  
+}
+
+
 /* bilal working */
 .autumn-button span {
     position: relative;
@@ -58769,9 +58773,10 @@ button:disabled,
 
 }
 
-.guest-list-button{
+.guest-list-button {
     align-items: center !important;
 }
+
 .guest-list-button h1 {
     display: flex;
     justify-content: center;
@@ -58790,15 +58795,17 @@ button:disabled,
     border-bottom: 2px solid black;
     transition: all 300ms ease-in-out;
 }
-.guest-list-button input:focus{
+
+.guest-list-button input:focus {
     /* border: none; */
     transform: scale(1.01);
     outline: none !important;
 }
 
-.guest-list-button a{
+.guest-list-button a {
     width: 150px;
 }
+
 .guest-list-button button {
     width: 150px;
     display: flex;
@@ -58811,7 +58818,7 @@ button:disabled,
     font-family: sans-serif;
     transition: all 300ms ease-in-out;
     cursor: pointer;
-    padding: 6px 0px  !important;
+    padding: 6px 0px !important;
 }
 
 .guest-list-button button:hover {
@@ -58836,9 +58843,11 @@ button:disabled,
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
 }
-.three-btn-step{
+
+.three-btn-step {
     gap: 10px;
 }
+
 .three-btn-step button {
     background-color: white !important;
     color: black !important;
@@ -58848,14 +58857,17 @@ button:disabled,
     padding: 5px 30px;
     width: 150px;
 }
-.three-btn-step button.active{
+
+.three-btn-step button.active {
     background-color: black !important;
     color: white !important;
 }
-.three-btn-step button:hover{
+
+.three-btn-step button:hover {
     background-color: black !important;
     color: white !important;
 }
+
 .step-one {
     width: 90%;
     margin: 0 auto;
@@ -58951,13 +58963,16 @@ button:disabled,
     font-weight: 600;
 
 }
-button:focus{
+
+button:focus {
     border: none !important;
 }
-.question-mark{
+
+.question-mark {
     background: none !important;
     border: none !important;
 }
+
 .question-mark i {
     width: 60px;
     background-color: black !important;
@@ -58966,7 +58981,7 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none !important;
+    border: none !important;
 
 }
 
@@ -59181,4 +59196,263 @@ button:focus{
     letter-spacing: 2px;
     /* text-transform: uppercase; */
     display: block
+}
+
+.contact-navbar {
+    border-bottom: 0.5px solid rgba(145, 145, 145, 0.315);
+
+    .navbar a {
+        color: brown;
+        transition: all .3s ease-in-out;
+    }
+}
+
+.contact-main .contact-search .breadcrumb {
+
+    a {
+        color: brown;
+    }
+
+    span {
+        margin-left: 3px;
+    }
+
+}
+
+.contact-main .contact-search .search {
+    i {
+        position: relative;
+        font-size: 18px;
+        color: rgba(110, 109, 109, 0.735);
+        left: 2rem;
+    }
+
+    input {
+        border: 0.4px solid rgba(145, 145, 145, 0.42) !important;
+        outline: none !important;
+        width: 300px;
+        padding: 5px;
+        padding-left: 2.6rem;
+        border-radius: 20px;
+        color: rgba(110, 109, 109, 0.735);
+    }
+}
+
+.contact-main .contact-info {
+    width: 58%;
+
+    form {
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            border: 0.4px solid rgba(145, 145, 145, 0.42) !important;
+            outline: none !important;
+            padding: 5px;
+        }
+
+        label {
+            line-height: 10px;
+            color: rgba(39, 39, 39, 0.849);
+        }
+
+        p {
+            font-size: 12.5px;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+.contact-footer {
+    border-top: 0.5px solid rgba(145, 145, 145, 0.315);
+
+    a {
+        color: black;
+    }
+}
+
+.faq-main .single-banner {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../public/images/background-images/singlejpg.jpg);
+
+    i {
+        top: 47.3%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 31%;
+        z-index: 1;
+        font-size: 20px;
+        color: #777;
+    }
+
+    input {
+        width: 500px;
+        border: 1px solid white;
+        background: white;
+        border-radius: 30px;
+        box-sizing: border-box;
+        color: #666;
+        height: 40px;
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+}
+
+.blocks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+.blocks-item {
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex: 1 0 340px;
+    margin: 0 0 30px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.blocks-item:hover,
+.blocks-item:focus,
+.blocks-item:active {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.blocks-item:hover *,
+.blocks-item:focus *,
+.blocks-item:active * {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.blocks-item-link {
+    color: rgba(0, 0, 0, 1);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    border-radius: inherit;
+}
+
+.blocks-item-title {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.promoted-articles {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0px !important;
+}
+
+.promoted-articles-item {
+    align-self: flex-end;
+    flex: 0 0 auto;
+    padding-right: 30px;
+    width: 33%;
+}
+
+.promoted-articles-item a {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    color: rgba(36, 30, 25, 1);
+}
+
+.promoted-articles-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:500px) and (min-width:300px) {
+    .contact-navbar .navbar {
+        flex-direction: column;
+        justify-content: center !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+
+        img {
+            width: 230px;
+
+        }
+
+    }
+
+    .contact-main {
+        padding: 1rem !important;
+    }
+
+    .contact-main .contact-search {
+        flex-direction: column;
+        justify-content: start !important;
+        align-items: start !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+    }
+
+    .contact-main .contact-search .search {
+        i {
+            left: 1.4rem;
+            top: 0rem;
+            font-size: 15px;
+        }
+
+        input {
+
+            width: 230px;
+            padding: 3px;
+            padding-left: 2rem;
+        }
+    }
+
+    .contact-main .contact-info {
+        width: 100%;
+        margin-top: 30px;
+        ;
+
+        form {
+
+            input,
+            select,
+            textarea {
+                width: 90%;
+                padding: 5px;
+            }
+
+            label {
+                line-height: 10px;
+                color: rgba(39, 39, 39, 0.849);
+            }
+
+            p {
+                font-size: 12.5px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .faq-main .single-banner{
+        input{
+            width: 350px;
+        }
+    } 
+    .promoted-articles-item{
+        width: 100% !important;
+    }
+
 }

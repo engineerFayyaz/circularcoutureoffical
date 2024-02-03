@@ -3696,7 +3696,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -3804,7 +3804,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -3912,7 +3912,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4020,7 +4020,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4128,7 +4128,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4262,7 +4262,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4370,7 +4370,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4478,7 +4478,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4586,7 +4586,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4694,7 +4694,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4802,7 +4802,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4910,7 +4910,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5126,7 +5126,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5234,7 +5234,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5342,7 +5342,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5450,7 +5450,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5558,7 +5558,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5666,7 +5666,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5774,7 +5774,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5882,7 +5882,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5990,7 +5990,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6098,7 +6098,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6206,7 +6206,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6314,7 +6314,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6422,7 +6422,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6530,7 +6530,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6638,7 +6638,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6746,7 +6746,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6988,7 +6988,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7096,7 +7096,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7204,7 +7204,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7312,7 +7312,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7420,7 +7420,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7528,7 +7528,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7636,7 +7636,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7744,7 +7744,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7852,7 +7852,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7960,7 +7960,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8068,7 +8068,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8176,7 +8176,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8284,7 +8284,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8392,7 +8392,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8500,7 +8500,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8611,7 +8611,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8719,7 +8719,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8827,7 +8827,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8935,7 +8935,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9043,7 +9043,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9151,7 +9151,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9259,7 +9259,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9367,7 +9367,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9501,7 +9501,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9609,7 +9609,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9936,7 +9936,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10044,7 +10044,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10152,7 +10152,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10260,7 +10260,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10368,7 +10368,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10476,7 +10476,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10582,7 +10582,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10690,7 +10690,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10798,7 +10798,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10904,7 +10904,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11010,7 +11010,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11118,7 +11118,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11226,7 +11226,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11335,7 +11335,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11443,7 +11443,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11549,7 +11549,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11869,7 +11869,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11977,7 +11977,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12327,7 +12327,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12435,7 +12435,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12543,7 +12543,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12651,7 +12651,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12759,7 +12759,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12867,7 +12867,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12975,7 +12975,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13083,7 +13083,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13191,7 +13191,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13299,7 +13299,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13407,7 +13407,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13515,7 +13515,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13623,7 +13623,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13731,7 +13731,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13839,7 +13839,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13950,7 +13950,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14084,7 +14084,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14192,7 +14192,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14300,7 +14300,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14408,7 +14408,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14516,7 +14516,7 @@ const Clothing = () =>{
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Top Lender
+                                Managed
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14647,7 +14647,7 @@ const Clothing = () =>{
                     WHAT ARE TOP LENDERS?
                   </h3>
                   <p>
-                    Top Lenders are a group of some of the most trusted and best                  performing members of the circular-couture marketplace. You can easily                  recognise them by looking for the badge on item and profile                  pages. You can also filter the marketplace to only show items                  from Top Lender wardrobes.
+                    Top Lenders are a group of some of the most trusted and best                  performing members of the circular-couture marketplace. You can easily                  recognise them by looking for the badge on item and profile                  pages. You can also filter the marketplace to only show items                  from Managed wardrobes.
                   </p>
                 </div>
               </div>
@@ -14904,7 +14904,7 @@ const Clothing = () =>{
                                   WHAT ARE TOP LENDERS?
                                 </h3>
                                 <p>
-                                  Top Lenders are a group of some of the most                                trusted and best performing members of the circular-couture                                marketplace. You can easily recognise them by                                looking for the badge on item and profile pages.                                You can also filter the marketplace to only show                                items from Top Lender wardrobes.
+                                  Top Lenders are a group of some of the most                                trusted and best performing members of the circular-couture                                marketplace. You can easily recognise them by                                looking for the badge on item and profile pages.                                You can also filter the marketplace to only show                                items from Managed wardrobes.
                                 </p>
                               </div>
                             </div>

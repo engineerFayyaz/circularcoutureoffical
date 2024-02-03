@@ -57,6 +57,19 @@ import NextBirthday from "./Pages/Edits/Next-Birthday";
 import BrideEdit from "./Pages/Edits/Bridal-Edit";
 import BridesmaidEdit from "./Pages/Edits/Bridesmaid-Edit";
 import MotherBride from "./Pages/Edits/Mother-Bride";
+import Contact from "./Pages/Contact/Contact";
+import Brands from "./Pages/Brands";
+import Buyer from "./Pages/Panel/Buyer";
+import Seller from "./Pages/Panel/Seller";
+import Community from "./Pages/Community";
+import ReferFriend from "./Pages/ReferFriend";
+import Press from "./Pages/Press";
+import FAQ from "./Pages/FAQ";
+import Acler from "./Pages/Brands/Acler";
+import Aje from "./Pages/Brands/Aje";
+import Alighieri from "./Pages/Brands/Alighieri";
+import AmandaUprichard from "./Pages/Brands/Amanda-Uprichard";
+import Amur from "./Pages/Brands/Amur";
 
 const ProjectRoutes =()=>{
     return(
@@ -109,6 +122,8 @@ const ProjectRoutes =()=>{
         <Route path="/ProductDetail" element={<ProductDetail />} /> 
         <Route path="/ListingNew" element={<ListingNew />} /> 
         <Route path="/Panel/Renting" element={<Renting />} /> 
+        <Route path="/Panel/Buyer" element={<Buyer />} /> 
+        <Route path="/Panel/Seller" element={<Seller />} /> 
         <Route path="/Edits/Sky-Edits" element={<SkyEdits />} /> 
         <Route path="/Edits/Nap-Edits" element={<NapEdits />} /> 
         <Route path="/Edits/Nit-Wear" element={<NitWear />} /> 
@@ -121,8 +136,18 @@ const ProjectRoutes =()=>{
         <Route path="/Edits/Bride-Edit" element={<BrideEdit />} /> 
         <Route path="/Edits/Bridesmaid-Edit" element={<BridesmaidEdit />} /> 
         <Route path="/Edits/Mother-Bride" element={<MotherBride />} /> 
+        <Route path="/Contact" element={<Contact />} /> 
+        <Route path="/Brands" element={<Brands />} /> 
+        <Route path="/Brands/Acler" element={<Acler />} /> 
+        <Route path="/Brands/Amur" element={<Amur />} /> 
 
-
+        <Route path="/Brands/Aje" element={<Aje />} /> 
+        <Route path="/Brands/Alighieri" element={<Alighieri />} /> 
+        <Route path="/Brands/Amanda-Uprichard" element={<AmandaUprichard />} /> 
+        <Route path="/Community" element={<Community />} /> 
+        <Route path="/Refer-a-Friend" element={<ReferFriend />} /> 
+        <Route path="/Press" element={<Press />} /> 
+        <Route path="/FAQ" element={<FAQ />} /> 
 
 
         </Routes>
