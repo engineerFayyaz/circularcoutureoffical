@@ -59182,3 +59182,55 @@ button:focus{
     /* text-transform: uppercase; */
     display: block
 }
+
+
+/* Default styles */
+.me-5.four-icon.d-flex.align-items-center.gap-9.mt-3 {
+    gap: 11px;
+    color: white !important;
+}
+
+/* Mobile styles for screens up to 575px */
+@media (max-width: 575px) {
+    .me-5.four-icon.d-flex.align-items-center.gap-9.mt-3 {
+        gap: 8px;
+        margin-top: 10px;
+        /* Add any other specific styles for mobile screens */
+    }
+}
+
+/* Small tablet styles for screens between 576px and 767px */
+@media (min-width: 576px) and (max-width: 767px) {
+    .me-5.four-icon.d-flex.align-items-center.gap-9.mt-3 {
+        gap: 10px;
+        margin-top: 15px;
+        /* Add any other specific styles for small tablet screens */
+    }
+}
+
+/* Medium tablet styles for screens between 768px and 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .me-5.four-icon.d-flex.align-items-center.gap-9.mt-3 {
+        gap: 12px;
+        margin-top: 20px;
+        /* Add any other specific styles for medium tablet screens */
+    }
+}
+
+/* Large tablet/desktop styles for screens between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .me-5.four-icon.d-flex.align-items-center.gap-9.mt-3 {
+        gap: 15px;
+        margin-top: 25px;
+        /* Add any other specific styles for large tablet/desktop screens */
+    }
+}
+
+/* Large desktop styles for screens 1200px and above */
+@media (min-width: 1200px) {
+    .me-5.four-icon.d-flex.align-items-center.gap-9.mt-3 {
+        /* You may add additional styles for larger screens if needed */
+        gap: 15px;
+        margin-top: 25px;
+    }
+}
