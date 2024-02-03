@@ -3,298 +3,267 @@ import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
 
-const Resale = () =>
-{
-    return (
+const Amur=()=>{
+    return(
         <>
-          <TopHeader />
-           <div className="main-container collection-search overflow-auto">
+        <TopHeader/>
+        <div className="main-container collection-search overflow-auto">
         <div className="search-page">
-          <div className="static-page-header-bar">
-            <div className="filter-container mx-auto">
-              <div
-                className="header-contents d-flex"
-                data-controller="plp--description"
-              >
-                <div>
-                  <h1 className="title">
-                    Resaling
-                  </h1>
-                  <div
-                    className="description mt-2 transition collapsed"
-                    data-target="plp--description.content"
-                  >
-                    <div className="trix-content">
-                      Checkout the trending new_arrivals from circular circular-couture
-                    </div>
-                  </div>
-                </div>
-                <p
-                  className="description-accordion collapsed d-none"
-                  data-action="click->plp--description#toggleAccordion"
-                  data-target="plp--description.toggle"
-                >
-                  <img
-                    alt="An icon of a chevron right"
-                    className="icon"
-                    height="21"
-                    src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-right-4d9dc1896a4765e272ce510a3e1d363f.svg"
-                    width="21"
-                  />
-                </p>
-              </div>
+        <div className="brands-profile position-relative">
+  <div className="text-center text-uppercase header">
+    <img
+      alt="brand logo"
+      className="rounded-circle"
+      height="66"
+      src="https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_auto,h_66,q_auto,w_66/igyfdkbran7vv7ykmx6hxyp8o6ft"
+      width="66"
+    />
+    <h1 className="title">
+      Amur
+    </h1>
+    <a
+      className="star-count"
+      data-action="filter-reviews#scrollToReviewSection"
+      data-controller="filter-reviews"
+      href="#"
+    >
+      <div className="brands-star-rating">
+        <svg
+          height="16.39px"
+          viewBox="182.483 291.768 20 19.02"
+          width="17.24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            stroke="#626262"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={{}}
+            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+          >
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+              style={{
+                fill: 'rgb(0, 0, 0)',
+                stroke: 'rgb(0, 0, 0)',
+                strokeWidth: '1.41px'
+              }}
+            />
+          </g>
+        </svg>
+        <svg
+          height="16.39px"
+          viewBox="182.483 291.768 20 19.02"
+          width="17.24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            stroke="#626262"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={{}}
+            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+          >
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+              style={{
+                fill: 'rgb(0, 0, 0)',
+                stroke: 'rgb(0, 0, 0)',
+                strokeWidth: '1.41px'
+              }}
+            />
+          </g>
+        </svg>
+        <svg
+          height="16.39px"
+          viewBox="182.483 291.768 20 19.02"
+          width="17.24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            stroke="#626262"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={{}}
+            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+          >
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+              style={{
+                fill: 'rgb(0, 0, 0)',
+                stroke: 'rgb(0, 0, 0)',
+                strokeWidth: '1.41px'
+              }}
+            />
+          </g>
+        </svg>
+        <svg
+          height="16.39px"
+          viewBox="182.483 291.768 20 19.02"
+          width="17.24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            stroke="#626262"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={{}}
+            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+          >
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+              style={{
+                fill: 'rgb(0, 0, 0)',
+                stroke: 'rgb(0, 0, 0)',
+                strokeWidth: '1.41px'
+              }}
+            />
+          </g>
+        </svg>
+        <svg
+          height="16.39px"
+          viewBox="182.483 291.768 20 19.02"
+          width="17.24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            fill="none"
+            stroke="#626262"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            style={{}}
+            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+          >
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+              style={{
+                fill: 'rgb(0, 0, 0)',
+                stroke: 'rgb(0, 0, 0)',
+                strokeWidth: '1.41px'
+              }}
+            />
+          </g>
+        </svg>
+        <span className="star-count">
+          (9)
+        </span>
+      </div>
+    </a>
+    <div className="follow-share-wardrobe-section d-flex">
+      <div className="col-6 pl-0 text-right left-button">
+        <div
+          className="share-wardrobe-button-copy"
+          data-controller="share-wardrobe-button-component"
+        >
+          <input
+            className="d-none"
+            data-target="share-wardrobe-button-component.profileLink"
+            defaultValue="https://www.hurrcollective.com/brand/Amur"
+            readOnly
+            type="text"
+          />
+          <button
+            className="share-button-component button-hover button primary button-width py-0"
+            data-action="click->share-wardrobe-button-component#copyLink"
+            data-target="share-wardrobe-button-component.contentSpan"
+          >
+            <div className="d-flex justify-content-center gray-6 align-items-center">
+              <img
+                alt="An icon of a link icon white"
+                className="mr-2 mb-0"
+                height="14"
+                src="https://res.cloudinary.com/dcaptnlz3/image/asset/link-icon-white-d78c54ba75e0454aec53e874f9d8ac82.svg"
+                width="13"
+              />
+              <span className="brand-share-wardrobe-copy">
+                SHARE PAGE
+              </span>
             </div>
+          </button>
+        </div>
+        <button
+          className="share-button-component button primary button-width py-0 d-none"
+          data-action="click->share-wardrobe-button-component#show"
+          data-controller="share-wardrobe-button-component"
+          data-share-wardrobe-button-component-text-value="Have you seen this page on HURR? Obsessed! 💘"
+          data-share-wardrobe-button-component-title-value="HURR"
+          data-share-wardrobe-button-component-url-value="https://www.hurrcollective.com/brand/Amur"
+        >
+          <div className="d-flex justify-content-center gray-6 align-items-center">
+            <img
+              alt="An icon of a link icon white"
+              className="mr-2 sw-icon"
+              height="14"
+              src="https://res.cloudinary.com/dcaptnlz3/image/asset/link-icon-white-d78c54ba75e0454aec53e874f9d8ac82.svg"
+              width="13"
+            />
+            SHARE PAGE
           </div>
-          <turbo-frame id="edit_nav_cards">
-            <div className="edits-nav-cards filter-container">
-              <div
-                className="row slick-initialized slick-slider"
-                data-controller="edits-nav-cards"
-              >
-                <div className="slick-list draggable">
-                  <div
-                    className="slick-track"
-                    style={{
-                      opacity: '1',
-                      transform: 'translate3d(0px, 0px, 0px)',
-                      width: '1410px'
-                    }}
-                  >
-                    <div
-                      aria-hidden="false"
-                      className="slick-slide slick-current slick-active"
-                      data-slick-index="0"
-                      style={{
-                        width: '282px'
-                      }}
-                    >
-                      <div>
-                        <div
-                          className="card mt-3 px-0 py-0 mobile-pr-10px rounded-0 border-0 col"
-                          style={{
-                            display: 'inline-block',
-                            width: '100%'
-                          }}
-                        >
-                          <div className="card-body p-0">
-                            <a
-                              className="image-card edits-one mb-0 mx-auto"
-                              href="/edits/the-ski-edit"
-                              style={{
-                                backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/f_webp,q_auto:best/yt4vncneg05yydin5paqosfcmscu)',
-                                backgroundSize: 'cover',
-                                maxHeight: '287px',
-                                maxWidth: '255px'
-                              }}
-                              tabIndex="0"
-                              target="_top"
-                            >
-                            </a>
-                          </div>
-                          <div className="card-footer rounded-0 border-0 bg-white p-0">
-                            <a
-                              href="/edits/the-ski-edit"
-                              tabIndex="0"
-                              target="_top"
-                            >
-                              <h5 className="text-uppercase text-center text-dark mb-0">
-                                The Ski Edit
-                              </h5>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="false"
-                      className="slick-slide slick-active"
-                      data-slick-index="1"
-                      style={{
-                        width: '282px'
-                      }}
-                    >
-                      <div>
-                        <div
-                          className="card mt-3 px-0 py-0 mobile-pr-10px rounded-0 border-0 col"
-                          style={{
-                            display: 'inline-block',
-                            width: '100%'
-                          }}
-                        >
-                          <div className="card-body p-0">
-                            <a
-                              className="image-card edits-one mb-0 mx-auto"
-                              href="/edits/the-nap-edit"
-                              style={{
-                                backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/f_webp,q_auto:best/94hhuayyz4rleglibem8r6gqj1uw)',
-                                backgroundSize: 'cover',
-                                maxHeight: '287px',
-                                maxWidth: '255px'
-                              }}
-                              tabIndex="0"
-                              target="_top"
-                            >
-                            </a>
-                          </div>
-                          <div className="card-footer rounded-0 border-0 bg-white p-0">
-                            <a
-                              href="/edits/the-nap-edit"
-                              tabIndex="0"
-                              target="_top"
-                            >
-                              <h5 className="text-uppercase text-center text-dark mb-0">
-                                NET-A-PORTER
-                              </h5>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="false"
-                      className="slick-slide slick-active"
-                      data-slick-index="2"
-                      style={{
-                        width: '282px'
-                      }}
-                    >
-                      <div>
-                        <div
-                          className="card mt-3 px-0 py-0 mobile-pr-10px rounded-0 border-0 col"
-                          style={{
-                            display: 'inline-block',
-                            width: '100%'
-                          }}
-                        >
-                          <div className="card-body p-0">
-                            <a
-                              className="image-card edits-one mb-0 mx-auto"
-                              href="/edits/knitwear"
-                              style={{
-                                backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/f_webp,q_auto:best/s1glwgyuntlkzwck1mo8xrkl74ka)',
-                                backgroundSize: 'cover',
-                                maxHeight: '287px',
-                                maxWidth: '255px'
-                              }}
-                              tabIndex="0"
-                              target="_top"
-                            >
-                            </a>
-                          </div>
-                          <div className="card-footer rounded-0 border-0 bg-white p-0">
-                            <a
-                              href="/edits/knitwear"
-                              tabIndex="0"
-                              target="_top"
-                            >
-                              <h5 className="text-uppercase text-center text-dark mb-0">
-                                Knitwear
-                              </h5>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="false"
-                      className="slick-slide slick-active"
-                      data-slick-index="3"
-                      style={{
-                        width: '282px'
-                      }}
-                    >
-                      <div>
-                        <div
-                          className="card mt-3 px-0 py-0 mobile-pr-10px rounded-0 border-0 col"
-                          style={{
-                            display: 'inline-block',
-                            width: '100%'
-                          }}
-                        >
-                          <div className="card-body p-0">
-                            <a
-                              className="image-card edits-one mb-0 mx-auto"
-                              href="/edits/aw23-executive-suite"
-                              style={{
-                                backgroundImage: 'url(https://res.cloudinary.com/dcaptnlz3/image/upload/f_webp,q_auto:best/s2i2148s8qvm5j7l04isacnc5d6b)',
-                                backgroundSize: 'cover',
-                                maxHeight: '287px',
-                                maxWidth: '255px'
-                              }}
-                              tabIndex="0"
-                              target="_top"
-                            >
-                            </a>
-                          </div>
-                          <div className="card-footer rounded-0 border-0 bg-white p-0">
-                            <a
-                              href="/edits/aw23-executive-suite"
-                              tabIndex="0"
-                              target="_top"
-                            >
-                              <h5 className="text-uppercase text-center text-dark mb-0">
-                                Workwear Suiting
-                              </h5>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      aria-hidden="false"
-                      className="slick-slide slick-active"
-                      data-slick-index="4"
-                      style={{
-                        width: '282px'
-                      }}
-                    >
-                      <div>
-                        <div
-                          className="card mt-3 px-0 py-0 mobile-pr-10px rounded-0 border-0 col"
-                          style={{
-                            display: 'inline-block',
-                            width: '100%'
-                          }}
-                        >
-                          <div className="card-body p-0">
-                            <a
-                              className="image-card edits-one mb-0 mx-auto"
-                              href="/edits"
-                              style={{
-                                backgroundImage: 'url(\'https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,q_auto:best/v1695954185/zkmhfwbwzn8xrclpm7fe\')',
-                                backgroundSize: 'cover',
-                                maxHeight: '287px',
-                                maxWidth: '255px'
-                              }}
-                              tabIndex="0"
-                            >
-                            </a>
-                          </div>
-                          <div className="card-footer rounded-0 border-0 bg-white p-0">
-                            <a
-                              href="/edits"
-                              tabIndex="0"
-                            >
-                              <h5 className="text-uppercase text-center text-dark mb-0">
-                                SEE MORE EDITS
-                                <img
-                                  alt="Arrow Right"
-                                  className="d-inline mb-1"
-                                  height="14"
-                                  src="https://res.cloudinary.com/dcaptnlz3/image/asset/arrow-right-solid-3aa5dcbccaab655636f1682bfe2345d2.svg"
-                                  width="12"
-                                />
-                              </h5>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </turbo-frame>
+        </button>
+      </div>
+      <div
+        className="brand-follow-button"
+        id="concierge_follow_button"
+      >
+        <a
+          className="btn btn-outline-primary -black -transparent button-width"
+          data-method="post"
+          data-remote="true"
+          href="#"
+          rel="nofollow"
+        >
+          FOLLOW
+        </a>
+      </div>
+    </div>
+  </div>
+  <div className="biography text-center">
+    <span className="badge badge-secondary text-uppercase">
+      Official Partner
+    </span>
+    <div className="content">
+      <p className="mx-auto">
+        Amur at its heart celebrates quality textiles and masterful draping techniques. Created in Australia and now coveted on a global scale, Amur pieces are crafted to transcend trends.
+      </p>
+      <ul className="list-inline mb-0 social-links">
+        <li className="list-inline-item">
+          <a
+            className="btn btn-primary -dark-red"
+            href="#"
+            target="_blank"
+          >
+            <i
+              aria-hidden="true"
+              className="fas fa-link"
+            />
+          </a>
+        </li>
+        <li className="list-inline-item">
+          <a
+            className="btn btn-primary -dark-red -instagram"
+            href="#"
+            target="_blank"
+          >
+            <i
+              aria-hidden="true"
+              className="fab fa-instagram"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+     
           <div
             className="filter-container mx-auto app-search--listing-filters-controller app-search--filters-count-controller"
             data-app-search--listing-filters-active-merchandising-value="false"
@@ -3697,7 +3666,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -3805,7 +3774,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -3913,7 +3882,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4021,7 +3990,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4129,7 +4098,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4263,7 +4232,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4371,7 +4340,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4479,7 +4448,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4587,7 +4556,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4695,7 +4664,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4803,7 +4772,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -4911,7 +4880,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5127,7 +5096,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5235,7 +5204,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5343,7 +5312,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5451,7 +5420,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5559,7 +5528,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5667,7 +5636,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5775,7 +5744,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5883,7 +5852,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -5991,7 +5960,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6099,7 +6068,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6207,7 +6176,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6315,7 +6284,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6423,7 +6392,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6531,7 +6500,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6639,7 +6608,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6747,7 +6716,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -6989,7 +6958,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7097,7 +7066,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7205,7 +7174,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7313,7 +7282,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7421,7 +7390,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7529,7 +7498,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7637,7 +7606,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7745,7 +7714,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7853,7 +7822,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -7961,7 +7930,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8069,7 +8038,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8177,7 +8146,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8285,7 +8254,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8393,7 +8362,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8501,7 +8470,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8612,7 +8581,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8720,7 +8689,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8828,7 +8797,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -8936,7 +8905,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9044,7 +9013,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9152,7 +9121,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9260,7 +9229,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9368,7 +9337,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9502,7 +9471,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9610,7 +9579,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -9937,7 +9906,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10045,7 +10014,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10153,7 +10122,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10261,7 +10230,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10369,7 +10338,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10477,7 +10446,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10583,7 +10552,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10691,7 +10660,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10799,7 +10768,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -10905,7 +10874,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11011,7 +10980,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11119,7 +11088,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11227,7 +11196,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11336,7 +11305,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11444,7 +11413,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11550,7 +11519,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11870,7 +11839,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -11978,7 +11947,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12328,7 +12297,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12436,7 +12405,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12544,7 +12513,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12652,7 +12621,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12760,7 +12729,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12868,7 +12837,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -12976,7 +12945,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13084,7 +13053,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13192,7 +13161,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13300,7 +13269,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13408,7 +13377,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13516,7 +13485,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13624,7 +13593,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13732,7 +13701,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13840,7 +13809,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -13951,7 +13920,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14085,7 +14054,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14193,7 +14162,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14301,7 +14270,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14409,7 +14378,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14517,7 +14486,7 @@ const Resale = () =>
                                 data-placement="top"
                                 data-toggle="tooltip"
                               >
-                                Managed
+                                Top Lender
                               </span>
                             </div>
                             <p className="brand mb-1">
@@ -14648,7 +14617,7 @@ const Resale = () =>
                     WHAT ARE TOP LENDERS?
                   </h3>
                   <p>
-                    Top Lenders are a group of some of the most trusted and best                  performing members of the circular-couture marketplace. You can easily                  recognise them by looking for the badge on item and profile                  pages. You can also filter the marketplace to only show items                  from Managed wardrobes.
+                    Top Lenders are a group of some of the most trusted and best                  performing members of the circular-couture marketplace. You can easily                  recognise them by looking for the badge on item and profile                  pages. You can also filter the marketplace to only show items                  from Top Lender wardrobes.
                   </p>
                 </div>
               </div>
@@ -14905,7 +14874,7 @@ const Resale = () =>
                                   WHAT ARE TOP LENDERS?
                                 </h3>
                                 <p>
-                                  Top Lenders are a group of some of the most                                trusted and best performing members of the circular-couture                                marketplace. You can easily recognise them by                                looking for the badge on item and profile pages.                                You can also filter the marketplace to only show                                items from Managed wardrobes.
+                                  Top Lenders are a group of some of the most                                trusted and best performing members of the circular-couture                                marketplace. You can easily recognise them by                                looking for the badge on item and profile pages.                                You can also filter the marketplace to only show                                items from Top Lender wardrobes.
                                 </p>
                               </div>
                             </div>
@@ -18564,8 +18533,9 @@ const Resale = () =>
         </div>
       </div>
       <EmailSubscription />
-      <Footer />
-        </>
+      <Footer/>
+      </>
+
     )
-}
-export default Resale;
+};
+export default Amur;

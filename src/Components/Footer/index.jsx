@@ -32,6 +32,21 @@ const Footer =()=>{
                           How it works
                         </a>
                       </li>
+                      <li className="mb-3">
+                        <a className="link" href="/Refer-a-Friend">
+                        GIVE £10, GET £10
+                        </a>
+                      </li>
+                      <li className="mb-3">
+                              <a className="link" href="/Community">
+                                Community
+                              </a>
+                            </li>
+                            <li className="mb-3">
+                              <a className="link" href="/Press">
+                                Press
+                              </a>
+                            </li>
                     </ul>
                   </div>
                 </div>
@@ -97,18 +112,28 @@ const Footer =()=>{
                           <h4 style={{ color: "white" }}>H E L P</h4>
                           <ul className="list-unstyled">
                             <li className="mb-3">
-                              <a className="link" href="#">
+                              <a className="link" href="/FAQ" target="_blank">
                                 FAQs
                               </a>
                             </li>
-                            <li className="mb-3">
+                            {/* <li className="mb-3">
                               <a className="link" href="#">
                                 Help center
                               </a>
+                            </li> */}
+                            <li className="mb-3">
+                              <a className="link" href="/Contact" target="_blank">
+                                Contact us
+                              </a>
                             </li>
                             <li className="mb-3">
-                              <a className="link" href="#">
-                                Contact us
+                              <a className="link" href="/TermsOfService">
+                                Terms Of Services
+                              </a>
+                            </li>
+                            <li className="mb-3">
+                              <a className="link" href="/CookiePolicy">
+                                Privacy Policy
                               </a>
                             </li>
                           </ul>
@@ -119,7 +144,7 @@ const Footer =()=>{
                 </div>
               </div>
             </div>
-            <div className="whitelogo mt-5 d-flex justify-content-center">
+            <div className="whitelogo mt-2 d-flex justify-content-center">
               <img src="/images/CC TM Logo cheetaa.png" alt="" />
             </div>
           </div>
