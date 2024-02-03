@@ -55,7 +55,7 @@ const TopHeader =()=>{
                 <div className="col-md-4 text-center">
                   <a
                     className="nav-link mx-0 p-0 d-inline-block logo"
-                    href="/Home"
+                    href="/"
                   >
                     {" "}
                     <img
@@ -88,7 +88,7 @@ const TopHeader =()=>{
                 </span>
               </div>
               <div className="col-4 text-center">
-                <a href="/Home">
+                <a href="/">
                   {" "}
                   <img
                     alt="CIRCULAR COUTURE Logo"
