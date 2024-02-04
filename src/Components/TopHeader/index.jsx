@@ -1,193 +1,194 @@
 import React from "react";
 
-const TopHeader =()=>{
-    return(
-        <>
-          <div
-          className="fixed-top header scroll-down"
-          data-controller="header"
-          data-target="header.container"
-          data-action="scroll@window->header#hideAnnouncementBanner"
-        >
-          <div className="top-header d-flex justify-content-end bg-dark text-light mt-4 p-1">
-            <div className="me-5 four-icon d-flex align-items-center gap-5 mt-3">
-              <div className="dropdown dropup ">
-                <ul className="list-inline mb-0  ">
+const TopHeader = () => {
+  return (
+    <>
+      <div
+        className="fixed-top header scroll-down"
+        data-controller="header"
+        data-target="header.container"
+        data-action="scroll@window->header#hideAnnouncementBanner"
+      >
+        <div className="top-header d-flex justify-content-end bg-dark text-light mt-4 p-1">
+        <div className="me-5 four-icon d-flex align-items-center mt-3" style={{ columnGap: "10px" }}>
+            <div className="dropdown dropup ">
+              <ul className="list-inline mb-0  ">
+                <li className="list-inline-item">
+                  {" "}
+                  <a
+                    href="#"
+                    className="default-link -md link text-uppercase  "
+                    data-toggle="modal"
+                    data-target="#signin-modal"
+                  >
+                    <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" />
+
+                  </a>{" "}
+                </li>
+              </ul>
+            </div>
+            <i className="fas fa-shopping-bag" />
+            <i className="fas fa-search" />
+            <i className="far fa-heart" />
+          </div>
+        </div>
+        <div className="main-header-section d-lg-flex justify-content-between">
+          <div className="fixed-container">
+            <div className="row no-gutters">
+              <div className="col-md-4">
+                <ul className="list-inline mb-0">
+                  <li className="list-inline-item mr-4">
+                    <p className="currancy-idicator text-uppercase mb-0">
+                      🇬🇧 GBP £
+                    </p>
+                  </li>
                   <li className="list-inline-item">
                     {" "}
                     <a
-                      href="#"
                       className="default-link -md link text-uppercase"
-                      data-toggle="modal"
-                      data-target="#signin-modal"
+                      href="/HowToLend"
                     >
-                      <i className="far fa-user " />
+                      How it works
                     </a>{" "}
                   </li>
                 </ul>
               </div>
-              <i className="fas fa-shopping-bag" />
-              <i className="fas fa-search" />
-              <i className="far fa-heart" />
-            </div>
-          </div>
-          <div className="main-header-section d-lg-flex justify-content-between">
-            <div className="fixed-container">
-              <div className="row no-gutters">
-                <div className="col-md-4">
-                  <ul className="list-inline mb-0">
-                    <li className="list-inline-item mr-4">
-                      <p className="currancy-idicator text-uppercase mb-0">
-                        🇬🇧 GBP £
-                      </p>
-                    </li>
-                    <li className="list-inline-item">
-                      {" "}
-                      <a
-                        className="default-link -md link text-uppercase"
-                        href="/HowToLend"
-                      >
-                        How it works
-                      </a>{" "}
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-md-4 text-center">
-                  <a
-                    className="nav-link mx-0 p-0 d-inline-block logo"
-                    href="/"
-                  >
-                    {" "}
-                    <img
-                      width={350}
-                      className="header-logo"
-                      alt="CIRCULAR COUTURE logo"
-                      src="/images/CC TM Logo.png"
-                    />
-                  </a>
-                </div>
-                <div className="col-md-4"></div>
-              </div>
-            </div>
-          </div>
-          <div className="container-fluid main-mobile-header-section">
-            <div className="row h-100 align-items-center">
-              <div className="col-4">
-                <a href="#" data-toggle="modal" data-target="#mobile_nav_modal">
-                  {/* https://res.cloudinary.com/dcaptnlz3/image/asset/feather-menu-a27514f57eb39570acf76060d920ca9b.svg */}
-                  <img
-                    alt="An icon of a menu"
-                    className="mb-1"
-                    width={26}
-                    height={18}
-                    src="https://res.cloudinary.com/dcaptnlz3/image/asset/burger-menu-lighter-4f3d911c8cdee134cbe592dc97fa8295.svg"
-                  />
-                </a>{" "}
-                <span style={{ marginLeft: 10 }}>
-                  <turbo-frame id="account_credit_balance_header" />{" "}
-                </span>
-              </div>
-              <div className="col-4 text-center">
-                <a href="/">
+              <div className="col-md-4 text-center">
+                <a
+                  className="nav-link mx-0 p-0 d-inline-block logo"
+                  href="/"
+                >
                   {" "}
                   <img
-                    alt="CIRCULAR COUTURE Logo"
-                    width={100}
-                    height={21}
-                    className="img img-responsive circular-couture-logo"
+                    width={350}
+                    className="header-logo"
+                    alt="CIRCULAR COUTURE logo"
                     src="/images/CC TM Logo.png"
                   />
                 </a>
               </div>
-              <div className="col-4 text-right">
-                <turbo-frame id="mobile_header_bag_frame" />{" "}
-                <img
-                  alt="An icon of a search"
-                  className="search-image"
-                  data-toggle="modal"
-                  data-target="#nav_mobile_search_form"
-                  width={24}
-                  height={24}
-                  src="https://res.cloudinary.com/dcaptnlz3/image/asset/search2-ab289f14410a86cee3a5373e949dd4bf.svg"
-                />
-              </div>
+              <div className="col-md-4"></div>
             </div>
           </div>
-          <nav
-            className="navbar navbar-menu-section"
-            data-controller="mega-menu-contents"
-          >
-            <div className="row no-gutters fixed-container p-0 py-3 flex-nowrap">
-              <div className="links-wrapper text-uppercase">
-                <div className="" />
-                <div className="col-12 row no-gutters p-0 justify-content-around align-items-center mr-3">
-                  <a
-                    target="_top"
-                    className="nav-link with-mega-menu-content "
-                    data-target-link-content=".link-content.-just-in"
-                    data-action="mouseover->mega-menu-contents#showMenu"
-                    data-target-mega-menu="justIn"
-                    href="/Collections/NewArrival"
-                  >
-                    New In
-                  </a>
-                  <a
-                    target="_top"
-                    className="nav-link with-mega-menu-content"
-                    data-target-link-content=".link-content.-designers"
-                    data-action="mouseover->mega-menu-contents#showMenu"
-                    data-target-mega-menu="designers"
-                    href="/Designer"
-                  >
-                    Designers
-                  </a>
-                  <a
-                    target="_top"
-                    className="nav-link with-mega-menu-content new-menu-hover"
-                    data-target-link-content=".link-content.-clothing"
-                    data-action="mouseover->mega-menu-contents#showMenu"
-                    data-target-mega-menu="clothing"
-                    href="/Collections/clothing"
-                  >
-                    Clothing
-                  </a>
-                  <a
-                    target="_top"
-                    className="nav-link with-mega-menu-content accessories-menu-hover"
-                    data-target-link-content=".link-content.-accessories"
-                    data-action="mouseover->mega-menu-contents#showMenu"
-                    data-target-mega-menu="accessories"
-                    href="/Collections/Accessories"
-                  >
-                    Accessories
-                  </a>
-                  <a
-                    data-action="mouseover->mega-menu-contents#hideMenu"
-                    target="_top"
-                    className="nav-link "
-                    href="/Collections/Resale"
-                  >
-                    Resale
-                  </a>
-                  <a
-                    data-action="mouseover->mega-menu-contents#hideMenu"
-                    target="_top"
-                    className="nav-link"
-                    href="/Edits"
-                  >
-                    Edits
-                  </a>
-                  <a
-                    data-action="mouseover->mega-menu-contents#hideMenu"
-                    target="_top"
-                    className="nav-link"
-                    href="/ListItems/ListStepOne"
-                  >
-                    List By Wardrobe
-                  </a>
-                </div>
+        </div>
+        <div className="container-fluid main-mobile-header-section">
+          <div className="row h-100 align-items-center">
+            <div className="col-4">
+              <a href="#" data-toggle="modal" data-target="#mobile_nav_modal">
+                {/* https://res.cloudinary.com/dcaptnlz3/image/asset/feather-menu-a27514f57eb39570acf76060d920ca9b.svg */}
+                <img
+                  alt="An icon of a menu"
+                  className="mb-1"
+                  width={26}
+                  height={18}
+                  src="https://res.cloudinary.com/dcaptnlz3/image/asset/burger-menu-lighter-4f3d911c8cdee134cbe592dc97fa8295.svg"
+                />
+              </a>{" "}
+              <span style={{ marginLeft: 10 }}>
+                <turbo-frame id="account_credit_balance_header" />{" "}
+              </span>
+            </div>
+            <div className="col-4 text-center">
+              <a href="/">
+                {" "}
+                <img
+                  alt="CIRCULAR COUTURE Logo"
+                  width={100}
+                  height={21}
+                  className="img img-responsive circular-couture-logo"
+                  src="/images/CC TM Logo.png"
+                />
+              </a>
+            </div>
+            <div className="col-4 text-right">
+              <turbo-frame id="mobile_header_bag_frame" />{" "}
+              <img
+                alt="An icon of a search"
+                className="search-image"
+                data-toggle="modal"
+                data-target="#nav_mobile_search_form"
+                width={24}
+                height={24}
+                src="https://res.cloudinary.com/dcaptnlz3/image/asset/search2-ab289f14410a86cee3a5373e949dd4bf.svg"
+              />
+            </div>
+          </div>
+        </div>
+        <nav
+          className="navbar navbar-menu-section"
+          data-controller="mega-menu-contents"
+        >
+          <div className="row no-gutters fixed-container p-0 py-3 flex-nowrap">
+            <div className="links-wrapper text-uppercase">
+              <div className="" />
+              <div className="col-12 row no-gutters p-0 justify-content-around align-items-center mr-3">
+                <a
+                  target="_top"
+                  className="nav-link with-mega-menu-content "
+                  data-target-link-content=".link-content.-just-in"
+                  data-action="mouseover->mega-menu-contents#showMenu"
+                  data-target-mega-menu="justIn"
+                  href="/Collections/NewArrival"
+                >
+                  New In
+                </a>
+                <a
+                  target="_top"
+                  className="nav-link with-mega-menu-content"
+                  data-target-link-content=".link-content.-designers"
+                  data-action="mouseover->mega-menu-contents#showMenu"
+                  data-target-mega-menu="designers"
+                  href="/Designer"
+                >
+                  Designers
+                </a>
+                <a
+                  target="_top"
+                  className="nav-link with-mega-menu-content new-menu-hover"
+                  data-target-link-content=".link-content.-clothing"
+                  data-action="mouseover->mega-menu-contents#showMenu"
+                  data-target-mega-menu="clothing"
+                  href="/Collections/clothing"
+                >
+                  Clothing
+                </a>
+                <a
+                  target="_top"
+                  className="nav-link with-mega-menu-content accessories-menu-hover"
+                  data-target-link-content=".link-content.-accessories"
+                  data-action="mouseover->mega-menu-contents#showMenu"
+                  data-target-mega-menu="accessories"
+                  href="/Collections/Accessories"
+                >
+                  Accessories
+                </a>
+                <a
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
+                  className="nav-link "
+                  href="/Collections/Resale"
+                >
+                  Resale
+                </a>
+                <a
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
+                  className="nav-link"
+                  href="/Edits"
+                >
+                  Edits
+                </a>
+                <a
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
+                  className="nav-link"
+                  href="/ListItems/ListStepOne"
+                >
+                  List By Wardrobe
+                </a>
               </div>
-              {/* <div class="row no-gutters justify-content-end">
+            </div>
+            {/* <div class="row no-gutters justify-content-end">
           <div class="search-nav-wrapper pl-2">
               <form class="default-form h-100" novalidate="novalidate" action="/search" accept-charset="UTF-8"
                   method="get"> <span><img alt="An icon of a search" width="15" height="15"
@@ -198,184 +199,184 @@ const TopHeader =()=>{
               </form>
           </div>
       </div> */}
-            </div>
-            <div className="links-content-wrapper d-none">
-              <div className="link-content -just-in">
-                <turbo-frame
-                  loading="lazy"
-                  id="just_in"
-                  src="https://www.circular-couturecollective.com/mega_menu_contents/just_in"
-                  complete=""
-                >
-                  <div className="row d-flex justify-content-around">
-                    <div className="col-md-2 col-xl-2">
-                      <div className="links">
-                        <div className="header">
-                          {" "}
-                          <h6 className="text-dark">COLOTHING</h6>
-                        </div>
-                        <div className="body">
-                          {" "}
-                          <a target="_top" href="/Collections/Clothing">
-                            All Clothing
-                          </a>
-                          <a target="_top " href="/Collections/Dresses">
-                            Dresses
-                          </a>
-                          <a target="_top " href="/Collections/Tops">
-                            Tops
-                          </a>
-                          <a target="_top" href="/Collections/Skirts">
-                            Skirts
-                          </a>
-                          <a target="_top" href="/Collections/Trousers">
-                            Trousers
-                          </a>
-                          <a target="_top" href="/Collections/Sweaters">
-                            Sweaters
-                          </a>
-                          <a target="_top" href="/Collections/OuterWear">
-                            Outerwear
-                          </a>
-                          <a target="_top" href="/Collections/JumpSuit">
-                            Jumpsuits
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-2 col-xl-3">
-                      <div className="links">
-                        <div className="header">
-                          {" "}
-                          <h6 className="text-dark">DRESSES</h6>
-                        </div>
-                        <div className="body">
-                          {" "}
-                          <a target="_top" href="/Collections/NewArrival">
-                            All Dresses
-                          </a>
-                          <a target="_top " href="/Collections/DressMini">
-                            Mini
-                          </a>
-                          <a target="_top " href="/Collections/DressKneeLength">
-                            Kee Length
-                          </a>
-                          <a target="_top" href="/Collections/DressMidi">
-                            Midi
-                          </a>
-                          <a target="_top" href="/Collections/DressMaxi">
-                            Maxi
-                          </a>
-                          <a target="_top" href="/Collections/DressGowns">
-                            Gowns
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="d-flex justify-content-end">
-                        <img
-                          src="/images/background-images/collage(1).png"
-                          alt=""
-                          width={350}
-                        />
-                      </div>
-                      <div className="autumn-button d-flex justify-content-start">
-                        <h1>
-                          {" "}
-                          <span>AUTUMN '23</span>
-                        </h1>
-                        <button className="btn"> view collection</button>
-                      </div>
-                    </div>
-                  </div>
-                </turbo-frame>
-              </div>
-            </div>
-            <div
-              className="link-content-accessories d-none"
-              data-mega-menu-contents-target="accessories"
-              data-action="mouseleave->mega-menu-contents#hideMenu"
-            >
+          </div>
+          <div className="links-content-wrapper d-none">
+            <div className="link-content -just-in">
               <turbo-frame
                 loading="lazy"
-                id="accessories"
-                src="/mega_menu_contents/accessories"
+                id="just_in"
+                src="https://www.circular-couturecollective.com/mega_menu_contents/just_in"
+                complete=""
               >
-                <div className="row">
-                  <div className="col-md-4 col-xl-3">
+                <div className="row d-flex justify-content-around">
+                  <div className="col-md-2 col-xl-2">
                     <div className="links">
                       <div className="header">
-                        <div
-                          className="col-12 shimmer py-2 px-5"
-                          style={{ width: "20px !important" }}
-                        />
+                        {" "}
+                        <h6 className="text-dark">COLOTHING</h6>
                       </div>
                       <div className="body">
-                        <div
-                          className="col-12 shimmer py-2 px-5"
-                          style={{ width: "20px !important" }}
-                        />
-                        <br />
-                        <div
-                          className="col-12 shimmer py-2 px-5"
-                          style={{ width: "20px !important" }}
-                        />
-                        <br />
-                        <div
-                          className="col-12 shimmer py-2 px-5"
-                          style={{ width: "20px !important" }}
-                        />
-                        <br />
-                        <div
-                          className="col-12 shimmer py-2 px-5"
-                          style={{ width: "20px !important" }}
-                        />
-                      </div>
-                      <div className="footer">
-                        <div
-                          className="row shimmer py-2 px-5"
-                          style={{ width: "20px !important" }}
-                        />
+                        {" "}
+                        <a target="_top" href="/Collections/Clothing">
+                          All Clothing
+                        </a>
+                        <a target="_top " href="/Collections/Dresses">
+                          Dresses
+                        </a>
+                        <a target="_top " href="/Collections/Tops">
+                          Tops
+                        </a>
+                        <a target="_top" href="/Collections/Skirts">
+                          Skirts
+                        </a>
+                        <a target="_top" href="/Collections/Trousers">
+                          Trousers
+                        </a>
+                        <a target="_top" href="/Collections/Sweaters">
+                          Sweaters
+                        </a>
+                        <a target="_top" href="/Collections/OuterWear">
+                          Outerwear
+                        </a>
+                        <a target="_top" href="/Collections/JumpSuit">
+                          Jumpsuits
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-8 col-xl-9">
-                    <div className="content">
+                  <div className="col-md-2 col-xl-3">
+                    <div className="links">
                       <div className="header">
-                        <div
-                          className="col-12 shimmer py-2 px-5"
-                          style={{ width: "20px !important" }}
-                        />
+                        {" "}
+                        <h6 className="text-dark">DRESSES</h6>
                       </div>
                       <div className="body">
-                        <div className="row mb-3">
-                          <div
-                            className="mx-4 shimmer"
-                            style={{ padding: "100px !important" }}
-                          />
-                          <div
-                            className="mx-4 shimmer"
-                            style={{ padding: "100px !important" }}
-                          />
-                          <div
-                            className="mx-4 shimmer"
-                            style={{ padding: "100px !important" }}
-                          />
-                          <div
-                            className="mx-4 shimmer"
-                            style={{ padding: "100px !important" }}
-                          />
-                        </div>
+                        {" "}
+                        <a target="_top" href="/Collections/NewArrival">
+                          All Dresses
+                        </a>
+                        <a target="_top " href="/Collections/DressMini">
+                          Mini
+                        </a>
+                        <a target="_top " href="/Collections/DressKneeLength">
+                          Kee Length
+                        </a>
+                        <a target="_top" href="/Collections/DressMidi">
+                          Midi
+                        </a>
+                        <a target="_top" href="/Collections/DressMaxi">
+                          Maxi
+                        </a>
+                        <a target="_top" href="/Collections/DressGowns">
+                          Gowns
+                        </a>
                       </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="d-flex justify-content-end">
+                      <img
+                        src="/images/background-images/collage(1).png"
+                        alt=""
+                        width={350}
+                      />
+                    </div>
+                    <div className="autumn-button d-flex justify-content-start">
+                      <h1>
+                        {" "}
+                        <span>AUTUMN '23</span>
+                      </h1>
+                      <button className="btn"> view collection</button>
                     </div>
                   </div>
                 </div>
               </turbo-frame>
             </div>
-          </nav>
-        </div>
-        <div className="models">
+          </div>
+          <div
+            className="link-content-accessories d-none"
+            data-mega-menu-contents-target="accessories"
+            data-action="mouseleave->mega-menu-contents#hideMenu"
+          >
+            <turbo-frame
+              loading="lazy"
+              id="accessories"
+              src="/mega_menu_contents/accessories"
+            >
+              <div className="row">
+                <div className="col-md-4 col-xl-3">
+                  <div className="links">
+                    <div className="header">
+                      <div
+                        className="col-12 shimmer py-2 px-5"
+                        style={{ width: "20px !important" }}
+                      />
+                    </div>
+                    <div className="body">
+                      <div
+                        className="col-12 shimmer py-2 px-5"
+                        style={{ width: "20px !important" }}
+                      />
+                      <br />
+                      <div
+                        className="col-12 shimmer py-2 px-5"
+                        style={{ width: "20px !important" }}
+                      />
+                      <br />
+                      <div
+                        className="col-12 shimmer py-2 px-5"
+                        style={{ width: "20px !important" }}
+                      />
+                      <br />
+                      <div
+                        className="col-12 shimmer py-2 px-5"
+                        style={{ width: "20px !important" }}
+                      />
+                    </div>
+                    <div className="footer">
+                      <div
+                        className="row shimmer py-2 px-5"
+                        style={{ width: "20px !important" }}
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-8 col-xl-9">
+                  <div className="content">
+                    <div className="header">
+                      <div
+                        className="col-12 shimmer py-2 px-5"
+                        style={{ width: "20px !important" }}
+                      />
+                    </div>
+                    <div className="body">
+                      <div className="row mb-3">
+                        <div
+                          className="mx-4 shimmer"
+                          style={{ padding: "100px !important" }}
+                        />
+                        <div
+                          className="mx-4 shimmer"
+                          style={{ padding: "100px !important" }}
+                        />
+                        <div
+                          className="mx-4 shimmer"
+                          style={{ padding: "100px !important" }}
+                        />
+                        <div
+                          className="mx-4 shimmer"
+                          style={{ padding: "100px !important" }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </turbo-frame>
+          </div>
+        </nav>
+      </div>
+      <div className="models">
         <div data-controller="mobile-nav">
           <div
             className="modal filter-modal mobile-menu-modal left fade"
@@ -1531,7 +1532,7 @@ const TopHeader =()=>{
                                 </label>
                               </div>
                             </div>
-                          
+
                             {/* <input
                               type="submit"
                               name="commit"
@@ -1540,10 +1541,10 @@ const TopHeader =()=>{
                               data-disable-with="signing in..."
                               data-target="sign-in.button"
                             /> */}
-                           <a href="/panel/dashboard"
-                           className="btn btn-primary btn-block -dark-red mb-4 "
-                           type="submit"
-                           >Sign In</a>
+                            <a href="/panel/dashboard"
+                              className="btn btn-primary btn-block -dark-red mb-4 "
+                              type="submit"
+                            >Sign In</a>
                           </form>
                         </div>
                         <div className="col-lg-12 text-uppercase text-center">
@@ -2058,8 +2059,8 @@ const TopHeader =()=>{
             </div>
           </div>
         </div>
-        </div>
-        </>
-    )
+      </div>
+    </>
+  )
 };
 export default TopHeader;
