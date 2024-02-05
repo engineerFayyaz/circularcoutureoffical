@@ -55,7 +55,7 @@ const Home = () => {
                     <div className="product-item">
                       <a href="/ProductDetail">
                         <img
-                          src="images/product-images/p1.png"
+                          src="/web-images/LIS_002 _ ZIMMERMANN ANNEKE RUFFLE MINI DRESS/LIS_002.1.jpg"
                           className="img-fluid"
                           alt="Product 1"
                         />
@@ -81,10 +81,10 @@ const Home = () => {
                   <div className="carousel-item active">
                     <div className="product-item">
                       <a href="/ProductDetail">
-                        <img
-                          src="images/product-images/p2.png"
+                        <img 
+                          src="/web-images/LIS_003 _ Zimmermann Bells Paisley-print Linen Mini Dress/LIS_003.3.jpg"
                           className="img-fluid"
-                          alt="Product 1"
+                          alt="Product 1" style={{background:"none"}}
                         />
                       </a>
                       <div className="product-description p-2">
@@ -109,7 +109,7 @@ const Home = () => {
                     <div className="product-item">
                       <a href="/ProductDetail">
                         <img
-                          src="images/product-images/p3.png"
+                          src="/web-images/LIS_004 _ Missoni multi coloured dress/0D0A0720.jpg"
                           className="img-fluid"
                           alt="Product 1"
                         />
@@ -139,7 +139,7 @@ const Home = () => {
                       <a href="/ProductDetail">
                         {" "}
                         <img
-                          src="images/product-images/p4.png"
+                          src="/web-images/LIS_005 _ Zimmermann VERITY PANELLED LINEAR DRESS/1.jpeg"
                           className="img-fluid"
                           alt="Product 1"
                         />
@@ -203,32 +203,32 @@ const Home = () => {
             <div className="container collections">
               <div className="row">
                 <div className="col">
-                  <div className="collection-item">
-                    <img src="images/collections/1.png" alt="" width={250} />
+                  <div className="img-fluid">
+                    <img src="/web-images/LIS_028 _. _DIVINITY WHEEL_ RUFFLE EMBROIDERED COTTON DRESS IN WHITE/0D0A0584.jpg" alt="" width={250} />
                     <div className="collection-title text-center mt-3">
                       <h4>ZIMMERMANN</h4>
                     </div>
                   </div>
                 </div>
                 <div className="col">
-                  <div className="collection-item">
-                    <img src="images/collections/2.png" alt="" width={250} />
+                  <div className="img-fluid">
+                    <img src="/web-images/LIS_008 _ REBECCA VALLENCE Dominique Puff-sleeves Mini Dress In Pink_black/0D0A0619.jpg" alt="" width={250} />
                     <div className="collection-title text-center mt-3">
-                      <h4>Balmain</h4>
+                      <h4>Rebecca</h4>
                     </div>
                   </div>
                 </div>
                 <div className="col">
-                  <div className="collection-item">
-                    <img src="images/collections/3.png" alt="" width={250} />
+                  <div className="img-fluid">
+                    <img src="/web-images/LIS_006 _ Rebecca Vallance Low bow dress/0D0A0651.jpg" alt="" width={250} />
                     <div className="collection-title text-center mt-3">
                       <h4>Isabel marant</h4>
                     </div>
                   </div>
                 </div>
                 <div className="col">
-                  <div className="collection-item">
-                    <img src="images/collections/4.png" alt="" width={250} />
+                  <div className="img-fluid">
+                    <img src="/web-images/LIS_07 _ ISABEL MARANT Getya short dress/0D0A0599.jpg" alt="" width={250} />
                     <div className="collection-title text-center mt-3">
                       <h4>emilio pucci</h4>
                     </div>

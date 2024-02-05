@@ -21,7 +21,7 @@ const TopHeader = () => {
                     data-toggle="modal"
                     data-target="#signin-modal"
                   >
-                    <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" />
+                    <i style={{ color: "white",  fontSize: "17px" }} className="far fa-user" />
 
                   </a>{" "}
                 </li>
