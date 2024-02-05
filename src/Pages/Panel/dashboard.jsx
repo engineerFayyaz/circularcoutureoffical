@@ -167,7 +167,7 @@ const Dashboard = () =>{
                       data-user-dashboard-target="tooltipMessage"
                     >
                       <span className="large-span">
-                        £0.00
+                        AU$0.00
                       </span>
                       <br />
                       <span className="gray-span">
@@ -306,7 +306,7 @@ const Dashboard = () =>{
                       data-user-dashboard-target="tooltipMessage"
                     >
                       <span className="large-span">
-                        {' '}£0.00{' '}
+                        {' '}AU$0.00{' '}
                         <img
                           className="question-mark-dimension ml-1"
                           src="https://res.cloudinary.com/dcaptnlz3/image/asset/question-mark-dasboard-52437c4a2cab9daadf2b29311feae461"
@@ -374,23 +374,23 @@ const Dashboard = () =>{
               <div className="row">
                 <div className="col-12">
                   <span className="large-span">
-                    Give £10, Get £10 🤑
+                    Give AU$10, Get AU$10 🤑
                   </span>
                 </div>
               </div>
               <div className="row">
                 <div className="col-12 mt-3">
                   <p className="referral-description">
-                    {' '}Invite friends and get £10 off selected pieces when each friend{' '}
+                    {' '}Invite friends and get AU$10 off selected pieces when each friend{' '}
                     <br />
-                    completes their first rental. Your friend also gets £10 off!{' '}
+                    completes their first rental. Your friend also gets AU$10 off!{' '}
                   </p>
                 </div>
               </div>
               <div
                 className="row desktop-referral"
                 data-controller="copy-text"
-                data-copy-text-amount-value="£10"
+                data-copy-text-amount-value="AU$10"
               >
                 <div className="form-group col-md-7 col-xl-6 referrals-form">
                   <input
@@ -416,7 +416,7 @@ const Dashboard = () =>{
                   className="mobile-referral component referral-share-button button primary d-none"
                   data-action="click->referral-share-button-component#show"
                   data-controller="referral-share-button-component"
-                  data-referral-share-button-component-text-value="Psst... join me on circular-couture and we'll both get £10 off our next order! 💕 "
+                  data-referral-share-button-component-text-value="Psst... join me on circular-couture and we'll both get AU$10 off our next order! 💕 "
                   data-referral-share-button-component-title-value="circular-couture"
                   data-referral-share-button-component-url-value="https://www.circular-couturecollective.com/r/shahid-u"
                 >

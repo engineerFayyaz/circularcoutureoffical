@@ -26823,7 +26823,7 @@ div.filter-bar select {
 
 @media (max-width: 1641.98px) {
     .main-header-section {
-        padding: 15px 30px
+        padding: 0px 30px
     }
 }
 
@@ -27311,7 +27311,7 @@ div.filter-bar select {
 }
 
 .navbar-menu-section {
-    padding: 4px 30px;
+    padding: 0px 30px;
     background: #FAF9F7;
     display: flex;
     z-index: 1028
@@ -36517,9 +36517,9 @@ img {
     transform: translate3d(0, -21%, 0)
 }
 
-.scroll-down .navbar-menu-section {
+/* .scroll-down .navbar-menu-section {
     transform: translate3d(0, -3%, 0)
-}
+} */
 
 @media (max-width: 992.98px) {
     .scroll-down {

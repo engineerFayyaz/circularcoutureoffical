@@ -16,7 +16,7 @@ const ReferFriend = () =>{
             <h1 className="header mb-2 mb-md-5">
             Refer A Friend,<br />
               <span className="circular-couture-font-logo">
-              Share £10 Credit
+              Share AU$10 Credit
               </span>
             </h1>
            

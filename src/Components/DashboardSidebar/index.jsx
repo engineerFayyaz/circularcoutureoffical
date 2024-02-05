@@ -9,7 +9,7 @@ const DashboardSidebar = () =>{
       data-action="click->dashboard--mobile-header#showModal"
       data-controller="dashboard--mobile-header"
       data-dashboard--mobile-header-action="index"
-      data-dashboard--mobile-header-amount-value="£10"
+      data-dashboard--mobile-header-amount-value="AU$10"
       data-dashboard--mobile-header-lending-count="Renting & Lending"
       data-dashboard--mobile-header-offer-count="Buying & Selling"
       data-dashboard--mobile-header-order-count="Buying & Selling"
@@ -116,7 +116,7 @@ const DashboardSidebar = () =>{
                   className="text-uppercase"
                   href="/Panel/Referral"
                 >
-                  Give £10, Get £10
+                  Give AU$10, Get AU$10
                 </a>
               </li>
               <li>
@@ -206,7 +206,7 @@ const DashboardSidebar = () =>{
                 href="#"
                 id="account_balance"
               >
-                Credit balance: £0.00
+                Credit balance: AU$0.00
               </a>
             </turbo-frame>
             <div className="d-flex align-items-end pr-1">
@@ -242,7 +242,7 @@ const DashboardSidebar = () =>{
                     href="#"
                     id="account_balance"
                   >
-                    {' '}Credit balance: £0.00{' '}
+                    {' '}Credit balance: AU$0.00{' '}
                   </a>
                 </div>
               </turbo-frame>
@@ -306,7 +306,7 @@ const DashboardSidebar = () =>{
                 className="mr-2"
                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/share-icon-055ae36202c20661386b7919901bd106.svg"
               />
-              {' '}Give £10, Get £10
+              {' '}Give AU$10, Get AU$10
             </div>
           </a>
         </div>
@@ -365,7 +365,7 @@ const DashboardSidebar = () =>{
             className="give-get-button-component button primary button-width py-0 d-none"
             data-action="click->give-get-button-component#show"
             data-controller="give-get-button-component"
-            data-give-get-button-component-text-value="Psst... join me on circular-couture and we'll both get £10 off our next order! 💕"
+            data-give-get-button-component-text-value="Psst... join me on circular-couture and we'll both get AU$10 off our next order! 💕"
             data-give-get-button-component-title-value="circular-couture"
             data-give-get-button-component-url-value="https://www.circular-couturecollective.com/r/shahid-u"
           >
@@ -374,7 +374,7 @@ const DashboardSidebar = () =>{
                 className="mr-2"
                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/share-icon-055ae36202c20661386b7919901bd106.svg"
               />
-              {' '}Give £10, Get £10
+              {' '}Give AU$10, Get AU$10
             </div>
           </button>
           <div className="give-get-button-desktop">
@@ -387,7 +387,7 @@ const DashboardSidebar = () =>{
                   className="mr-2"
                   src="https://res.cloudinary.com/dcaptnlz3/image/asset/share-icon-055ae36202c20661386b7919901bd106.svg"
                 />
-                {' '}Give £10, Get £10
+                {' '}Give AU$10, Get AU$10
               </div>
             </a>
           </div>
@@ -470,7 +470,7 @@ const DashboardSidebar = () =>{
             className="text-uppercase"
             href="/Panel/Referral"
           >
-            Give £10, Get £10
+            Give AU$10, Get AU$10
           </a>
         </li>
         <li className="profile-link">

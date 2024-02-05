@@ -35,7 +35,7 @@ const Lender = () =>{
           >
             Designers List
           </a>
-          , less than two years old and has a retail price over £120.
+          , less than two years old and has a retail price over AU$120.
         </p>
         <div className="mx-3 mx-md-0">
           <div className="row">
@@ -366,10 +366,10 @@ const Lender = () =>{
                               </p>
                               <div className="separator mx-auto" />
                               <div className="item-price">
-                                {' '}RENT FROM £36{' '}
+                                {' '}RENT FROM AU$36{' '}
                               </div>
                               <p className="item-rrp text-uppercase mb-0">
-                                Retail £170
+                                Retail AU$170
                               </p>
                             </div>
                           </a>
@@ -429,10 +429,10 @@ const Lender = () =>{
                               </p>
                               <div className="separator mx-auto" />
                               <div className="item-price">
-                                {' '}RENT FROM £43{' '}
+                                {' '}RENT FROM AU$43{' '}
                               </div>
                               <p className="item-rrp text-uppercase mb-0">
-                                Retail £250
+                                Retail AU$250
                               </p>
                             </div>
                           </a>
@@ -492,10 +492,10 @@ const Lender = () =>{
                               </p>
                               <div className="separator mx-auto" />
                               <div className="item-price">
-                                {' '}RENT FROM £50{' '}
+                                {' '}RENT FROM AU$50{' '}
                               </div>
                               <p className="item-rrp text-uppercase mb-0">
-                                Retail £380
+                                Retail AU$380
                               </p>
                             </div>
                           </a>

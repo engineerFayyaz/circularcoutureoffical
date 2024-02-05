@@ -601,14 +601,14 @@ const ListStepThree = () =>{
                   <h5 className="title">
                     Rent
                     <div className="sub-title">
-                      {' '}From £155.28 / 4 days{' '}
+                      {' '}From AU$155.28 / 4 days{' '}
                     </div>
                     <div className="retail">
                       <span className="price">
-                        Retail £1,495.00
+                        Retail AU$1,495.00
                       </span>
                       <span className="saves">
-                        Save £1,339.72
+                        Save AU$1,339.72
                       </span>
                     </div>
                   </h5>
@@ -845,12 +845,12 @@ const ListStepThree = () =>{
                               4 days
                             </div>
                             <div className="price-2">
-                              £155.28
+                              AU$155.28
                             </div>
                             <div className="price-2">
                               {' '}
                               <span className="cost-per-day">
-                                £38.82/day
+                                AU$38.82/day
                               </span>
                             </div>
                           </div>
@@ -878,12 +878,12 @@ const ListStepThree = () =>{
                               8 days
                             </div>
                             <div className="price-2">
-                              {' '}£233.51{' '}
+                              {' '}AU$233.51{' '}
                             </div>
                             <div className="price-2">
                               {' '}
                               <span className="cost-per-day">
-                                £29.19/day
+                                AU$29.19/day
                               </span>
                               <span className="discount-percentage">
                                 {' '}Save 25%
@@ -915,12 +915,12 @@ const ListStepThree = () =>{
                               16 days
                             </div>
                             <div className="price-2">
-                              {' '}£412.33{' '}
+                              {' '}AU$412.33{' '}
                             </div>
                             <div className="price-2">
                               {' '}
                               <span className="cost-per-day">
-                                £25.77/day
+                                AU$25.77/day
                               </span>
                               <span className="discount-percentage">
                                 {' '}Save 34%
@@ -952,12 +952,12 @@ const ListStepThree = () =>{
                               30 days
                             </div>
                             <div className="price-2">
-                              {' '}£512.91{' '}
+                              {' '}AU$512.91{' '}
                             </div>
                             <div className="price-2">
                               {' '}
                               <span className="cost-per-day">
-                                £17.10/day
+                                AU$17.10/day
                               </span>
                               <span className="discount-percentage">
                                 {' '}Save 56%
@@ -1180,7 +1180,7 @@ const ListStepThree = () =>{
                           <div className="total-price-wrapper">
                             {' '}Total:{' '}
                             <span data-rental-dates-calendar-component-target="totalPrice">
-                              £0.00
+                              AU$0.00
                             </span>
                             {' '}
                           </div>

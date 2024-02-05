@@ -193,10 +193,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £179{' '}
+                                  {' '}RENT FROM AU$179{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £1,880
+                                  Retail AU$1,880
                                 </p>
                               </div>
                             </a>
@@ -402,10 +402,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £399{' '}
+                                  {' '}RENT FROM AU$399{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £7,500
+                                  Retail AU$7,500
                                 </p>
                               </div>
                             </a>
@@ -611,10 +611,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £29{' '}
+                                  {' '}RENT FROM AU$29{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £435
+                                  Retail AU$435
                                 </p>
                               </div>
                             </a>
@@ -824,10 +824,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £66{' '}
+                                  {' '}RENT FROM AU$66{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £425
+                                  Retail AU$425
                                 </p>
                               </div>
                             </a>
@@ -1037,10 +1037,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £36{' '}
+                                  {' '}RENT FROM AU$36{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £260
+                                  Retail AU$260
                                 </p>
                               </div>
                             </a>
@@ -1246,10 +1246,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £59{' '}
+                                  {' '}RENT FROM AU$59{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £300
+                                  Retail AU$300
                                 </p>
                               </div>
                             </a>
@@ -1459,10 +1459,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £68{' '}
+                                  {' '}RENT FROM AU$68{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £440
+                                  Retail AU$440
                                 </p>
                               </div>
                             </a>
@@ -1672,10 +1672,10 @@ const Wishlist = () =>{
                                 </p>
                                 <div className="separator mx-auto" />
                                 <div className="item-price">
-                                  {' '}RENT FROM £112{' '}
+                                  {' '}RENT FROM AU$112{' '}
                                 </div>
                                 <p className="item-rrp text-uppercase mb-0">
-                                  Retail £905
+                                  Retail AU$905
                                 </p>
                               </div>
                             </a>

@@ -598,14 +598,14 @@ const ProductDetail = () =>{
                 <h5 className="title">
                   									Rent									
                   <div className="sub-title">
-                    {' '}From £155.28 / 4 days{' '}
+                    {' '}From AU$155.28 / 4 days{' '}
                   </div>
                   <div className="retail">
                     <span className="price">
-                      Retail £1,495.00
+                      Retail AU$1,495.00
                     </span>
                     <span className="saves">
-                      Save £1,339.72
+                      Save AU$1,339.72
                     </span>
                   </div>
                 </h5>
@@ -842,12 +842,12 @@ const ProductDetail = () =>{
                             4 days
                           </div>
                           <div className="price-2">
-                            £155.28
+                            AU$155.28
                           </div>
                           <div className="price-2">
                             {' '}
                             <span className="cost-per-day">
-                              £38.82/day
+                              AU$38.82/day
                             </span>
                           </div>
                         </div>
@@ -875,12 +875,12 @@ const ProductDetail = () =>{
                             8 days
                           </div>
                           <div className="price-2">
-                            {' '}£233.51{' '}
+                            {' '}AU$233.51{' '}
                           </div>
                           <div className="price-2">
                             {' '}
                             <span className="cost-per-day">
-                              £29.19/day
+                              AU$29.19/day
                             </span>
                             <span className="discount-percentage">
                               {' '}Save 25%
@@ -912,12 +912,12 @@ const ProductDetail = () =>{
                             16 days
                           </div>
                           <div className="price-2">
-                            {' '}£412.33{' '}
+                            {' '}AU$412.33{' '}
                           </div>
                           <div className="price-2">
                             {' '}
                             <span className="cost-per-day">
-                              £25.77/day
+                              AU$25.77/day
                             </span>
                             <span className="discount-percentage">
                               {' '}Save 34%
@@ -949,12 +949,12 @@ const ProductDetail = () =>{
                             30 days
                           </div>
                           <div className="price-2">
-                            {' '}£512.91{' '}
+                            {' '}AU$512.91{' '}
                           </div>
                           <div className="price-2">
                             {' '}
                             <span className="cost-per-day">
-                              £17.10/day
+                              AU$17.10/day
                             </span>
                             <span className="discount-percentage">
                               {' '}Save 56%
@@ -1177,7 +1177,7 @@ const ProductDetail = () =>{
                         <div className="total-price-wrapper">
                           {' '}Total:{' '}
                           <span data-rental-dates-calendar-component-target="totalPrice">
-                            £0.00													
+                            AU$0.00													
                           </span>
                           {' '}
                         </div>
@@ -1300,7 +1300,7 @@ const ProductDetail = () =>{
                     {' '}What if I damage my item?{' '}
                   </p>
                   <p className="description">
-                    {' '}The £7.50 Damage Protection fee will cover you!{' '}
+                    {' '}The AU$7.50 Damage Protection fee will cover you!{' '}
                     <a href="https://help.circular-couturecollective.com/hc/en-us/articles/4419480012177-What-is-Damage-Protection-">
                       Learn											more.
                     </a>
@@ -1389,10 +1389,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £123
+                                Rent from AU$123
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,395{' '}
+                                																RRP AU$1,395{' '}
                               </p>
                             </div>
                           </div>
@@ -1490,10 +1490,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £82
+                                Rent from AU$82
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £975{' '}
+                                																RRP AU$975{' '}
                               </p>
                             </div>
                           </div>
@@ -1617,10 +1617,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £74
+                                Rent from AU$74
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,650{' '}
+                                																RRP AU$1,650{' '}
                               </p>
                             </div>
                           </div>
@@ -1744,13 +1744,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £100
+                                Rent from AU$100
                               </p>
                               <p className="purchase-availability-label">
                                 MAKE AN OFFER
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £1,200{' '}
+                                {' '}RRP AU$1,200{' '}
                               </p>
                             </div>
                           </div>
@@ -1848,10 +1848,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £111
+                                Rent from AU$111
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £895{' '}
+                                																RRP AU$895{' '}
                               </p>
                             </div>
                           </div>
@@ -1950,10 +1950,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £82
+                                Rent from AU$82
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £595{' '}
+                                																RRP AU$595{' '}
                               </p>
                             </div>
                           </div>
@@ -2052,10 +2052,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £129
+                                Rent from AU$129
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,195{' '}
+                                																RRP AU$1,195{' '}
                               </p>
                             </div>
                           </div>
@@ -2180,13 +2180,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £93
+                                Rent from AU$93
                               </p>
                               <p className="purchase-availability-label">
                                 MAKE AN OFFER
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £1,395{' '}
+                                {' '}RRP AU$1,395{' '}
                               </p>
                             </div>
                           </div>
@@ -2311,10 +2311,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £122
+                                Rent from AU$122
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £995{' '}
+                                																RRP AU$995{' '}
                               </p>
                             </div>
                           </div>
@@ -2439,10 +2439,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £129
+                                Rent from AU$129
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,195{' '}
+                                																RRP AU$1,195{' '}
                               </p>
                             </div>
                           </div>
@@ -2539,10 +2539,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £71
+                                Rent from AU$71
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,650{' '}
+                                																RRP AU$1,650{' '}
                               </p>
                             </div>
                           </div>
@@ -2665,10 +2665,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £115
+                                Rent from AU$115
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,000{' '}
+                                																RRP AU$1,000{' '}
                               </p>
                             </div>
                           </div>
@@ -2791,10 +2791,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £123
+                                Rent from AU$123
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,395{' '}
+                                																RRP AU$1,395{' '}
                               </p>
                             </div>
                           </div>
@@ -2891,10 +2891,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £82
+                                Rent from AU$82
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £975{' '}
+                                																RRP AU$975{' '}
                               </p>
                             </div>
                           </div>
@@ -3017,10 +3017,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £74
+                                Rent from AU$74
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,650{' '}
+                                																RRP AU$1,650{' '}
                               </p>
                             </div>
                           </div>
@@ -3143,13 +3143,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £100
+                                Rent from AU$100
                               </p>
                               <p className="purchase-availability-label">
                                 MAKE AN OFFER
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £1,200{' '}
+                                {' '}RRP AU$1,200{' '}
                               </p>
                             </div>
                           </div>
@@ -3246,10 +3246,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £111
+                                Rent from AU$111
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £895{' '}
+                                																RRP AU$895{' '}
                               </p>
                             </div>
                           </div>
@@ -3347,10 +3347,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £82
+                                Rent from AU$82
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £595{' '}
+                                																RRP AU$595{' '}
                               </p>
                             </div>
                           </div>
@@ -3448,10 +3448,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £129
+                                Rent from AU$129
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,195{' '}
+                                																RRP AU$1,195{' '}
                               </p>
                             </div>
                           </div>
@@ -3575,13 +3575,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £93
+                                Rent from AU$93
                               </p>
                               <p className="purchase-availability-label">
                                 MAKE AN OFFER
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £1,395{' '}
+                                {' '}RRP AU$1,395{' '}
                               </p>
                             </div>
                           </div>
@@ -3705,10 +3705,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £122
+                                Rent from AU$122
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £995{' '}
+                                																RRP AU$995{' '}
                               </p>
                             </div>
                           </div>
@@ -3832,10 +3832,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £129
+                                Rent from AU$129
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,195{' '}
+                                																RRP AU$1,195{' '}
                               </p>
                             </div>
                           </div>
@@ -3933,10 +3933,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £71
+                                Rent from AU$71
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,650{' '}
+                                																RRP AU$1,650{' '}
                               </p>
                             </div>
                           </div>
@@ -4060,10 +4060,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £115
+                                Rent from AU$115
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,000{' '}
+                                																RRP AU$1,000{' '}
                               </p>
                             </div>
                           </div>
@@ -4190,10 +4190,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £123
+                                Rent from AU$123
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,395{' '}
+                                																RRP AU$1,395{' '}
                               </p>
                             </div>
                           </div>
@@ -4294,10 +4294,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £82
+                                Rent from AU$82
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £975{' '}
+                                																RRP AU$975{' '}
                               </p>
                             </div>
                           </div>
@@ -4424,10 +4424,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £74
+                                Rent from AU$74
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £1,650{' '}
+                                																RRP AU$1,650{' '}
                               </p>
                             </div>
                           </div>
@@ -4554,13 +4554,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £100
+                                Rent from AU$100
                               </p>
                               <p className="purchase-availability-label">
                                 MAKE AN OFFER
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £1,200{' '}
+                                {' '}RRP AU$1,200{' '}
                               </p>
                             </div>
                           </div>
@@ -4661,10 +4661,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £111
+                                Rent from AU$111
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £895{' '}
+                                																RRP AU$895{' '}
                               </p>
                             </div>
                           </div>
@@ -4830,10 +4830,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £85
+                                Rent from AU$85
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £665{' '}
+                                																RRP AU$665{' '}
                               </p>
                             </div>
                           </div>
@@ -4931,10 +4931,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £50
+                                Rent from AU$50
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £250{' '}
+                                																RRP AU$250{' '}
                               </p>
                             </div>
                           </div>
@@ -5032,10 +5032,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £72
+                                Rent from AU$72
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £380{' '}
+                                																RRP AU$380{' '}
                               </p>
                             </div>
                           </div>
@@ -5133,10 +5133,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £75
+                                Rent from AU$75
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £580{' '}
+                                																RRP AU$580{' '}
                               </p>
                             </div>
                           </div>
@@ -5234,10 +5234,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £62
+                                Rent from AU$62
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £650{' '}
+                                																RRP AU$650{' '}
                               </p>
                             </div>
                           </div>
@@ -5362,13 +5362,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £72
+                                Rent from AU$72
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW £275
+                                BUY NOW AU$275
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £550{' '}
+                                {' '}RRP AU$550{' '}
                               </p>
                             </div>
                           </div>
@@ -5467,13 +5467,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £71
+                                Rent from AU$71
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW £419
+                                BUY NOW AU$419
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £465{' '}
+                                {' '}RRP AU$465{' '}
                               </p>
                             </div>
                           </div>
@@ -5598,13 +5598,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £165
+                                Rent from AU$165
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW £1,560
+                                BUY NOW AU$1,560
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £1,733{' '}
+                                {' '}RRP AU$1,733{' '}
                               </p>
                             </div>
                           </div>
@@ -5703,10 +5703,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £103
+                                Rent from AU$103
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £825{' '}
+                                																RRP AU$825{' '}
                               </p>
                             </div>
                           </div>
@@ -5805,13 +5805,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £30
+                                Rent from AU$30
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW FROM £40
+                                BUY NOW FROM AU$40
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £134{' '}
+                                {' '}RRP AU$134{' '}
                               </p>
                             </div>
                           </div>
@@ -5934,10 +5934,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £53
+                                Rent from AU$53
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £325{' '}
+                                																RRP AU$325{' '}
                               </p>
                             </div>
                           </div>
@@ -6060,10 +6060,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £40
+                                Rent from AU$40
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £195{' '}
+                                																RRP AU$195{' '}
                               </p>
                             </div>
                           </div>
@@ -6160,10 +6160,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £85
+                                Rent from AU$85
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £665{' '}
+                                																RRP AU$665{' '}
                               </p>
                             </div>
                           </div>
@@ -6260,10 +6260,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £50
+                                Rent from AU$50
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £250{' '}
+                                																RRP AU$250{' '}
                               </p>
                             </div>
                           </div>
@@ -6360,10 +6360,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £72
+                                Rent from AU$72
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £380{' '}
+                                																RRP AU$380{' '}
                               </p>
                             </div>
                           </div>
@@ -6460,10 +6460,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £75
+                                Rent from AU$75
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £580{' '}
+                                																RRP AU$580{' '}
                               </p>
                             </div>
                           </div>
@@ -6560,10 +6560,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £62
+                                Rent from AU$62
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £650{' '}
+                                																RRP AU$650{' '}
                               </p>
                             </div>
                           </div>
@@ -6687,13 +6687,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £72
+                                Rent from AU$72
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW £275
+                                BUY NOW AU$275
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £550{' '}
+                                {' '}RRP AU$550{' '}
                               </p>
                             </div>
                           </div>
@@ -6791,13 +6791,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £71
+                                Rent from AU$71
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW £419
+                                BUY NOW AU$419
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £465{' '}
+                                {' '}RRP AU$465{' '}
                               </p>
                             </div>
                           </div>
@@ -6921,13 +6921,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £165
+                                Rent from AU$165
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW £1,560
+                                BUY NOW AU$1,560
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £1,733{' '}
+                                {' '}RRP AU$1,733{' '}
                               </p>
                             </div>
                           </div>
@@ -7025,10 +7025,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £103
+                                Rent from AU$103
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £825{' '}
+                                																RRP AU$825{' '}
                               </p>
                             </div>
                           </div>
@@ -7126,13 +7126,13 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £30
+                                Rent from AU$30
                               </p>
                               <p className="purchase-availability-label">
-                                BUY NOW FROM £40
+                                BUY NOW FROM AU$40
                               </p>
                               <p className="retail-price ">
-                                {' '}RRP £134{' '}
+                                {' '}RRP AU$134{' '}
                               </p>
                             </div>
                           </div>
@@ -7256,10 +7256,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £53
+                                Rent from AU$53
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £325{' '}
+                                																RRP AU$325{' '}
                               </p>
                             </div>
                           </div>
@@ -7383,10 +7383,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £40
+                                Rent from AU$40
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £195{' '}
+                                																RRP AU$195{' '}
                               </p>
                             </div>
                           </div>
@@ -7487,10 +7487,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £85
+                                Rent from AU$85
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £665{' '}
+                                																RRP AU$665{' '}
                               </p>
                             </div>
                           </div>
@@ -7591,10 +7591,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £50
+                                Rent from AU$50
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £250{' '}
+                                																RRP AU$250{' '}
                               </p>
                             </div>
                           </div>
@@ -7695,10 +7695,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £72
+                                Rent from AU$72
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £380{' '}
+                                																RRP AU$380{' '}
                               </p>
                             </div>
                           </div>
@@ -7799,10 +7799,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £75
+                                Rent from AU$75
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £580{' '}
+                                																RRP AU$580{' '}
                               </p>
                             </div>
                           </div>
@@ -7903,10 +7903,10 @@ const ProductDetail = () =>{
                             </h4>
                             <div className="prices">
                               <p className="rent">
-                                Rent from £62
+                                Rent from AU$62
                               </p>
                               <p className="retail-price empty-purchase-availability-label">
-                                																RRP £650{' '}
+                                																RRP AU$650{' '}
                               </p>
                             </div>
                           </div>
@@ -8211,7 +8211,7 @@ const ProductDetail = () =>{
                             </li>
                             <li>
                               <dd className="mb-3 text-danger">
-                                Late returns will incur a fee																of £25 per day.{' '}
+                                Late returns will incur a fee																of AU$25 per day.{' '}
                                 <a
                                   className="text-danger"
                                   href="https://help.circular-couturecollective.com/hc/en-us/articles/4419482108433-Late-fees"

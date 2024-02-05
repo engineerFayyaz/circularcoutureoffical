@@ -15,7 +15,7 @@ const Referral = () =>{
     <div className="second-section referrals-page">
       <div className="dashboard-header">
         <h1>
-          Give £10, Get £10
+          Give AU$10, Get AU$10
         </h1>
         <div className="row">
           <div className="col-md-10 col-lg-8">
@@ -24,7 +24,7 @@ const Referral = () =>{
               <span className="circular-couture-font-logo">
                 CIRCULAR COUTURE
               </span>
-              {' '}and they’ll get £10 off their first rental. Once they’ve transacted, you’ll get £10 to spend on your next rental too!{' '}
+              {' '}and they’ll get AU$10 off their first rental. Once they’ve transacted, you’ll get AU$10 to spend on your next rental too!{' '}
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Referral = () =>{
         <form
           className="referrals-form mt-md-4"
           data-controller="copy-text"
-          data-copy-text-amount-value="£10"
+          data-copy-text-amount-value="AU$10"
         >
           <div
             className="form-row"
@@ -76,7 +76,7 @@ const Referral = () =>{
                 </li>
                 <li className="list-inline-item mr-4">
                   <a
-                    href="https://twitter.com/intent/tweet?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we%27ll%20both%20get%20£10%20off%20our%20next%20order!%20%F0%9F%92%95%20https://www.circular-couturecollective.com/r/shahid-u"
+                    href="https://twitter.com/intent/tweet?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we%27ll%20both%20get%20AU$10%20off%20our%20next%20order!%20%F0%9F%92%95%20https://www.circular-couturecollective.com/r/shahid-u"
                     target="_blank"
                   >
                     <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/twitter-circle-logo-c84c28f9787c1f04fc53c10833c338d5.svg" />
@@ -84,7 +84,7 @@ const Referral = () =>{
                 </li>
                 <li className="list-inline-item mr-4">
                   <a
-                    href="https://api.whatsapp.com/send?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we'll%20both%20get%20£10%20off%20our%20next%20order!%20%F0%9F%92%95%20%23%7Broot_url%7Dr%2F%23%7Bcurrent_user.slug%7D"
+                    href="https://api.whatsapp.com/send?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we'll%20both%20get%20AU$10%20off%20our%20next%20order!%20%F0%9F%92%95%20%23%7Broot_url%7Dr%2F%23%7Bcurrent_user.slug%7D"
                     target="_blank"
                   >
                     <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/watsapp-circle-logo-c69876ffc3e6f321f7672cc16158ae37.svg" />
@@ -161,7 +161,7 @@ const Referral = () =>{
           className="mobile-referral component referral-share-button button primary d-none"
           data-action="click->referral-share-button-component#show"
           data-controller="referral-share-button-component"
-          data-referral-share-button-component-text-value="Psst... join me on CIRCULAR COUTURE and we'll both get £10 off our next order! 💕 "
+          data-referral-share-button-component-text-value="Psst... join me on CIRCULAR COUTURE and we'll both get AU$10 off our next order! 💕 "
           data-referral-share-button-component-title-value="CIRCULAR COUTURE"
           data-referral-share-button-component-url-value="https://www.circular-couturecollective.com/r/shahid-u"
         >
@@ -210,7 +210,7 @@ const Referral = () =>{
                       Credit earned
                     </h5>
                     <p className="value mb-0">
-                      £0
+                      AU$0
                     </p>
                   </div>
                 </div>

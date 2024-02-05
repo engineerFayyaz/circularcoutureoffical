@@ -3412,7 +3412,7 @@ const Aje=()=>{
                                           >
                                             <div className="noUi-touch-area" />
                                             <div className="noUi-tooltip">
-                                              £ 15
+                                              AU$ 15
                                             </div>
                                           </div>
                                         </div>
@@ -3436,7 +3436,7 @@ const Aje=()=>{
                                           >
                                             <div className="noUi-touch-area" />
                                             <div className="noUi-tooltip">
-                                              £ 900
+                                              AU$ 900
                                             </div>
                                           </div>
                                         </div>
@@ -3562,8 +3562,8 @@ const Aje=()=>{
                   <div
                     className="row no-gutters mx-0"
                     data-app-search--listing-filters-target="filterResultContainer promoSpotController"
-                    data-app-search--promo-spot-amount-value="£10"
-                    data-app-search--promo-spot-promo-body-value="Discover over 60,000 luxury pieces and try something you love. Minimum order value of £45 applies."
+                    data-app-search--promo-spot-amount-value="AU$10"
+                    data-app-search--promo-spot-promo-body-value="Discover over 60,000 luxury pieces and try something you love. Minimum order value of AU$45 applies."
                     data-app-search--promo-spot-promo-title-value="Get 15% off your first rental"
                     data-app-search--promo-spot-user-signed-in-value="false"
                     data-app-search--promo-spot-user-successful-rental-value="true"
@@ -3671,11 +3671,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £40
+                              Rent from AU$40
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £310
+                                RRP AU$310
                               </s>
                             </p>
                           </div>
@@ -3779,11 +3779,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £33
+                              Rent from AU$33
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £475
+                                RRP AU$475
                               </s>
                             </p>
                           </div>
@@ -3887,11 +3887,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £310
+                                RRP AU$310
                               </s>
                             </p>
                           </div>
@@ -3995,11 +3995,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £38
+                              Rent from AU$38
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -4103,11 +4103,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £53
+                              Rent from AU$53
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £385
+                                RRP AU$385
                               </s>
                             </p>
                           </div>
@@ -4124,7 +4124,7 @@ const Aje=()=>{
                             Get 15% off your first rental
                           </h5>
                           <p className="description my-4 my-md-5 mx-0 mx-xl-4">
-                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of £45 applies.
+                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
                             <a
@@ -4237,11 +4237,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £48
+                              Rent from AU$48
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £545
+                                RRP AU$545
                               </s>
                             </p>
                           </div>
@@ -4345,11 +4345,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £35
+                              Rent from AU$35
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £255
+                                RRP AU$255
                               </s>
                             </p>
                           </div>
@@ -4453,11 +4453,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £37
+                              Rent from AU$37
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £310
+                                RRP AU$310
                               </s>
                             </p>
                           </div>
@@ -4561,11 +4561,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £50
+                              Rent from AU$50
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £475
+                                RRP AU$475
                               </s>
                             </p>
                           </div>
@@ -4669,11 +4669,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £310
+                                RRP AU$310
                               </s>
                             </p>
                           </div>
@@ -4777,11 +4777,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £36
+                              Rent from AU$36
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £330
+                                RRP AU$330
                               </s>
                             </p>
                           </div>
@@ -4885,11 +4885,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £355
+                                RRP AU$355
                               </s>
                             </p>
                           </div>
@@ -4993,11 +4993,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £34
+                              Rent from AU$34
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £360
+                                RRP AU$360
                               </s>
                             </p>
                           </div>
@@ -5101,11 +5101,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £33
+                              Rent from AU$33
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £355
+                                RRP AU$355
                               </s>
                             </p>
                           </div>
@@ -5209,11 +5209,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £36
+                              Rent from AU$36
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £275
+                                RRP AU$275
                               </s>
                             </p>
                           </div>
@@ -5317,11 +5317,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £42
+                              Rent from AU$42
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £580
+                                RRP AU$580
                               </s>
                             </p>
                           </div>
@@ -5425,11 +5425,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £38
+                              Rent from AU$38
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £305
+                                RRP AU$305
                               </s>
                             </p>
                           </div>
@@ -5533,11 +5533,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £59
+                              Rent from AU$59
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £375
+                                RRP AU$375
                               </s>
                             </p>
                           </div>
@@ -5641,11 +5641,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £335
+                                RRP AU$335
                               </s>
                             </p>
                           </div>
@@ -5749,11 +5749,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £86
+                              Rent from AU$86
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £415
+                                RRP AU$415
                               </s>
                             </p>
                           </div>
@@ -5857,11 +5857,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £42
+                              Rent from AU$42
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -5965,11 +5965,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £400
+                                RRP AU$400
                               </s>
                             </p>
                           </div>
@@ -6073,11 +6073,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £47
+                              Rent from AU$47
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £385
+                                RRP AU$385
                               </s>
                             </p>
                           </div>
@@ -6181,11 +6181,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £335
+                                RRP AU$335
                               </s>
                             </p>
                           </div>
@@ -6289,11 +6289,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £29
+                              Rent from AU$29
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £355
+                                RRP AU$355
                               </s>
                             </p>
                           </div>
@@ -6397,11 +6397,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £31
+                              Rent from AU$31
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £410
+                                RRP AU$410
                               </s>
                             </p>
                           </div>
@@ -6505,11 +6505,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £21
+                              Rent from AU$21
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £260
+                                RRP AU$260
                               </s>
                             </p>
                           </div>
@@ -6613,11 +6613,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £50
+                              Rent from AU$50
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £360
+                                RRP AU$360
                               </s>
                             </p>
                           </div>
@@ -6721,11 +6721,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £355
+                                RRP AU$355
                               </s>
                             </p>
                           </div>
@@ -6742,7 +6742,7 @@ const Aje=()=>{
                             Get 15% off your first rental
                           </h5>
                           <p className="description my-4 my-md-5 mx-0 mx-xl-4">
-                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of £45 applies.
+                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
                             <a
@@ -6855,11 +6855,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £46
+                              Rent from AU$46
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -6963,11 +6963,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £17
+                              Rent from AU$17
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £195
+                                RRP AU$195
                               </s>
                             </p>
                           </div>
@@ -7071,11 +7071,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £36
+                              Rent from AU$36
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £295
+                                RRP AU$295
                               </s>
                             </p>
                           </div>
@@ -7179,11 +7179,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £400
+                                RRP AU$400
                               </s>
                             </p>
                           </div>
@@ -7287,11 +7287,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £59
+                              Rent from AU$59
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £425
+                                RRP AU$425
                               </s>
                             </p>
                           </div>
@@ -7395,11 +7395,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £45
+                              Rent from AU$45
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £260
+                                RRP AU$260
                               </s>
                             </p>
                           </div>
@@ -7503,11 +7503,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £35
+                              Rent from AU$35
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -7611,11 +7611,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £54
+                              Rent from AU$54
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £450
+                                RRP AU$450
                               </s>
                             </p>
                           </div>
@@ -7719,11 +7719,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £48
+                              Rent from AU$48
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £400
+                                RRP AU$400
                               </s>
                             </p>
                           </div>
@@ -7827,11 +7827,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £38
+                              Rent from AU$38
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £355
+                                RRP AU$355
                               </s>
                             </p>
                           </div>
@@ -7935,11 +7935,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £32
+                              Rent from AU$32
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £209
+                                RRP AU$209
                               </s>
                             </p>
                           </div>
@@ -8043,11 +8043,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £47
+                              Rent from AU$47
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £388
+                                RRP AU$388
                               </s>
                             </p>
                           </div>
@@ -8151,11 +8151,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £31
+                              Rent from AU$31
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £200
+                                RRP AU$200
                               </s>
                             </p>
                           </div>
@@ -8259,11 +8259,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £39
+                              Rent from AU$39
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £321
+                                RRP AU$321
                               </s>
                             </p>
                           </div>
@@ -8367,11 +8367,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -8475,14 +8475,14 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £45
+                              Rent from AU$45
                             </p>
                             <p className="purchase-availability-label mb-0">
                               MAKE AN OFFER
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £395
+                                RRP AU$395
                               </s>
                             </p>
                           </div>
@@ -8586,11 +8586,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £18
+                              Rent from AU$18
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £125
+                                RRP AU$125
                               </s>
                             </p>
                           </div>
@@ -8694,11 +8694,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £49
+                              Rent from AU$49
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £375
+                                RRP AU$375
                               </s>
                             </p>
                           </div>
@@ -8802,11 +8802,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £47
+                              Rent from AU$47
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £360
+                                RRP AU$360
                               </s>
                             </p>
                           </div>
@@ -8910,11 +8910,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £35
+                              Rent from AU$35
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £325
+                                RRP AU$325
                               </s>
                             </p>
                           </div>
@@ -9018,11 +9018,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £69
+                              Rent from AU$69
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £295
+                                RRP AU$295
                               </s>
                             </p>
                           </div>
@@ -9126,11 +9126,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £330
+                                RRP AU$330
                               </s>
                             </p>
                           </div>
@@ -9234,11 +9234,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £55
+                              Rent from AU$55
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £230
+                                RRP AU$230
                               </s>
                             </p>
                           </div>
@@ -9342,11 +9342,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £64
+                              Rent from AU$64
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £560
+                                RRP AU$560
                               </s>
                             </p>
                           </div>
@@ -9363,7 +9363,7 @@ const Aje=()=>{
                             Get 15% off your first rental
                           </h5>
                           <p className="description my-4 my-md-5 mx-0 mx-xl-4">
-                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of £45 applies.
+                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
                             <a
@@ -9476,11 +9476,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £48
+                              Rent from AU$48
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £246
+                                RRP AU$246
                               </s>
                             </p>
                           </div>
@@ -9584,11 +9584,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £58
+                              Rent from AU$58
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £480
+                                RRP AU$480
                               </s>
                             </p>
                           </div>
@@ -9692,14 +9692,14 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £46
+                              Rent from AU$46
                             </p>
                             <p className="purchase-availability-label mb-0">
-                              BUY NOW £175
+                              BUY NOW AU$175
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -9803,11 +9803,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £50
+                              Rent from AU$50
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £378
+                                RRP AU$378
                               </s>
                             </p>
                           </div>
@@ -9911,11 +9911,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £35
+                              Rent from AU$35
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £330
+                                RRP AU$330
                               </s>
                             </p>
                           </div>
@@ -10019,11 +10019,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £31
+                              Rent from AU$31
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £255
+                                RRP AU$255
                               </s>
                             </p>
                           </div>
@@ -10127,11 +10127,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £38
+                              Rent from AU$38
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £247
+                                RRP AU$247
                               </s>
                             </p>
                           </div>
@@ -10235,11 +10235,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £45
+                              Rent from AU$45
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £275
+                                RRP AU$275
                               </s>
                             </p>
                           </div>
@@ -10343,11 +10343,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £50
+                              Rent from AU$50
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £335
+                                RRP AU$335
                               </s>
                             </p>
                           </div>
@@ -10451,11 +10451,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £36
+                              Rent from AU$36
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £275
+                                RRP AU$275
                               </s>
                             </p>
                           </div>
@@ -10557,11 +10557,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £400
+                                RRP AU$400
                               </s>
                             </p>
                           </div>
@@ -10665,11 +10665,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £400
+                                RRP AU$400
                               </s>
                             </p>
                           </div>
@@ -10773,11 +10773,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £40
+                              Rent from AU$40
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £370
+                                RRP AU$370
                               </s>
                             </p>
                           </div>
@@ -10879,11 +10879,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £355
+                                RRP AU$355
                               </s>
                             </p>
                           </div>
@@ -10985,11 +10985,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £46
+                              Rent from AU$46
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -11093,11 +11093,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £400
+                                RRP AU$400
                               </s>
                             </p>
                           </div>
@@ -11201,14 +11201,14 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="purchase-availability-label mb-0">
-                              BUY NOW £450
+                              BUY NOW AU$450
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £450
+                                RRP AU$450
                               </s>
                             </p>
                           </div>
@@ -11310,11 +11310,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £46
+                              Rent from AU$46
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £350
+                                RRP AU$350
                               </s>
                             </p>
                           </div>
@@ -11416,11 +11416,11 @@ const Aje=()=>{
                             <p className="size mb-0" />
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £35
+                              Rent from AU$35
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £335
+                                RRP AU$335
                               </s>
                             </p>
                           </div>
@@ -11524,11 +11524,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £71
+                              Rent from AU$71
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £693
+                                RRP AU$693
                               </s>
                             </p>
                           </div>
@@ -11630,11 +11630,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £62
+                              Rent from AU$62
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £550
+                                RRP AU$550
                               </s>
                             </p>
                           </div>
@@ -11736,11 +11736,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £62
+                              Rent from AU$62
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £550
+                                RRP AU$550
                               </s>
                             </p>
                           </div>
@@ -11844,11 +11844,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £19
+                              Rent from AU$19
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £125
+                                RRP AU$125
                               </s>
                             </p>
                           </div>
@@ -11952,11 +11952,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £57
+                              Rent from AU$57
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £385
+                                RRP AU$385
                               </s>
                             </p>
                           </div>
@@ -12060,11 +12060,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £44
+                              Rent from AU$44
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £335
+                                RRP AU$335
                               </s>
                             </p>
                           </div>
@@ -12081,7 +12081,7 @@ const Aje=()=>{
                             Get 15% off your first rental
                           </h5>
                           <p className="description my-4 my-md-5 mx-0 mx-xl-4">
-                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of £45 applies.
+                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
                             <a
@@ -12194,11 +12194,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £55
+                              Rent from AU$55
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £423
+                                RRP AU$423
                               </s>
                             </p>
                           </div>
@@ -12302,11 +12302,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £55
+                              Rent from AU$55
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £412
+                                RRP AU$412
                               </s>
                             </p>
                           </div>
@@ -12410,11 +12410,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £43
+                              Rent from AU$43
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £325
+                                RRP AU$325
                               </s>
                             </p>
                           </div>
@@ -12518,11 +12518,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £43
+                              Rent from AU$43
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £325
+                                RRP AU$325
                               </s>
                             </p>
                           </div>
@@ -12626,11 +12626,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £43
+                              Rent from AU$43
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £325
+                                RRP AU$325
                               </s>
                             </p>
                           </div>
@@ -12734,11 +12734,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £335
+                                RRP AU$335
                               </s>
                             </p>
                           </div>
@@ -12842,11 +12842,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £55
+                              Rent from AU$55
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £335
+                                RRP AU$335
                               </s>
                             </p>
                           </div>
@@ -12950,11 +12950,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £295
+                                RRP AU$295
                               </s>
                             </p>
                           </div>
@@ -13058,11 +13058,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £41
+                              Rent from AU$41
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £295
+                                RRP AU$295
                               </s>
                             </p>
                           </div>
@@ -13166,11 +13166,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £66
+                              Rent from AU$66
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £310
+                                RRP AU$310
                               </s>
                             </p>
                           </div>
@@ -13274,11 +13274,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £45
+                              Rent from AU$45
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £395
+                                RRP AU$395
                               </s>
                             </p>
                           </div>
@@ -13382,11 +13382,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £48
+                              Rent from AU$48
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £500
+                                RRP AU$500
                               </s>
                             </p>
                           </div>
@@ -13490,11 +13490,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £69
+                              Rent from AU$69
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £235
+                                RRP AU$235
                               </s>
                             </p>
                           </div>
@@ -13598,11 +13598,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £60
+                              Rent from AU$60
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £455
+                                RRP AU$455
                               </s>
                             </p>
                           </div>
@@ -13706,11 +13706,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £38
+                              Rent from AU$38
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £287
+                                RRP AU$287
                               </s>
                             </p>
                           </div>
@@ -13814,14 +13814,14 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £50
+                              Rent from AU$50
                             </p>
                             <p className="purchase-availability-label mb-0">
                               MAKE AN OFFER
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £325
+                                RRP AU$325
                               </s>
                             </p>
                           </div>
@@ -13925,11 +13925,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £43
+                              Rent from AU$43
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £325
+                                RRP AU$325
                               </s>
                             </p>
                           </div>
@@ -13946,7 +13946,7 @@ const Aje=()=>{
                             Get 15% off your first rental
                           </h5>
                           <p className="description my-4 my-md-5 mx-0 mx-xl-4">
-                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of £45 applies.
+                            Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
                             <a
@@ -14059,11 +14059,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £52
+                              Rent from AU$52
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £315
+                                RRP AU$315
                               </s>
                             </p>
                           </div>
@@ -14167,11 +14167,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £34
+                              Rent from AU$34
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £225
+                                RRP AU$225
                               </s>
                             </p>
                           </div>
@@ -14275,11 +14275,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £104
+                              Rent from AU$104
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £360
+                                RRP AU$360
                               </s>
                             </p>
                           </div>
@@ -14383,11 +14383,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £21
+                              Rent from AU$21
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £260
+                                RRP AU$260
                               </s>
                             </p>
                           </div>
@@ -14491,11 +14491,11 @@ const Aje=()=>{
                             </p>
                             <p className="break my-2" />
                             <p className="start-price mb-1">
-                              Rent from £51
+                              Rent from AU$51
                             </p>
                             <p className="retail-price mb-0 pb-3">
                               <s>
-                                RRP £360
+                                RRP AU$360
                               </s>
                             </p>
                           </div>
@@ -17665,7 +17665,7 @@ const Aje=()=>{
                                   >
                                     <div className="noUi-touch-area" />
                                     <div className="noUi-tooltip">
-                                      £ 15
+                                      AU$ 15
                                     </div>
                                   </div>
                                 </div>
@@ -17689,7 +17689,7 @@ const Aje=()=>{
                                   >
                                     <div className="noUi-touch-area" />
                                     <div className="noUi-tooltip">
-                                      £ 900
+                                      AU$ 900
                                     </div>
                                   </div>
                                 </div>

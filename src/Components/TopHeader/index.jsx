@@ -35,11 +35,11 @@ const TopHeader = () => {
         <div className="main-header-section d-lg-flex justify-content-between">
           <div className="fixed-container">
             <div className="row no-gutters">
-              <div className="col-md-4">
+              <div className="col-md-4" style={{marginTop:"14px"}}>
                 <ul className="list-inline mb-0">
                   <li className="list-inline-item mr-4">
                     <p className="currancy-idicator text-uppercase mb-0">
-                      🇬🇧 GBP £
+                      🇬🇧 GBP AU$
                     </p>
                   </li>
                   <li className="list-inline-item">

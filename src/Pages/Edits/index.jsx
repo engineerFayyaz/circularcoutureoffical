@@ -945,7 +945,7 @@ const Edits = () => {
               <div className="card-footer rounded-0 p-0 border-0">
                 <a href="/edits/the-uni-edit">
                   <h3>
-                    The Under £35 Uni Edit
+                    The Under AU$35 Uni Edit
                   </h3>
                   {' '}
                 </a>

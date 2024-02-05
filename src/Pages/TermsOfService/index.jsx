@@ -155,7 +155,7 @@ const TermsOfService = () => {
       </p>
       <p className="c17">
         <span className="c0">
-          "Damage Protection Charge": an optional £7.50 charge payable by a Renter to circularcouture in consideration for Damage Protection.{' '}
+          "Damage Protection Charge": an optional AU$7.50 charge payable by a Renter to circularcouture in consideration for Damage Protection.{' '}
         </span>
       </p>
       <p className="c17">
@@ -1299,7 +1299,7 @@ const TermsOfService = () => {
       </ol>
       <p className="c17">
         <span className="c0">
-          All fees are payable in British Pound Sterling (£) and are subject to change over time, any amendments to fees will be updated and reflected on the circularcouture Platform.
+          All fees are payable in British Pound Sterling (AU$) and are subject to change over time, any amendments to fees will be updated and reflected on the circularcouture Platform.
         </span>
       </p>
       <p className="c17">
@@ -1341,7 +1341,7 @@ const TermsOfService = () => {
       </p>
       <p className="c17">
         <span className="c0">
-          All fees are payable in British Pound Sterling (£) and are subject to change over time; any amendments to fees will be updated and reflected on the Platform.
+          All fees are payable in British Pound Sterling (AU$) and are subject to change over time; any amendments to fees will be updated and reflected on the Platform.
         </span>
       </p>
       <ol className="c1 lst-kix_list_1-0">

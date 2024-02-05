@@ -34,7 +34,7 @@ const Footer =()=>{
                       </li>
                       <li className="mb-3">
                         <a className="link" href="/Refer-a-Friend">
-                        GIVE £10, GET £10
+                        GIVE AU$10, GET AU$10
                         </a>
                       </li>
                       <li className="mb-3">
