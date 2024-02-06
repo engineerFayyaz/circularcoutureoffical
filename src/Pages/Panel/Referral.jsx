@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Referral = () =>{
 
     return (
@@ -67,36 +67,36 @@ const Referral = () =>{
             <div className="col-md-10 col-lg-8">
               <ul className="list-inline mt-1 mb-0 mb-md-1">
                 <li className="list-inline-item mr-4">
-                  <a
-                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.circular-couturecollective.com/r/shahid-u"
+                  <Link
+                    to="https://www.facebook.com/sharer/sharer.php?u=https://www.circular-couturecollective.com/r/shahid-u"
                     target="_blank"
                   >
                     <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/fb-circle-logo-169974ddc71180805838f926bf9f4f99.svg" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item mr-4">
-                  <a
-                    href="https://twitter.com/intent/tweet?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we%27ll%20both%20get%20AU$10%20off%20our%20next%20order!%20%F0%9F%92%95%20https://www.circular-couturecollective.com/r/shahid-u"
+                  <Link
+                    to="https://twitter.com/intent/tweet?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we%27ll%20both%20get%20AU$10%20off%20our%20next%20order!%20%F0%9F%92%95%20https://www.circular-couturecollective.com/r/shahid-u"
                     target="_blank"
                   >
                     <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/twitter-circle-logo-c84c28f9787c1f04fc53c10833c338d5.svg" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item mr-4">
-                  <a
-                    href="https://api.whatsapp.com/send?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we'll%20both%20get%20AU$10%20off%20our%20next%20order!%20%F0%9F%92%95%20%23%7Broot_url%7Dr%2F%23%7Bcurrent_user.slug%7D"
+                  <Link
+                    to="https://api.whatsapp.com/send?text=Psst...%20join%20me%20on%20CIRCULAR COUTURE%20and%20we'll%20both%20get%20AU$10%20off%20our%20next%20order!%20%F0%9F%92%95%20%23%7Broot_url%7Dr%2F%23%7Bcurrent_user.slug%7D"
                     target="_blank"
                   >
                     <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/watsapp-circle-logo-c69876ffc3e6f321f7672cc16158ae37.svg" />
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item">
-                  <a
-                    href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.circular-couturecollective.com/r/shahid-u"
+                  <Link
+                    to="https://www.linkedin.com/sharing/share-offsite/?url=https://www.circular-couturecollective.com/r/shahid-u"
                     target="_blank"
                   >
                     <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/linkedin-circle-logo-466bf26e29e6d42e753aa85ee55358fc.svg" />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

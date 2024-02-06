@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const DashboardSidebar = () =>{
 
     return (
@@ -48,17 +48,17 @@ const DashboardSidebar = () =>{
             </span>
             <ul className="list-unstyled dashboard-menu m-0">
               <li className="dashboard-index-item active">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/Dashboard"
+                  to="/Panel/Dashboard"
                 >
                   Dashboard
-                </a>
+                </Link>
               </li>
               <li className="renting-index-item lending-index-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/lending"
+                  to="/Panel/lending"
                 >
                   <turbo-frame
                     id="renting_and_lending_count_frame"
@@ -67,12 +67,12 @@ const DashboardSidebar = () =>{
                   >
                     {' '}Renting & Lending{' '}
                   </turbo-frame>
-                </a>
+                </Link>
               </li>
               <li className="purchases-index-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="#"
+                  to="#"
                 >
                   <turbo-frame
                     id="buying_and_selling_count_frame"
@@ -81,67 +81,67 @@ const DashboardSidebar = () =>{
                   >
                     {' '}Buying & Selling{' '}
                   </turbo-frame>
-                </a>
+                </Link>
               </li>
               <li className="listings-index-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/listing"
+                  to="/Panel/listing"
                 >
                   Wardrobe
-                </a>
+                </Link>
               </li>
               <li className="messages_v2-index-item messages_v2-show-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/Messege"
+                  to="/Panel/Messege"
                 >
                   {' '}Messages{' '}
                   <span
                     className="text-circular-couture-light-red"
                     id="unread-messages-count"
                   />
-                </a>
+                </Link>
               </li>
               <li className="wishlist-index-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/Wishlist"
+                  to="/Panel/Wishlist"
                 >
                   Wishlists
-                </a>
+                </Link>
               </li>
               <li className="referrals-index-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/Referral"
+                  to="/Panel/Referral"
                 >
                   Give AU$10, Get AU$10
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="text-uppercase"
-                  href="https://help.circular-couturecollective.com/"
+                  to="https://help.circular-couturecollective.com/"
                 >
                   FAQS
-                </a>
+                </Link>
               </li>
               <li className="profile-index-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/Profile"
+                  to="/Panel/Profile"
                 >
                   Edit My Profile
-                </a>
+                </Link>
               </li>
               <li className="account-index-item">
-                <a
+                <Link
                   className="text-uppercase"
-                  href="/Panel/Account"
+                  to="/Panel/Account"
                 >
                   My Account
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -150,9 +150,9 @@ const DashboardSidebar = () =>{
     </div>
     <div className="first-section">
       <div className="media dashboard-users-media">
-        <a
+        <Link
           className="edit-account-btn"
-          href="/Panel/Account"
+          to="/Panel/Account"
         >
           <img
             className="avatar rounded-circle mr-3"
@@ -162,11 +162,11 @@ const DashboardSidebar = () =>{
             className="pencil-icon"
             src="https://res.cloudinary.com/dcaptnlz3/image/asset/pencil-61c31bf589b82405df2af3587d636d63.svg"
           />
-        </a>
+        </Link>
         <div className="media-body my-auto">
-          <a
+          <Link
             className="chat-box-heading text-dark"
-            href="/members/shahid-u"
+            to="/members/shahid-u"
           >
             <h5 className="mb-0">
               {' '}Shahid U.{' '}
@@ -192,41 +192,41 @@ const DashboardSidebar = () =>{
               </span>
             </h5>
             <div className="star-ratings-wrapper" />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="dashboard-account-balance position-relative">
         <div className="side-nav-account-credit-desktop-only">
           <div className="row mb-0 text-left mx-0 d-flex align-items-end">
             <turbo-frame id="account_credit_balance_frame">
-              <a
+              <Link
                 className="mr-2 d-flex align-items-end"
                 data-target="#how-credit-works-modal"
                 data-toggle="modal"
-                href="#"
+                to="#"
                 id="account_balance"
               >
                 Credit balance: AU$0.00
-              </a>
+              </Link>
             </turbo-frame>
             <div className="d-flex align-items-end pr-1">
-              <a
+              <Link
                 data-target="#how-credit-works-modal"
                 data-toggle="modal"
-                href="#"
+                to="#"
               >
                 <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/question-mark-2c6f6001fed8edcc159f3f1f70223177.svg" />
-              </a>
+              </Link>
             </div>
             <div className="text-wrap d-flex align-items-end">
-              <a
+              <Link
                 className="default-link -grey text-uppercase pb-0 pt-2"
                 data-target="#top_up_modal"
                 data-toggle="modal"
-                href="#"
+                to="#"
               >
                 Top Up
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -235,37 +235,37 @@ const DashboardSidebar = () =>{
             <div className="d-flex flex-column-end">
               <turbo-frame id="account_credit_balance_frame">
                 <div className="p-0">
-                  <a
+                  <Link
                     className="text-wrap"
                     data-target="#how-credit-works-modal"
                     data-toggle="modal"
-                    href="#"
+                    to="#"
                     id="account_balance"
                   >
                     {' '}Credit balance: AU$0.00{' '}
-                  </a>
+                  </Link>
                 </div>
               </turbo-frame>
               <div className=" pl-0 ml-2">
-                <a
+                <Link
                   data-target="#how-credit-works-modal"
                   data-toggle="modal"
-                  href="#"
+                  to="#"
                 >
                   <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/question-mark-2c6f6001fed8edcc159f3f1f70223177.svg" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           <div className="text-wrap d-flex align-items-end float-left">
-            <a
+            <Link
               className="default-link -grey text-uppercase pb-0"
               data-target="#top_up_modal"
               data-toggle="modal"
-              href="#"
+              to="#"
             >
               Top Up
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -297,9 +297,9 @@ const DashboardSidebar = () =>{
           className="mt-3"
           data-controller="give-get-button-component"
         >
-          <a
+          <Link
             className="give-get-button-component give-get-button-hover button primary btn-block"
-            href="/Panel/Referral"
+            to="/Panel/Referral"
           >
             <div className="d-flex justify-content-center pitch-black align-items-center">
               <img
@@ -308,7 +308,7 @@ const DashboardSidebar = () =>{
               />
               {' '}Give AU$10, Get AU$10
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="side-nav-share-button-mobile row px-0 mt-2 ">
@@ -378,9 +378,9 @@ const DashboardSidebar = () =>{
             </div>
           </button>
           <div className="give-get-button-desktop">
-            <a
+            <Link
               className="give-get-button-component give-get-button-hover button primary button-width"
-              href="/Panel/Referral"
+              to="/Panel/Referral"
             >
               <div className="d-flex justify-content-center pitch-black align-items-center">
                 <img
@@ -389,7 +389,7 @@ const DashboardSidebar = () =>{
                 />
                 {' '}Give AU$10, Get AU$10
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -400,17 +400,17 @@ const DashboardSidebar = () =>{
         data-dashboard--sidenav-page="dashboard"
       >
         <li className="dashboard-link active">
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/Dashboard"
+            to="/Panel/Dashboard"
           >
             Dashboard
-          </a>
+          </Link>
         </li>
         <li className="renting-link lending-link">
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/lending"
+            to="/Panel/lending"
           >
             <turbo-frame
               complete=""
@@ -420,12 +420,12 @@ const DashboardSidebar = () =>{
             >
               {' '}Renting & Lending{' '}
             </turbo-frame>
-          </a>
+          </Link>
         </li>
         <li className="purchases-link">
-          <a
+          <Link
             className="text-uppercase"
-            href="/panel/buyer"
+            to="/panel/buyer"
           >
             <turbo-frame
               complete=""
@@ -435,62 +435,62 @@ const DashboardSidebar = () =>{
             >
               {' '}Buying & Selling{' '}
             </turbo-frame>
-          </a>
+          </Link>
         </li>
         <li className="listings-link">
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/listing"
+            to="/Panel/listing"
           >
             Wardrobe
-          </a>
+          </Link>
         </li>
         <li className="messages-link messages_v2-link">
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/Messege"
+            to="/Panel/Messege"
           >
             {' '}Messages{' '}
             <span
               className="text-circular-couture-light-red"
               id="unread-messages-count-side-nav"
             />
-          </a>
+          </Link>
         </li>
         <li className="wishlist-link">
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/Wishlist"
+            to="/Panel/Wishlist"
           >
             Wishlists
-          </a>
+          </Link>
         </li>
         <li className="referrals-link">
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/Referral"
+            to="/Panel/Referral"
           >
             Give AU$10, Get AU$10
-          </a>
+          </Link>
         </li>
         <li className="profile-link">
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/Profile"
+            to="/Panel/Profile"
           >
             Edit My Profile
-          </a>
+          </Link>
         </li>
         <li
           className="account-link"
           data-action=""
         >
-          <a
+          <Link
             className="text-uppercase"
-            href="/Panel/Account"
+            to="/Panel/Account"
           >
             My Account
-          </a>
+          </Link>
         </li>
       </ul>
     </div>
@@ -597,27 +597,27 @@ const DashboardSidebar = () =>{
                     </form>
                   </div>
                   <div className="col-lg-12 text-uppercase text-center">
-                    <a
+                    <Link
                       className="footer-link js-link-sign-in mobile-hide"
-                      href="https://shop.circular-couturecollective.com/product/gift-card"
+                      to="https://shop.circular-couturecollective.com/product/gift-card"
                       target="_blank"
                     >
                       Buy A Gift Card
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="btn btn-outline-primary btn-block -dark-red mb-4 js-link-sign-in desktop-hide"
-                      href="https://shop.circular-couturecollective.com/product/gift-card"
+                      to="https://shop.circular-couturecollective.com/product/gift-card"
                       target="_blank"
                     >
                       Buy A Gift Card
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="pb-1 footer-link desktop-hide"
                       data-dismiss="modal"
-                      href="#"
+                      to="#"
                     >
                       {`< return`}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

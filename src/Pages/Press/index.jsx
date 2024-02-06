@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
-
+import { Link } from "react-router-dom";
 const Press = () =>{
     return (
         <>
@@ -40,13 +40,13 @@ const Press = () =>{
                   “This Startup wants to be the airbnb of fashion"
                 </h2>
                 {' '}
-                <a
+                <Link
                   className="default-link cta"
-                  href="#"
+                  to="#"
                   target="_blank"
                 >
                   Read More
-                </a>
+                </Link>
                 {' '}
               </div>
             </div>
@@ -66,13 +66,13 @@ const Press = () =>{
                   “Why renting your wardrobe makes fashion sense"
                 </h2>
                 {' '}
-                <a
+                <Link
                   className="default-link cta"
-                  href="#"
+                  to="#"
                   target="_blank"
                 >
                   Read More
-                </a>
+                </Link>
                 {' '}
               </div>
             </div>
@@ -104,13 +104,13 @@ const Press = () =>{
                   ”
                 </h2>
                 {' '}
-                <a
+                <Link
                   className="default-link cta"
-                  href="#"
+                  to="#"
                   target="_blank"
                 >
                   Read More
-                </a>
+                </Link>
                 {' '}
               </div>
             </div>
@@ -130,13 +130,13 @@ const Press = () =>{
                   “Why fashion girls are going to start sharing their clothes in 2019”
                 </h2>
                 {' '}
-                <a
+                <Link
                   className="default-link cta"
-                  href="#"
+                  to="#"
                   target="_blank"
                 >
                   Read More
-                </a>
+                </Link>
                 {' '}
               </div>
             </div>
@@ -166,13 +166,13 @@ const Press = () =>{
                   {' '}is the airbnb of fashion”
                 </h2>
                 {' '}
-                <a
+                <Link
                   className="default-link cta"
-                  href="#"
+                  to="#"
                   target="_blank"
                 >
                   Read More
-                </a>
+                </Link>
                 {' '}
               </div>
             </div>
@@ -192,13 +192,13 @@ const Press = () =>{
                   “We trial the future of fashion and embrace the idea of renting our wardrobes.”
                 </h2>
                 {' '}
-                <a
+                <Link
                   className="default-link cta"
-                  href="#"
+                  to="#"
                   target="_blank"
                 >
                   Read More
-                </a>
+                </Link>
                 {' '}
               </div>
             </div>
@@ -207,12 +207,12 @@ const Press = () =>{
       </div>
     </div>
     {' '}
-    <a
+    <Link
       className="btn btn-primary -dark-red press-cta my-0 my-md-5"
-      href="#"
+      to="#"
     >
       Media enquiries
-    </a>
+    </Link>
     {' '}
   </div>
 </div>

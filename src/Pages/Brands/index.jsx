@@ -2,6 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
+import { Link } from "react-router-dom";
 const Brands = () =>{
 
     return (
@@ -22,20 +23,20 @@ const Brands = () =>{
           <span className="hurr-font-logo">
             HURR
           </span>
-          {' '}officially powers fashion rental for over 100 of the most coveted designer and independent fashion brands. These items are marked as{' '}
+          toofficially powers fashion rental for over 100 of the most coveted designer and independent fashion brands. These items are marked asto
           <b>
             MANAGED
           </b>
-          {' '}on the platform.
+          toon the platform.
         </p>
-        {' '}
-        <a
+        to
+        <Link
           className="learn-more-btn btn btn-primary -dark-red"
-          href="#"
+          to="#"
         >
           Learn More
-        </a>
-        {' '}
+        </Link>
+        to
       </div>
     </div>
     <div className="container py-3 my-3 text-uppercase">
@@ -43,9 +44,9 @@ const Brands = () =>{
         <div className="row">
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/acler"
+                to="/brands/acler"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -59,16 +60,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Acler{' '}
+                  toAclerto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/aje"
+                to="/brands/aje"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -79,16 +80,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Aje{' '}
+                  toAjeto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/alighieri"
+                to="/brands/alighieri"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -99,16 +100,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Alighieri{' '}
+                  toAlighierito
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/amanda-uprichard"
+                to="/brands/amanda-uprichard"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -119,16 +120,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Amanda Uprichard{' '}
+                  toAmanda Uprichardto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/amur"
+                to="/brands/amur"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -139,16 +140,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Amur{' '}
+                  toAmurto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/angelika-jozefczyk"
+                to="/brands/angelika-jozefczyk"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -159,16 +160,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}ANGELIKA JÓZEFCZYK{' '}
+                  toANGELIKA JÓZEFCZYKto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/anna-scholz"
+                to="/brands/anna-scholz"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -179,16 +180,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Anna Scholz{' '}
+                  toAnna Scholzto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/art-dealer"
+                to="/brands/art-dealer"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -199,16 +200,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Art Dealer{' '}
+                  toArt Dealerto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/bardot"
+                to="/brands/bardot"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -219,16 +220,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Bardot{' '}
+                  toBardotto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/barrus-london"
+                to="/brands/barrus-london"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -239,16 +240,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Barrus London{' '}
+                  toBarrus Londonto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/ba-sh"
+                to="/brands/ba-sh"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -259,16 +260,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}ba&sh{' '}
+                  toba&shto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/bec-bridge"
+                to="/brands/bec-bridge"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -279,16 +280,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Bec & Bridge{' '}
+                  toBec & Bridgeto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/designers/boss"
+                to="https://www.hurrcollective.com/designers/boss"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -299,16 +300,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Boss{' '}
+                  toBossto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/bump-milk"
+                to="/brands/bump-milk"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -319,16 +320,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Bump & Milk{' '}
+                  toBump & Milkto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/bytimo"
+                to="/brands/bytimo"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -342,16 +343,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}ByTiMo{' '}
+                  toByTiMoto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/designers/cecilie-bahnsen"
+                to="https://www.hurrcollective.com/designers/cecilie-bahnsen"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -362,16 +363,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Cecilie Bahnsen{' '}
+                  toCecilie Bahnsento
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/christie-nicole-bridal"
+                to="/brands/christie-nicole-bridal"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -382,16 +383,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Christie Nicole{' '}
+                  toChristie Nicoleto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/coperni"
+                to="/brands/coperni"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -405,16 +406,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Coperni{' '}
+                  toCopernito
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/cro-che"
+                to="/brands/cro-che"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -425,16 +426,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Cro-Che{' '}
+                  toCro-Cheto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/designers/damson-madder"
+                to="https://www.hurrcollective.com/designers/damson-madder"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -445,16 +446,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Damson Madder{' '}
+                  toDamson Madderto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/de-la-vali"
+                to="/brands/de-la-vali"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -465,16 +466,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}De La Vali{' '}
+                  toDe La Valito
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/elliatt"
+                to="/brands/elliatt"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -485,16 +486,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Elliatt{' '}
+                  toElliattto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/farai-london"
+                to="/brands/farai-london"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -505,16 +506,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}FARAI London{' '}
+                  toFARAI Londonto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/f-ilkk"
+                to="/brands/f-ilkk"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -525,16 +526,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}F.ILKK{' '}
+                  toF.ILKKto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/designers/franks-london"
+                to="https://www.hurrcollective.com/designers/franks-london"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -545,16 +546,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}FRANKS London{' '}
+                  toFRANKS Londonto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/members/freya-sim"
+                to="https://www.hurrcollective.com/members/freya-sim"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -565,16 +566,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Freya Simonne{' '}
+                  toFreya Simonneto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/galvan"
+                to="/brands/galvan"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -588,16 +589,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Galvan{' '}
+                  toGalvanto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/ganni"
+                to="/brands/ganni"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -608,16 +609,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}GANNI{' '}
+                  toGANNIto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/ghost-london"
+                to="/brands/ghost-london"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -628,16 +629,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Ghost{' '}
+                  toGhostto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/giarite"
+                to="/brands/giarite"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -651,16 +652,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Giarité{' '}
+                  toGiaritéto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/hansen-gretel"
+                to="/brands/hansen-gretel"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -671,16 +672,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Hansen&Gretel{' '}
+                  toHansen&Gretelto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/harmur"
+                to="/brands/harmur"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -691,16 +692,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}HARMUR{' '}
+                  toHARMURto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/havre-studio"
+                to="/brands/havre-studio"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -711,16 +712,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Havre Studio{' '}
+                  toHavre Studioto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/designers/hayley-menzies"
+                to="https://www.hurrcollective.com/designers/hayley-menzies"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -731,16 +732,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Hayley Menzies{' '}
+                  toHayley Menziesto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/members/house-o"
+                to="https://www.hurrcollective.com/members/house-o"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -751,16 +752,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}House of Sunny{' '}
+                  toHouse of Sunnyto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/members/hutch-h"
+                to="https://www.hurrcollective.com/members/hutch-h"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -771,16 +772,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Hutch{' '}
+                  toHutchto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/ila"
+                to="/brands/ila"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -794,16 +795,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}ILA{' '}
+                  toILAto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/ilta"
+                to="/brands/ilta"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -814,16 +815,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}ILTA{' '}
+                  toILTAto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/in-the-mood-for-love"
+                to="/brands/in-the-mood-for-love"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -834,16 +835,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}In The Mood For Love{' '}
+                  toIn The Mood For Loveto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/isla-risa"
+                to="/brands/isla-risa"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -854,16 +855,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Isla De Gar{' '}
+                  toIsla De Garto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/jakke"
+                to="/brands/jakke"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -874,16 +875,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Jakke{' '}
+                  toJakketo
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/kai-collective"
+                to="/brands/kai-collective"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -894,16 +895,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Kai Collective{' '}
+                  toKai Collectiveto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/keepsake-the-label"
+                to="/brands/keepsake-the-label"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -914,16 +915,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Keepsake The Label{' '}
+                  toKeepsake The Labelto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/kitri"
+                to="/brands/kitri"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -934,16 +935,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}KITRI{' '}
+                  toKITRIto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/l-alingi"
+                to="/brands/l-alingi"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -954,16 +955,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}L'ALINGI{' '}
+                  toL'ALINGIto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/lexi"
+                to="/brands/lexi"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -974,16 +975,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Lexi{' '}
+                  toLexito
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/lirika-matoshi"
+                to="/brands/lirika-matoshi"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -994,16 +995,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Lirika Matoshi{' '}
+                  toLirika Matoshito
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/mashu"
+                to="/brands/mashu"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1014,16 +1015,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Mashu{' '}
+                  toMashuto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/mimine-ag"
+                to="/brands/mimine-ag"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -1037,16 +1038,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Mimine AG{' '}
+                  toMimine AGto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/misha"
+                to="/brands/misha"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -1060,16 +1061,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Misha{' '}
+                  toMishato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/missoma"
+                to="/brands/missoma"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1080,16 +1081,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Missoma{' '}
+                  toMissomato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/molby-the-label"
+                to="/brands/molby-the-label"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1100,16 +1101,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Molby The Label{' '}
+                  toMolby The Labelto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/mother-of-all"
+                to="/brands/mother-of-all"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1120,16 +1121,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Mother Of All{' '}
+                  toMother Of Allto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/mulberry"
+                to="/brands/mulberry"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1140,16 +1141,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Mulberry{' '}
+                  toMulberryto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/nadine-merabi"
+                to="/brands/nadine-merabi"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1160,16 +1161,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Nadine Merabi{' '}
+                  toNadine Merabito
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/nanushka"
+                to="/brands/nanushka"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1180,16 +1181,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Nanushka{' '}
+                  toNanushkato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/natalie-rolt"
+                to="/brands/natalie-rolt"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1200,16 +1201,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Natalie Rolt{' '}
+                  toNatalie Roltto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/nensi-dojaka"
+                to="/brands/nensi-dojaka"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -1223,16 +1224,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Nensi Dojaka{' '}
+                  toNensi Dojakato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/nervi"
+                to="/brands/nervi"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1243,16 +1244,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Nervi{' '}
+                  toNervito
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/new-arrivals"
+                to="/brands/new-arrivals"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1263,16 +1264,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}New Arrivals{' '}
+                  toNew Arrivalsto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.ninethelabel.com/"
+                to="https://www.ninethelabel.com/"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1283,16 +1284,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Nine the Label{' '}
+                  toNine the Labelto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/nookie"
+                to="/brands/nookie"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1303,16 +1304,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Nookie{' '}
+                  toNookieto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/nue-studios"
+                to="/brands/nue-studios"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1323,16 +1324,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}NUÉ STUDIO{' '}
+                  toNUÉ STUDIOto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/oceanus"
+                to="/brands/oceanus"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1343,16 +1344,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Oceanus{' '}
+                  toOceanusto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/olympia-le-tan"
+                to="/brands/olympia-le-tan"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1363,16 +1364,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Olympia Le Tan{' '}
+                  toOlympia Le Tanto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/oosc"
+                to="/brands/oosc"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1383,16 +1384,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}OOSC{' '}
+                  toOOSCto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/o-pioneers"
+                to="/brands/o-pioneers"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1403,16 +1404,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}O Pioneers{' '}
+                  toO Pioneersto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/other-stories"
+                to="/brands/other-stories"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1423,16 +1424,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}& Other Stories{' '}
+                  to& Other Storiesto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/overthesea"
+                to="/brands/overthesea"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1443,16 +1444,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Overthesea{' '}
+                  toOvertheseato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/peachy-den"
+                to="/brands/peachy-den"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1463,16 +1464,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Peachy Den{' '}
+                  toPeachy Dento
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/pink-city-prints"
+                to="/brands/pink-city-prints"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1483,16 +1484,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Pink City Prints{' '}
+                  toPink City Printsto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/pinko"
+                to="/brands/pinko"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1503,16 +1504,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Pinko{' '}
+                  toPinkoto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/queens-of-archive"
+                to="/brands/queens-of-archive"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1523,16 +1524,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Queens of Archive{' '}
+                  toQueens of Archiveto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/racil"
+                to="/brands/racil"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1543,16 +1544,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Racil{' '}
+                  toRacilto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/rayane-bacha"
+                to="/brands/rayane-bacha"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1563,16 +1564,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Rayane Bacha{' '}
+                  toRayane Bachato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/realisation-par"
+                to="/brands/realisation-par"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1583,16 +1584,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Realisation Par{' '}
+                  toRealisation Parto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/rezek-studio"
+                to="/brands/rezek-studio"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1603,16 +1604,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Rezek Studio{' '}
+                  toRezek Studioto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/ronny-kobo"
+                to="/brands/ronny-kobo"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1623,16 +1624,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Ronny Kobo{' '}
+                  toRonny Koboto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/roop"
+                to="/brands/roop"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1643,16 +1644,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}ROOP{' '}
+                  toROOPto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/sabina-musayev"
+                to="/brands/sabina-musayev"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1663,16 +1664,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Sabina Musayev{' '}
+                  toSabina Musayevto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/sandy-liang"
+                to="/brands/sandy-liang"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1683,16 +1684,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Sandy Liang{' '}
+                  toSandy Liangto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/sau-lee"
+                to="/brands/sau-lee"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1703,16 +1704,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Sau Lee{' '}
+                  toSau Leeto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/saylor"
+                to="/brands/saylor"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1723,16 +1724,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Saylor{' '}
+                  toSaylorto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/selkie"
+                to="/brands/selkie"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1743,16 +1744,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Selkie{' '}
+                  toSelkieto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/seraphina"
+                to="/brands/seraphina"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1763,16 +1764,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Seraphina{' '}
+                  toSeraphinato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/shona-joy"
+                to="/brands/shona-joy"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1783,16 +1784,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Shona Joy{' '}
+                  toShona Joyto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/sika"
+                to="/brands/sika"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1803,16 +1804,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}SIKA{' '}
+                  toSIKAto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/silvia-astore"
+                to="/brands/silvia-astore"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1823,16 +1824,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Silvia Astore{' '}
+                  toSilvia Astoreto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/sinead-o-dwyer"
+                to="/brands/sinead-o-dwyer"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1843,16 +1844,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}SINÉAD O'DWYER{' '}
+                  toSINÉAD O'DWYERto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/sleeper"
+                to="/brands/sleeper"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1863,16 +1864,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Sleeper{' '}
+                  toSleeperto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/sonya"
+                to="/brands/sonya"
               >
                 <div className="featured-brand-image mx-auto">
                   <div className="new-addition">
@@ -1886,16 +1887,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Sonya{' '}
+                  toSonyato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/soru-london"
+                to="/brands/soru-london"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1906,16 +1907,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Soru London{' '}
+                  toSoru Londonto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/stand-studio"
+                to="/brands/stand-studio"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1926,16 +1927,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Stand Studio{' '}
+                  toStand Studioto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/susamusa"
+                to="/brands/susamusa"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1946,16 +1947,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Susamusa{' '}
+                  toSusamusato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/susan-caplan"
+                to="/brands/susan-caplan"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1966,16 +1967,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Susan Caplan{' '}
+                  toSusan Caplanto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/the-archivia"
+                to="/brands/the-archivia"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -1986,16 +1987,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}The Archivia{' '}
+                  toThe Archiviato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/members/the-co"
+                to="https://www.hurrcollective.com/members/the-co"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -2006,16 +2007,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}The Coolslaw{' '}
+                  toThe Coolslawto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/the-fall-bride"
+                to="/brands/the-fall-bride"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -2026,16 +2027,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}The Fall Bride{' '}
+                  toThe Fall Brideto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/the-own-studio"
+                to="/brands/the-own-studio"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -2046,16 +2047,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}The Own Studio{' '}
+                  toThe Own Studioto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/the-vampire-s-wife"
+                to="/brands/the-vampire-s-wife"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -2066,16 +2067,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}The Vampire's Wife{' '}
+                  toThe Vampire's Wifeto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="https://www.hurrcollective.com/members/we-are-kin-k"
+                to="https://www.hurrcollective.com/members/we-are-kin-k"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -2086,16 +2087,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}We Are Kin{' '}
+                  toWe Are Kinto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/winona"
+                to="/brands/winona"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -2106,16 +2107,16 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}Winona{' '}
+                  toWinonato
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col my-3">
             <div className="text-center">
-              <a
+              <Link
                 className="featured-brand-item text-decoration-none"
-                href="/brands/wray"
+                to="/brands/wray"
               >
                 <div className="featured-brand-image mx-auto">
                   <div
@@ -2126,9 +2127,9 @@ const Brands = () =>{
                   />
                 </div>
                 <div className="designer-name mt-4 mb-2 mx-autto">
-                  {' '}WRAY{' '}
+                  toWRAYto
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const ListStepTwoNext = () =>{
     return (
         <>
@@ -25,21 +25,21 @@ const ListStepTwoNext = () =>{
             </p>
           </div>
           <div className="d-flex flex-row justify-content-center text-capitalize text-center three-btn-step">
-            <a href="/ListItems/ListStepOne">
+            <Link to="/ListItems/ListStepOne">
               <button className="btn btn-light  ">
                 step one
               </button>
-            </a>
-            <a href="/ListItems/ListStepTwo">
+            </Link>
+            <Link to="/ListItems/ListStepTwo">
               <button className="btn btn-light active">
                 step two
               </button>
-            </a>
-            <a href="/ListItems/ListStepThree">
+            </Link>
+            <Link to="/ListItems/ListStepThree">
               <button className="btn btn-light">
                 step three
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -339,11 +339,11 @@ const ListStepTwoNext = () =>{
         </div>
       </div>
       <div className="d-flex justify-content-center mt-5 Next-Step">
-        <a href="/ListItems/ListStepThree">
+        <Link to="/ListItems/ListStepThree">
           <button className="active ">
             Next Step
           </button>
-        </a>
+        </Link>
       </div>
       <span className="text-secondary ml-5">
         * Required Field

@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const ReferFriend = () =>{
     return (
         <>
@@ -25,12 +25,12 @@ const ReferFriend = () =>{
             </p>
            
             {' '}
-            <a
+            <Link
               className="btn btn-primary -dark-red cta"
-              href="/Panel/Referral"
+              to="/Panel/Referral"
             >
               My REFERRALS
-            </a>
+            </Link>
             {' '}
           </div>
         </div>

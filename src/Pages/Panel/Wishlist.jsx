@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Wishlist = () =>{
 
     return (
@@ -40,19 +40,19 @@ const Wishlist = () =>{
                   <label className="text-uppercase position-relative show">
                     Collections
                   </label>
-                  <a
+                  <Link
                     className="default-link text-uppercase float-right desktop-only"
                     data-target="#create-collection-modal"
                     data-toggle="modal"
-                    href="#"
+                    to="#"
                   >
                     Create New Collection
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="float-right mobile-only"
                     data-target="#create-collection-modal"
                     data-toggle="modal"
-                    href="#"
+                    to="#"
                   >
                     <svg
                       aria-hidden="true"
@@ -85,7 +85,7 @@ const Wishlist = () =>{
                         y="0"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
                 <div
                   aria-labelledby="headingCollections"
@@ -159,7 +159,7 @@ const Wishlist = () =>{
                           id="listing-85565"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -170,7 +170,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="179"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="6184572"
                               data-listing-id="85565"
-                              href="/listings.html/checked-boucle-tweed-blazer"
+                              to="/listings.html/checked-boucle-tweed-blazer"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -199,33 +199,33 @@ const Wishlist = () =>{
                                   Retail AU$1,880
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-85565"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=85565"
+                                  to="/wishlist.html/unfavourite?listing_id=85565"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920014"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -264,7 +264,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div
@@ -372,7 +372,7 @@ const Wishlist = () =>{
                           id="listing-86274"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -383,7 +383,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="399"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="5246069"
                               data-listing-id="86274"
-                              href="/listings.html/monot-cut-out-gown"
+                              to="/listings.html/monot-cut-out-gown"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -408,33 +408,33 @@ const Wishlist = () =>{
                                   Retail AU$7,500
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-86274"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=86274"
+                                  to="/wishlist.html/unfavourite?listing_id=86274"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920013"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -473,7 +473,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div
@@ -581,7 +581,7 @@ const Wishlist = () =>{
                           id="listing-86645"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -592,7 +592,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="29"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="9193633"
                               data-listing-id="86645"
-                              href="/listings.html/solace-off-shoulder-top"
+                              to="/listings.html/solace-off-shoulder-top"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -617,33 +617,33 @@ const Wishlist = () =>{
                                   Retail AU$435
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-86645"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=86645"
+                                  to="/wishlist.html/unfavourite?listing_id=86645"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920012"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -682,7 +682,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div
@@ -790,7 +790,7 @@ const Wishlist = () =>{
                           id="listing-88314"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -801,7 +801,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="66"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="5938507"
                               data-listing-id="88314"
-                              href="/listings.html/harlow-50895"
+                              to="/listings.html/harlow-50895"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -830,33 +830,33 @@ const Wishlist = () =>{
                                   Retail AU$425
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-88314"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=88314"
+                                  to="/wishlist.html/unfavourite?listing_id=88314"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920011"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -895,7 +895,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div
@@ -1003,7 +1003,7 @@ const Wishlist = () =>{
                           id="listing-84238"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -1014,7 +1014,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="36"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="7777191"
                               data-listing-id="84238"
-                              href="/listings.html/schild-intarsia-merino-wool-tu"
+                              to="/listings.html/schild-intarsia-merino-wool-tu"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -1043,33 +1043,33 @@ const Wishlist = () =>{
                                   Retail AU$260
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-84238"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=84238"
+                                  to="/wishlist.html/unfavourite?listing_id=84238"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920010"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -1108,7 +1108,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div
@@ -1216,7 +1216,7 @@ const Wishlist = () =>{
                           id="listing-84714"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -1227,7 +1227,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="59"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="2943832"
                               data-listing-id="84714"
-                              href="/listings.html/sequinned-flared-skirt-dress"
+                              to="/listings.html/sequinned-flared-skirt-dress"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -1252,33 +1252,33 @@ const Wishlist = () =>{
                                   Retail AU$300
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-84714"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=84714"
+                                  to="/wishlist.html/unfavourite?listing_id=84714"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920009"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -1317,7 +1317,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div
@@ -1425,7 +1425,7 @@ const Wishlist = () =>{
                           id="listing-85698"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -1436,7 +1436,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="68"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="8537193"
                               data-listing-id="85698"
-                              href="/listings.html/polar-flare-ii-houndstooth-pri"
+                              to="/listings.html/polar-flare-ii-houndstooth-pri"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -1465,33 +1465,33 @@ const Wishlist = () =>{
                                   Retail AU$440
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-85698"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=85698"
+                                  to="/wishlist.html/unfavourite?listing_id=85698"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920008"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -1530,7 +1530,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div
@@ -1638,7 +1638,7 @@ const Wishlist = () =>{
                           id="listing-53465"
                         >
                           <div className="item-card -wishlist w-100 mt-4 mb-0 mx-auto position-relative d-block bg-white py-3">
-                            <a
+                            <Link
                               className="item-link"
                               data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                               data-controller="google-tag-manager--enhanced-ecommerce"
@@ -1649,7 +1649,7 @@ const Wishlist = () =>{
                               data-google-tag-manager--enhanced-ecommerce-item-price="112"
                               data-google-tag-manager--enhanced-ecommerce-item-uid="7234319"
                               data-listing-id="53465"
-                              href="/listings.html/ryder-softshell-ski-suit"
+                              to="/listings.html/ryder-softshell-ski-suit"
                               target="_blank"
                             >
                               <div className="text-center">
@@ -1678,33 +1678,33 @@ const Wishlist = () =>{
                                   Retail AU$905
                                 </p>
                               </div>
-                            </a>
+                            </Link>
                             <div
                               className="love-heart-button listing-main-heart wishlist-heart wishlist-heart-53465"
                               data-controller="wishlisting"
                               data-target="wishlisting.heartMainContainer"
                             >
                               <div className="item-heart item-hearted">
-                                <a
+                                <Link
                                   className="active"
                                   data-action="wishlisting#removeWishlistedItem"
                                   data-method="delete"
                                   data-remote="true"
                                   data-target="wishlisting.unwishlistLink"
-                                  href="/wishlist.html/unfavourite?listing_id=53465"
+                                  to="/wishlist.html/unfavourite?listing_id=53465"
                                   rel="nofollow"
                                 >
                                   <img
                                     className="filled-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/filled-heart-icon-a8423184c157efec16d266396a600a9f.svg"
                                   />
-                                </a>
+                                </Link>
                               </div>
-                              <a
+                              <Link
                                 className="add-to-collection-icon-container"
                                 data-action="wishlisting#showAddToCollectionModal"
                                 data-target-modal="#add-to-collection-modal-1920007"
-                                href="#"
+                                to="#"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -1743,7 +1743,7 @@ const Wishlist = () =>{
                                     y="0"
                                   />
                                 </svg>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div

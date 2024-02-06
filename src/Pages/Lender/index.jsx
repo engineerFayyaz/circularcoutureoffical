@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const Lender = () =>{
     return (
         <>
@@ -29,24 +29,24 @@ const Lender = () =>{
             CIRCULAR COUTURE
           </span>
           {' '}is both easy and free to do! You can list and manage your wardrobe yourself. We just ask that make sure the item is on our{' '}
-          <a
+          <Link
             className="text-circular-couture-raffia"
-            href="/designers"
+            to="/designers"
           >
             Designers List
-          </a>
+          </Link>
           , less than two years old and has a retail price over AU$120.
         </p>
         <div className="mx-3 mx-md-0">
           <div className="row">
             <div className="col-12 col-md-5 mx-auto">
               {' '}
-              <a
+              <Link
                 className="btn btn-block btn-primary -white button mt-0 mt-md-3 mb-3 mb-md-4"
-                href="/ListItems/ListStepOne"
+                to="/ListItems/ListStepOne"
               >
                 list my wardrobe
-              </a>
+              </Link>
               {' '}
             </div>
           </div>
@@ -83,93 +83,93 @@ const Lender = () =>{
                 />
                 <div className="dropdown-menu">
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="DRESSES"
-                    href="/Collections/Dresses"
+                    to="/Collections/Dresses"
                   >
                     <span className="text-uppercase">
                       DRESSES
                     </span>
-                  </a>
+                  </Link>
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="TOPS"
-                    href="/Collections/Tops"
+                    to="/Collections/Tops"
                   >
                     <span className="text-uppercase">
                       TOPS
                     </span>
-                  </a>
+                  </Link>
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="BOTTOMS"
-                    href="#"
+                    to="#"
                   >
                     <span className="text-uppercase">
                       BOTTOMS
                     </span>
-                  </a>
+                  </Link>
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="ACCESSORIES"
-                    href="/Collections/Accessories"
+                    to="/Collections/Accessories"
                   >
                     <span className="text-uppercase">
                       ACCESSORIES
                     </span>
-                  </a>
+                  </Link>
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="BAGS"
-                    href="#"
+                    to="#"
                   >
                     <span className="text-uppercase">
                       BAGS
                     </span>
-                  </a>
+                  </Link>
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="SHOES"
-                    href="#"
+                    to="#"
                   >
                     <span className="text-uppercase">
                       SHOES
                     </span>
-                  </a>
+                  </Link>
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="JUMPSUITS"
-                    href="/Collections/Jumpsuit"
+                    to="/Collections/Jumpsuit"
                   >
                     <span className="text-uppercase">
                       JUMPSUITS
                     </span>
-                  </a>
+                  </Link>
                   {' '}
-                  <a
+                  <Link
                     className="dropdown-item"
                     data-action="form-dropdown#selectChanges"
                     data-value="OUTERWEAR"
-                    href="/Collections/OuterWear"
+                    to="/Collections/OuterWear"
                   >
                     <span className="text-uppercase">
                       OUTERWEAR
                     </span>
-                  </a>
+                  </Link>
                   {' '}
                 </div>
               </div>
@@ -334,7 +334,7 @@ const Lender = () =>{
                           className="item-card listing-snippet listing-snippet__position--relative text-center"
                           id="listing-2"
                         >
-                          <a
+                          <Link
                             className="item-link"
                             data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                             data-controller="google-tag-manager--enhanced-ecommerce"
@@ -345,7 +345,7 @@ const Lender = () =>{
                             data-google-tag-manager--enhanced-ecommerce-item-price="36"
                             data-google-tag-manager--enhanced-ecommerce-item-uid="3406148"
                             data-listing-id="2"
-                            href="/listings.html/butterfly-dress"
+                            to="/listings.html/butterfly-dress"
                             tabIndex="0"
                             target="_blank"
                           >
@@ -372,7 +372,7 @@ const Lender = () =>{
                                 Retail AU$170
                               </p>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -397,7 +397,7 @@ const Lender = () =>{
                           className="item-card listing-snippet listing-snippet__position--relative text-center"
                           id="listing-6"
                         >
-                          <a
+                          <Link
                             className="item-link"
                             data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                             data-controller="google-tag-manager--enhanced-ecommerce"
@@ -408,7 +408,7 @@ const Lender = () =>{
                             data-google-tag-manager--enhanced-ecommerce-item-price="43"
                             data-google-tag-manager--enhanced-ecommerce-item-uid="5354281"
                             data-listing-id="6"
-                            href="/listings.html/shore-thing-lobster-crossbody"
+                            to="/listings.html/shore-thing-lobster-crossbody"
                             tabIndex="0"
                             target="_blank"
                           >
@@ -435,7 +435,7 @@ const Lender = () =>{
                                 Retail AU$250
                               </p>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -460,7 +460,7 @@ const Lender = () =>{
                           className="item-card listing-snippet listing-snippet__position--relative text-center"
                           id="listing-13"
                         >
-                          <a
+                          <Link
                             className="item-link"
                             data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                             data-controller="google-tag-manager--enhanced-ecommerce"
@@ -471,7 +471,7 @@ const Lender = () =>{
                             data-google-tag-manager--enhanced-ecommerce-item-price="50"
                             data-google-tag-manager--enhanced-ecommerce-item-uid="4131743"
                             data-listing-id="13"
-                            href="/listings.html/dabble-tiered-gingham-cotton-poplin-midi-dress"
+                            to="/listings.html/dabble-tiered-gingham-cotton-poplin-midi-dress"
                             tabIndex="0"
                             target="_blank"
                           >
@@ -498,7 +498,7 @@ const Lender = () =>{
                                 Retail AU$380
                               </p>
                             </div>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -654,12 +654,12 @@ const Lender = () =>{
           <div className="row">
             <div className="col-12 col-md-5 mx-auto">
               {' '}
-              <a
+              <Link
                 className="btn btn-block btn-primary -dark-red button mb-3 mb-md-4"
-                href="/ListItems/ListStepOne"
+                to="/ListItems/ListStepOne"
               >
                 list my wardrobe
-              </a>
+              </Link>
               {' '}
             </div>
           </div>

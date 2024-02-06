@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Contact = () =>{
 
     return (
@@ -8,25 +8,25 @@ const Contact = () =>{
   <div className="fixed-header contact-navbar">
     <div className="navbar p-4 px-5 d-flex align-items-center justify-content-between">
       <div className="logo">
-        <a href="/"><img
+        <Link to="/"><img
           alt=""
           src="images/CC TM Logo.png"
           width="350"
-        /></a>
+        /></Link>
       </div>
       <div className="link">
-        <a href="/Contact">
+        <Link to="/Contact">
           Contact Us
-        </a>
+        </Link>
       </div>
     </div>
   </div>
   <div className="contact-main p-4 px-5 no-overflow-x pt-0">
     <div className="contact-search d-flex align-items-center justify-content-between">
       <div className="breadcrumb">
-        <a href="/">
+        <Link to="/">
           CIRCULAR{' '}
-        </a>
+        </Link>
         <span>
           {`>`}
         </span>
@@ -169,9 +169,9 @@ const Contact = () =>{
     </div>
   </div>
   <div className="contact-footer p-3 px-5">
-    <a href="/Home">
+    <Link to="/Home">
       CIRCULAR
-    </a>
+    </Link>
   </div>
 </div>
         

@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const ListingNew = () =>{
     return (
         <>
@@ -86,70 +86,70 @@ const ListingNew = () =>{
                       className="dropdown-menu"
                       style={{}}
                     >
-                      <a
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="1"
-                        href="#"
+                        to="#"
                       >
                         DRESSES
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="2"
-                        href="#"
+                        to="#"
                       >
                         TOPS
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="3"
-                        href="#"
+                        to="#"
                       >
                         BOTTOMS
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="5"
-                        href="#"
+                        to="#"
                       >
                         ACCESSORIES
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="6"
-                        href="#"
+                        to="#"
                       >
                         BAGS
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="7"
-                        href="#"
+                        to="#"
                       >
                         SHOES
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="8"
-                        href="#"
+                        to="#"
                       >
                         JUMPSUITS
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item"
                         data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
                         data-value="4"
-                        href="#"
+                        to="#"
                       >
                         OUTERWEAR
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="mobile-native-dropdown-container mobile-only">
@@ -5427,14 +5427,14 @@ const ListingNew = () =>{
                     <p>
                       Whoops! It looks like we don't have that designer yet...
                     </p>
-                    <a
+                    <Link
                       className="btn btn-primary -dark-red rounded-0 form-control"
                       data-target="#request-designer-modal"
                       data-toggle="modal"
-                      href="#"
+                      to="#"
                     >
                       Request a designer
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="form-group short-field col-md-10 col-lg-6 col-xl-5 mb-3">
@@ -5459,14 +5459,14 @@ const ListingNew = () =>{
                   <label>
                     Size*
                   </label>
-                  <a
+                  <Link
                     className="size-guide"
                     data-target="#size-guide"
                     data-toggle="modal"
-                    href="#"
+                    to="#"
                   >
                     Size guide
-                  </a>
+                  </Link>
                   <div data-controller="form-dropdown">
                     <div className="dropdown form-dropdown desktop-only">
                       <button
@@ -5549,13 +5549,13 @@ const ListingNew = () =>{
                                       </p>
                                     </div>
                                     <div className="col-lg-12 text-uppercase text-center">
-                                      <a
+                                      <Link
                                         className="btn btn-primary btn-block -dark-red"
                                         data-dismiss="modal"
-                                        href="#"
+                                        to="#"
                                       >
                                         Close
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </div>
@@ -5613,13 +5613,13 @@ const ListingNew = () =>{
                                       </p>
                                     </div>
                                     <div className="col-lg-12 text-uppercase text-center">
-                                      <a
+                                      <Link
                                         className="btn btn-primary btn-block -dark-red"
                                         data-dismiss="modal"
-                                        href="#"
+                                        to="#"
                                       >
                                         Close
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </div>
@@ -5677,13 +5677,13 @@ const ListingNew = () =>{
                                       </p>
                                     </div>
                                     <div className="col-lg-12 text-uppercase text-center">
-                                      <a
+                                      <Link
                                         className="btn btn-primary btn-block -dark-red"
                                         data-dismiss="modal"
-                                        href="#"
+                                        to="#"
                                       >
                                         Close
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </div>
@@ -5714,166 +5714,166 @@ const ListingNew = () =>{
                       beige
                     </button>
                     <div className="dropdown-menu">
-                      <a
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="beige"
-                        href="#"
+                        to="#"
                       >
                         beige
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="black"
-                        href="#"
+                        to="#"
                       >
                         black
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="blue"
-                        href="#"
+                        to="#"
                       >
                         blue
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="brown"
-                        href="#"
+                        to="#"
                       >
                         brown
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="copper"
-                        href="#"
+                        to="#"
                       >
                         copper
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="cream"
-                        href="#"
+                        to="#"
                       >
                         cream
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="gold"
-                        href="#"
+                        to="#"
                       >
                         gold
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="green"
-                        href="#"
+                        to="#"
                       >
                         green
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="grey"
-                        href="#"
+                        to="#"
                       >
                         grey
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="multi"
-                        href="#"
+                        to="#"
                       >
                         multi
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="navy"
-                        href="#"
+                        to="#"
                       >
                         navy
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="orange"
-                        href="#"
+                        to="#"
                       >
                         orange
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="pink"
-                        href="#"
+                        to="#"
                       >
                         pink
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="purple"
-                        href="#"
+                        to="#"
                       >
                         purple
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="red"
-                        href="#"
+                        to="#"
                       >
                         red
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="silver"
-                        href="#"
+                        to="#"
                       >
                         silver
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="tan"
-                        href="#"
+                        to="#"
                       >
                         tan
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="white"
-                        href="#"
+                        to="#"
                       >
                         white
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="yellow"
-                        href="#"
+                        to="#"
                       >
                         yellow
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="dropdown-item text-uppercase"
                         data-action="form-dropdown#selectChanges"
                         data-value="phantom"
-                        href="#"
+                        to="#"
                       >
                         phantom
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="mobile-native-dropdown-container mobile-only">
@@ -6608,13 +6608,13 @@ const ListingNew = () =>{
                   MAIN PHOTO*
                 </label>
                 <div className="d-flex align-items-center position-relative image-box mobile-bg-circular-couture-off-white">
-                  <a
+                  <Link
                     className="d-block mx-auto upload-link"
                     data-action="click->listing-creation-photos#showFileFieldSelector"
-                    href="#"
+                    to="#"
                   >
                     UPLOAD
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div
@@ -6629,13 +6629,13 @@ const ListingNew = () =>{
                   {' '}PHOTO*{' '}
                 </label>
                 <div className="d-flex align-items-center position-relative image-box mobile-bg-circular-couture-off-white">
-                  <a
+                  <Link
                     className="d-block mx-auto upload-link"
                     data-action="click->listing-creation-photos#showFileFieldSelector"
-                    href="#"
+                    to="#"
                   >
                     UPLOAD
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div
@@ -6650,13 +6650,13 @@ const ListingNew = () =>{
                   {' '}PHOTO*{' '}
                 </label>
                 <div className="d-flex align-items-center position-relative image-box mobile-bg-circular-couture-off-white">
-                  <a
+                  <Link
                     className="d-block mx-auto upload-link"
                     data-action="click->listing-creation-photos#showFileFieldSelector"
-                    href="#"
+                    to="#"
                   >
                     UPLOAD
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -6667,7 +6667,7 @@ const ListingNew = () =>{
                   aria-expanded="false"
                   className="btn btn-link custom-accordion-link collapsed px-0 w-100 text-left mobile-pt-0 pt-0 -with-arrow"
                   data-toggle="collapse"
-                  href="#additionalPhotosCollapse"
+                  to="#additionalPhotosCollapse"
                   role="button"
                 >
                   {' '}ADDITIONAL PHOTOS{' '}
@@ -6684,13 +6684,13 @@ const ListingNew = () =>{
                       data-action="drop->listing-creation-photos#uploadDroppedPhoto dragenter->listing-creation-photos#preventDefaultEvents dragover->listing-creation-photos#preventDefaultEvents"
                     >
                       <div className="d-flex align-items-center position-relative image-box mobile-bg-circular-couture-off-white">
-                        <a
+                        <Link
                           className="d-block mx-auto upload-link"
                           data-action="click->listing-creation-photos#showFileFieldSelector"
-                          href="#"
+                          to="#"
                         >
                           UPLOAD
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6698,13 +6698,13 @@ const ListingNew = () =>{
                       data-action="drop->listing-creation-photos#uploadDroppedPhoto dragenter->listing-creation-photos#preventDefaultEvents dragover->listing-creation-photos#preventDefaultEvents"
                     >
                       <div className="d-flex align-items-center position-relative image-box mobile-bg-circular-couture-off-white">
-                        <a
+                        <Link
                           className="d-block mx-auto upload-link"
                           data-action="click->listing-creation-photos#showFileFieldSelector"
-                          href="#"
+                          to="#"
                         >
                           UPLOAD
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6712,13 +6712,13 @@ const ListingNew = () =>{
                       data-action="drop->listing-creation-photos#uploadDroppedPhoto dragenter->listing-creation-photos#preventDefaultEvents dragover->listing-creation-photos#preventDefaultEvents"
                     >
                       <div className="d-flex align-items-center position-relative image-box mobile-bg-circular-couture-off-white">
-                        <a
+                        <Link
                           className="d-block mx-auto upload-link"
                           data-action="click->listing-creation-photos#showFileFieldSelector"
-                          href="#"
+                          to="#"
                         >
                           UPLOAD
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -6732,7 +6732,7 @@ const ListingNew = () =>{
                   aria-expanded="false"
                   className="btn btn-link custom-accordion-link collapsed photo-tips-collapse-trigger px-0 w-100 text-left mobile-pt-0 pt-0 -with-arrow"
                   data-toggle="collapse"
-                  href="#photoTipsCollapse"
+                  to="#photoTipsCollapse"
                   role="button"
                 >
                   {' '}PHOTO TIPS{' '}
@@ -7959,13 +7959,13 @@ const ListingNew = () =>{
               </div>
             </form>
             <div className="modal-footer text-center border-0 pt-0 mobile-only">
-              <a
+              <Link
                 className="text-circular-couture-dark-red border-bottom border-circular-couture-dark-red mx-auto"
                 data-dismiss="modal"
-                href="#"
+                to="#"
               >
                 {`< GO BACK`}
-              </a>
+              </Link>
             </div>
           </div>
           <div

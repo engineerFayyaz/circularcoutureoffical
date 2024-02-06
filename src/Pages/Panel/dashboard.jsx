@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Dashboard = () =>{
 
     return (
@@ -45,12 +45,12 @@ const Dashboard = () =>{
                   <div className="col-12 mt-4">
                     <span className="user-actions">
                       {' '}There’s nothing to catch up on today so why not{' '}
-                      <a
+                      <Link
                         className="span-link"
-                        href="collections/new_arrivals"
+                        to="collections/new_arrivals"
                       >
                         find your next rental
-                      </a>
+                      </Link>
                       ?{' '}
                     </span>
                   </div>
@@ -76,13 +76,13 @@ const Dashboard = () =>{
                     {' '}Start lending by listing{' '}
                     <br />
                     your wardrobe{' '}
-                    <a
+                    <Link
                       className="blur-content-link"
-                      href="/Panel/listing"
+                      to="/Panel/listing"
                       target="_top"
                     >
                       here
-                    </a>
+                    </Link>
                   </span>
                 </div>
               </turbo-frame>
@@ -219,13 +219,13 @@ const Dashboard = () =>{
                     {' '}Start renting by browsing{' '}
                     <br />
                     our new arrivals{' '}
-                    <a
+                    <Link
                       className="blur-content-link"
-                      href="collections/new_arrivals"
+                      to="collections/new_arrivals"
                       target="_top"
                     >
                       here
-                    </a>
+                    </Link>
                   </span>
                 </div>
               </turbo-frame>

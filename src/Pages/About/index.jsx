@@ -2,6 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
@@ -101,13 +102,13 @@ const About = () => {
               </h3>
               <p className="description mb-0">
                 We’re proud members of{' '}
-                <a
+                <Link
                   className="text-circularcouture-light-red"
-                  href="#"
+                  to="#"
                   target="_blank"
                 >
                   Ecologi
-                </a>
+                </Link>
                 , who help keep us climate positive here at{' '}
                 <span className="circularcouture-font-logo">
                   circularcouture
@@ -135,12 +136,12 @@ const About = () => {
           forbes
         </p>
         {' '}
-        <a
+        <Link
           className="default-link -grey text-uppercase cta"
-          href="javascript:void(0)"
+          to="javascript:void(0)"
         >
           Read more
-        </a>
+        </Link>
         {' '}
       </div>
     </div>

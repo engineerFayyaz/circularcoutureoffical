@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Account = () =>{
 
     return (
@@ -28,20 +28,20 @@ const Account = () =>{
                 className="buttons text-uppercase"
                 data-controller="dashboard--scroll-to"
               >
-                <a
+                <Link
                   className="default-link mr-4"
                   data-action="dashboard--scroll-to#deliveryDetails"
-                  href="#"
+                  to="#"
                 >
                   Delivery Details
-                </a>
-                <a
+                </Link>
+                <Link
                   className="default-link"
                   data-action="dashboard--scroll-to#cardDetails"
-                  href="#"
+                  to="#"
                 >
                   Card Details
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -94,22 +94,22 @@ const Account = () =>{
                                   className="list-inline-item"
                                   data-controller="dashboard--avatars"
                                 >
-                                  <a
+                                  <Link
                                     className="default-link desktop-btn text-uppercase"
                                     data-action="dashboard--avatars#showFilePicker"
-                                    href="#"
+                                    to="#"
                                     id="upload_button"
                                   >
                                     Upload My Own
-                                  </a>
-                                  <a
+                                  </Link>
+                                  <Link
                                     className="default-link mt- mobile-btn text-uppercase"
                                     data-action="dashboard--avatars#showFilePicker"
-                                    href="#"
+                                    to="#"
                                     id="upload_button"
                                   >
                                     Upload
-                                  </a>
+                                  </Link>
                                 </li>
                               </ul>
                             </div>
@@ -270,14 +270,14 @@ const Account = () =>{
                           </form>
                         </div>
                         <div className="col-sm-4">
-                          <a
+                          <Link
                             className="default-link text-uppercase"
                             data-target="#email_change_modal"
                             data-toggle="modal"
-                            href="#"
+                            to="#"
                           >
                             Change
-                          </a>
+                          </Link>
                           <div
                             aria-hidden="true"
                             aria-labelledby="exampleModalCenterTitle"
@@ -366,13 +366,13 @@ const Account = () =>{
                                           </form>
                                         </div>
                                         <div className="col-lg-12 text-uppercase text-center">
-                                          <a
+                                          <Link
                                             className="pb-1 footer-link desktop-hide"
                                             data-dismiss="modal"
-                                            href="#"
+                                            to="#"
                                           >
                                             {`< return`}
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -427,13 +427,13 @@ const Account = () =>{
                                           </p>
                                         </div>
                                         <div className="col-lg-12 text-uppercase text-center">
-                                          <a
+                                          <Link
                                             className="pb-1 footer-link desktop-hide"
                                             data-dismiss="modal"
-                                            href="#"
+                                            to="#"
                                           >
                                             {`< return`}
-                                          </a>
+                                          </Link>
                                         </div>
                                       </div>
                                     </div>
@@ -711,12 +711,12 @@ const Account = () =>{
                                       {' '}United Kingdom{' '}
                                     </button>
                                     <div className="dropdown-menu w-100">
-                                      <a
+                                      <Link
                                         className="dropdown-item text-uppercase"
-                                        href="javascript:void(0);"
+                                        to="javascript:void(0);"
                                       >
                                         United Kingdom
-                                      </a>
+                                      </Link>
                                     </div>
                                   </div>
                                 </div>
@@ -921,14 +921,14 @@ const Account = () =>{
                               </div>
                               <div className="col-lg-12">
                                 <div className="form-group text-right">
-                                  <a
+                                  <Link
                                     className="btn btn-outline-primary -dark-red py-2 px-5 mt-3 mr-3 d-none"
                                     data-action="dashboard--card-details#hideForm"
                                     data-target="dashboard--card-details.cancelButton"
-                                    href="#"
+                                    to="#"
                                   >
                                     Cancel
-                                  </a>
+                                  </Link>
                                   <input
                                     className="btn btn-primary -dark-red py-2 px-5 mt-3"
                                     data-disable-with="Saving..."
@@ -973,16 +973,16 @@ const Account = () =>{
                       <div className="col-md-3" />
                       <div className="col-md-6">
                         <div data-controller="stripe-account-connect">
-                          <a
+                          <Link
                             className="btn btn-primary btn-block -dark-red mt-2"
                             data-action="click->dashboard--connect-bank-account#request"
                             data-connect-bank-url="/payout_providers"
                             data-controller="dashboard--connect-bank-account"
                             data-dashboard--connect-bank-account-clicked="false"
-                            href="#"
+                            to="#"
                           >
                             Connect my bank account
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

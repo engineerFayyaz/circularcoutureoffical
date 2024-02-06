@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const TermsOfService = () => {
     return (
 
@@ -31,13 +31,13 @@ const TermsOfService = () => {
         <span className="c0">
           circularcouture is the fashion marketplace changing the way we wear. Our mission is to reinvent ownership by providing all the short-cuts to a sustainable wardrobe through renting, lending, monthly refreshes, purchase or sale of pre-owned clothing via our website{' '}
           <span className="c3 c13">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/"
+              to="https://www.circularcouturecollective.com/"
               target="_blank"
             >
               www.circularcouture.com
-            </a>
+            </Link>
           </span>
           {' '}and mobile application.
         </span>
@@ -47,23 +47,23 @@ const TermsOfService = () => {
           To find out more about when and why we collect your personal information, how we use it, and how we keep it secure, please refer to our{' '}
         </span>
         <span className="c3">
-          <a
+          <Link
             className="c9"
-            href="https://www.circularcouturecollective.com/privacy-policy"
+            to="https://www.circularcouturecollective.com/privacy-policy"
             target="_blank"
           >
             Privacy Policy
-          </a>
+          </Link>
         </span>
         . For information about how we use cookies, please refer to our{' '}
         <span className="c3">
-          <a
+          <Link
             className="c9"
-            href="https://www.circularcouturecollective.com/cookie-policy"
+            to="https://www.circularcouturecollective.com/cookie-policy"
             target="_blank"
           >
             Cookie Policy
-          </a>
+          </Link>
         </span>
         <span>
           .
@@ -74,23 +74,23 @@ const TermsOfService = () => {
           All users of our services are required to read, accept and agree to comply with these terms and conditions (including the terms of the{' '}
         </span>
         <span className="c3">
-          <a
+          <Link
             className="c9"
-            href="https://www.circularcouturecollective.com/privacy-policy"
+            to="https://www.circularcouturecollective.com/privacy-policy"
             target="_blank"
           >
             Privacy Policy
-          </a>
+          </Link>
         </span>
         {' '}and{' '}
         <span className="c3">
-          <a
+          <Link
             className="c9"
-            href="https://www.circularcouturecollective.com/cookie-policy"
+            to="https://www.circularcouturecollective.com/cookie-policy"
             target="_blank"
           >
             Cookie Policy
-          </a>
+          </Link>
         </span>
         ) and any third-party terms and conditions referred to within these terms and conditions or referred to on our website or mobile application (collectively, the "
         <strong>
@@ -137,13 +137,13 @@ const TermsOfService = () => {
         <span className="c0">
           "Cookie Policy":{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/cookie-policy"
+              to="https://www.circularcouturecollective.com/cookie-policy"
               target="_blank"
             >
               www.circularcouture.com/cookie-policy{' '}
-            </a>
+            </Link>
           </span>
           <span />
         </span>
@@ -187,13 +187,13 @@ const TermsOfService = () => {
         <span className="c0">
           "circularcouture Platform": the website{' '}
           <span className="c3 c13">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/"
+              to="https://www.circularcouturecollective.com/"
               target="_blank"
             >
               www.circularcouture.com
-            </a>
+            </Link>
           </span>
           {' '}and the mobile application made available by circularcouture.
         </span>
@@ -246,13 +246,13 @@ const TermsOfService = () => {
         <span className="c0">
           "Privacy Policy":{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="/privacy-policy"
+              to="/privacy-policy"
               target="_blank"
             >
               www.circularcouture.com/privacy-policy{' '}
-            </a>
+            </Link>
           </span>
           <span />
         </span>
@@ -275,12 +275,12 @@ const TermsOfService = () => {
         <span className="c0">
           "Referral Rules": the additional terms incorporated into these Terms that apply to referrals can be found{' '}
           <span className="c3 c13">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/terms-of-service#refer_a_friend"
+              to="https://www.circularcouturecollective.com/terms-of-service#refer_a_friend"
             >
               here
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -324,12 +324,12 @@ const TermsOfService = () => {
         <span className="c0">
           "Rental Terms": the additional terms incorporated into these Terms that apply to Renters which can be found{' '}
           <span className="c3 c13">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/terms-of-service#rental_terms"
+              to="https://www.circularcouturecollective.com/terms-of-service#rental_terms"
             >
               here
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -348,12 +348,12 @@ const TermsOfService = () => {
         <span className="c0">
           "Sale Terms": the additional terms incorporated into these Terms that apply to the sale of a product which can be found{' '}
           <span className="c3 c13">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/terms-of-service#sale_terms"
+              to="https://www.circularcouturecollective.com/terms-of-service#sale_terms"
             >
               here
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -522,12 +522,12 @@ const TermsOfService = () => {
         <span className="c0">
           You will also have the opportunity to sign up for marketing emails to hear about all of the latest news and styles at circularcouture (you can unsubscribe at any time by clicking the link in any emails you receive from us). For more information about how we use your personal information, we recommend that you review circularcouture’s Privacy Policy{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="/privacy-policy"
+              to="/privacy-policy"
             >
               here
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -563,12 +563,12 @@ const TermsOfService = () => {
         <span className="c0">
           You can update or correct your personal details or the details in respect of a company or other entity (as applicable) at any time in your account dashboard or by emailing us at{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="mailto:contact@circularcouturecollective.com"
+              to="mailto:contact@circularcouturecollective.com"
             >
               contact@circularcouture.com
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -577,12 +577,12 @@ const TermsOfService = () => {
         <span className="c0">
           You are responsible for maintaining the confidentiality of your account details and for any activities that occur under your account. If you have any concerns that your account has been misused, you should contact us at{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="mailto:contact@circularcouturecollective.com"
+              to="mailto:contact@circularcouturecollective.com"
             >
               contact@circularcouture.com
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -1204,13 +1204,13 @@ const TermsOfService = () => {
         <span className="c0">
           If any of the Content posted or submitted to the circularcouture Offering by another User makes you feel threatened, discriminated, abused or otherwise uncomfortable, or if you believe any such Content is offensive or otherwise breaches these Terms, please notify us at{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="https://help.circularcouturecollective.com/hc/en-us/requests/new"
+              to="https://help.circularcouturecollective.com/hc/en-us/requests/new"
               target="_blank"
             >
               https://help.circularcouturecollective.com/hc/en-us/requests/new
-            </a>
+            </Link>
           </span>
           <span>
             .
@@ -1761,13 +1761,13 @@ const TermsOfService = () => {
           </strong>
           ") together with instructions for your use in returning the products to circularcouture. If you lose the Return Packaging, please contact us at{' '}
           <span className="c3 c13">
-            <a
+            <Link
               className="c9"
-              href="https://help.circularcouturecollective.com/hc/en-us/requests/new"
+              to="https://help.circularcouturecollective.com/hc/en-us/requests/new"
               target="_blank"
             >
               https://help.circularcouturecollective.com/hc/en-us/requests/new
-            </a>
+            </Link>
           </span>
           {' '}to request new Return Packaging. You hereby consent to circularcouture charging your Payment Method for the cost of the lost Return Packaging.
         </span>
@@ -1832,13 +1832,13 @@ const TermsOfService = () => {
         <span className="c0">
           Save for Services which are currently in progress, you may cease using the circularcouture Offering at any time. You may delete your account by emailing us at{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="mailto:deleteaccount@circularcouturecollective.com"
+              to="mailto:deleteaccount@circularcouturecollective.com"
               target="_blank"
             >
               deleteaccount@circularcouturecollective.com
-            </a>
+            </Link>
           </span>
           . You acknowledge and agree that your Content may continue to be used and displayed by circularcouture on the circularcouture Platform even after such deactivation.
         </span>
@@ -1859,13 +1859,13 @@ const TermsOfService = () => {
         <span className="c0">
           As a User of the circularcouture Offering, you consent to us handling your personal data in accordance with the{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/privacy-policy"
+              to="https://www.circularcouturecollective.com/privacy-policy"
               target="_blank"
             >
               Privacy Policy
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -1874,13 +1874,13 @@ const TermsOfService = () => {
         <span className="c0">
           For details about which cookies are collected and how to manage cookies, please see the{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="https://www.circularcouturecollective.com/cookie-policy"
+              to="https://www.circularcouturecollective.com/cookie-policy"
               target="_blank"
             >
               Cookie Policy
-            </a>
+            </Link>
           </span>
           .
         </span>
@@ -1952,13 +1952,13 @@ const TermsOfService = () => {
         <span className="c0">
           In the event that you have a dispute with us, please contact us directly at{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="https://help.circularcouturecollective.com/hc/en-us/requests/new"
+              to="https://help.circularcouturecollective.com/hc/en-us/requests/new"
               target="_blank"
             >
               https://help.circularcouturecollective.com/hc/en-us/requests/new
-            </a>
+            </Link>
           </span>
           <span>
             {' '}so that a resolution can be found.
@@ -2030,13 +2030,13 @@ const TermsOfService = () => {
         <span className="c0">
           Any notice required to be given to circularcouture in connection with these Terms shall be in writing and must be sent by email to{' '}
           <span className="c3">
-            <a
+            <Link
               className="c9"
-              href="https://help.circularcouturecollective.com/hc/en-us/requests/new"
+              to="https://help.circularcouturecollective.com/hc/en-us/requests/new"
               target="_blank"
             >
               https://help.circularcouturecollective.com/hc/en-us/requests/new
-            </a>
+            </Link>
           </span>
           <span>
             .
@@ -2480,12 +2480,12 @@ const TermsOfService = () => {
           <span className="c0">
             by email to the following address
             <span className="c3">
-              <a
+              <Link
                 className="c9"
-                href="mailto:contact@circularcouturecollective.com"
+                to="mailto:contact@circularcouturecollective.com"
               >
                 contact@circularcouturecollective.com
-              </a>
+              </Link>
             </span>
             , giving your name, address and order reference; and
           </span>
@@ -2493,12 +2493,12 @@ const TermsOfService = () => {
         <li className="c51">
           <span className="c0">
             by completing and submitting the cancellation form included within the parcel, also available at request on the circularcouture Platform at{' '}
-            <a
-              href="https://help.circularcouturecollective.com/hc/en-us/requests/new"
+            <Link
+              to="https://help.circularcouturecollective.com/hc/en-us/requests/new"
               target="_blank"
             >
               https://help.circularcouturecollective.com/hc/en-us/requests/new
-            </a>
+            </Link>
           </span>
         </li>
       </ul>
@@ -2643,12 +2643,12 @@ const TermsOfService = () => {
         placeholder=" Email"
         type="text"
       />
-      <a href="/ListItems/ListStepTwo">
+      <Link to="/ListItems/ListStepTwo">
         {' '}
         <button className="mt-4 mb-4 btn-signup1">
           sign up
         </button>
-      </a>
+      </Link>
     </div>
   </div>
 </div>

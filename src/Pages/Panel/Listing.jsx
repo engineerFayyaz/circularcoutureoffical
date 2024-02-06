@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Listing = () =>{
 
     return (
@@ -28,12 +28,12 @@ const Listing = () =>{
               className="buttons"
               id="wardrobe_buttons"
             >
-              <a
+              <Link
                 className="btn btn-primary -dark-red py-2 mb-2 ml-2 desktop-only"
-                href="/ListingNew"
+                to="/ListingNew"
               >
                 List a new item
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -58,12 +58,12 @@ const Listing = () =>{
                       <br />
                       Why not try it out?{' '}
                     </h5>
-                    <a
+                    <Link
                       className="btn btn-primary -dark-red px-5"
-                      href="/ListingNew"
+                      to="/ListingNew"
                     >
                       LIST A NEW ITEM
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -120,13 +120,13 @@ const Listing = () =>{
                   </p>
                 </div>
                 <div className="col-lg-12 text-uppercase text-center">
-                  <a
+                  <Link
                     className="pb-1 footer-link"
                     data-dismiss="modal"
-                    href="#"
+                    to="#"
                   >
                     Close
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -181,13 +181,13 @@ const Listing = () =>{
                   </p>
                 </div>
                 <div className="col-lg-12 text-uppercase text-center">
-                  <a
+                  <Link
                     className="pb-1 footer-link"
                     data-dismiss="modal"
-                    href="#"
+                    to="#"
                   >
                     Close
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const Sustainability = () =>{
 
     return (
@@ -25,13 +25,13 @@ const Sustainability = () =>{
           {`Traditionally, fashion has worked on a make > use > chuck basis. We say no thanks. The circular economy is restorative and regenerative by design, so buying no longer has to be the default. With the help of our ever-growing community, we’re making fashion accessible and sustainable - and it never looked so good.`}
         </p>
         {' '}
-        <a
+        <Link
           className="default-link text-uppercase cta"
           data-action="sustainability#scrollToForm"
-          href="#"
+          to="#"
         >
           Calculate my savings
-        </a>
+        </Link>
         {' '}
       </div>
     </div>
@@ -69,93 +69,93 @@ const Sustainability = () =>{
                         style={{}}
                       >
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="DRESSES"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             DRESSES
                           </span>
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="TOPS"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             TOPS
                           </span>
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="BOTTOMS"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             BOTTOMS
                           </span>
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="ACCESSORIES"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             ACCESSORIES
                           </span>
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="BAGS"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             BAGS
                           </span>
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="SHOES"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             SHOES
                           </span>
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="JUMPSUITS"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             JUMPSUITS
                           </span>
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="dropdown-item"
                           data-action="form-dropdown#selectChanges"
                           data-value="OUTERWEAR"
-                          href="#"
+                          to="#"
                         >
                           <span className="text-uppercase">
                             OUTERWEAR
                           </span>
-                        </a>
+                        </Link>
                         {' '}
                       </div>
                     </div>
@@ -275,12 +275,12 @@ const Sustainability = () =>{
               <span className="text text-uppercase">
                 Verified by
                 <span>
-                  <a
-                    href="https://help.circularcouturecollective.com/hc/en-us/articles/4402511545233-Learn-more-about-our-Environmental-Savings"
+                  <Link
+                    to="https://help.circularcouturecollective.com/hc/en-us/articles/4402511545233-Learn-more-about-our-Environmental-Savings"
                     target="_blank"
                   >
                     <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/cogo-primary-logo-d1dd091417608f05119f18136f06265e.png" />
-                  </a>
+                  </Link>
                 </span>
               </span>
             </div>
@@ -297,9 +297,9 @@ const Sustainability = () =>{
       </p>
       <div className="partners">
         <div className="hero-card mt-2 p-0">
-          <a
+          <Link
             className="image-card partner-one pb-5"
-            href="#"
+            to="#"
             target="_blank"
           >
             <div data-w-id="03bd9c45-10fe-9d08-58a3-97a4f2f64a5d">
@@ -313,10 +313,10 @@ const Sustainability = () =>{
                 SEE MORE
               </div>
             </div>
-          </a>
-          <a
+          </Link>
+          <Link
             className="image-card partner-two pb-0"
-            href="#"
+            to="#"
             target="_blank"
           >
             <div className="bg-circularcouture-off-green w-100 py-5">
@@ -330,7 +330,7 @@ const Sustainability = () =>{
                 SEE MORE
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="mobile-hero-card position-relative">
           <div className="carousel carousel1 slick-initialized slick-slider slick-dotted">
@@ -358,9 +358,9 @@ const Sustainability = () =>{
                   }}
                 >
                   <div>
-                    <a
+                    <Link
                       className="image-card partner-one pb-5 with-credits"
-                      href="https://www.originalrepack.com/"
+                      to="https://www.originalrepack.com/"
                       style={{
                         display: 'inline-block',
                         width: '100%'
@@ -385,7 +385,7 @@ const Sustainability = () =>{
                           SEE MORE
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div
@@ -405,9 +405,9 @@ const Sustainability = () =>{
                   tabIndex="-1"
                 >
                   <div>
-                    <a
+                    <Link
                       className="image-card partner-two with-credits pb-0"
-                      href="https://www.oxwash.com/"
+                      to="https://www.oxwash.com/"
                       style={{
                         display: 'inline-block',
                         width: '100%'
@@ -432,7 +432,7 @@ const Sustainability = () =>{
                           SEE MORE
                         </div>
                       </div>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -512,13 +512,13 @@ const Sustainability = () =>{
       <div className="content">
         <p className="description mb-4">
           We are also proud members of{' '}
-          <a
+          <Link
             className="text-circularcouture-light-red"
-            href="#"
+            to="#"
             target="_blank"
           >
             Ecologi
-          </a>
+          </Link>
           , a group which helps us to reduce the carbon footprint of each of our employees, as well as offsetting any business travel (which we keep to a minimum).
         </p>
         <p className="description">
@@ -557,13 +557,13 @@ const Sustainability = () =>{
           </div>
         </div>
         {' '}
-        <a
+        <Link
           className="btn btn-primary -dark-red text-uppercase cta"
-          href="#"
+          to="#"
           target="_blank"
         >
           Join the pledge
-        </a>
+        </Link>
         {' '}
       </div>
     </div>

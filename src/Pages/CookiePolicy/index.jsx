@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const CookiePolicy = () => {
     return (
 
@@ -40,13 +40,13 @@ const CookiePolicy = () => {
       >
         The CIRCULAR COUTURE website{' '}
         <span className="c54">
-          <a
+          <Link
             className="c16"
-            href="/Home"
+            to="/Home"
             target="_blank"
           >
             https://www.circularcouture.com
-          </a>
+          </Link>
         </span>
         <span className="c19">
           {' '}(the            "
@@ -119,8 +119,8 @@ const CookiePolicy = () => {
           You can find more information about the individual cookies we use and the            purposes for which we use them in the below table:
         </span>
       </p>
-      <a id="t.f0d77681e6477e8474738e17e05380613d539eb2" />
-      <a id="t.0" />
+      <Link id="t.f0d77681e6477e8474738e17e05380613d539eb2" />
+      <Link id="t.0" />
       <table className="c45">
         <tbody>
           <tr className="c35">
@@ -259,13 +259,13 @@ const CookiePolicy = () => {
                   You can read more about Stripe's cookies{' '}
                 </span>
                 <span className="c43">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://stripe.com/cookies-policy/legal"
+                    to="https://stripe.com/cookies-policy/legal"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span>
                   .
@@ -317,13 +317,13 @@ const CookiePolicy = () => {
                   You can find out more about Google Tag Manager{' '}
                 </span>
                 <span className="c43">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://www.google.co.uk/analytics/tag-manager/use-policy/"
+                    to="https://www.google.co.uk/analytics/tag-manager/use-policy/"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span>
                   .
@@ -375,13 +375,13 @@ const CookiePolicy = () => {
                   You can find out more about Klaviyo{' '}
                 </span>
                 <span className="c43">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://help.klaviyo.com/hc/en-us/articles/360034666712-About-Cookies-in-Klaviyo"
+                    to="https://help.klaviyo.com/hc/en-us/articles/360034666712-About-Cookies-in-Klaviyo"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span>
                   .
@@ -433,13 +433,13 @@ const CookiePolicy = () => {
                   You can read more about Zendesk’s cookies{' '}
                 </span>
                 <span className="c43">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://www.zendesk.co.uk/company/agreements-and-terms/cookie-policy/"
+                    to="https://www.zendesk.co.uk/company/agreements-and-terms/cookie-policy/"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span>
                   .
@@ -520,13 +520,13 @@ const CookiePolicy = () => {
                   You can find out more about Google Analytics{' '}
                 </span>
                 <span className="c47">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://www.google.com/analytics"
+                    to="https://www.google.com/analytics"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span className="c32 c28 c42">
                   .
@@ -581,13 +581,13 @@ const CookiePolicy = () => {
                   You can read more about Heap's cookies{' '}
                 </span>
                 <span className="c43">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://heap.io/privacy"
+                    to="https://heap.io/privacy"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span className="c11">
                   .
@@ -639,13 +639,13 @@ const CookiePolicy = () => {
                   You can read more about Hotjar’s cookies{' '}
                 </span>
                 <span className="c43">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookies"
+                    to="https://help.hotjar.com/hc/en-us/articles/115011789248-Hotjar-Cookies"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span className="c11">
                   .
@@ -697,13 +697,13 @@ const CookiePolicy = () => {
                   You can read more about Cloudflare’s cookies{' '}
                 </span>
                 <span className="c43">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://support.cloudflare.com/hc/en-us/articles/200170156-Understanding-the-Cloudflare-Cookies"
+                    to="https://support.cloudflare.com/hc/en-us/articles/200170156-Understanding-the-Cloudflare-Cookies"
                     target="_blank"
                   >
                     here
-                  </a>
+                  </Link>
                 </span>
                 <span className="c11">
                   .
@@ -758,25 +758,25 @@ const CookiePolicy = () => {
                   These cookies expire within 30 days and do not contain information that                    can identify you personally. Please refer to the 
                 </span>
                 <span className="c27">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://www.google.com/privacy/ads/"
+                    to="https://www.google.com/privacy/ads/"
                     target="_blank"
                   >
                     Google Advertising Privacy                      Notice
-                  </a>
+                  </Link>
                 </span>
                 <span className="c28">
                    and{' '}
                 </span>
                 <span className="c47">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://policies.google.com/privacy"
+                    to="https://policies.google.com/privacy"
                     target="_blank"
                   >
                     Google Privacy Policy
-                  </a>
+                  </Link>
                 </span>
                 <span className="c28">
                    for more information.
@@ -830,25 +830,25 @@ const CookiePolicy = () => {
                   Please refer to the 
                 </span>
                 <span className="c27">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://www.google.com/privacy/ads/"
+                    to="https://www.google.com/privacy/ads/"
                     target="_blank"
                   >
                     Google Advertising Privacy                      Notice
-                  </a>
+                  </Link>
                 </span>
                 <span className="c28">
                    for more information about the ability to opt out and
                 </span>
                 <span className="c47">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://policies.google.com/privacy"
+                    to="https://policies.google.com/privacy"
                     target="_blank"
                   >
                     Google Privacy Policy
-                  </a>
+                  </Link>
                 </span>
                 <span className="c32 c28 c42">
                   .
@@ -903,13 +903,13 @@ const CookiePolicy = () => {
                   Please refer to the{' '}
                 </span>
                 <span className="c47">
-                  <a
+                  <Link
                     className="c16"
-                    href="https://www.facebook.com/policies/cookies/"
+                    to="https://www.facebook.com/policies/cookies/"
                     target="_blank"
                   >
                     Facebook Cookie                      Policy
-                  </a>
+                  </Link>
                 </span>
                 <span className="c19">
                    for more information
@@ -967,68 +967,68 @@ const CookiePolicy = () => {
       <ul className="c0 lst-kix_list_2-0 start">
         <li className="c4">
           <span className="c26">
-            <a
+            <Link
               className="c16"
-              href="https://support.google.com/accounts/answer/61416?co%2525253DGENIE.Platform%252525253DDesktop%25252526hl%2525253Den"
+              to="https://support.google.com/accounts/answer/61416?co%2525253DGENIE.Platform%252525253DDesktop%25252526hl%2525253Den"
               target="_blank"
             >
               Google                Chrome
-            </a>
+            </Link>
           </span>
         </li>
         <li className="c4">
           <span className="c26">
-            <a
+            <Link
               className="c16"
-              href="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd"
+              to="https://support.microsoft.com/en-us/windows/microsoft-edge-browsing-data-and-privacy-bb8174ba-9d73-dcf2-9b4a-c582b4e640dd"
               target="_blank"
             >
               Microsoft                Edge
-            </a>
+            </Link>
           </span>
         </li>
         <li className="c4">
           <span className="c26">
-            <a
+            <Link
               className="c16"
-              href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
+              to="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop?redirectslug=enable-and-disable-cookies-website-preferences&redirectlocale=en-US"
               target="_blank"
             >
               Mozilla                Firefox
-            </a>
+            </Link>
           </span>
         </li>
         <li className="c4">
           <span className="c26">
-            <a
+            <Link
               className="c16"
-              href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+              to="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
               target="_blank"
             >
               Microsoft                Internet Explorer
-            </a>
+            </Link>
           </span>
         </li>
         <li className="c4">
           <span className="c26">
-            <a
+            <Link
               className="c16"
-              href="https://help.opera.com/en/latest/web-preferences/"
+              to="https://help.opera.com/en/latest/web-preferences/"
               target="_blank"
             >
               Opera
-            </a>
+            </Link>
           </span>
         </li>
         <li className="c4">
           <span className="c26">
-            <a
+            <Link
               className="c16"
-              href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
+              to="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
               target="_blank"
             >
               Apple Safari
-            </a>
+            </Link>
           </span>
         </li>
       </ul>
@@ -1048,13 +1048,13 @@ const CookiePolicy = () => {
           You can also visit the{' '}
         </span>
         <span className="c26">
-          <a
+          <Link
             className="c16"
-            href="http://www.aboutcookies.org/"
+            to="http://www.aboutcookies.org/"
             target="_blank"
           >
             About Cookies
-          </a>
+          </Link>
         </span>
         <span className="c22">
           , for            more information about cookies and how to manage them.
@@ -1130,13 +1130,13 @@ const CookiePolicy = () => {
           If you would like more information about these third-party cookies, it is            available from{' '}
         </span>
         <span className="c43">
-          <a
+          <Link
             className="c16"
-            href="https://www.youronlinechoices.com/uk/"
+            to="https://www.youronlinechoices.com/uk/"
             target="_blank"
           >
             YourOnlineChoices.uk
-          </a>
+          </Link>
         </span>
         <span className="c22">
           .
@@ -1173,13 +1173,13 @@ const CookiePolicy = () => {
           Read more about 
         </span>
         <span className="c26">
-          <a
+          <Link
             className="c16"
-            href="https://support.google.com/youtube/answer/171780?hl%253Den-GB"
+            to="https://support.google.com/youtube/answer/171780?hl%253Den-GB"
             target="_blank"
           >
             YouTube's privacy              policy for embedded content
-          </a>
+          </Link>
         </span>
         <span className="c22">
           .

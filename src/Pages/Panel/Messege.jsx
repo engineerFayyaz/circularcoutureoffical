@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Messege = () =>{
 
     return (
@@ -50,12 +50,12 @@ const Messege = () =>{
                 <p className="mx-auto">
                   {' '}WHEN YOU FIND AN ITEM YOU LOVE, SEND THE LENDER A MESSAGE WITH ANY QUESTIONS YOU HAVE.{' '}
                 </p>
-                <a
+                <Link
                   className="btn btn-primary -dark-red d-block mx-auto"
-                  href="/collections/newarrival"
+                  to="/collections/newarrival"
                 >
                   FIND AN ITEM
-                </a>
+                </Link>
               </div>
             </div>
           </div>

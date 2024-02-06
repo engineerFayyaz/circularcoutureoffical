@@ -2,6 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
+import { Link } from "react-router-dom";
 
 const FAQ = () =>{
     return (
@@ -17,9 +18,9 @@ const FAQ = () =>{
         />
       </div>
       <div className="link">
-        <a href="#">
+        <Link to="#">
           Contact Us
-        </a>
+        </Link>
       </div>
     </div>
   </div>
@@ -42,81 +43,81 @@ const FAQ = () =>{
       <section className="categories blocks">
         <ul className="blocks-list">
           <li className="blocks-item">
-            <a
+            <Link
               className="blocks-item-link"
-              href="/hc/en-us/categories/15208780411665-Renting"
+              to="/hc/en-us/categories/15208780411665-Renting"
             >
               <span className="blocks-item-title">
                 Renting
               </span>
               <span className="blocks-item-description" />
-            </a>
+            </Link>
           </li>
           <li className="blocks-item">
-            <a
+            <Link
               className="blocks-item-link"
-              href="/hc/en-us/categories/15208780997777-Lending"
+              to="/hc/en-us/categories/15208780997777-Lending"
             >
               <span className="blocks-item-title">
                 Lending
               </span>
               <span className="blocks-item-description" />
-            </a>
+            </Link>
           </li>
           <li className="blocks-item">
-            <a
+            <Link
               className="blocks-item-link"
-              href="/hc/en-us/categories/15208798271761-My-Account"
+              to="/hc/en-us/categories/15208798271761-My-Account"
             >
               <span className="blocks-item-title">
                 My Account
               </span>
               <span className="blocks-item-description" />
-            </a>
+            </Link>
           </li>
           <li className="blocks-item">
-            <a
+            <Link
               className="blocks-item-link"
-              href="/hc/en-us/categories/15208798971793-Fees-Payments"
+              to="/hc/en-us/categories/15208798971793-Fees-Payments"
             >
               <span className="blocks-item-title">
                 Fees & Payments
               </span>
               <span className="blocks-item-description" />
-            </a>
+            </Link>
           </li>
           <li className="blocks-item">
-            <a
+            <Link
               className="blocks-item-link"
-              href="/hc/en-us/categories/15208869787665-Damage-Safety-Security"
+              to="/hc/en-us/categories/15208869787665-Damage-Safety-Security"
             >
               <span className="blocks-item-title">
                 Damage, Safety & Security{' '}
               </span>
               <span className="blocks-item-description" />
-            </a>
+            </Link>
           </li>
           <li className="blocks-item">
-            <a
+            <Link
               className="blocks-item-link"
-              href="/hc/en-us/categories/15208770260625-Resale"
+              to="/hc/en-us/categories/15208770260625-Resale"
             >
               <span className="blocks-item-title">
                 Resale
               </span>
               <span className="blocks-item-description" />
-            </a>
+            </Link>
           </li>
           <li className="blocks-item">
-            <a
+            <Link
               className="blocks-item-link"
-              href="/hc/en-us/categories/15208896840209-Work-at-HURR"
+              to="/hc/en-us/categories/15208896840209-Work-at-HURR"
             >
               <span className="blocks-item-title">
                 Work at HURR!
               </span>
               <span className="blocks-item-description" />
-            </a>
+            </Link>
           </li>
         </ul>
       </section>
@@ -126,29 +127,29 @@ const FAQ = () =>{
         </h2>
         <ul className="article-list promoted-articles">
           <li className="promoted-articles-item">
-            <a href="/hc/en-us/articles/15230860001425-Why-have-my-listings-changed-in-pricing">
+            <Link to="/hc/en-us/articles/15230860001425-Why-have-my-listings-changed-in-pricing">
               Why have my listings changed in pricing?
-            </a>
+            </Link>
           </li>
           <li className="promoted-articles-item">
-            <a href="/hc/en-us/articles/4419759781521-Is-HURR-International">
+            <Link to="/hc/en-us/articles/4419759781521-Is-HURR-International">
               Is HURR International?
-            </a>
+            </Link>
           </li>
           <li className="promoted-articles-item">
-            <a href="/hc/en-us/articles/12089882359185-Newsletter-Sign-Up-Competition-Ts-Cs">
+            <Link to="/hc/en-us/articles/12089882359185-Newsletter-Sign-Up-Competition-Ts-Cs">
               Newsletter Sign Up Competition Ts&Cs
-            </a>
+            </Link>
           </li>
           <li className="promoted-articles-item">
-            <a href="/hc/en-us/articles/19473777153937-Protection-from-fraudsters-phishing-attacks-and-scams">
+            <Link to="/hc/en-us/articles/19473777153937-Protection-from-fraudsters-phishing-attacks-and-scams">
               Protection from fraudsters, phishing attacks and scams
-            </a>
+            </Link>
           </li>
           <li className="promoted-articles-item">
-            <a href="/hc/en-us/articles/16960441249425-Customer-Support-Exec-Full-time-Perm">
+            <Link to="/hc/en-us/articles/16960441249425-Customer-Support-Exec-Full-time-Perm">
               Customer Support Exec (Full time/Perm)
-            </a>
+            </Link>
           </li>
         </ul>
       </section>
@@ -156,9 +157,9 @@ const FAQ = () =>{
   </div>
 </div>
 <div className="contact-footer p-3 px-5">
-    <a href="/Home">
+    <Link to="/Home">
       CIRCULAR
-    </a>
+    </Link>
   </div>
         
         </>

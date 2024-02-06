@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Seller = () =>{
 
     return (
@@ -25,19 +25,19 @@ const Seller = () =>{
             <div className="col-sm-7">
               <div className="buttons">
                 {' '}
-                <a
+                <Link
                   className="btn btn-outline-primary -dark-red py-2 mb-2 mr-3  rounded"
-                  href="/Panel/Buyer"
+                  to="/Panel/Buyer"
                 >
                   Buying
-                </a>
+                </Link>
                 {' '}
-                <a
+                <Link
                   className="btn btn-primary -dark-red py-2 mb-2 ml-2  rounded"
-                  href="/Panel/Seller"
+                  to="/Panel/Seller"
                 >
                   Selling
-                </a>
+                </Link>
                 {' '}
               </div>
             </div>
@@ -52,12 +52,12 @@ const Seller = () =>{
                 They will be accessible here.
               </h5>
               {' '}
-              <a
+              <Link
                 className="btn btn-primary -dark-red px-5"
-                href="/collections/newarrivals"
+                to="/collections/newarrivals"
               >
                 View New Arrivals
-              </a>
+              </Link>
               {' '}
             </div>
           </div>
@@ -107,16 +107,16 @@ const Seller = () =>{
             In order to proceed, please securely connect your bank account by pressing the button below. The process shouldn't take longer than a few minutes.
           </p>
           {' '}
-          <a
+          <Link
             className="btn btn-primary btn-block -dark-red mt-2"
             data-action="click->dashboard--connect-bank-account#request"
             data-connect-bank-url="/payout_providers"
             data-controller="dashboard--connect-bank-account"
             data-dashboard--connect-bank-account-clicked="false"
-            href="#"
+            to="#"
           >
             Connect my bank account
-          </a>
+          </Link>
           {' '}
         </div>
       </div>

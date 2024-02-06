@@ -2,268 +2,268 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
-
-const Amur=()=>{
-    return(
-        <>
-        <TopHeader/>
-        <div className="main-container collection-search overflow-auto">
+import { Link } from "react-router-dom";
+const Amur = () => {
+  return (
+    <>
+      <TopHeader />
+      <div className="main-container collection-search overflow-auto">
         <div className="search-page">
-        <div className="brands-profile position-relative">
-  <div className="text-center text-uppercase header">
-    <img
-      alt="brand logo"
-      className="rounded-circle"
-      height="66"
-      src="https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_auto,h_66,q_auto,w_66/igyfdkbran7vv7ykmx6hxyp8o6ft"
-      width="66"
-    />
-    <h1 className="title">
-      Amur
-    </h1>
-    <a
-      className="star-count"
-      data-action="filter-reviews#scrollToReviewSection"
-      data-controller="filter-reviews"
-      href="#"
-    >
-      <div className="brands-star-rating">
-        <svg
-          height="16.39px"
-          viewBox="182.483 291.768 20 19.02"
-          width="17.24px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            stroke="#626262"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            style={{}}
-            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
-          >
-            <path
-              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
-              style={{
-                fill: 'rgb(0, 0, 0)',
-                stroke: 'rgb(0, 0, 0)',
-                strokeWidth: '1.41px'
-              }}
-            />
-          </g>
-        </svg>
-        <svg
-          height="16.39px"
-          viewBox="182.483 291.768 20 19.02"
-          width="17.24px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            stroke="#626262"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            style={{}}
-            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
-          >
-            <path
-              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
-              style={{
-                fill: 'rgb(0, 0, 0)',
-                stroke: 'rgb(0, 0, 0)',
-                strokeWidth: '1.41px'
-              }}
-            />
-          </g>
-        </svg>
-        <svg
-          height="16.39px"
-          viewBox="182.483 291.768 20 19.02"
-          width="17.24px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            stroke="#626262"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            style={{}}
-            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
-          >
-            <path
-              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
-              style={{
-                fill: 'rgb(0, 0, 0)',
-                stroke: 'rgb(0, 0, 0)',
-                strokeWidth: '1.41px'
-              }}
-            />
-          </g>
-        </svg>
-        <svg
-          height="16.39px"
-          viewBox="182.483 291.768 20 19.02"
-          width="17.24px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            stroke="#626262"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            style={{}}
-            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
-          >
-            <path
-              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
-              style={{
-                fill: 'rgb(0, 0, 0)',
-                stroke: 'rgb(0, 0, 0)',
-                strokeWidth: '1.41px'
-              }}
-            />
-          </g>
-        </svg>
-        <svg
-          height="16.39px"
-          viewBox="182.483 291.768 20 19.02"
-          width="17.24px"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            fill="none"
-            stroke="#626262"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            style={{}}
-            transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
-          >
-            <path
-              d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
-              style={{
-                fill: 'rgb(0, 0, 0)',
-                stroke: 'rgb(0, 0, 0)',
-                strokeWidth: '1.41px'
-              }}
-            />
-          </g>
-        </svg>
-        <span className="star-count">
-          (9)
-        </span>
-      </div>
-    </a>
-    <div className="follow-share-wardrobe-section d-flex">
-      <div className="col-6 pl-0 text-right left-button">
-        <div
-          className="share-wardrobe-button-copy"
-          data-controller="share-wardrobe-button-component"
-        >
-          <input
-            className="d-none"
-            data-target="share-wardrobe-button-component.profileLink"
-            defaultValue="https://www.hurrcollective.com/brand/Amur"
-            readOnly
-            type="text"
-          />
-          <button
-            className="share-button-component button-hover button primary button-width py-0"
-            data-action="click->share-wardrobe-button-component#copyLink"
-            data-target="share-wardrobe-button-component.contentSpan"
-          >
-            <div className="d-flex justify-content-center gray-6 align-items-center">
+          <div className="brands-profile position-relative">
+            <div className="text-center text-uppercase header">
               <img
-                alt="An icon of a link icon white"
-                className="mr-2 mb-0"
-                height="14"
-                src="https://res.cloudinary.com/dcaptnlz3/image/asset/link-icon-white-d78c54ba75e0454aec53e874f9d8ac82.svg"
-                width="13"
+                alt="brand logo"
+                className="rounded-circle"
+                height="66"
+                src="https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_auto,h_66,q_auto,w_66/igyfdkbran7vv7ykmx6hxyp8o6ft"
+                width="66"
               />
-              <span className="brand-share-wardrobe-copy">
-                SHARE PAGE
-              </span>
+              <h1 className="title">
+                Amur
+              </h1>
+              <Link
+                className="star-count"
+                data-action="filter-reviews#scrollToReviewSection"
+                data-controller="filter-reviews"
+                to="#"
+              >
+                <div className="brands-star-rating">
+                  <svg
+                    height="16.39px"
+                    viewBox="182.483 291.768 20 19.02"
+                    width="17.24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#626262"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      style={{}}
+                      transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+                        style={{
+                          fill: 'rgb(0, 0, 0)',
+                          stroke: 'rgb(0, 0, 0)',
+                          strokeWidth: '1.41px'
+                        }}
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    height="16.39px"
+                    viewBox="182.483 291.768 20 19.02"
+                    width="17.24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#626262"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      style={{}}
+                      transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+                        style={{
+                          fill: 'rgb(0, 0, 0)',
+                          stroke: 'rgb(0, 0, 0)',
+                          strokeWidth: '1.41px'
+                        }}
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    height="16.39px"
+                    viewBox="182.483 291.768 20 19.02"
+                    width="17.24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#626262"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      style={{}}
+                      transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+                        style={{
+                          fill: 'rgb(0, 0, 0)',
+                          stroke: 'rgb(0, 0, 0)',
+                          strokeWidth: '1.41px'
+                        }}
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    height="16.39px"
+                    viewBox="182.483 291.768 20 19.02"
+                    width="17.24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#626262"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      style={{}}
+                      transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+                        style={{
+                          fill: 'rgb(0, 0, 0)',
+                          stroke: 'rgb(0, 0, 0)',
+                          strokeWidth: '1.41px'
+                        }}
+                      />
+                    </g>
+                  </svg>
+                  <svg
+                    height="16.39px"
+                    viewBox="182.483 291.768 20 19.02"
+                    width="17.24px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#626262"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      style={{}}
+                      transform="matrix(0.925642, -0.00095, 0.000942, 0.918325, 181.369186, 290.737701)"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01L12 2z"
+                        style={{
+                          fill: 'rgb(0, 0, 0)',
+                          stroke: 'rgb(0, 0, 0)',
+                          strokeWidth: '1.41px'
+                        }}
+                      />
+                    </g>
+                  </svg>
+                  <span className="star-count">
+                    (9)
+                  </span>
+                </div>
+              </Link>
+              <div className="follow-share-wardrobe-section d-flex">
+                <div className="col-6 pl-0 text-right left-button">
+                  <div
+                    className="share-wardrobe-button-copy"
+                    data-controller="share-wardrobe-button-component"
+                  >
+                    <input
+                      className="d-none"
+                      data-target="share-wardrobe-button-component.profileLink"
+                      defaultValue="https://www.hurrcollective.com/brand/Amur"
+                      readOnly
+                      type="text"
+                    />
+                    <button
+                      className="share-button-component button-hover button primary button-width py-0"
+                      data-action="click->share-wardrobe-button-component#copyLink"
+                      data-target="share-wardrobe-button-component.contentSpan"
+                    >
+                      <div className="d-flex justify-content-center gray-6 align-items-center">
+                        <img
+                          alt="An icon of a link icon white"
+                          className="mr-2 mb-0"
+                          height="14"
+                          src="https://res.cloudinary.com/dcaptnlz3/image/asset/link-icon-white-d78c54ba75e0454aec53e874f9d8ac82.svg"
+                          width="13"
+                        />
+                        <span className="brand-share-wardrobe-copy">
+                          SHARE PAGE
+                        </span>
+                      </div>
+                    </button>
+                  </div>
+                  <button
+                    className="share-button-component button primary button-width py-0 d-none"
+                    data-action="click->share-wardrobe-button-component#show"
+                    data-controller="share-wardrobe-button-component"
+                    data-share-wardrobe-button-component-text-value="Have you seen this page on HURR? Obsessed! 💘"
+                    data-share-wardrobe-button-component-title-value="HURR"
+                    data-share-wardrobe-button-component-url-value="https://www.hurrcollective.com/brand/Amur"
+                  >
+                    <div className="d-flex justify-content-center gray-6 align-items-center">
+                      <img
+                        alt="An icon of a link icon white"
+                        className="mr-2 sw-icon"
+                        height="14"
+                        src="https://res.cloudinary.com/dcaptnlz3/image/asset/link-icon-white-d78c54ba75e0454aec53e874f9d8ac82.svg"
+                        width="13"
+                      />
+                      SHARE PAGE
+                    </div>
+                  </button>
+                </div>
+                <div
+                  className="brand-follow-button"
+                  id="concierge_follow_button"
+                >
+                  <Link
+                    className="btn btn-outline-primary -black -transparent button-width"
+                    data-method="post"
+                    data-remote="true"
+                    to="#"
+                    rel="nofollow"
+                  >
+                    FOLLOW
+                  </Link>
+                </div>
+              </div>
             </div>
-          </button>
-        </div>
-        <button
-          className="share-button-component button primary button-width py-0 d-none"
-          data-action="click->share-wardrobe-button-component#show"
-          data-controller="share-wardrobe-button-component"
-          data-share-wardrobe-button-component-text-value="Have you seen this page on HURR? Obsessed! 💘"
-          data-share-wardrobe-button-component-title-value="HURR"
-          data-share-wardrobe-button-component-url-value="https://www.hurrcollective.com/brand/Amur"
-        >
-          <div className="d-flex justify-content-center gray-6 align-items-center">
-            <img
-              alt="An icon of a link icon white"
-              className="mr-2 sw-icon"
-              height="14"
-              src="https://res.cloudinary.com/dcaptnlz3/image/asset/link-icon-white-d78c54ba75e0454aec53e874f9d8ac82.svg"
-              width="13"
-            />
-            SHARE PAGE
+            <div className="biography text-center">
+              <span className="badge badge-secondary text-uppercase">
+                Official Partner
+              </span>
+              <div className="content">
+                <p className="mx-auto">
+                  Amur at its heart celebrates quality textiles and masterful draping techniques. Created in Australia and now coveted on a global scale, Amur pieces are crafted to transcend trends.
+                </p>
+                <ul className="list-inline mb-0 social-links">
+                  <li className="list-inline-item">
+                    <Link
+                      className="btn btn-primary -dark-red"
+                      to="#"
+                      target="_blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="fas fa-link"
+                      />
+                    </Link>
+                  </li>
+                  <li className="list-inline-item">
+                    <Link
+                      className="btn btn-primary -dark-red -instagram"
+                      to="#"
+                      target="_blank"
+                    >
+                      <i
+                        aria-hidden="true"
+                        className="fab fa-instagram"
+                      />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </button>
-      </div>
-      <div
-        className="brand-follow-button"
-        id="concierge_follow_button"
-      >
-        <a
-          className="btn btn-outline-primary -black -transparent button-width"
-          data-method="post"
-          data-remote="true"
-          href="#"
-          rel="nofollow"
-        >
-          FOLLOW
-        </a>
-      </div>
-    </div>
-  </div>
-  <div className="biography text-center">
-    <span className="badge badge-secondary text-uppercase">
-      Official Partner
-    </span>
-    <div className="content">
-      <p className="mx-auto">
-        Amur at its heart celebrates quality textiles and masterful draping techniques. Created in Australia and now coveted on a global scale, Amur pieces are crafted to transcend trends.
-      </p>
-      <ul className="list-inline mb-0 social-links">
-        <li className="list-inline-item">
-          <a
-            className="btn btn-primary -dark-red"
-            href="#"
-            target="_blank"
-          >
-            <i
-              aria-hidden="true"
-              className="fas fa-link"
-            />
-          </a>
-        </li>
-        <li className="list-inline-item">
-          <a
-            className="btn btn-primary -dark-red -instagram"
-            href="#"
-            target="_blank"
-          >
-            <i
-              aria-hidden="true"
-              className="fab fa-instagram"
-            />
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-     
+
           <div
             className="filter-container mx-auto app-search--listing-filters-controller app-search--filters-count-controller"
             data-app-search--listing-filters-active-merchandising-value="false"
@@ -344,7 +344,7 @@ const Amur=()=>{
                                         aria-selected="true"
                                         className="nav-link btn-tab active"
                                         data-toggle="pill"
-                                        href="#desktop-pills-clothing"
+                                        to="#desktop-pills-clothing"
                                         id="desktop-pills-clothing-tab"
                                         role="tab"
                                       >
@@ -357,7 +357,7 @@ const Amur=()=>{
                                         aria-selected="false"
                                         className="nav-link btn-tab"
                                         data-toggle="pill"
-                                        href="#desktop-pills-shoes"
+                                        to="#desktop-pills-shoes"
                                         id="desktop-pills-shoes-tab"
                                         role="tab"
                                       >
@@ -1630,7 +1630,7 @@ const Amur=()=>{
                                 data-filter="designers"
                                 data-value="The Vampire’s Wife"
                                 hidden
-                                href="javascript:void(0)"
+                                to="javascript:void(0)"
                                 id="The Vampire’s Wife"
                                 name="filter_designers"
                                 type="checkbox"
@@ -1647,7 +1647,7 @@ const Amur=()=>{
                                 data-filter="designers"
                                 data-value="Cecilie Bahnsen"
                                 hidden
-                                href="javascript:void(0)"
+                                to="javascript:void(0)"
                                 id="Cecilie Bahnsen"
                                 name="filter_designers"
                                 type="checkbox"
@@ -1664,7 +1664,7 @@ const Amur=()=>{
                                 data-filter="designers"
                                 data-value="Self-Portrait"
                                 hidden
-                                href="javascript:void(0)"
+                                to="javascript:void(0)"
                                 id="Self-Portrait"
                                 name="filter_designers"
                                 type="checkbox"
@@ -1681,7 +1681,7 @@ const Amur=()=>{
                                 data-filter="designers"
                                 data-value="16ARLINGTON"
                                 hidden
-                                href="javascript:void(0)"
+                                to="javascript:void(0)"
                                 id="16ARLINGTON"
                                 name="filter_designers"
                                 type="checkbox"
@@ -1698,7 +1698,7 @@ const Amur=()=>{
                                 data-filter="designers"
                                 data-value="Rat & Boa"
                                 hidden
-                                href="javascript:void(0)"
+                                to="javascript:void(0)"
                                 id="Rat & Boa"
                                 name="filter_designers"
                                 type="checkbox"
@@ -1715,7 +1715,7 @@ const Amur=()=>{
                                 data-filter="designers"
                                 data-value="Nadine Merabi"
                                 hidden
-                                href="javascript:void(0)"
+                                to="javascript:void(0)"
                                 id="Nadine Merabi"
                                 name="filter_designers"
                                 type="checkbox"
@@ -1732,7 +1732,7 @@ const Amur=()=>{
                                 data-filter="designers"
                                 data-value="Ganni"
                                 hidden
-                                href="javascript:void(0)"
+                                to="javascript:void(0)"
                                 id="Ganni"
                                 name="filter_designers"
                                 type="checkbox"
@@ -2499,11 +2499,11 @@ const Amur=()=>{
                           <label className="mouseover-pointer">
                             {' '}Managed stock{' '}
                           </label>
-                          <a
+                          <Link
                             className="filter-icon"
                             data-target="#managed-stock-modal"
                             data-toggle="modal"
-                            href="#"
+                            to="#"
                           >
                             <img
                               alt="An icon of a info"
@@ -2511,7 +2511,7 @@ const Amur=()=>{
                               src="https://res.cloudinary.com/dcaptnlz3/image/asset/info-fdd04def8949c7d9ad7c87895d8399a7.svg"
                               width="17"
                             />
-                          </a>
+                          </Link>
                           <div className="managed-stock-desktop-toggle">
                             <img
                               alt="An icon of a default accordion toggle"
@@ -2539,11 +2539,11 @@ const Amur=()=>{
                           <label className="mouseover-pointer">
                             {' '}Top Lenders{' '}
                           </label>
-                          <a
+                          <Link
                             className="filter-icon"
                             data-target="#top-lenders-modal"
                             data-toggle="modal"
-                            href="#"
+                            to="#"
                           >
                             <img
                               alt="An icon of a info"
@@ -2551,7 +2551,7 @@ const Amur=()=>{
                               src="https://res.cloudinary.com/dcaptnlz3/image/asset/info-fdd04def8949c7d9ad7c87895d8399a7.svg"
                               width="17"
                             />
-                          </a>
+                          </Link>
                           <div className="top-lenders-desktop-toggle">
                             <img
                               alt="An icon of a default accordion toggle"
@@ -3519,14 +3519,14 @@ const Amur=()=>{
                     data-app-search--filter-box-target="wrapper"
                   >
                     <div className="text-right clear-all-wrapper">
-                      <a
+                      <Link
                         className="clear-all d-none"
                         data-action="click->app-search--filter-box#resetFilters"
                         data-app-search--filter-box-target="clearAllBtn"
-                        href="#"
+                        to="#"
                       >
                         Clear all
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div
@@ -3602,11 +3602,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -3618,12 +3618,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -3633,7 +3633,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="40"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6215099"
-                          href="/listings/nala-clutch"
+                          to="/listings/nala-clutch"
                           target="_blank"
                         >
                           <div
@@ -3685,7 +3685,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -3710,11 +3710,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -3726,12 +3726,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -3741,7 +3741,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera nano sparkle bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="33"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1954194"
-                          href="/listings/hera-nano-sparkle-bag"
+                          to="/listings/hera-nano-sparkle-bag"
                           target="_blank"
                         >
                           <div
@@ -3793,7 +3793,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -3818,11 +3818,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -3834,12 +3834,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -3849,7 +3849,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala Mini Clutch in Gold"
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1803617"
-                          href="/listings/nala-mini-clutch-in-gold"
+                          to="/listings/nala-mini-clutch-in-gold"
                           target="_blank"
                         >
                           <div
@@ -3901,7 +3901,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -3926,11 +3926,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -3942,12 +3942,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -3957,7 +3957,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="EOS clutch bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="38"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2994310"
-                          href="/listings/eos-clutch-bag"
+                          to="/listings/eos-clutch-bag"
                           target="_blank"
                         >
                           <div
@@ -4009,7 +4009,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4034,11 +4034,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4050,12 +4050,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4065,7 +4065,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bara Mini Crystal Bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="53"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="8732839"
-                          href="/listings/bara-mini-rhinestone-bag"
+                          to="/listings/bara-mini-rhinestone-bag"
                           target="_blank"
                         >
                           <div
@@ -4117,7 +4117,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-6 col-md-12 col-lg-6 col-xl-4 mb-4 mb-xl-3 item-container">
@@ -4133,15 +4133,15 @@ const Amur=()=>{
                             Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
-                            <a
+                            <Link
                               className="btn btn-primary btn-block -dark-red cta"
                               data-dismiss="modal"
                               data-target="#signup-modal"
                               data-toggle="modal"
-                              href="#"
+                              to="#"
                             >
                               Register Now
-                            </a>
+                            </Link>
                           </span>
                         </div>
                       </div>
@@ -4168,11 +4168,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4184,12 +4184,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4199,7 +4199,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Fana Clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="48"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5880710"
-                          href="/listings/fana-clutch"
+                          to="/listings/fana-clutch"
                           target="_blank"
                         >
                           <div
@@ -4251,7 +4251,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4276,11 +4276,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4292,12 +4292,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4307,7 +4307,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Clutch in Janipur"
                           data-google-tag-manager--enhanced-ecommerce-item-price="35"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2576231"
-                          href="/listings/eos-clutch-in-janipur"
+                          to="/listings/eos-clutch-in-janipur"
                           target="_blank"
                         >
                           <div
@@ -4359,7 +4359,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4384,11 +4384,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4400,12 +4400,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4415,7 +4415,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="37"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9310241"
-                          href="/listings/nala-clutch-91507"
+                          to="/listings/nala-clutch-91507"
                           target="_blank"
                         >
                           <div
@@ -4467,7 +4467,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4492,11 +4492,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4508,12 +4508,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4523,7 +4523,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera Mini Silver Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="50"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2095450"
-                          href="/listings/hera-mini-silver-bag"
+                          to="/listings/hera-mini-silver-bag"
                           target="_blank"
                         >
                           <div
@@ -4575,7 +4575,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4600,11 +4600,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4616,12 +4616,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4631,7 +4631,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala in gold"
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9724517"
-                          href="/listings/nala-in-gold"
+                          to="/listings/nala-in-gold"
                           target="_blank"
                         >
                           <div
@@ -4683,7 +4683,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4708,11 +4708,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4724,12 +4724,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4739,7 +4739,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala Gold Mini fan clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="36"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1666833"
-                          href="/listings/nala-mini-fan-clutch"
+                          to="/listings/nala-mini-fan-clutch"
                           target="_blank"
                         >
                           <div
@@ -4791,7 +4791,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4816,11 +4816,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4832,12 +4832,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4847,7 +4847,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera Mini Crystal Embellished "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2290729"
-                          href="/listings/hera-mini-crystal-embellished"
+                          to="/listings/hera-mini-crystal-embellished"
                           target="_blank"
                         >
                           <div
@@ -4899,7 +4899,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -4924,11 +4924,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -4940,12 +4940,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -4955,7 +4955,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Sienna mini crystal-embellishe"
                           data-google-tag-manager--enhanced-ecommerce-item-price="34"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5472966"
-                          href="/listings/sienna-mini-crystal-embellishe"
+                          to="/listings/sienna-mini-crystal-embellishe"
                           target="_blank"
                         >
                           <div
@@ -5007,7 +5007,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5032,11 +5032,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5048,12 +5048,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5063,7 +5063,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="The EOS Clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="33"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5481892"
-                          href="/listings/the-eos-clutch"
+                          to="/listings/the-eos-clutch"
                           target="_blank"
                         >
                           <div
@@ -5115,7 +5115,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5140,11 +5140,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5156,12 +5156,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5171,7 +5171,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos in pearl "
                           data-google-tag-manager--enhanced-ecommerce-item-price="36"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7406677"
-                          href="/listings/eos-in-pearl"
+                          to="/listings/eos-in-pearl"
                           target="_blank"
                         >
                           <div
@@ -5223,7 +5223,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5248,11 +5248,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5264,12 +5264,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5279,7 +5279,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bara Crystal Mini Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="42"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1624282"
-                          href="/listings/bara-crystal-mini-bag"
+                          to="/listings/bara-crystal-mini-bag"
                           target="_blank"
                         >
                           <div
@@ -5331,7 +5331,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5356,11 +5356,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5372,12 +5372,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5387,7 +5387,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bubble clutch bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="38"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4627969"
-                          href="/listings/bubble-clutch-bag"
+                          to="/listings/bubble-clutch-bag"
                           target="_blank"
                         >
                           <div
@@ -5439,7 +5439,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5464,11 +5464,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5480,12 +5480,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5495,7 +5495,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala Black Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="59"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6268364"
-                          href="/listings/nala-black-clutch"
+                          to="/listings/nala-black-clutch"
                           target="_blank"
                         >
                           <div
@@ -5547,7 +5547,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5572,11 +5572,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5588,12 +5588,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5603,7 +5603,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hajar acrylic clutch bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2326881"
-                          href="/listings/hajar-acrylic-clutch-bag"
+                          to="/listings/hajar-acrylic-clutch-bag"
                           target="_blank"
                         >
                           <div
@@ -5655,7 +5655,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5680,11 +5680,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5696,12 +5696,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5711,7 +5711,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="DORY FEATHER PEARL BAG"
                           data-google-tag-manager--enhanced-ecommerce-item-price="86"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="8952938"
-                          href="/listings/dory-feather-pearl-bag"
+                          to="/listings/dory-feather-pearl-bag"
                           target="_blank"
                         >
                           <div
@@ -5763,7 +5763,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5788,11 +5788,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5804,12 +5804,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5819,7 +5819,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bow Mini in White with Diamond"
                           data-google-tag-manager--enhanced-ecommerce-item-price="42"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9585712"
-                          href="/listings/bow-mini-in-white-with-diamond"
+                          to="/listings/bow-mini-in-white-with-diamond"
                           target="_blank"
                         >
                           <div
@@ -5871,7 +5871,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -5896,11 +5896,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -5912,12 +5912,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -5927,7 +5927,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Harlow clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5843105"
-                          href="/listings/harlow-clutch-82404"
+                          to="/listings/harlow-clutch-82404"
                           target="_blank"
                         >
                           <div
@@ -5979,7 +5979,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6004,11 +6004,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6020,12 +6020,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6035,7 +6035,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bara Mini Rhinestone Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="47"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7359385"
-                          href="/listings/bara-mini-rhinestone-bag-24059"
+                          to="/listings/bara-mini-rhinestone-bag-24059"
                           target="_blank"
                         >
                           <div
@@ -6087,7 +6087,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6112,11 +6112,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6128,12 +6128,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6143,7 +6143,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="8048757"
-                          href="/listings/eos-clutch-90433"
+                          to="/listings/eos-clutch-90433"
                           target="_blank"
                         >
                           <div
@@ -6195,7 +6195,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6220,11 +6220,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6236,12 +6236,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6251,7 +6251,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera Nano bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="29"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1977995"
-                          href="/listings/hera-nano-bag"
+                          to="/listings/hera-nano-bag"
                           target="_blank"
                         >
                           <div
@@ -6303,7 +6303,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6328,11 +6328,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6344,12 +6344,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6359,7 +6359,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hajar acrylic bag in ivory"
                           data-google-tag-manager--enhanced-ecommerce-item-price="31"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6323161"
-                          href="/listings/hajar-acrylic-bag-in-ivory"
+                          to="/listings/hajar-acrylic-bag-in-ivory"
                           target="_blank"
                         >
                           <div
@@ -6411,7 +6411,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6436,11 +6436,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6452,12 +6452,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6467,7 +6467,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Cult Gaia Ark Mini "
                           data-google-tag-manager--enhanced-ecommerce-item-price="21"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3017377"
-                          href="/listings/cult-gaia-ark-mini"
+                          to="/listings/cult-gaia-ark-mini"
                           target="_blank"
                         >
                           <div
@@ -6519,7 +6519,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6544,11 +6544,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6560,12 +6560,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6575,7 +6575,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Clutch Qajar Rose"
                           data-google-tag-manager--enhanced-ecommerce-item-price="50"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5936464"
-                          href="/listings/eos-clutch-qajar-rose"
+                          to="/listings/eos-clutch-qajar-rose"
                           target="_blank"
                         >
                           <div
@@ -6627,7 +6627,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6652,11 +6652,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6668,12 +6668,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6683,7 +6683,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera Nano Knotted Crystal Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1121595"
-                          href="/listings/hera-nano-knotted-crystal-bag"
+                          to="/listings/hera-nano-knotted-crystal-bag"
                           target="_blank"
                         >
                           <div
@@ -6735,7 +6735,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-6 col-md-12 col-lg-6 col-xl-4 mb-4 mb-xl-3 item-container">
@@ -6751,15 +6751,15 @@ const Amur=()=>{
                             Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
-                            <a
+                            <Link
                               className="btn btn-primary btn-block -dark-red cta"
                               data-dismiss="modal"
                               data-target="#signup-modal"
                               data-toggle="modal"
-                              href="#"
+                              to="#"
                             >
                               Register Now
-                            </a>
+                            </Link>
                           </span>
                         </div>
                       </div>
@@ -6786,11 +6786,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6802,12 +6802,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6817,7 +6817,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="The Bow Bag Mini"
                           data-google-tag-manager--enhanced-ecommerce-item-price="46"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9755593"
-                          href="/listings/the-bow-bag-mini"
+                          to="/listings/the-bow-bag-mini"
                           target="_blank"
                         >
                           <div
@@ -6869,7 +6869,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -6894,11 +6894,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -6910,12 +6910,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -6925,7 +6925,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Mini Ark Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="17"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3016975"
-                          href="/listings/mini-ark-bag"
+                          to="/listings/mini-ark-bag"
                           target="_blank"
                         >
                           <div
@@ -6977,7 +6977,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7002,11 +7002,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7018,12 +7018,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7033,7 +7033,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Clutch Papaya"
                           data-google-tag-manager--enhanced-ecommerce-item-price="36"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9336341"
-                          href="/listings/eos-clutch-papaya"
+                          to="/listings/eos-clutch-papaya"
                           target="_blank"
                         >
                           <div
@@ -7085,7 +7085,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7110,11 +7110,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7126,12 +7126,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7141,7 +7141,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="SOLENE MINI RHINESTONE BAG"
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6675443"
-                          href="/listings/solene-mini-rhinestone-bag"
+                          to="/listings/solene-mini-rhinestone-bag"
                           target="_blank"
                         >
                           <div
@@ -7193,7 +7193,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7218,11 +7218,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7234,12 +7234,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7249,7 +7249,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Pearl acrylic metal handle bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="59"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4510643"
-                          href="/listings/pearl-acrylic-metal-handle-bag"
+                          to="/listings/pearl-acrylic-metal-handle-bag"
                           target="_blank"
                         >
                           <div
@@ -7301,7 +7301,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7326,11 +7326,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7342,12 +7342,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7357,7 +7357,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="45"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5846368"
-                          href="/listings/eos-clutch"
+                          to="/listings/eos-clutch"
                           target="_blank"
                         >
                           <div
@@ -7409,7 +7409,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7434,11 +7434,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7450,12 +7450,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7465,7 +7465,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Ivory pearl clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="35"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4896896"
-                          href="/listings/eos-ivory-pearl-clutch-22511"
+                          to="/listings/eos-ivory-pearl-clutch-22511"
                           target="_blank"
                         >
                           <div
@@ -7517,7 +7517,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7542,11 +7542,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7558,12 +7558,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7573,7 +7573,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bloom mini crystal-embellished"
                           data-google-tag-manager--enhanced-ecommerce-item-price="54"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4880051"
-                          href="/listings/bloom-mini-crystal-embellished"
+                          to="/listings/bloom-mini-crystal-embellished"
                           target="_blank"
                         >
                           <div
@@ -7625,7 +7625,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7650,11 +7650,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7666,12 +7666,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7681,7 +7681,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Black Diamante Bow Mini bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="48"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1438875"
-                          href="/listings/black-diamante-bow-mini-bag"
+                          to="/listings/black-diamante-bow-mini-bag"
                           target="_blank"
                         >
                           <div
@@ -7733,7 +7733,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7758,11 +7758,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7774,12 +7774,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7789,7 +7789,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera Nano Crystal bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="38"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6745257"
-                          href="/listings/hera-nano-crystal-bag"
+                          to="/listings/hera-nano-crystal-bag"
                           target="_blank"
                         >
                           <div
@@ -7841,7 +7841,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7866,11 +7866,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7882,12 +7882,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -7897,7 +7897,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Logan Marbled Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="32"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="8166017"
-                          href="/listings/logan-marbled-clutch"
+                          to="/listings/logan-marbled-clutch"
                           target="_blank"
                         >
                           <div
@@ -7949,7 +7949,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -7974,11 +7974,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -7990,12 +7990,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8005,7 +8005,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Banu Crystal Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="47"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5616984"
-                          href="/listings/banu-crystal-clutch"
+                          to="/listings/banu-crystal-clutch"
                           target="_blank"
                         >
                           <div
@@ -8057,7 +8057,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8082,11 +8082,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8098,12 +8098,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8113,7 +8113,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Cult Gaia Ark Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="31"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5765636"
-                          href="/listings/cult-gaia-ark-bag"
+                          to="/listings/cult-gaia-ark-bag"
                           target="_blank"
                         >
                           <div
@@ -8165,7 +8165,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8190,11 +8190,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8206,12 +8206,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8221,7 +8221,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Mia Embellished Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="39"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9249205"
-                          href="/listings/mia-embellished-clutch"
+                          to="/listings/mia-embellished-clutch"
                           target="_blank"
                         >
                           <div
@@ -8273,7 +8273,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8298,11 +8298,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8314,12 +8314,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8329,7 +8329,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="The Bow Mini White and Gold "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4923815"
-                          href="/listings/the-bow-mini-white-and-gold"
+                          to="/listings/the-bow-mini-white-and-gold"
                           target="_blank"
                         >
                           <div
@@ -8381,7 +8381,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8406,11 +8406,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8422,12 +8422,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8437,7 +8437,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bubble clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="45"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2541430"
-                          href="/listings/bubble-clutch"
+                          to="/listings/bubble-clutch"
                           target="_blank"
                         >
                           <div
@@ -8492,7 +8492,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8517,11 +8517,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8533,12 +8533,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8548,7 +8548,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Cult Gaia Ark Bag small"
                           data-google-tag-manager--enhanced-ecommerce-item-price="18"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7740547"
-                          href="/listings/cult-gaia-ark-bag-small"
+                          to="/listings/cult-gaia-ark-bag-small"
                           target="_blank"
                         >
                           <div
@@ -8600,7 +8600,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8625,11 +8625,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8641,12 +8641,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8656,7 +8656,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Margot bow mini bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="49"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7106992"
-                          href="/listings/margot-bow-mini-bag"
+                          to="/listings/margot-bow-mini-bag"
                           target="_blank"
                         >
                           <div
@@ -8708,7 +8708,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8733,11 +8733,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8749,12 +8749,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8764,7 +8764,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera Crystal bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="47"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7144569"
-                          href="/listings/hera-crystal-bag-64813"
+                          to="/listings/hera-crystal-bag-64813"
                           target="_blank"
                         >
                           <div
@@ -8816,7 +8816,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8841,11 +8841,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8857,12 +8857,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8872,7 +8872,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Gia Allover Crystal Zip Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="35"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1216904"
-                          href="/listings/gia-allover-crystal-zip-bag"
+                          to="/listings/gia-allover-crystal-zip-bag"
                           target="_blank"
                         >
                           <div
@@ -8924,7 +8924,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -8949,11 +8949,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -8965,12 +8965,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -8980,7 +8980,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Beaded acrylic bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="69"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5603443"
-                          href="/listings/beaded-acrylic-bag"
+                          to="/listings/beaded-acrylic-bag"
                           target="_blank"
                         >
                           <div
@@ -9032,7 +9032,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9057,11 +9057,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9073,12 +9073,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9088,7 +9088,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Enid Marble Clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4945977"
-                          href="/listings/enid-marble-clutch"
+                          to="/listings/enid-marble-clutch"
                           target="_blank"
                         >
                           <div
@@ -9140,7 +9140,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9165,11 +9165,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9181,12 +9181,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9196,7 +9196,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Harlow clutch in black "
                           data-google-tag-manager--enhanced-ecommerce-item-price="55"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3365917"
-                          href="/listings/harlow-clutch-in-black"
+                          to="/listings/harlow-clutch-in-black"
                           target="_blank"
                         >
                           <div
@@ -9248,7 +9248,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9273,11 +9273,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9289,12 +9289,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9304,7 +9304,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Ralphie Bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="64"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4282756"
-                          href="/listings/ralphie-bag"
+                          to="/listings/ralphie-bag"
                           target="_blank"
                         >
                           <div
@@ -9356,7 +9356,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-6 col-md-12 col-lg-6 col-xl-4 mb-4 mb-xl-3 item-container">
@@ -9372,15 +9372,15 @@ const Amur=()=>{
                             Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
-                            <a
+                            <Link
                               className="btn btn-primary btn-block -dark-red cta"
                               data-dismiss="modal"
                               data-target="#signup-modal"
                               data-toggle="modal"
-                              href="#"
+                              to="#"
                             >
                               Register Now
-                            </a>
+                            </Link>
                           </span>
                         </div>
                       </div>
@@ -9407,11 +9407,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9423,12 +9423,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9438,7 +9438,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Cult Gaia Aliza Shoulder Bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="48"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3158590"
-                          href="/listings/cult-gaia-aliza-shoulder-bag"
+                          to="/listings/cult-gaia-aliza-shoulder-bag"
                           target="_blank"
                         >
                           <div
@@ -9490,7 +9490,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9515,11 +9515,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9531,12 +9531,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9546,7 +9546,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala Mini Clutch Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="58"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3249054"
-                          href="/listings/nala-mini-clutch-bag"
+                          to="/listings/nala-mini-clutch-bag"
                           target="_blank"
                         >
                           <div
@@ -9598,7 +9598,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9623,11 +9623,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9639,12 +9639,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9654,7 +9654,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="The Bow Bag Mini"
                           data-google-tag-manager--enhanced-ecommerce-item-price="46"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9997161"
-                          href="/listings/the-bow-bag-mini-72901"
+                          to="/listings/the-bow-bag-mini-72901"
                           target="_blank"
                         >
                           <div
@@ -9709,7 +9709,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9734,11 +9734,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9750,12 +9750,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9765,7 +9765,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nano Hera Shoulder Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="50"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4508487"
-                          href="/listings/nano-hera-shoulder-bag"
+                          to="/listings/nano-hera-shoulder-bag"
                           target="_blank"
                         >
                           <div
@@ -9817,7 +9817,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9842,11 +9842,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9858,12 +9858,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9873,7 +9873,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bow Micro in lime rhinestone"
                           data-google-tag-manager--enhanced-ecommerce-item-price="35"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7824035"
-                          href="/listings/bow-micro-in-lime-rhinestone"
+                          to="/listings/bow-micro-in-lime-rhinestone"
                           target="_blank"
                         >
                           <div
@@ -9925,7 +9925,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -9950,11 +9950,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -9966,12 +9966,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -9981,7 +9981,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="White Bamboo Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="31"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7974022"
-                          href="/listings/white-bamboo-bag"
+                          to="/listings/white-bamboo-bag"
                           target="_blank"
                         >
                           <div
@@ -10033,7 +10033,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10058,11 +10058,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10074,12 +10074,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10089,7 +10089,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Nile"
                           data-google-tag-manager--enhanced-ecommerce-item-price="38"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7804314"
-                          href="/listings/eos-nile"
+                          to="/listings/eos-nile"
                           target="_blank"
                         >
                           <div
@@ -10141,7 +10141,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10166,11 +10166,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10182,12 +10182,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10197,7 +10197,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="45"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2095066"
-                          href="/listings/eos-clutch-20574"
+                          to="/listings/eos-clutch-20574"
                           target="_blank"
                         >
                           <div
@@ -10249,7 +10249,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10274,11 +10274,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10290,12 +10290,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10305,7 +10305,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala ruched metallic leather c"
                           data-google-tag-manager--enhanced-ecommerce-item-price="50"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="8073780"
-                          href="/listings/nala-ruched-metallic-leather-c"
+                          to="/listings/nala-ruched-metallic-leather-c"
                           target="_blank"
                         >
                           <div
@@ -10357,7 +10357,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10382,11 +10382,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10398,12 +10398,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10413,7 +10413,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="36"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9186670"
-                          href="/listings/eos-clutch-19569"
+                          to="/listings/eos-clutch-19569"
                           target="_blank"
                         >
                           <div
@@ -10465,7 +10465,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10488,11 +10488,11 @@ const Amur=()=>{
                                 <div className="heart-counter mr-0 mr-md-2 mt-1 mt-md-0" />
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10504,12 +10504,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10519,7 +10519,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Aqua Rhinestone Bow Envelope "
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4504184"
-                          href="/listings/aqua-rhinestone-bow-envelope"
+                          to="/listings/aqua-rhinestone-bow-envelope"
                           target="_blank"
                         >
                           <div
@@ -10571,7 +10571,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10596,11 +10596,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10612,12 +10612,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10627,7 +10627,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Self Portrait Blue Rhinestone "
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7054109"
-                          href="/listings/self-portrait-blue-rhinestone"
+                          to="/listings/self-portrait-blue-rhinestone"
                           target="_blank"
                         >
                           <div
@@ -10679,7 +10679,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10704,11 +10704,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10720,12 +10720,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10735,7 +10735,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Harlow Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="40"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6774512"
-                          href="/listings/harlow-clutch-16184"
+                          to="/listings/harlow-clutch-16184"
                           target="_blank"
                         >
                           <div
@@ -10787,7 +10787,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10810,11 +10810,11 @@ const Amur=()=>{
                                 <div className="heart-counter mr-0 mr-md-2 mt-1 mt-md-0" />
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10826,12 +10826,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10841,7 +10841,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Hera Mini Crystal Embellished "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6678788"
-                          href="/listings/hera-mini-crystal-embellished-57445"
+                          to="/listings/hera-mini-crystal-embellished-57445"
                           target="_blank"
                         >
                           <div
@@ -10893,7 +10893,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -10916,11 +10916,11 @@ const Amur=()=>{
                                 <div className="heart-counter mr-0 mr-md-2 mt-1 mt-md-0" />
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -10932,12 +10932,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -10947,7 +10947,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Mini Leather The Bow Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="46"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="8121409"
-                          href="/listings/mini-leather-the-bow-bag"
+                          to="/listings/mini-leather-the-bow-bag"
                           target="_blank"
                         >
                           <div
@@ -10999,7 +10999,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11024,11 +11024,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11040,12 +11040,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11055,7 +11055,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Black Rhinestone Bow mini"
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7933166"
-                          href="/listings/black-rhinestone-bow-mini"
+                          to="/listings/black-rhinestone-bow-mini"
                           target="_blank"
                         >
                           <div
@@ -11107,7 +11107,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11132,11 +11132,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11148,12 +11148,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11163,7 +11163,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="RALPHIE MINI SATIN "
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1786411"
-                          href="/listings/ralphie-mini-satin"
+                          to="/listings/ralphie-mini-satin"
                           target="_blank"
                         >
                           <div
@@ -11218,7 +11218,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11241,11 +11241,11 @@ const Amur=()=>{
                                 <div className="heart-counter mr-0 mr-md-2 mt-1 mt-md-0" />
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11257,12 +11257,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11272,7 +11272,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Aqua bow mini shoulder bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="46"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2561871"
-                          href="/listings/aqua-bow-mini-shoulder-bag"
+                          to="/listings/aqua-bow-mini-shoulder-bag"
                           target="_blank"
                         >
                           <div
@@ -11324,7 +11324,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11349,11 +11349,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11365,12 +11365,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11380,7 +11380,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala Mini Clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="35"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9303574"
-                          href="/listings/nala-mini-clutch-86346"
+                          to="/listings/nala-mini-clutch-86346"
                           target="_blank"
                         >
                           <div
@@ -11430,7 +11430,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11455,11 +11455,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11471,12 +11471,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11486,7 +11486,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Caldera bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="71"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3282838"
-                          href="/listings/caldera-bag"
+                          to="/listings/caldera-bag"
                           target="_blank"
                         >
                           <div
@@ -11538,7 +11538,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11561,11 +11561,11 @@ const Amur=()=>{
                                 <div className="heart-counter mr-0 mr-md-2 mt-1 mt-md-0" />
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11577,12 +11577,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11592,7 +11592,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Suki crystal-embellished silk-"
                           data-google-tag-manager--enhanced-ecommerce-item-price="62"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3467023"
-                          href="/listings/suki-crystal-embellished-silk"
+                          to="/listings/suki-crystal-embellished-silk"
                           target="_blank"
                         >
                           <div
@@ -11644,7 +11644,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11667,11 +11667,11 @@ const Amur=()=>{
                                 <div className="heart-counter mr-0 mr-md-2 mt-1 mt-md-0" />
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11683,12 +11683,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11698,7 +11698,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Suki crystal-embellished satin"
                           data-google-tag-manager--enhanced-ecommerce-item-price="62"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6462943"
-                          href="/listings/suki-crystal-embellished-satin"
+                          to="/listings/suki-crystal-embellished-satin"
                           target="_blank"
                         >
                           <div
@@ -11750,7 +11750,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11775,11 +11775,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11791,12 +11791,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11806,7 +11806,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Small Ark Tote Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="19"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2607957"
-                          href="/listings/small-ark-tote-bag-36962"
+                          to="/listings/small-ark-tote-bag-36962"
                           target="_blank"
                         >
                           <div
@@ -11858,7 +11858,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11883,11 +11883,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -11899,12 +11899,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -11914,7 +11914,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Azurah "
                           data-google-tag-manager--enhanced-ecommerce-item-price="57"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5059165"
-                          href="/listings/azurah"
+                          to="/listings/azurah"
                           target="_blank"
                         >
                           <div
@@ -11966,7 +11966,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -11991,11 +11991,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12007,12 +12007,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12022,7 +12022,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="HERA NANO RHINESTONE SHOULDER "
                           data-google-tag-manager--enhanced-ecommerce-item-price="44"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5112582"
-                          href="/listings/hera-nano-rhinestone-shoulder-69566"
+                          to="/listings/hera-nano-rhinestone-shoulder-69566"
                           target="_blank"
                         >
                           <div
@@ -12074,7 +12074,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-6 col-md-12 col-lg-6 col-xl-4 mb-4 mb-xl-3 item-container">
@@ -12090,15 +12090,15 @@ const Amur=()=>{
                             Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
-                            <a
+                            <Link
                               className="btn btn-primary btn-block -dark-red cta"
                               data-dismiss="modal"
                               data-target="#signup-modal"
                               data-toggle="modal"
-                              href="#"
+                              to="#"
                             >
                               Register Now
-                            </a>
+                            </Link>
                           </span>
                         </div>
                       </div>
@@ -12125,11 +12125,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12141,12 +12141,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12156,7 +12156,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Lucinda Nano rhinestone clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="55"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1903448"
-                          href="/listings/lucinda-nano-rhinestone-clutch-77736"
+                          to="/listings/lucinda-nano-rhinestone-clutch-77736"
                           target="_blank"
                         >
                           <div
@@ -12208,7 +12208,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12233,11 +12233,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12249,12 +12249,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12264,7 +12264,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Pink Jaya clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="55"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6466405"
-                          href="/listings/pink-jaya-clutch"
+                          to="/listings/pink-jaya-clutch"
                           target="_blank"
                         >
                           <div
@@ -12316,7 +12316,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12341,11 +12341,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12357,12 +12357,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12372,7 +12372,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="The Bubble Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="43"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6923177"
-                          href="/listings/the-bubble-bag"
+                          to="/listings/the-bubble-bag"
                           target="_blank"
                         >
                           <div
@@ -12424,7 +12424,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12449,11 +12449,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12465,12 +12465,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12480,7 +12480,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="EOS Bag in Tortoise Shell"
                           data-google-tag-manager--enhanced-ecommerce-item-price="43"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="7511474"
-                          href="/listings/eos-bag-in-tortoise-shell"
+                          to="/listings/eos-bag-in-tortoise-shell"
                           target="_blank"
                         >
                           <div
@@ -12532,7 +12532,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12557,11 +12557,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12573,12 +12573,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12588,7 +12588,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Harlow Speck Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="43"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5680263"
-                          href="/listings/harlow-speck-bag"
+                          to="/listings/harlow-speck-bag"
                           target="_blank"
                         >
                           <div
@@ -12640,7 +12640,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12665,11 +12665,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12681,12 +12681,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12696,7 +12696,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Clutch bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2131715"
-                          href="/listings/eos-clutch-bag-37828"
+                          to="/listings/eos-clutch-bag-37828"
                           target="_blank"
                         >
                           <div
@@ -12748,7 +12748,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12773,11 +12773,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12789,12 +12789,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12804,7 +12804,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Beaded acrylic clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="55"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9648811"
-                          href="/listings/beaded-acrylic-clutch"
+                          to="/listings/beaded-acrylic-clutch"
                           target="_blank"
                         >
                           <div
@@ -12856,7 +12856,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12881,11 +12881,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -12897,12 +12897,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -12912,7 +12912,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Beaded acrylic clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1986731"
-                          href="/listings/beaded-acrylic-clutch-75188"
+                          to="/listings/beaded-acrylic-clutch-75188"
                           target="_blank"
                         >
                           <div
@@ -12964,7 +12964,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -12989,11 +12989,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13005,12 +13005,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13020,7 +13020,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Beaded acrylic clutch "
                           data-google-tag-manager--enhanced-ecommerce-item-price="41"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2501044"
-                          href="/listings/beaded-acrylic-clutch-59287"
+                          to="/listings/beaded-acrylic-clutch-59287"
                           target="_blank"
                         >
                           <div
@@ -13072,7 +13072,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13097,11 +13097,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13113,12 +13113,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13128,7 +13128,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Nala gold metallic bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="66"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6744341"
-                          href="/listings/nala-gold-metallic-bag"
+                          to="/listings/nala-gold-metallic-bag"
                           target="_blank"
                         >
                           <div
@@ -13180,7 +13180,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13205,11 +13205,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13221,12 +13221,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13236,7 +13236,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Bubble bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="45"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6003074"
-                          href="/listings/bubble-bag-10965"
+                          to="/listings/bubble-bag-10965"
                           target="_blank"
                         >
                           <div
@@ -13288,7 +13288,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13313,11 +13313,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13329,12 +13329,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13344,7 +13344,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Fana Clutch"
                           data-google-tag-manager--enhanced-ecommerce-item-price="48"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3787911"
-                          href="/listings/yadira-clutch"
+                          to="/listings/yadira-clutch"
                           target="_blank"
                         >
                           <div
@@ -13396,7 +13396,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13421,11 +13421,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13437,12 +13437,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13452,7 +13452,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Eos Rattan"
                           data-google-tag-manager--enhanced-ecommerce-item-price="69"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="4842202"
-                          href="/listings/eos-rattan"
+                          to="/listings/eos-rattan"
                           target="_blank"
                         >
                           <div
@@ -13504,7 +13504,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13529,11 +13529,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13545,12 +13545,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13560,7 +13560,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="HERA NANO RHINESTONE SHOULDER "
                           data-google-tag-manager--enhanced-ecommerce-item-price="60"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2028023"
-                          href="/listings/hera-nano-rhinestone-shoulder"
+                          to="/listings/hera-nano-rhinestone-shoulder"
                           target="_blank"
                         >
                           <div
@@ -13612,7 +13612,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13637,11 +13637,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13653,12 +13653,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13668,7 +13668,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Lucinda Shoulder Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="38"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="1326789"
-                          href="/listings/lucinda-shoulder-bag"
+                          to="/listings/lucinda-shoulder-bag"
                           target="_blank"
                         >
                           <div
@@ -13720,7 +13720,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13745,11 +13745,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13761,12 +13761,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13776,7 +13776,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Solene Crystal Pink Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="50"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5343367"
-                          href="/listings/solene-crystal-pink-bag"
+                          to="/listings/solene-crystal-pink-bag"
                           target="_blank"
                         >
                           <div
@@ -13831,7 +13831,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -13856,11 +13856,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -13872,12 +13872,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -13887,7 +13887,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="EOS Clutch Bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="43"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="2292994"
-                          href="/listings/eos-clutch-bag-93834"
+                          to="/listings/eos-clutch-bag-93834"
                           target="_blank"
                         >
                           <div
@@ -13939,7 +13939,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div className="col-6 col-md-12 col-lg-6 col-xl-4 mb-4 mb-xl-3 item-container">
@@ -13955,15 +13955,15 @@ const Amur=()=>{
                             Discover over 60,000 luxury pieces and try something                          you love. Minimum order value of AU$45 applies.
                           </p>
                           <span>
-                            <a
+                            <Link
                               className="btn btn-primary btn-block -dark-red cta"
                               data-dismiss="modal"
                               data-target="#signup-modal"
                               data-toggle="modal"
-                              href="#"
+                              to="#"
                             >
                               Register Now
-                            </a>
+                            </Link>
                           </span>
                         </div>
                       </div>
@@ -13990,11 +13990,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -14006,12 +14006,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -14021,7 +14021,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Shanti Gold Raffia "
                           data-google-tag-manager--enhanced-ecommerce-item-price="52"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="9511378"
-                          href="/listings/shanti-gold-raffia"
+                          to="/listings/shanti-gold-raffia"
                           target="_blank"
                         >
                           <div
@@ -14073,7 +14073,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -14098,11 +14098,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -14114,12 +14114,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -14129,7 +14129,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="The Arc Bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="34"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="6828246"
-                          href="/listings/the-arc-bag"
+                          to="/listings/the-arc-bag"
                           target="_blank"
                         >
                           <div
@@ -14181,7 +14181,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -14206,11 +14206,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -14222,12 +14222,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -14237,7 +14237,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Crystal nano embelished bag "
                           data-google-tag-manager--enhanced-ecommerce-item-price="104"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3353718"
-                          href="/listings/crystal-nano-embelished-bag"
+                          to="/listings/crystal-nano-embelished-bag"
                           target="_blank"
                         >
                           <div
@@ -14289,7 +14289,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -14314,11 +14314,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -14330,12 +14330,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -14345,7 +14345,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Ark mini "
                           data-google-tag-manager--enhanced-ecommerce-item-price="21"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="5525385"
-                          href="/listings/ark-mini-128"
+                          to="/listings/ark-mini-128"
                           target="_blank"
                         >
                           <div
@@ -14397,7 +14397,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                     <div
@@ -14422,11 +14422,11 @@ const Amur=()=>{
                                 </div>
                               </li>
                               <li>
-                                <a
+                                <Link
                                   className="heart-button"
                                   data-target="#signup-modal"
                                   data-toggle="modal"
-                                  href="#"
+                                  to="#"
                                 >
                                   <img
                                     alt="Filled Heart Button"
@@ -14438,12 +14438,12 @@ const Amur=()=>{
                                     className="heart-icon empty-wishlist-icon"
                                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/empty-heart-icon-d56bf5bf6cbfd87ebc3a94c9c7f06461.svg"
                                   />
-                                </a>
+                                </Link>
                               </li>
                             </ul>
                           </div>
                         </div>
-                        <a
+                        <Link
                           className="item-link"
                           data-action="google-tag-manager--enhanced-ecommerce#productClicks"
                           data-controller="google-tag-manager--enhanced-ecommerce item-card"
@@ -14453,7 +14453,7 @@ const Amur=()=>{
                           data-google-tag-manager--enhanced-ecommerce-item-name="Pearl acrylic and gold top bag"
                           data-google-tag-manager--enhanced-ecommerce-item-price="51"
                           data-google-tag-manager--enhanced-ecommerce-item-uid="3488765"
-                          href="/listings/pearl-acrylic-and-gold-top-bag"
+                          to="/listings/pearl-acrylic-and-gold-top-bag"
                           target="_blank"
                         >
                           <div
@@ -14505,7 +14505,7 @@ const Amur=()=>{
                               </s>
                             </p>
                           </div>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -14533,11 +14533,11 @@ const Amur=()=>{
                   </div>
                   <div className="col-3 col-md-4 text-center mt-2">
                     <div className="d-none d-md-block">
-                      <a
+                      <Link
                         className="btn rounded-0 -next cta"
                         data-action="click->app-search--paginate-filters#paginate"
                         data-page="2"
-                        href="#"
+                        to="#"
                       >
                         <img
                           alt="Arrow Right"
@@ -14546,12 +14546,12 @@ const Amur=()=>{
                           data-page="2"
                           src="https://res.cloudinary.com/dcaptnlz3/image/asset/arrow-red-right-b61d21e956f08e1315ef146192801517"
                         />
-                      </a>
+                      </Link>
                     </div>
                     <div className="d-md-none">
-                      <a
+                      <Link
                         className="arrow-link-size w-inline-block -right-arrow svg-button -ahead"
-                        href="#"
+                        to="#"
                       >
                         <img
                           alt="Arrow Right"
@@ -14560,7 +14560,7 @@ const Amur=()=>{
                           data-page="2"
                           src="https://res.cloudinary.com/dcaptnlz3/image/asset/arrow-red-right-b61d21e956f08e1315ef146192801517"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -14643,13 +14643,13 @@ const Amur=()=>{
                       <div className="text-center text-uppercase title">
                         Filter & Sort
                       </div>
-                      <a
+                      <Link
                         className="close-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/close-fec2062f4c7f143606f4dbba3b18c362.svg" />
-                      </a>
+                      </Link>
                     </div>
                     <div
                       className="modal-body pb-0"
@@ -14767,13 +14767,13 @@ const Amur=()=>{
                           >
                             <div className="managed-stock-title">
                               Managed stocks
-                              <a
+                              <Link
                                 data-target="#managed-stock-modal-mobile"
                                 data-toggle="modal"
-                                href="#"
+                                to="#"
                               >
                                 <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/info-fdd04def8949c7d9ad7c87895d8399a7.svg" />
-                              </a>
+                              </Link>
                             </div>
                             <div className="managed-stock-mobile-toggle">
                               <img
@@ -14829,13 +14829,13 @@ const Amur=()=>{
                           >
                             <div className="top-lenders-title">
                               Top Lenders
-                              <a
+                              <Link
                                 data-target="#top-lenders-modal-mobile"
                                 data-toggle="modal"
-                                href="#"
+                                to="#"
                               >
                                 <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/info-fdd04def8949c7d9ad7c87895d8399a7.svg" />
-                              </a>
+                              </Link>
                             </div>
                             <div className="top-lenders-mobile-toggle">
                               <img
@@ -15039,14 +15039,14 @@ const Amur=()=>{
                         data-app-search--mobile--filter-box-target="wrapper"
                       >
                         <div className="text-right mobile-clear-all-wrapper">
-                          <a
+                          <Link
                             className="clear-all d-none"
                             data-action="app-search--mobile--filter-box#clearAll"
                             data-app-search--mobile--filter-box-target="resetFilterBoxBtn"
-                            href="#"
+                            to="#"
                           >
                             Clear all
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -15084,13 +15084,13 @@ const Amur=()=>{
                 >
                   <div className="modal-content rounded-0 border-0">
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Sort By
                       </div>
@@ -15248,13 +15248,13 @@ const Amur=()=>{
                 >
                   <div className="modal-content rounded-0 border-0">
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Category
                       </div>
@@ -15343,13 +15343,13 @@ const Amur=()=>{
                     data-controller="app-search--availability-filters"
                   >
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center sidebar_date_range_filter_button text-uppercase title">
                         Availability
                       </div>
@@ -16074,13 +16074,13 @@ const Amur=()=>{
                     data-controller="app-search--sizes-filter"
                   >
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Size
                       </div>
@@ -16099,7 +16099,7 @@ const Amur=()=>{
                                 aria-selected="true"
                                 className="nav-link btn-tab active"
                                 data-toggle="pill"
-                                href="#mobile-pills-clothing"
+                                to="#mobile-pills-clothing"
                                 id="mobile-pills-clothing-tab"
                                 role="tab"
                               >
@@ -16112,7 +16112,7 @@ const Amur=()=>{
                                 aria-selected="false"
                                 className="nav-link btn-tab"
                                 data-toggle="pill"
-                                href="#mobile-pills-shoes"
+                                to="#mobile-pills-shoes"
                                 id="mobile-pills-shoes-tab"
                                 role="tab"
                               >
@@ -16769,13 +16769,13 @@ const Amur=()=>{
                     data-controller="app-search--designer-filters"
                   >
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Designers
                       </div>
@@ -16796,7 +16796,7 @@ const Amur=()=>{
                           data-filter="designers"
                           data-value="The Vampire’s Wife"
                           hidden
-                          href="javascript:void(0)"
+                          to="javascript:void(0)"
                           id="the-vampire-s-wife"
                           name="filter_designers"
                           type="checkbox"
@@ -16813,7 +16813,7 @@ const Amur=()=>{
                           data-filter="designers"
                           data-value="Cecilie Bahnsen"
                           hidden
-                          href="javascript:void(0)"
+                          to="javascript:void(0)"
                           id="cecilie-bahnsen"
                           name="filter_designers"
                           type="checkbox"
@@ -16830,7 +16830,7 @@ const Amur=()=>{
                           data-filter="designers"
                           data-value="Self-Portrait"
                           hidden
-                          href="javascript:void(0)"
+                          to="javascript:void(0)"
                           id="self-portrait"
                           name="filter_designers"
                           type="checkbox"
@@ -16847,7 +16847,7 @@ const Amur=()=>{
                           data-filter="designers"
                           data-value="16ARLINGTON"
                           hidden
-                          href="javascript:void(0)"
+                          to="javascript:void(0)"
                           id="16arlington"
                           name="filter_designers"
                           type="checkbox"
@@ -16864,7 +16864,7 @@ const Amur=()=>{
                           data-filter="designers"
                           data-value="Rat & Boa"
                           hidden
-                          href="javascript:void(0)"
+                          to="javascript:void(0)"
                           id="rat-boa"
                           name="filter_designers"
                           type="checkbox"
@@ -16881,7 +16881,7 @@ const Amur=()=>{
                           data-filter="designers"
                           data-value="Nadine Merabi"
                           hidden
-                          href="javascript:void(0)"
+                          to="javascript:void(0)"
                           id="nadine-merabi"
                           name="filter_designers"
                           type="checkbox"
@@ -16898,7 +16898,7 @@ const Amur=()=>{
                           data-filter="designers"
                           data-value="Ganni"
                           hidden
-                          href="javascript:void(0)"
+                          to="javascript:void(0)"
                           id="ganni"
                           name="filter_designers"
                           type="checkbox"
@@ -17004,13 +17004,13 @@ const Amur=()=>{
                     id="mobile_colours_filter"
                   >
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Colour
                       </div>
@@ -17618,13 +17618,13 @@ const Amur=()=>{
                     data-controller="app-search--rental-price-filters"
                   >
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Rental Price
                       </div>
@@ -17771,13 +17771,13 @@ const Amur=()=>{
                 >
                   <div className="modal-content rounded-0 border-0">
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Length
                       </div>
@@ -17876,13 +17876,13 @@ const Amur=()=>{
                 >
                   <div className="modal-content rounded-0 border-0">
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Fit
                       </div>
@@ -18111,13 +18111,13 @@ const Amur=()=>{
                 >
                   <div className="modal-content rounded-0 border-0">
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Style
                       </div>
@@ -18372,13 +18372,13 @@ const Amur=()=>{
                 >
                   <div className="modal-content rounded-0 border-0">
                     <div className="modal-header border-0">
-                      <a
+                      <Link
                         className="return-icon"
                         data-dismiss="modal"
-                        href="#"
+                        to="#"
                       >
                         <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                      </a>
+                      </Link>
                       <div className="text-center text-uppercase title">
                         Shoes Style
                       </div>
@@ -18533,9 +18533,9 @@ const Amur=()=>{
         </div>
       </div>
       <EmailSubscription />
-      <Footer/>
-      </>
+      <Footer />
+    </>
 
-    )
+  )
 };
 export default Amur;

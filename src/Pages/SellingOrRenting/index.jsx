@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const SellingOrRenting = () =>{
     return (
         <>
@@ -28,12 +28,12 @@ const SellingOrRenting = () =>{
             Switching up fashion
           </p>
           <div className="">
-            <a
+            <Link
               className="btn btn-primary -white rounded-0 text-uppercase "
-              href="#"
+              to="#"
             >
               EXPLORE PLANS
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -167,12 +167,12 @@ const SellingOrRenting = () =>{
               </li>
             </ul>
             <div className="button-component">
-              <a
+              <Link
                 className="btn rounded-0 text-uppercase header-btn ml-4"
-                href="#"
+                to="#"
               >
                 JOIN NOW
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -223,12 +223,12 @@ const SellingOrRenting = () =>{
             </ul>
           </div>
           <div className="pricing-footer mt-4">
-            <a
+            <Link
               className="btn btn-primary text-light  -black px-5"
-              href="membership.html"
+              to="membership.html"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col plan text-center">
@@ -258,12 +258,12 @@ const SellingOrRenting = () =>{
             </ul>
           </div>
           <div className="pricing-footer mt-4">
-            <a
+            <Link
               className="btn btn-primary text-light  -black px-5"
-              href="membership.html"
+              to="membership.html"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
         <div className="col plan text-center">
@@ -293,12 +293,12 @@ const SellingOrRenting = () =>{
             </ul>
           </div>
           <div className="pricing-footer mt-4">
-            <a
+            <Link
               className="btn btn-primary text-light  -black px-5"
-              href="membership.html"
+              to="membership.html"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </div>

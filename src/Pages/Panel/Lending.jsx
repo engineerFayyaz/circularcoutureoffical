@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Lending = () =>{
 
     return (
@@ -23,20 +23,20 @@ const Lending = () =>{
         </div>
         <div className="row">
           <div className="col-6 text-right left-button">
-            <a
+            <Link
               className="btn btn-primary -dark-red mb-2 button-width"
-              href="#"
+              to="#"
             >
               Lender View
-            </a>
+            </Link>
           </div>
           <div className="col-6 text-left right-button">
-            <a
+            <Link
               className="btn btn-outline-primary -dark-red mb-2 button-width"
-              href="/panel/Renting"
+              to="/panel/Renting"
             >
               Renter View
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -48,12 +48,12 @@ const Lending = () =>{
               <br />
               all your orders will be accessible here.{' '}
             </h5>
-            <a
+            <Link
               className="btn btn-primary -dark-red px-5"
-              href="/collections/newarrival"
+              to="/collections/newarrival"
             >
               View New Arrivals
-            </a>
+            </Link>
           </div>
         </div>
       </div>

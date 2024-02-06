@@ -3,7 +3,7 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
-
+import { Link } from "react-router-dom";
 const Profile = () =>{
 
     return (
@@ -31,12 +31,12 @@ const Profile = () =>{
                 className="buttons text-uppercase"
                 data-controller="dashboard--scroll-to"
               >
-                <a
+                <Link
                   className="default-link mr-4"
-                  href="/members/shahid-u"
+                  to="/members/shahid-u"
                 >
                   See My Profile
-                </a>
+                </Link>
               </div>
             </div>
           </div>

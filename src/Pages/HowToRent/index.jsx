@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const HowToRent = () =>{
     return (
         <>
@@ -30,12 +30,12 @@ const HowToRent = () =>{
             Get the best from fashion
           </p>
           <div className="">
-            <a
+            <Link
               className="btn btn-primary -white rounded-0 text-uppercase "
-              href="/About"
+              to="/About"
             >
               LEARN MORE
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -45,28 +45,28 @@ const HowToRent = () =>{
     <div className="btns">
       <div className="start-lending text-center my-5">
         <span>
-          <a href="/SellingOrRenting">
+          <Link to="/SellingOrRenting">
             <button className="px-4 bg-light text-dark py-1">
               {' '}HOW TO SELL
             </button>
-          </a>
-          <a href="/HowToLend" className="pl-1">
+          </Link>
+          <Link to="/HowToLend" className="pl-1">
             <button className="px-4 bg-light text-light py-1 ">
               {' '}HOW TO LEND
             </button>
             {' '}
-          </a>
-          <a href="/HowToRent">
+          </Link>
+          <Link to="/HowToRent">
             <button className="px-4 bg-light text-dark py-1 active">
               HOW TO RENT
             </button>
             {' '}
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="#">
             <button className="px-4 bg-light text-dark py-1">
               {' '}HOW TO BUY
             </button>
-          </a>
+          </Link>
         </span>
       </div>
     </div>
@@ -172,9 +172,9 @@ const HowToRent = () =>{
     </div>
   </section>
   <div className="start-lending text-center my-5">
-    <a href="/ListingNew"><button className="px-4 bg-light text-dark py-1">
+    <Link to="/ListingNew"><button className="px-4 bg-light text-dark py-1">
       {' '}START RENTING
-    </button></a>
+    </button></Link>
   </div>
   <section>
     <div className=" component-container-2 mt-5">
@@ -214,12 +214,12 @@ const HowToRent = () =>{
               </li>
             </ul>
             <div className="button-component ">
-              <a
+              <Link
                 className="btn rounded-0 text-uppercase header-btn ml-4"
-                href="/ListingNew"
+                to="/ListingNew"
               >
                 START RENTING
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -249,14 +249,14 @@ const HowToRent = () =>{
         <div className="carousel-inner d-flex align-items-center justify-content-between">
           <div className="carousel-item active">
             <div className="product-item">
-              <a href="/ProductDetail">
+              <Link to="/ProductDetail">
                 <img
                   alt="Product 1"
                   className="img-fluid"
                   src="images/product-images/pic1.png"
                   width="100%"
                 />
-              </a>
+              </Link>
               <div className="product-description p-2">
                 <h5 className="d-flex align-items-center justify-content-between">
                   NEDA
@@ -285,14 +285,14 @@ const HowToRent = () =>{
           </div>
           <div className="carousel-item active">
             <div className="product-item">
-              <a href="/ProductDetail">
+              <Link to="/ProductDetail">
                 <img
                   alt="Product 1"
                   className="img-fluid"
                   src="images/product-images/pic2.png"
                   width="100%"
                 />
-              </a>
+              </Link>
               <div className="product-description p-2">
                 <h5 className="d-flex align-items-center justify-content-between">
                   NOA
@@ -321,14 +321,14 @@ const HowToRent = () =>{
           </div>
           <div className="carousel-item active">
             <div className="product-item">
-              <a href="/ProductDetail">
+              <Link to="/ProductDetail">
                 <img
                   alt="Product 1"
                   className="img-fluid"
                   src="images/product-images/pic3.png"
                   width="100%"
                 />
-              </a>
+              </Link>
               <div className="product-description p-2">
                 <h5 className="d-flex align-items-center justify-content-between">
                   VIDA
@@ -357,14 +357,14 @@ const HowToRent = () =>{
           </div>
           <div className="carousel-item active">
             <div className="product-item">
-              <a href="/ProductDetail">
+              <Link to="/ProductDetail">
                 <img
                   alt="Product 1"
                   className="img-fluid"
                   src="images/product-images/pic4.png"
                   width="100%"
                 />
-              </a>
+              </Link>
               <div className="product-description p-2">
                 <h5 className="d-flex align-items-center justify-content-between">
                   GIANA
@@ -412,11 +412,11 @@ const HowToRent = () =>{
             <br />
             A Purpose
           </h4>
-          <a href="/About">
+          <Link to="/About">
             <button className="btn bg-light text-dark">
               LEARN MORE
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

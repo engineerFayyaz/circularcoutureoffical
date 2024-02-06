@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 const ProductDetail = () =>{
     return (
         <>
@@ -14,42 +14,42 @@ const ProductDetail = () =>{
         <ul className="breadcrumb-lists">
           <li className="breadcrumb-list">
             {' '}
-            <a
+            <Link
               className="breadcrumb-link clickable"
-              href="/"
+              to="/"
             >
               Home
-            </a>
+            </Link>
             {' '}
           </li>
           <li className="breadcrumb-list">
             {' '}
-            <a
+            <Link
               className="breadcrumb-link clickable"
-              href="/collections/clothing"
+              to="/collections/clothing"
             >
               Clothing
-            </a>
+            </Link>
             {' '}
           </li>
           <li className="breadcrumb-list">
             {' '}
-            <a
+            <Link
               className="breadcrumb-link clickable"
-              href="/collections/dresses"
+              to="/collections/dresses"
             >
               Dresses
-            </a>
+            </Link>
             {' '}
           </li>
           <li className="breadcrumb-list">
             {' '}
-            <a
+            <Link
               className="breadcrumb-link"
-              href="javascript:void()"
+              to="javascript:void()"
             >
               The Mini Night							Tremors Sequin
-            </a>
+            </Link>
             {' '}
           </li>
         </ul>
@@ -471,16 +471,16 @@ const ProductDetail = () =>{
           <div className="component product-header">
             <div className="listed-by">
               {' '}Listed by{' '}
-              <a href="/members/circular-couture-hu-49619">
+              <Link to="/members/circular-couture-hu-49619">
                 MATCHES
-              </a>
+              </Link>
             </div>
             <div className="product-title">
-              <a href="/designers/the-vampire-s-wife">
+              <Link to="/designers/the-vampire-s-wife">
                 <h1 className="brand-name">
                   {' '}The Vampire’s Wife{' '}
                 </h1>
-              </a>
+              </Link>
               <h1 className="item-name">
                 Rent The Mini Night Tremors sequin
               </h1>
@@ -537,9 +537,9 @@ const ProductDetail = () =>{
                         They are professionally cleaned by Oxwash, include free return shipping												and are available for next day shipping if you book by midday.
                       </p>
                       <p>
-                        <a href="https://help.circular-couturecollective.com/hc/en-us/articles/4419475865105-What-does-MANAGED-mean-">
+                        <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/4419475865105-What-does-MANAGED-mean-">
                           Click													here to learn more
-                        </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -571,9 +571,9 @@ const ProductDetail = () =>{
                         {' '}Top Lenders are a group of some of the most trusted and best performing												members of the CIRCULAR COUTURE marketplace. You can easily recognise												them by looking for the badge on item and profile pages. You can also												filter the marketplace to only show items from Top Lender wardrobes.											
                       </p>
                       <p>
-                        <a href="https://help.circular-couturecollective.com/hc/en-us/articles/5136087908753-What-is-a-Top-Lender-">
+                        <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/5136087908753-What-is-a-Top-Lender-">
                           Click													here to learn more
-                        </a>
+                        </Link>
                       </p>
                     </div>
                   </div>
@@ -671,23 +671,23 @@ const ProductDetail = () =>{
                       </div>
                       <div>
                         {' '}
-                        <a
+                        <Link
                           className="size-detail"
                           data-target="#size-detail"
                           data-toggle="modal"
-                          href="#"
+                          to="#"
                         >
                           Size details
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="size-guide"
                           data-target="#size-guide"
                           data-toggle="modal"
-                          href="#"
+                          to="#"
                         >
                           Size guide
-                        </a>
+                        </Link>
                         {' '}
                       </div>
                     </div>
@@ -764,12 +764,12 @@ const ProductDetail = () =>{
                             </h3>
                             <p>
                               We’ve updated our{' '}
-                              <a
+                              <Link
                                 className="link"
-                                href="https://help.circular-couturecollective.com/hc/en-us/articles/4402511533841-What-if-the-item-does-not-fit-"
+                                to="https://help.circular-couturecollective.com/hc/en-us/articles/4402511533841-What-if-the-item-does-not-fit-"
                               >
                                 Fit																Policy
-                              </a>
+                              </Link>
                               {' '}to give you more of your money back when your															item doesn’t fit you. Return this item within 24 hours of															your rental beginning and you’ll receive a part-money,															part-credit refund.
                             </p>
                             <p className="m-0">
@@ -781,23 +781,23 @@ const ProductDetail = () =>{
                     </div>
                     <div className="sizes">
                       {' '}
-                      <a
+                      <Link
                         className="size-detail"
                         data-target="#size-detail"
                         data-toggle="modal"
-                        href="#"
+                        to="#"
                       >
                         Size details
-                      </a>
+                      </Link>
                       {' '}
-                      <a
+                      <Link
                         className="size-guide"
                         data-target="#size-guide"
                         data-toggle="modal"
-                        href="#"
+                        to="#"
                       >
                         Size												guide
-                      </a>
+                      </Link>
                       {' '}
                     </div>
                   </div>
@@ -1185,7 +1185,7 @@ const ProductDetail = () =>{
                     </turbo-frame>
                   </div>
                   <div className="actions">
-                    <a href="/ListItems/ListStepOne">
+                    <Link to="/ListItems/ListStepOne">
                       <button
                         className="w-100 js-product-rent-submit-button component button primary "
                         data-action="product-rent-component#validate"
@@ -1197,7 +1197,7 @@ const ProductDetail = () =>{
                           {' '}Rent Now{' '}
                         </div>
                       </button>
-                    </a>
+                    </Link>
                     <turbo-frame
                       complete=""
                       id="add_to_bag_button_component_frame"
@@ -1255,9 +1255,9 @@ const ProductDetail = () =>{
                   </p>
                   <p className="description">
                     {' '}Return this item within 24 hours and you'll receive a										part-money, part-credit refund.{' '}
-                    <a href="https://help.circular-couturecollective.com/hc/en-us/articles/4402511533841-What-if-the-item-does-not-fit-">
+                    <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/4402511533841-What-if-the-item-does-not-fit-">
                       Learn											more.
-                    </a>
+                    </Link>
                     {' '}
                   </p>
                 </div>
@@ -1278,9 +1278,9 @@ const ProductDetail = () =>{
                   </p>
                   <p className="description">
                     {' '}The item will be shipped a few days before your Start Date.										
-                    <a href="https://help.circular-couturecollective.com/hc/en-us/articles/9170731141905-How-can-I-track-my-rental-">
+                    <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/9170731141905-How-can-I-track-my-rental-">
                       Learn											more.
-                    </a>
+                    </Link>
                     {' '}
                   </p>
                 </div>
@@ -1301,9 +1301,9 @@ const ProductDetail = () =>{
                   </p>
                   <p className="description">
                     {' '}The AU$7.50 Damage Protection fee will cover you!{' '}
-                    <a href="https://help.circular-couturecollective.com/hc/en-us/articles/4419480012177-What-is-Damage-Protection-">
+                    <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/4419480012177-What-is-Damage-Protection-">
                       Learn											more.
-                    </a>
+                    </Link>
                     {' '}
                   </p>
                 </div>
@@ -1360,8 +1360,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/antoinette-dress-57993"
+                          <Link
+                            to="/listings.html/antoinette-dress-57993"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -1375,17 +1375,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -1400,14 +1400,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -1461,8 +1461,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/ruffled-floral-silk-cape-dress"
+                          <Link
+                            to="/listings.html/ruffled-floral-silk-cape-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -1476,17 +1476,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -1501,14 +1501,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -1588,8 +1588,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-memory-dress-94245"
+                          <Link
+                            to="/listings.html/the-memory-dress-94245"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -1603,17 +1603,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -1628,14 +1628,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -1715,8 +1715,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-la-mini-dress"
+                          <Link
+                            to="/listings.html/the-la-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -1730,17 +1730,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -1758,14 +1758,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -1819,8 +1819,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/nearly-nuthin-lady-kristina"
+                          <Link
+                            to="/listings.html/nearly-nuthin-lady-kristina"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -1834,17 +1834,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -1859,14 +1859,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -1918,8 +1918,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cate-mini-floral-songbird"
+                          <Link
+                            to="/listings.html/cate-mini-floral-songbird"
                             tabIndex="0"
                             target="_top"
                           >
@@ -1936,17 +1936,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -1961,14 +1961,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2020,8 +2020,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-hummingbird-dress-86164"
+                          <Link
+                            to="/listings.html/the-hummingbird-dress-86164"
                             tabIndex="0"
                             target="_top"
                           >
@@ -2038,17 +2038,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2063,14 +2063,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2148,8 +2148,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/pink-silk-total-mayhem-dress"
+                          <Link
+                            to="/listings.html/pink-silk-total-mayhem-dress"
                             tabIndex="0"
                             target="_top"
                           >
@@ -2166,17 +2166,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2194,14 +2194,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2279,8 +2279,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-toto-gypsy-floral-print-co"
+                          <Link
+                            to="/listings.html/the-toto-gypsy-floral-print-co"
                             tabIndex="0"
                             target="_top"
                           >
@@ -2297,17 +2297,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2322,14 +2322,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2407,8 +2407,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-hummingbird-dress-35217"
+                          <Link
+                            to="/listings.html/the-hummingbird-dress-35217"
                             tabIndex="0"
                             target="_top"
                           >
@@ -2425,17 +2425,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2450,14 +2450,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2510,8 +2510,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-fortune-teller-robe"
+                          <Link
+                            to="/listings.html/the-fortune-teller-robe"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -2525,17 +2525,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2550,14 +2550,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2636,8 +2636,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-cinderella-ii-dress-38483"
+                          <Link
+                            to="/listings.html/the-cinderella-ii-dress-38483"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -2651,17 +2651,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2676,14 +2676,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2762,8 +2762,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/antoinette-dress-57993"
+                          <Link
+                            to="/listings.html/antoinette-dress-57993"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -2777,17 +2777,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2802,14 +2802,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2862,8 +2862,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/ruffled-floral-silk-cape-dress"
+                          <Link
+                            to="/listings.html/ruffled-floral-silk-cape-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -2877,17 +2877,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -2902,14 +2902,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -2988,8 +2988,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-memory-dress-94245"
+                          <Link
+                            to="/listings.html/the-memory-dress-94245"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3003,17 +3003,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3028,14 +3028,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3114,8 +3114,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-la-mini-dress"
+                          <Link
+                            to="/listings.html/the-la-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3129,17 +3129,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3157,14 +3157,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3217,8 +3217,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/nearly-nuthin-lady-kristina"
+                          <Link
+                            to="/listings.html/nearly-nuthin-lady-kristina"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3232,17 +3232,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3257,14 +3257,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3318,8 +3318,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cate-mini-floral-songbird"
+                          <Link
+                            to="/listings.html/cate-mini-floral-songbird"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3333,17 +3333,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3358,14 +3358,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3419,8 +3419,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-hummingbird-dress-86164"
+                          <Link
+                            to="/listings.html/the-hummingbird-dress-86164"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3434,17 +3434,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3459,14 +3459,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3546,8 +3546,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/pink-silk-total-mayhem-dress"
+                          <Link
+                            to="/listings.html/pink-silk-total-mayhem-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3561,17 +3561,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3589,14 +3589,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3676,8 +3676,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-toto-gypsy-floral-print-co"
+                          <Link
+                            to="/listings.html/the-toto-gypsy-floral-print-co"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3691,17 +3691,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3716,14 +3716,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3803,8 +3803,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-hummingbird-dress-35217"
+                          <Link
+                            to="/listings.html/the-hummingbird-dress-35217"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3818,17 +3818,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3843,14 +3843,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -3904,8 +3904,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-fortune-teller-robe"
+                          <Link
+                            to="/listings.html/the-fortune-teller-robe"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -3919,17 +3919,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -3944,14 +3944,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4031,8 +4031,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-cinderella-ii-dress-38483"
+                          <Link
+                            to="/listings.html/the-cinderella-ii-dress-38483"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4046,17 +4046,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4071,14 +4071,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4158,8 +4158,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/antoinette-dress-57993"
+                          <Link
+                            to="/listings.html/antoinette-dress-57993"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4176,17 +4176,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4201,14 +4201,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4262,8 +4262,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/ruffled-floral-silk-cape-dress"
+                          <Link
+                            to="/listings.html/ruffled-floral-silk-cape-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4280,17 +4280,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4305,14 +4305,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4392,8 +4392,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-memory-dress-94245"
+                          <Link
+                            to="/listings.html/the-memory-dress-94245"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4410,17 +4410,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4435,14 +4435,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4522,8 +4522,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/the-la-mini-dress"
+                          <Link
+                            to="/listings.html/the-la-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4540,17 +4540,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4568,14 +4568,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4629,8 +4629,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/nearly-nuthin-lady-kristina"
+                          <Link
+                            to="/listings.html/nearly-nuthin-lady-kristina"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4647,17 +4647,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-vampire-s-wife"
+                                to="/designers/the-vampire-s-wife"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Vampire’s Wife															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4672,14 +4672,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4801,8 +4801,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/botley-feather-trimmed-cutout"
+                          <Link
+                            to="/listings.html/botley-feather-trimmed-cutout"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4816,17 +4816,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/16arlington"
+                                to="/designers/16arlington"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																16ARLINGTON															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4841,14 +4841,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -4902,8 +4902,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cupid-dress-with-gloves-84193"
+                          <Link
+                            to="/listings.html/cupid-dress-with-gloves-84193"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -4917,17 +4917,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/miscreants-london"
+                                to="/designers/miscreants-london"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Miscreants London															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -4942,14 +4942,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5003,8 +5003,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/crepe-fine-lace-mini-dress"
+                          <Link
+                            to="/listings.html/crepe-fine-lace-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -5018,17 +5018,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/self-portrait"
+                                to="/designers/self-portrait"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Self-Portrait															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5043,14 +5043,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5104,8 +5104,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/crystal-flower-maxi-dress"
+                          <Link
+                            to="/listings.html/crystal-flower-maxi-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -5119,17 +5119,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/rotate-birger-christensen-2fe63b4e-965d-4cdf-83f0-14d627151126"
+                                to="/designers/rotate-birger-christensen-2fe63b4e-965d-4cdf-83f0-14d627151126"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																ROTATE BIRGER CHRISTENSEN															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5144,14 +5144,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5205,8 +5205,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/bronx-short-sleeve-mini-dress"
+                          <Link
+                            to="/listings.html/bronx-short-sleeve-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -5220,17 +5220,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/rebecca-vallance"
+                                to="/designers/rebecca-vallance"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Rebecca Vallance															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5245,14 +5245,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5330,8 +5330,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/priscilla-dress-60481"
+                          <Link
+                            to="/listings.html/priscilla-dress-60481"
                             tabIndex="0"
                             target="_top"
                           >
@@ -5348,17 +5348,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/sau-lee"
+                                to="/designers/sau-lee"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																Sau Lee															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5376,14 +5376,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5435,8 +5435,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/gospel-feather-trimmed-midi"
+                          <Link
+                            to="/listings.html/gospel-feather-trimmed-midi"
                             tabIndex="0"
                             target="_top"
                           >
@@ -5453,17 +5453,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/de-la-vali"
+                                to="/designers/de-la-vali"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																De La Vali															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5481,14 +5481,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5566,8 +5566,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/spaghetti-strap-minidress"
+                          <Link
+                            to="/listings.html/spaghetti-strap-minidress"
                             tabIndex="0"
                             target="_top"
                           >
@@ -5584,17 +5584,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/nensi-dojaka"
+                                to="/designers/nensi-dojaka"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																NENSI DOJAKA															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5612,14 +5612,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5671,8 +5671,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/brigit-mini-dress"
+                          <Link
+                            to="/listings.html/brigit-mini-dress"
                             tabIndex="0"
                             target="_top"
                           >
@@ -5689,17 +5689,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-attico"
+                                to="/designers/the-attico"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																The Attico															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5714,14 +5714,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5773,8 +5773,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/jewel-gown"
+                          <Link
+                            to="/listings.html/jewel-gown"
                             tabIndex="0"
                             target="_top"
                           >
@@ -5791,17 +5791,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/nookie"
+                                to="/designers/nookie"
                                 tabIndex="0"
                                 target="_top"
                               >
                                 																Nookie															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5819,14 +5819,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="0"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -5905,8 +5905,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cupid-long-dress-set"
+                          <Link
+                            to="/listings.html/cupid-long-dress-set"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -5920,17 +5920,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/miscreants-london"
+                                to="/designers/miscreants-london"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Miscreants London															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -5945,14 +5945,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6031,8 +6031,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cupid-dress-with-gloves-3225"
+                          <Link
+                            to="/listings.html/cupid-dress-with-gloves-3225"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6046,17 +6046,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/miscreants-london"
+                                to="/designers/miscreants-london"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Miscreants London															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6071,14 +6071,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6131,8 +6131,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/botley-feather-trimmed-cutout"
+                          <Link
+                            to="/listings.html/botley-feather-trimmed-cutout"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6146,17 +6146,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/16arlington"
+                                to="/designers/16arlington"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																16ARLINGTON															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6171,14 +6171,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6231,8 +6231,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cupid-dress-with-gloves-84193"
+                          <Link
+                            to="/listings.html/cupid-dress-with-gloves-84193"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6246,17 +6246,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/miscreants-london"
+                                to="/designers/miscreants-london"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Miscreants London															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6271,14 +6271,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6331,8 +6331,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/crepe-fine-lace-mini-dress"
+                          <Link
+                            to="/listings.html/crepe-fine-lace-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6346,17 +6346,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/self-portrait"
+                                to="/designers/self-portrait"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Self-Portrait															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6371,14 +6371,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6431,8 +6431,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/crystal-flower-maxi-dress"
+                          <Link
+                            to="/listings.html/crystal-flower-maxi-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6446,17 +6446,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/rotate-birger-christensen-2fe63b4e-965d-4cdf-83f0-14d627151126"
+                                to="/designers/rotate-birger-christensen-2fe63b4e-965d-4cdf-83f0-14d627151126"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																ROTATE BIRGER CHRISTENSEN															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6471,14 +6471,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6531,8 +6531,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/bronx-short-sleeve-mini-dress"
+                          <Link
+                            to="/listings.html/bronx-short-sleeve-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6546,17 +6546,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/rebecca-vallance"
+                                to="/designers/rebecca-vallance"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Rebecca Vallance															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6571,14 +6571,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6658,8 +6658,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/priscilla-dress-60481"
+                          <Link
+                            to="/listings.html/priscilla-dress-60481"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6673,17 +6673,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/sau-lee"
+                                to="/designers/sau-lee"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Sau Lee															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6701,14 +6701,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6762,8 +6762,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/gospel-feather-trimmed-midi"
+                          <Link
+                            to="/listings.html/gospel-feather-trimmed-midi"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6777,17 +6777,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/de-la-vali"
+                                to="/designers/de-la-vali"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																De La Vali															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6805,14 +6805,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6892,8 +6892,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/spaghetti-strap-minidress"
+                          <Link
+                            to="/listings.html/spaghetti-strap-minidress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -6907,17 +6907,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/nensi-dojaka"
+                                to="/designers/nensi-dojaka"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																NENSI DOJAKA															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -6935,14 +6935,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -6996,8 +6996,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/brigit-mini-dress"
+                          <Link
+                            to="/listings.html/brigit-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7011,17 +7011,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/the-attico"
+                                to="/designers/the-attico"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																The Attico															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7036,14 +7036,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7097,8 +7097,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/jewel-gown"
+                          <Link
+                            to="/listings.html/jewel-gown"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7112,17 +7112,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/nookie"
+                                to="/designers/nookie"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Nookie															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7140,14 +7140,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7227,8 +7227,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cupid-long-dress-set"
+                          <Link
+                            to="/listings.html/cupid-long-dress-set"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7242,17 +7242,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/miscreants-london"
+                                to="/designers/miscreants-london"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Miscreants London															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7267,14 +7267,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7354,8 +7354,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cupid-dress-with-gloves-3225"
+                          <Link
+                            to="/listings.html/cupid-dress-with-gloves-3225"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7369,17 +7369,17 @@ const ProductDetail = () =>{
                                 src="https://res.cloudinary.com/dcaptnlz3/image/asset/product-lazy-template-c7212d0edfbabccebcb34e85c5e002f9"
                               />
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/miscreants-london"
+                                to="/designers/miscreants-london"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Miscreants London															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7394,14 +7394,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7455,8 +7455,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/botley-feather-trimmed-cutout"
+                          <Link
+                            to="/listings.html/botley-feather-trimmed-cutout"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7473,17 +7473,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/16arlington"
+                                to="/designers/16arlington"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																16ARLINGTON															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7498,14 +7498,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7559,8 +7559,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/cupid-dress-with-gloves-84193"
+                          <Link
+                            to="/listings.html/cupid-dress-with-gloves-84193"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7577,17 +7577,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/miscreants-london"
+                                to="/designers/miscreants-london"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Miscreants London															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7602,14 +7602,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7663,8 +7663,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/crepe-fine-lace-mini-dress"
+                          <Link
+                            to="/listings.html/crepe-fine-lace-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7681,17 +7681,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/self-portrait"
+                                to="/designers/self-portrait"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Self-Portrait															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7706,14 +7706,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7767,8 +7767,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/crystal-flower-maxi-dress"
+                          <Link
+                            to="/listings.html/crystal-flower-maxi-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7785,17 +7785,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/rotate-birger-christensen-2fe63b4e-965d-4cdf-83f0-14d627151126"
+                                to="/designers/rotate-birger-christensen-2fe63b4e-965d-4cdf-83f0-14d627151126"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																ROTATE BIRGER CHRISTENSEN															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7810,14 +7810,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -7871,8 +7871,8 @@ const ProductDetail = () =>{
                             width: '100%'
                           }}
                         >
-                          <a
-                            href="/listings.html/bronx-short-sleeve-mini-dress"
+                          <Link
+                            to="/listings.html/bronx-short-sleeve-mini-dress"
                             tabIndex="-1"
                             target="_top"
                           >
@@ -7889,17 +7889,17 @@ const ProductDetail = () =>{
                               />
                               {' '}
                             </div>
-                          </a>
+                          </Link>
                           <div className="content">
                             <h4 className="brand">
-                              <a
+                              <Link
                                 className="brand-name"
-                                href="/designers/rebecca-vallance"
+                                to="/designers/rebecca-vallance"
                                 tabIndex="-1"
                                 target="_top"
                               >
                                 																Rebecca Vallance															
-                              </a>
+                              </Link>
                             </h4>
                             <div className="prices">
                               <p className="rent">
@@ -7914,14 +7914,14 @@ const ProductDetail = () =>{
                             <ul className="footer-items">
                               <li className="category footer-item text-underline">
                                 {' '}
-                                <a
+                                <Link
                                   className="category"
-                                  href="/collections/dresses"
+                                  to="/collections/dresses"
                                   tabIndex="-1"
                                   target="_top"
                                 >
                                   																	Dresses																
-                                </a>
+                                </Link>
                                 {' '}
                               </li>
                               <li className="ellipse footer-item">
@@ -8046,18 +8046,18 @@ const ProductDetail = () =>{
                       className="card-header p-0 border-0"
                       id="descriptionHeader"
                     >
-                      <a
+                      <Link
                         aria-controls="collapseDescription"
                         aria-expanded="false"
                         className="collapse-link collapsed"
                         data-target="#collapseDescription"
                         data-toggle="collapse"
-                        href="#"
+                        to="#"
                       >
                         <h3 className="collapse-title">
                           Description
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                     <div
                       aria-labelledby="descriptionHeader"
@@ -8075,18 +8075,18 @@ const ProductDetail = () =>{
                       className="card-header p-0 border-0"
                       id="sizeFitesHeader"
                     >
-                      <a
+                      <Link
                         aria-controls="collapseSizeFit"
                         aria-expanded="false"
                         className="collapse-link collapsed"
                         data-target="#collapseSizeFit"
                         data-toggle="collapse"
-                        href="#"
+                        to="#"
                       >
                         <h3 className="collapse-title">
                           Size & Fit
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                     <div
                       aria-labelledby="sizeFitHeader"
@@ -8104,18 +8104,18 @@ const ProductDetail = () =>{
                       className="card-header p-0 border-0"
                       id="deliveryHeader"
                     >
-                      <a
+                      <Link
                         aria-controls="collapseDelivery"
                         aria-expanded="false"
                         className="collapse-link collapsed"
                         data-target="#collapseDelivery"
                         data-toggle="collapse"
-                        href="#"
+                        to="#"
                       >
                         <h3 className="collapse-title">
                           Delivery
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                     <div
                       aria-labelledby="deliveryHeader"
@@ -8142,9 +8142,9 @@ const ProductDetail = () =>{
                           </dt>
                           <dd className="mb-3">
                             Once accepted, you will receive a confirmation														email and app notification. Track the delivery of your rental														using the tracking details provided by your Lender.{' '}
-                            <a href="https://help.circular-couturecollective.com/hc/en-us/articles/9170731141905-How-can-I-track-my-rental-">
+                            <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/9170731141905-How-can-I-track-my-rental-">
                               Learn															more
-                            </a>
+                            </Link>
                             {' '}
                           </dd>
                           <dt>
@@ -8153,17 +8153,17 @@ const ProductDetail = () =>{
                           <ul>
                             <li>
                               <dd>
-                                <a href="https://www.circular-couturecollective.com/how-to-rent">
+                                <Link to="https://www.circular-couturecollective.com/how-to-rent">
                                   How																	does it work?
-                                </a>
+                                </Link>
                               </dd>
                             </li>
                             <li>
                               <dd>
                                 {' '}
-                                <a href="https://help.circular-couturecollective.com/hc/en-us/articles/4402511540881-What-happens-if-I-m-not-in-to-accept-a-delivery-">
+                                <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/4402511540881-What-happens-if-I-m-not-in-to-accept-a-delivery-">
                                   What																	happens if I'm not in to accept a delivery?
-                                </a>
+                                </Link>
                               </dd>
                             </li>
                           </ul>
@@ -8176,18 +8176,18 @@ const ProductDetail = () =>{
                       className="card-header p-0 border-0"
                       id="returnItemHeader"
                     >
-                      <a
+                      <Link
                         aria-controls="collapseReturnItem"
                         aria-expanded="false"
                         className="collapse-link collapsed"
                         data-target="#collapseReturnItem"
                         data-toggle="collapse"
-                        href="#"
+                        to="#"
                       >
                         <h3 className="collapse-title">
                           Returning Your Item
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                     <div
                       aria-labelledby="returnItemHeader"
@@ -8212,12 +8212,12 @@ const ProductDetail = () =>{
                             <li>
                               <dd className="mb-3 text-danger">
                                 Late returns will incur a fee																of AU$25 per day.{' '}
-                                <a
+                                <Link
                                   className="text-danger"
-                                  href="https://help.circular-couturecollective.com/hc/en-us/articles/4419482108433-Late-fees"
+                                  to="https://help.circular-couturecollective.com/hc/en-us/articles/4419482108433-Late-fees"
                                 >
                                   Learn more
-                                </a>
+                                </Link>
                                 {' '}
                               </dd>
                             </li>
@@ -8236,9 +8236,9 @@ const ProductDetail = () =>{
                           </dd>
                           <dd>
                             Further questions?{' '}
-                            <a href="#">
+                            <Link to="#">
                               We are here to help
-                            </a>
+                            </Link>
                           </dd>
                         </dl>
                       </div>
@@ -8249,18 +8249,18 @@ const ProductDetail = () =>{
                       className="card-header p-0 border-0"
                       id="dryCleaningHeader"
                     >
-                      <a
+                      <Link
                         aria-controls="collapseDryCleaning"
                         aria-expanded="false"
                         className="collapse-link collapsed"
                         data-target="#collapseDryCleaning"
                         data-toggle="collapse"
-                        href="#"
+                        to="#"
                       >
                         <h3 className="collapse-title">
                           Dry Cleaning
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                     <div
                       aria-labelledby="dryCleaningHeader"
@@ -8283,18 +8283,18 @@ const ProductDetail = () =>{
                       className="card-header p-0 border-0"
                       id="environmentalSavingsHeader"
                     >
-                      <a
+                      <Link
                         aria-controls="collapseEnvironmentalSavings"
                         aria-expanded="false"
                         className="collapse-link collapsed"
                         data-target="#collapseEnvironmentalSavings"
                         data-toggle="collapse"
-                        href="#"
+                        to="#"
                       >
                         <h3 className="collapse-title">
                           Environmental Savings
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                     <div
                       aria-labelledby="environmentalSavingsHeader"
@@ -8374,18 +8374,18 @@ const ProductDetail = () =>{
                       className="card-header p-0 border-0"
                       id="lenderTypeHeader"
                     >
-                      <a
+                      <Link
                         aria-controls="collapseLenderType"
                         aria-expanded="false"
                         className="collapse-link collapsed"
                         data-target="#collapseLenderType"
                         data-toggle="collapse"
-                        href="#"
+                        to="#"
                       >
                         <h3 className="collapse-title">
                           Lender Type
                         </h3>
-                      </a>
+                      </Link>
                     </div>
                     <div
                       aria-labelledby="dryCleaningHeader"
@@ -8428,9 +8428,9 @@ const ProductDetail = () =>{
                             <li>
                               <dd>
                                 Every item is sustainably cleaned by our partners																Oxwash.{' '}
-                                <a href="https://help.circular-couturecollective.com/hc/en-us/articles/4419477651729-Who-is-responsible-for-dry-cleaning-">
+                                <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/4419477651729-Who-is-responsible-for-dry-cleaning-">
                                   Learn																	more.
-                                </a>
+                                </Link>
                                 {' '}
                               </dd>
                             </li>
@@ -8449,9 +8449,9 @@ const ProductDetail = () =>{
                           </div>
                           <dt className="font-weight-normal">
                             Top Lenders are some of the most														trusted and best performing members of the CIRCULAR COUTURE														marketplace.														
-                            <a href="https://help.circular-couturecollective.com/hc/en-us/articles/5136087908753-What-is-a-Top-Lender-">
+                            <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/5136087908753-What-is-a-Top-Lender-">
                               Learn															more.
-                            </a>
+                            </Link>
                           </dt>
                           <div className="pt-3 mt-3 pb-3">
                             <div className="lender-badge component badge neutral small">
@@ -8484,8 +8484,8 @@ const ProductDetail = () =>{
                   listed by
                 </h2>
                 <div className="product-lender">
-                  <a
-                    href="/members/circular-couture-hu-49619"
+                  <Link
+                    to="/members/circular-couture-hu-49619"
                     target="_top"
                   >
                     <div className="row no-gutters product-lender-component">
@@ -8526,7 +8526,7 @@ const ProductDetail = () =>{
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                   <button
                     className="w-100 component button tertiary "
                     data-target="#messaging-a-managed"
@@ -8577,29 +8577,29 @@ const ProductDetail = () =>{
                             {' '}If you’d like to speak to someone,														please visit														
                             <br />
                             {' '}our{' '}
-                            <a
+                            <Link
                               className="text-circular-couture-light-red"
-                              href="https://help.circular-couturecollective.com/hc/en-us/requests/new"
+                              to="https://help.circular-couturecollective.com/hc/en-us/requests/new"
                               target="_blank"
                             >
                               <u>
                                 Help Centre
                               </u>
-                            </a>
+                            </Link>
                             {' '}or use the help														widget found														
                             <br />
                             {' '}in the bottom right corner of your screen.													
                           </p>
                           <div className="text-center">
-                            <a
+                            <Link
                               className="component button primary "
-                              href="https://help.circular-couturecollective.com/hc/en-us/requests/new"
+                              to="https://help.circular-couturecollective.com/hc/en-us/requests/new"
                               target="_top"
                             >
                               <div className="title ">
                                 {' '}Speak to someone{' '}
                               </div>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -8636,12 +8636,12 @@ const ProductDetail = () =>{
             <div className="row no-gutters header-tabs">
               <div className="col-6">
                 {' '}
-                <a
+                <Link
                   className="tab -active"
-                  href="javascript:void(0)"
+                  to="javascript:void(0)"
                 >
                   Lender Reviews
-                </a>
+                </Link>
               </div>
             </div>
             <div className="item-reviews">
@@ -10125,16 +10125,16 @@ const ProductDetail = () =>{
                       <div className="image-review">
                         <div className="row no-gutters scrollable">
                           <div data-controller="lightbox">
-                            <a
+                            <Link
                               data-lg-id="e78cd339-e354-4c8e-baaf-f13149b20f7e"
-                              href="https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_900,q_auto:best,w_600/bbcy1ymq4tabyuzuxqnivlli6ixc"
+                              to="https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_900,q_auto:best,w_600/bbcy1ymq4tabyuzuxqnivlli6ixc"
                             >
                               {' '}
                               <img
                                 className="image"
                                 src="https://res.cloudinary.com/dcaptnlz3/image/upload/c_fill,f_webp,h_145,q_auto:best,w_107/bbcy1ymq4tabyuzuxqnivlli6ixc"
                               />
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <p className="text-review">
@@ -10319,16 +10319,16 @@ const ProductDetail = () =>{
                       <div className="image-review">
                         <div className="row no-gutters scrollable">
                           <div data-controller="lightbox">
-                            <a
+                            <Link
                               data-lg-id="6f7b7dd4-f950-49e6-8288-a5edac946dac"
-                              href="https://res.cloudinary.com/dcaptnlz3/image/upload/c_crop,h_2864,w_1909,x_638,y_950/c_fill,f_webp,h_900,q_auto:best,w_600/clhj7x8tilqlqpnyhejj12fam8l2"
+                              to="https://res.cloudinary.com/dcaptnlz3/image/upload/c_crop,h_2864,w_1909,x_638,y_950/c_fill,f_webp,h_900,q_auto:best,w_600/clhj7x8tilqlqpnyhejj12fam8l2"
                             >
                               {' '}
                               <img
                                 className="image"
                                 src="https://res.cloudinary.com/dcaptnlz3/image/upload/c_crop,h_2864,w_1909,x_638,y_950/c_fill,f_webp,h_145,q_auto:best,w_107/clhj7x8tilqlqpnyhejj12fam8l2"
                               />
-                            </a>
+                            </Link>
                           </div>
                         </div>
                         <p className="text-review">
@@ -10346,71 +10346,71 @@ const ProductDetail = () =>{
                   >
                     <ul className="pagination-list">
                       <li className="page-item prev disabled">
-                        <a
+                        <Link
                           className="page-link"
-                          href="#"
+                          to="#"
                         >
                           <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg" />
-                        </a>
+                        </Link>
                       </li>
                       <li className="page-item active">
-                        <a
+                        <Link
                           className="page-link"
-                          href="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=1&per_page=4"
+                          to="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=1&per_page=4"
                         >
                           1
-                        </a>
+                        </Link>
                       </li>
                       <li className="page-item">
-                        <a
+                        <Link
                           className="page-link"
-                          href="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=2&per_page=4"
+                          to="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=2&per_page=4"
                           rel="next"
                         >
                           2
-                        </a>
+                        </Link>
                       </li>
                       <li className="page-item">
-                        <a
+                        <Link
                           className="page-link"
-                          href="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=3&per_page=4"
+                          to="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=3&per_page=4"
                         >
                           3
-                        </a>
+                        </Link>
                       </li>
                       <li className="page-item">
-                        <a
+                        <Link
                           className="page-link"
-                          href="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=4&per_page=4"
+                          to="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=4&per_page=4"
                         >
                           4
-                        </a>
+                        </Link>
                       </li>
                       <li className="page-item disabled gap">
-                        <a
+                        <Link
                           className="page-link"
-                          href="#"
+                          to="#"
                         >
                           ...
-                        </a>
+                        </Link>
                       </li>
                       <li className="page-item">
-                        <a
+                        <Link
                           className="page-link"
-                          href="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=78&per_page=4"
+                          to="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=78&per_page=4"
                         >
                           78
-                        </a>
+                        </Link>
                       </li>
                       <li className="page-item next">
-                        <a
+                        <Link
                           aria-label="next"
                           className="page-link"
-                          href="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=2&per_page=4"
+                          to="/component_loader/pdp_sections/listing_reviews_frame?listing_id=74496&page=2&per_page=4"
                           rel="next"
                         >
                           <img src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-right-4d9dc1896a4765e272ce510a3e1d363f.svg" />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>
@@ -11026,12 +11026,12 @@ const ProductDetail = () =>{
           placeholder=" Email"
           type="text"
         />
-        <a href="/ListItems/ListStepTwo">
+        <Link to="/ListItems/ListStepTwo">
           {' '}
           <button className="mt-4 mb-4 btn-signup1">
             sign up
           </button>
-        </a>
+        </Link>
       </div>
     </div>
   </div>

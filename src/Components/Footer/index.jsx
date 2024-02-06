@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer =()=>{
     return(
         <>
@@ -14,38 +14,38 @@ const Footer =()=>{
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-3">
-                        <a className="link" href="/About">
+                        <Link className="link" to="/About">
                           Our story
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-3">
-                        <a
+                        <Link
                           target="_blank"
                           className="link"
-                          href="/Sustainability"
+                          to="/Sustainability"
                         >
                           sustainability
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="/HowToLend">
+                        <Link className="link" to="/HowToLend">
                           How it works
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="/Refer-a-Friend">
+                        <Link className="link" to="/Refer-a-Friend">
                         GIVE AU$10, GET AU$10
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-3">
-                              <a className="link" href="/Community">
+                              <Link className="link" to="/Community">
                                 Community
-                              </a>
+                              </Link>
                             </li>
                             <li className="mb-3">
-                              <a className="link" href="/Press">
+                              <Link className="link" to="/Press">
                                 Press
-                              </a>
+                              </Link>
                             </li>
                     </ul>
                   </div>
@@ -59,19 +59,19 @@ const Footer =()=>{
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-3">
-                        <a className="link" href="#">
+                        <Link className="link" to="#">
                           Order tracking
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="/TermsOfService">
+                        <Link className="link" to="/TermsOfService">
                           Our service
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="/CookiePolicy">
+                        <Link className="link" to="/CookiePolicy">
                           Returns policy
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -85,19 +85,19 @@ const Footer =()=>{
                     </h4>
                     <ul className="list-unstyled">
                       <li className="mb-3">
-                        <a className="link" href="/SellingOrRenting">
+                        <Link className="link" to="/SellingOrRenting">
                           How to sell?
-                        </a>
+                        </Link>
                       </li>
                       <li className="mb-3">
-                        <a className="link" href="/About">
+                        <Link className="link" to="/About">
                           Our selling advice
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="link" href="/SellingOrRenting">
+                        <Link className="link" to="/SellingOrRenting">
                           Sell an item
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -112,9 +112,9 @@ const Footer =()=>{
                           <h4 style={{ color: "white" }}>H E L P</h4>
                           <ul className="list-unstyled">
                             <li className="mb-3">
-                              <a className="link" href="/FAQ" target="_blank">
+                              <Link className="link" to="/FAQ" target="_blank">
                                 FAQs
-                              </a>
+                              </Link>
                             </li>
                             {/* <li className="mb-3">
                               <a className="link" href="#">
@@ -122,19 +122,19 @@ const Footer =()=>{
                               </a>
                             </li> */}
                             <li className="mb-3">
-                              <a className="link" href="/Contact" target="_blank">
+                              <Link className="link" to="/Contact" target="_blank">
                                 Contact us
-                              </a>
+                              </Link>
                             </li>
                             <li className="mb-3">
-                              <a className="link" href="/TermsOfService">
+                              <Link className="link" to="/TermsOfService">
                                 Terms Of Services
-                              </a>
+                              </Link>
                             </li>
                             <li className="mb-3">
-                              <a className="link" href="/CookiePolicy">
+                              <Link className="link" to="/CookiePolicy">
                                 Privacy Policy
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>

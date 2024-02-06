@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const EmailSubscription = () =>{
 
     return (
@@ -22,12 +22,12 @@ const EmailSubscription = () =>{
       type="text"
       required
     />
-    <a href="#">
+    <Link to="#">
       {' '}
       <button className="mt-4 mb-4 btn-signup1" type="submit">
         sign up
       </button>
-    </a>
+    </Link>
   </div>
 </div>
         

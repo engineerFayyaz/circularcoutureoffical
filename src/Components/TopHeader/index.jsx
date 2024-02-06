@@ -407,7 +407,7 @@ const TopHeader = () => {
                           Dresses
                         </Link>
                       </li>
-                      {/* <li><a class="d-block w-100" href="/collections/bags">Bags</a></li> */}
+                      {/* <li><Link class="d-block w-100" to="/collections/bags">Bags</Link></li> */}
                       <li>
                         <Link
                           to="/Collections/Accessories"
@@ -634,7 +634,7 @@ const TopHeader = () => {
                       <li>
                         <Link to="/Collections/JumpSuit">JUMPSUITS</Link>
                       </li>
-                      {/* <li><a class="with-border-bottom" href="/collections/clothing">view all</a></li> */}
+                      {/* <li><Link class="with-border-bottom" to="/collections/clothing">view all</Link></li> */}
                     </ul>
                   </div>
                   <div

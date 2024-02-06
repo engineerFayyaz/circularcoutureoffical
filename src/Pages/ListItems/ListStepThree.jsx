@@ -2,7 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
-
+import{ Link } from "react-router-dom";
 const ListStepThree = () =>{
     return (
         <>
@@ -25,21 +25,21 @@ const ListStepThree = () =>{
             </p>
           </div>
           <div className="d-flex flex-row justify-content-center text-capitalize text-center three-btn-step">
-            <a href="/ListItems/ListStepOne">
+            <Link to="/ListItems/ListStepOne">
               <button className="btn btn-light ">
                 step one
               </button>
-            </a>
-            <a href="/ListItems/ListStepTwo">
+            </Link>
+            <Link to="/ListItems/ListStepTwo">
               <button className="btn btn-light">
                 step two
               </button>
-            </a>
-            <a href="/ListItems/ListStepThree">
+            </Link>
+            <Link to="/ListItems/ListStepThree">
               <button className="btn btn-light active">
                 step three
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -474,16 +474,16 @@ const ListStepThree = () =>{
             <div className="component product-header">
               <div className="listed-by">
                 {' '}Listed by{' '}
-                <a href="/members/circular-couture-hu-49619">
+                <Link to="/members/circular-couture-hu-49619">
                   MATCHES
-                </a>
+                </Link>
               </div>
               <div className="product-title">
-                <a href="/designers/the-vampire-s-wife">
+                <Link to="/designers/the-vampire-s-wife">
                   <h1 className="brand-name">
                     {' '}The Vampire’s Wife{' '}
                   </h1>
-                </a>
+                </Link>
                 <h1 className="item-name">
                   Rent The Mini Night Tremors sequin
                 </h1>
@@ -540,9 +540,9 @@ const ListStepThree = () =>{
                           They are professionally cleaned by Oxwash, include free return shipping                                                        and are available for next day shipping if you book by midday.
                         </p>
                         <p>
-                          <a href="https://help.circular-couturecollective.com/hc/en-us/articles/4419475865105-What-does-MANAGED-mean-">
+                          <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/4419475865105-What-does-MANAGED-mean-">
                             Click                                                            here to learn more
-                          </a>
+                          </Link>
                         </p>
                       </div>
                     </div>
@@ -574,9 +574,9 @@ const ListStepThree = () =>{
                           {' '}Top Lenders are a group of some of the most trusted and best performing                                                        members of the CIRCULAR COUTURE marketplace. You can easily recognise                                                        them by looking for the badge on item and profile pages. You can also                                                        filter the marketplace to only show items from Top Lender wardrobes.
                         </p>
                         <p>
-                          <a href="https://help.circular-couturecollective.com/hc/en-us/articles/5136087908753-What-is-a-Top-Lender-">
+                          <Link to="https://help.circular-couturecollective.com/hc/en-us/articles/5136087908753-What-is-a-Top-Lender-">
                             Click                                                            here to learn more
-                          </a>
+                          </Link>
                         </p>
                       </div>
                     </div>
@@ -674,23 +674,23 @@ const ListStepThree = () =>{
                         </div>
                         <div>
                           {' '}
-                          <a
+                          <Link
                             className="size-detail"
                             data-target="#size-detail"
                             data-toggle="modal"
-                            href="#"
+                            to="#"
                           >
                             Size details
-                          </a>
+                          </Link>
                           {' '}
-                          <a
+                          <Link
                             className="size-guide"
                             data-target="#size-guide"
                             data-toggle="modal"
-                            href="#"
+                            to="#"
                           >
                             Size guide
-                          </a>
+                          </Link>
                           {' '}
                         </div>
                       </div>
@@ -767,12 +767,12 @@ const ListStepThree = () =>{
                               </h3>
                               <p>
                                 We’ve updated our{' '}
-                                <a
+                                <Link
                                   className="link"
-                                  href="https://help.circular-couturecollective.com/hc/en-us/articles/4402511533841-What-if-the-item-does-not-fit-"
+                                  to="https://help.circular-couturecollective.com/hc/en-us/articles/4402511533841-What-if-the-item-does-not-fit-"
                                 >
                                   Fit                                                                        Policy
-                                </a>
+                                </Link>
                                 {' '}to give you more of your money back when your                                                                    item doesn’t fit you. Return this item within 24 hours of                                                                    your rental beginning and you’ll receive a part-money,                                                                    part-credit refund.
                               </p>
                               <p className="m-0">
@@ -784,23 +784,23 @@ const ListStepThree = () =>{
                       </div>
                       <div className="sizes">
                         {' '}
-                        <a
+                        <Link
                           className="size-detail"
                           data-target="#size-detail"
                           data-toggle="modal"
-                          href="#"
+                          to="#"
                         >
                           Size details
-                        </a>
+                        </Link>
                         {' '}
-                        <a
+                        <Link
                           className="size-guide"
                           data-target="#size-guide"
                           data-toggle="modal"
-                          href="#"
+                          to="#"
                         >
                           Size                                                        guide
-                        </a>
+                        </Link>
                         {' '}
                       </div>
                     </div>
