@@ -1,4 +1,8 @@
 import React from "react";
+import { faUser, faHeart, faSearch, faShoppingBag, faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
+
 
 const TopHeader = () => {
   return (
@@ -10,32 +14,35 @@ const TopHeader = () => {
         data-action="scroll@window->header#hideAnnouncementBanner"
       >
         <div className="top-header d-flex justify-content-end bg-dark text-light mt-4 p-1">
-        <div className="me-5 four-icon d-flex align-items-center mt-3" style={{ columnGap: "10px" }}>
+          <div className="me-5 four-icon d-flex align-items-center mt-3" style={{ columnGap: "10px" }}>
             <div className="dropdown dropup ">
               <ul className="list-inline mb-0  ">
                 <li className="list-inline-item">
-                  {" "}
-                  <a
-                    href="#"
-                    className="default-link -md link text-uppercase  "
+
+                  <Link
+                    to="#"
+                    className="default-link -md link text-uppercase"
                     data-toggle="modal"
                     data-target="#signin-modal"
                   >
-                    <i style={{ color: "white",  fontSize: "17px" }} className="far fa-user" />
-
-                  </a>{" "}
+                    <FontAwesomeIcon icon={faUser} style={{ color: "white", fontSize: "16px" }} />
+                    {/* <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" /> */}
+                  </Link>
                 </li>
               </ul>
             </div>
-            <i className="fas fa-shopping-bag" />
-            <i className="fas fa-search" />
-            <i className="far fa-heart" />
+            <FontAwesomeIcon icon={faShoppingBag} />
+            <FontAwesomeIcon icon={faSearch} />
+            <FontAwesomeIcon icon={faHeart} />
+            {/* <i className="fas fa-shopping-bag" /> */}
+            {/* <i className="fas fa-search" />
+            <i className="far fa-heart" /> */}
           </div>
         </div>
         <div className="main-header-section d-lg-flex justify-content-between">
           <div className="fixed-container">
             <div className="row no-gutters">
-              <div className="col-md-4" style={{marginTop:"14px"}}>
+              <div className="col-md-4" style={{ marginTop: "14px" }}>
                 <ul className="list-inline mb-0">
                   <li className="list-inline-item mr-4">
                     <p className="currancy-idicator text-uppercase mb-0">
@@ -43,29 +50,29 @@ const TopHeader = () => {
                     </p>
                   </li>
                   <li className="list-inline-item">
-                    {" "}
-                    <a
+
+                    <Link
                       className="default-link -md link text-uppercase"
-                      href="/HowToLend"
+                      to="/HowToLend"
                     >
                       How it works
-                    </a>{" "}
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="col-md-4 text-center">
-                <a
+                <Link
                   className="nav-link mx-0 p-0 d-inline-block logo"
-                  href="/"
+                  to="/"
                 >
-                  {" "}
+
                   <img
                     width={350}
                     className="header-logo"
                     alt="CIRCULAR COUTURE logo"
                     src="/images/CC TM Logo.png"
                   />
-                </a>
+                </Link>
               </div>
               <div className="col-md-4"></div>
             </div>
@@ -74,23 +81,17 @@ const TopHeader = () => {
         <div className="container-fluid main-mobile-header-section">
           <div className="row h-100 align-items-center">
             <div className="col-4">
-              <a href="#" data-toggle="modal" data-target="#mobile_nav_modal">
-                {/* https://res.cloudinary.com/dcaptnlz3/image/asset/feather-menu-a27514f57eb39570acf76060d920ca9b.svg */}
-                <img
-                  alt="An icon of a menu"
-                  className="mb-1"
-                  width={26}
-                  height={18}
-                  src="https://res.cloudinary.com/dcaptnlz3/image/asset/burger-menu-lighter-4f3d911c8cdee134cbe592dc97fa8295.svg"
-                />
-              </a>{" "}
+              <Link to="#" data-toggle="modal" data-target="#mobile_nav_modal">
+
+                <FontAwesomeIcon icon={faBars} className="mb-1" />
+              </Link>
               <span style={{ marginLeft: 10 }}>
-                <turbo-frame id="account_credit_balance_header" />{" "}
+                <turbo-frame id="account_credit_balance_header" />
               </span>
             </div>
             <div className="col-4 text-center">
-              <a href="/">
-                {" "}
+              <Link to="/">
+
                 <img
                   alt="CIRCULAR COUTURE Logo"
                   width={100}
@@ -98,19 +99,12 @@ const TopHeader = () => {
                   className="img img-responsive circular-couture-logo"
                   src="/images/CC TM Logo.png"
                 />
-              </a>
+              </Link>
             </div>
             <div className="col-4 text-right">
-              <turbo-frame id="mobile_header_bag_frame" />{" "}
-              <img
-                alt="An icon of a search"
-                className="search-image"
-                data-toggle="modal"
-                data-target="#nav_mobile_search_form"
-                width={24}
-                height={24}
-                src="https://res.cloudinary.com/dcaptnlz3/image/asset/search2-ab289f14410a86cee3a5373e949dd4bf.svg"
-              />
+              <turbo-frame id="mobile_header_bag_frame" />
+
+              <FontAwesomeIcon icon={faSearch} className="search-image" />
             </div>
           </div>
         </div>
@@ -122,83 +116,72 @@ const TopHeader = () => {
             <div className="links-wrapper text-uppercase">
               <div className="" />
               <div className="col-12 row no-gutters p-0 justify-content-around align-items-center mr-3">
-                <a
-                  target="_top"
-                  className="nav-link with-mega-menu-content "
+                <Link
+                  to="/Collections/NewArrival" // Specify the target URL
+                  className="nav-link with-mega-menu-content"
                   data-target-link-content=".link-content.-just-in"
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="justIn"
-                  href="/Collections/NewArrival"
                 >
                   New In
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_top"
                   className="nav-link with-mega-menu-content"
                   data-target-link-content=".link-content.-designers"
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="designers"
-                  href="/Designer"
+                  to="/Designer"
                 >
                   Designers
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_top"
                   className="nav-link with-mega-menu-content new-menu-hover"
                   data-target-link-content=".link-content.-clothing"
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="clothing"
-                  href="/Collections/clothing"
+                  to="/Collections/clothing"
                 >
                   Clothing
-                </a>
-                <a
+                </Link>
+                <Link
                   target="_top"
                   className="nav-link with-mega-menu-content accessories-menu-hover"
                   data-target-link-content=".link-content.-accessories"
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="accessories"
-                  href="/Collections/Accessories"
+                  to="/Collections/Accessories"
                 >
                   Accessories
-                </a>
-                <a
+                </Link>
+                <Link
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
                   className="nav-link "
-                  href="/Collections/Resale"
+                  to="/Collections/Resale"
                 >
                   Resale
-                </a>
-                <a
+                </Link>
+                <Link
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
                   className="nav-link"
-                  href="/Edits"
+                  to="/Edits"
                 >
                   Edits
-                </a>
-                <a
+                </Link>
+                <Link
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
                   className="nav-link"
-                  href="/ListItems/ListStepOne"
+                  to="/ListItems/ListStepOne"
                 >
                   List By Wardrobe
-                </a>
+                </Link>
               </div>
             </div>
-            {/* <div class="row no-gutters justify-content-end">
-          <div class="search-nav-wrapper pl-2">
-              <form class="default-form h-100" novalidate="novalidate" action="/search" accept-charset="UTF-8"
-                  method="get"> <span><img alt="An icon of a search" width="15" height="15"
-                          src="https://res.cloudinary.com/dcaptnlz3/image/asset/search2-ab289f14410a86cee3a5373e949dd4bf.svg"></span>
-                  <input class="form-control search-input m-0 d-inline text-uppercase h-100"
-                      placeholder="SEARCH..." required="required" type="search" name="listing[search_for]"
-                      id="listing_search_for">
-              </form>
-          </div>
-      </div> */}
+           
           </div>
           <div className="links-content-wrapper d-none">
             <div className="link-content -just-in">
@@ -212,64 +195,64 @@ const TopHeader = () => {
                   <div className="col-md-2 col-xl-2">
                     <div className="links">
                       <div className="header">
-                        {" "}
+
                         <h6 className="text-dark">COLOTHING</h6>
                       </div>
                       <div className="body">
-                        {" "}
-                        <a target="_top" href="/Collections/Clothing">
+
+                        <Link target="_top" to="/Collections/Clothing">
                           All Clothing
-                        </a>
-                        <a target="_top " href="/Collections/Dresses">
+                        </Link>
+                        <Link target="_top " to="/Collections/Dresses">
                           Dresses
-                        </a>
-                        <a target="_top " href="/Collections/Tops">
+                        </Link>
+                        <Link target="_top " to="/Collections/Tops">
                           Tops
-                        </a>
-                        <a target="_top" href="/Collections/Skirts">
+                        </Link>
+                        <Link target="_top" to="/Collections/Skirts">
                           Skirts
-                        </a>
-                        <a target="_top" href="/Collections/Trousers">
+                        </Link>
+                        <Link target="_top" to="/Collections/Trousers">
                           Trousers
-                        </a>
-                        <a target="_top" href="/Collections/Sweaters">
+                        </Link>
+                        <Link target="_top" to="/Collections/Sweaters">
                           Sweaters
-                        </a>
-                        <a target="_top" href="/Collections/OuterWear">
+                        </Link>
+                        <Link target="_top" to="/Collections/OuterWear">
                           Outerwear
-                        </a>
-                        <a target="_top" href="/Collections/JumpSuit">
+                        </Link>
+                        <Link target="_top" to="/Collections/JumpSuit">
                           Jumpsuits
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                   <div className="col-md-2 col-xl-3">
                     <div className="links">
                       <div className="header">
-                        {" "}
+
                         <h6 className="text-dark">DRESSES</h6>
                       </div>
                       <div className="body">
-                        {" "}
-                        <a target="_top" href="/Collections/NewArrival">
+
+                        <Link target="_top" to="/Collections/NewArrival">
                           All Dresses
-                        </a>
-                        <a target="_top " href="/Collections/DressMini">
+                        </Link>
+                        <Link target="_top " to="/Collections/DressMini">
                           Mini
-                        </a>
-                        <a target="_top " href="/Collections/DressKneeLength">
+                        </Link>
+                        <Link target="_top " to="/Collections/DressKneeLength">
                           Kee Length
-                        </a>
-                        <a target="_top" href="/Collections/DressMidi">
+                        </Link>
+                        <Link target="_top" to="/Collections/DressMidi">
                           Midi
-                        </a>
-                        <a target="_top" href="/Collections/DressMaxi">
+                        </Link>
+                        <Link target="_top" to="/Collections/DressMaxi">
                           Maxi
-                        </a>
-                        <a target="_top" href="/Collections/DressGowns">
+                        </Link>
+                        <Link target="_top" to="/Collections/DressGowns">
                           Gowns
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -283,7 +266,7 @@ const TopHeader = () => {
                     </div>
                     <div className="autumn-button d-flex justify-content-start">
                       <h1>
-                        {" "}
+
                         <span>AUTUMN '23</span>
                       </h1>
                       <button className="btn"> view collection</button>
@@ -392,92 +375,92 @@ const TopHeader = () => {
                   <div className="content -main">
                     <ul className="list-unstyled text-uppercase">
                       <li>
-                        <a
-                          href="/Collections/NewArrival"
+                        <Link
+                          to="/Collections/NewArrival"
                           className=" d-block w-100"
                         >
                           New In
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/Designer" className=" d-block w-100">
+                        <Link to="/Designer" className=" d-block w-100">
                           Designers
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
-                          href="#"
+                        <Link
+                          to="#"
                           className="arrow d-block w-100"
                           data-toggle="modal"
                           data-target="#clothing_menu"
                         >
                           Clothing
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="arrow d-block w-100"
-                          href="/Collections/Dresses"
+                          to="/Collections/Dresses"
                           data-toggle="modal"
                           data-target="#designers_menu"
                         >
                           Dresses
-                        </a>
+                        </Link>
                       </li>
                       {/* <li><a class="d-block w-100" href="/collections/bags">Bags</a></li> */}
                       <li>
-                        <a
-                          href="/Collections/Accessories"
+                        <Link
+                          to="/Collections/Accessories"
                           className="arrow d-block w-100"
                         >
                           Accessories
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="/Edits">
+                        <Link className="d-block w-100" to="/Edits">
                           Edits
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           className="d-block  text-circular-couture-ligh w-100"
-                          href="/Collections/Resale"
+                          to="/Collections/Resale"
                         >
                           Resale
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="/Lender">
+                        <Link className="d-block w-100" to="/Lender">
                           Lenders
-                        </a>
+                        </Link>
                       </li>
                       <li className="devider" />
                       <li>
-                        <a className="d-block w-100" href="/HowToLend">
+                        <Link className="d-block w-100" to="/HowToLend">
                           How it works
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="/Sustainability">
+                        <Link className="d-block w-100" to="/Sustainability">
                           Sustainability
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a className="d-block w-100" href="/About">
+                        <Link className="d-block w-100" to="/About">
                           About Us
-                        </a>
+                        </Link>
                       </li>
                       <li className="devider" />
                       <li>
-                        <a
+                        <Link
                           data-dismiss="modal"
                           data-toggle="modal"
                           data-target="#signin-modal"
                           className="d-block w-100"
-                          href="#"
+                          to="#"
                         >
                           Sign In/Register
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -485,10 +468,10 @@ const TopHeader = () => {
                     className="closer"
                     data-action="click->mobile-nav#closeAllModals"
                   >
-                    {" "}
+
                     <span className="text-uppercase text-center close-text">
                       tap to close
-                    </span>{" "}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -510,30 +493,30 @@ const TopHeader = () => {
                       className="text-center menu-header position-relative"
                       data-dismiss="modal"
                       data-toggle="modal"
-                      data-target="#--mobile_nav_modal"
+                      data-target="#mobile_nav_modal"
                     >
                       Just In
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <a href="/collections/clothing">New clothing</a>
+                        <Link to="/collections/clothing">New clothing</Link>
                       </li>
                       <li>
-                        <a href="/collections/accessories">New accessories</a>
+                        <Link  to="/collections/accessories">New accessories</Link >
                       </li>
                       <li>
-                        <a href="/collections/shoes">New shoes</a>
+                        <Link  to="/collections/shoes">New shoes</Link >
                       </li>
                       <li>
-                        <a href="/collections/bags">New bags</a>
+                        <Link to="/collections/bags">New bags</Link >
                       </li>
                       <li>
-                        <a
+                        <Link 
                           className="with-border-bottom"
-                          href="/collections/new_arrivals"
+                          to="/collections/new_arrivals"
                         >
                           view all
-                        </a>
+                        </Link >
                       </li>
                     </ul>
                   </div>
@@ -541,10 +524,10 @@ const TopHeader = () => {
                     className="closer"
                     data-action="click->mobile-nav#closeAllModals"
                   >
-                    {" "}
+
                     <span className="text-uppercase text-center close-text">
                       tap to close
-                    </span>{" "}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -566,30 +549,30 @@ const TopHeader = () => {
                       className="text-center menu-header position-relative"
                       data-dismiss="modal"
                       data-toggle="modal"
-                      data-target="#--mobile_nav_modal"
+                      data-target="#mobile_nav_modal"
                     >
                       DRESSES
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <a href="/Collections/Dresses">ALL DRESSES</a>
+                        <Link to="/Collections/Dresses">ALL DRESSES</Link>
                       </li>
                       <li>
-                        <a href="/Collections/DressMini">MINI </a>
+                        <Link to="/Collections/DressMini">MINI </Link>
                       </li>
                       <li>
-                        <a href="/Collections/DressKneeLength">
+                        <Link to="/Collections/DressKneeLength">
                           KEE LENGTH
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/Collections/DressMidi">MIDI</a>
+                        <Link to="/Collections/DressMidi">MIDI</Link>
                       </li>
                       <li>
-                        <a href="/Collections/DressMaxi">MAXI</a>
+                        <Link to="/Collections/DressMaxi">MAXI</Link>
                       </li>
                       <li>
-                        <a href="/Collections/DressGowns">GOWNS</a>
+                        <Link to="/Collections/DressGowns">GOWNS</Link>
                       </li>
                     </ul>
                   </div>
@@ -597,10 +580,10 @@ const TopHeader = () => {
                     className="closer"
                     data-action="click->mobile-nav#closeAllModals"
                   >
-                    {" "}
+
                     <span className="text-uppercase text-center close-text">
                       tap to close
-                    </span>{" "}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -622,34 +605,34 @@ const TopHeader = () => {
                       className="text-center menu-header position-relative"
                       data-dismiss="modal"
                       data-toggle="modal"
-                      data-target="#--mobile_nav_modal"
+                      data-target="#mobile_nav_modal"
                     >
                       Clothings
                     </div>
                     <ul className="list-unstyled">
                       <li>
-                        <a href="/Collections/Clothing">ALL CLOTHING</a>
+                        <Link to="/Collections/Clothing">ALL CLOTHING</Link>
                       </li>
                       <li>
-                        <a href="/Collections/Dresses">DRESSES</a>
+                        <Link to="/Collections/Dresses">DRESSES</Link>
                       </li>
                       <li>
-                        <a href="/Collections/Tops">TOPS </a>
+                        <Link to="/Collections/Tops">TOPS </Link>
                       </li>
                       <li>
-                        <a href="/Collections/Skirts">SHIRTS</a>
+                        <Link to="/Collections/Skirts">SHIRTS</Link>
                       </li>
                       <li>
-                        <a href="/Collections/Trousers">TROUSERS</a>
+                        <Link to="/Collections/Trousers">TROUSERS</Link>
                       </li>
                       <li>
-                        <a href="/Collections/Sweaters">SWEATERS</a>
+                        <Link to="/Collections/Sweaters">SWEATERS</Link>
                       </li>
                       <li>
-                        <a href="/Collections/OuterWear">OUTERWEAR</a>
+                        <Link to="/Collections/OuterWear">OUTERWEAR</Link>
                       </li>
                       <li>
-                        <a href="/Collections/JumpSuit">JUMPSUITS</a>
+                        <Link to="/Collections/JumpSuit">JUMPSUITS</Link>
                       </li>
                       {/* <li><a class="with-border-bottom" href="/collections/clothing">view all</a></li> */}
                     </ul>
@@ -658,10 +641,10 @@ const TopHeader = () => {
                     className="closer"
                     data-action="click->mobile-nav#closeAllModals"
                   >
-                    {" "}
+
                     <span className="text-uppercase text-center close-text">
                       tap to close
-                    </span>{" "}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -676,7 +659,7 @@ const TopHeader = () => {
           >
             <div className="modal-dialog modal-dialog-centered">
               <div className="modal-content">
-                {" "}
+
                 <span
                   className="close-modal"
                   data-action="click->modal-component#hideModal"
@@ -690,13 +673,13 @@ const TopHeader = () => {
                 </span>
                 <h3 className="text-center">How Credit Works</h3>
                 <p>
-                  {" "}
+
                   Earn 5% of the total rental price as CIRCULAR COUTURE credit
                   on every successful rental. Successful rentals do not have a
                   fit guarantee or dispute resolution refund. Credits can be
                   applied at checkout on future rentals. Credits will be awarded
                   48 hours after the rental end date. No minimum spend applies
-                  but credits cannot be used in conjunction with coupon codes.{" "}
+                  but credits cannot be used in conjunction with coupon codes.
                 </p>
               </div>
             </div>
@@ -712,7 +695,7 @@ const TopHeader = () => {
             <div className="modal-dialog m-0 " role="document">
               <div className="modal-content rounded-0 border-0">
                 <div className="modal-body text-uppercase">
-                  {" "}
+
                   <span className="close-button" data-dismiss="modal">
                     <img
                       height={21}
@@ -765,7 +748,7 @@ const TopHeader = () => {
         </div>
         <div className="overlay-loading d-none">
           <div className="overlay-loading__inner">
-            {" "}
+
             <img
               loading="lazy"
               src="https://res.cloudinary.com/dcaptnlz3/image/asset/loader-gold-5f30b2355e5bda1b758dbf28e77079dc.gif"
@@ -795,18 +778,18 @@ const TopHeader = () => {
               <div className="modal-body text-center">
                 <h3>VERIFICATION PENDING</h3>
                 <p>
-                  {" "}
+
                   Thank you for submitting your ID. It can sometimes take a few
                   minutes to process so hang tight and you'll receive an email
-                  to confirm your verification.{" "}
-                </p>{" "}
-                <a
+                  to confirm your verification.
+                </p>
+                <Link
                   className="btn btn-primary -dark-red form-control"
                   data-dismiss="modal"
-                  href="#"
+                  to="#"
                 >
                   CLOSE
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -844,14 +827,14 @@ const TopHeader = () => {
                     data-action="click->sign-up-email-confirms#submitEmailSignUpForm"
                   >
                     YES, THAT IS CORRECT
-                  </button>{" "}
-                  <a
-                    href="#"
+                  </button>
+                  <Link
+                    to="#"
                     className="footer-link text-uppercase"
                     data-action="click->sign-up-email-confirms#backToTriggeringModalForm"
                   >
                     No, I need to change it
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -885,8 +868,8 @@ const TopHeader = () => {
                     data-dismiss="modal"
                     aria-label="Close"
                   >
-                    {" "}
-                    <span aria-hidden="true">X</span>{" "}
+
+                    <span aria-hidden="true">X</span>
                   </button>
                 </div>
                 <div className="modal-body pb-5">
@@ -895,21 +878,21 @@ const TopHeader = () => {
                       <div className="row">
                         <div className="col-5 offset-1 text-left">
                           <h5 className="modal-title text-uppercase">
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               data-dismiss="modal"
                               data-toggle="modal"
                               data-target="#signin-modal"
                             >
                               Sign In
-                            </a>
+                            </Link>
                           </h5>
                         </div>
                         <div className="col-5 text-right">
                           <h5 className="modal-title text-uppercase">
-                            <a href="#" className="active">
+                            <Link to="#" className="active">
                               Register
-                            </a>
+                            </Link>
                           </h5>
                         </div>
                         <div className="col-12">
@@ -969,8 +952,8 @@ const TopHeader = () => {
                                 className="fa-brands fa-google mr-2"
                                 data-oauth-links-target="icon"
                                 aria-hidden="true"
-                              />{" "}
-                              Register with Google{" "}
+                              />
+                              Register with Google
                             </button>
                           </form>
                         </div>
@@ -1031,8 +1014,8 @@ const TopHeader = () => {
                                 className="fa-brands fa-facebook-f mr-2"
                                 data-oauth-links-target="icon"
                                 aria-hidden="true"
-                              />{" "}
-                              Register with facebook{" "}
+                              />
+                              Register with facebook
                             </button>
                           </form>
                         </div>
@@ -1093,14 +1076,14 @@ const TopHeader = () => {
                                 className="fa-brands fa-apple mr-2"
                                 data-oauth-links-target="icon"
                                 aria-hidden="true"
-                              />{" "}
-                              Register with Apple{" "}
+                              />
+                              Register with Apple
                             </button>
                           </form>
                         </div>
                         <div className="col-lg-12">
-                          <a
-                            href="#"
+                          <Link
+                            to="#"
                             className="btn btn-primary -dark-red btn-block socials-link js-auth-button"
                             data-dismiss="modal"
                             data-toggle="modal"
@@ -1109,34 +1092,34 @@ const TopHeader = () => {
                             <i
                               className="fa-solid fa-envelope mr-2"
                               aria-hidden="true"
-                            />{" "}
-                            Register with email{" "}
-                          </a>
+                            />
+                            Register with email
+                          </Link>
                         </div>
                         <div className="col-lg-12">
                           <p className="text-center text-uppercase terms-text my-2">
-                            {" "}
+
                             By registering with a 3rd party,
-                            <br /> I accept{" "}
+                            <br /> I accept
                             <span className="circular-couture-font-logo">
                               CIRCULAR COUTURE
                             </span>
-                            's{" "}
-                            <a
-                              href="/TermsOfService"
+                            's
+                            <Link
+                              to="/TermsOfService"
                               target="_blank"
                               className="btn-circular-couture"
                             >
                               terms of service
-                            </a>{" "}
-                            and{" "}
-                            <a
-                              href="/CookiePolicy"
+                            </Link>
+                            and
+                            <Link
+                              to="/CookiePolicy"
                               target="_blank"
                               className="btn-circular-couture"
                             >
                               privacy policy
-                            </a>
+                            </Link>
                             .
                           </p>
                         </div>
@@ -1197,14 +1180,14 @@ const TopHeader = () => {
                           </form>
                         </div>
                         <div className="col-lg-12 text-uppercase text-center mt-4 desktop-hide">
-                          {" "}
-                          <a
-                            href="#"
+
+                          <Link
+                            to="#"
                             className="pb-1 footer-link "
                             data-dismiss="modal"
                           >
                             &lt; return
-                          </a>{" "}
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -1230,8 +1213,8 @@ const TopHeader = () => {
                     data-dismiss="modal"
                     aria-label="Close"
                   >
-                    {" "}
-                    <span aria-hidden="true">X</span>{" "}
+
+                    <span aria-hidden="true">X</span>
                   </button>
                 </div>
                 <div className="modal-body pb-5">
@@ -1240,21 +1223,21 @@ const TopHeader = () => {
                       <div className="row">
                         <div className="col-5 offset-1 text-left">
                           <h5 className="modal-title text-uppercase">
-                            <a href="#" className="active">
+                            <Link to="#" className="active">
                               Sign In
-                            </a>
+                            </Link>
                           </h5>
                         </div>
                         <div className="col-5 text-right">
                           <h5 className="modal-title text-uppercase">
-                            <a
-                              href="#"
+                            <Link
+                              to="#"
                               data-dismiss="modal"
                               data-toggle="modal"
                               data-target="#signup-modal"
                             >
                               Register
-                            </a>
+                            </Link>
                           </h5>
                         </div>
                         <div className="col-12">
@@ -1314,8 +1297,8 @@ const TopHeader = () => {
                                 className="fa-brands fa-google mr-2"
                                 data-oauth-links-target="icon"
                                 aria-hidden="true"
-                              />{" "}
-                              Sign in with Google{" "}
+                              />
+                              Sign in with Google
                             </button>
                           </form>
                         </div>
@@ -1376,8 +1359,8 @@ const TopHeader = () => {
                                 className="fa-brands fa-facebook-f mr-2"
                                 data-oauth-links-target="icon"
                                 aria-hidden="true"
-                              />{" "}
-                              Sign in with facebook{" "}
+                              />
+                              Sign in with facebook
                             </button>
                           </form>
                         </div>
@@ -1438,15 +1421,15 @@ const TopHeader = () => {
                                 className="fa-brands fa-apple mr-2"
                                 data-oauth-links-target="icon"
                                 aria-hidden="true"
-                              />{" "}
-                              Sign in with Apple{" "}
+                              />
+                              Sign in with Apple
                             </button>
                           </form>
                         </div>
                         <div className="col-lg-12">
                           <p className="text-center text-uppercase or-separator mt-3 mb-0">
-                            {" "}
-                            or{" "}
+
+                            or
                           </p>
                         </div>
                         <div className="col-lg-12">
@@ -1481,7 +1464,7 @@ const TopHeader = () => {
                               id="redirect_info_token"
                               className="form-redirect-info-token-field"
                               autoComplete="off"
-                            />{" "}
+                            />
                             <span className="text-center text-uppercase terms-text mt-2 devise-modal-form__error mt-0 mb-1 text-left"></span>
                             <div className="form-group">
                               <label>Email*</label>
@@ -1527,7 +1510,7 @@ const TopHeader = () => {
                                     defaultValue={1}
                                     name="user[remember_me]"
                                     id="user_remember_me"
-                                  />{" "}
+                                  />
                                   Remember me
                                 </label>
                               </div>
@@ -1541,39 +1524,39 @@ const TopHeader = () => {
                               data-disable-with="signing in..."
                               data-target="sign-in.button"
                             /> */}
-                            <a href="/panel/dashboard"
+                            <Link to="/panel/dashboard"
                               className="btn btn-primary btn-block -dark-red mb-4 "
                               type="submit"
-                            >Sign In</a>
+                            >Sign In</Link>
                           </form>
                         </div>
                         <div className="col-lg-12 text-uppercase text-center">
-                          {" "}
-                          <a
-                            href="#"
+
+                          <Link
+                            to="#"
                             data-dismiss="modal"
                             data-toggle="modal"
                             data-target="#forgot_password_modal"
                             className="footer-link js-link-sign-in mobile-hide"
                           >
                             forgot your password?
-                          </a>{" "}
-                          <a
-                            href="#"
+                          </Link>
+                          <Link
+                            to="#"
                             data-dismiss="modal"
                             data-toggle="modal"
                             data-target="#forgot_password_modal"
                             className="btn btn-outline-primary btn-block -dark-red mb-4 js-link-sign-in desktop-hide"
                           >
                             forgot your password?
-                          </a>{" "}
-                          <a
-                            href="#"
+                          </Link>
+                          <Link
+                            to="#"
                             className="pb-1 footer-link desktop-hide"
                             data-dismiss="modal"
                           >
                             &lt; return
-                          </a>{" "}
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -1600,8 +1583,8 @@ const TopHeader = () => {
                     data-dismiss="modal"
                     aria-label="Close"
                   >
-                    {" "}
-                    <span aria-hidden="true">X</span>{" "}
+
+                    <span aria-hidden="true">X</span>
                   </button>
                 </div>
                 <div className="modal-body pb-5">
@@ -1615,9 +1598,9 @@ const TopHeader = () => {
                         </div>
                         <div className="col-12 text-right">
                           <p className="text-center or-separator px-2 mb-4">
-                            {" "}
+
                             Enter your email address and we'll send a link to
-                            reset your password.{" "}
+                            reset your password.
                           </p>
                         </div>
                         <div
@@ -1665,25 +1648,25 @@ const TopHeader = () => {
                           </form>
                         </div>
                         <div className="col-lg-12 text-uppercase text-center">
-                          {" "}
-                          <a
-                            href="#"
+
+                          <Link
+                            to="#"
                             data-dismiss="modal"
                             data-toggle="modal"
                             data-target="#signin-modal"
                             className="footer-link js-link-sign-in mobile-hide"
                           >
                             &lt; Back
-                          </a>{" "}
-                          <a
-                            href="#"
+                          </Link>
+                          <Link
+                            to="#"
                             data-dismiss="modal"
                             data-toggle="modal"
                             data-target="#signin-modal"
                             className="btn btn-outline-primary btn-block -dark-red mb-4 js-link-sign-in desktop-hide"
                           >
                             &lt; Back
-                          </a>{" "}
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -1711,8 +1694,8 @@ const TopHeader = () => {
                     data-dismiss="modal"
                     aria-label="Close"
                   >
-                    {" "}
-                    <span aria-hidden="true">X</span>{" "}
+
+                    <span aria-hidden="true">X</span>
                   </button>
                 </div>
                 <div className="modal-body pb-5">
@@ -1726,13 +1709,13 @@ const TopHeader = () => {
                         </div>
                         <div className="col-12 text-right mobile-hide">
                           <p className="text-center or-separator px-2 mb-4">
-                            {" "}
-                            Create your{" "}
+
+                            Create your
                             <span className="circular-couture-font-logo">
                               CIRCULAR COUTURE
-                            </span>{" "}
+                            </span>
                             account to join the collective, create wishlists and
-                            begin renting.{" "}
+                            begin renting.
                           </p>
                         </div>
                         <div
@@ -1763,7 +1746,7 @@ const TopHeader = () => {
                               className="g-recaptcha g-recaptcha-response "
                               defaultValue="03AFcWeA4enwYIIRAh07qB5n0PqMbPpFpWCmWUFVi19LqzlnxCblFHKSnTPw3ctW78wSCkczi5bEsyv9yoSTjkiIgnI8lhXoxZHXDmkhbIPNoTH9b0mR0gmX4LJlDUNiGm-lGHH1mMq2tm7gqyN3Igye4CHjBiNjcT9_ASwZKRvf_lwnW9NNGbrcavN56NyapTjzQA0ziUGXTFg80LpJAJ_1wXle4W_xsN_X8XQPHhAgRtq7URX5I5E0MoCIFKLbNKxOHAvh62-u5AAYNhrPBlAO4VKfk11hGRIJ3eE1ICwrpyB4_LeKk1q_g_wWAH9t45cUUnRtLciOrMrs09eb7S-zOh9vwNYr7gJY4dc81n7D4JJ0B7_nd4ZdhkRbVg7oB3lleXHtnmCDHDuUBQeq4Pn8jAagHspm5sr8Ig1VLgf9vnK8KUO3Q84vGhmhT5876mH4VcLwNho-2h_hp4gMBgkaXA8YA5k13-aqXlf7gY8DnMJGkMcKzkCUPLWui9BqpB0335Qhn6E7ocJ-XNHt1JXm1V0wv_CsRFnBqO0hvTtStdpN3iH_-O-So"
                               style={{}}
-                            />{" "}
+                            />
                             <span className="text-uppercase terms-text devise-modal-form__error" />
                             <input
                               type="hidden"
@@ -1855,7 +1838,7 @@ const TopHeader = () => {
                               </div>
                               <div className="col-12">
                                 <p className="text-center text-uppercase terms-text">
-                                  {" "}
+
                                   Your password must be over 8 characters long
                                   and include at least 1 upper-case letter, 1
                                   lower-case letter, 1 number and 1 special
@@ -1880,9 +1863,9 @@ const TopHeader = () => {
                                       type="checkbox"
                                       defaultValue={1}
                                       name="user[agreed_to_terms_of_service_and_policies]"
-                                    />{" "}
+                                    />
                                     I agree to terms of service and privacy
-                                    policy.{" "}
+                                    policy.
                                   </label>
                                 </div>
                                 <div className="form-check p-0 text-left custom-checkout-wrapper remember-me mt-1">
@@ -1902,9 +1885,9 @@ const TopHeader = () => {
                                       type="checkbox"
                                       defaultValue={1}
                                       name="user[agreed_to_receive_marketing_emails]"
-                                    />{" "}
+                                    />
                                     I agree to receive marketing emails from
-                                    circular-couture.{" "}
+                                    circular-couture.
                                   </label>
                                 </div>
                               </div>
@@ -1931,32 +1914,32 @@ const TopHeader = () => {
                           </form>
                         </div>
                         <div className="col-lg-12 text-uppercase text-center">
-                          {" "}
-                          <a
-                            href="#"
+
+                          <Link
+                            to="#"
                             data-dismiss="modal"
                             data-toggle="modal"
                             data-target="#signup-modal"
                             className="footer-link js-link-sign-in mobile-hide"
                           >
                             &lt; Back
-                          </a>{" "}
-                          <a
-                            href="#"
+                          </Link>
+                          <Link
+                            to="#"
                             data-dismiss="modal"
                             data-toggle="modal"
                             data-target="#signup-modal"
                             className="btn btn-outline-primary btn-block -dark-red mb-4 js-link-sign-in desktop-hide"
                           >
                             &lt; Back
-                          </a>{" "}
-                          <a
-                            href="#"
+                          </Link>
+                          <Link
+                            to="#"
                             className="pb-1 footer-link desktop-hide"
                             data-dismiss="modal"
                           >
                             &lt; return
-                          </a>{" "}
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -1974,7 +1957,7 @@ const TopHeader = () => {
           data-heap--add-user-custom-properties-logged-in-user-value="false"
           data-heap--add-user-custom-properties-current-user-id-value=""
         >
-          {" "}
+
         </div>
         <div
           id="how-credit-works-modal"
@@ -1984,7 +1967,7 @@ const TopHeader = () => {
         >
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
-              {" "}
+
               <span
                 className="close-modal"
                 data-action="click->modal-component#hideModal"
@@ -1998,13 +1981,13 @@ const TopHeader = () => {
               </span>
               <h3 className="text-center">How Credit Works</h3>
               <p>
-                {" "}
+
                 Earn 5% of the total rental price as CIRCULAR COUTURE credit on
                 every successful rental. Successful rentals do not have a fit
                 guarantee or dispute resolution refund. Credits can be applied
                 at checkout on future rentals. Credits will be awarded 48 hours
                 after the rental end date. No minimum spend applies but credits
-                cannot be used in conjunction with coupon codes.{" "}
+                cannot be used in conjunction with coupon codes.
               </p>
             </div>
           </div>
@@ -2018,10 +2001,10 @@ const TopHeader = () => {
           aria-labelledby="exampleModalCenterTitle"
         >
           <div className="modal-dialog modal-dialog-centered" role="document">
-            {" "}
-            <span className="tap-to-close desktop-hide" data-dismiss="modal">
+
+            <button tabindex="0" class="close-modal" data-action="click->modal-component#hideModal">
               Tap to close
-            </span>
+            </button>
             <div className="modal-content rounded-0">
               <div className="modal-header border-bottom-0 pb-0">
                 <button
@@ -2030,8 +2013,8 @@ const TopHeader = () => {
                   data-dismiss="modal"
                   aria-label="Close"
                 >
-                  {" "}
-                  <span aria-hidden="true">X</span>{" "}
+
+                  <span aria-hidden="true">X</span>
                 </button>
               </div>
               <div className="modal-body pb-5 px-md-5 mx-sm-0 mx-md-4">

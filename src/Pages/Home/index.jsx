@@ -2,6 +2,7 @@ import React from "react";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
@@ -18,18 +19,18 @@ const Home = () => {
                   <h2 className="title">CIRCULAR COUTURE</h2>
                   <p className="description">Designer cloth with a purpose</p>
                   <div className="button-component">
-                    <a
+                    <Link
                       className="btn btn-primary -white rounded-0 text-uppercase header-btn"
-                      href="/HowToLend"
+                      to="/HowToLend"
                     >
                       RENT / BUY
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="btn btn-primary -white rounded-0 text-uppercase header-btn"
-                      href="/SellingOrRenting"
+                      to="/SellingOrRenting"
                     >
                       BUY / SELL
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -53,13 +54,13 @@ const Home = () => {
                   {/* Product Item 1 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="/ProductDetail">
+                      <Link to="/ProductDetail">
                         <img
                           src="/web-images/LIS_002 _ ZIMMERMANN ANNEKE RUFFLE MINI DRESS/LIS_002.1.jpg"
                           className="img-fluid"
                           alt="Product 1"
                         />
-                      </a>
+                      </Link>
                       <div className="product-description p-2">
                         <h5 className="d-flex align-items-center justify-content-between">
                           ZIMMERMANN
@@ -80,13 +81,13 @@ const Home = () => {
                   {/* Product Item 2 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="/ProductDetail">
+                      <Link to="/ProductDetail">
                         <img 
                           src="/web-images/LIS_003 _ Zimmermann Bells Paisley-print Linen Mini Dress/LIS_003.3.jpg"
                           className="img-fluid"
                           alt="Product 1" style={{background:"none"}}
                         />
-                      </a>
+                      </Link>
                       <div className="product-description p-2">
                         <h5 className="d-flex align-items-center justify-content-between">
                           Botega Venega
@@ -107,13 +108,13 @@ const Home = () => {
                   {/* Product Item 3 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="/ProductDetail">
+                      <Link to="/ProductDetail">
                         <img
                           src="/web-images/LIS_004 _ Missoni multi coloured dress/0D0A0720.jpg"
                           className="img-fluid"
                           alt="Product 1"
                         />
-                      </a>
+                      </Link>
                       <div className="product-description p-2">
                         <h5 className="d-flex align-items-center justify-content-between">
                           ZIMMERMANN
@@ -136,14 +137,14 @@ const Home = () => {
                   {/* Product Item 4 */}
                   <div className="carousel-item active">
                     <div className="product-item">
-                      <a href="/ProductDetail">
+                      <Link to="/ProductDetail">
                         {" "}
                         <img
                           src="/web-images/LIS_005 _ Zimmermann VERITY PANELLED LINEAR DRESS/1.jpeg"
                           className="img-fluid"
                           alt="Product 1"
                         />
-                      </a>
+                      </Link>
                       <div className="product-description p-2">
                         <h5 className="d-flex align-items-center justify-content-between">
                           ZIMMERMANN
@@ -186,12 +187,12 @@ const Home = () => {
                     </h2>
                     <p className="description">Our Future Depends On You</p>
                     <div className="button-component">
-                      <a
+                      <Link
                         className="btn  rounded-0 text-uppercase header-btn"
-                        href="/HowToLend"
+                        to="/HowToLend"
                       >
                         HOW IT WORKS
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -237,9 +238,9 @@ const Home = () => {
               </div>
               <div className="row text-center my-5 mx-auto d-flex align-items-center justify-content-center">
                 <div className="shop-all text-center">
-                  <a href="/Collections/NewArrival">
+                  <Link to="/Collections/NewArrival">
                     <button className="btn bg-light py-2 px-5">Shop All</button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -253,33 +254,33 @@ const Home = () => {
                   style={{ paddingLeft: "35rem !important" }}
                 >
                   <h4 className="title">AUTUMN '23</h4>
-                  <a href="/Collections/Resale">
+                  <Link to="/Collections/Resale">
                     <button className="btn bg-light text-dark">
                       VIEW COLLECTION
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="row d-flex justify-content-between gap-4 mt-3">
                 <div className="col px-0">
-                  <a href="#">
+                  <Link to="#">
                     <img
                       src="images/background-images/collage3.png"
                       alt=""
                       height={400}
                       width="100%"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="col px-0">
-                  <a href="#">
+                  <Link to="#">
                     <img
                       src="images/background-images/collage2.png"
                       alt=""
                       height={400}
                       width="100%"
                     />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
