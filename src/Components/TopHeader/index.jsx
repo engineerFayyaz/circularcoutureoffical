@@ -104,7 +104,7 @@ const TopHeader = () => {
             <div className="col-4 text-right">
               <turbo-frame id="mobile_header_bag_frame" />
 
-              <FontAwesomeIcon icon={faSearch} className="search-image" />
+              <FontAwesomeIcon icon={faSearch} className="search-image" style={{color:"black"}}/>
             </div>
           </div>
         </div>
