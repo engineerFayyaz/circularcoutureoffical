@@ -70,7 +70,13 @@ import Aje from "./Pages/Brands/Aje";
 import Alighieri from "./Pages/Brands/Alighieri";
 import AmandaUprichard from "./Pages/Brands/Amanda-Uprichard";
 import Amur from "./Pages/Brands/Amur";
-
+import Login from "./Pages/AdminPanel/Login";
+import AdminMainPage from "./Pages/AdminPanel/AdminMainPage";
+import AddProductsAdmin from "./Pages/AdminPanel/AddProductsAdmin";
+import AdminPrice from "./Pages/AdminPanel/AdminPrice";
+import CompleteAdmin from "./Pages/AdminPanel/CompleteAdmin";
+import ViewAdminProducts from "./Pages/AdminPanel/ViewAdminProducts";
+import AdminCategory from "./Pages/AdminPanel/AdminCategory";
 const ProjectRoutes =()=>{
     return(
     <React.Suspense fallback={<>Loading...</>}>
@@ -148,8 +154,15 @@ const ProjectRoutes =()=>{
         <Route path="/Refer-a-Friend" element={<ReferFriend />} /> 
         <Route path="/Press" element={<Press />} /> 
         <Route path="/FAQ" element={<FAQ />} /> 
-
-
+        {/* Admin routes  */}
+        <Route path="/AdminPanel/Login" element={<Login/>}/>
+        <Route path="/AdminPanel/AdminMainPage" element={<AdminMainPage/>}/>
+        <Route path="/AdminPanel/AddProductsAdmin" element={<AddProductsAdmin/>}/>
+        <Route path="/AdminPanel/AdminPrice" element={<AdminPrice/>}/>
+        <Route path="/AdminPanel/CompleteAdmin" element={<CompleteAdmin/>}/>
+        <Route path="/AdminPanel/ViewAdminProducts" element={<ViewAdminProducts/>}/>
+        <Route path="/AdminPanel/AdminCategory" element={<AdminCategory/>}/>
+        
         </Routes>
         </Router>
     </React.Suspense>

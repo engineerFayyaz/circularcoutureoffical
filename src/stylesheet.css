@@ -26650,9 +26650,9 @@ div.filter-bar select {
 }
 
 .hero-card .hero-1,
-.hero-card .hero-4 {
+/* .hero-card .hero-4 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url()
-}
+} */
 
 .hero-card .hero-1 {
     margin-bottom: 8px
@@ -26670,15 +26670,15 @@ div.filter-bar select {
 }
 
 .hero-card .hero-2,
-.hero-card .hero-5 {
+/* .hero-card .hero-5 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url()
-}
+} */
 
 .hero-card .hero-3,
-.hero-card .hero-6 {
+/* .hero-card .hero-6 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), transparent 60%), url();
     background-attachment: scroll, scroll
-}
+} */
 
 .hero-card .image-subtitle {
     line-height: 23px
@@ -59439,12 +59439,10 @@ button:focus {
         justify-content: center !important;
         padding-left: 0rem !important;
         padding-right: 0rem !important;
+    }
 
-        img {
-            width: 230px;
-
-        }
-
+    .contact-navbar .navbar img {
+        width: 230px;
     }
 
     .contact-main {
@@ -59459,53 +59457,45 @@ button:focus {
         padding-right: 0rem !important;
     }
 
-    .contact-main .contact-search .search {
-        i {
-            left: 1.4rem;
-            top: 0rem;
-            font-size: 15px;
-        }
+    .contact-main .contact-search .search i {
+        left: 1.4rem;
+        top: 0rem;
+        font-size: 15px;
+    }
 
-        input {
-
-            width: 230px;
-            padding: 3px;
-            padding-left: 2rem;
-        }
+    .contact-main .contact-search .search input {
+        width: 230px;
+        padding: 3px;
+        padding-left: 2rem;
     }
 
     .contact-main .contact-info {
         width: 100%;
         margin-top: 30px;
-        ;
 
-        form {
+        form input,
+        form select,
+        form textarea {
+            width: 90%;
+            padding: 5px;
+        }
 
-            input,
-            select,
-            textarea {
-                width: 90%;
-                padding: 5px;
-            }
+        form label {
+            line-height: 10px;
+            color: rgba(39, 39, 39, 0.849);
+        }
 
-            label {
-                line-height: 10px;
-                color: rgba(39, 39, 39, 0.849);
-            }
-
-            p {
-                font-size: 12.5px;
-                margin-top: 10px;
-            }
+        form p {
+            font-size: 12.5px;
+            margin-top: 10px;
         }
     }
-    .faq-main .single-banner{
-        input{
-            width: 350px;
-        }
-    } 
-    .promoted-articles-item{
+
+    .faq-main .single-banner input {
+        width: 350px;
+    }
+
+    .promoted-articles-item {
         width: 100% !important;
     }
-
 }

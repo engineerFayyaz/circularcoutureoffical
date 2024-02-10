@@ -1,0 +1,601 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+
+
+.camera-div {
+    list-style: none;
+}
+
+.navbar-admin {
+    background-color: rgb(61, 58, 58);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.navbar-brand-admin {
+    color: white !important;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: sans-serif;
+    width: 14%;
+}
+
+.navbar-brand-admin img {
+    vertical-align: text-top;
+    margin-right: -12px;
+}
+
+.navbar-brand-admin:hover {
+    color: #FCC810;
+    border: none !important;
+}
+
+.search-icon {
+    width: 20%;
+    float: left;
+}
+
+.main-nav-brand-admin {
+    width: 70%;
+    float: left;
+}
+
+.main-nav-brand-admin input {
+    padding: 10px;
+    border-radius: 25px;
+    width: 60%;
+    background-color: #D9D9D9B8;
+    border: none;
+    color: white;
+}
+
+.main-nav-brand-admin img {
+    position: relative;
+    right: 35px;
+}
+
+
+
+.dropdown-item i {
+    margin-right: 12px;
+}
+
+.navbar-nav {
+    margin-left: 20px;
+}
+
+.navbar-brand-admin {
+    color: #FCC810;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.navbar-brand-admin img {
+    vertical-align: text-top;
+    margin-right: -12px;
+}
+
+.navbar-brand-admin:hover {
+    color: #FCC810;
+}
+
+.navbar-admin .create-btn {
+    background: #FCC810;
+    color: black;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 3px 5px;
+}
+
+.navbar-admin .create-btn:focus {
+    background: #FCC810;
+}
+
+.navbar-admin .create-btn i {
+    margin-left: 15px;
+    color: #100B43;
+    background: white;
+    padding: 6px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.navbar-admin .chat-link-item {
+    margin-left: 25px;
+}
+
+.navbar-admin .chat-link-item a {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.navbar-admin .chat-link-item a span {
+    color: red;
+}
+
+.notifications i,
+.call i,
+.lines i {
+    padding: 10px 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.notifications i {
+    color: #FCC810;
+}
+
+.notifications {
+    margin-right: 10px;
+}
+
+.navbar-admin .user {
+    background: white;
+    align-items: center;
+    border-radius: 30px;
+    padding: 6px 12px;
+    padding-right: 30px;
+    gap: 10px;
+}
+
+.side-dashboard {
+    background: #110C46;
+    height: 90vh;
+}
+
+.side-dashboard label {
+    color: #ffff;
+}
+
+.side-dashboard .bg-color-dashboard-text {
+    background-color: #0C6376;
+    margin-left: 2px;
+    border-radius: 4px;
+
+}
+
+.bg-color-dashboard-text img {
+    margin-left: 10px;
+}
+
+.cheelbase-universe-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    background-color: #0C6376;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.admin-background-color {
+    background-color: #137388;
+    border-radius: 10px;
+}
+
+.boxes {
+    background-color: #FFFFFF;
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.img-bg img {
+    background-color: #0C637659;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.boxes label {
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.full-background-color {
+    background-color: #110C46 !important;
+    height: 100vh;
+}
+
+/* Add Product */
+.custom-file-input-admin {
+    position: relative;
+}
+
+.custom-file-container-admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 230px;
+    border: 2px solid greenyellow;
+    margin-top: 20px;
+}
+
+.custom-file-icon-admin {
+    margin-right: 10px;
+    /* Adjust the spacing */
+}
+
+/* Style the file input text */
+.custom-file-text-admin {
+    color: #333;
+    /* Set the text color */
+}
+
+span {
+    font-size: 17px !important;
+    font-weight: 500;
+
+}
+
+.order-page-admin ol li button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    width: 110px;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+.order-page-admin ol li button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.custom-file-icon-admin i {
+    color: black;
+}
+
+.move-step-admin {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    width: 150px;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.move-step-admin:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* price product */
+.input-number-admin input {
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.input-number-admin label {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* button  */
+.checkbox-apple {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    margin: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox-apple label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkbox-apple label:after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.checkbox-apple input[type="checkbox"]:checked+label {
+    background: linear-gradient(to bottom, gray, gray);
+}
+
+.checkbox-apple input[type="checkbox"]:checked+label:after {
+    transform: translateX(25px);
+}
+
+.checkbox-apple label:hover {
+    background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+}
+
+.checkbox-apple label:hover:after {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.yep {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 25px;
+}
+
+.size-price {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.size-price span b {
+    font-size: 17px;
+    /* font-weight: 500; */
+    font-family: sans-serif;
+    margin: 0px 30px 0px 0px;
+}
+
+.size-price1 {
+    width: 100%;
+    float: left;
+}
+
+.size-price1 span {
+    width: 13%;
+    float: left;
+
+}
+
+.size-price input {
+    width: 90%;
+    float: left;
+
+}
+
+.number-type {
+    padding: 5px;
+    width: 80%;
+    border-radius: 7px;
+}
+
+/* view product */
+.section-price-admin {
+    border: 1px solid white;
+    margin-top: 17px;
+    margin: 10px;
+    padding: 8px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.section-price-admin span {
+    font-size: 13px !important;
+}
+
+/* image _ category */
+.custom-file-wrapper-admin {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin-bottom: 0;
+}
+
+/* .custom-file-input-field {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    margin: 0;
+    opacity: 0;
+} */
+
+.custom-file-input-label-admin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.category-btn:hover {
+    background-color: gray;
+    color: #100B43;
+}
+
+/* edit page */
+.container-admin {
+    /* max-width: 600px; */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group-admin {
+    margin-bottom: 20px;
+}
+
+/* login page  */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+}
+
+.form:hover {
+    transform: scale(1.05);
+    border: 1px solid black;
+}
+
+#heading {
+    text-align: center;
+    margin: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+}
+
+.form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2.5em;
+}
+
+.button1 {
+    padding: 0.5em;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+.button2 {
+    padding: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+}
+
+.button3 {
+    margin-bottom: 3em;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    background-color: #252525;
+    color: white;
+}
+
+.button3:hover {
+    background-color: red;
+    color: white;
+}
+
+.login-btn-top {
+    padding: 9px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid white;
+    color: wheat;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.Category-admin {
+    width: 100%;
+    float: left;
+}
+.brand-admin{
+    width: 50%;
+    float: left;
+}
+.brand-admin input{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 5px;
+}
