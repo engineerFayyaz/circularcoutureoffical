@@ -1,114 +1,114 @@
-import React from "react";
+import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import AdminHeader from "../../Components/AdminHeader";
 import AdminSideHeader from "../../Components/AdminSideHeader";
-import "../../css/admin-header.css"
+import "../../css/admin-header.css";
 
-const AdminCategory=()=>{
-    return(
-        <>
-        <AdminHeader/>
-        <main>
-  <div className="container-fluid">
-    <div
-      className="row  text-light "
-      style={{ backgroundColor: "black", color: "white" }}
-    >
-        <AdminSideHeader/>
-      <div className="col-lg-10 ">
-        <h2 className="text-center text-light">Create Product Category</h2>
-        <hr />
-        <form className="">
-          <div className="row mt-2">
-            {/* Category Name */}
-            <div className="form-group-admin col-lg-6 ">
-              <label htmlFor="categoryName">Category Name:</label>
-              <input
-                type="text"
-                className="form-control"
-                id="categoryName"
-                placeholder="Enter category name"
-              />
-            </div>
-            {/* Parent Category */}
-            <div className="form-group-admin col-lg-6">
-              <label htmlFor="parentCategory">Parent Category:</label>
-              <select className="form-control" id="parentCategory">
-                <option>Select parent category</option>
-                {/* Populate options dynamically if applicable */}
-              </select>
-            </div>
-          </div>
-          <div className="row mt-4">
-            {/* Category Image */}
-            <div className="form-group-admin col-lg-6 ">
-              <label htmlFor="categoryImage">Category Image:</label>
-              <div className="custom-file-wrapper-admin text-light" style={{backgroundColor:"white"}}>
-                <input 
-                  type="file" 
-                  className="custom-file-input-field"
-                  id="categoryImage"
-                />
-                <label
-                  className="custom-file-input-label"
-                  htmlFor="categoryImage"
-                >
-                  Choose file
-                </label>
-              </div>
-            </div>
-            {/* Category Slug/URL */}
-            <div className="form-group-admin col-lg-6">
-              <label htmlFor="categorySlug">Category Slug/URL:</label>
-              <input
-                type="text"
-                className="form-control"
-                id="categorySlug"
-                placeholder="Enter category slug/URL"
-              />
-            </div>
-          </div>
-          <div className="row mt-4">
-            {/* Visibility */}
-            <div className="form-group-admin col-lg-6">
-              <label htmlFor="visibility">Visibility:</label>
-              <select className="form-control" id="visibility">
-                <option value="visible">Visible</option>
-                <option value="hidden">Hidden</option>
-              </select>
-            </div>
-            {/* Status */}
-            <div className="form-group-admin col-lg-6">
-              <label htmlFor="status">Status:</label>
-              <select className="form-control" id="status">
-                <option value="active">Active</option>
-                <option value="inactive">Inactive</option>
-              </select>
-            </div>
-            {/* Category Description */}
-            <div className="form-group-admin col-lg-12 mt-4">
-              <label htmlFor="categoryDescription">Category Description:</label>
-              <textarea
-                className="form-control"
-                id="categoryDescription"
-                rows={3}
-                placeholder="Enter category description"
-                defaultValue={""}
-              />
-            </div>
-          </div>
-          {/* Submit Button */}
-          <div className="form-group-admin col-lg-12 text-center mt-4 mb-3">
-            <button type="submit" className="btn btn-light category-btn">
-              Create Category
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</main>
+const AdminCategory = () => {
+  const [categoryData, setCategoryData] = useState({
+    type: "string",
+    deleted: true,
+    createdDate: "2024-02-11T11:56:10.388Z",
+    modifiedDate: "2024-02-11T11:56:10.388Z",
+    deletedDate: "2024-02-11T11:56:10.388Z",
+    deletedBy: 0,
+    modifiedBy: 0,
+    createdBy: 0,
+  });
 
-        </>
-    )
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("https://localhost:7220/api/product-categories", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(categoryData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("An issue occurred");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Success:", data);
+        toast.success("Category created successfully");
+        // Handle success, maybe show a success message or redirect
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        toast.error("Sorry, an issue occurred");
+        // Handle errors, maybe show an error message
+      });
+  };
+
+  const handleChange = (event) => {
+    const { id, value } = event.target;
+    setCategoryData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  return (
+    <>
+      <AdminHeader />
+      <main>
+        <div className="container-fluid">
+          <div
+            className="row  text-light "
+            style={{ backgroundColor: "black", color: "white" }}
+          >
+            <AdminSideHeader />
+            <div className="col-lg-10 ">
+              <h2 className="text-center text-light">Create Product Category</h2>
+              <hr />
+              <form onSubmit={handleSubmit}>
+                <div className="row mt-2">
+                  {/* Type */}
+                  <div className="form-group-admin col-lg-6 ">
+                    <label htmlFor="type">Type:</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="type"
+                      placeholder="Enter type"
+                      value={categoryData.type}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  {/* Deleted */}
+                  <div className="form-group-admin col-lg-6">
+                    <label htmlFor="deleted">Deleted:</label>
+                    <input
+                      type="checkbox"
+                      className="form-control"
+                      id="deleted"
+                      checked={categoryData.deleted}
+                      onChange={() =>
+                        setCategoryData((prevData) => ({
+                          ...prevData,
+                          deleted: !prevData.deleted,
+                        }))
+                      }
+                    />
+                  </div>
+                </div>
+                {/* Additional fields can be added similarly */}
+                <div className="form-group-admin col-lg-12 text-center mt-4 mb-3">
+                  <button type="submit" className="btn btn-light category-btn">
+                    Create Category
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <ToastContainer />
+    </>
+  );
 };
 export default AdminCategory;

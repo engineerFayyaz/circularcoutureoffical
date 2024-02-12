@@ -114,8 +114,8 @@ const TopHeader = () => {
         >
           <div className="row no-gutters fixed-container p-0 py-3 flex-nowrap">
             <div className="links-wrapper text-uppercase">
-              <div className="" />
-              <div className="col-12 row no-gutters p-0 justify-content-around align-items-center mr-3">
+             
+              <div className="top-header-width-set-main col-12 row no-gutters p-0 justify-content-around align-items-center mr-3">
                 <Link
                   to="/Collections/NewArrival" // Specify the target URL
                   className="nav-link with-mega-menu-content"
@@ -174,7 +174,7 @@ const TopHeader = () => {
                 <Link
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
-                  className="nav-link"
+                                  className="nav-link List-By-Wardrobe"
                   to="/ListItems/ListStepOne"
                 >
                   List By Wardrobe

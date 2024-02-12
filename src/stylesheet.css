@@ -190,6 +190,20 @@ a:not([href]):not([tabindex]) {
     text-decoration: none
 }
 
+    /*header-width*/
+    .top-header-width-set-main a{
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+
+    }
+.List-By-Wardrobe {
+    width: 19% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 a:not([href]):not([tabindex]):hover,
 a:not([href]):not([tabindex]):focus {
     color: inherit;

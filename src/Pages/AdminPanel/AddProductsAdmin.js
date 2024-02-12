@@ -1,304 +1,304 @@
-import React from "react";
+import React, { useState } from "react";
 import AdminHeader from "../../Components/AdminHeader";
 import AdminSideHeader from "../../Components/AdminSideHeader";
 import "../../css/admin-header.css";
-import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const AddProductsAdmin = () => {
-  return (
-    <>
-      <AdminHeader />
-      <main>
-        <div className="container-fluid">
-          <div
-            className="row  text-light "
-            style={{ backgroundColor: "black", color: "white" }}
-          >
-            <AdminSideHeader />
-            <div className="col-lg-5 mt-4">
-              <div className="row">
-                <div className=" row order-page-admin">
-                  <ol
-                    className="d-flex flex-row justify-content-between"
-                    style={{ gap: "30px" }}
-                  >
-                    <li>
-                      <Link to="/AdminPanel/AddProductsAdmin">
-                        <button> ITEM </button>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/AdminPanel/AdminPrice">
-                        {" "}
-                        <button> Price</button>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/AdminPanel/CompleteAdmin">
-                        <button> Complete</button>
-                      </Link>
-                    </li>
-                  </ol>
-                </div>
+    const [formData, setFormData] = useState({
+        category: "",
+        brand: "",
+        Name: "", // Changed itemName to Name
+        size: "",
+        color: "",
+        condition: "",
+        sellPrice: "",
+        rentPrice4Days: "",
+        rentPrice8Days: "",
+        rentPrice16Days: "",
+        rentPrice30Days: "",
+        rrp: "", // Added rrp field
+        code: "", // Added code field
+        details: "" // Added details field
+    });
 
-                <div className="row">
-                  <h5  style={{marginLeft:"15px"}}>
-                    <b>PRODUCT INFORMATION</b>
-                  </h5>
-                  <hr />
-                  <div className="col-lg-6 brand-admin">
-                    <label htmlFor="" className="form-label">
-                      <b>Category*</b>
-                    </label>
-                    <br />
-                    <select
-                      className="form-select "
-                      name=""
-                      id=""
-                      style={{
-                        width: "197px",
-                        padding: "6px",
-                        marginTop: "10px",
-                      }}
-                    >
-                      <option selected="">Dresses</option>
-                      <option value="">TOPS</option>
-                      <option value="">BOTTOMS</option>
-                      <option value="">Jakarta</option>
-                    </select>
-                  </div>
-                </div>
+    const [selectedImages, setSelectedImages] = useState([]);
 
-                <div className="row" style={{ marginTop: "10px" }}>
-                  <div className="col-lg-6 brand-admin">
-                    <h5>
-                      <span>
-                        <b>Brand*</b>
-                      </span>
-                    </h5>
-                    <input type="text" defaultValue="" />
-                  </div>
-                  <div className="col-lg-6 brand-admin">
-                    <h5>
-                      <span>
-                        <b>Item Name*</b>
-                      </span>
-                    </h5>
-                    <input type="text" defaultValue="" />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className="mb-3 mt-3 Category-admin">
-                      <label htmlFor="" className="form-label">
-                        <b>Size*</b>
-                      </label>
-                      <br />
-                      <select
-                        className="form-select "
-                        name=""
-                        id=""
-                        style={{
-                          width: "197px",
-                          padding: "6px",
-                          marginTop: "10px",
-                        }}
-                      >
-                        <option selected="">ONE-SIZE</option>
-                        <option value="">TWO-SIZE</option>
-                        <option value="">THREE-SIZE</option>
-                        <option value="">FOURE-SIZE</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="mb-3 mt-3 Category-admin">
-                      <label htmlFor="" className="form-label">
-                        <b>Colour*</b>
-                      </label>
-                      <br />
-                      <select
-                        className="form-select "
-                        name=""
-                        id=""
-                        style={{
-                          width: "197px",
-                          padding: "6px",
-                          marginTop: "10px",
-                        }}
-                      >
-                        <option selected="">BLACK</option>
-                        <option value="">WHITE</option>
-                        <option value="">BLUE</option>
-                        <option value="">GREEN</option>
-                        <option value="">RED</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="row "
-                  style={{ display: "flex", flexDirection: "column" }}
-                >
-                  <div className="col-lg-12">
-                    <h5>
-                      <b>Item Description*</b>
-                    </h5>
-                    
-                    <textarea style={{width:"427px"}}
-                      name=""
-                      id=""
-                      cols={40}
-                      rows={4}
-                     
-                    />
-                  </div>
-                </div>
-                <br />
-                <div
-                  className="row "
-                  style={{ display: "flex", flexDirection: "column" }}
-                >
-                  <div className="col-lg-12">
-                    <h5>
-                      <b>Fit Note*</b>
-                    </h5>
-                    <textarea style={{width:"427px"}}
-                      name=""
-                      id=""
-                      cols={40}
-                      rows={4}
-                     
-                    />
-                  </div>
-                </div>
-              </div>
-              <Link to="/AdminPanel/AdminPrice">
-                <button className="move-step-admin mb-3 mt-3">Next Step</button>
-              </Link>
-            </div>
-            <div className="col-lg-5 mt-4">
-              <span>
-                <b>UPLOAD PHOTOS* </b>
-              </span>
-              <h6>
-                Please upload at least 3 photos showing the item's condition.
-              </h6>
-              <div className="row mt-4">
-                <div className="col-lg-4">
-                  <span>
-                    <b>MAIN PHOTO*</b>
-                  </span>
-                  <label
-                    htmlFor="fileInput"
-                    className="custom-file-input-admin"
-                  >
-                    <div className="custom-file-container-admin">
-                      <div className="custom-file-icon-admin">
-                        <i className="fas fa-upload" />
-                      </div>
-                      <div className="custom-file-text-admin">Upload Image</div>
-                    </div>
-                    <input
-                      type="file"
-                      id="fileInput"
-                      accept="image/*"
-                      style={{ display: "none" }}
-                    />
-                  </label>
-                </div>
-                <div className="col-lg-4">
-                  <span>
-                    <b>2ND PHOTO*</b>
-                  </span>
-                  <label
-                    htmlFor="fileInput"
-                    className="custom-file-input-admin"
-                  >
-                    <div className="custom-file-container-admin">
-                      <div className="custom-file-icon-admin">
-                        <i className="fas fa-upload" />
-                      </div>
-                      <div className="custom-file-text-admin">Upload Image</div>
-                    </div>
-                    <input
-                      type="file"
-                      id="fileInput"
-                      accept="image/*"
-                      style={{ display: "none" }}
-                    />
-                  </label>
-                </div>
-                <div className="col-lg-4">
-                  <span>
-                    <b>3RD PHOTO*</b>
-                  </span>
-                  <label
-                    htmlFor="fileInput"
-                    className="custom-file-input-admin"
-                  >
-                    <div className="custom-file-container-admin">
-                      <div className="custom-file-icon-admin">
-                        <i className="fas fa-upload " />
-                      </div>
-                      <div className="custom-file-text-admin">Upload Image</div>
-                    </div>
-                    <input
-                      type="file"
-                      id="fileInput"
-                      accept="image/*"
-                      style={{ display: "none" }}
-                    />
-                  </label>
-                </div>
-              </div>
-              <div className="row mt-5">
-                <div
-                  className="d-flex justify-content-between"
-                  id="additionalPhotosSection"
-                  style={{ cursor: "pointer" }}
-                >
-                  <span>
-                    <b>ADDITIONAL PHOTOS</b>
-                  </span>
-                  <i
-                    id="additionalPhotosIcon"
-                    className="fas fa-chevron-down"
-                  />
-                </div>
-                <div
-                  className="row"
-                  id="additionalPhotosContent"
-                  style={{ display: "none" }}
-                >
-                  <div className=" col-lg-4">
-                    <label
-                      htmlFor="fileInput1"
-                      className="custom-file-input-admin"
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleImageChange = (e) => {
+        const files = e.target.files;
+        setSelectedImages(Array.from(files));
+    };
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const images = selectedImages.map((image) => ({
+                name: image.name,
+                url: URL.createObjectURL(image)
+            }));
+
+            const requestData = {
+                ...formData,
+                ProductImages: images, // Changed Images to ProductImages
+            };
+
+            const response = await fetch("https://localhost:7220/api/products", {
+                method: "POST",
+                body: JSON.stringify(requestData),
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
+
+            if (!response.ok) {
+                throw new Error("Error adding product");
+            }
+
+            const data = await response.json();
+            console.log("Product added successfully:", data);
+            toast.success("Product added successfully");
+        } catch (error) {
+            console.error("Error adding product:", error);
+            toast.error("Error adding product");
+        }
+    };
+
+
+    return (
+        <>
+            <AdminHeader />
+            <main>
+                <div className="container-fluid">
+                    <div
+                        className="row  text-light "
+                        style={{ backgroundColor: "black", color: "white" }}
                     >
-                      <div className="custom-file-container-admin">
-                        <div className="custom-file-icon-admin">
-                          <i className="fas fa-upload" />
+                        <AdminSideHeader />
+                        <div className="col-lg-5 mt-4">
+                            <div className="row order-page-admin">
+                                {/* Form */}
+                                <form onSubmit={handleSubmit}>
+                                    {/* Rest of the form fields */}
+                                    {/* Category */}
+                                    <div className="mb-3 mt-3 Category-admin">
+                                        <label htmlFor="category" className="form-label">
+                                            <b>Category*</b>
+                                        </label>
+                                        <br />
+                                        <input
+                                            type="text"
+                                            name="category"
+                                            value={formData.category}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Brand */}
+                                    <div className="mb-3 mt-3 brand-admin">
+                                        <h5>
+                                            <span>
+                                                <b>Brand*</b>
+                                            </span>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="brand"
+                                            value={formData.brand}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Item Name */}
+                                    <div className="mb-3 mt-3 brand-admin">
+                                        <h5>
+                                            <span>
+                                                <b>Item Name*</b>
+                                            </span>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="Name" // Changed itemName to Name
+                                            value={formData.Name} // Changed itemName to Name
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Size */}
+                                    <div className="mb-3 mt-3 Category-admin">
+                                        <label htmlFor="size" className="form-label">
+                                            <b>Size*</b>
+                                        </label>
+                                        <br />
+                                        <input
+                                            type="text"
+                                            name="size"
+                                            value={formData.size}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Color */}
+                                    <div className="mb-3 mt-3 Category-admin">
+                                        <label htmlFor="color" className="form-label">
+                                            <b>Colour*</b>
+                                        </label>
+                                        <br />
+                                        <input
+                                            type="text"
+                                            name="color"
+                                            value={formData.color}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Condition */}
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Condition*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="condition"
+                                            value={formData.condition}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Sell Price */}
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Sell Price*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="sellPrice"
+                                            value={formData.sellPrice}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Rent Prices */}
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Rent Price 4 Days*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="rentPrice4Days"
+                                            value={formData.rentPrice4Days}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Rent Price 8 Days*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="rentPrice8Days"
+                                            value={formData.rentPrice8Days}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Rent Price 16 Days*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="rentPrice16Days"
+                                            value={formData.rentPrice16Days}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Rent Price 30 Days*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="rentPrice30Days"
+                                            value={formData.rentPrice30Days}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Additional Fields */}
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>RRP*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="rrp"
+                                            value={formData.rrp}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Code*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="code"
+                                            value={formData.code}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="mb-3 mt-3">
+                                        <h5>
+                                            <b>Details*</b>
+                                        </h5>
+                                        <input
+                                            type="text"
+                                            name="details"
+                                            value={formData.details}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    {/* Image Upload */}
+                                    <div className="mb-3 mt-3 Category-admin">
+                                        <label htmlFor="image" className="form-label">
+                                            <b>Images*</b>
+                                        </label>
+                                        <br />
+                                        <input
+                                            type="file"
+                                            name="image"
+                                            id="image"
+                                            accept="image/*"
+                                            multiple
+                                            onChange={handleImageChange}
+                                        />
+                                        <div>
+                                            {selectedImages &&
+                                                Array.from(selectedImages).map((image, index) => (
+                                                    <img
+                                                        key={index}
+                                                        src={URL.createObjectURL(image)}
+                                                        alt={`Product Image ${index + 1}`}
+                                                        style={{ width: "100px", height: "100px", margin: "5px" }}
+                                                    />
+                                                ))}
+                                        </div>
+                                    </div>
+                                    {/* Submit button */}
+                                    <button
+                                        type="submit"
+                                        className="move-step-admin mb-3 mt-3"
+                                    >
+                                        Submit
+                                    </button>
+                                </form>
+                            </div>
                         </div>
-                        <div className="custom-file-text-admin">
-                          Upload Image
-                        </div>
-                      </div>
-                      <input
-                        type="file"
-                        id="fileInput1"
-                        accept="image/*"
-                        style={{ display: "none" }}
-                      />
-                    </label>
-                  </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </>
-  );
+            </main>
+        </>
+    );
 };
+
 export default AddProductsAdmin;
