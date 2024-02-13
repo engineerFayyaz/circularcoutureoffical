@@ -82,100 +82,102 @@ import ForgotPassword from "./Pages/ForgotPassword";
 import Sigin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
 import RegisterWithEmail from "./Pages/RegisterWithEmail";
-const ProjectRoutes =()=>{
-    return(
-    <React.Suspense fallback={<>Loading...</>}>
-        <Router>
-        <Routes>
-        {/* <Route path="" element={<Home />} />   */}
-        <Route path="/" element={<Home />} />  
-        <Route path="/Collections/NewArrival" element={<NewArrival/>}/>     
-        <Route path="/Collections/Accessories" element={<Accessories/>} />       
-        <Route path="/Collections/Clothing" element={<CLothing/>} /> 
-        <Route path="/Collections/DressGowns" element={<DressGowns/>} /> 
-        <Route path="/Collections/DressKneeLength" element={<DressKneeLength/>} /> 
-        <Route path="/Collections/DressMaxi" element={<DressMaxi/>} /> 
-        <Route path="/Collections/DressMini" element={<DressMini/>} /> 
-        <Route path="/Collections/DressMidi" element={<DressMidi/>} /> 
-        <Route path="/Collections/Dresses" element={<Dresses/>} /> 
-        <Route path="/Collections/JumpSuit" element={<JumpSuit/>} /> 
-        <Route path="/Collections/OuterWear" element={<OuterWear/>} /> 
-        <Route path="/Collections/Resale" element={<Resale/>} /> 
-        <Route path="/Collections/Shirts" element={<Shirts/>} /> 
-        <Route path="/Collections/Sweaters" element={<Sweaters/>} /> 
-        <Route path="/Collections/Tops" element={<Tops/>} /> 
-        <Route path="/Collections/Trousers" element={<Trousers/>} /> 
-        <Route path="/About" element={<About />} />  
-        <Route path="/Designer" element={<Designer />} />  
-        <Route path="/Panel/Dashboard" element={<Dashboard />} />  
-        <Route path="/Panel/Lending" element={<Lending />} />  
-        <Route path="/Panel/Listing" element={<Listing />} />  
-        <Route path="/Panel/Messege" element={<Messege />} />  
-        <Route path="/Panel/Referral" element={<Referral />} />  
-        <Route path="/Panel/Profile" element={<Profile />} />  
-        <Route path="/Panel/Account" element={<Account />} />  
-        <Route path="/Panel/Wishlist" element={<Wishlist />} />  
-        <Route path="/CookiePolicy" element={<CookiePolicy />} /> 
-        <Route path="/TermsOfService" element={<TermsOfService/>} /> 
-        <Route path="/Career" element={<Career/>} /> 
-        <Route path="/Edits" element={<Edits />} /> 
-        <Route path="/HowToLend" element={<HowToLend />} /> 
-        <Route path="/HowToRent" element={<HowToRent />} /> 
-        <Route path="/Lender" element={<Lender />} /> 
-        <Route path="/ListItems/ListStepOne" element={<ListStepOne />} /> 
-        <Route path="/ListItems/ListStepOneNext" element={<ListStepOneNext />} /> 
-        <Route path="/ListItems/ListStepTwo" element={<ListStepTwo />} /> 
-        <Route path="/ListItems/ListStepTwoNext" element={<ListStepTwoNext />} /> 
-        <Route path="/ListItems/ListStepThree" element={<ListStepThree />} /> 
-        <Route path="/Membership" element={<Membership />} /> 
-        <Route path="/SellingorRenting" element={<SellingOrRenting />} /> 
-        <Route path="/Sustainability" element={<Sustainability />} /> 
-        <Route path="/ProductDetail" element={<ProductDetail />} /> 
-        <Route path="/ListingNew" element={<ListingNew />} /> 
-        <Route path="/Panel/Renting" element={<Renting />} /> 
-        <Route path="/Panel/Buyer" element={<Buyer />} /> 
-        <Route path="/Panel/Seller" element={<Seller />} /> 
-        <Route path="/Edits/Sky-Edits" element={<SkyEdits />} /> 
-        <Route path="/Edits/Nap-Edits" element={<NapEdits />} /> 
-        <Route path="/Edits/Nit-Wear" element={<NitWear />} /> 
-        <Route path="/Edits/Workwear-Suiting" element={<WorkwearSuiting />} /> 
-        <Route path="/Edits/Party-Edits" element={<PartyEdits />} /> 
-        <Route path="/Edits/Hot-On-Circular" element={<HotCircular />} /> 
-        <Route path="/Edits/Day-Time-Party-Edit" element={<DayTimeParty />} /> 
-        <Route path="/Edits/Black-Tie-Edit" element={<BlackTie />} /> 
-        <Route path="/Edits/Next-Birthday" element={<NextBirthday />} /> 
-        <Route path="/Edits/Bride-Edit" element={<BrideEdit />} /> 
-        <Route path="/Edits/Bridesmaid-Edit" element={<BridesmaidEdit />} /> 
-        <Route path="/Edits/Mother-Bride" element={<MotherBride />} /> 
-        <Route path="/Contact" element={<Contact />} /> 
-        <Route path="/Brands" element={<Brands />} /> 
-        <Route path="/Brands/Acler" element={<Acler />} /> 
-        <Route path="/Brands/Amur" element={<Amur />} /> 
+import Return from "./Pages/Return"
+const ProjectRoutes = () => {
+    return (
+        <React.Suspense fallback={<>Loading...</>}>
+            <Router>
+                <Routes>
+                    {/* <Route path="" element={<Home />} />   */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="/Collections/NewArrival" element={<NewArrival />} />
+                    <Route path="/Collections/Accessories" element={<Accessories />} />
+                    <Route path="/Collections/Clothing" element={<CLothing />} />
+                    <Route path="/Collections/DressGowns" element={<DressGowns />} />
+                    <Route path="/Collections/DressKneeLength" element={<DressKneeLength />} />
+                    <Route path="/Collections/DressMaxi" element={<DressMaxi />} />
+                    <Route path="/Collections/DressMini" element={<DressMini />} />
+                    <Route path="/Collections/DressMidi" element={<DressMidi />} />
+                    <Route path="/Collections/Dresses" element={<Dresses />} />
+                    <Route path="/Collections/JumpSuit" element={<JumpSuit />} />
+                    <Route path="/Collections/OuterWear" element={<OuterWear />} />
+                    <Route path="/Collections/Resale" element={<Resale />} />
+                    <Route path="/Collections/Shirts" element={<Shirts />} />
+                    <Route path="/Collections/Sweaters" element={<Sweaters />} />
+                    <Route path="/Collections/Tops" element={<Tops />} />
+                    <Route path="/Collections/Trousers" element={<Trousers />} />
+                    <Route path="/About" element={<About />} />
+                    <Route path="/Designer" element={<Designer />} />
+                    <Route path="/Panel/Dashboard" element={<Dashboard />} />
+                    <Route path="/Panel/Lending" element={<Lending />} />
+                    <Route path="/Panel/Listing" element={<Listing />} />
+                    <Route path="/Panel/Messege" element={<Messege />} />
+                    <Route path="/Panel/Referral" element={<Referral />} />
+                    <Route path="/Panel/Profile" element={<Profile />} />
+                    <Route path="/Panel/Account" element={<Account />} />
+                    <Route path="/Panel/Wishlist" element={<Wishlist />} />
+                    <Route path="/CookiePolicy" element={<CookiePolicy />} />
+                    <Route path="/TermsOfService" element={<TermsOfService />} />
+                    <Route path="/Career" element={<Career />} />
+                    <Route path="/Edits" element={<Edits />} />
+                    <Route path="/HowToLend" element={<HowToLend />} />
+                    <Route path="/HowToRent" element={<HowToRent />} />
+                    <Route path="/Lender" element={<Lender />} />
+                    <Route path="/ListItems/ListStepOne" element={<ListStepOne />} />
+                    <Route path="/ListItems/ListStepOneNext" element={<ListStepOneNext />} />
+                    <Route path="/ListItems/ListStepTwo" element={<ListStepTwo />} />
+                    <Route path="/ListItems/ListStepTwoNext" element={<ListStepTwoNext />} />
+                    <Route path="/ListItems/ListStepThree" element={<ListStepThree />} />
+                    <Route path="/Membership" element={<Membership />} />
+                    <Route path="/SellingorRenting" element={<SellingOrRenting />} />
+                    <Route path="/Sustainability" element={<Sustainability />} />
+                    <Route path="/ProductDetail" element={<ProductDetail />} />
+                    <Route path="/ListingNew" element={<ListingNew />} />
+                    <Route path="/Panel/Renting" element={<Renting />} />
+                    <Route path="/Panel/Buyer" element={<Buyer />} />
+                    <Route path="/Panel/Seller" element={<Seller />} />
+                    <Route path="/Edits/Sky-Edits" element={<SkyEdits />} />
+                    <Route path="/Edits/Nap-Edits" element={<NapEdits />} />
+                    <Route path="/Edits/Nit-Wear" element={<NitWear />} />
+                    <Route path="/Edits/Workwear-Suiting" element={<WorkwearSuiting />} />
+                    <Route path="/Edits/Party-Edits" element={<PartyEdits />} />
+                    <Route path="/Edits/Hot-On-Circular" element={<HotCircular />} />
+                    <Route path="/Edits/Day-Time-Party-Edit" element={<DayTimeParty />} />
+                    <Route path="/Edits/Black-Tie-Edit" element={<BlackTie />} />
+                    <Route path="/Edits/Next-Birthday" element={<NextBirthday />} />
+                    <Route path="/Edits/Bride-Edit" element={<BrideEdit />} />
+                    <Route path="/Edits/Bridesmaid-Edit" element={<BridesmaidEdit />} />
+                    <Route path="/Edits/Mother-Bride" element={<MotherBride />} />
+                    <Route path="/Contact" element={<Contact />} />
+                    <Route path="/Brands" element={<Brands />} />
+                    <Route path="/Brands/Acler" element={<Acler />} />
+                    <Route path="/Brands/Amur" element={<Amur />} />
 
-        <Route path="/Brands/Aje" element={<Aje />} /> 
-        <Route path="/Brands/Alighieri" element={<Alighieri />} /> 
-        <Route path="/Brands/Amanda-Uprichard" element={<AmandaUprichard />} /> 
-        <Route path="/Community" element={<Community />} /> 
-        <Route path="/Refer-a-Friend" element={<ReferFriend />} /> 
-        <Route path="/Press" element={<Press />} /> 
-        <Route path="/FAQ" element={<FAQ />} /> 
-        {/* Admin routes  */}
-        <Route path="/AdminPanel/Login" element={<Login/>}/>
-        <Route path="/AdminPanel/AdminMainPage" element={<AdminMainPage/>}/>
-        <Route path="/AdminPanel/AddProductsAdmin" element={<AddProductsAdmin/>}/>
-        <Route path="/AdminPanel/AdminPrice" element={<AdminPrice/>}/>
-        <Route path="/AdminPanel/CompleteAdmin" element={<CompleteAdmin/>}/>
-        <Route path="/AdminPanel/ViewAdminProducts" element={<ViewAdminProducts/>}/>
-        <Route path="/AdminPanel/AdminCategory" element={<AdminCategory/>}/>
+                    <Route path="/Brands/Aje" element={<Aje />} />
+                    <Route path="/Brands/Alighieri" element={<Alighieri />} />
+                    <Route path="/Brands/Amanda-Uprichard" element={<AmandaUprichard />} />
+                    <Route path="/Community" element={<Community />} />
+                    <Route path="/Refer-a-Friend" element={<ReferFriend />} />
+                    <Route path="/Press" element={<Press />} />
+                    <Route path="/FAQ" element={<FAQ />} />
+                    {/* Admin routes  */}
+                    <Route path="/AdminPanel/Login" element={<Login />} />
+                    <Route path="/AdminPanel/AdminMainPage" element={<AdminMainPage />} />
+                    <Route path="/AdminPanel/AddProductsAdmin" element={<AddProductsAdmin />} />
+                    <Route path="/AdminPanel/AdminPrice" element={<AdminPrice />} />
+                    <Route path="/AdminPanel/CompleteAdmin" element={<CompleteAdmin />} />
+                    <Route path="/AdminPanel/ViewAdminProducts" element={<ViewAdminProducts />} />
+                    <Route path="/AdminPanel/AdminCategory" element={<AdminCategory />} />
 
-        <Route path="/Forgot-Password" element={<ForgotPassword/>}/>
-        <Route path="/Signin" element={<Sigin/>}/>
+                    <Route path="/Forgot-Password" element={<ForgotPassword />} />
+                    <Route path="/Signin" element={<Sigin />} />
                     <Route path="/Signup" element={<Signup />} />
-                    <Route path="/Register-with-email" element={<RegisterWithEmail/> }/>
-        
-        </Routes>
-        </Router>
-    </React.Suspense>
+                    <Route path="/Register-with-email" element={<RegisterWithEmail />} />
+                    <Route path="/Return" element={<Return />} />
+
+                </Routes>
+            </Router>
+        </React.Suspense>
     );
 }
 export default ProjectRoutes;
