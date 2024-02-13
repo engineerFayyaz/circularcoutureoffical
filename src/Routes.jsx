@@ -77,6 +77,11 @@ import AdminPrice from "./Pages/AdminPanel/AdminPrice";
 import CompleteAdmin from "./Pages/AdminPanel/CompleteAdmin";
 import ViewAdminProducts from "./Pages/AdminPanel/ViewAdminProducts";
 import AdminCategory from "./Pages/AdminPanel/AdminCategory";
+
+import ForgotPassword from "./Pages/ForgotPassword";
+import Sigin from "./Pages/Signin";
+import Signup from "./Pages/Signup";
+import RegisterWithEmail from "./Pages/RegisterWithEmail";
 const ProjectRoutes =()=>{
     return(
     <React.Suspense fallback={<>Loading...</>}>
@@ -162,6 +167,11 @@ const ProjectRoutes =()=>{
         <Route path="/AdminPanel/CompleteAdmin" element={<CompleteAdmin/>}/>
         <Route path="/AdminPanel/ViewAdminProducts" element={<ViewAdminProducts/>}/>
         <Route path="/AdminPanel/AdminCategory" element={<AdminCategory/>}/>
+
+        <Route path="/Forgot-Password" element={<ForgotPassword/>}/>
+        <Route path="/Signin" element={<Sigin/>}/>
+                    <Route path="/Signup" element={<Signup />} />
+                    <Route path="/Register-with-email" element={<RegisterWithEmail/> }/>
         
         </Routes>
         </Router>
