@@ -4,11 +4,11 @@ import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
 import { Link } from "react-router-dom";
 
-const NewArrival=()=>{
-    return(
-        <>
-        <TopHeader/>
-        <div className="main-container collection-search overflow-auto">
+const NewArrival = () => {
+  return (
+    <>
+      <TopHeader />
+      <div className="main-container collection-search overflow-auto">
         <div className="search-page">
           <div className="static-page-header-bar">
             <div className="filter-container mx-auto">
@@ -18564,9 +18564,9 @@ const NewArrival=()=>{
         </div>
       </div>
       <EmailSubscription />
-      <Footer/>
-      </>
+      <Footer />
+    </>
 
-    )
+  )
 };
 export default NewArrival;

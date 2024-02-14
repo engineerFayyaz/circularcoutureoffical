@@ -14,71 +14,34 @@ const Footer = () => {
                 </div>
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="how-it-works.html">
+                    <Link to="how-it-works.html">
                       How It Works
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/FAQ">
+                    <Link to="/FAQ">
                       FAQ
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/Return">
+                    <Link to="/Return">
                       Returns & Refunds
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="rental-agreement.html">
+                    <Link to="/RentalArguments">
                       Rental Agreement
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="atd-rewards.html">
+                    <Link to="/ATDReward">
                       ATD Rewards
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="customer-service.html">
+                    <Link to="/MakeEnquiry">
                       Make an Enquiry
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="footer__menu">
-                <div className="footer__menu-title">
-                  Around Australia
-                </div>
-                <ul className="footer__menu-list">
-                  <li>
-                    <a href="dress-hire-sydney.html">
-                      Sydney
-                    </a>
-                  </li>
-                  <li>
-                    <a href="dress-hire-melbourne.html">
-                      Melbourne
-                    </a>
-                  </li>
-                  <li>
-                    <a href="dress-hire-brisbane.html">
-                      Brisbane
-                    </a>
-                  </li>
-                  <li>
-                    <a href="dress-hire-adelaide.html">
-                      Adelaide
-                    </a>
-                  </li>
-                  <li>
-                    <a href="dress-hire-perth.html">
-                      Perth
-                    </a>
-                  </li>
-                  <li>
-                    <a href="dress-hire-gold-coast.html">
-                      Gold Coast
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -88,51 +51,89 @@ const Footer = () => {
                 </div>
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="/About">
+                    <Link to="/About">
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/Sustainability">
+                    <Link to="/Sustainability">
                       Sustainability
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="blog.html">
+                    <Link to="#">
                       Blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/TermsOfService">
+                    <Link to="/TermsOfService">
                       Terms of Service
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="privacy.html">
+                    <Link to="/PrivacyPolicy">
                       Privacy Policy
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/Contact">
+                    <Link to="/Contact">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
+              <div className="footer__menu">
+                <div className="footer__menu-title">
+                  Around Australia
+                </div>
+                <ul className="footer__menu-list">
+                  <li>
+                    <Link to="/Sydney">
+                      Sydney
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/Melbourne">
+                      Melbourne
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/Brisbane">
+                      Brisbane
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/Adelaide">
+                      Adelaide
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/Perth">
+                      Perth
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/GoldCoast">
+                      Gold Coast
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
               <div className="footer__menu">
                 <div className="footer__menu-title">
                   DISCOVER
                 </div>
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="designers.html">
+                    <Link to="/Designer">
                       Designers
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="site-map.html">
+                    <Link to=" /SiteMap">
                       Site Map
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <div className="footer__menu-title mt-30">
@@ -140,24 +141,24 @@ const Footer = () => {
                 </div>
                 <ul className="footer__menu-socials">
                   <li>
-                    <a
-                      href="https://instagram.com/allthedressesau"
+                    <Link
+                      to="https://instagram.com/allthedressesau"
                       target="_blank"
                     >
                       <svg className="ico ico-mono-social-instagram">
                         <use xlinkHref="img/sprite-mono.svg#ico-mono-social-instagram" />
                       </svg>
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="https://facebook.com/allthedressesau"
+                    <Link
+                      to="https://facebook.com/allthedressesau"
                       target="_blank"
                     >
                       <svg className="ico ico-mono-social-facebook">
                         <use xlinkHref="img/sprite-mono.svg#ico-mono-social-facebook" />
                       </svg>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -212,174 +213,174 @@ const Footer = () => {
                 </div>
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="designer/alemais.html">
+                    <Link to="/Designers/Alemais">
                       Alemais
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/zimmermann.html">
+                    <Link to="/Designers/Alemais">
                       Zimmermann
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="occasion/black-tie-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Black Tie Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/lidee.html">
+                    <Link to="/Designers/Alemais">
                       L'idée
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="occasion/school-formal-dresses.html">
+                    <Link to="/Designers/Alemais">
                       School Formal Dresses
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="footer__menu no-title">
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="designer/elliatt.html">
+                    <Link to="/Designers/Alemais">
                       Elliatt
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="feature/long-sleeve-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Long Sleeve Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/winona.html">
+                    <Link to="/Designers/Alemais">
                       Winona
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/aje.html">
+                    <Link to="/Designers/Alemais">
                       Aje
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="length/maxi-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Maxi Dresses
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="footer__menu no-title">
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="length/midi-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Midi Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="occasion/cocktail-party-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Cocktail Party Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/leo-lin.html">
+                    <Link to="/Designers/Alemais">
                       Leo Lin
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/sir-the-label.html">
+                    <Link to="/Designers/Alemais">
                       Sir The Label
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/chanel.html">
+                    <Link to="/Designers/Alemais">
                       Chanel
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="footer__menu no-title">
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="designer/bec-and-bridge.html">
+                    <Link to="/Designers/Alemais">
                       Bec & Bridge
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/rat-and-boa.html">
+                    <Link to="/Designers/Alemais">
                       Rat & Boa
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="feature/sequin-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Sequin Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/saint-laurent.html">
+                    <Link to="/Designers/Alemais">
                       Saint Laurent
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="colour/white-dresses.html">
+                    <Link to="/Designers/Alemais">
                       White Dresses
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="footer__menu no-title">
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="designer/lia-stublla.html">
+                    <Link to="/Designers/Alemais">
                       Lia Stublla
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="colour/black-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Black Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="formal-dress-hire.html">
+                    <Link to="/Designers/Alemais">
                       Formal Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="occasion/engagement-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Engagement Party
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="designer/shona-joy.html">
+                    <Link to="/Designers/Alemais">
                       Shona Joy
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="footer__menu no-title">
                 <ul className="footer__menu-list">
                   <li>
-                    <a href="designer/sonya.html">
+                    <Link to="/Designers/Alemais">
                       Sonya
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="occasion/party-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Party Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="category/bags.html">
+                    <Link to="/Designers/Alemais">
                       Bags & Clutches
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="occasion/hens-party-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Hen's Party Dresses
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="feature/floral-dresses.html">
+                    <Link to="/Designers/Alemais">
                       Floral Dresses
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
