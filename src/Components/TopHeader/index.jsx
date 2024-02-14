@@ -162,6 +162,57 @@ const TopHeader = () => {
                 <Link
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
+                  className="nav-link "
+                  to="/Collections/Resale"
+                  onMouseEnter={handleDropdownOpen}
+                  onMouseLeave={handleDropdownClose}
+                >
+                  SEPARATES
+                </Link>
+                <Link
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
+                  className="nav-link "
+                  to="/Collections/Resale"
+                  onMouseEnter={handleDropdownOpen}
+                  onMouseLeave={handleDropdownClose}
+                >
+                  OCCASIONS
+                </Link>
+                <Link
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
+                  className="nav-link "
+                  to="/Collections/Resale"
+                  onMouseEnter={handleDropdownOpen}
+                  onMouseLeave={handleDropdownClose}
+                >
+                  KIDS
+                </Link>
+                <Link
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
+                  className="nav-link "
+                  to="/Collections/Resale"
+                  onMouseEnter={handleDropdownOpen}
+                  onMouseLeave={handleDropdownClose}
+                >
+                  INSTA-SHOP
+
+                </Link>
+                <Link
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
+                  className="nav-link "
+                  to="/Collections/Resale"
+                  onMouseEnter={handleDropdownOpen}
+                  onMouseLeave={handleDropdownClose}
+                >
+                 HELP & INFO
+                </Link>
+                <Link
+                  data-action="mouseover->mega-menu-contents#hideMenu"
+                  target="_top"
                   className="nav-link"
                   to="/Edits"
                   onMouseEnter={handleDropdownOpen}

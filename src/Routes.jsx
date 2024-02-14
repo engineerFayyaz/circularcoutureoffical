@@ -82,7 +82,22 @@ import ForgotPassword from "./Pages/ForgotPassword";
 import Sigin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
 import RegisterWithEmail from "./Pages/RegisterWithEmail";
-import Return from "./Pages/Return"
+// Footer Pages
+import Return from "./Pages/Return";
+import RentalArguments from "./Pages/RentalArguments";
+import ATDReward from "./Pages/ATDReward";
+import MakeEnquiry from "./Pages/MakeEnquiry";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import Sydney from "./Pages/Sydney";
+import Melbourne from "./Pages/Melbourne";
+import Brisbane from "./Pages/Brisbane";
+import Adelaide from "./Pages/Adelaide";
+import Perth from "./Pages/Perth";
+import GoldCoast from "./Pages/GoldCoast";
+import SiteMap from "./Pages/SiteMap";
+import Alemais from "./Pages/Designers/Alemais";
+
+
 const ProjectRoutes = () => {
     return (
         <React.Suspense fallback={<>Loading...</>}>
@@ -173,7 +188,21 @@ const ProjectRoutes = () => {
                     <Route path="/Signin" element={<Sigin />} />
                     <Route path="/Signup" element={<Signup />} />
                     <Route path="/Register-with-email" element={<RegisterWithEmail />} />
+                    {/* footer pages */}
                     <Route path="/Return" element={<Return />} />
+                    <Route path="/RentalArguments" element={<RentalArguments />} />
+                    <Route path="/ATDReward" element={<ATDReward />} />
+                    <Route path="/MakeEnquiry" element={<MakeEnquiry />} />
+                    <Route path=" /PrivacyPolicy" element={<PrivacyPolicy />} />
+                    <Route path="/Sydney" element={<Sydney />} />
+                    <Route path="/Melbourne" element={<Melbourne />} />
+                    <Route path="/Brisbane" element={<Brisbane />} />
+                    <Route path="/Adelaide" element={<Adelaide />} />
+                    <Route path="/Perth" element={<Perth />} />
+                    <Route path="/GoldCoast" element={<GoldCoast />} />
+                    <Route path="/SiteMap" element={<SiteMap />} />
+                    <Route path="/Designers/Alemais" element={<Alemais />} />
+
 
                 </Routes>
             </Router>

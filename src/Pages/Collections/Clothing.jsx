@@ -4,11 +4,11 @@ import Footer from "../../Components/Footer";
 import TopHeader from "../../Components/TopHeader";
 import { Link } from "react-router-dom";
 
-const Clothing = () =>{
-    return (
-        <>
-        <TopHeader />
-        <div className="main-container collection-search overflow-auto">
+const Clothing = () => {
+  return (
+    <>
+      <TopHeader />
+      <div className="main-container collection-search overflow-auto">
         <div className="search-page">
           <div className="static-page-header-bar">
             <div className="filter-container mx-auto">
@@ -18,7 +18,7 @@ const Clothing = () =>{
               >
                 <div>
                   <h1 className="title">
-                    Our All Clothings 
+                    Our All Clothings
                   </h1>
                   <div
                     className="description mt-2 transition collapsed"
@@ -18563,11 +18563,11 @@ const Clothing = () =>{
           </div>
         </div>
       </div>
-        
-        <EmailSubscription />
-        <Footer />
-        </>
-    )
+
+      <EmailSubscription />
+      <Footer />
+    </>
+  )
 
 }
 export default Clothing;
