@@ -8,7 +8,7 @@ const AddProductsAdmin = () => {
     const [formData, setFormData] = useState({
         category: "",
         brand: "",
-        Name: "", // Changed itemName to Name
+        Name: "",
         size: "",
         color: "",
         condition: "",
@@ -17,9 +17,10 @@ const AddProductsAdmin = () => {
         rentPrice8Days: "",
         rentPrice16Days: "",
         rentPrice30Days: "",
-        rrp: "", // Added rrp field
-        code: "", // Added code field
-        details: "" // Added details field
+        rrp: "",
+        code: "",
+        details: "",
+        ImageUrl: "" // Add ImageUrl directly to the formData
     });
 
     const [selectedImages, setSelectedImages] = useState([]);
@@ -37,18 +38,17 @@ const AddProductsAdmin = () => {
         setSelectedImages(Array.from(files));
     };
 
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const images = selectedImages.map((image) => ({
-                name: image.name,
-                url: URL.createObjectURL(image)
-            }));
+            const images = selectedImages.map(image => URL.createObjectURL(image));
+            const firstImage = images[0]; // Assuming only the first image is used as ImageUrl
 
             const requestData = {
+                id: 1,
+                typeId: 1,
                 ...formData,
-                ProductImages: images, // Changed Images to ProductImages
+                ImageUrl: firstImage // Assign the first image URL directly to ImageUrl
             };
 
             const response = await fetch("https://localhost:7220/api/products", {
@@ -71,7 +71,6 @@ const AddProductsAdmin = () => {
             toast.error("Error adding product");
         }
     };
-
 
     return (
         <>
@@ -124,8 +123,8 @@ const AddProductsAdmin = () => {
                                         </h5>
                                         <input
                                             type="text"
-                                            name="Name" // Changed itemName to Name
-                                            value={formData.Name} // Changed itemName to Name
+                                            name="Name"
+                                            value={formData.Name}
                                             onChange={handleInputChange}
                                         />
                                     </div>
@@ -274,7 +273,7 @@ const AddProductsAdmin = () => {
                                         />
                                         <div>
                                             {selectedImages &&
-                                                Array.from(selectedImages).map((image, index) => (
+                                                selectedImages.map((image, index) => (
                                                     <img
                                                         key={index}
                                                         src={URL.createObjectURL(image)}

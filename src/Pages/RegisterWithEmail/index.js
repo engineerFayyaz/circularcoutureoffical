@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const RegisterWithEmail = () => {
+    const navigate = useNavigate();
     // State variables to store form data
     const [formData, setFormData] = useState({
+        id: 1, // Default ID
+        typeId: 1, // Default typeId
+        permissionId: 1,
         email: '',
         userName: '',
         password: '',
@@ -33,26 +38,27 @@ const RegisterWithEmail = () => {
     // Function to handle form submission
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('https://localhost:7220/api/users', {
-                email: formData.email,
-                userName: formData.userName,
-                password: formData.password,
-                name: formData.name,
-                address: formData.address,
-                country: formData.country,
-                mobileNumber: formData.mobileNumber,
-                zipCode: formData.zipCode,
-                city: formData.city,
-                state: formData.state,
-            });
+            const dataWithIds = {
+                ...formData,
+                typeId: 1, // Default typeId
+                permissionId: 1, // Default permissionId
+                id:1,
+            };
+
+            const response = await axios.post('https://localhost:7220/api/users', dataWithIds);
 
             console.log('Registration successful:', response.data);
+            toast.success('Registration successful');
+            navigate('/Signin')
             // Handle success, e.g., redirect to another page
         } catch (error) {
             console.error('Registration failed:', error.response);
+            toast.error('Registration failed');
+
             // Handle error, e.g., show error message to the user
         }
     };
+
 
     return (
         <>
