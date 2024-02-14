@@ -87,7 +87,7 @@ import Return from "./Pages/Return";
 import RentalArguments from "./Pages/RentalArguments";
 import ATDReward from "./Pages/ATDReward";
 import MakeEnquiry from "./Pages/MakeEnquiry";
-import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import PrrivacyAndPolicy from "./Pages/PrivacyAndPolicy";
 import Sydney from "./Pages/Sydney";
 import Melbourne from "./Pages/Melbourne";
 import Brisbane from "./Pages/Brisbane";
@@ -193,7 +193,7 @@ const ProjectRoutes = () => {
                     <Route path="/RentalArguments" element={<RentalArguments />} />
                     <Route path="/ATDReward" element={<ATDReward />} />
                     <Route path="/MakeEnquiry" element={<MakeEnquiry />} />
-                    <Route path=" /PrivacyPolicy" element={<PrivacyPolicy />} />
+                    <Route path="/Privacy-policy" element={<PrrivacyAndPolicy/>}/>
                     <Route path="/Sydney" element={<Sydney />} />
                     <Route path="/Melbourne" element={<Melbourne />} />
                     <Route path="/Brisbane" element={<Brisbane />} />
