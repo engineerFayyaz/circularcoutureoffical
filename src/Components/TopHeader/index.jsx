@@ -193,7 +193,7 @@ const TopHeader = () => {
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
                   className="nav-link "
-                  to="/Collections/Resale"
+                  to="/InstaShop"
                   onMouseEnter={handleDropdownOpen}
                   onMouseLeave={handleDropdownClose}
                 >

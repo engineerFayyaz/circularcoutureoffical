@@ -96,6 +96,7 @@ import Perth from "./Pages/Perth";
 import GoldCoast from "./Pages/GoldCoast";
 import SiteMap from "./Pages/SiteMap";
 import Alemais from "./Pages/Designers/Alemais";
+import InstaShop from "./Pages/InstaShop";
 
 
 const ProjectRoutes = () => {
@@ -202,6 +203,7 @@ const ProjectRoutes = () => {
                     <Route path="/GoldCoast" element={<GoldCoast />} />
                     <Route path="/SiteMap" element={<SiteMap />} />
                     <Route path="/Designers/Alemais" element={<Alemais />} />
+                    <Route path="/InstaShop" element={<InstaShop/>}/>
 
 
                 </Routes>

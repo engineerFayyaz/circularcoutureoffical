@@ -1,76 +1,104 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AdminHeader from "../../Components/AdminHeader";
 import AdminSideHeader from "../../Components/AdminSideHeader";
 import "../../css/admin-header.css";
 import { toast } from "react-toastify";
 
 const AddProductsAdmin = () => {
-    const [formData, setFormData] = useState({
-        category: "",
-        brand: "",
-        Name: "",
-        size: "",
-        color: "",
-        condition: "",
-        sellPrice: "",
-        rentPrice4Days: "",
-        rentPrice8Days: "",
-        rentPrice16Days: "",
-        rentPrice30Days: "",
-        rrp: "",
-        code: "",
-        details: "",
-        ImageUrl: "" // Add ImageUrl directly to the formData
-    });
+        const [formData, setFormData] = useState({
+            categoryId: "", // Updated to categoryId
+            category: "", // Updated to category
+            brand: "",
+            Name: "",
+            size: "",
+            color: "",
+            condition: "",
+            sellPrice: "",
+            rentPrice4Days: "",
+            rentPrice8Days: "",
+            rentPrice16Days: "",
+            rentPrice30Days: "",
+            rrp: "",
+            code: "",
+            details: "",
+            ImageUrl: ""
+        });
 
-    const [selectedImages, setSelectedImages] = useState([]);
+        const [selectedImages, setSelectedImages] = useState([]);
+        const [categories, setCategories] = useState([]);
+
+        useEffect(() => {
+            fetchCategories();
+        }, []);
+
+        const fetchCategories = async () => {
+            try {
+                const response = await fetch("https://localhost:7220/api/product-categories");
+                if (!response.ok) {
+                    throw new Error("Failed to fetch categories");
+                }
+                const data = await response.json();
+                setCategories(data.results); // Assuming the categories are in the "results" array
+            } catch (error) {
+                console.error("Error fetching categories:", error);
+                toast.error("Error fetching categories");
+            }
+        };
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    const handleImageChange = (e) => {
-        const files = e.target.files;
-        setSelectedImages(Array.from(files));
-    };
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        try {
-            const images = selectedImages.map(image => URL.createObjectURL(image));
-            const firstImage = images[0]; // Assuming only the first image is used as ImageUrl
-
-            const requestData = {
-                id: 1,
-                typeId: 1,
+        if (name === 'categoryId') {
+            const selectedCategory = categories.find(category => category.id === value);
+            setFormData({
                 ...formData,
-                ImageUrl: firstImage // Assign the first image URL directly to ImageUrl
-            };
-
-            const response = await fetch("https://localhost:7220/api/products", {
-                method: "POST",
-                body: JSON.stringify(requestData),
-                headers: {
-                    "Content-Type": "application/json",
-                },
+                categoryId: value,
+                category: selectedCategory ? selectedCategory.type : '' // Update category field
             });
-
-            if (!response.ok) {
-                throw new Error("Error adding product");
-            }
-
-            const data = await response.json();
-            console.log("Product added successfully:", data);
-            toast.success("Product added successfully");
-        } catch (error) {
-            console.error("Error adding product:", error);
-            toast.error("Error adding product");
+        } else {
+            setFormData({
+                ...formData,
+                [name]: value,
+            });
         }
     };
+        const handleImageChange = (e) => {
+            const files = e.target.files;
+            setSelectedImages(Array.from(files));
+        };
+
+        const handleSubmit = async (e) => {
+            e.preventDefault();
+            try {
+                const images = selectedImages.map(image => URL.createObjectURL(image));
+                const firstImage = images[0];
+
+                const requestData = {
+                    categoryId: formData.categoryId, // Updated to categoryId
+                    category: formData.category,
+                    ...formData,
+                    ImageUrl: firstImage
+                };
+
+                const response = await fetch("https://localhost:7220/api/products", {
+                    method: "POST",
+                    body: JSON.stringify(requestData),
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                });
+
+                if (!response.ok) {
+                    throw new Error("Error adding product");
+                }
+
+                const data = await response.json();
+                console.log("Product added successfully:", data);
+                toast.success("Product added successfully");
+            } catch (error) {
+                console.error("Error adding product:", error);
+                toast.error("Error adding product");
+            }
+        };
 
     return (
         <>
@@ -86,21 +114,27 @@ const AddProductsAdmin = () => {
                             <div className="row order-page-admin">
                                 {/* Form */}
                                 <form onSubmit={handleSubmit}>
-                                    {/* Rest of the form fields */}
                                     {/* Category */}
                                     <div className="mb-3 mt-3 Category-admin">
                                         <label htmlFor="category" className="form-label">
                                             <b>Category*</b>
                                         </label>
                                         <br />
-                                        <input
-                                            type="text"
-                                            name="category"
-                                            value={formData.category}
+                                        <select
+                                            name="category" // Set the name attribute to "category"
+                                            value={formData.category} // Use categoryId as the value
                                             onChange={handleInputChange}
-                                        />
+                                        >
+                                            <option value="">Select Category</option>
+                                            {categories.map((category) => (
+                                                <option key={category.id} value={category.id}>
+                                                    {category.type}
+                                                </option>
+                                            ))}
+                                        </select>
+
+
                                     </div>
-                                    {/* Brand */}
                                     <div className="mb-3 mt-3 brand-admin">
                                         <h5>
                                             <span>
@@ -257,6 +291,10 @@ const AddProductsAdmin = () => {
                                             onChange={handleInputChange}
                                         />
                                     </div>
+                                    {/* Image Upload */}
+
+
+                                    {/* Submit button */}
                                     {/* Image Upload */}
                                     <div className="mb-3 mt-3 Category-admin">
                                         <label htmlFor="image" className="form-label">
