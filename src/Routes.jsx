@@ -77,6 +77,8 @@ import AdminPrice from "./Pages/AdminPanel/AdminPrice";
 import CompleteAdmin from "./Pages/AdminPanel/CompleteAdmin";
 import ViewAdminProducts from "./Pages/AdminPanel/ViewAdminProducts";
 import AdminCategory from "./Pages/AdminPanel/AdminCategory";
+import AddDesigner from "./Pages/AdminPanel/AddDesigner";
+import ProductsType from "./Pages/AdminPanel/ProductsType";
 
 import ForgotPassword from "./Pages/ForgotPassword";
 import Sigin from "./Pages/Signin";
@@ -184,6 +186,8 @@ const ProjectRoutes = () => {
                     <Route path="/AdminPanel/CompleteAdmin" element={<CompleteAdmin />} />
                     <Route path="/AdminPanel/ViewAdminProducts" element={<ViewAdminProducts />} />
                     <Route path="/AdminPanel/AdminCategory" element={<AdminCategory />} />
+                    <Route path="/AdminPanel/AddDesigner" element={<AddDesigner/> }/>
+                    <Route path="/AdminPanel/Products-Type" element={<ProductsType/>}/>
 
                     <Route path="/Forgot-Password" element={<ForgotPassword />} />
                     <Route path="/Signin" element={<Sigin />} />
