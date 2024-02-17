@@ -3,10 +3,10 @@ import "../../css/footer-pages.css";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 
-const PrivacyPolicy = () => {
-    return (
+const PrrivacyAndPolicy =()=>{
+    return(
         <>
-            <TopHeader />
+        <TopHeader />
             <div className="page__content ">
                 <div className="page__main-content" id="mainContent">
                     <div className="basic-page">
@@ -157,6 +157,6 @@ const PrivacyPolicy = () => {
 
             <Footer />
         </>
-    );
-}
-export default PrivacyPolicy;
+    )
+};
+export default PrrivacyAndPolicy

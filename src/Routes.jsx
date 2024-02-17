@@ -77,6 +77,8 @@ import AdminPrice from "./Pages/AdminPanel/AdminPrice";
 import CompleteAdmin from "./Pages/AdminPanel/CompleteAdmin";
 import ViewAdminProducts from "./Pages/AdminPanel/ViewAdminProducts";
 import AdminCategory from "./Pages/AdminPanel/AdminCategory";
+import AddDesigner from "./Pages/AdminPanel/AddDesigner";
+import ProductsType from "./Pages/AdminPanel/ProductsType";
 
 import ForgotPassword from "./Pages/ForgotPassword";
 import Sigin from "./Pages/Signin";
@@ -87,7 +89,7 @@ import Return from "./Pages/Return";
 import RentalArguments from "./Pages/RentalArguments";
 import ATDReward from "./Pages/ATDReward";
 import MakeEnquiry from "./Pages/MakeEnquiry";
-import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import PrrivacyAndPolicy from "./Pages/PrivacyAndPolicy";
 import Sydney from "./Pages/Sydney";
 import Melbourne from "./Pages/Melbourne";
 import Brisbane from "./Pages/Brisbane";
@@ -96,11 +98,15 @@ import Perth from "./Pages/Perth";
 import GoldCoast from "./Pages/GoldCoast";
 import SiteMap from "./Pages/SiteMap";
 import Alemais from "./Pages/Designers/Alemais";
+
 // Header Pages
 import Kids from "./Pages/Kids";
 
+import InstaShop from "./Pages/InstaShop";
 
-const ProjectRoutes = () => {
+
+
+function ProjectRoutes() {
     return (
         <React.Suspense fallback={<>Loading...</>}>
             <Router>
@@ -185,6 +191,8 @@ const ProjectRoutes = () => {
                     <Route path="/AdminPanel/CompleteAdmin" element={<CompleteAdmin />} />
                     <Route path="/AdminPanel/ViewAdminProducts" element={<ViewAdminProducts />} />
                     <Route path="/AdminPanel/AdminCategory" element={<AdminCategory />} />
+                    <Route path="/AdminPanel/AddDesigner" element={<AddDesigner />} />
+                    <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
 
                     <Route path="/Forgot-Password" element={<ForgotPassword />} />
                     <Route path="/Signin" element={<Sigin />} />
@@ -195,7 +203,7 @@ const ProjectRoutes = () => {
                     <Route path="/RentalArguments" element={<RentalArguments />} />
                     <Route path="/ATDReward" element={<ATDReward />} />
                     <Route path="/MakeEnquiry" element={<MakeEnquiry />} />
-                    <Route path=" /PrivacyPolicy" element={<PrivacyPolicy />} />
+                    <Route path="/Privacy-policy" element={<PrrivacyAndPolicy />} />
                     <Route path="/Sydney" element={<Sydney />} />
                     <Route path="/Melbourne" element={<Melbourne />} />
                     <Route path="/Brisbane" element={<Brisbane />} />
@@ -204,12 +212,16 @@ const ProjectRoutes = () => {
                     <Route path="/GoldCoast" element={<GoldCoast />} />
                     <Route path="/SiteMap" element={<SiteMap />} />
                     <Route path="/Designers/Alemais" element={<Alemais />} />
-                    {/* Hearder Page */}
-                    <Route path="/Kids" element={< Kids />} />
 
-                </Routes>
-            </Router>
-        </React.Suspense>
+                    <Route path="/Kids" element={<Kids />} />;
+                    <Route path="/InstaShop" element={<InstaShop />} />
+                    )
+
+
+
+                </Routes >
+            </Router >
+        </React.Suspense >
     );
 }
 export default ProjectRoutes;

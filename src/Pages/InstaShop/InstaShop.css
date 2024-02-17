@@ -1,0 +1,15 @@
+.insta-media-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  
+  .insta-media-item {
+    width: 100%;
+  }
+  
+  .insta-media {
+    width: 100%;
+    height: auto;
+  }
+  

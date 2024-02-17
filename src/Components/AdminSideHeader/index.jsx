@@ -59,6 +59,43 @@ const AdminSideHeader = () => {
                             </Link>
                         </div>
                     </li>
+
+                    <li className="nav-item dropdown">
+                        <a
+                            className="nav-link text-light"
+                            id="drop2"
+                            data-bs-toggle="dropdown"
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Designer
+                        </a>
+                        <div className="dropdown-menu">
+                            <Link className="dropdown-item" to="/AdminPanel/AddDesigner">
+                               Add Designer
+                            </Link>
+                        </div>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a
+                            className="nav-link text-light"
+                            id="drop2"
+                            data-bs-toggle="dropdown"
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Products Type 
+                        </a>
+                        <div className="dropdown-menu">
+                            <Link className="dropdown-item" to="/AdminPanel/Products-Type">
+                               Products Type
+                            </Link>
+                        </div>
+                    </li>
                     <li className="nav-item dropdown">
                         <a
                             className="nav-link text-light"
@@ -92,9 +129,7 @@ const AdminSideHeader = () => {
                         >
                             Setting
                         </a>
-                        {/* <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#tab2Id">Add Category</a>
-                      </div> */}
+                        
                     </li>
                 </ul>
             </div>
