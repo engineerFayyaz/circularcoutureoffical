@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import "../../css/admin-header.css";
+import Button from 'react-bootstrap/Button';
+// import FullWindowPopup from '../FullWindowPopup';
+import FullWindowPopup from "../FullWindowPopup";
+
 const NowTrending = () => {
+    const [showPopup, setShowPopup] = useState(false);
+    const handleOpenPopup = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
     return (
         <>
             <section>
@@ -11,24 +24,23 @@ const NowTrending = () => {
                             <i className="fa-solid fa-arrow-right" />
                         </span>
                     </div>
-                    <div
-                        id="productCarousel"
-                        className="carousel slide"
-                        data-bs-ride="carousel"
-                    >
-                        <div className="carousel-inner d-flex align-items-center justify-content-between">
+                    <div className="container">
+                        <div className="row">
                             {/* Product Item 1 */}
-                            <div className="carousel-item active">
-                                <div className="product-item">
-                                    <Link to="/ProductDetail">
+                            <div className="col-md-3 col-6 col-8 ">
+                                <div className="product-item" >
+                                    < div onClick={() => setShowPopup(true)} style={{ cursor: 'pointer' }}>
                                         <img
-                                            src="/web-images/LIS_002 _ ZIMMERMANN ANNEKE RUFFLE MINI DRESS/LIS_002.1.jpg"
+                                            src="/web-images/LIS_023 ZIMMERMANN Violet Floral Linen Flowy Maxi Dres/0D0A0678.jpg"
                                             className="img-fluid"
                                             alt="Product 1"
                                             loading="lazy"
-
+                                            data-target="#productdetail"
                                         />
-                                    </Link>
+                                    </div>
+
+                                    {showPopup && <FullWindowPopup show={showPopup} onClose={handleClosePopup} />}
+                                    <div />
                                     <div className="product-description p-2">
                                         <h5 className="d-flex align-items-center justify-content-between">
                                             ZIMMERMANN
@@ -46,22 +58,26 @@ const NowTrending = () => {
                                     </div>
                                 </div>
                             </div>
+
                             {/* Product Item 2 */}
-                            <div className="carousel-item active">
+                            <div className="col-md-3 col-6 col-8">
                                 <div className="product-item">
-                                    <Link to="/ProductDetail">
+                                    <Link to="#">
                                         <img
-                                            src="/web-images/LIS_003 _ Zimmermann Bells Paisley-print Linen Mini Dress/LIS_003.3.jpg"
+                                            src="/web-images/LIS_013 ZIMMERMANN Leopard dress/1.jpeg"
                                             className="img-fluid"
-                                            alt="Product 1" style={{ background: "none" }}
+                                            alt="Product 1"
                                             loading="lazy"
+                                            data-target="#productdetail"
                                         />
                                     </Link>
+                                    <FullWindowPopup show={showPopup} onClose={handleClosePopup} />
                                     <div className="product-description p-2">
                                         <h5 className="d-flex align-items-center justify-content-between">
                                             Botega Venega
                                             <span className="heart-icon">
                                                 <i className="fa-regular fa-heart" />
+
                                             </span>
                                         </h5>
                                         <p className="catagory">Sunglasses</p>
@@ -75,16 +91,29 @@ const NowTrending = () => {
                                 </div>
                             </div>
                             {/* Product Item 3 */}
-                            <div className="carousel-item active">
+
+                            <div className="col-md-3 col-6 col-8">
+
                                 <div className="product-item">
-                                    <Link to="/ProductDetail">
+
+                                    <Link to="#">
+
                                         <img
-                                            src="/web-images/LIS_004 _ Missoni multi coloured dress/0D0A0720.jpg"
+
+                                            src="/web-images/LIS_026 _ Rihanna Cutout Printed Washed-silk Midi Dress In Pink/0D0A0633.jpg"
+
                                             className="img-fluid"
+
                                             alt="Product 1"
+
                                             loading="lazy"
+
+                                            data-target="#productdetail"
+
                                         />
+
                                     </Link>
+                                    <FullWindowPopup show={showPopup} onClose={handleClosePopup} />
                                     <div className="product-description p-2">
                                         <h5 className="d-flex align-items-center justify-content-between">
                                             ZIMMERMANN
@@ -105,17 +134,18 @@ const NowTrending = () => {
                                 </div>
                             </div>
                             {/* Product Item 4 */}
-                            <div className="carousel-item active">
+                            <div className="col-md-3 col-6 col-8">
                                 <div className="product-item">
-                                    <Link to="/ProductDetail">
-                                        {" "}
+                                    <Link to="#">
                                         <img
-                                            src="/web-images/LIS_005 _ Zimmermann VERITY PANELLED LINEAR DRESS/1.jpeg"
+                                            src="/web-images/LIS_021 DODO BAR OR Printed Cotton Maxi Dress In Colorful/0D0A0710.jpg"
                                             className="img-fluid"
                                             alt="Product 1"
                                             loading="lazy"
+                                            data-target="#"
                                         />
                                     </Link>
+                                    <FullWindowPopup show={showPopup} onClose={handleClosePopup} />
                                     <div className="product-description p-2">
                                         <h5 className="d-flex align-items-center justify-content-between">
                                             ZIMMERMANN
@@ -123,7 +153,9 @@ const NowTrending = () => {
                                                 <i className="fa-regular fa-heart" />
                                             </span>
                                         </h5>
-                                        <p className="catagory">Two tone sequin top</p>
+                                        <p className="catagory">
+                                            White shorts with gold buttons
+                                        </p>
                                         <p className="price">
                                             <strike>RRP $350</strike>
                                         </p>
@@ -134,19 +166,10 @@ const NowTrending = () => {
                                 </div>
                             </div>
                         </div>
-                        {/* Navigation Buttons */}
-                        {/* <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button> */}
                     </div>
                 </div>
             </section>
         </>
     );
-};
+}
 export default NowTrending;

@@ -9707,139 +9707,6 @@ a.text-dark:focus {
     padding-left: 5px
 }
 
-@font-face {
-    font-family: "Playfair DisplaySC Regular";
-    font-family: "Dubiel";
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'White Oleander';
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Lato-web', sans-serif;
-}
-
-@font-face {
-    font-family: 'Unthrift';
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: bold;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Avenir Next Demi';
-    font-weight: 600;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'Avenir Next Demi';
-    font-weight: 600;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: 900;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: 500;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: 900;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: normal;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: bold;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'Avenir Next Ultra';
-    font-weight: 200;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Avenir Next';
-    font-weight: 500;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'Avenir Next Ultra';
-    font-weight: 200;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'Silver South Script Alt';
-    /* src: url(/assets/SilverSouthScriptAlt/Silver-South-Script-Alt-6c40eb02dbe7c6bf74eafaad26813358d303977251464dee23456eb1341b3e04.ttf) format("truetype") */
-}
-
-@font-face {
-    font-family: 'Havenbrook 2 Demibold';
-    /* src: url(/assets/Havenbrook-Demibold/font-193f5de7df931ffa7883c2db99103d83ef49997dd87f235910433028ddf6469a.woff2) format("woff2"), url(/assets/Havenbrook-Demibold/font-75569795a5b1d6815d7d614d20bdb8e2d614d633a205750b53fed5fe6becf1c5.woff) format("woff"); */
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'Havenbrook 8 Bold';
-    /* src: url(/assets/HavenbrookExpd-Bold/font-a86678ebf4b5a420b58c03d071ad4fad97922479001b36b615dd824ed3ee86e1.woff2) format("woff2"), url(/assets/HavenbrookExpd-Bold/font-2f2fbc121bf951fd6f393a963ba53880f714b966af528f4a18bb7bca258f260e.woff) format("woff"); */
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'europa-light';
-    /* src: url(/assets/europa-light-webfont-c7b55ccd303da8950f710c5d632de87c19f43c7661d4e8da996d18ffae3f7d2f.ttf) format("truetype"); */
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'europa-regular';
-    /* src: url(/assets/europa-regular-webfont-f1177a7fefba2a8043aae758d5dccff6c4a90c5cbce030c5e0c359cdd6a25bc6.ttf) format("truetype"); */
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'europa-bold';
-    /* src: url(/assets/europa-bold-webfont-43228d712cedf0da8f030374c8fc2dc80140cf116425d3a79b3372cb55b04ee2.ttf) format("truetype"); */
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'Crystal Sky';
-    /* src: url(/assets/CrystalSky/font-dadc7f9de134bf5aad93de92defc7ce99fea44a783435bb3740666d650b835c9.woff2) format("woff2"), url(/assets/CrystalSky/font-12e5b5c3bf50556a2a00e2e2899ac20884b16d33f0d6f42e5fe072c2237b5fa4.woff) format("woff") */
-}
-
 .font-havenbrook-demibold {
     font-family: 'Havenbrook 2 Demibold', sans-serif
 }
@@ -10096,11 +9963,6 @@ body.component-based-page h4 {
     background: #fff
 }
 
-@font-face {
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-}
 
 .slick-prev,
 .slick-next {
@@ -37350,7 +37212,6 @@ html .ui-button.ui-state-disabled:active,
     background-position: 20px center
 }
 
-.input-icon.-link {}
 
 div#uk-mobile-input span.input-group-text {
     color: #fefdfd;
@@ -59087,7 +58948,7 @@ button:focus {
 
 /* Track */
 .cl-switch>span::before {
-    content: "";
+ 
     float: right;
     display: inline-block;
     margin: 5px 0 5px 10px;

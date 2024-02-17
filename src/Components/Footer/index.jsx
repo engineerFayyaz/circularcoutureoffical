@@ -1,13 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // import "../../css/admin-header.css";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   return (
     <>
       <footer className="footer">
         <div className="container">
           <div className="footer__wrapper footer__main">
-            <div className="footer__menus">
+            <div className="footer__menus col-6">
               <div className="footer__menu">
                 <div className="footer__menu-title">
                   CUSTOMER SERVICE
@@ -47,6 +53,24 @@ const Footer = () => {
               </div>
               <div className="footer__menu">
                 <div className="footer__menu-title">
+                  DISCOVER
+                </div>
+                <ul className="footer__menu-list">
+                  <li>
+                    <Link to="/Designer">
+                      Designers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/SiteMap">
+                      Site Map
+                    </Link>
+                  </li>
+                </ul>
+
+              </div>
+              <div className="footer__menu">
+                <div className="footer__menu-title">
                   ABOUT ATD
                 </div>
                 <ul className="footer__menu-list">
@@ -80,6 +104,35 @@ const Footer = () => {
                       Contact
                     </Link>
                   </li>
+                </ul>
+              </div>
+
+              <div className="footer__menu">
+                <div className="footer__menu-title">
+                  Follow us
+                </div>
+                <ul className="footer__menu-list">
+                  <li>
+                    <a className="nav-link mx-0 p-0 d-inline-block logo" href="/">
+                      <img style={{ color: "white" }}
+                        width={275}
+                        className="header-logo"
+                        alt="CIRCULAR COUTURE logo"
+                        src="/images/footer-logo.png"
+                      />
+                    </a>
+
+                  </li>
+                  <div className="d-flex justify-content-evenly">
+                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faInstagram} />
+                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faFacebook} />
+                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faTwitter} />
+                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faLinkedin} />
+                  </div>
+                  <div>
+                    {/* <button className="" type="button">Subscribe</button> */}
+                    <input className="Subscribe-footer-upper-btn" type="text" name="" id="" placeholder="Enter Your Email" />
+                  </div>
                 </ul>
               </div>
               <div className="footer__menu">
@@ -118,86 +171,12 @@ const Footer = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
 
-              <div className="footer__menu">
-                <div className="footer__menu-title">
-                  DISCOVER
-                </div>
-                <ul className="footer__menu-list">
-                  <li>
-                    <Link to="/Designer">
-                      Designers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to=" /SiteMap">
-                      Site Map
-                    </Link>
-                  </li>
-                </ul>
-                <div className="footer__menu-title mt-30">
-                  Follow us
-                </div>
-                <ul className="footer__menu-socials">
-                  <li>
-                    <Link
-                      to="https://instagram.com/allthedressesau"
-                      target="_blank"
-                    >
-                      <svg className="ico ico-mono-social-instagram">
-                        <use xlinkHref="img/sprite-mono.svg#ico-mono-social-instagram" />
-                      </svg>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://facebook.com/allthedressesau"
-                      target="_blank"
-                    >
-                      <svg className="ico ico-mono-social-facebook">
-                        <use xlinkHref="img/sprite-mono.svg#ico-mono-social-facebook" />
-                      </svg>
-                    </Link>
-                  </li>
-                </ul>
               </div>
-            </div>
-
-          </div>
-          <div className="footer__bottom">
-            <div
-              className="footer__payments js-teleport"
-              data-teleport-condition=">992"
-              data-teleport-to="footer-payment"
-            >
-              <div className="footer__payment">
-                <svg className="ico ico-mono-Visa">
-                  <use xlinkHref="img/sprite-mono.svg#ico-mono-Visa" />
-                </svg>
-              </div>
-              <div className="footer__payment">
-                <svg className="ico ico-mono-AmericanExpress">
-                  <use xlinkHref="img/sprite-mono.svg#ico-mono-AmericanExpress" />
-                </svg>
-              </div>
-              <div className="footer__payment">
-                <svg className="ico ico-color-MasterCard">
-                  <use xlinkHref="img/sprite-color.svg#ico-color-MasterCard" />
-                </svg>
-              </div>
-              <div className="footer__payment">
-                <svg className="ico ico-mono-ApplePay">
-                  <use xlinkHref="img/sprite-mono.svg#ico-mono-ApplePay" />
-                </svg>
-              </div>
-              <div className="footer__payment">
-                <svg className="ico ico-mono-GooglePay">
-                  <use xlinkHref="img/sprite-mono.svg#ico-mono-GooglePay" />
-                </svg>
-              </div>
+              {/* logo page */}
             </div>
           </div>
+
           <div className="footer__separator footer__separator--one" />
           <div className="footer__wrapper footer__top-searches">
             <div
@@ -207,7 +186,7 @@ const Footer = () => {
                 maxWidth: '100%'
               }}
             >
-              <div className="footer__menu">
+              <div className="footer__menu footer___bottom-width">
                 <div className="footer__menu-title">
                   OUR TOP SEARCHES
                 </div>
@@ -386,17 +365,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* <div className="footer__separator footer__separator--two" /> */}
-          {/* <div className="footer__copyright">
-            <div className="footer__copyright-logo">
-              <svg className="ico ico-mono-atd-logo-full">
-                <use xlinkHref="img/sprite-mono.svg#ico-mono-atd-logo-full" />
-              </svg>
-            </div>
-            <div className="footer__copyright-text">
-              Copyright All The Dresses 2024
-            </div>
-          </div> */}
         </div>
       </footer>
       <footer>

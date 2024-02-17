@@ -96,6 +96,8 @@ import Perth from "./Pages/Perth";
 import GoldCoast from "./Pages/GoldCoast";
 import SiteMap from "./Pages/SiteMap";
 import Alemais from "./Pages/Designers/Alemais";
+// Header Pages
+import Kids from "./Pages/Kids";
 
 
 const ProjectRoutes = () => {
@@ -202,7 +204,8 @@ const ProjectRoutes = () => {
                     <Route path="/GoldCoast" element={<GoldCoast />} />
                     <Route path="/SiteMap" element={<SiteMap />} />
                     <Route path="/Designers/Alemais" element={<Alemais />} />
-
+                    {/* Hearder Page */}
+                    <Route path="/Kids" element={< Kids />} />
 
                 </Routes>
             </Router>
