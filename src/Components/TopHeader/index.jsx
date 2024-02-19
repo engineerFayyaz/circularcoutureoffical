@@ -183,9 +183,9 @@ const TopHeader = () => {
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
                   className="nav-link "
-                  to="/Collections/Resale"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  to="/Kids"
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   KIDS
                 </Link>
@@ -193,9 +193,15 @@ const TopHeader = () => {
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
                   className="nav-link "
+<<<<<<< HEAD
+                  to="#"
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
+=======
                   to="/InstaShop"
                   onMouseEnter={handleDropdownOpen}
                   onMouseLeave={handleDropdownClose}
+>>>>>>> ea065729d066ed1477ff86740902fda26760b2af
                 >
                   INSTA-SHOP
 
@@ -215,8 +221,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link"
                   to="/Edits"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   Edits
                 </Link>

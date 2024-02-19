@@ -101,10 +101,15 @@ import Perth from "./Pages/Perth";
 import GoldCoast from "./Pages/GoldCoast";
 import SiteMap from "./Pages/SiteMap";
 import Alemais from "./Pages/Designers/Alemais";
+
+// Header Pages
+import Kids from "./Pages/Kids";
+
 import InstaShop from "./Pages/InstaShop";
 
 
-const ProjectRoutes = () => {
+
+function ProjectRoutes() {
     return (
         <React.Suspense fallback={<>Loading...</>}>
             <Router>
@@ -194,6 +199,8 @@ const ProjectRoutes = () => {
                     <Route path="/AdminPanel/AddEdits" element={<AddEdits/>}/>
                     <Route path="/AdminPanel/Admin-Delete-Products" element={<AdminDeleteProducts/>}/>
 
+                    <Route path="/AdminPanel/AddDesigner" element={<AddDesigner />} />
+                    <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
 
                     <Route path="/Forgot-Password" element={<ForgotPassword />} />
                     <Route path="/Signin" element={<Sigin />} />
@@ -204,7 +211,7 @@ const ProjectRoutes = () => {
                     <Route path="/RentalArguments" element={<RentalArguments />} />
                     <Route path="/ATDReward" element={<ATDReward />} />
                     <Route path="/MakeEnquiry" element={<MakeEnquiry />} />
-                    <Route path="/Privacy-policy" element={<PrrivacyAndPolicy/>}/>
+                    <Route path="/Privacy-policy" element={<PrrivacyAndPolicy />} />
                     <Route path="/Sydney" element={<Sydney />} />
                     <Route path="/Melbourne" element={<Melbourne />} />
                     <Route path="/Brisbane" element={<Brisbane />} />
@@ -213,12 +220,16 @@ const ProjectRoutes = () => {
                     <Route path="/GoldCoast" element={<GoldCoast />} />
                     <Route path="/SiteMap" element={<SiteMap />} />
                     <Route path="/Designers/Alemais" element={<Alemais />} />
-                    <Route path="/InstaShop" element={<InstaShop/>}/>
+
+                    <Route path="/Kids" element={<Kids />} />;
+                    <Route path="/InstaShop" element={<InstaShop />} />
+                    )
 
 
-                </Routes>
-            </Router>
-        </React.Suspense>
+
+                </Routes >
+            </Router >
+        </React.Suspense >
     );
 }
 export default ProjectRoutes;
