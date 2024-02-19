@@ -79,6 +79,9 @@ import ViewAdminProducts from "./Pages/AdminPanel/ViewAdminProducts";
 import AdminCategory from "./Pages/AdminPanel/AdminCategory";
 import AddDesigner from "./Pages/AdminPanel/AddDesigner";
 import ProductsType from "./Pages/AdminPanel/ProductsType";
+import AddEdits from "./Pages/AdminPanel/AddEdits";
+import AdminDeleteProducts from "./Pages/AdminPanel/AdminDeleteProducts";
+
 
 import ForgotPassword from "./Pages/ForgotPassword";
 import Sigin from "./Pages/Signin";
@@ -188,6 +191,9 @@ const ProjectRoutes = () => {
                     <Route path="/AdminPanel/AdminCategory" element={<AdminCategory />} />
                     <Route path="/AdminPanel/AddDesigner" element={<AddDesigner/> }/>
                     <Route path="/AdminPanel/Products-Type" element={<ProductsType/>}/>
+                    <Route path="/AdminPanel/AddEdits" element={<AddEdits/>}/>
+                    <Route path="/AdminPanel/Admin-Delete-Products" element={<AdminDeleteProducts/>}/>
+
 
                     <Route path="/Forgot-Password" element={<ForgotPassword />} />
                     <Route path="/Signin" element={<Sigin />} />

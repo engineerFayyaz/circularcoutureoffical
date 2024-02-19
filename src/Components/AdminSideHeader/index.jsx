@@ -39,6 +39,9 @@ const AdminSideHeader = () => {
                             <Link className="dropdown-item" to="/AdminPanel/ViewAdminProducts">
                                 View Product
                             </Link>
+                            <Link className="dropdown-item" to="/AdminPanel/Admin-Delete-Products">
+                                Delete Products
+                            </Link>
                         </div>
                     </li>
                     <li className="nav-item dropdown">
@@ -93,6 +96,24 @@ const AdminSideHeader = () => {
                         <div className="dropdown-menu">
                             <Link className="dropdown-item" to="/AdminPanel/Products-Type">
                                Products Type
+                            </Link>
+                        </div>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a
+                            className="nav-link text-light"
+                            id="drop2"
+                            data-bs-toggle="dropdown"
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            Edits 
+                        </a>
+                        <div className="dropdown-menu">
+                            <Link className="dropdown-item" to="/AdminPanel/AddEdits">
+                               Add Edits
                             </Link>
                         </div>
                     </li>
