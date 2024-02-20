@@ -67,7 +67,7 @@ const Signup =() => {
                                     </span>
                                 </div>
                                 <p>
-                                    <Link to="/termsofservices">terms of service</Link> and <Link to="/PrrivacyAndPolicy">privacy policy.</Link>
+                                    <Link to="//TermsOfService">terms of service</Link> and <Link to="/Prrivacy-Policy">privacy policy.</Link>
                                 </p>
                             </div>
                         </div>

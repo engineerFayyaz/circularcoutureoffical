@@ -89,11 +89,7 @@ const Footer = () => {
                       Sustainability
                     </Link>
                   </li>
-                  <li>
-                    <Link to="#">
-                      Blog
-                    </Link>
-                  </li>
+                 
                   <li>
                     <Link to="/TermsOfService">
                       Terms of Service
