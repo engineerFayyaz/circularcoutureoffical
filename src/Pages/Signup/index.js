@@ -20,29 +20,35 @@ const Signup =() => {
                                 <Link
                                     to="/Signup"
                                     className="text-decoration-none "
-                                    style={{ color: "#592530" }}
+                                    style={{ backgroundColor: "#592530", padding: "5px 20px" }}
                                 >
-                                    <h2>REGISTER</h2>
+                                    <h2 style={{color: "white"}} >REGISTER</h2>
                                 </Link>
                             </div>
                         </div>
-                        <div className="row sign-button-platform justify-content-center">
+                        <div className="row sign-button-platform ">
                             <i className="fa-brands fa-google" />
+                            <Link >
                             <button type="button">
                                 <span>Register with Google</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="row sign-button-platform">
                             <i className="fa-brands fa-facebook" />
+                            <Link >
                             <button type="button">
                                 <span>Register with Facebook</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="row sign-button-platform">
                             <i className="fa-brands fa-apple" />
+                            <Link >
                             <button type="button">
                                 <span>Register with Apple</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="row sign-button-platform">
                             <i className="fa-solid fa-envelope" />
@@ -57,19 +63,19 @@ const Signup =() => {
                                 <p>By registering with a 3rd party,</p>
                                 <div className="sterms-width">
                                     <span>
-                                        <p>I accpect</p> CIRCULAR COUTURE <Link to="#">sterms of </Link>
+                                        <p>I accpect</p> CIRCULAR COUTURE 
                                     </span>
                                 </div>
                                 <p>
-                                    <Link to="#">service</Link> and <Link to="#">privacy policy.</Link>
+                                    <Link to="/termsofservices">terms of service</Link> and <Link to="/PrrivacyAndPolicy">privacy policy.</Link>
                                 </p>
                             </div>
                         </div>
                         <hr />
                         <div className="justify-content-center">
                             <h4>Were you referred?</h4>
-                            <div className="row set-email-width ml-2">
-                                <span className="mt-4 ml-4">Referral Code*</span>
+                            <div className="row set-email-width ml-2 mb-3">
+                                <span className="mt-4 ml-0">Referral Code*</span>
                                 <br />
                                 <div className="btn-input-set">
                                     <input className="mt-2" type="text" name="" id="" placeholder="" />

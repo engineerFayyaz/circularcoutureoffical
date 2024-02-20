@@ -197,25 +197,25 @@ const RegisterWithEmail = () => {
                                 Your password must be over 8 characters long and include at least 1 upper-case letter, 1 lower-case letter, 1 number, and 1 special character.
                             </p>
                         </div>
-                        <div className="row ml-5">
+                        <div className=" d-flex align-items-center justify-content-center">
                             <input
                                 type="checkbox"
                                 name="agreedToTerms"
                                 checked={formData.agreedToTerms}
                                 onChange={handleInputChange}
                             />
-                            &nbsp; &nbsp;&nbsp;
-                            <span>I agree to terms of service and privacy policy.</span>
+                            {/* &nbsp; &nbsp;&nbsp; */}
+                            <span className='ml-2'>I agree to terms of service and privacy policy.</span>
                         </div>
-                        <div className="row ml-5 mt-3">
+                        <div className="d-flex align-items-center justify-content-center mt-3">
                             <input
                                 type="checkbox"
                                 name="receiveMarketingEmails"
                                 checked={formData.receiveMarketingEmails}
                                 onChange={handleInputChange}
                             />
-                            &nbsp; &nbsp;&nbsp;
-                            <span>I agree to receive marketing emails from</span>
+                            {/* &nbsp; &nbsp;&nbsp; */}
+                            <span className='ml-2'>I agree to receive marketing emails from</span>
                         </div>
                         <div className="row sign-button-platform">
                             <button type="button" onClick={handleSubmit}>

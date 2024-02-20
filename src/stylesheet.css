@@ -58628,7 +58628,7 @@ button.bg-light:hover {
     position: relative;
     bottom: 20rem;
     right: 5px;
-    font-size: 50px;
+    font-size: 50px !important;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -59405,16 +59405,19 @@ button:focus {
     margin-left: -7px;
 }
 
+.sign-button-platform a{
+    width: 80%;
+    margin-left: 25px;
+    background-color: #592530;
+    margin-top: 20px;
+}
     .sign-button-platform button {
-        width: 80%;
-        margin-left: 25px;
-        padding: 10px;
-        background-color: #592530;
+        width: 100%;
+        background-color: transparent;
         font-size: 14px;
         text-transform: uppercase;
         color: white;
         letter-spacing: 2px;
-        margin-top: 20px;
         display: flex;
         justify-content: center;
         border: none;
@@ -59425,33 +59428,41 @@ button:focus {
         text-decoration: none;
     }
 
-    .sign-button-platform button:hover {
+    .sign-button-platform a:hover {
         background-color: white;
         color: black !important;
         border: 1px solid #592530;
     }
-
-    .sign-button-platform i {
-        position: relative;
-        left: 6rem;
-        top: 0.6rem;
-        color: white;
+    .sign-button-platform a:hover button{
+        color: black;
     }
 
-        .sign-button-platform i:hover {
-            color: #592530 !important;
-        }
+    .sign-button-platform>i {
+        position: relative;
+    left: -14rem;
+    top: 3.5rem;
+    color: white;
+    font-size: 18px;
+    }
+    .sign-button-platform a:hover .sign-button-platform>i{
+        color: black !important;
+    }
+
 
 .set-email-width {
     width: 100%;
-    /* flex-direction: column; */
 }
 
     .set-email-width span {
-        width: 30%;
+        /* width: 37%; */
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: 14px !important;
+        /* margin-left: 4px !important; */
         letter-spacing: 2px;
+        font-weight: 600;
+        width: 80%;
+        text-align: start;
+        margin-left: 49px !important;
     }
 
     .set-email-width input {
@@ -59490,7 +59501,7 @@ button:focus {
 
 .sterms-width {
     width: 100%;
-    display: block ruby;
+    display: block;
     flex-direction: row;
 }
 
@@ -59522,7 +59533,7 @@ button:focus {
 }
 
     .btn-input-set input {
-        width: 60%;
+        width: 69%;
     }
 
     .btn-input-set button {
