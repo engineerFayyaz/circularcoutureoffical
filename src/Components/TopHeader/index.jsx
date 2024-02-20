@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { faSearch, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom';
-import UserHeader from "../UserHeader/index";
-
+import UserHeader from "../../Components/UserHeader";
 const TopHeader = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -22,7 +21,7 @@ const TopHeader = () => {
         data-target="header.container"
         data-action="scroll@window->header#hideAnnouncementBanner"
       >
-        <UserHeader />
+       <UserHeader/>
         <div className="main-header-section d-lg-flex justify-content-between">
           <div className="fixed-container">
             <div className="row no-gutters">
@@ -193,15 +192,9 @@ const TopHeader = () => {
                   data-action="mouseover->mega-menu-contents#hideMenu"
                   target="_top"
                   className="nav-link "
-<<<<<<< HEAD
-                  to="#"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
-=======
                   to="/InstaShop"
                   onMouseEnter={handleDropdownOpen}
                   onMouseLeave={handleDropdownClose}
->>>>>>> ea065729d066ed1477ff86740902fda26760b2af
                 >
                   INSTA-SHOP
 

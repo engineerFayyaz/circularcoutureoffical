@@ -1,12 +1,15 @@
 import React from "react";
 import Routes from "./Routes";
 import ReactModal from "react-modal";
-// import Home from "./Pages/Home";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 ReactModal.setAppElement("#root");
+
 function App() {
   return (
-    // <Home/>
     <>
+      <ToastContainer />
       <Routes />
     </>
   );

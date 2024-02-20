@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 // import "../../css/admin-header.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram ,faFacebook,  faTwitter ,  faLinkedin } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   return (
     <>

@@ -12,4 +12,71 @@
     width: 100%;
     height: auto;
   }
+
+  .insta-media {
+    width: 200px; /* Set the fixed size for both images and videos */
+    height: 200px;
+    object-fit: cover; /* Maintain aspect ratio */
+    cursor: pointer;
+  }
+  
+  .thumb-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .insta-media-item {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .insta-media-item:hover .thumb-icon {
+    opacity: 1;
+  }
+  
+  .zoomed-image-overlay {
+    position: fixed;
+    top: 78PX;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .zoomed-image-container {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .zoomed-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
   

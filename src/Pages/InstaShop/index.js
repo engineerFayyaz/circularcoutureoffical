@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import TopHeader from "../../Components/TopHeader";
-import "../../Pages/InstaShop/InstaShop.css"
+import "../../Pages/InstaShop/InstaShop.css";
 
 const InstaShop = () => {
   const [media, setMedia] = useState([]);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     fetchInstagramMedia();
@@ -11,7 +12,7 @@ const InstaShop = () => {
 
   const fetchInstagramMedia = async () => {
     try {
-      const accessToken = "IGQWRPUmVfTjNRWFhuZAmlDekxFMGdPVmdlY1hVWU9RQ2huUFRwUzF1SmZAsR2twZA2NLeGptNHhnNk9ZAS1pQdmx4TDlCRWVXTzdud1FqSkRyNEVlTjJMdUZAFVDFiQ0RxQTFJWlZAjaWdJSm9EeDZAKMWd3RkllWEkzd3MZD";
+      const accessToken = "IGQWRQNVBYSk9OLTdSZAzhoRjhrdXhyU3pXMjRTZAC1Ec0hqUnlCMTl6dXBoNDFITHNqeWdWbGJNY1VmcllMenVxeC1uSVZAJUDN6ZAnZAuTG54dnVBeGtsUGh3R0p2RllDeEdfS2xDeV9DczdscTdIYVJkTVpRYmtSMFEZD";
       const response = await fetch(
         `https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,caption&access_token=${accessToken}`
       );
@@ -19,11 +20,31 @@ const InstaShop = () => {
       if (data.error) {
         console.error("Error fetching Instagram media:", data.error.message);
       } else {
-        setMedia(data.data);
+        const sortedMedia = data.data.sort((a, b) => {
+          if (a.media_type === "IMAGE") return -1;
+          if (b.media_type === "IMAGE") return 1;
+          return 0;
+        });
+        setMedia(sortedMedia);
       }
     } catch (error) {
       console.error("Error fetching Instagram media:", error);
     }
+  };
+
+  const openImage = (imageUrl) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeImage = () => {
+    setSelectedImage(null);
+  };
+
+  const getMediaUrl = (item) => {
+    if (item.media_type === "VIDEO" && item.thumbnail_url) {
+      return item.thumbnail_url;
+    }
+    return item.media_url;
   };
 
   return (
@@ -34,25 +55,22 @@ const InstaShop = () => {
           <div className="container">
             <div className="dt-center">
               <h1 className="h2-title dt-mt-0">InstaShop</h1>
-              <p className="p-main">
-                Browse our Insta feed below and book items directly from any
-                one of our posts!
-              </p>
             </div>
             <div className="insta-media-container">
+              {/* Render images and videos */}
               {media.map((item) => (
                 <div key={item.id} className="insta-media-item">
-                  {item.media_type === "IMAGE" ? (
-                    <img
-                      src={item.media_url}
-                      alt={item.caption}
-                      className="insta-media"
-                    />
-                  ) : (
-                    <video controls className="insta-media">
-                      <source src={item.media_url} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
+                  <img
+                    src={getMediaUrl(item)}
+                    alt={item.caption}
+                    className="insta-media"
+                    onClick={() => openImage(item.media_url)}
+                  />
+                  {/* Thumbnail icon */}
+                  {item.media_type === "IMAGE" && (
+                    <div className="thumb-icon" onClick={() => openImage(item.media_url)}>
+                      <i className="fas fa-search-plus"></i>
+                    </div>
                   )}
                 </div>
               ))}
@@ -60,6 +78,17 @@ const InstaShop = () => {
           </div>
         </div>
       </div>
+      {/* Zoomed Image */}
+      {selectedImage && (
+        <div className="zoomed-image-overlay" onClick={closeImage}>
+          <div className="zoomed-image-container">
+            <button className="close-btn" onClick={closeImage}>
+              <i className="fas fa-times"></i>
+            </button>
+            <img src={selectedImage} alt="Zoomed" className="zoomed-image" />
+          </div>
+        </div>
+      )}
     </>
   );
 };
