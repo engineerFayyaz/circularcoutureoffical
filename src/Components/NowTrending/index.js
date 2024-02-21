@@ -62,7 +62,7 @@ const NowTrending = () => {
                             {/* Product Item 2 */}
                             <div className="col-md-3 col-6 col-8">
                                 <div className="product-item">
-                                    <Link to="#">
+                                    <Link to="/ProductDetail">
                                         <img
                                             src="/web-images/LIS_013 ZIMMERMANN Leopard dress/1.jpeg"
                                             className="img-fluid"
@@ -96,7 +96,7 @@ const NowTrending = () => {
 
                                 <div className="product-item">
 
-                                    <Link to="#">
+                                    <Link to="/ProductDetail">
 
                                         <img
 
@@ -136,7 +136,7 @@ const NowTrending = () => {
                             {/* Product Item 4 */}
                             <div className="col-md-3 col-6 col-8">
                                 <div className="product-item">
-                                    <Link to="#">
+                                    <Link to="/ProductDetail">
                                         <img
                                             src="/web-images/LIS_021 DODO BAR OR Printed Cotton Maxi Dress In Colorful/0D0A0710.jpg"
                                             className="img-fluid"
