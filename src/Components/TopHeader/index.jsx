@@ -106,8 +106,8 @@ const TopHeader = () => {
                   data-target-link-content=".link-content.-just-in"
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="justIn"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   New In
 
@@ -119,8 +119,8 @@ const TopHeader = () => {
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="designers"
                   to="/Designer"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   Designers
                 </Link>
@@ -143,8 +143,8 @@ const TopHeader = () => {
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="accessories"
                   to="/Collections/Accessories"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   Accessories
                 </Link>
@@ -153,8 +153,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Resale"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   Resale
                 </Link>
@@ -163,8 +163,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Resale"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   SEPARATES
                 </Link>
@@ -173,8 +173,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Resale"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   OCCASIONS
                 </Link>
@@ -193,8 +193,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/InstaShop"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   INSTA-SHOP
 
@@ -204,8 +204,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Resale"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                  HELP & INFO
                 </Link>
@@ -224,8 +224,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link List-By-Wardrobe"
                   to="/ListItems/ListStepOne"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   List By Wardrobe
                 </Link>

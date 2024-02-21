@@ -17,15 +17,15 @@ const UserHeader = () => {
                                     data-toggle="modal"
                                     data-target="#signin-modal"
                                 >
-                                    <FontAwesomeIcon icon={faUser} style={{ color: "white", fontSize: "16px" }} />
+                                    <FontAwesomeIcon icon={faUser} style={{ color: "white", fontSize: "17px" }} />
                                     {/* <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" /> */}
                                 </Link>
                             </li>
                         </ul>
                     </div>
-                    <FontAwesomeIcon icon={faShoppingBag} />
-                    <FontAwesomeIcon icon={faSearch} />
-                    <FontAwesomeIcon icon={faHeart} />
+                    <FontAwesomeIcon icon={faShoppingBag} style={{ color: "white", fontSize: "17px" }}/>
+                    <FontAwesomeIcon icon={faSearch} style={{ color: "white", fontSize: "17px" }}/>
+                    <FontAwesomeIcon icon={faHeart} style={{ color: "white", fontSize: "17px" }}/>
                     {/* <i className="fas fa-shopping-bag" /> */}
                     {/* <i className="fas fa-search" />
             <i className="far fa-heart" /> */}

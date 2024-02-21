@@ -45,9 +45,9 @@ const Signin = () => {
                                 <Link
                                     to="/Signin"
                                     className="text-decoration-none"
-                                    style={{ color: "#592530" }}
+                                    style={{  backgroundColor: "#592530", padding: "5px 20px" }}
                                 >
-                                    <h2>SIGN IN</h2>
+                                    <h2 style={{color: "white"}} >SIGN IN</h2>
                                 </Link>
                             </div>
                             <div className="col-lg-6 d-flex justify-content-center">
@@ -62,28 +62,33 @@ const Signin = () => {
                         </div>
                         <div className="row sign-button-platform justify-content-center">
                             <i className="fa-brands fa-google" />
+                            <Link >
                             <button type="button">
                                 <span>Sign in with Google</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="row sign-button-platform">
                             <i className="fa-brands fa-facebook" />
+                            <Link >
                             <button type="button">
                                 <span>Sign in with Facebook</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="row sign-button-platform">
                             <i className="fa-brands fa-apple" />
+                            <Link>
                             <button type="button">
                                 <span>Sign in with Apple</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="d-flex justify-content-center align-items-center w-100 mt-4">
                             <h4>OR</h4>
                         </div>
                         <div className="row set-email-width ml-2">
-                            <span className="mt-4 ml-3">UserName*</span>
-                            <br />
+                            <span className="mt-4 ml-0">UserName*</span>
                             <input
                                 className="mt-2"
                                 type="text"
@@ -94,8 +99,8 @@ const Signin = () => {
                             />
                         </div>
                         <div className="row set-email-width ml-2">
-                            <span>Email*</span>
-                            <br />
+                            <span className="mt-4 ml-0" style={{marginLeft:"-17px !important"}}>Email*</span>
+                            
                             <input
                                 className="mt-2"
                                 type="email"
@@ -106,8 +111,8 @@ const Signin = () => {
                             />
                         </div>
                         <div className="row set-email-width ml-2">
-                            <span className="mt-4 ml-3">Password*</span>
-                            <br />
+                            <span className="mt-4 ml-0">Password*</span>
+                            
                             <input
                                 className="mt-2"
                                 type="password"
@@ -123,7 +128,7 @@ const Signin = () => {
                                 <span>Sign in</span>
                             </button>
                         </div>
-                        <div className="row mt-4 justify-content-center">
+                        <div className="row mt-0 justify-content-start mb-3">
                             <Link
                                 to="/Forgot-Password"
                                 className="text-dark text-uppercase text-decoration-none"

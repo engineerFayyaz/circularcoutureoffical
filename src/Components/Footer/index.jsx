@@ -1,10 +1,18 @@
-import React from "react";
+// import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 // import "../../css/admin-header.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram ,faFacebook,  faTwitter ,  faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+
+
 const Footer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page when component mounts
+  }, []); 
+
   return (
     <>
       <footer className="footer">
@@ -81,11 +89,7 @@ const Footer = () => {
                       Sustainability
                     </Link>
                   </li>
-                  <li>
-                    <Link to="#">
-                      Blog
-                    </Link>
-                  </li>
+                 
                   <li>
                     <Link to="/TermsOfService">
                       Terms of Service
@@ -112,7 +116,7 @@ const Footer = () => {
                   <li>
                     <a className="nav-link mx-0 p-0 d-inline-block logo" href="/">
                       <img style={{ color: "white" }}
-                        width={275}
+                        width={260}
                         className="header-logo"
                         alt="CIRCULAR COUTURE logo"
                         src="/images/footer-logo.png"
@@ -121,10 +125,10 @@ const Footer = () => {
 
                   </li>
                   <div className="d-flex justify-content-evenly">
-                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faInstagram} />
-                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faFacebook} />
-                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faTwitter} />
-                    <FontAwesomeIcon style={{ fontSize: "30px", margin: "10px" }} icon={faLinkedin} />
+                    <FontAwesomeIcon style={{ fontSize: "27px", margin: "10px", cursor:"pointer" }} icon={faInstagram} />
+                    <FontAwesomeIcon style={{ fontSize: "27px", margin: "10px", cursor:"pointer" }} icon={faFacebook} />
+                    <FontAwesomeIcon style={{ fontSize: "27px", margin: "10px", cursor:"pointer" }} icon={faTwitter} />
+                    <FontAwesomeIcon style={{ fontSize: "27px", margin: "10px", cursor:"pointer" }} icon={faLinkedin} />
                   </div>
                   <div>
                     {/* <button className="" type="button">Subscribe</button> */}

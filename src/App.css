@@ -88,13 +88,14 @@
 
     .sign-button-platform i {
         position: relative;
-        left: 6rem;
-        top: 0.6rem;
+        left: -14rem;
+        top: 3.5rem;
         color: white;
+        font-size: 18px;
     }
 
         .sign-button-platform i:hover {
-            color: #592530 !important;
+            color: black !important;
         }
 
 .set-email-width {
