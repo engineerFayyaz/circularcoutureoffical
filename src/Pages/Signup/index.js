@@ -10,7 +10,7 @@ const Signup =() => {
                 </Link>
                 <div className="row d-flex align-items-center justify-content-center signIn-form-row">
                 <div className="col-lg-6 text-center px-3" >
-                        <img  src="/images/CC TM Logo cheetaa.png" width={"450px"} />
+                        <img  src="/images/CC TM Logo cheetaa.png" width={"480px"} />
                          </div>
                     <div className="col-lg-6 model-first-div text-center">
                         <div className="row">
