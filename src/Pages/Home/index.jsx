@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <>
-      <TopHeader/>
+        <TopHeader />
         <div
           className="main-container no-overflow-x pt-0"
           data-controller="homepage"
@@ -37,8 +37,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-                  {/* product crousel  */}
-                  <NowTrending/>
+          {/* product crousel  */}
+          <NowTrending />
           {/* banner 2 */}
           <section>
             <div className=" component-container-2 mt-5">
@@ -69,7 +69,12 @@ const Home = () => {
               <div className="row">
                 <div className="col">
                   <div className="img-fluid">
-                                      <img src="/web-images/LIS_028 _. _DIVINITY WHEEL_ RUFFLE EMBROIDERED COTTON DRESS IN WHITE/0D0A0584.jpg" alt="" width={250} loading="lazy" />
+                    <img
+                      src="/web-images/LIS_028 _. _DIVINITY WHEEL_ RUFFLE EMBROIDERED COTTON DRESS IN WHITE/0D0A0584.jpg"
+                      alt=""
+                      width={250}
+                      loading="lazy"
+                    />
                     <div className="collection-title text-center mt-3">
                       <h4>ZIMMERMANN</h4>
                     </div>
@@ -77,7 +82,12 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="img-fluid">
-                                      <img src="/web-images/LIS_008 _ REBECCA VALLENCE Dominique Puff-sleeves Mini Dress In Pink_black/0D0A0619.jpg" alt="" width={250} loading="lazy" />
+                    <img
+                      src="/web-images/LIS_008 _ REBECCA VALLENCE Dominique Puff-sleeves Mini Dress In Pink_black/0D0A0619.jpg"
+                      alt=""
+                      width={250}
+                      loading="lazy"
+                    />
                     <div className="collection-title text-center mt-3">
                       <h4>Rebecca</h4>
                     </div>
@@ -85,7 +95,12 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="img-fluid">
-                                      <img src="/web-images/LIS_006 _ Rebecca Vallance Low bow dress/0D0A0651.jpg" alt="" width={250} loading="lazy" />
+                    <img
+                      src="/web-images/LIS_006 _ Rebecca Vallance Low bow dress/0D0A0651.jpg"
+                      alt=""
+                      width={250}
+                      loading="lazy"
+                    />
                     <div className="collection-title text-center mt-3">
                       <h4>Isabel marant</h4>
                     </div>
@@ -93,7 +108,12 @@ const Home = () => {
                 </div>
                 <div className="col">
                   <div className="img-fluid">
-                                      <img src="/web-images/LIS_07 _ ISABEL MARANT Getya short dress/0D0A0599.jpg" alt="" width={250} loading="lazy" />
+                    <img
+                      src="/web-images/LIS_07 _ ISABEL MARANT Getya short dress/0D0A0599.jpg"
+                      alt=""
+                      width={250}
+                      loading="lazy"
+                    />
                     <div className="collection-title text-center mt-3">
                       <h4>emilio pucci</h4>
                     </div>
@@ -142,8 +162,8 @@ const Home = () => {
                       src="images/background-images/collage2.png"
                       alt=""
                       height={400}
-                                          width="100%"
-                                          loading="lazy"
+                      width="100%"
+                      loading="lazy"
                     />
                   </Link>
                 </div>
@@ -162,19 +182,44 @@ const Home = () => {
               </div>
               <div className="row d-flex">
                 <div className="col">
-                                  <img src="images/gallery-images/4.png" alt="" width="100%" loading="lazy" />
+                  <img
+                    src="images/gallery-images/4.png"
+                    alt=""
+                    width="100%"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="col">
-                                  <img src="images/gallery-images/3.png" alt="" width="100%" loading="lazy" />
+                  <img
+                    src="images/gallery-images/3.png"
+                    alt=""
+                    width="100%"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="col">
-                                  <img src="images/gallery-images/2.png" alt="" width="100%" loading="lazy" />
+                  <img
+                    src="images/gallery-images/2.png"
+                    alt=""
+                    width="100%"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="col">
-                                  <img src="images/gallery-images/1.png" alt="" width="100%" loading="lazy" />
+                  <img
+                    src="images/gallery-images/1.png"
+                    alt=""
+                    width="100%"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="col">
-                                  <img src="images/gallery-images/5.png" alt="" width="100%" loading="lazy" />
+                  <img
+                    src="images/gallery-images/5.png"
+                    alt=""
+                    width="100%"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div className="row text-center d-flex align-items-center justify-content-center my-5">
@@ -191,8 +236,7 @@ const Home = () => {
           </section>
         </div>
         <EmailSubscription />
-       <Footer/>
-        
+        <Footer />
       </>
     </>
   );

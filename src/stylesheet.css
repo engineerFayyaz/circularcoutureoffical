@@ -14100,9 +14100,9 @@ div.component.product-header>div.express-shipping>span.caption {
 
 .product-lender-component .profile-picture-icon {
     border: 1px solid #E6E6E6;
-    border-radius: 100px;
-    height: 48px;
-    width: 48px
+    border-radius: 50%;
+    height: 54px;
+    width: 70px;
 }
 
 .product-lender-component .product-lender-info h3.lender-name {
@@ -59376,11 +59376,21 @@ button:focus {
     }
 }
 
+.signIn-form-container{
+    background: #592530;
+}
+.signIn-form-row{
+    padding-top: 3rem  !important;
+    padding: 3rem 5rem;
+}
 
 .model-first-div {
+    background-color: white;
     width: 100%;
-    margin-left: 40px;
+    /* margin-left: 40px; */
     justify-content: space-around;
+    box-shadow: 0px 0px 8px 1px black;
+    border-radius: 20px;
 }
 
     .model-first-div span a {
@@ -59439,7 +59449,7 @@ button:focus {
 
     .sign-button-platform>i {
         position: relative;
-    left: -14rem;
+    left: -9em;
     top: 3.5rem;
     color: white;
     font-size: 18px;
