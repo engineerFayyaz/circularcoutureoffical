@@ -997,7 +997,7 @@ const Reviews = () => {
                   <div className="row">
                     <div className="col-md-3">
                       <div className="product-renter-component">
-                       <div className="row no-gutters product-renter p-0">
+                       <div className=" no-gutters product-renter p-0 d-flex align-items-center">
                           {' '}
                           <img
                             className="profile-picture-icon"
@@ -1007,7 +1007,7 @@ const Reviews = () => {
                             <p className="renter py-2 m-0">
                               {' '}Laura R.{' '}
                             </p>
-                            <div className="row no-gutters rating">
+                            <div className=" no-gutters rating">
                               <div className="star">
                                 <svg
                                   height="16px"
@@ -1172,7 +1172,7 @@ const Reviews = () => {
                   <div className="row">
                     <div className="col-md-3">
                       <div className="product-renter-component">
-                        <div className="row no-gutters product-renter p-0">
+                        <div className=" no-gutters product-renter p-0 d-flex align-items-center">
                           {' '}
                           <img
                             className="profile-picture-icon"
@@ -1182,7 +1182,7 @@ const Reviews = () => {
                             <p className="renter py-2 m-0">
                               {' '}Elena R.{' '}
                             </p>
-                            <div className="row no-gutters rating">
+                            <div className=" no-gutters rating">
                               <div className="star">
                                 <svg
                                   height="16px"
@@ -1347,7 +1347,7 @@ const Reviews = () => {
                   <div className="row">
                     <div className="col-md-3">
                       <div className="product-renter-component">
-                        <div className="row no-gutters product-renter p-0">
+                        <div className="d-flex align-items-center no-gutters product-renter p-0">
                           {' '}
                           <img
                             className="profile-picture-icon"
@@ -1357,7 +1357,7 @@ const Reviews = () => {
                             <p className="renter py-2 m-0">
                               {' '}Samantha O.{' '}
                             </p>
-                            <div className="row no-gutters rating">
+                            <div className=" no-gutters rating">
                               <div className="star">
                                 <svg
                                   height="16px"
@@ -1541,7 +1541,7 @@ const Reviews = () => {
                   <div className="row">
                     <div className="col-md-3">
                       <div className="product-renter-component">
-                        <div className="row no-gutters product-renter p-0">
+                        <div className="d-flex align-items-center no-gutters product-renter p-0">
                           {' '}
                           <img
                             className="profile-picture-icon"
@@ -1551,7 +1551,7 @@ const Reviews = () => {
                             <p className="renter py-2 m-0">
                               {' '}Isobel G.{' '}
                             </p>
-                            <div className="row no-gutters rating">
+                            <div className=" no-gutters rating">
                               <div className="star">
                                 <svg
                                   height="16px"
