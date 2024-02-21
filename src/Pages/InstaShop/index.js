@@ -12,7 +12,7 @@ const InstaShop = () => {
 
   const fetchInstagramMedia = async () => {
     try {
-      const accessToken = "IGQWRQNVBYSk9OLTdSZAzhoRjhrdXhyU3pXMjRTZAC1Ec0hqUnlCMTl6dXBoNDFITHNqeWdWbGJNY1VmcllMenVxeC1uSVZAJUDN6ZAnZAuTG54dnVBeGtsUGh3R0p2RllDeEdfS2xDeV9DczdscTdIYVJkTVpRYmtSMFEZD";
+      const accessToken = "IGQWRPUmVfTjNRWFhuZAmlDekxFMGdPVmdlY1hVWU9RQ2huUFRwUzF1SmZAsR2twZA2NLeGptNHhnNk9ZAS1pQdmx4TDlCRWVXTzdud1FqSkRyNEVlTjJMdUZAFVDFiQ0RxQTFJWlZAjaWdJSm9EeDZAKMWd3RkllWEkzd3MZD";
       const response = await fetch(
         `https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,caption&access_token=${accessToken}`
       );
@@ -60,15 +60,29 @@ const InstaShop = () => {
               {/* Render images and videos */}
               {media.map((item) => (
                 <div key={item.id} className="insta-media-item">
-                  <img
-                    src={getMediaUrl(item)}
-                    alt={item.caption}
-                    className="insta-media"
-                    onClick={() => openImage(item.media_url)}
-                  />
+                  {item.media_type === "VIDEO" ? (
+                    <video
+                      controls
+                      className="insta-media"
+                      onClick={() => openImage(getMediaUrl(item))}
+                    >
+                      <source src={getMediaUrl(item)} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <img
+                      src={getMediaUrl(item)}
+                      alt={item.caption}
+                      className="insta-media"
+                      onClick={() => openImage(getMediaUrl(item))}
+                    />
+                  )}
                   {/* Thumbnail icon */}
                   {item.media_type === "IMAGE" && (
-                    <div className="thumb-icon" onClick={() => openImage(item.media_url)}>
+                    <div
+                      className="thumb-icon"
+                      onClick={() => openImage(getMediaUrl(item))}
+                    >
                       <i className="fas fa-search-plus"></i>
                     </div>
                   )}

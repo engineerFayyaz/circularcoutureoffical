@@ -157,7 +157,8 @@ function ProjectRoutes() {
                     <Route path="/Membership" element={<Membership />} />
                     <Route path="/SellingorRenting" element={<SellingOrRenting />} />
                     <Route path="/Sustainability" element={<Sustainability />} />
-                    <Route path="/ProductDetail" element={<ProductDetail />} />
+                    <Route path="/ProductDetail/:productId" element={<ProductDetail />} />
+
                     <Route path="/ListingNew" element={<ListingNew />} />
                     <Route path="/Panel/Renting" element={<Renting />} />
                     <Route path="/Panel/Buyer" element={<Buyer />} />
