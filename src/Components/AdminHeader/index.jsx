@@ -1,6 +1,8 @@
 import React from "react";
 import "../../css/admin-header.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 const AdminHeader = () => {
   return (
     <header>
@@ -8,10 +10,10 @@ const AdminHeader = () => {
         <div className="container-fluid">
           <div className="main-nav-brand-admin">
             <Link className="navbar-brand-admin" to="/AdminPanel/AdminMainPage">
-              Circular Couture
+             <img src="/images/CC TM Logo.png" width={"300px"}/>
             </Link>
             <input type="search" name="" id="" placeholder="Search" />
-            <img src="assets/images/search.png" alt="" />
+            <FontAwesomeIcon icon={faMagnifyingGlass} style={{fontSize:"20px",position:"relative",right:"4.5rem",cursor:"pointer"}}/>
           </div>
           <div
             className="collapse navbar-collapse d-flex justify-content-end"

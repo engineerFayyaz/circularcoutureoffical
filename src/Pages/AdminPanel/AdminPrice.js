@@ -15,32 +15,32 @@ const AdminPrice = () => {
             style={{ backgroundColor: "black", color: "white" }}
           >
             <AdminSideHeader />
-            <div className="col-lg-5 mt-4">
+            <div className="col-lg-8 mt-4">
               <div className="row">
                 <div className="order-page-admin">
                   <ol
-                    className="d-flex flex-row justify-content-between"
-                    style={{ gap: "45px" }}
+                    className="d-flex flex-row justify-content-around"
+                    style={{ gap: "10rem" }}
                   >
                     <li>
                       <Link to="/AdminPanel/AddProductsAdmin">
                         {" "}
-                        <button> ITEM </button>
+                        <button className="ml-2"> ITEM </button>
                       </Link>
                     </li>
                     <li>
                       <Link to="/AdminPanel/AdminPrice">
-                        <button> Price</button>
+                        <button className="ml-2"> Price</button>
                       </Link>
                     </li>
                     <li>
                       <Link to="/AdminPanel/CompleteAdmin">
-                        <button> Complete</button>
+                        <button className="ml-2"> Complete</button>
                       </Link>
                     </li>
                   </ol>
                 </div>
-                <div style={{ width: "200px" }}>
+                <div className="p-2" style={{ width: "200px" }}>
                   <h5>
                     <b>Pricing Information</b>
                   </h5>
@@ -48,7 +48,7 @@ const AdminPrice = () => {
                 <hr />
                 <div className="row mt-3">
                   <div className="col-lg-6">
-                    <div className="input-number-admin">
+                    <div className="input-number-admin  d-flex align-items-center justify-content-evenly ">
                       <label htmlFor="quantity">Retail Price*</label>
                       <input
                         type="number"
@@ -61,7 +61,7 @@ const AdminPrice = () => {
                     </div>
                   </div>
                   <div className="col-lg-6">
-                    <div className="input-number-admin">
+                    <div className="input-number-admin  d-flex align-items-center justify-content-evenly">
                       <label htmlFor="quantity">Day Rate*</label>
                       <input
                         type="number"
@@ -76,7 +76,7 @@ const AdminPrice = () => {
                 </div>
                 <div className="row mt-3">
                   <div className="col-lg-6">
-                    <div className="input-number-admin">
+                    <div className="input-number-admin  d-flex align-items-center justify-content-evenly">
                       <label htmlFor="quantity">Dry Cleaning*</label>
                       <input
                         type="number"
@@ -89,7 +89,7 @@ const AdminPrice = () => {
                     </div>
                   </div>
                   <div className="col-lg-6">
-                    <div className="input-number-admin">
+                    <div className="input-number-admin  d-flex align-items-center justify-content-evenly">
                       <label htmlFor="quantity"> Delivery*</label>
                       <input
                         type="number"
@@ -102,9 +102,9 @@ const AdminPrice = () => {
                     </div>
                   </div>
                 </div>
-                <div className="row mt-3">
+                <div className="row mt-3 align-items-center ">
                   <div className="col-lg-6">
-                    <div className="input-number-admin">
+                    <div className="input-number-admin  d-flex align-items-center justify-content-evenly">
                       <label htmlFor="quantity">security deposit</label>
                       <input
                         type="number"
@@ -116,7 +116,7 @@ const AdminPrice = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-lg-6  d-flex">
+                  <div className="col-lg-6  ">
                     <span className="mt-4">ADD ?</span>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ const AdminPrice = () => {
                 </div>
 
                 <div className="row">
-                  <div style= {{width:"100%"}} >
+                  <div style={{ width: "100%" }}>
                     <b>LISTING PRICES</b>
                   </div>
                   <div className="col-lg-3 section-price-admin">
@@ -151,26 +151,25 @@ const AdminPrice = () => {
                     <span>16 DAYS</span>
                     <span>AUS $ </span>
                   </div>
-                 
                 </div>
-
-                <div>
-                  <div className="row">
-                    <div className="col-lg-3 section-price-admin">
-                      <span>4 DAYS</span>
-                      <span>AUS $ </span>
-                    </div>
-                    <div className="col-lg-3 section-price-admin">
-                      <span>8 DAYS</span>
-                      <span>AUS $ </span>
-                    </div>
-                    <div className="col-lg-3 section-price-admin">
-                      <span>16 DAYS</span>
-                      <span>AUS $ </span>
-                    </div>
-                   
+                <div className="row">
+                  <div className="col-lg-3 section-price-admin">
+                    <span>4 DAYS</span>
+                    <span>AUS $ </span>
                   </div>
+                  <div className="col-lg-3 section-price-admin">
+                    <span>8 DAYS</span>
+                    <span>AUS $ </span>
+                  </div>
+                  <div className="col-lg-3 section-price-admin">
+                    <span>16 DAYS</span>
+                    <span>AUS $ </span>
+                  </div>
+                </div>
+              </div>
 
+              <div>
+                <div className="row">
                   <div className="d-flex justify-content-center mt-3">
                     <span>
                       <b>PLEASE ENTER A RETAIL PRICE ABOVE</b>
@@ -181,7 +180,7 @@ const AdminPrice = () => {
                       <b style={{ textTransform: "uppercase" }}>Offer to buy</b>
                     </span>
                     <hr />
-                    <div className="checkbox-apple">
+                    <div className="checkbox-apple p-0 m-0 my-4">
                       <input
                         className="yep"
                         id="check-apple"
@@ -190,7 +189,7 @@ const AdminPrice = () => {
                       />
                       <label htmlFor="check-apple" />
                     </div>
-                    <p id="offerText" style={{ display: "none" }}>
+                    <p id="offerText" >
                       Your returns policy is at your own discretion, we advise
                       you make a note in the item description. Please make sure
                       your images and description are up to date and show any
@@ -211,7 +210,7 @@ const AdminPrice = () => {
                       <span>
                         <b>UK 2</b>
                       </span>
-                      <input className="number-type" type="number" />
+                      <input className="number-type" type="number" value={"1"}/>
                     </div>
                     <p />
                   </div>
@@ -220,22 +219,22 @@ const AdminPrice = () => {
               <Link to="/AdminPanel/ViewAdminProducts">
                 <button className="move-step-admin mb-3 mt-3">Next Step</button>
               </Link>
-            </div>
-            <div className="col-lg-5 mt-4">
+            <div className="row mt-4 p-3">
               <span>
                 <b>UPLOAD PHOTOS* </b>
               </span>
               <h6>
                 Please upload at least 3 photos showing the item's condition.
               </h6>
-              <div className="row mt-4">
-                <div className="col-lg-4">
+              <div className="row mt-4 p-3">
+                <div className="col-lg-4 d-flex align-items-center flex-column ">
                   <span>
                     <b>MAIN PHOTO*</b>
                   </span>
                   <label
                     htmlFor="fileInput"
                     className="custom-file-input-admin"
+                    style={{width:"100%"}}
                   >
                     <div className="custom-file-container-admin">
                       <div className="custom-file-icon-admin">
@@ -251,13 +250,14 @@ const AdminPrice = () => {
                     />
                   </label>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 d-flex align-items-center flex-column">
                   <span>
                     <b>2ND PHOTO*</b>
                   </span>
                   <label
                     htmlFor="fileInput"
                     className="custom-file-input-admin"
+                    style={{width:"100%"}}
                   >
                     <div className="custom-file-container-admin">
                       <div className="custom-file-icon-admin">
@@ -273,13 +273,14 @@ const AdminPrice = () => {
                     />
                   </label>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-4 d-flex align-items-center flex-column">
                   <span>
                     <b>3RD PHOTO*</b>
                   </span>
                   <label
                     htmlFor="fileInput"
                     className="custom-file-input-admin"
+                    style={{width:"100%"}}
                   >
                     <div className="custom-file-container-admin">
                       <div className="custom-file-icon-admin">
@@ -338,6 +339,7 @@ const AdminPrice = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

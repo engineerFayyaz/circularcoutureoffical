@@ -62,7 +62,7 @@ const AdminCategory = () => {
             style={{ backgroundColor: "black", color: "white" }}
           >
             <AdminSideHeader />
-            <div className="col-lg-10 ">
+            <div className="col-lg-10 p-3">
               <h2 className="text-center text-light">Create Product Category</h2>
               <hr />
               <form onSubmit={handleSubmit}>

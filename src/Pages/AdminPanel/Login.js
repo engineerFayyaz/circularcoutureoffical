@@ -6,63 +6,79 @@ const Login = () => {
   return (
     <>
       <AdminHeader />
-      <div className="container-fluid">
-        <div
-          className="row  text-light "
-          style={{ backgroundColor: "black", color: "white" }}
-        >
-          <div className="col-lg-3" />
-          <div className="col-lg-1" />
-          <div className="col-lg-3 mt-5 mb-5 ">
-            <div className="row d-flex justify-content-center align-items-center">
-              <form className="form">
-                <p id="heading">Login</p>
-                <div className="field">
-                  <svg
-                    className="input-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={16}
-                    height={16}
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z" />
-                  </svg>
-                  <input
-                    autoComplete="off"
-                    placeholder="Username"
-                    className="input-field"
-                    type="text"
-                  />
-                </div>
-                <div className="field">
-                  <svg
-                    className="input-icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={16}
-                    height={16}
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" />
-                  </svg>
-                  <input
-                    placeholder="Password"
-                    className="input-field"
-                    type="password"
-                  />
-                </div>
-                <div className="btn">
-                  <Link to="/AdminPanel/AdminMainPage" className="button1">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  </Link>
-                </div>
-                <button className="button3">Forgot Password</button>
-              </form>
-            </div>
-          </div>
-        </div>
+      <div className="container admin-login-container d-flex align-items-center justify-content-center m-0">
+  <div className="content">
+   <img src="/images/CC TM Logo.png" width={280}/>
+    <form className="content__form">
+      <div className="content__inputs">
+        <label>
+          <input
+            required
+            type="text"
+          />
+          <span>
+            Phone number, username, or email
+          </span>
+        </label>
+        <label>
+          <input
+            required
+            type="password"
+          />
+          <span>
+            Password
+          </span>
+        </label>
       </div>
+      <button>
+        Log In
+      </button>
+    </form>
+    <div className="content__or-text">
+      <span />
+      <span>
+        OR
+      </span>
+      <span />
+    </div>
+    <div className="content__forgot-buttons">
+      <button>
+        <span>
+          <svg
+            className=""
+            height="512"
+            style={{
+              enableBackground: 'new 0 0 512 512'
+            }}
+            version="1.1"
+            viewBox="0 0 408.788 408.788"
+            width="512"
+            x="0"
+            xmlSpace="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            y="0"
+          >
+            <g>
+              <path
+                className=""
+                d="M353.701 0H55.087C24.665 0 .002 24.662.002 55.085v298.616c0 30.423 24.662 55.085 55.085 55.085h147.275l.251-146.078h-37.951a8.954 8.954 0 0 1-8.954-8.92l-.182-47.087a8.955 8.955 0 0 1 8.955-8.989h37.882v-45.498c0-52.8 32.247-81.55 79.348-81.55h38.65a8.955 8.955 0 0 1 8.955 8.955v39.704a8.955 8.955 0 0 1-8.95 8.955l-23.719.011c-25.615 0-30.575 12.172-30.575 30.035v39.389h56.285c5.363 0 9.524 4.683 8.892 10.009l-5.581 47.087a8.955 8.955 0 0 1-8.892 7.901h-50.453l-.251 146.078h87.631c30.422 0 55.084-24.662 55.084-55.084V55.085C408.786 24.662 384.124 0 353.701 0z"
+                data-original="#475993"
+                fill="#475993"
+              />
+            </g>
+          </svg>
+        </span>
+        <span>
+          Log in with Facebook
+        </span>
+      </button>
+      <button>
+        Forgot password?
+      </button>
+    </div>
+  </div>
+</div>
     </>
   );
 };

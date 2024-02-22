@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Signin = () => {
     // State variables to store form data
@@ -40,7 +42,7 @@ const Signin = () => {
             <div className="container signIn-form-container">
                 <Link to={"/"} 
                 style={{position:"absolute",right:"16px",top:"6px"}}>
-                <i className="fa-solid fa-xmark" style={{color:"white",fontSize:"35px"}}/>
+                <FontAwesomeIcon icon={faXmark}  style={{color:"white",fontSize:"35px"}}/>
                 </Link>
                 <div className="row d-flex align-items-center justify-content-center signIn-form-row">
                     <div className="col-lg-6 text-center px-3" >

@@ -6,7 +6,7 @@ const AdminSideHeader = () => {
         <>
             <div className="col-lg-2 ">
                 {/* Nav tabs */}
-                <ul className="nav nav-tabs d-flex flex-column " id="navId" role="tablist">
+                <ul className="nav nav-tabs admin-sidebar-nav d-flex flex-column  " id="navId" role="tablist">
                     <li className="nav-item dropdown ">
                         <Link
                             className="nav-link text-light "
@@ -133,7 +133,7 @@ const AdminSideHeader = () => {
                             <a className="dropdown-item" href="#tab2Id">
                                 User Overview
                             </a>
-                            <a className="dropdown-item" href="/login.html">
+                            <a className="dropdown-item" href="/AdminPanel/login">
                                 Login
                             </a>
                         </div>
