@@ -379,7 +379,7 @@ const AddProductsAdmin = () => {
                     />
                   </Form.Group>
                   <br />
-                  <Form.Group className="mb-4 mt-4">
+                  <Form.Group className="mb-3 mt-3">
                     <Form.Label><b>Code*</b></Form.Label>
                     <Form.Control
                       type="text"
@@ -495,11 +495,12 @@ const AddProductsAdmin = () => {
                   </Form.Group>
 
                   <Form.Group className="mb-3 mt-3 Category-admin">
-                    <Form.Label><b>Upload Images*</b></Form.Label>
+                    <Form.Label><b>Upload Images* <span style={{fontSize:"12px !important",textTransform:"capitalize",color:"#f5f5f5e0"}}>(Please Select atleast four images)</span></b></Form.Label>
                     <Form.Control
                       type="file"
                       name="images"
                       accept="image/*"
+                      title="Please select atleast four images"
                       multiple
                       onChange={handleImageChange} // Add this onChange handler
                     />

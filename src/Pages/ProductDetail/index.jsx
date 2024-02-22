@@ -71,7 +71,7 @@ const ProductDetail = () => {
     return (
         <>
         <TopHeader/>
-        <Container className="mt-5">
+        <Container className="mt-5 ">
             <h1>Product Detail</h1>
             <Row>
                 <Col md={6}>

@@ -85,17 +85,17 @@ function AddEdits() {
             <div className="container-fluid">
                 <div className="row text-light" style={{ backgroundColor: "black", color: "white" }}>
                     <AdminSideHeader />
-                    <div className="col-lg-5 mt-4">
+                    <div className="col-lg-10 mt-4">
                         <Form onSubmit={handleSubmit}>
-                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Form.Label>Edit Name</Form.Label>
                                 <Form.Control type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Product type" required />
                             </Form.Group>
-                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Form.Label>Edit Details</Form.Label>
                                 <Form.Control type="text" value={detail} onChange={(e) => setDetail(e.target.value)} placeholder="Product details" required />
                             </Form.Group>
-                            <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Form.Label>Edit Image</Form.Label>
                                 <div className="input-group">
                                     <Form.Control type="text" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} placeholder="Image URL" required />

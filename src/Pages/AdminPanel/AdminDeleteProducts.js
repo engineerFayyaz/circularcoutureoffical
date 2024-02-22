@@ -43,6 +43,7 @@ const AdminDeleteProducts = () => {
           style={{ backgroundColor: "black", color: "white" }}
         >
           <AdminSideHeader />
+          <div className="col-lg-10 p-5">
           <Form.Group controlId="productIdInput">
             <Form.Label>Product ID</Form.Label>
             <Form.Control
@@ -52,10 +53,12 @@ const AdminDeleteProducts = () => {
               onChange={(e) => setProductId(e.target.value)}
             />
           </Form.Group>
-          <Button onClick={handleDelete}>Delete Product</Button>
+          <Button onClick={handleDelete} style={{marginTop:"20px",fontSize:"16px",fontWeight:"600",padding:"15px",borderRadius:"10px"}}>Delete Product</Button>
           <Toast show={showToast} onClose={() => setShowToast(false)}>
             <Toast.Body>{toastMessage}</Toast.Body>
           </Toast>
+          </div>
+         
         </div>
       </div>
     </div>

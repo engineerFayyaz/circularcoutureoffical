@@ -93,9 +93,9 @@ const ViewAdminProducts = () => {
                 <Container fluid>
                     <Row className="text-light" style={{ backgroundColor: "black", color: "white" }}>
                         <AdminSideHeader />
-                        <Col lg={10}>
+                        <Col lg={10} className="p-3">
                             <div className="product-view">
-                                <h2 className="product-heading">Product Details :</h2>
+                                <h2 className="product-heading text-light">Product Details :</h2>
                                 <Table responsive bordered hover>
                                     <thead>
                                         <tr>

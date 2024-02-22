@@ -40,9 +40,9 @@ function ProductsType() {
       <div className="container-fluid">
         <div className="row text-light" style={{ backgroundColor: "black", color: "white" }}>
           <AdminSideHeader />
-          <div className="col-lg-5 mt-4">
+          <div className="col-lg-10 mt-4">
             <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-2" controlId="exampleForm.ControlInput1">
+              <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Product Type</Form.Label>
                 <Form.Control type="text" value={type} onChange={(e) => setType(e.target.value)} placeholder="Product type " required />
               </Form.Group>

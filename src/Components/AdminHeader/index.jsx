@@ -8,10 +8,10 @@ const AdminHeader = () => {
         <div className="container-fluid">
           <div className="main-nav-brand-admin">
             <Link className="navbar-brand-admin" to="/AdminPanel/AdminMainPage">
-              Circular Couture
+             <img src="/images/CC TM Logo.png" width={"300px"}/>
             </Link>
             <input type="search" name="" id="" placeholder="Search" />
-            <img src="assets/images/search.png" alt="" />
+            <i className="fa-solid fa-magnifying-glass" />
           </div>
           <div
             className="collapse navbar-collapse d-flex justify-content-end"

@@ -90,15 +90,14 @@ const AdminMainPage = () => {
 
         <AdminHeader />
     
-          <h1 >Admin Dashboard</h1>
-      
         <div className="container-fluid">
+          <h1 style={{fontWeight:"600",letterSpacing:"1.2px"}}>Admin Dashboard</h1>
           <div
             className="row text-light"
             style={{ backgroundColor: "black", color: "white" }}
           >
             <AdminSideHeader />
-            <div className="col-lg-5 d-flex justify-content-center">
+            <div className="col-lg-5 d-flex justify-content-center p-4">
               {/* Canvas for Product Chart */}
               <canvas ref={productChartRef}></canvas>
             </div>
