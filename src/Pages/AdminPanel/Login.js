@@ -6,7 +6,7 @@ const Login = () => {
   return (
     <>
       <AdminHeader />
-      <div className="container d-flex align-items-center justify-content-center">
+      <div className="container admin-login-container d-flex align-items-center justify-content-center m-0">
   <div className="content">
    <img src="/images/CC TM Logo.png" width={280}/>
     <form className="content__form">
