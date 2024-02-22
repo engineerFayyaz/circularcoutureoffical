@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
-import TopHeader from "../../Components/TopHeader"
+import TopHeader from "../../Components/TopHeader";
 
 const ProductDetail = () => {
     const { productId } = useParams();
     const [product, setProduct] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [mainImage, setMainImage] = useState(null);
 
     useEffect(() => {
         const fetchProduct = async () => {
@@ -32,6 +33,12 @@ const ProductDetail = () => {
         };
     }, [productId]);
 
+    useEffect(() => {
+        if (product && product.productImages && product.productImages.length > 0) {
+            setMainImage(product.productImages[0].url);
+        }
+    }, [product]);
+
     if (loading) {
         return <div>Loading...</div>;
     }
@@ -40,40 +47,53 @@ const ProductDetail = () => {
         return <div>Product not found</div>;
     }
 
-    const {
-        id,
-        typeId,
-        categoryId,
-        designerId,
-        editId,
-        name,
-        size,
-        brand,
-        isAvailable,
-        color,
-        condition,
-        sellPrice,
-        // price,
-        rentPrice4Days,
-        rentPrice8Days,
-        rentPrice16Days,
-        rentPrice30Days,
-        rrp,
-        code,
-        details,
-        isEbayStore,
-        deletedBy,
-        modifiedBy,
-        createdBy,
-        productImages
-    } = product;
+    const { name, brand, id, typeId, categoryId, designerId, editId, size, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
 
     return (
         <>
             <TopHeader />
             <Container className="mt-5">
-                <h1>Product Detail</h1>
+                <h1>Product Detail: {name}</h1> {/* Display product name */}
                 <Row>
+                <Col md={6}>
+                        <h2>Product Images</h2>
+                        <Row>
+                            <div className='col-6 col-lg-6 px-0'>
+                                
+                            
+                            <Col xs={6}>
+
+                           
+                                    {productImages &&
+                                        productImages.slice(1).map((image, index) => (
+                                            <div className='product-thumbnails -vertical slick-initialized slick-slider slick-vertical'>
+                                            
+                                                <Image
+                                                className='product-thumbnail-image'
+                                                    src={image.url}
+                                                    alt={`Product Image ${index + 1}`}
+                                                    thumbnail
+                                                    onClick={() => setMainImage(image.url)
+                                                    }
+                                                />
+
+                                            
+                                            </div>
+                                        ))}
+                                
+                            </Col>
+                            <div className='product-gallery'>
+                                    <div className='component product-gallery'>
+                            {mainImage && (
+                                <Col xs={12} className="mb-3">
+                                    <Image src={mainImage} alt={`Main Product Image`} className='product-image-item' fluid />
+                                </Col>
+                            )}
+                            </div>
+                            </div>
+                            </div>
+                        </Row>
+                    </Col>
                     <Col md={6}>
                         <Card>
                             <Card.Body>
@@ -89,7 +109,6 @@ const ProductDetail = () => {
                                 <Card.Text>Color: {color}</Card.Text>
                                 <Card.Text>Condition: {condition}</Card.Text>
                                 <Card.Text>Sell Price: {sellPrice}</Card.Text>
-                                {/* <Card.Text>Price: {price}</Card.Text> */}
                                 <Card.Text>Rent Price (4 Days): {rentPrice4Days}</Card.Text>
                                 <Card.Text>Rent Price (8 Days): {rentPrice8Days}</Card.Text>
                                 <Card.Text>Rent Price (16 Days): {rentPrice16Days}</Card.Text>
@@ -104,20 +123,7 @@ const ProductDetail = () => {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col md={6}>
-                        <h2>Product Images</h2>
-                        <Row>
-                            {productImages && productImages.length > 0 ? (
-                                productImages.map((image, index) => (
-                                    <Col key={index} xs={6} md={4} className="mb-3">
-                                        <Image src={image.url} alt={`Product Image ${index}`} thumbnail />
-                                    </Col>
-                                ))
-                            ) : (
-                                <p>No images available</p>
-                            )}
-                        </Row>
-                    </Col>
+                   
                 </Row>
             </Container>
         </>

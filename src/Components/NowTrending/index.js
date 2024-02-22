@@ -40,7 +40,7 @@ const NowTrending = () => {
                                         <div className="product-item">
                                             <Link
                                                 to={{
-                                                    pathname: `/ProductDetail/${product.id}`,
+                                                    pathname: `/ProductDetail/${product.id}/${product.name}`,
                                                     state: { productId: product.id }
                                                 }}
                                             >

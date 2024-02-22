@@ -157,7 +157,10 @@ function ProjectRoutes() {
                     <Route path="/Membership" element={<Membership />} />
                     <Route path="/SellingorRenting" element={<SellingOrRenting />} />
                     <Route path="/Sustainability" element={<Sustainability />} />
-                    <Route path="/ProductDetail/:productId" element={<ProductDetail />} />
+                    <Route
+    path="/ProductDetail/:productId/:productName"
+    element={<ProductDetail />}
+/>
 
                     <Route path="/ListingNew" element={<ListingNew />} />
                     <Route path="/Panel/Renting" element={<Renting />} />
@@ -170,7 +173,12 @@ function ProjectRoutes() {
                     <Route path="/Edits/Party-Edits" element={<PartyEdits />} />
                     <Route path="/Edits/Hot-On-Circular" element={<HotCircular />} />
                     <Route path="/Edits/Day-Time-Party-Edit" element={<DayTimeParty />} />
-                    <Route path="/Edits/Black-Tie-Edit" element={<BlackTie />} />
+                    <Route
+    path="/Edits/:name"
+    element={<BlackTie />}
+/>
+
+
                     <Route path="/Edits/Next-Birthday" element={<NextBirthday />} />
                     <Route path="/Edits/Bride-Edit" element={<BrideEdit />} />
                     <Route path="/Edits/Bridesmaid-Edit" element={<BridesmaidEdit />} />
@@ -195,10 +203,10 @@ function ProjectRoutes() {
                     <Route path="/AdminPanel/CompleteAdmin" element={<CompleteAdmin />} />
                     <Route path="/AdminPanel/ViewAdminProducts" element={<ViewAdminProducts />} />
                     <Route path="/AdminPanel/AdminCategory" element={<AdminCategory />} />
-                    <Route path="/AdminPanel/AddDesigner" element={<AddDesigner/> }/>
-                    <Route path="/AdminPanel/Products-Type" element={<ProductsType/>}/>
-                    <Route path="/AdminPanel/AddEdits" element={<AddEdits/>}/>
-                    <Route path="/AdminPanel/Admin-Delete-Products" element={<AdminDeleteProducts/>}/>
+                    <Route path="/AdminPanel/AddDesigner" element={<AddDesigner />} />
+                    <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
+                    <Route path="/AdminPanel/AddEdits" element={<AddEdits />} />
+                    <Route path="/AdminPanel/Admin-Delete-Products" element={<AdminDeleteProducts />} />
 
                     <Route path="/AdminPanel/AddDesigner" element={<AddDesigner />} />
                     <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
