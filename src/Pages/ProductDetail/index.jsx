@@ -70,52 +70,56 @@ const ProductDetail = () => {
 
     return (
         <>
-        <TopHeader/>
-        <Container className="mt-5">
-            <h1>Product Detail</h1>
-            <Row>
-                <Col md={6}>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>{name}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Brand: {brand}</Card.Subtitle>
-                            <Card.Text>ID: {id}</Card.Text>
-                            <Card.Text>Type ID: {typeId}</Card.Text>
-                            <Card.Text>Category ID: {categoryId}</Card.Text>
-                            <Card.Text>Designer ID: {designerId}</Card.Text>
-                            <Card.Text>Edit ID: {editId}</Card.Text>
-                            <Card.Text>Size: {size}</Card.Text>
-                            <Card.Text>Availability: {isAvailable ? 'Available' : 'Not Available'}</Card.Text>
-                            <Card.Text>Color: {color}</Card.Text>
-                            <Card.Text>Condition: {condition}</Card.Text>
-                            <Card.Text>Sell Price: {sellPrice}</Card.Text>
-                            {/* <Card.Text>Price: {price}</Card.Text> */}
-                            <Card.Text>Rent Price (4 Days): {rentPrice4Days}</Card.Text>
-                            <Card.Text>Rent Price (8 Days): {rentPrice8Days}</Card.Text>
-                            <Card.Text>Rent Price (16 Days): {rentPrice16Days}</Card.Text>
-                            <Card.Text>Rent Price (30 Days): {rentPrice30Days}</Card.Text>
-                            <Card.Text>RRP: {rrp}</Card.Text>
-                            <Card.Text>Code: {code}</Card.Text>
-                            <Card.Text>Details: {details}</Card.Text>
-                            <Card.Text>Is eBay Store: {isEbayStore ? 'Yes' : 'No'}</Card.Text>
-                            <Card.Text>Deleted By: {deletedBy}</Card.Text>
-                            <Card.Text>Modified By: {modifiedBy}</Card.Text>
-                            <Card.Text>Created By: {createdBy}</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col md={6}>
-                    <h2>Product Images</h2>
-                    <Row>
-                        {productImages.map((image, index) => (
-                            <Col key={index} xs={6} md={4} className="mb-3">
-                                <Image src={image.url} alt={`Product Image ${index}`} thumbnail />
-                            </Col>
-                        ))}
-                    </Row>
-                </Col>
-            </Row>
-        </Container>
+            <TopHeader />
+            <Container className="mt-5">
+                <h1>Product Detail</h1>
+                <Row>
+                    <Col md={6}>
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>{name}</Card.Title>
+                                <Card.Subtitle className="mb-2 text-muted">Brand: {brand}</Card.Subtitle>
+                                <Card.Text>ID: {id}</Card.Text>
+                                <Card.Text>Type ID: {typeId}</Card.Text>
+                                <Card.Text>Category ID: {categoryId}</Card.Text>
+                                <Card.Text>Designer ID: {designerId}</Card.Text>
+                                <Card.Text>Edit ID: {editId}</Card.Text>
+                                <Card.Text>Size: {size}</Card.Text>
+                                <Card.Text>Availability: {isAvailable ? 'Available' : 'Not Available'}</Card.Text>
+                                <Card.Text>Color: {color}</Card.Text>
+                                <Card.Text>Condition: {condition}</Card.Text>
+                                <Card.Text>Sell Price: {sellPrice}</Card.Text>
+                                {/* <Card.Text>Price: {price}</Card.Text> */}
+                                <Card.Text>Rent Price (4 Days): {rentPrice4Days}</Card.Text>
+                                <Card.Text>Rent Price (8 Days): {rentPrice8Days}</Card.Text>
+                                <Card.Text>Rent Price (16 Days): {rentPrice16Days}</Card.Text>
+                                <Card.Text>Rent Price (30 Days): {rentPrice30Days}</Card.Text>
+                                <Card.Text>RRP: {rrp}</Card.Text>
+                                <Card.Text>Code: {code}</Card.Text>
+                                <Card.Text>Details: {details}</Card.Text>
+                                <Card.Text>Is eBay Store: {isEbayStore ? 'Yes' : 'No'}</Card.Text>
+                                <Card.Text>Deleted By: {deletedBy}</Card.Text>
+                                <Card.Text>Modified By: {modifiedBy}</Card.Text>
+                                <Card.Text>Created By: {createdBy}</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                    <Col md={6}>
+                        <h2>Product Images</h2>
+                        <Row>
+                            {productImages && productImages.length > 0 ? (
+                                productImages.map((image, index) => (
+                                    <Col key={index} xs={6} md={4} className="mb-3">
+                                        <Image src={image.url} alt={`Product Image ${index}`} thumbnail />
+                                    </Col>
+                                ))
+                            ) : (
+                                <p>No images available</p>
+                            )}
+                        </Row>
+                    </Col>
+                </Row>
+            </Container>
         </>
     );
 };
