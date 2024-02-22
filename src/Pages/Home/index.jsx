@@ -4,6 +4,8 @@ import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
 import { Link } from "react-router-dom";
 import NowTrending from "../../Components/NowTrending/index";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 const Home = () => {
   return (
     <>
@@ -226,9 +228,10 @@ const Home = () => {
                 <div className="follow-us">
                   <button className="bg-light py-2 px-5">Follow US</button>
                   <div className="icons mt-3">
-                    <i className="fa-brands fa-facebook-f ms-2" />
-                    <i className="fa-brands fa-instagram ms-2" />
-                    <i className="fa-brands fa-twitter ms-2" />
+                  <FontAwesomeIcon icon={faFacebook} className={"ms-2"}/>
+                  <FontAwesomeIcon icon={faInstagram} className={"ms-2"}/>
+                  <FontAwesomeIcon icon={faTwitter} className={"ms-2"}/>
+
                   </div>
                 </div>
               </div>
