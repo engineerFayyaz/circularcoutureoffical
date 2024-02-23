@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
 import "../../css/footer-pages.css";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
-import { Link } from "react-router-dom";
 import EditFilter from "../../Components/EditFilter";
 
 const Alemais = () => {
+    const { designerId, designerName } = useParams();
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        // Fetch data from the API endpoint using the designerId
+        fetch(`https://localhost:7220/api/products/designer/${designerId}`)
+            .then(response => response.json())
+            .then(data => {
+                // Update the state with the fetched products
+                setProducts(data.results);
+            })
+            .catch(error => {
+                console.error("Error fetching data:", error);
+            });
+    }, [designerId]); // Add designerId as a dependency to re-fetch data when it changes
+        console.log("designerId",products)
     return (
         <>
             <TopHeader />
@@ -14,82 +30,34 @@ const Alemais = () => {
                     {/* plp intro*/}
                     <div className="plp-intro">
                         <div className="container">
-                            <div className="plp-intro__breadcrumbs">
-                                {/* BREADCRUMBS*/}
-                                <div className="breadcrumbs">
-                                    <ul
-                                        itemScope=""
-                                        itemType="http://schema.org/BreadcrumbList"
-                                        className="breadcrumbs__list"
-                                    >
-                                        <li
-                                            itemProp="itemListElement"
-                                            itemScope=""
-                                            itemType="http://schema.org/ListItem"
-                                        >
-                                            <a href="../index.html" itemProp="item">
-                                                <span itemProp="name">Home</span>
-                                            </a>
-                                            <meta itemProp="position" content={1} />
-                                        </li>
-                                        <li
-                                            itemProp="itemListElement"
-                                            itemScope=""
-                                            itemType="http://schema.org/ListItem"
-                                        >
-                                            <a href="../designers.html" itemProp="item">
-                                                <span itemProp="name">Designers</span>
-                                            </a>
-                                            <meta itemProp="position" content={2} />
-                                        </li>
-                                        <li
-                                            itemProp="itemListElement"
-                                            itemScope=""
-                                            itemType="http://schema.org/ListItem"
-                                        >
-                                            <span itemProp="name">Alemais</span>
-                                            <meta itemProp="position" content={3} />
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="plp-intro__container">
-                                <h1
-                                    className="h2-title plp-intro__title no-image js-results-title"
-                                    data-titletype="Designer"
-                                >
-                                    Alemais <span className="plp-intro__search-query" />
-                                </h1>
-                                <div className="plp-intro__wrapper--no-image">
-                                    <div className="plp-intro__text js-readmore-container">
-                                        <div className="plp-intro__text-wrapper js-readmore">
-                                            <div className="js-ellipsize regular-content" data-stop=">769">
-                                                <p>
-                                                    Alemais crafts beautifully detail-infused designs into their
-                                                    collection of artisanal sundresses, shirting and skirts. The
-                                                    eclectic Australian brand is the brainchild of Fine Arts
-                                                    graduate Lesleigh Jermanus who is a 20-year veteran of the
-                                                    fashion and design community. At the heart of Alemais'
-                                                    designs is a respect for traditional garment-making
-                                                    techniques. The skill and artistry of the past are honored
-                                                    by infusing them into current collections in fresh ways. The
-                                                    vibrant colours and prints of Alemais have been donned by
-                                                    Australian media personalities like Kate Waterhouse and Zoe
-                                                    Foster as well as international stars like Gwyneth Paltrow.
-                                                </p>
+                            {/* Render products */}
+                            <div className="product-cards">
+                                {products.map(product => (
+                                  <Link
+                                  key={product.id}
+                                  to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`}
+                                  className="product-card-link"
+                              >
+                                        <div className="product-card">
+                                            <img
+                                                src={product.productImages[0].url}
+                                                alt={product.name}
+                                                className="product-card__image"
+                                            />
+                                            <div className="product-card__info">
+                                                <h2 className="product-card__title">{product.name}</h2>
+                                                <p className="product-card__brand">Brand: {product.brand}</p>
+                                                <p className="product-card__rent-price">Rent Price: {product.rentPrice4Days}</p>
+                                                <p className="product-card__sell-price">Sale Price: {product.sellPrice}</p>
                                             </div>
                                         </div>
-                                        <a className="plp-intro__text-link js-readmore-button" href="#">
-                                            Read more
-                                        </a>
-                                    </div>
-                                </div>
+                                    </Link>
+                                ))}
                             </div>
-                            {/* .plp-intro__container */}
                         </div>
                     </div>
                     {/* plp results*/}
-                   <EditFilter/>
+                    <EditFilter/>
                     {/* subscribe*/}
                     <div className="subscribe bg-nude">
                         <div className="container">
@@ -133,4 +101,5 @@ const Alemais = () => {
         </>
     );
 }
+
 export default Alemais;

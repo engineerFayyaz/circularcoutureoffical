@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
@@ -63,15 +63,17 @@ const BlackTie = () => {
                     <div className="row">
                         {products.map(product => (
                             <div key={product.id} className="col-md-4 mb-4">
-                                <div className="card h-100">
-                                    {product.productImages.length > 0 && <img src={product.productImages[0].url} className="card-img-top" alt={product.name} />}
-                                    <div className="card-body">
-                                        <h5 className="card-title">{product.name}</h5>
-                                        <p className="card-text">{product.details}</p>
-                                        <p className="card-text">Sale Price: {product.sellPrice}</p>
-                                        <p className="card-text">Rent Price (4 Days): {product.rentPrice4Days}</p>
+                                <Link to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`} className="card-link">
+                                    <div className="card h-100">
+                                        {product.productImages.length > 0 && <img src={product.productImages[0].url} className="card-img-top" alt={product.name} />}
+                                        <div className="card-body">
+                                            <h5 className="card-title">{product.name}</h5>
+                                            <p className="card-text">{product.details}</p>
+                                            <p className="card-text">Sale Price: {product.sellPrice}</p>
+                                            <p className="card-text">Rent Price (4 Days): {product.rentPrice4Days}</p>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         ))}
                     </div>
