@@ -22711,12 +22711,17 @@ hr {
     right: 0%;
     top: 0%;
     bottom: 0%;
-    overflow-x: scroll;
+    overflow-x: scroll !important;
     cursor: grab;
+    margin-left:0px !important;
     cursor: -webkit-grab;
     scrollbar-width: none
 }
 
+  
+.popular-designers-checkboxes{
+    display: none;
+}
 .popular-designers-container .popular-designers-checkboxes:checked+label.popular-designers-button {
     border: 1px solid !important;
     color: #1A1A1A !important
@@ -23732,6 +23737,9 @@ div.filter-bar select {
 .sidebar-filter-accordion-v2 .card.sizes-filter .card-body .menu-wrapper p {
     padding-top: 16px;
     color: #666666
+}
+.sizes-filter .checkbox-input {
+    display: none;
 }
 
 .sidebar-filter-accordion-v2 .card.prices-filter .card-body .price-slider-div {
@@ -59605,3 +59613,28 @@ button:focus {
     /*Without this, clicking will make it sticky*/
       pointer-events: none;
   }
+  .side-navigation-panel-select-wrap, .side-navigation-panel-select-inner-wrap{
+    width: 100% !important;
+    margin: 10px 0px;
+  }
+  .react-calendar{
+    width: 100% !important;
+  }
+  .side-navigation-panel-select-option-text, .side-navigation-panel-select-option-wrap{
+    width: 100%;
+    margin-right: 0rem !important;
+  }
+  .component.input.icon.-pounds::before {
+    content: "£";
+    position: absolute;
+    left: 10px; /* Adjust the position as needed */
+    top: 50%; /* Adjust the position as needed */
+    transform: translateY(-50%); /* Center vertically */
+    color: black; /* Adjust color as needed */
+  }
+
+  .sidebar-filter-accordion-v2 .card>.designer-header>.popular-designer {
+    font-family: europa, sans-serif;
+    padding: 16px 16px 0 16px;
+    color: #1A1A1A;
+}
