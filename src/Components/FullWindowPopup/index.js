@@ -11,9 +11,9 @@ function FullWindowPopup() {
                 Custom Width Modal
             </Button> */}
 
-            {/* <Button variant="primary" onClick={() => setShow(true)}>
+            <Button variant="primary" onClick={() => setShow(true)}>
                 Product Detail
-            </Button> */}
+            </Button>
 
             <Modal
                 show={show}
@@ -48,7 +48,7 @@ function FullWindowPopup() {
                         <div className="col-lg-5 scroll-four-img1">
                             <img src="/images/img/3.png" alt="" />
                         </div>
-                        <div className="col-lg-5 Bottega-Veneta-width">
+                        <div className="col-lg-4 Bottega-Veneta-width">
                             <h2>Bottega Veneta</h2>
                             <h6>Mini Knotted Leather Tote (green)</h6>
                             <h6 style={{ display: "ruby-base" }} className="mt-4">
