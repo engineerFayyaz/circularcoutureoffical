@@ -762,10 +762,7 @@ const SkyEdits = () => {
                           ),
                           itemId: "/Size/clothing",
                         },
-                        // {
-                        //   title: "Shoes",
-                        //   itemId: "/Size/Shoes",
-                        // },
+                        
                       ],
                     },
                     {
