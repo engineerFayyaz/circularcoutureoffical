@@ -157,10 +157,8 @@ function ProjectRoutes() {
                     <Route path="/Membership" element={<Membership />} />
                     <Route path="/SellingorRenting" element={<SellingOrRenting />} />
                     <Route path="/Sustainability" element={<Sustainability />} />
-                    <Route
-    path="/ProductDetail/:productId/:productName"
-    element={<ProductDetail />}
-/>
+                    <Route path="/ProductDetail/:productId/:productName" element={<ProductDetail />} />
+
 
                     <Route path="/ListingNew" element={<ListingNew />} />
                     <Route path="/Panel/Renting" element={<Renting />} />
@@ -174,9 +172,9 @@ function ProjectRoutes() {
                     <Route path="/Edits/Hot-On-Circular" element={<HotCircular />} />
                     <Route path="/Edits/Day-Time-Party-Edit" element={<DayTimeParty />} />
                     <Route
-    path="/Edits/:name"
-    element={<BlackTie />}
-/>
+                        path="/Edits/:name"
+                        element={<BlackTie />}
+                    />
 
 
                     <Route path="/Edits/Next-Birthday" element={<NextBirthday />} />
@@ -228,7 +226,7 @@ function ProjectRoutes() {
                     <Route path="/Perth" element={<Perth />} />
                     <Route path="/GoldCoast" element={<GoldCoast />} />
                     <Route path="/SiteMap" element={<SiteMap />} />
-                    <Route path="/Designers/Alemais" element={<Alemais />} />
+                    <Route path="/designers/:designerId/:designerName" element={<Alemais />} />
 
                     <Route path="/Kids" element={<Kids />} />;
                     <Route path="/InstaShop" element={<InstaShop />} />

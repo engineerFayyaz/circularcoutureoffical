@@ -52,7 +52,9 @@ const Designer = () => {
                 <ul className="list-unstyled">
                   {designers.map((designer) => (
                     <li key={designer.id}>
-                      <Link to={`/designers/${designer.id}`}>{designer.name}</Link>
+                      <Link to={`/designers/${designer.id}/${encodeURIComponent(designer.name)}`}>
+                        {designer.name}
+                      </Link>
                     </li>
                   ))}
                 </ul>
