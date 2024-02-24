@@ -15438,7 +15438,7 @@ p {
 }
 
 .main-container.-with-cta-banner {
-    margin-top: 149px
+    margin-top: 149px;
 }
 
 @media (max-width: 992.98px) {
@@ -24643,8 +24643,8 @@ div.filter-bar select {
 .item-card2 .start-price,
 .item-card2 .resale-purchase-availability-label {
     color: #241E19;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 15px;
     letter-spacing: 0.7px;
     font-weight: bold
 }
@@ -59616,7 +59616,8 @@ button:focus {
   }
   .side-navigation-panel-select-wrap, .side-navigation-panel-select-inner-wrap{
     width: 100% !important;
-    margin: 10px 0px;
+    margin: 0px 0px;
+    padding-top: 10px 0px;
   }
   .react-calendar{
     width: 100% !important;

@@ -51,12 +51,16 @@ const Designer = () => {
                 <h3 className="fw-bold">{letter}</h3>
                 <ul className="list-unstyled">
                   {designers.map((designer) => (
-                    <li key={designer.id}>
+                    <div >
+                    <li key={designer.id} className="mb-3">
                       <Link to={`/designers/${designer.id}/${encodeURIComponent(designer.name)}`}>
                        {designer.name}
                       </Link>
                     </li>
+                    <br />
+                    </div>
                   ))}
+                  <br />
                 </ul>
               </div>
             ))}

@@ -36,7 +36,7 @@ const DesignerApi =()=>{
   
     return(
         <>
-         <div className="main-container pt-0 -with-cta-banner">
+        
         <div
           className="designers-section"
           data-controller="designers-letter-bar"
@@ -60,7 +60,7 @@ const DesignerApi =()=>{
             ))}
           </div>
         </div>
-      </div>
+
         </>
     )
 };

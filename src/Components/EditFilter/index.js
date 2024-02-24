@@ -1062,8 +1062,8 @@ const EditFilter =()=>{
                         {
                           title: (
                             <>
-                              <div className="card designers-filter">
-                               <DesignerApi/>
+                              <div className="card designers-filter ">
+                               <DesignerApi className="p-0 mt-0" />
                               </div>
                             </>
                           ),

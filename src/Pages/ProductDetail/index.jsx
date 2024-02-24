@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import TopHeader from "../../Components/TopHeader";
 import { Link } from "react-router-dom";
+import Reviews from '../../Components/Reviews';
+import NowTrending from '../../Components/NowTrending';
 
 const ProductDetail = () => {
     const { productId, productName } = useParams();
@@ -1117,6 +1119,8 @@ const ProductDetail = () => {
                     </div>
                 </div>
             </div>
+            <NowTrending className="py-4" />
+            <Reviews />
         </>
     );
 };

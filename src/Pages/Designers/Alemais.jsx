@@ -21,43 +21,70 @@ const Alemais = () => {
                 console.error("Error fetching data:", error);
             });
     }, [designerId]); // Add designerId as a dependency to re-fetch data when it changes
-        console.log("designerId",products)
+    console.log("designerId", products)
     return (
         <>
             <TopHeader />
             <div className="page__content nobp">
                 <div className="page__main-content" id="mainContent">
-                    {/* plp intro*/}
-                    <div className="plp-intro">
-                        <div className="container">
-                            {/* Render products */}
-                            <div className="product-cards">
-                                {products.map(product => (
-                                  <Link
-                                  key={product.id}
-                                  to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`}
-                                  className="product-card-link"
-                              >
-                                        <div className="product-card">
-                                            <img
-                                                src={product.productImages[0].url}
-                                                alt={product.name}
-                                                className="product-card__image"
-                                            />
-                                            <div className="product-card__info">
-                                                <h2 className="product-card__title">{product.name}</h2>
-                                                <p className="product-card__brand">Brand: {product.brand}</p>
-                                                <p className="product-card__rent-price">Rent Price: {product.rentPrice4Days}</p>
-                                                <p className="product-card__sell-price">Sale Price: {product.sellPrice}</p>
+                    <div className="container-fluid d-flex flex-row  justify-content-between">
+                        {/* plp intro*/}
+                        <EditFilter />
+                        <div className="container filter-result-container px-0">
+                            <div className="row no-gutters mx-0"
+                                id="filter-result-container"
+                                style={{
+                                    opacity: '1',
+                                    pointerEvents: 'auto'
+                                }}
+                            >
+                                <div
+                                    className="col-6 col-md-12 col-lg-6 col-xl-4 mb-4 mb-xl-3 item-container"
+                                    data-app-search--listing-filters-target="item"
+                                >
+                                    <div
+                                        className="item-card2"
+                                        data-action="click->app-search--listing-filters#clickThroughTracking"
+                                        id="33216"
+                                    >
+                                        <div
+                                            className="position-relative wishlist-heart-33216"
+                                            data-controller="wishlisting"
+                                            data-target="wishlisting.heartMainContainer"
+                                        >
+                                            {products.map(product => (
+                                        <Link
+                                            key={product.id}
+                                            to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`}
+                                            className="product-card-link"
+                                        >
+                                            <div className="product-card">
+                                                <img
+                                                    src={product.productImages[0].url}
+                                                    alt={product.name}
+                                                    className="product-card__image"
+                                                />
+                                                <div className="product-card__info">
+                                                    <p className="brand mb-1">{product.name}</p>
+                                                    <p className="product-card__brand">Brand: <b style={{fontSize:"11px !important"}}>{product.brand}</b></p>
+                                                    <p className="break my-2" />
+                                                    <p className="start-price mb-1">Rent Price: {product.rentPrice4Days}</p>
+                                                    <p className="retail-price mb-1 pb-3"><del>RRP:{product.rrp}</del></p>
+                                                </div>
                                             </div>
+                                        </Link>
+                                    ))}
                                         </div>
-                                    </Link>
-                                ))}
+
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
+
+                        {/* plp results*/}
                     </div>
-                    {/* plp results*/}
-                    <EditFilter/>
+
                     {/* subscribe*/}
                     <div className="subscribe bg-nude">
                         <div className="container">
