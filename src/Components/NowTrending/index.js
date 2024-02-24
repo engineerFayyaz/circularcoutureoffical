@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
+import "../../Components/NowTrending/NowTrending.css";
 
 const NowTrending = () => {
     const [products, setProducts] = useState([]);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
 
     useEffect(() => {
         fetchProducts();
@@ -16,7 +18,10 @@ const NowTrending = () => {
                 throw new Error('Failed to fetch products');
             }
             const data = await response.json();
-            setProducts(data.results);
+            setProducts(data.results.map(product => ({
+                ...product,
+                hovered: false // Add a property to track hover state
+            })));
         } catch (error) {
             console.error('Error fetching products:', error);
         }
@@ -36,7 +41,12 @@ const NowTrending = () => {
                         <Carousel.Item>
                             <div className="row">
                                 {products.slice(0, 4).map((product, index) => (
-                                    <div key={index} className="col-md-3 col-6 col-8">
+                                    <div 
+                                        key={index} 
+                                        className="col-md-3 col-6 col-8"
+                                        onMouseEnter={() => setHoveredIndex(index)}
+                                        onMouseLeave={() => setHoveredIndex(null)}
+                                    >
                                         <div className="product-item">
                                             <Link
                                                 to={{
@@ -44,11 +54,17 @@ const NowTrending = () => {
                                                     state: { productId: product.id }
                                                 }}
                                             >
-                                                {product.productImages.length > 0 && (
+                                                <img
+                                                    src={product.productImages[0].url}
+                                                    className="img-fluid main-image"
+                                                    alt={`Product ${index + 1}`}
+                                                    loading="lazy"
+                                                />
+                                                {hoveredIndex === index && (
                                                     <img
-                                                        src={product.productImages[0].url}
-                                                        className="img-fluid"
-                                                        alt={`Product ${index + 1}`}
+                                                        src={product.productImages[1].url} // Second image URL
+                                                        className="img-fluid second-image"
+                                                        alt={`Second Product ${index + 1}`}
                                                         loading="lazy"
                                                     />
                                                 )}

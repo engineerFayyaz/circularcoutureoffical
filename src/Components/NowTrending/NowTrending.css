@@ -1,0 +1,24 @@
+.product-item {
+    position: relative;
+}
+
+.second-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-item:hover .second-image {
+    display: block;
+    opacity: 1;
+}
+
+.product-item:hover .main-image {
+    opacity: 0;
+}
+
+.second-image {
+    z-index: 2;
+}

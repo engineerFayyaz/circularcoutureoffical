@@ -123,7 +123,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="row text-center my-5 mx-auto d-flex align-items-center justify-content-center">
-                <div className="shop-all text-center">
+                <div className="shop-all text-center mt-5">
                   <Link to="/Collections/NewArrival">
                     <button className="btn bg-light py-2 px-5">Shop All</button>
                   </Link>

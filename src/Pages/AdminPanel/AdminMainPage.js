@@ -91,7 +91,7 @@ const AdminMainPage = () => {
         <AdminHeader />
     
         <div className="container-fluid">
-          <h1 style={{fontWeight:"600",letterSpacing:"1.2px"}}>Admin Dashboard</h1>
+          {/* <h1 style={{fontWeight:"600",letterSpacing:"1.2px"}}>Admin Dashboard</h1> */}
           <div
             className="row text-light"
             style={{ backgroundColor: "black", color: "white" }}

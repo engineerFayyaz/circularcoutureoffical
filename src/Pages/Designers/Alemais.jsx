@@ -8,6 +8,8 @@ import EditFilter from "../../Components/EditFilter";
 const Alemais = () => {
     const { designerId, designerName } = useParams();
     const [products, setProducts] = useState([]);
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+    const [wishlist, setWishlist] = useState([]);
 
     useEffect(() => {
         // Fetch data from the API endpoint using the designerId
@@ -21,7 +23,18 @@ const Alemais = () => {
                 console.error("Error fetching data:", error);
             });
     }, [designerId]); // Add designerId as a dependency to re-fetch data when it changes
-    console.log("designerId", products)
+
+    // Function to handle adding/removing products from wishlist
+    const toggleWishlist = (productId) => {
+        if (wishlist.includes(productId)) {
+            // If product already in wishlist, remove it
+            setWishlist(wishlist.filter(id => id !== productId));
+        } else {
+            // If product not in wishlist, add it
+            setWishlist([...wishlist, productId]);
+        }
+    };
+
     return (
         <>
             <TopHeader />
@@ -52,39 +65,69 @@ const Alemais = () => {
                                             data-controller="wishlisting"
                                             data-target="wishlisting.heartMainContainer"
                                         >
-                                            {products.map(product => (
-                                        <Link
-                                            key={product.id}
-                                            to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`}
-                                            className="product-card-link"
-                                        >
-                                            <div className="product-card">
-                                                <img
-                                                    src={product.productImages[0].url}
-                                                    alt={product.name}
-                                                    className="product-card__image"
-                                                />
-                                                <div className="product-card__info">
-                                                    <p className="brand mb-1">{product.name}</p>
-                                                    <p className="product-card__brand">Brand: <b style={{fontSize:"11px !important"}}>{product.brand}</b></p>
-                                                    <p className="break my-2" />
-                                                    <p className="start-price mb-1">Rent Price: {product.rentPrice4Days}</p>
-                                                    <p className="retail-price mb-1 pb-3"><del>RRP:{product.rrp}</del></p>
+                                            {products.map((product, index) => (
+                                                <div key={product.id} className="product-card">
+                                                    <Link
+                                                        to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`}
+                                                        className="product-card-link"
+                                                        onMouseEnter={() => setHoveredIndex(index)}
+                                                        onMouseLeave={() => setHoveredIndex(null)}
+                                                    >
+                                                        {hoveredIndex === index ? (
+                                                            <img
+                                                                src={product.productImages[1].url}
+                                                                alt={product.name}
+                                                                className="product-card__image"
+                                                            />
+                                                        ) : (
+                                                            <img
+                                                                src={product.productImages[0].url}
+                                                                alt={product.name}
+                                                                className="product-card__image"
+                                                            />
+                                                        )}
+                                                    </Link>
+                                                    <div className="product-card__info">
+                                                        <p className="brand mb-1">{product.name}</p>
+                                                        <p className="product-card__brand">Brand: <b style={{ fontSize: "11px !important" }}>{product.brand}</b></p>
+                                                        <p className="break my-2" />
+                                                        <p className="start-price mb-1">Rent Price: {product.rentPrice4Days}</p>
+                                                        <p className="retail-price mb-1 pb-3"><del>RRP:{product.rrp}</del></p>
+                                                    </div>
+                                                    <button
+                                                        className="wishlist-icon"
+                                                        onClick={() => toggleWishlist(product.id)}
+                                                        style={{
+                                                            position: "absolute",
+                                                            top: "10px",
+                                                            right: "10px",
+                                                            zIndex: "3",
+                                                            cursor: "pointer",
+                                                            background: "transparent",
+                                                            border: "none",
+                                                        }}
+                                                    >
+                                                        {wishlist.includes(product.id) ? (
+                                                            <img
+                                                                alt="An icon of a heart"
+                                                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-filled.svg"
+                                                            />
+                                                        ) : (
+                                                            <img
+                                                                alt="An icon of a heart"
+                                                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
+                                                            />
+                                                        )}
+                                                    </button>
                                                 </div>
-                                            </div>
-                                        </Link>
-                                    ))}
+                                            ))}
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-
                         {/* plp results*/}
                     </div>
-
                     {/* subscribe*/}
                     <div className="subscribe bg-nude">
                         <div className="container">
@@ -123,7 +166,6 @@ const Alemais = () => {
                 {/* .page__main-content */}
                 <div id="vue-search-desktop" />
             </div>
-
             <Footer />
         </>
     );

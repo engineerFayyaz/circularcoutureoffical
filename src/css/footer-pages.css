@@ -359,9 +359,6 @@ select {
 [type=reset],
 [type=submit],
 button,
-html [type=button] {
-    -webkit-appearance: button
-}
 
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
@@ -1891,7 +1888,7 @@ only screen and (min-width:992px) and (min-resolution:105dpi) {
     color: #bbb;
     text-align: center;
     font: 0/0 a;
-    *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial
+    font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial
 }
 
 .selectric .button:after {
@@ -1992,7 +1989,7 @@ only screen and (min-width:992px) and (min-resolution:105dpi) {
     height: 1px !important;
     outline: none !important;
     border: none !important;
-    *font: 0/0 a !important;
+    font: 0/0 a !important;
     background: none !important
 }
 

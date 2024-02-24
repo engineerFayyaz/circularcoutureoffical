@@ -57,69 +57,6 @@ const ProductDetail = () => {
     return (
         <>
             <TopHeader />
-            {/* <Container className="mt-5" style={{marginTop:"10rem !important"}}>
-                <h1>Product Detail: {name}</h1>
-                <Row>
-                    <Col md={6}>
-                        <h2>Product Images</h2>
-                        <Row>
-                            <div className='col-6 col-lg-6 px-0'>
-                                <Col xs={6}>
-                                    {productImages &&
-                                        productImages.slice(1).map((image, index) => (
-                                            <div className='product-thumbnails -vertical slick-initialized slick-slider slick-vertical' key={index}>
-                                                <Image
-                                                    className='product-thumbnail-image'
-                                                    src={image.url}
-                                                    alt={`Product Image ${index + 1}`}
-                                                    thumbnail
-                                                    onClick={() => setMainImage(image.url)}
-                                                />
-                                            </div>
-                                        ))}
-                                </Col>
-                                <div className='product-gallery'>
-                                    <div className='component product-gallery'>
-                                        {mainImage && (
-                                            <Col xs={12} className="mb-3">
-                                                <Image src={mainImage} alt={`Main Product Image`} className='product-image-item' fluid />
-                                            </Col>
-                                        )}
-                                    </div>
-                                </div>
-                            </div>
-                        </Row>
-                    </Col>
-                    <Col md={6}>
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>{name}</Card.Title>
-                                <Card.Subtitle className="mb-2 text-muted">Brand: {brand}</Card.Subtitle>
-                                <Card.Text>ID: {id}</Card.Text>
-                                <Card.Text>Type ID: {typeId}</Card.Text>
-                                <Card.Text>Category ID: {categoryId}</Card.Text>
-                                <Card.Text>Size: {size}</Card.Text>
-                                <Card.Text>Availability: {isAvailable ? 'Available' : 'Not Available'}</Card.Text>
-                                <Card.Text>Color: {color}</Card.Text>
-                                <Card.Text>Condition: {condition}</Card.Text>
-                                <Card.Text>Sell Price: {sellPrice}</Card.Text>
-                                <Card.Text>Rent Price (4 Days): {rentPrice4Days}</Card.Text>
-                                <Card.Text>Rent Price (8 Days): {rentPrice8Days}</Card.Text>
-                                <Card.Text>Rent Price (16 Days): {rentPrice16Days}</Card.Text>
-                                <Card.Text>Rent Price (30 Days): {rentPrice30Days}</Card.Text>
-                                <Card.Text>RRP: {rrp}</Card.Text>
-                                <Card.Text>Code: {code}</Card.Text>
-                                <Card.Text>Details: {details}</Card.Text>
-                                <Card.Text>Is eBay Store: {isEbayStore ? 'Yes' : 'No'}</Card.Text>
-                                <Card.Text>Deleted By: {deletedBy}</Card.Text>
-                                <Card.Text>Modified By: {modifiedBy}</Card.Text>
-                                <Card.Text>Created By: {createdBy}</Card.Text>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
-            </Container> */}
-
             <div className="product-display row" style={{ marginTop: "10rem" }}>
                 <div className="col-12 col-lg-6 px-0">
                     <div className="product-gallery">
