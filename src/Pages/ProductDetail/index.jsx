@@ -54,6 +54,11 @@ const ProductDetail = () => {
 
     const { name, brand, id, typeId, categoryId, size, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
 
+    const calculateRentForOneDay = (rentPrice) => {
+        const rentPerDay = parseFloat(rentPrice.replace("AU$", "")) / 8;
+        return rentPerDay.toFixed(2);
+    };
+
     return (
         <>
             <TopHeader />
@@ -94,14 +99,14 @@ const ProductDetail = () => {
                                             <div>
                                                 {productImages &&
                                                     productImages.slice(1).map((image, index) => (
-                                                        <div className='product-thumbnails -vertical slick-initialized slick-slider slick-vertical' key={index} 
-                                                        style={{height:"110px"}}
+                                                        <div className='product-thumbnails -vertical slick-initialized slick-slider slick-vertical' key={index}
+                                                            style={{ height: "110px" }}
                                                         >
                                                             <Image
                                                                 className='product-thumbnail-image'
                                                                 src={image.url}
                                                                 alt={`Product Image ${index + 1}`}
-                                                                style={{height:"100%"}}
+                                                                style={{ height: "100%" }}
                                                                 thumbnail
                                                                 onClick={() => setMainImage(image.url)}
                                                             />
@@ -137,13 +142,13 @@ const ProductDetail = () => {
                                                     top: '0px',
                                                     width: '594px',
                                                     zIndex: '999',
-                                                    height:"760px"
+                                                    height: "760px"
                                                 }}
                                             >
                                                 <div>
                                                     {mainImage && (
                                                         <Col xs={12} className="mb-3">
-                                                            <Image src={mainImage} alt={`Main Product Image`} className='product-image-item' style={{height:"100%"}} fluid />
+                                                            <Image src={mainImage} alt={`Main Product Image`} className='product-image-item' style={{ height: "100%" }} fluid />
                                                         </Col>
                                                     )}
                                                 </div>
@@ -677,9 +682,13 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice4Days / 4}
+                                                                AU${calculateRentForOneDay(product.rentPrice4Days)}/day
+                                                            </span>
+                                                            <span className="discount-percentage">
+                                                                {' '}Save 20%
                                                             </span>
                                                         </div>
+
                                                     </div>
                                                 </label>
                                                 <input
@@ -710,10 +719,10 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice8Days / 8}/day
+                                                                AU${calculateRentForOneDay(product.rentPrice8Days)}/day
                                                             </span>
                                                             <span className="discount-percentage">
-                                                                {' '}Save 25%
+                                                                {' '}Save 30%
                                                             </span>
                                                             {' '}
                                                         </div>
@@ -747,10 +756,10 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice16Days / 16}/day
+                                                                AU${calculateRentForOneDay(product.rentPrice16Days)}/day
                                                             </span>
                                                             <span className="discount-percentage">
-                                                                {' '}Save 34%
+                                                                {' '}Save 50%
                                                             </span>
                                                             {' '}
                                                         </div>
@@ -783,10 +792,10 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice30Days / 30}/day
+                                                                AU${calculateRentForOneDay(product.rentPrice30Days)}/day
                                                             </span>
                                                             <span className="discount-percentage">
-                                                                {' '}Save 56%
+                                                                {' '}Save 70%
                                                             </span>
                                                             {' '}
                                                         </div>
