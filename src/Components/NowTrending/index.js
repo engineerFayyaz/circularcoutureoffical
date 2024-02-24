@@ -31,7 +31,7 @@ const NowTrending = () => {
                         <i className="fa-solid fa-arrow-right" />
                     </span>
                 </div>
-                <div className="container">
+                <div className="container p-3">
                     <Carousel indicators={false} controls={false}>
                         <Carousel.Item>
                             <div className="row">
