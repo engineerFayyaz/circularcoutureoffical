@@ -4,15 +4,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from 'react-router-dom';
 import UserHeader from "../../Components/UserHeader";
 const TopHeader = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
-  const handleDropdownOpen = () => {
-    setIsDropdownOpen(true);
+  const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
+  const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
+  
+  const handleDropdownOpen1 = () => {
+    setIsDropdownOpen1(true);
   };
-
-  const handleDropdownClose = () => {
-    setIsDropdownOpen(false);
+  
+  const handleDropdownClose1 = () => {
+    setIsDropdownOpen1(false);
   };
+  
+  const handleDropdownOpen2 = () => {
+    setIsDropdownOpen2(true);
+  };
+  
+  const handleDropdownClose2 = () => {
+    setIsDropdownOpen2(false);
+  };
+  
   return (
     <>
       <div
@@ -131,8 +141,8 @@ const TopHeader = () => {
                   data-action="mouseover->mega-menu-contents#showMenu"
                   data-target-mega-menu="clothing"
                   to="/Collections/clothing"
-                  onMouseEnter={handleDropdownOpen}
-                  onMouseLeave={handleDropdownClose}
+                  onMouseEnter={handleDropdownOpen1}
+                  onMouseLeave={handleDropdownClose1}
                 >
                   Clothing
                 </Link>
@@ -204,8 +214,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Resale"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                  onMouseEnter={handleDropdownOpen2}
+                  onMouseLeave={handleDropdownClose2}
                 >
                  HELP & INFO
                 </Link>
@@ -333,13 +343,13 @@ const TopHeader = () => {
 
           <div
             className="links-content-wrapper"
-            onMouseEnter={handleDropdownOpen}
-            onMouseLeave={handleDropdownClose}
+            onMouseEnter={handleDropdownOpen1}
+            onMouseLeave={handleDropdownClose1}
           // Add some styling for visualization
           >
             <div
-              className={`dropdown-content ${isDropdownOpen ? 'active' : ''}`}
-              style={{ display: isDropdownOpen ? "block" : "none" }}
+              className={`dropdown-content ${isDropdownOpen1 ? 'active' : ''}`}
+              style={{ display: isDropdownOpen1 ? "block" : "none" }}
             >
               <div className="link-content -just-in">
                 <turbo-frame
@@ -434,6 +444,114 @@ const TopHeader = () => {
               </div>
             </div>
           </div>
+
+
+          {/* 2nd dropdown */}
+
+          <div
+            className="links-content-wrapper"
+            onMouseEnter={handleDropdownOpen2}
+            onMouseLeave={handleDropdownClose2}
+          // Add some styling for visualization
+          >
+            <div
+              className={`dropdown-content ${isDropdownOpen2 ? 'active' : ''}`}
+              style={{ display: isDropdownOpen2 ? "block" : "none" }}
+            >
+              <div className="link-content -just-in">
+                <turbo-frame
+                  loading="lazy"
+                  id="just_in"
+                  src="https://www.circular-couturecollective.com/mega_menu_contents/just_in"
+                  complete=""
+                >
+                  <div className="row d-flex justify-content-around">
+                    <div className="col-md-3 col-xl-3">
+                      <div className="links">
+                        <div className="header">
+
+                          <h6 className="text-dark">Customer Service</h6>
+                        </div>
+                        <div className="body">
+
+                          <Link target="_top" to="/howtolend">
+                            How It Works
+                          </Link>
+                          <Link target="_top " to="/FAQ">
+                            FAQ
+                          </Link>
+                          <Link target="_top " to="/Return">
+                            Return & Refunds
+                          </Link>
+                          <Link target="_top" to="/RentalArguments">
+                            Rental Agreemant
+                          </Link>
+                          <Link target="_top" to="/ATDREward">
+                            ATD Rewards
+                          </Link>
+                          <Link target="_top" to="/MakeEnquiry">
+                            Make An Enquiry
+                          </Link>
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-3 col-xl-3">
+                      <div className="links">
+                        <div className="header">
+
+                          <h6 className="text-dark">ABOUT ATD</h6>
+                        </div>
+                        <div className="body">
+
+                          <Link target="_top" to="/About">
+                          About Us
+                          </Link>
+                          <Link target="_top " to="/Sustainability">
+                          Sustainability
+                          </Link>
+                          <Link target="_top " to="/TermsofService">
+                          Terms of Service
+                          </Link>
+                          <Link target="_top" to="/Privacy-Policy">
+                          Privacy Policy
+                          </Link>
+                          <Link target="_top" to="/Contact">
+                            Contact
+                          </Link>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="d-flex flex-column justify-content-end">
+                      <h6 className="text-dark">ABOUT US</h6>
+                        <img
+                          src="/images/gallery-images/Help1.jpg"
+                          alt=""
+                          width={250}
+                        />
+                        <p className="pt-2">Read our story</p>
+                      </div>
+                    </div>
+                    <div className="col-lg-3">
+                      <div className="d-flex flex-column">
+                      <h6 className="text-dark">FAQ's</h6>
+
+                        <img
+                          src="/images/gallery-images/Help2.jpg"
+                          alt=""
+                          width={250}
+                        />
+                        <p className="pt-2">All your questions answered</p>
+                      </div>
+                    </div>
+                  </div>
+                </turbo-frame>
+              </div>
+            </div>
+          </div>
+
+          {/* 2nd dropdown ends */}
           <div
             className="link-content-accessories d-none"
             data-mega-menu-contents-target="accessories"
