@@ -12,7 +12,7 @@ const InstaShop = () => {
 
   const fetchInstagramMedia = async () => {
     try {
-      const accessToken = "IGQWRPUmVfTjNRWFhuZAmlDekxFMGdPVmdlY1hVWU9RQ2huUFRwUzF1SmZAsR2twZA2NLeGptNHhnNk9ZAS1pQdmx4TDlCRWVXTzdud1FqSkRyNEVlTjJMdUZAFVDFiQ0RxQTFJWlZAjaWdJSm9EeDZAKMWd3RkllWEkzd3MZD";
+      const accessToken = "IGQWRQTFJhM045RS1UTW1RNDZAzOFZApcFVpYXFqaWpBSHhrQXNiVVpPekhYMUlGbmdrWmlYenB2Ul94ZA1pnRGp0VHBTMVRfLUhGTEt1a2FBOXRkcUFTbllBMFdUaUJzS1lxdWxROXl5UnBvbEktMTluY05lWWIyREUZD";
       const response = await fetch(
         `https://graph.instagram.com/me/media?fields=id,media_type,media_url,thumbnail_url,caption&access_token=${accessToken}`
       );
@@ -51,7 +51,7 @@ const InstaShop = () => {
     <>
       <TopHeader />
       <div className="page__main-content" id="mainContent">
-        <div style={{ marginTop: 20 }}>
+        <div style={{ marginTop: "38px" }}>
           <div className="container">
             <div className="dt-center">
               <h1 className="h2-title dt-mt-0">InstaShop</h1>

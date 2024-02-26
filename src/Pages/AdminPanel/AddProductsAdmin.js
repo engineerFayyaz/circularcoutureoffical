@@ -12,8 +12,10 @@ const AddProductsAdmin = () => {
     categoryId: "",
     typeId: 1, // Default value
     designerId: "",
+    productGenCategoryId: "",
     name: "",
     size: "",
+    internationalSize: "",
     brand: "",
     color: "",
     condition: "",
@@ -46,12 +48,31 @@ const AddProductsAdmin = () => {
   const [selectedEditId, setSelectedEditId] = useState(null);
   const [selectedEditName, setSelectedEditName] = useState("");
 
+  const [productCatGen, setProductCatGen] = useState([]);
+
   useEffect(() => {
     fetchCategories();
     fetchDesigners();
     fetchProductTypes();
     fetchEdits(); // Fetch edits data
+    fetchCataGenId();
   }, []);
+
+  const fetchCataGenId = async () => {
+    try {
+      const response = await fetch(
+        "https://localhost:7220/api/product-gen-categories"
+      );
+      if (!response.ok) {
+        throw new Error("Failed to fetch Category Gen");
+      }
+      const data = await response.json();
+      setProductCatGen(data.results);
+    } catch (error) {
+      console.error("Error fetching Category Gen:", error);
+      toast.error("Error fetching Category Gen");
+    }
+  };
 
   const fetchEdits = async () => {
     try {
@@ -234,6 +255,7 @@ const AddProductsAdmin = () => {
         ...formData,
         designerId: selectedDesignerId,
         editId: selectedEditId, // Add editId to formData
+        productGenCategoryId: formData.productGenCategoryId,
         productImages: uploadedImageUrls.map((url, index) => ({
           url,
           name: `Image ${index + 1}`,
@@ -369,6 +391,29 @@ const AddProductsAdmin = () => {
                     </Form.Select>
                   </Form.Group>
 
+                  <Form.Group className="mb-3 mt-3 Category-admin">
+                    <Form.Label>
+                      <b>Product Category Generation*</b>
+                    </Form.Label>
+                    <Form.Select
+                      name="productGenCategoryId"
+                      value={formData.productGenCategoryId}
+                      onChange={handleInputChange}
+                      style={{ color: "black" }} // Adjust text color to ensure visibility
+                    >
+                      <option value="">Select Category Generation</option>
+                      {productCatGen.map((category) => (
+                        <option
+                          key={category.id}
+                          value={category.id}
+                          style={{ color: "black" }}
+                        >
+                          {category.type}
+                        </option>
+                      ))}
+                    </Form.Select>
+                  </Form.Group>
+
                   <Form.Group className="mb-3 mt-3 brand-admin">
                     <Form.Label><b>Brand*</b></Form.Label>
                     <Form.Control
@@ -412,6 +457,18 @@ const AddProductsAdmin = () => {
                       type="text"
                       name="size"
                       value={formData.size}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+
+                  <Form.Group className="mb-3 mt-3 Category-admin">
+                    <Form.Label>
+                      <b>International Size*</b>
+                    </Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="internationalSize"
+                      value={formData.internationalSize}
                       onChange={handleInputChange}
                     />
                   </Form.Group>

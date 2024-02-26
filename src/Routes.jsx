@@ -70,6 +70,7 @@ import AddDesigner from "./Pages/AdminPanel/AddDesigner";
 import ProductsType from "./Pages/AdminPanel/ProductsType";
 import AddEdits from "./Pages/AdminPanel/AddEdits";
 import AdminDeleteProducts from "./Pages/AdminPanel/AdminDeleteProducts";
+import AdminCollections from "./Pages/AdminPanel/AdminCollections";
 
 
 import ForgotPassword from "./Pages/ForgotPassword";
@@ -182,6 +183,7 @@ function ProjectRoutes() {
                     <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
                     <Route path="/AdminPanel/AddEdits" element={<AddEdits />} />
                     <Route path="/AdminPanel/Admin-Delete-Products" element={<AdminDeleteProducts />} />
+                    <Route path="/AdminPanel/Admin-Collections" element={<AdminCollections/>}/>
 
                     <Route path="/AdminPanel/AddDesigner" element={<AddDesigner />} />
                     <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
