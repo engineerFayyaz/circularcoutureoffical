@@ -5,6 +5,8 @@ import About from "./Pages/About";
 import Designer from "./Pages/Designer";
 import Dashboard from "./Pages/Panel/dashboard";
 import NewArrival from "./Pages/Collections/NewArrival";
+import Separates from "./Pages/Kids";
+import Occasions from "./Pages/Collections/Occasions";
 import Accessories from "./Pages/Collections/Accessories";
 import CLothing from "./Pages/Collections/Clothing";
 import DressGowns from "./Pages/Collections/DressGowns";
@@ -96,6 +98,7 @@ import Alemais from "./Pages/Designers/Alemais";
 import Kids from "./Pages/Kids";
 
 import InstaShop from "./Pages/InstaShop";
+import Skirts from "./Pages/Collections/Skirts";
 
 
 
@@ -122,6 +125,9 @@ function ProjectRoutes() {
                     <Route path="/Collections/Sweaters" element={<Sweaters />} />
                     <Route path="/Collections/Tops" element={<Tops />} />
                     <Route path="/Collections/Trousers" element={<Trousers />} />
+                    <Route path="/Collections/Separates" element={<Separates/>}/>
+                    <Route path="/Collections/Occasions" element={<Occasions/>}/>
+                    <Route path="/Collections/Skirts" element={<Skirts/>}/>
                     <Route path="/About" element={<About />} />
                     <Route path="/Designer" element={<Designer />} />
                     <Route path="/Panel/Dashboard" element={<Dashboard />} />

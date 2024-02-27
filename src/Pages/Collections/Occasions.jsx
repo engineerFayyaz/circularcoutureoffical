@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import TopHeader from "../../Components/TopHeader";
@@ -6,7 +8,7 @@ import EmailSubscription from "../../Components/EmailSubscription";
 import EditFilter from "../../Components/EditFilter";
 import GetEdits from "../../Components/GetEdits";
 
-const DressGowns = () => {
+const Occasions = () => {
   const [products, setProducts] = useState([]);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -14,7 +16,7 @@ const DressGowns = () => {
   useEffect(() => {
       const fetchProducts = async () => {
           try {
-              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/1013`, {
+              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/9`, {
                   method: 'GET',
                   headers: {
                       'Accept': 'application/json'
@@ -44,14 +46,14 @@ const DressGowns = () => {
           <div className="container pl-5 pb-5 mt-0">
             <div>
               <h1 className="title">
-                <i>DressGowns</i>
+                <i>Occasions</i>
               </h1>
               <div
                 className="description mt-2 transition collapsed"
                 data-target="plp--description.content"
               >
                 <div className="trix-content">
-                Indulge in luxury with Circular's gown collection. From exquisite fabrics to intricate designs, each gown embodies sustainable opulence, ensuring you make a statement with every step.
+                Elevate every moment with Circular's occasions collection. From weddings to parties, find sustainable elegance in every piece. Make lasting memories in fashion that's as conscious as it is captivating.
                 </div>
               </div>
             </div>
@@ -115,4 +117,4 @@ const DressGowns = () => {
   )
 };
 
-export default DressGowns;
+export default Occasions;

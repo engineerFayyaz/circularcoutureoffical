@@ -52,7 +52,7 @@ const ProductDetail = () => {
         return <div>Product not found</div>;
     }
 
-    const { name, brand, id, typeId, categoryId, size, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
+    const { name, brand, id, typeId, categoryId, size, internationalSize, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
 
     const calculateRentForOneDay = (rentPrice) => {
         const rentPerDay = parseFloat(rentPrice.replace("AU$", "")) / 8;
@@ -599,6 +599,56 @@ const ProductDetail = () => {
                                                 </option>
                                                 <option value="29708b35-6b0b-4b55-aafe-62e103ff91bc">
                                                     {size}
+                                                </option>
+                                            </select>
+                                        </div>
+
+
+                                        <div className="sizes">
+                                            <div className="titles">
+                                                <div
+                                                    className="size-title"
+                                                    id="size-section"
+                                                >
+                                                   International Size *
+                                                </div>
+                                                <div>
+                                                    {' '}
+                                                    <Link
+                                                        className="size-detail"
+                                                        data-target="#size-detail"
+                                                        data-toggle="modal"
+                                                        to="#"
+                                                    >
+                                                        Size details
+                                                    </Link>
+                                                    {' '}
+                                                    <Link
+                                                        className="size-guide"
+                                                        data-target="#size-guide"
+                                                        data-toggle="modal"
+                                                        to="#"
+                                                    >
+                                                        Size guide
+                                                    </Link>
+                                                    {' '}
+                                                </div>
+                                            </div>
+                                            <select
+                                                className="component dropdown js-product-rent-unit-id"
+                                                style={{
+                                                    color: 'inherit'
+                                                }}
+                                            >
+                                                <option
+                                                    disabled
+                                                    selected
+                                                    value=""
+                                                >
+                                                    Select InternationalSize
+                                                </option>
+                                                <option value="29708b35-6b0b-4b55-aafe-62e103ff91bc">
+                                                    {internationalSize}
                                                 </option>
                                             </select>
                                         </div>
