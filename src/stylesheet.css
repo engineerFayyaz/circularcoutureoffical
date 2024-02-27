@@ -201,6 +201,24 @@ a:not([href]):not([tabindex]) {
         justify-content:center;
 
     }
+    .top-header-width-set-main .search-icon-main-nav{
+        position: relative;
+    top: 8px;
+    left: 28px;
+    font-size: 18px;
+    }
+    .top-header-width-set-main input[type="search"]{
+        width: 220px;
+        background-color: transparent;
+        font-size: 12px;
+        color: rgb(73, 80, 87);
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        line-height: 12px;
+        padding: 10px 0px;
+        border: 1px solid black;
+        padding-left: 28px;
+    }
 .List-By-Wardrobe {
     width: 10% !important;
     display: flex;
@@ -27200,7 +27218,7 @@ div.filter-bar select {
 }
 
 .navbar-menu-section {
-    padding: 0px 30px;
+    /* padding: 0px 30px; */
     background: #FAF9F7;
     display: flex;
     z-index: 1028
@@ -27217,7 +27235,7 @@ div.filter-bar select {
     text-transform: uppercase;
     font-weight: 500;
     /* letter-spacing: 2px; */
-    font-size: 10px;
+    font-size: 12px;
     font-family: sans-serif;
     line-height: 12px;
     padding: 0;
@@ -27301,7 +27319,10 @@ div.filter-bar select {
 .navbar-menu-section .link-content .links .body a:hover {
     color: #737373
 }
-
+.navbar-menu-section .link-content .links .footer{
+    padding-top: 0px;
+    background: none;
+}
 .navbar-menu-section .link-content .links .footer a {
     color: #737373;
     border-color: #AA5959 !important;

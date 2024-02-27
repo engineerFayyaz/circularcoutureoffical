@@ -3,11 +3,13 @@ import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import { Link } from "react-router-dom";
+import AdminHeader from "../../Components/AdminHeader";
+import ListHeader from "../../Components/ListItemHeader";
 const ListingNew = () =>{
     return (
         <>
-        <TopHeader/>
-        <div className="rental-process-section-wrapper -listing-process">
+        <ListHeader/>
+        <div className="rental-process-section-wrapper -listing-process" >
   <div className="first-section">
     <div className="rental-steps mobile-pt-10px mobile-pb-13px w-100">
       <h3 className="mobile-only text-circular-couture-black mb-3 h5">
@@ -32,28 +34,8 @@ const ListingNew = () =>{
       <div className="row">
         <div className="col-12">
           <form
-            acceptCharset="UTF-8"
             action="/listings/new/listing_creation/details"
             className="listing-details-form default-form mobile-px-0 mobile-pb-5"
-            data-action="ajax:success->listing-creation-details#processFormSuccess"
-            data-controller="listing-creation-details unit-with-offer-single-size-selector units-with-offer-removal units-with-rental-removal listing-units-with-offer-and-rental"
-            data-listing-creation-details-action="new"
-            data-listing-creation-details-collected-size-with-pending-or-active-offer=""
-            data-listing-creation-details-collected-size-with-pending-or-active-rental=""
-            data-listing-creation-details-collected-sizes=""
-            data-listing-units-with-offer-and-rental-collected-size-with-pending-or-active-offer=""
-            data-listing-units-with-offer-and-rental-collected-size-with-pending-or-active-rental=""
-            data-listing-units-with-offer-and-rental-collected-sizes=""
-            data-remote="true"
-            data-target="listing-creation-details.form unit-with-offer-single-size-selector.form units-with-offer-removal.form units-with-rental-removal.form listing-units-with-offer-and-rental.form"
-            data-unit-with-offer-single-size-selector-collected-size-with-pending-or-active-offer=""
-            data-unit-with-offer-single-size-selector-collected-size-with-pending-or-active-rental=""
-            data-unit-with-offer-single-size-selector-collected-sizes=""
-            data-units-with-offer-removal-collected-size-with-pending-or-active-offer=""
-            data-units-with-offer-removal-collected-sizes=""
-            data-units-with-rental-removal-collected-size-with-pending-or-active-rental=""
-            data-units-with-rental-removal-collected-sizes=""
-            local="false"
             method="post"
           >
             <input
@@ -72,123 +54,28 @@ const ListingNew = () =>{
                     Category*
                   </label>
                   <div className="dropdown form-dropdown desktop-only">
-                    <button
-                      aria-expanded="false"
-                      aria-haspopup="true"
-                      className="form-control dropdown-toggle"
-                      data-target="form-dropdown.dropdownBtn"
-                      data-toggle="dropdown"
-                      type="button"
-                    >
-                      SELECT CATEGORY
-                    </button>
-                    <div
-                      className="dropdown-menu"
-                      style={{}}
-                    >
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="1"
-                        to="#"
-                      >
-                        DRESSES
-                      </Link>
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="2"
-                        to="#"
-                      >
-                        TOPS
-                      </Link>
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="3"
-                        to="#"
-                      >
-                        BOTTOMS
-                      </Link>
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="5"
-                        to="#"
-                      >
-                        ACCESSORIES
-                      </Link>
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="6"
-                        to="#"
-                      >
-                        BAGS
-                      </Link>
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="7"
-                        to="#"
-                      >
-                        SHOES
-                      </Link>
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="8"
-                        to="#"
-                      >
-                        JUMPSUITS
-                      </Link>
-                      <Link
-                        className="dropdown-item"
-                        data-action="form-dropdown#selectChanges listing-creation-details#updateSelectedCategory"
-                        data-value="4"
-                        to="#"
-                      >
-                        OUTERWEAR
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="mobile-native-dropdown-container mobile-only">
-                    <select
-                      className="form-control mobile-native-dropdown text-uppercase mb-0"
-                      data-action="listing-creation-details#updateSelectedCategory"
-                      data-target="form-dropdown.selectTag listing-creation-details.listingCategorySelect"
-                      id="listing_category_id"
-                      name="listing[category_id]"
-                    >
-                      <option value="">
-                        SELECT CATEGORY
-                      </option>
-                      <option value="1">
-                        DRESSES
-                      </option>
-                      <option value="2">
-                        TOPS
-                      </option>
-                      <option value="3">
-                        BOTTOMS
-                      </option>
-                      <option value="5">
-                        ACCESSORIES
-                      </option>
-                      <option value="6">
-                        BAGS
-                      </option>
-                      <option value="7">
-                        SHOES
-                      </option>
-                      <option value="8">
-                        JUMPSUITS
-                      </option>
-                      <option value="4">
-                        OUTERWEAR
-                      </option>
-                    </select>
-                  </div>
+      <button
+        className="form-control dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        SELECT CATEGORY
+      </button>
+      <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(1)}>DRESSES</Link>
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(2)}>TOPS</Link>
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(3)}>BOTTOMS</Link>
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(5)}>ACCESSORIES</Link>
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(6)}>BAGS</Link>
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(7)}>SHOES</Link>
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(8)}>JUMPSUITS</Link>
+        <Link className="dropdown-item" to="#" onClick={() => handleCategorySelection(4)}>OUTERWEAR</Link>
+      </div>
+    </div>
+                
                 </div>
               </div>
               <div className="form-row -disabled">
@@ -7996,5 +7883,10 @@ const ListingNew = () =>{
         <Footer/>
         </>
     )
+
+    function handleCategorySelection(value) {
+      // Handle category selection logic here
+      console.log("Selected category:", value);
+    }
 }
 export default ListingNew;
