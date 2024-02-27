@@ -178,7 +178,7 @@ const TopHeader = () => {
                 <Link
                   target="_top"
                   className="nav-link "
-                  to="/Collections/Resale"
+                  to="/Collections/Separates"
                   // onMouseEnter={handleDropdownOpen}
                   // onMouseLeave={handleDropdownClose}
                 >
@@ -187,7 +187,7 @@ const TopHeader = () => {
                 <Link
                   target="_top"
                   className="nav-link "
-                  to="/Collections/Resale"
+                  to="/Collections/Occasions"
                   // onMouseEnter={handleDropdownOpen}
                   // onMouseLeave={handleDropdownClose}
                 >

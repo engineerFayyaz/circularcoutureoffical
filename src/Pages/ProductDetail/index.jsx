@@ -52,7 +52,12 @@ const ProductDetail = () => {
         return <div>Product not found</div>;
     }
 
-    const { name, brand, id, typeId, categoryId, size, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
+    const { name, brand, id, typeId, categoryId, size, internationalSize, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
+
+    const calculateRentForOneDay = (rentPrice) => {
+        const rentPerDay = parseFloat(rentPrice.replace("AU$", "")) / 8;
+        return rentPerDay.toFixed(2);
+    };
 
     return (
         <>
@@ -94,14 +99,14 @@ const ProductDetail = () => {
                                             <div>
                                                 {productImages &&
                                                     productImages.slice(1).map((image, index) => (
-                                                        <div className='product-thumbnails -vertical slick-initialized slick-slider slick-vertical' key={index} 
-                                                        style={{height:"110px"}}
+                                                        <div className='product-thumbnails -vertical slick-initialized slick-slider slick-vertical' key={index}
+                                                            style={{ height: "110px" }}
                                                         >
                                                             <Image
                                                                 className='product-thumbnail-image'
                                                                 src={image.url}
                                                                 alt={`Product Image ${index + 1}`}
-                                                                style={{height:"100%"}}
+                                                                style={{ height: "100%" }}
                                                                 thumbnail
                                                                 onClick={() => setMainImage(image.url)}
                                                             />
@@ -137,13 +142,13 @@ const ProductDetail = () => {
                                                     top: '0px',
                                                     width: '594px',
                                                     zIndex: '999',
-                                                    height:"760px"
+                                                    height: "760px"
                                                 }}
                                             >
                                                 <div>
                                                     {mainImage && (
                                                         <Col xs={12} className="mb-3">
-                                                            <Image src={mainImage} alt={`Main Product Image`} className='product-image-item' style={{height:"100%"}} fluid />
+                                                            <Image src={mainImage} alt={`Main Product Image`} className='product-image-item' style={{ height: "100%" }} fluid />
                                                         </Col>
                                                     )}
                                                 </div>
@@ -597,6 +602,56 @@ const ProductDetail = () => {
                                                 </option>
                                             </select>
                                         </div>
+
+
+                                        <div className="sizes">
+                                            <div className="titles">
+                                                <div
+                                                    className="size-title"
+                                                    id="size-section"
+                                                >
+                                                   International Size *
+                                                </div>
+                                                <div>
+                                                    {' '}
+                                                    <Link
+                                                        className="size-detail"
+                                                        data-target="#size-detail"
+                                                        data-toggle="modal"
+                                                        to="#"
+                                                    >
+                                                        Size details
+                                                    </Link>
+                                                    {' '}
+                                                    <Link
+                                                        className="size-guide"
+                                                        data-target="#size-guide"
+                                                        data-toggle="modal"
+                                                        to="#"
+                                                    >
+                                                        Size guide
+                                                    </Link>
+                                                    {' '}
+                                                </div>
+                                            </div>
+                                            <select
+                                                className="component dropdown js-product-rent-unit-id"
+                                                style={{
+                                                    color: 'inherit'
+                                                }}
+                                            >
+                                                <option
+                                                    disabled
+                                                    selected
+                                                    value=""
+                                                >
+                                                    Select InternationalSize
+                                                </option>
+                                                <option value="29708b35-6b0b-4b55-aafe-62e103ff91bc">
+                                                    {internationalSize}
+                                                </option>
+                                            </select>
+                                        </div>
                                         <div className="d-flex align-items-center">
                                             <div className="badge-section">
                                                 <div
@@ -677,9 +732,13 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice4Days / 4}
+                                                                AU${calculateRentForOneDay(product.rentPrice4Days)}/day
+                                                            </span>
+                                                            <span className="discount-percentage">
+                                                                {' '}Save 20%
                                                             </span>
                                                         </div>
+
                                                     </div>
                                                 </label>
                                                 <input
@@ -710,10 +769,10 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice8Days / 8}/day
+                                                                AU${calculateRentForOneDay(product.rentPrice8Days)}/day
                                                             </span>
                                                             <span className="discount-percentage">
-                                                                {' '}Save 25%
+                                                                {' '}Save 30%
                                                             </span>
                                                             {' '}
                                                         </div>
@@ -747,10 +806,10 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice16Days / 16}/day
+                                                                AU${calculateRentForOneDay(product.rentPrice16Days)}/day
                                                             </span>
                                                             <span className="discount-percentage">
-                                                                {' '}Save 34%
+                                                                {' '}Save 50%
                                                             </span>
                                                             {' '}
                                                         </div>
@@ -783,10 +842,10 @@ const ProductDetail = () => {
                                                         <div className="price-2">
                                                             {' '}
                                                             <span className="cost-per-day">
-                                                                {rentPrice30Days / 30}/day
+                                                                AU${calculateRentForOneDay(product.rentPrice30Days)}/day
                                                             </span>
                                                             <span className="discount-percentage">
-                                                                {' '}Save 56%
+                                                                {' '}Save 70%
                                                             </span>
                                                             {' '}
                                                         </div>

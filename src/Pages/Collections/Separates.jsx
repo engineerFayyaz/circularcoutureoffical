@@ -6,7 +6,7 @@ import EmailSubscription from "../../Components/EmailSubscription";
 import EditFilter from "../../Components/EditFilter";
 import GetEdits from "../../Components/GetEdits";
 
-const DressGowns = () => {
+const Kids = () => {
   const [products, setProducts] = useState([]);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
@@ -14,7 +14,7 @@ const DressGowns = () => {
   useEffect(() => {
       const fetchProducts = async () => {
           try {
-              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/1013`, {
+              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/7`, {
                   method: 'GET',
                   headers: {
                       'Accept': 'application/json'
@@ -44,14 +44,14 @@ const DressGowns = () => {
           <div className="container pl-5 pb-5 mt-0">
             <div>
               <h1 className="title">
-                <i>DressGowns</i>
+                <i>Kids</i>
               </h1>
               <div
                 className="description mt-2 transition collapsed"
                 data-target="plp--description.content"
               >
                 <div className="trix-content">
-                Indulge in luxury with Circular's gown collection. From exquisite fabrics to intricate designs, each gown embodies sustainable opulence, ensuring you make a statement with every step.
+                Discover Circular's adorable kids' collection, featuring eco-friendly and comfortable clothing for the little ones. From playful prints to cozy essentials, dress your children sustainably with style and care.
                 </div>
               </div>
             </div>
@@ -115,4 +115,4 @@ const DressGowns = () => {
   )
 };
 
-export default DressGowns;
+export default Kids;

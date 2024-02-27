@@ -127,6 +127,24 @@ const AdminSideHeader = () => {
                             aria-haspopup="true"
                             aria-expanded="false"
                         >
+                            Admin Collections
+                        </a>
+                        <div className="dropdown-menu">
+                            <Link className="dropdown-item" to="/AdminPanel/Admin-Collections">
+                               Create Collections
+                            </Link>
+                        </div>
+                    </li>
+                    <li className="nav-item dropdown">
+                        <a
+                            className="nav-link text-light"
+                            id="drop2"
+                            data-bs-toggle="dropdown"
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
                             User
                         </a>
                         <div className="dropdown-menu">

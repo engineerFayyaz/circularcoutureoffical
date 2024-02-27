@@ -5,6 +5,8 @@ import About from "./Pages/About";
 import Designer from "./Pages/Designer";
 import Dashboard from "./Pages/Panel/dashboard";
 import NewArrival from "./Pages/Collections/NewArrival";
+import Separates from "./Pages/Kids";
+import Occasions from "./Pages/Collections/Occasions";
 import Accessories from "./Pages/Collections/Accessories";
 import CLothing from "./Pages/Collections/Clothing";
 import DressGowns from "./Pages/Collections/DressGowns";
@@ -70,6 +72,7 @@ import AddDesigner from "./Pages/AdminPanel/AddDesigner";
 import ProductsType from "./Pages/AdminPanel/ProductsType";
 import AddEdits from "./Pages/AdminPanel/AddEdits";
 import AdminDeleteProducts from "./Pages/AdminPanel/AdminDeleteProducts";
+import AdminCollections from "./Pages/AdminPanel/AdminCollections";
 
 
 import ForgotPassword from "./Pages/ForgotPassword";
@@ -95,6 +98,7 @@ import Alemais from "./Pages/Designers/Alemais";
 import Kids from "./Pages/Kids";
 
 import InstaShop from "./Pages/InstaShop";
+import Skirts from "./Pages/Collections/Skirts";
 
 
 
@@ -121,6 +125,9 @@ function ProjectRoutes() {
                     <Route path="/Collections/Sweaters" element={<Sweaters />} />
                     <Route path="/Collections/Tops" element={<Tops />} />
                     <Route path="/Collections/Trousers" element={<Trousers />} />
+                    <Route path="/Collections/Separates" element={<Separates/>}/>
+                    <Route path="/Collections/Occasions" element={<Occasions/>}/>
+                    <Route path="/Collections/Skirts" element={<Skirts/>}/>
                     <Route path="/About" element={<About />} />
                     <Route path="/Designer" element={<Designer />} />
                     <Route path="/Panel/Dashboard" element={<Dashboard />} />
@@ -182,6 +189,7 @@ function ProjectRoutes() {
                     <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
                     <Route path="/AdminPanel/AddEdits" element={<AddEdits />} />
                     <Route path="/AdminPanel/Admin-Delete-Products" element={<AdminDeleteProducts />} />
+                    <Route path="/AdminPanel/Admin-Collections" element={<AdminCollections/>}/>
 
                     <Route path="/AdminPanel/AddDesigner" element={<AddDesigner />} />
                     <Route path="/AdminPanel/Products-Type" element={<ProductsType />} />
