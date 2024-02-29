@@ -154,6 +154,7 @@ function ProjectRoutes() {
                     <Route path="/SellingorRenting" element={<SellingOrRenting />} />
                     <Route path="/Sustainability" element={<Sustainability />} />
                     <Route path="/ProductDetail/:productId/:productName" element={<ProductDetail />} />
+                    <Route path="/ProductDetail/" element={<ProductDetail />} />
 
 
                     <Route path="/ListingNew" element={<ListingNew />} />

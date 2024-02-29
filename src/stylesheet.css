@@ -36,10 +36,12 @@
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
-::selection{
-    background: rgb(139,46,46) !important;
+
+::selection {
+    background: rgb(139, 46, 46) !important;
     color: white !important;
 }
+
 *,
 *::before,
 *::after {
@@ -193,38 +195,42 @@ a:not([href]):not([tabindex]) {
     text-decoration: none
 }
 
-    /*header-width*/
-    .top-header-width-set-main a{
-        width: 7%;
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
+/*header-width*/
+.top-header-width-set-main a {
+    width: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-    }
-    .top-header-width-set-main .search-icon-main-nav{
-        position: relative;
+}
+
+.top-header-width-set-main .search-icon-main-nav {
+    position: relative;
     top: 8px;
     left: 28px;
     font-size: 18px;
-    }
-    .top-header-width-set-main input[type="search"]{
-        width: 220px;
-        background-color: transparent;
-        font-size: 12px;
-        color: rgb(73, 80, 87);
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        line-height: 12px;
-        padding: 10px 0px;
-        border: 1px solid black;
-        padding-left: 28px;
-    }
+}
+
+.top-header-width-set-main input[type="search"] {
+    width: 220px;
+    background-color: transparent;
+    font-size: 12px;
+    color: rgb(73, 80, 87);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 12px;
+    padding: 10px 0px;
+    border: 1px solid black;
+    padding-left: 28px;
+}
+
 .List-By-Wardrobe {
     width: 10% !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 a:not([href]):not([tabindex]):hover,
 a:not([href]):not([tabindex]):focus {
     color: inherit;
@@ -9892,7 +9898,7 @@ body.component-based-page h4 {
     -khtml-user-select: none;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
- 
+
 }
 
 .slick-list {
@@ -22732,15 +22738,16 @@ hr {
     bottom: 0%;
     overflow-x: scroll !important;
     cursor: grab;
-    margin-left:0px !important;
+    margin-left: 0px !important;
     cursor: -webkit-grab;
     scrollbar-width: none
 }
 
-  
-.popular-designers-checkboxes{
+
+.popular-designers-checkboxes {
     display: none;
 }
+
 .popular-designers-container .popular-designers-checkboxes:checked+label.popular-designers-button {
     border: 1px solid !important;
     color: #1A1A1A !important
@@ -23757,6 +23764,7 @@ div.filter-bar select {
     padding-top: 16px;
     color: #666666
 }
+
 .sizes-filter .checkbox-input {
     display: none;
 }
@@ -27319,10 +27327,12 @@ div.filter-bar select {
 .navbar-menu-section .link-content .links .body a:hover {
     color: #737373
 }
-.navbar-menu-section .link-content .links .footer{
+
+.navbar-menu-section .link-content .links .footer {
     padding-top: 0px;
     background: none;
 }
+
 .navbar-menu-section .link-content .links .footer a {
     color: #737373;
     border-color: #AA5959 !important;
@@ -36408,6 +36418,7 @@ img {
 .fixed-top {
     background: lightgray !important;
     padding-right: 0px !important;
+
     .top-header {
         background-color: black !important;
     }
@@ -58981,7 +58992,7 @@ button:focus {
 
 /* Track */
 .cl-switch>span::before {
- 
+
     float: right;
     display: inline-block;
     margin: 5px 0 5px 10px;
@@ -59160,6 +59171,7 @@ button:focus {
         margin-top: 25px;
     }
 }
+
 .contact-navbar {
     border-bottom: 0.5px solid rgba(145, 145, 145, 0.315);
 
@@ -59409,11 +59421,12 @@ button:focus {
     }
 }
 
-.signIn-form-container{
+.signIn-form-container {
     background: #592530;
 }
-.signIn-form-row{
-    padding-top: 3rem  !important;
+
+.signIn-form-row {
+    padding-top: 3rem !important;
     padding: 3rem 5rem;
 }
 
@@ -59426,19 +59439,19 @@ button:focus {
     border-radius: 20px;
 }
 
-    .model-first-div span a {
-        text-transform: uppercase;
-        font-size: 21px;
-        font-weight: 600;
-        display: flex;
-        gap: 30px;
-        justify-content: center;
-        align-items: center;
-        color: #592530 !important;
-        text-decoration: none;
-        border-bottom: 2px solid #592530;
-        width: 99px;
-    }
+.model-first-div span a {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 600;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #592530 !important;
+    text-decoration: none;
+    border-bottom: 2px solid #592530;
+    width: 99px;
+}
 
 .sign-button-platform {
     width: 100%;
@@ -59448,71 +59461,74 @@ button:focus {
     margin-left: -7px;
 }
 
-.sign-button-platform a{
+.sign-button-platform a {
     width: 80%;
     margin-left: 25px;
     background-color: #592530;
     margin-top: 20px;
 }
-    .sign-button-platform button {
-        width: 100%;
-        background-color: transparent;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: white;
-        letter-spacing: 2px;
-        display: flex;
-        justify-content: center;
-        border: none;
-    }
 
-    .sign-button-platform a button {
-        width: 430px;
-        text-decoration: none;
-    }
+.sign-button-platform button {
+    width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    border: none;
+}
 
-    .sign-button-platform a:hover {
-        background-color: white;
-        color: black !important;
-        border: 1px solid #592530;
-    }
-    .sign-button-platform a:hover button{
-        color: black;
-    }
+.sign-button-platform a button {
+    width: 430px;
+    text-decoration: none;
+}
 
-    .sign-button-platform>i {
-        position: relative;
+.sign-button-platform a:hover {
+    background-color: white;
+    color: black !important;
+    border: 1px solid #592530;
+}
+
+.sign-button-platform a:hover button {
+    color: black;
+}
+
+.sign-button-platform>i {
+    position: relative;
     left: -9em;
     top: 3.5rem;
     color: white;
     font-size: 18px;
-    }
-    .sign-button-platform a:hover .sign-button-platform>i{
-        color: black !important;
-    }
+}
+
+.sign-button-platform a:hover .sign-button-platform>i {
+    color: black !important;
+}
 
 
 .set-email-width {
     width: 100%;
 }
 
-    .set-email-width span {
-        /* width: 37%; */
-        text-transform: uppercase;
-        font-size: 14px !important;
-        /* margin-left: 4px !important; */
-        letter-spacing: 2px;
-        font-weight: 600;
-        width: 80%;
-        text-align: start;
-        margin-left: 49px !important;
-    }
+.set-email-width span {
+    /* width: 37%; */
+    text-transform: uppercase;
+    font-size: 14px !important;
+    /* margin-left: 4px !important; */
+    letter-spacing: 2px;
+    font-weight: 600;
+    width: 80%;
+    text-align: start;
+    margin-left: 49px !important;
+}
 
-    .set-email-width input {
-        width: 80%;
-        margin: 0 auto;
-        padding: 7px;
-    }
+.set-email-width input {
+    width: 80%;
+    margin: 0 auto;
+    padding: 7px;
+}
 
 .remember-me-text {
     font-size: 12px;
@@ -59527,10 +59543,10 @@ button:focus {
     /* Adjust padding */
 }
 
-    .sign-button-platform button:hover {
-        background-color: #f0f0f0;
-        /* Change background color on hover */
-    }
+.sign-button-platform button:hover {
+    background-color: #f0f0f0;
+    /* Change background color on hover */
+}
 
 .sign-button-platform i {
     margin-right: 10px;
@@ -59548,15 +59564,15 @@ button:focus {
     flex-direction: row;
 }
 
-    .sterms-width a {
-        font-size: 10px !important;
-        text-decoration: none !important;
-        color: #592530 !important;
-    }
+.sterms-width a {
+    font-size: 10px !important;
+    text-decoration: none !important;
+    color: #592530 !important;
+}
 
-    .sterms-width p {
-        font-size: 10px !important;
-    }
+.sterms-width p {
+    font-size: 10px !important;
+}
 
 .text-flex p {
     font-size: 10px !important;
@@ -59575,28 +59591,28 @@ button:focus {
     display: ruby-base;
 }
 
-    .btn-input-set input {
-        width: 69%;
-    }
+.btn-input-set input {
+    width: 69%;
+}
 
-    .btn-input-set button {
-        padding: 11px;
-        background: none;
-        border: none;
-        background-color: #592530;
-        color: white;
-        font-size: 13px;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 600;
-        gap: 0px;
-    }
+.btn-input-set button {
+    padding: 11px;
+    background: none;
+    border: none;
+    background-color: #592530;
+    color: white;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    gap: 0px;
+}
 
-        .btn-input-set button:hover {
-            background-color: #f0f0f0;
-            border: 1px solid #592530;
-            color: #592530;
-        }
+.btn-input-set button:hover {
+    background-color: #f0f0f0;
+    border: 1px solid #592530;
+    color: #592530;
+}
 
 /* email-section */
 .set-email-width1 {
@@ -59604,20 +59620,20 @@ button:focus {
     /* flex-direction: column; */
 }
 
-    .set-email-width1 span {
-        width: 30%;
-        text-transform: uppercase;
-        font-size: 13px;
-        letter-spacing: 2px;
-        margin-left: -30px;
-    }
+.set-email-width1 span {
+    width: 30%;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-left: -30px;
+}
 
-    .set-email-width1 input {
-        width: 80%;
-        /* margin: 0 auto; */
-        padding: 7px;
-        margin-left: 20px;
-    }
+.set-email-width1 input {
+    width: 80%;
+    /* margin: 0 auto; */
+    padding: 7px;
+    margin-left: 20px;
+}
 
 .para-text-email-section {
     font-size: 12px;
@@ -59629,35 +59645,261 @@ button:focus {
 
 .dropdown:hover>.dropdown-menu {
     display: block;
-  }
-  
-  .dropdown>.dropdown-toggle:active {
+}
+
+.dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
-      pointer-events: none;
-  }
-  .side-navigation-panel-select-wrap, .side-navigation-panel-select-inner-wrap{
+    pointer-events: none;
+}
+
+.side-navigation-panel-select-wrap,
+.side-navigation-panel-select-inner-wrap {
     width: 100% !important;
     margin: 0px 0px;
     padding-top: 10px 0px;
-  }
-  .react-calendar{
+}
+
+.react-calendar {
     width: 100% !important;
-  }
-  .side-navigation-panel-select-option-text, .side-navigation-panel-select-option-wrap{
+}
+
+.side-navigation-panel-select-option-text,
+.side-navigation-panel-select-option-wrap {
     width: 100%;
     margin-right: 0rem !important;
-  }
-  .component.input.icon.-pounds::before {
+}
+
+.component.input.icon.-pounds::before {
     content: "£";
     position: absolute;
-    left: 10px; /* Adjust the position as needed */
-    top: 50%; /* Adjust the position as needed */
-    transform: translateY(-50%); /* Center vertically */
-    color: black; /* Adjust color as needed */
-  }
+    left: 10px;
+    /* Adjust the position as needed */
+    top: 50%;
+    /* Adjust the position as needed */
+    transform: translateY(-50%);
+    /* Center vertically */
+    color: black;
+    /* Adjust color as needed */
+}
 
-  .sidebar-filter-accordion-v2 .card>.designer-header>.popular-designer {
+.sidebar-filter-accordion-v2 .card>.designer-header>.popular-designer {
     font-family: europa, sans-serif;
     padding: 16px 16px 0 16px;
     color: #1A1A1A;
+}
+
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* styles.css */
+
+/* Additional CSS rules for styling your React components */
+
+@layer base {
+    button {
+        @apply border border-black rounded-xl px-5 py-1;
+    }
+}
+
+.image-gallery-slide-wrapper.image-gallery-thumbnails-bottom {
+    height: 550px;
+
+    .image-gallery-swipe,
+    .image-gallery-slides,
+    .image-gallery-slide {
+        height: 100%;
+    }
+
+}
+
+.image-gallery-slide-wrapper .image-gallery-slide img {
+    height: 100% !important;
+    width: 100%;
+    object-fit: fill;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: 100%;
+}
+
+img.image-gallery-thumbnail-image {
+
+    height: 100px;
+    object-fit: fill;
+    opacity: 0.4;
+    transition: all .3s ease-in-out;
+}
+
+img.image-gallery-thumbnail-image:hover {
+    opacity: 1;
+}
+
+img.image-gallery-thumbnail-image:focus-visible {
+    opacity: 1;
+}
+
+.image-gallery-left-nav .image-gallery-svg,
+.image-gallery-right-nav .image-gallery-svg {
+    height: 50px;
+    width: 28px;
+}
+
+.product-landing-detail-section .product-heading {
+
+    width: 100%;
+    padding: 0px 0px 8px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+
+    h4 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+    }
+
+}
+
+.accordian-box .radio-wrapper {
+    cursor: pointer;
+    padding: 15px 10px;
+    border: 1px solid rgb(230, 232, 236);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.accordian-box .radio-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 0px !important;
+}
+
+.accordian-box .radio-button input[type="radio"] {
+    display: none;
+}
+
+.accordian-box .radio-checkmark {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+.accordian-box .radio-checkmark:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: all 0.2s ease-in-out;
+}
+
+.accordian-box .radio-button input[type="radio"]:checked~.radio-checkmark:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.accordian-box .radio-label {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    color: rgb(34, 34, 34);
+}
+
+.delivery-date-box .date-heading h4 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 23px;
+    color: black;
+}
+
+.delivery-date-box .date-box {
+    padding: 24px;
+    padding-bottom: 10px;
+    background: rgb(246, 246, 246);
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.delivery-date-box .date-box .date .box .select-date-title {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(34, 34, 34);
+}
+
+.delivery-date-box .date-box .date .box .select-date input {
+    padding: 8px 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 20px;
+    width: 150px;
+    color: grey;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.delivery-date-box .date-box .note p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(34, 34, 34);
+    margin-top: 15px;
+}
+
+.detail-page-btns-groups .MultiButton {
+    border-radius: 0px;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    height: 56px;
+    padding: 8px 24px;
+    font-size: 16px;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    transition: all .3s ease-in-out;
+    border: 1px solid transparent;
+
+    span {
+        color: white;
+        font-family: "Montserrat";
+    }
+}
+
+.detail-page-btns-groups .MultiButton:hover {
+    background-color: white !important;
+    border: 1px solid black;
+
+    span {
+        color: black;
+    }
+}
+
+.detail-page-btns-groups .MultiButton2 {
+    background-color: white !important;
+    border: 1px solid black;
+
+    span {
+        color: black !important;
+    }
+}
+
+.detail-page-btns-groups .MultiButton2:hover {
+    background-color: black !important;
+    border: 1px solid black;
+
+    span {
+        color: white !important;
+    }
 }
