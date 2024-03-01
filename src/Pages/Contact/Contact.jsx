@@ -22,7 +22,7 @@ const Contact = () =>{
       </div>
     </div>
   </div>
-  {/* <ProductLanding /> */}
+  <ProductLanding />
   <div className="contact-main p-4 px-5 no-overflow-x pt-0">
     <div className="contact-search d-flex align-items-center justify-content-between">
       <div className="breadcrumb">

@@ -313,7 +313,7 @@ form .form-label{
     /* Set the text color */
 }
 
-span {
+.custom-file-text-admin span {
     font-size: 17px !important;
     font-weight: 500;
 
