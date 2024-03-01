@@ -221,9 +221,11 @@ const RegisterWithEmail = () => {
                             <span className='ml-2'>I agree to receive marketing emails from</span>
                         </div>
                         <div className="row sign-button-platform">
+                            <Link >
                             <button type="button" onClick={handleSubmit}>
                                 <span>Register</span>
                             </button>
+                            </Link>
                         </div>
                         <div className="row mt-4 justify-content-center">
                             <Link

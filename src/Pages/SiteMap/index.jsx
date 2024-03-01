@@ -11,7 +11,7 @@ const SiteMap = () => {
             <div className="page__main-content" id="mainContent">
                 {/* plp intro*/}
                 <div className="basic-page">
-                    <div className="container">
+                    <div className="main-container container">
                         {/* BREADCRUMBS*/}
                         <div className="breadcrumbs">
                             <ul

@@ -77,10 +77,6 @@ const Signin = () => {
                                 </Link>
                             </div>
                         </div>
-                       
-                        <div className="d-flex justify-content-center align-items-center w-100 mt-4">
-                            <h4>OR</h4>
-                        </div>
                         <div className="row set-email-width ml-2">
                             <span className="mt-4 ml-0">UserName*</span>
                             <input
@@ -118,11 +114,13 @@ const Signin = () => {
                         </div>
                        
                         <div className="row sign-button-platform">
+                        <Link >
                             <button type="button" onClick={handleSubmit}>
-                                <span>Sign in</span>
+                                <span>Sign In</span>
                             </button>
+                            </Link>
                         </div>
-                        <div className="row mt-0 justify-content-start mb-3">
+                        <div className="row mt-1 justify-content-start mb-3">
                             <Link
                                 to="/Forgot-Password"
                                 className="text-dark text-uppercase text-decoration-none"
