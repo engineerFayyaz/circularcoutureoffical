@@ -99,6 +99,7 @@ import Kids from "./Pages/Kids";
 
 import InstaShop from "./Pages/InstaShop";
 import Skirts from "./Pages/Collections/Skirts";
+import SubscriptionForm from "./Pages/Subscription";
 
 
 function ProjectRoutes() {
@@ -215,6 +216,8 @@ function ProjectRoutes() {
 
                     <Route path="/Kids" element={<Kids />} />;
                     <Route path="/InstaShop" element={<InstaShop />} />
+                    <Route path="/SubscriptionForm" element={<SubscriptionForm />} />
+
                     )
 
 

@@ -11,84 +11,14 @@ import { Link } from "react-router-dom";
 const UserHeader = () => {
   return (
     <>
-      <div className="top-header d-flex justify-content-end bg-dark text-light mt-4 p-1">
+      <div className="top-header bg-dark text-dark mt-4">
         <div
-          className="me-5 four-icon d-flex align-items-center mt-3"
-          style={{ columnGap: "10px" }}
+          className=" w-100 d-flex align-items-center justify-content-center py-2"
+          
         >
-          <div className="dropdown dropup ">
-            <ul className="list-inline mb-0  d-flex align-items-center gap-1">
-              <li className="list-inline-item">
-                <Link
-                  to="#"
-                  className="default-link -md link text-uppercase"
-                  data-toggle="modal"
-                  data-target="#signin-modal"
-                >
-                  <FontAwesomeIcon
-                    icon={faUser}
-                    style={{ color: "white", fontSize: "17px" }}
-                  />
-                  {/* <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" /> */}
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link
-                  to="#"
-                  className="default-link -md link text-uppercase"
-                  data-toggle="modal"
-                  data-target="#signin-modal"
-                >
-                  <FontAwesomeIcon
-                    icon={faShoppingBag}
-                    style={{ color: "white", fontSize: "17px" }}
-                  />
-                  {/* <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" /> */}
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link
-                  to="#"
-                  className="default-link -md link text-uppercase"
-                  data-toggle="modal"
-                  data-target="#signin-modal"
-                >
-                  <FontAwesomeIcon
-                    icon={faSearch}
-                    style={{ color: "white", fontSize: "17px" }}
-                  />
-                  {/* <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" /> */}
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link
-                  to="#"
-                  className="default-link -md link text-uppercase"
-                  data-toggle="modal"
-                  data-target="#signin-modal"
-                >
-                  <FontAwesomeIcon
-                    icon={faHeart}
-                    style={{ color: "white", fontSize: "17px" }}
-                  />
-                  {/* <i style={{ color: "white", fontSize: "17px" }} className="far fa-user" /> */}
-                </Link>
-              </li>
-            </ul>
-          </div>
-          {/* <FontAwesomeIcon
-            icon={faShoppingBag}
-            style={{ color: "white", fontSize: "17px" }}
-          />
-          <FontAwesomeIcon
-            icon={faSearch}
-            style={{ color: "white", fontSize: "17px" }}
-          />
-          <FontAwesomeIcon
-            icon={faHeart}
-            style={{ color: "white", fontSize: "17px" }}
-          /> */}
-         
+            <Link className="pt-2" to="/SubscriptionForm">
+              <span>SIGN UP FOR £20 OFF YOUR FIRST RENTAL</span>
+            </Link>
         </div>
       </div>
     </>
