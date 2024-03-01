@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import AdminHeader from "../../Components/AdminHeader";
@@ -8,28 +8,116 @@ import axios from "axios";
 function AddDesigner() {
   const [name, setName] = useState("");
   const [detail, setDetail] = useState("");
+  const [designers, setDesigners] = useState([]);
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
+  const [editingDesignerId, setEditingDesignerId] = useState(null); // Track the ID of the designer being edited
+  const [editableRows, setEditableRows] = useState({}); // Track which rows are in edit mode
+
+  // Fetch designers on component mount
+  useEffect(() => {
+    fetchDesigners();
+  }, []);
+
+  const fetchDesigners = async () => {
+    try {
+      const response = await axios.get(
+        "https://localhost:7220/api/product-designers"
+      );
+      console.log("Response data:", response.data); // Log the response data
+      const designersData = response.data.results || []; // Extract designers array from the results property
+      setDesigners(designersData);
+    } catch (error) {
+      console.error("Error fetching designers:", error);
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        "https://localhost:7220/api/product-designers",
-        {
-          name: name,
-          detail: detail
-        }
-      );
+      let response;
+      if (editingDesignerId) {
+        // If editingDesignerId is set, it means we are updating an existing designer
+        response = await axios.put(
+          `https://localhost:7220/api/product-designers/${editingDesignerId}`,
+          {
+            name: name,
+            detail: detail,
+          }
+        );
+      } else {
+        // Otherwise, we are adding a new designer
+        response = await axios.post(
+          "https://localhost:7220/api/product-designers",
+          {
+            name: name,
+            detail: detail,
+          }
+        );
+      }
 
       if (response.status === 200 || response.status === 201) {
-        setSuccessMessage("Designer added successfully!");
+        setSuccessMessage(
+          editingDesignerId
+            ? "Designer updated successfully!"
+            : "Designer added successfully!"
+        );
         setName("");
         setDetail("");
-        setError(null);
+        setEditingDesignerId(null); // Reset editing mode
+        fetchDesigners(); // Fetch designers again after adding/editing
       } else {
-        setError("Failed to add designer. Please try again later.");
+        setError(
+          editingDesignerId
+            ? "Failed to update designer. Please try again later."
+            : "Failed to add designer. Please try again later."
+        );
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setError("An error occurred. Please try again later.");
+    }
+  };
+
+  const handleEdit = (designerId) => {
+    setEditableRows((prevEditableRows) => ({
+      ...prevEditableRows,
+      [designerId]: true, // Set the row with designerId to editable
+    }));
+    const designerToEdit = designers.find(
+      (designer) => designer.id === designerId
+    );
+    if (designerToEdit) {
+      setName(designerToEdit.name);
+      setDetail(designerToEdit.detail);
+      setEditingDesignerId(designerId);
+    }
+  };
+
+  const handleSave = () => {
+    setEditableRows({}); // Clear all editable rows
+    setEditingDesignerId(null); // Reset editing mode
+    // Perform save operation here if needed
+  };
+
+  const handleCancel = () => {
+    setEditableRows({}); // Clear all editable rows
+    setEditingDesignerId(null); // Reset editing mode
+    // Reset form fields here if needed
+  };
+
+  const handleDelete = async (designerId) => {
+    try {
+      const response = await axios.delete(
+        `https://localhost:7220/api/product-designers/${designerId}`
+      );
+  
+      if (response.status === 200) {
+        setSuccessMessage("Designer deleted successfully!");
+        fetchDesigners(); // Fetch designers again after deleting one
+      } else {
+        setError("Failed to delete designer. Please try again later.");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -53,10 +141,78 @@ function AddDesigner() {
                 <Form.Label>Designer Details</Form.Label>
                 <Form.Control as="textarea" rows={4} value={detail} onChange={(e) => setDetail(e.target.value)} required />
               </Form.Group>
-              <Button type="submit">Submit</Button>
+              <Button type="submit">
+                {editingDesignerId ? "Update" : "Submit"}
+              </Button>
               {error && <p style={{ color: "red" }}>{error}</p>}
               {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
             </Form>
+            <div>
+              <h2>All Designers</h2>
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Details</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {designers.map((designer) => (
+                    <tr key={designer.id}>
+                      <td>
+                        {editableRows[designer.id] ? (
+                          <Form.Control
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                          />
+                        ) : (
+                          designer.name
+                        )}
+                      </td>
+                      <td>
+                        {editableRows[designer.id] ? (
+                          <Form.Control
+                            as="textarea"
+                            rows={4}
+                            value={detail}
+                            onChange={(e) => setDetail(e.target.value)}
+                          />
+                        ) : (
+                          designer.detail
+                        )}
+                      </td>
+                      <td>
+                        {editableRows[designer.id] ? (
+                          <>
+                            <Button onClick={() => handleSave()} variant="success">
+                              Save
+                            </Button>
+                            <Button onClick={() => handleCancel()} variant="secondary">
+                              Cancel
+                            </Button>
+                          </>
+                        ) : (
+                          <Button
+                            onClick={() => handleEdit(designer.id)}
+                            disabled={editingDesignerId !== null}
+                          >
+                            Edit
+                          </Button>
+
+
+                          
+                        )}
+                         <Button onClick={() => handleDelete(designer.id)} variant="danger">
+                            Delete
+                          </Button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

@@ -19,7 +19,10 @@ const GetEdits = () => {
         // Sort edits by upload date (assuming there is a 'createdAt' field)
         const sortedEdits = data.results.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
 
-        setEdits(sortedEdits);
+        // Limit to the latest 7 edits
+        const latestEdits = sortedEdits.slice(0, 6);
+
+        setEdits(latestEdits);
 
         // Start scrolling automatically
         startScrolling();

@@ -14,7 +14,7 @@ const NewArrival = () => {
   useEffect(() => {
       const fetchProducts = async () => {
           try {
-              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/3`, {
+              const response = await fetch(`https://localhost:7220/api/products`, {
                   method: 'GET',
                   headers: {
                       'Accept': 'application/json'

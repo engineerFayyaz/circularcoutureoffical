@@ -102,6 +102,7 @@ const ViewAdminProducts = () => {
                                             <th style={{ minWidth: "40px" }}>ID</th>
                                             <th style={{ minWidth: "120px" }}>Name:</th>
                                             <th style={{ minWidth: "200px" }}>Description:</th>
+                                            <th style={{ minWidth: "200px" }}>Code:</th>
                                             <th style={{ minWidth: "60px" }}>Category:</th>
                                             <th style={{ minWidth: "60px" }}>Size:</th>
                                             <th style={{ minWidth: "80px" }}>Brand:</th>
@@ -180,6 +181,7 @@ const ViewAdminProducts = () => {
                                                         <td>{product.id}</td>
                                                         <td>{product.name}</td>
                                                         <td>{product.details}</td>
+                                                        <td>{product.code}</td>
                                                         <td>{product.categoryId}</td>
                                                         <td>{product.size}</td>
                                                         <td>{product.brand}</td>

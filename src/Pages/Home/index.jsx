@@ -6,11 +6,15 @@ import { Link } from "react-router-dom";
 import NowTrending from "../../Components/NowTrending/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { PopupProvider } from "../../PopupContext";
+
 const Home = () => {
   return (
+    <PopupProvider>
     <>
       <>
         <TopHeader />
+       
         <div
           className="main-container no-overflow-x pt-0"
           data-controller="homepage"
@@ -242,6 +246,7 @@ const Home = () => {
         <Footer />
       </>
     </>
+    </PopupProvider>
   );
 };
 export default Home;

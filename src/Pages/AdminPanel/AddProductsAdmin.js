@@ -104,6 +104,8 @@ const AddProductsAdmin = () => {
     }
   };
 
+  console.log("fetch catagory",categories)
+
   const fetchDesigners = async () => {
     try {
       const response = await fetch(
