@@ -12229,7 +12229,7 @@ div.component.dropdown .error-message {
 
 .collage-container .component {
     height: 600px;
-    background-image: url(../public/images/background-images/f12a250d4c.jpg), url(../public/images/background-images/bg3.jpg);
+    background-image: url(../public/images/background-images/f12a250d4c.jpg), url(../public/images/background-images/bg3.png);
     background-position: left, right;
     background-repeat: no-repeat;
     background-size: 50% 100%, 50% 100%;
@@ -15451,7 +15451,7 @@ p {
 
 @media (max-width: 1500.98px) {
     .main-container {
-        margin-top: 145px;
+        margin-top: 136px;
     }
 }
 
@@ -58253,6 +58253,7 @@ button:disabled,
     height: 500px !important;
     background-image: url(../public/images/background-images/f12a250d4c.jpg) !important;
     background-size: cover !important;
+    /* background-attachment: fixed; */
     background-position: center center !important;
 }
 

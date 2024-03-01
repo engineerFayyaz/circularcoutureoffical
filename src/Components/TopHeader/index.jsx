@@ -124,10 +124,10 @@ const TopHeader = () => {
           </div>
         </div>
         <nav
-          className="navbar navbar-menu-section"
+          className="navbar navbar-menu-section border-bottom border-1 border-secondary"
           data-controller="mega-menu-contents"
         >
-          <div className="row no-gutters fixed-container p-0 py-3 flex-nowrap">
+          <div className="row no-gutters fixed-container p-0 flex-nowrap">
             <div className="links-wrapper text-uppercase">
               <div className="top-header-width-set-main col-12 row no-gutters p-0 justify-content-between align-items-center mr-3">
                 <Link
