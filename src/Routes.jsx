@@ -101,7 +101,6 @@ import InstaShop from "./Pages/InstaShop";
 import Skirts from "./Pages/Collections/Skirts";
 
 
-
 function ProjectRoutes() {
     return (
         <React.Suspense fallback={<>Loading...</>}>

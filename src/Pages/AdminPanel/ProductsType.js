@@ -1,37 +1,103 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Table from "react-bootstrap/Table";
 import AdminHeader from "../../Components/AdminHeader";
 import AdminSideHeader from "../../Components/AdminSideHeader";
 import axios from "axios";
 
 function ProductsType() {
-  const [type, setType] = useState(""); // Changed state variable name to 'type'
+  const [type, setType] = useState("");
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
+  const [editingTypeId, setEditingTypeId] = useState(null);
+  const [types, setTypes] = useState([]);
+  const [editableRows, setEditableRows] = useState({}); // Track which rows are in edit mode
+
+  useEffect(() => {
+    fetchTypes();
+  }, []);
+
+  const fetchTypes = async () => {
+    try {
+      const response = await axios.get("https://localhost:7220/api/product-types");
+      console.log("Response data:", response.data);
+      const typesData = response.data.results || [];
+      setTypes(typesData);
+    } catch (error) {
+      console.error("Error fetching product types:", error);
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        "https://localhost:7220/api/product-types",
-        {
-          type: type, // Sending 'type' data
-        }
-      );
+      let response;
+      if (editingTypeId) {
+        response = await axios.put(
+          `https://localhost:7220/api/product-types/${editingTypeId}`,
+          {
+            type: type,
+          }
+        );
+      } else {
+        response = await axios.post("https://localhost:7220/api/product-types", {
+          type: type,
+        });
+      }
 
       if (response.status === 200 || response.status === 201) {
-        setSuccessMessage("Product Type added successfully!"); // Adjusted success message
-        setType(""); // Resetting the 'type' state variable
-        setError(null);
+        setSuccessMessage(editingTypeId ? "Product type updated successfully!" : "Product type added successfully!");
+        setType("");
+        setEditingTypeId(null);
+        fetchTypes();
       } else {
-        setError("Failed to add Product type. Please try again later."); // Adjusted error message
+        setError(editingTypeId ? "Failed to update product type. Please try again later." : "Failed to add product type. Please try again later.");
       }
     } catch (error) {
       console.error("Error:", error);
       setError("An error occurred. Please try again later.");
     }
+  };
+
+  const handleEdit = (typeId) => {
+    const typeToEdit = types.find((type) => type.id === typeId);
+    if (typeToEdit) {
+      setType(typeToEdit.type);
+      setEditingTypeId(typeId);
+      setEditableRows((prevEditableRows) => ({
+        ...prevEditableRows,
+        [typeId]: true,
+      }));
+    }
+  };
+
+  const handleDelete = async (typeId) => {
+    try {
+      const response = await axios.delete(`https://localhost:7220/api/product-types/${typeId}`);
+      if (response.status === 200) {
+        setSuccessMessage("Product type deleted successfully!");
+        fetchTypes();
+      } else {
+        setError("Failed to delete product type. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setError("An error occurred. Please try again later.");
+    }
+  };
+
+  const handleSave = () => {
+    setEditableRows({}); // Clear all editable rows
+    setEditingTypeId(null); // Reset editing mode
+    // Perform save operation here if needed
+  };
+
+  const handleCancel = () => {
+    setEditableRows({}); // Clear all editable rows
+    setEditingTypeId(null); // Reset editing mode
+    // Reset form fields here if needed
   };
 
   return (
@@ -44,12 +110,55 @@ function ProductsType() {
             <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Product Type</Form.Label>
-                <Form.Control type="text" value={type} onChange={(e) => setType(e.target.value)} placeholder="Product type " required />
+                <Form.Control type="text" value={type} onChange={(e) => setType(e.target.value)} placeholder="Product type" required />
               </Form.Group>
-              <Button type="submit">Submit</Button>
+              <Button type="submit">{editingTypeId ? "Update" : "Submit"}</Button>
               {error && <p style={{ color: "red" }}>{error}</p>}
               {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
             </Form>
+            <div>
+              <h2>All Product Types</h2>
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Product Type</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {types.map((type, index) => (
+                    <tr key={type.id}>
+                      <td>{index + 1}</td>
+                      <td>
+                        {editableRows[type.id] ? (
+                          <Form.Control
+                            type="text"
+                            value={type}
+                            onChange={(e) => setType(e.target.value)}
+                          />
+                        ) : (
+                          type.type
+                        )}
+                      </td>
+                      <td>
+                        {editableRows[type.id] ? (
+                          <>
+                            <Button onClick={() => handleSave()}>Save</Button>
+                            <Button onClick={() => handleCancel()}>Cancel</Button>
+                          </>
+                        ) : (
+                          <>
+                            <Button onClick={() => handleEdit(type.id)}>Edit</Button>
+                            <Button onClick={() => handleDelete(type.id)}>Delete</Button>
+                          </>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            </div>
           </div>
         </div>
       </div>

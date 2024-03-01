@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import AdminHeader from "../../Components/AdminHeader";
 import AdminSideHeader from "../../Components/AdminSideHeader";
 import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCamera } from '@fortawesome/free-solid-svg-icons'
+import { faCamera, faEdit, faTrash } from '@fortawesome/free-solid-svg-icons'
 
-// Directly define Cloudinary configuration variables
 const cloudinaryConfig = {
     cloudName: 'lms-empty',
     apiKey: '465825886714436',
@@ -22,6 +21,22 @@ function AddEdits() {
     const [imageUrl, setImageUrl] = useState("");
     const [error, setError] = useState(null);
     const [successMessage, setSuccessMessage] = useState(null);
+    const [edits, setEdits] = useState([]);
+    const [editingId, setEditingId] = useState(null);
+
+    useEffect(() => {
+        fetchEdits();
+    }, []);
+
+    const fetchEdits = async () => {
+        try {
+            const response = await axios.get("https://localhost:7220/api/product-edits");
+            setEdits(response.data.results);
+        } catch (error) {
+            console.error("Error:", error);
+            setError("Failed to fetch edits. Please try again later.");
+        }
+    };
 
     const handleImageChange = async (e) => {
         const file = e.target.files[0];
@@ -70,12 +85,42 @@ function AddEdits() {
                 setDetail("");
                 setImageUrl("");
                 setError(null);
+                fetchEdits(); // Fetch edits again after adding a new one
             } else {
                 setError("Failed to add Product Edit. Please try again later.");
             }
         } catch (error) {
             console.error("Error:", error);
             setError("An error occurred while adding Product Edit. Please try again later.");
+        }
+    };
+
+    const handleEdit = (editId) => {
+        setEditingId(editId);
+    };
+
+    const handleSaveEdit = async (editId) => {
+        // Implement logic to save the edit with the given editId
+        setEditingId(null); // After saving, reset the editingId
+    };
+
+    const handleCancelEdit = () => {
+        setEditingId(null);
+    };
+
+    const handleDelete = async (editId) => {
+        try {
+            const response = await axios.delete(`https://localhost:7220/api/product-edits/${editId}`);
+            if (response.status === 200) {
+                setEdits(edits.filter(edit => edit.id !== editId));
+                setSuccessMessage("Product Edit deleted successfully!");
+                setError(null);
+            } else {
+                setError("Failed to delete Product Edit. Please try again later.");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            setError("An error occurred while deleting Product Edit. Please try again later.");
         }
     };
 
@@ -110,6 +155,46 @@ function AddEdits() {
                             {error && <p style={{ color: "red" }}>{error}</p>}
                             {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
                         </Form>
+                        <table className="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Detail</th>
+                                    <th>Image</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {edits.map(edit => (
+                                    <tr key={edit.id}>
+                                        <td>{editingId === edit.id ? <input type="text" value={name} onChange={(e) => setName(e.target.value)} /> : edit.name}</td>
+                                        <td>{editingId === edit.id ? <input type="text" value={detail} onChange={(e) => setDetail(e.target.value)} /> : edit.detail}</td>
+                                        <td><img src={edit.imageUrl} alt={edit.name} style={{ width: "100px" }} /></td>
+                                        <td>
+                                            {editingId === edit.id ? (
+                                                <>
+                                                    <Button variant="primary" onClick={() => handleSaveEdit(edit.id)}>
+                                                        Save
+                                                    </Button>
+                                                    <Button variant="danger" onClick={handleCancelEdit}>
+                                                        Cancel
+                                                    </Button>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <Button variant="primary" onClick={() => handleEdit(edit.id)}>
+                                                        <FontAwesomeIcon icon={faEdit} />
+                                                    </Button>
+                                                    <Button variant="danger" onClick={() => handleDelete(edit.id)}>
+                                                        <FontAwesomeIcon icon={faTrash} />
+                                                    </Button>
+                                                </>
+                                            )}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

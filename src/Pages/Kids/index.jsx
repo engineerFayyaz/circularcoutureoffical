@@ -14,7 +14,7 @@ const Separates = () => {
   useEffect(() => {
       const fetchProducts = async () => {
           try {
-              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/8`, {
+              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/7`, {
                   method: 'GET',
                   headers: {
                       'Accept': 'application/json'
@@ -44,7 +44,7 @@ const Separates = () => {
           <div className="container pl-5 pb-5 mt-0">
             <div>
               <h1 className="title">
-                <i>Separates</i>
+                <i>Kids</i>
               </h1>
               <div
                 className="description mt-2 transition collapsed"

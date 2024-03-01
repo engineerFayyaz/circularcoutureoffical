@@ -1,15 +1,19 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signin = () => {
+    const navigate = useNavigate(); // Using useNavigate hook for navigation
+
     // State variables to store form data
     const [formData, setFormData] = useState({
         email: "",
         password: "",
-        userName: "", // Adding userName field
+        userName: "",
     });
 
     // Function to handle input change
@@ -31,9 +35,13 @@ const Signin = () => {
 
             console.log("Login successful:", response.data);
             // Handle success, e.g., redirect to another page
+            toast.success('Login successful!');
+            // Redirect to the home page
+            navigate("/");
         } catch (error) {
             console.error("Login failed:", error.response);
             // Handle error, e.g., show error message to the user
+            toast.error('Login failed. Please check your credentials.');
         }
     };
 
@@ -69,30 +77,7 @@ const Signin = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="row sign-button-platform justify-content-center">
-                            <i className="fa-brands fa-google" />
-                            <Link >
-                            <button type="button">
-                                <span>Sign in with Google</span>
-                            </button>
-                            </Link>
-                        </div>
-                        <div className="row sign-button-platform">
-                            <i className="fa-brands fa-facebook" />
-                            <Link >
-                            <button type="button">
-                                <span>Sign in with Facebook</span>
-                            </button>
-                            </Link>
-                        </div>
-                        <div className="row sign-button-platform">
-                            <i className="fa-brands fa-apple" />
-                            <Link>
-                            <button type="button">
-                                <span>Sign in with Apple</span>
-                            </button>
-                            </Link>
-                        </div>
+                       
                         <div className="d-flex justify-content-center align-items-center w-100 mt-4">
                             <h4>OR</h4>
                         </div>
