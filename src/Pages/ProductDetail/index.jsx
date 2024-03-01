@@ -5,6 +5,7 @@ import TopHeader from "../../Components/TopHeader";
 import { Link } from "react-router-dom";
 import Reviews from '../../Components/Reviews';
 import NowTrending from '../../Components/NowTrending';
+import ProductLanding from '../../Components/ProductLanding';
 
 const ProductDetail = () => {
     const { productId, productName } = useParams();

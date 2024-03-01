@@ -1,0 +1,172 @@
+.cItmdh {
+    width: 100%;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 24px;
+}
+.MuiAccordion-rounded:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+@media (min-width: 768px)
+{
+    
+.hrqoGM .MuiCollapse-root {
+    height: auto;
+    visibility: visible;
+}
+}
+
+.hjimac {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0px;
+    gap: 16px;
+}
+.Exhoq {
+    /* display: flex; */
+}
+.bcPGCT {
+    width: 100%;
+    padding: 0px 0px 8px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+}
+.hLzqqP {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.iFqjxM {
+    white-space: pre-wrap;
+}
+.cmeWmf {
+    padding-top: 4px;
+    border-spacing: 0px 6px;
+    width: 100%;
+}
+
+.cmeWmf tbody tr td{
+    padding: 8px;
+}
+.cmeWmf tbody tr td.title {
+    font-weight: 600;
+    padding-right: 16px;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 15px;
+}
+.cmeWmf tbody tr td.description {
+    font-weight: 400;
+    width: 100%;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-colorAction{
+    /* font-size: 16px; */
+    width: 18px;
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.kxbdjt {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.fSGYPD {
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    border: 1px solid rgb(230, 232, 236);
+    flex-wrap: wrap;
+}
+.dusmFu {
+    display: flex;
+    gap: 16px;
+}
+.fdfkWS {
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.dAbUFt {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+}
+.Avatar-module__link___1d8wd {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.dAbUFt .Avatar {
+    border: none;
+    background: rgb(226, 226, 226);
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+.gDzUbb {
+    margin-right: auto;
+}
+.kKONCZ {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+}
+.byNHvM {
+    margin-top: 8px;
+}
+.hSEsJe {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+}
+.iljpgD {
+    margin-top: 15px;
+}
+.hZhaUp {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: 'Times New Roman', Times, serif;
+}
+.egyupX {
+    display: inline;
+    margin-right: 4px;
+    font-weight: 500;
+}
+.clOklP {
+    color: rgb(85, 85, 85);
+    margin-right: 10px;
+}
+.FollowButton-module__smallFollowButton___WLRQ7 {
+    height: 32px;
+    padding: 8px;
+    font-size: 12px;
+    letter-spacing: .05em;
+    font-weight: 600;
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 100px;
+    min-width: 90px;
+}
+.kNqoHl {
+    border-radius: 0px;
+    height: 32px;
+    padding: 8px 14px;
+    font-size: 12px;
+    border: 1px solid rgb(17, 17, 17);
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+.kNqoHl .MuiButton-label {
+    color: rgb(17, 17, 17);
+    white-space: nowrap;
+}
+
+

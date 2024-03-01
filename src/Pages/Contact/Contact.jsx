@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ProductLanding from "../../Components/ProductLanding";
 const Contact = () =>{
 
     return (
@@ -21,6 +22,7 @@ const Contact = () =>{
       </div>
     </div>
   </div>
+  <ProductLanding />
   <div className="contact-main p-4 px-5 no-overflow-x pt-0">
     <div className="contact-search d-flex align-items-center justify-content-between">
       <div className="breadcrumb">
