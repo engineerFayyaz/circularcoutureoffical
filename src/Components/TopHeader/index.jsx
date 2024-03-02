@@ -5,10 +5,14 @@ import { Link } from "react-router-dom";
 import UserHeader from "../../Components/UserHeader";
 import MainHeader from "../MainHeader";
 import MainHeaderAdmin from "../MainHeaderAdmin";
-const TopHeader = () => {
+import { useSelector } from "react-redux"; // Import useSelector from react-redux
+
+
+const TopHeader = ({ user }) => {
   const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   const [isDropdownOpen3, setIsDropdownOpen3] = useState(false);
+
 
   const handleDropdownOpen1 = () => {
     setIsDropdownOpen1(true);
@@ -33,6 +37,7 @@ const TopHeader = () => {
   const handleDropdownClose3 = () => {
     setIsDropdownOpen3(false);
   };
+
   return (
     <>
       <div
@@ -43,7 +48,8 @@ const TopHeader = () => {
       >
         <UserHeader />
         
-        <MainHeaderAdmin />
+        {/* <MainHeader /> */}
+        {user ? <MainHeaderAdmin /> : <MainHeader />} {/* Conditional rendering based on authentication state */}
 
         <div className="container-fluid main-mobile-header-section">
           <div className="row h-100 align-items-center">

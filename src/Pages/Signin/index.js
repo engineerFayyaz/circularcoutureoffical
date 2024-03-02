@@ -5,10 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {login} from "../../Redux/actions/userActions"
+import { useDispatch } from 'react-redux'; // Import dispatch from react-redux
 
 const Signin = () => {
     const navigate = useNavigate(); // Using useNavigate hook for navigation
-
+    const dispatch = useDispatch();
     // State variables to store form data
     const [formData, setFormData] = useState({
         email: "",
@@ -25,26 +27,20 @@ const Signin = () => {
         });
     };
 
-    // Function to handle form submission
+   
     const handleSubmit = async () => {
         try {
-            const response = await axios.post(
-                "https://localhost:7220/api/users/login",
-                formData
-            );
-
-            console.log("Login successful:", response.data);
-            // Handle success, e.g., redirect to another page
+            const data = await dispatch(login(formData));
+            // Show success toast message
             toast.success('Login successful!');
-            // Redirect to the home page
-            navigate("/");
+            navigate('/')
+            console.log("navigate to")
         } catch (error) {
-            console.error("Login failed:", error.response);
-            // Handle error, e.g., show error message to the user
+            // Show error toast message
             toast.error('Login failed. Please check your credentials.');
+            console.error(error); // Log the error for debugging
         }
     };
-
     return (
         <>
             <div className="container signIn-form-container">

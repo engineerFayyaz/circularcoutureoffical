@@ -79,6 +79,7 @@ import ForgotPassword from "./Pages/ForgotPassword";
 import Sigin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
 import RegisterWithEmail from "./Pages/RegisterWithEmail";
+import store from "./Redux/store/store";
 // Footer Pages
 import Return from "./Pages/Return";
 import RentalArguments from "./Pages/RentalArguments";
