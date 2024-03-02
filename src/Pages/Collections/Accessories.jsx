@@ -84,7 +84,7 @@ const Accessories = () => {
                     >
                       {products.map(product => (
                         <div key={product.id} className="col-md-3 mb-4">
-                          <Link to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`} className="card-link">
+                          <Link to={`/ProductLanding/${product.id}/${encodeURIComponent(product.name)}`} className="card-link">
                             <div className="">
                               {product.productImages.length > 0 && <img src={product.productImages[0].url} className="card-img-top" alt={product.name} width={100} height={250} style={{objectFit:"contain"}}/>}
                   

@@ -100,6 +100,7 @@ import Kids from "./Pages/Kids";
 import InstaShop from "./Pages/InstaShop";
 import Skirts from "./Pages/Collections/Skirts";
 import SubscriptionForm from "./Pages/Subscription";
+import ProductLanding from "./Pages/ProductLanding";
 
 
 function ProjectRoutes() {
@@ -154,8 +155,8 @@ function ProjectRoutes() {
                     <Route path="/SellingorRenting" element={<SellingOrRenting />} />
                     <Route path="/Sustainability" element={<Sustainability />} />
                     <Route path="/ProductDetail/:productId/:productName" element={<ProductDetail />} />
+                    <Route path="/Productlanding/:productId/:productName" element={<ProductLanding />} />
                     <Route path="/ProductDetail/" element={<ProductDetail />} />
-
 
                     <Route path="/ListingNew" element={<ListingNew />} />
                     <Route path="/Panel/Renting" element={<Renting />} />

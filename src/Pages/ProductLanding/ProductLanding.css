@@ -26,8 +26,8 @@
 
 .image-gallery-slide-wrapper .image-gallery-slide img {
     height: 100% !important;
-    width: 100%;
-    object-fit: fill;
+    /* width: 100%; */
+    /* object-fit: fill; */
 }
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
@@ -37,7 +37,8 @@
 img.image-gallery-thumbnail-image {
 
     height: 100px;
-    object-fit: fill;
+    /* object-fit: fill; */
+    width: 100%;
     opacity: 0.4;
     transition: all .3s ease-in-out;
 }
@@ -56,6 +57,9 @@ img.image-gallery-thumbnail-image:focus-visible {
     width: 28px;
 }
 
+.product-landing-detail-section{
+    margin-top: 10rem;
+}
 .product-landing-detail-section .product-heading {
 
     width: 100%;

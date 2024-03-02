@@ -51138,6 +51138,7 @@ div#uk-mobile-input span.mobile-input-system-requirement {
 
 .dashboard-menu li {
     padding: 18px 0;
+    width: 100% !important;
     border-top: 1px solid #E2E2E2
 }
 

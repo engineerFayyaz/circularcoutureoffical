@@ -1,6 +1,63 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import "../../Components/ProductLandingMoreInfo/ProductLandingMoreInfo.css"
+import ProductLanding from "../../Pages/ProductLanding";
 const ProductLandingMoreInfo = () => {
+  const { productId, productName } = useParams();
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [mainImage, setMainImage] = useState(null);
+
+  useEffect(() => {
+      const fetchData = async () => {
+          try {
+              const response = await fetch(`https://localhost:7220/api/products/${productId}`);
+              if (!response.ok) {
+                  throw new Error('Failed to fetch data');
+              }
+              const data = await response.json();
+              setProduct(data.results);
+              setLoading(false);
+          } catch (error) {
+              console.error('Error fetching data:', error);
+              setLoading(false);
+          }
+      };
+
+      fetchData();
+
+      // Clean up function
+      return () => {
+          // Any cleanup code here
+      };
+  }, [productId]);
+
+  useEffect(() => {
+      if (product && product.productImages && product.productImages.length > 0) {
+          setMainImage(product.productImages[0].url);
+      }
+  }, [product]);
+
+  if (loading) {
+      return <div>Loading...</div>;
+  }
+
+  if (!product) {
+      return <div>Product not found</div>;
+  }
+
+  const { name, brand,productType, id, typeId, categoryId, size, internationalSize, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
+
+  const thumbnails = productImages && productImages.map((image, index) => ({
+    original: image.url,
+    thumbnail: image.url,
+  }));
+
+  const calculateRentForOneDay = (rentPrice) => {
+      const rentPerDay = parseFloat(rentPrice.replace("AU$", "")) / 8;
+      return rentPerDay.toFixed(2);
+  };
+
   return (
     <>
       <div className="Box__StyledBox-sc-1431ovz-0 hiXaTa ListingPage__Section-sc-1x9psuw-0 cItmdh">
@@ -20,14 +77,7 @@ const ProductLandingMoreInfo = () => {
                         </h4>
                       </div>
                       <p className="text-justify text-dark p-2 MuiTypography-root  Typography__TypographyBase-sc-ka4vkm-0 Typography__P-sc-ka4vkm-1 Typography__Pre-sc-ka4vkm-6 cxCExC iFqjxM MuiTypography-body1">
-                        **Rachel Gilbert**'s undulating hand in Australian
-                        couture raises the bar on eventwear with each season she
-                        unveils, enarmoured with delicately-appointed details
-                        that form the definition of wearable art. **The Nya
-                        Dress** is an effervescent escape into the Gilbert world
-                        with a deconstructed bouquet unfurling its fronds
-                        throughout this stunning silhouette, made by hand to
-                        make any night out worth remembering. 
+                      {details}
                         </p>
                         <p className="text-justify text-dark p-2">
                         Length: 115cm
@@ -55,7 +105,7 @@ const ProductLandingMoreInfo = () => {
                         <tbody >
                           <tr>
                             <td className="title">Product Category{/* */}: </td>
-                            <td className="description">Dresses</td>
+                            <td className="description">{productType}</td>
                           </tr>
                           <tr>
                             <td className="title">Category{/* */}: </td>
@@ -65,22 +115,22 @@ const ProductLandingMoreInfo = () => {
                           </tr>
                           <tr>
                             <td className="title">Retail Price{/* */}: </td>
-                            <td className="description">₨306,998.81</td>
+                            <td className="description">{rrp}</td>
                           </tr>
                           <tr>
                             <td className="title">Brand{/* */}: </td>
-                            <td className="description">Rachel Gilbert</td>
+                            <td className="description">{brand}</td>
                           </tr>
                           <tr>
                             <td className="title">Condition{/* */}: </td>
                             <td className="description">
-                              Hardly worn, no signs of wear
+                              {condition}
                             </td>
                           </tr>
                           <tr>
                             <td className="title">Size Guide{/* */}: </td>
                             <td className="description">
-                              <span>AU 10 | M | UK 10 | US 6</span>
+                              <span>{size}</span>
                             </td>
                           </tr>
                           <tr>
@@ -92,7 +142,7 @@ const ProductLandingMoreInfo = () => {
                           <tr>
                             <td className="title">Colour{/* */}: </td>
                             <td className="description">
-                              <span>Multi-coloured</span>
+                              <span>{color}</span>
                             </td>
                           </tr>
                           <tr>
@@ -110,7 +160,7 @@ const ProductLandingMoreInfo = () => {
                             </td>
                             <td className="description">
                               <span className="MuiTypography-root Typography__TypographyBase-sc-ka4vkm-0 Typography__Span-sc-ka4vkm-2 Details__Value-sc-1vn5vvh-2 bcCjKz cFnHVX MuiTypography-body1">
-                                available
+                                {isAvailable}
                               </span>
                             </td>
                           </tr>

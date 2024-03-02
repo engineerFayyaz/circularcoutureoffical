@@ -5,7 +5,7 @@ import TopHeader from "../../Components/TopHeader";
 import { Link } from "react-router-dom";
 import Reviews from '../../Components/Reviews';
 import NowTrending from '../../Components/NowTrending';
-import ProductLanding from '../../Components/ProductLanding';
+// import ProductLanding from '../../Components/ProductLanding';
 
 const ProductDetail = () => {
     const { productId, productName } = useParams();
@@ -53,7 +53,7 @@ const ProductDetail = () => {
         return <div>Product not found</div>;
     }
 
-    const { name, brand, id, typeId, categoryId, size, internationalSize, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
+    const { name, brand,productType, id, typeId, categoryId, size, internationalSize, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
 
     const calculateRentForOneDay = (rentPrice) => {
         const rentPerDay = parseFloat(rentPrice.replace("AU$", "")) / 8;

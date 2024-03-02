@@ -52,7 +52,7 @@ const Alemais = () => {
                                 }}
                             >
                                 <div
-                                    className="col-6 col-md-12 col-lg-6 col-xl-4 mb-4 mb-xl-3 item-container"
+                                    className="col-12 col-md-12 col-lg-12 col-xl-12 mb-4 mb-xl-3 item-container"
                                     data-app-search--listing-filters-target="item"
                                 >
                                     <div
@@ -61,14 +61,14 @@ const Alemais = () => {
                                         id="33216"
                                     >
                                         <div
-                                            className="position-relative wishlist-heart-33216"
+                                            className="row d-flex flex-row position-relative wishlist-heart-33216"
                                             data-controller="wishlisting"
                                             data-target="wishlisting.heartMainContainer"
                                         >
                                             {products.map((product, index) => (
-                                                <div key={product.id} className="product-card">
+                                                <div key={product.id} className="col-md-3 mb-4">
                                                     <Link
-                                                        to={`/ProductDetail/${product.id}/${encodeURIComponent(product.name)}`}
+                                                        to={`/ProductLanding/${product.id}/${encodeURIComponent(product.name)}`}
                                                         className="product-card-link"
                                                         onMouseEnter={() => setHoveredIndex(index)}
                                                         onMouseLeave={() => setHoveredIndex(null)}

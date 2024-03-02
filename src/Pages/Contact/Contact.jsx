@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ProductLanding from "../../Components/ProductLanding";
+// import ProductLanding from "../../Components/ProductLanding";
 const Contact = () =>{
 
     return (

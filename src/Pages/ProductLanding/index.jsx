@@ -1,9 +1,15 @@
+import React, { useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import ReactImageGallery from "react-image-gallery";
 import "react-rater/lib/react-rater.css";
-import React, { useState, useEffect } from "react";
-import "../../Components/ProductLanding/ProductLanding.css";
-import ProductLandingMoreInfo from "../ProductLandingMoreInfo";
+import "../../Pages/ProductLanding/ProductLanding.css";
+import ProductLandingMoreInfo from "../../Components/ProductLandingMoreInfo"
+import TopHeader from "../../Components/TopHeader";
+import NowTrending from "../../Components/NowTrending";
+import GetEdits from "../../Components/GetEdits";
+import Reviews from "../../Components/Reviews";
 const ProductLanding = () => {
+
   const [showMap, setShowMap] = useState(false);
 
   function handleRadioChange(event) {
@@ -26,30 +32,65 @@ const ProductLanding = () => {
     setReceiveDate(new Date(event.target.value));
   };
 
+  const { productId, productName } = useParams();
+  const [product, setProduct] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [mainImage, setMainImage] = useState(null);
+
+  useEffect(() => {
+      const fetchData = async () => {
+          try {
+              const response = await fetch(`https://localhost:7220/api/products/${productId}`);
+              if (!response.ok) {
+                  throw new Error('Failed to fetch data');
+              }
+              const data = await response.json();
+              setProduct(data.results);
+              setLoading(false);
+          } catch (error) {
+              console.error('Error fetching data:', error);
+              setLoading(false);
+          }
+      };
+
+      fetchData();
+
+      // Clean up function
+      return () => {
+          // Any cleanup code here
+      };
+  }, [productId]);
+
+  useEffect(() => {
+      if (product && product.productImages && product.productImages.length > 0) {
+          setMainImage(product.productImages[0].url);
+      }
+  }, [product]);
+
+  if (loading) {
+      return <div>Loading...</div>;
+  }
+
+  if (!product) {
+      return <div>Product not found</div>;
+  }
+
+  const { name, brand, id, typeId, categoryId, size, internationalSize, isAvailable, color, condition, sellPrice, rentPrice4Days, rentPrice8Days, rentPrice16Days, rentPrice30Days, rrp, code, details, isEbayStore, deletedBy, modifiedBy, createdBy, productImages } = product;
+
+  const thumbnails = productImages && productImages.map((image, index) => ({
+    original: image.url,
+    thumbnail: image.url,
+  }));
+
+  const calculateRentForOneDay = (rentPrice) => {
+      const rentPerDay = parseFloat(rentPrice.replace("AU$", "")) / 8;
+      return rentPerDay.toFixed(2);
+  };
+ 
+
   const productDetailItem = {
-    images: [
-      {
-        original: "/images/collections/1.png",
-        thumbnail: "/images/collections/1.png",
-      },
-      {
-        original: "/images/collections/2.png",
-        thumbnail: "/images/collections/2.png",
-      },
-      {
-        original: "/images/collections/3.png",
-        thumbnail: "/images/collections/3.png",
-      },
-      {
-        original: "/images/collections/4.png",
-        thumbnail: "/images/collections/4.png",
-      },
-      {
-        original: "/images/gallery-images/4.png",
-        thumbnail: "/images/gallery-images/4.png",
-      },
-    ],
-    title: "BIG ITALIAN SOFA",
+   
+    // title: {name},
     // brand: "Nya Dress",
     availability: true,
     brand: "Nya Dress",
@@ -65,69 +106,58 @@ const ProductLanding = () => {
 
   return (
     <div>
-      <section className="container d-flex flex-grow mx-auto max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10 product-landing-detail-section">
+      <TopHeader />
+      <section className="container  d-flex flex-grow mx-auto max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10 product-landing-detail-section">
         {/* image gallery */}
-        <div className="container mx-auto px-4  w-40 ">
+         <div className="container mx-auto px-4 w-40">
           <ReactImageGallery
             showBullets={false}
             showFullscreenButton={false}
             showPlayButton={false}
-            items={productDetailItem.images}
+            items={thumbnails || []}
+            className={"w-auto"}
+            onSlide={(index) => setMainImage(productImages[index].url)} // Set main image on slide change
           />
-
-          {/* /image gallery  */}
-        </div>
+        </div>  
         {/* description  */}
 
         <div className="mx-auto px-5 lg:px-5 w-60 ">
           <h2 className="pt-3 text-2xl font-bold lg:pt-0">
-            {productDetailItem.title}
+            {name}
           </h2>
           <div className="mt-1">
             <div className="flex items-center">
-              <b>{productDetailItem.brand}</b>
+              <b>{brand}</b>
             </div>
           </div>
 
           <p className="mt-4" style={{ fontSize: "20px", color: "black" }}>
             <b>
-              AU${productDetailItem.price} <small>/ Occasion</small>
+              {sellPrice} <small>/ Occasion</small>
             </b>
           </p>
           <p
             className="text-gray-400 mt-0"
             style={{ fontSize: "17px", lineHeight: "0px" }}
           >
-            Retail Price: AU${productDetailItem.previousPrice}
+            Retail Price: {rrp}
           </p>
           <p
             className="pt-3 text-sm leading-5 text-gray-500 "
             style={{ fontSize: "15px", color: "black", textAlign: "justify" }}
           >
-            {productDetailItem.description}
+            {details}
           </p>
           <div className="mt-6 d-flex gap-3">
             <p className="pb-2 ">Size:</p>
             <div className="d-flex gap-1">
-              {productDetailItem.size.map((x, index) => {
-                return (
-                  <div key={index} className="d-flex ">
-                    {x}
-                  </div>
-                );
-              })}
+             {size}
             </div>
           </div>
           <div className="mt-6 d-flex gap-3">
             <p className="pb-2">Color:</p>
             <div className="d-flex ">
-              {productDetailItem.color.map((x, index) => {
-                return (
-                  <div key={index} className="">
-                    {x}
-                  </div>
-                );
-              })}
+              {color}
             </div>
           </div>
           <div className="mt-6">
@@ -344,6 +374,10 @@ const ProductLanding = () => {
       </section>
 
     <ProductLandingMoreInfo />
+    <NowTrending />
+
+    <GetEdits />
+    <Reviews />
     </div>
   );
 };

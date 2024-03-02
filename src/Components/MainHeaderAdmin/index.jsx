@@ -17,12 +17,12 @@ const MainHeaderAdmin = () =>{
                   </p>
                 </li>
                 <li className="list-inline-item">
-                  <a
+                  <Link
                     className="default-link -md link text-uppercase"
-                    href="/how-to-rent"
+                    to="/how-to-rent"
                   >
                     How it works
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -39,25 +39,25 @@ const MainHeaderAdmin = () =>{
             <div className="col-md-4">
               <ul className="list-inline mb-0 text-right mr-4 mt-1">
                 <li className="list-inline-item mr-1">
-                  <a
+                  <Link
                     className="default-link -md list-an-item-link text-uppercase"
-                    href="/listings/new"
+                    to="/listingnew"
                   >
                     List an item
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item ml-1 mr-1">
                   <turbo-frame id="account_credit_balance_header" />{" "}
                 </li>
                 <li className="list-inline-item ml-1 mr-1">
-                  <a href="/wishlist">
+                  <Link to="/wishlist">
                     <img
                       alt="Empty Heart Button"
                       width={24}
                       height={24}
                       src="/images/icons/header-heart.svg"
                     />
-                  </a>{" "}
+                  </Link>{" "}
                 </li>
                 <li
                   className="list-inline-item ml-1 mr-4"
@@ -67,8 +67,8 @@ const MainHeaderAdmin = () =>{
                   <turbo-frame id="rental_bag_dropdown_items_frame">
                     <ul className="list-inline d-inline-block text-uppercase">
                       <li className="list-inline-item dropdown position-relative">
-                        <a
-                          href="#"
+                        <Link
+                          to="#"
                           className="dropdown-toggle rental-bag-dropdown-btn"
                           role="button"
                           id="rental_bag_dropdown"
@@ -80,7 +80,7 @@ const MainHeaderAdmin = () =>{
                             height="23.52"
                             src="/images/icons/rental-bag.svg"
                           />
-                        </a>
+                        </Link>
                         <div
                           className="dropdown-menu dropdown-menu-left rental-bag-dropdown"
                           aria-labelledby="rental_bag_dropdown"
@@ -97,12 +97,12 @@ const MainHeaderAdmin = () =>{
                             <div className="mb-3">
                               Click below to find your dream rental piece!
                             </div>
-                            <a
+                            <Link
                               className="btn btn-primary -dark-red btn-block new-arrivals-btn"
-                              href="/collections/NewArrival"
+                              to="/collections/NewArrival"
                             >
                               See our new arrivals
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </li>
@@ -125,42 +125,42 @@ const MainHeaderAdmin = () =>{
           className={`dropdown-menu dropdown-menu-right header-dropdown ${dropdownOpen ? 'show' : ''}`}
           aria-labelledby="userNavDropdownLink"
         >
-          <a className="link mt-0 give-get" href="/Panel/referral">
+          <Link className="link mt-0 give-get" to="/Panel/referral">
             Give £10, Get £10
-          </a>
-          <a className="link dashboard" href="/Panel/dashboard">
+          </Link>
+          <Link className="link dashboard" to="/Panel/dashboard">
             DASHBOARD
-          </a>
-          <a className="link text-uppercase" href="/Panel/lending">
+          </Link>
+          <Link className="link text-uppercase" to="/Panel/lending">
             Renting &amp; Lending
-          </a>
-          <a className="link text-uppercase" href="/Panel/buyer">
+          </Link>
+          <Link className="link text-uppercase" to="/Panel/buyer">
             Buying &amp; Selling
-          </a>
-          <a className="link" href="/Panel/listing">
+          </Link>
+          <Link className="link" to="/Panel/listing">
             WARDROBE
-          </a>
-          <a className="link" href="/Panel/messege/">
+          </Link>
+          <Link className="link" to="/Panel/messege/">
             MESSAGES <span id="unread-messages-count"></span>
-          </a>
-          <a className="link" href="/Panel/wishlist">
+          </Link>
+          <Link className="link" to="/Panel/wishlist">
             WISHLISTS
-          </a>
-          <a className="link" href="/Panel/profile">
+          </Link>
+          <Link className="link" to="/Panel/profile">
             EDIT MY PROFILE
-          </a>
-          <a className="link" href="/Panel/account">
+          </Link>
+          <Link className="link" to="/Panel/account">
             MY ACCOUNT
-          </a>
+          </Link>
           <div className="divider"></div>
-          <a
+          <Link
             className="link -sm"
             rel="nofollow"
             data-method="delete"
-            href="/users/sign_out"
+            to="/users/sign_out"
           >
             SIGN OUT
-          </a>
+          </Link>
         </div>
       </div>
     </li>

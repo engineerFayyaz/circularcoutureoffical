@@ -249,7 +249,7 @@ const HowToRent = () =>{
         <div className="carousel-inner d-flex align-items-center justify-content-between">
           <div className="carousel-item active">
             <div className="product-item">
-              <Link to="/ProductDetail">
+              <Link to="/ProductLanding">
                 <img
                   alt="Product 1"
                   className="img-fluid"
@@ -285,7 +285,7 @@ const HowToRent = () =>{
           </div>
           <div className="carousel-item active">
             <div className="product-item">
-              <Link to="/ProductDetail">
+              <Link to="/ProductLanding">
                 <img
                   alt="Product 1"
                   className="img-fluid"
@@ -321,7 +321,7 @@ const HowToRent = () =>{
           </div>
           <div className="carousel-item active">
             <div className="product-item">
-              <Link to="/ProductDetail">
+              <Link to="/ProductLanding">
                 <img
                   alt="Product 1"
                   className="img-fluid"
@@ -357,7 +357,7 @@ const HowToRent = () =>{
           </div>
           <div className="carousel-item active">
             <div className="product-item">
-              <Link to="/ProductDetail">
+              <Link to="/ProductLanding">
                 <img
                   alt="Product 1"
                   className="img-fluid"
