@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TopHeader from "../../Components/TopHeader";
 import EmailSubscription from "../../Components/EmailSubscription";
 import Footer from "../../Components/Footer";
 import DashboardSidebar from "../../Components/DashboardSidebar";
 import { Link } from "react-router-dom";
+import {getUserFromLocalStorage} from "../../storage/loggedInUserLocalSt"
 const Dashboard = () =>{
+
+  const [loggedInUser, setLoggedInUser] = useState(null);
+
+  useEffect(() => {
+    let u=getUserFromLocalStorage();
+    
+    setLoggedInUser(u)
+ 
+   }, []);
 
     return (
         <>
@@ -31,7 +41,7 @@ const Dashboard = () =>{
             <div className="row">
               <div className="col-12">
                 <span className="large-span">
-                  Welcome back, shahid 👋
+                  Welcome back, {loggedInUser && loggedInUser.name} 👋
                 </span>
               </div>
               <div className="col-12 text-uppercase">
@@ -396,7 +406,7 @@ const Dashboard = () =>{
                   <input
                     className="form-control input input-icon -link referral-link"
                     data-target="copy-text.inputTag"
-                    defaultValue="https://www.circular-couturecollective.com/r/shahid-u"
+                    defaultValue={loggedInUser && loggedInUser.name}
                     readOnly
                   />
                 </div>
@@ -418,7 +428,7 @@ const Dashboard = () =>{
                   data-controller="referral-share-button-component"
                   data-referral-share-button-component-text-value="Psst... join me on circular-couture and we'll both get AU$10 off our next order! 💕 "
                   data-referral-share-button-component-title-value="circular-couture"
-                  data-referral-share-button-component-url-value="https://www.circular-couturecollective.com/r/shahid-u"
+                  data-referral-share-button-component-url-value={loggedInUser && loggedInUser.name}
                 >
                   <div className="share-button d-flex align-items-center">
                     <div className="title">

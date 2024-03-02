@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {login} from "../../Redux/actions/userActions"
 import { useDispatch } from 'react-redux'; // Import dispatch from react-redux
+import {storeUserToLocalStorage} from "../../storage/loggedInUserLocalSt"
 
 const Signin = () => {
     const navigate = useNavigate(); // Using useNavigate hook for navigation
@@ -33,6 +34,8 @@ const Signin = () => {
             const data = await dispatch(login(formData));
             // Show success toast message
             toast.success('Login successful!');
+            debugger
+            storeUserToLocalStorage(data.results)
             navigate('/')
             console.log("navigate to")
         } catch (error) {

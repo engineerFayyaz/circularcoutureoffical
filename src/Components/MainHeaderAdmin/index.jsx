@@ -1,8 +1,24 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {getUserFromLocalStorage} from "../../storage/loggedInUserLocalSt"
+import {storeUserToLocalStorage} from "../../storage/loggedInUserLocalSt"
 
 const MainHeaderAdmin = () =>{
     const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [loggedInUser, setLoggedInUser] = useState(null);
+
+    useEffect(() => {
+      let u=getUserFromLocalStorage();
+      
+      setLoggedInUser(u)
+   
+     }, []);
+
+     const handleSignout = () => {
+      storeUserToLocalStorage(null);
+  };
+
+     console.log("logedin User",loggedInUser)
 
     return (
         <>
@@ -119,7 +135,7 @@ const MainHeaderAdmin = () =>{
           aria-haspopup="true"
           aria-expanded={dropdownOpen}
         >
-          <span id="js-unread-message-indicator">HS</span>
+          <span id="js-unread-message-indicator"> {loggedInUser && loggedInUser.name.substring(0, 2)}</span>
         </button>
         <div
           className={`dropdown-menu dropdown-menu-right header-dropdown ${dropdownOpen ? 'show' : ''}`}
@@ -157,9 +173,10 @@ const MainHeaderAdmin = () =>{
             className="link -sm"
             rel="nofollow"
             data-method="delete"
-            to="/users/sign_out"
+            to="/"
+            onClick={handleSignout}
           >
-            SIGN OUT
+            Signout 
           </Link>
         </div>
       </div>

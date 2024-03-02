@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import {getUserFromLocalStorage} from "../../storage/loggedInUserLocalSt"
 const DashboardSidebar = () =>{
+
+  const [loggedInUser, setLoggedInUser] = useState(null);
+
+  useEffect(() => {
+    let u=getUserFromLocalStorage();
+    
+    setLoggedInUser(u)
+ 
+   }, []);
 
     return (
         <>
@@ -166,10 +176,10 @@ const DashboardSidebar = () =>{
         <div className="media-body my-auto">
           <Link
             className="chat-box-heading text-dark"
-            to="/members/shahid-u"
+            // to="/members/{logedinuser}"
           >
             <h5 className="mb-0">
-              {' '}Shahid U.{' '}
+              {' '}{loggedInUser && loggedInUser.name}.{' '}
               <span>
                 <svg
                   height="10.176"
@@ -274,7 +284,7 @@ const DashboardSidebar = () =>{
           <input
             className="d-none"
             data-target="share-wardrobe-button-component.profileLink"
-            defaultValue="https://www.circular-couturecollective.com/members/shahid-u"
+            // defaultValue="https://www.circular-couturecollective.com/members/shahid-u"
             type="text"
           />
           <button
@@ -319,7 +329,7 @@ const DashboardSidebar = () =>{
             data-controller="share-wardrobe-button-component"
             data-share-wardrobe-button-component-text-value="Have you seen this wardrobe on circular-couture? Obsessed! 💘"
             data-share-wardrobe-button-component-title-value="circular-couture"
-            data-share-wardrobe-button-component-url-value="https://www.circular-couturecollective.com/members/shahid-u"
+            // data-share-wardrobe-button-component-url-value="https://www.circular-couturecollective.com/members/shahid-u"
           >
             <div className="d-flex justify-content-center gray-6 align-items-center">
               <img
@@ -339,7 +349,7 @@ const DashboardSidebar = () =>{
             <input
               className="d-none"
               data-target="share-wardrobe-button-component.profileLink"
-              defaultValue="https://www.circular-couturecollective.com/members/shahid-u"
+              // defaultValue="https://www.circular-couturecollective.com/members/shahid-u"
               readOnly
               type="text"
             />
@@ -367,7 +377,7 @@ const DashboardSidebar = () =>{
             data-controller="give-get-button-component"
             data-give-get-button-component-text-value="Psst... join me on circular-couture and we'll both get AU$10 off our next order! 💕"
             data-give-get-button-component-title-value="circular-couture"
-            data-give-get-button-component-url-value="https://www.circular-couturecollective.com/r/shahid-u"
+            // data-give-get-button-component-url-value="https://www.circular-couturecollective.com/r/shahid-u"
           >
             <div className="d-flex justify-content-center pitch-black align-items-center">
               <img
