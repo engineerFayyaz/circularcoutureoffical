@@ -5,11 +5,16 @@ import Footer from "../../Components/Footer";
 import EmailSubscription from "../../Components/EmailSubscription";
 import EditFilter from "../../Components/EditFilter";
 import GetEdits from "../../Components/GetEdits";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { getUserFromLocalStorage } from '../../storage/loggedInUserLocalSt';
 
 const Kids = () => {
   const [products, setProducts] = useState([]);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
+  const [wishlist, setWishlist] = useState([]);
+  const [user, setUser] = useState(null);
 
   useEffect(() => {
       const fetchProducts = async () => {
@@ -31,10 +36,43 @@ const Kids = () => {
       };
 
       fetchProducts();
+      setUser(getUserFromLocalStorage());
   }, []);
 
-  console.log("products new arrrival ", products)
+  const toggleWishlist = async (productId) => {
+    if (!user) {
+      toast.error('Please login first');
+      return;
+    }
 
+    try {
+      const response = await fetch('https://localhost:7220/api/wishlist-products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          productId: productId,
+          userId: user.id,
+          deleted: true,
+          createdDate: new Date().toISOString()
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to add product to wishlist');
+      }
+
+      // Update wishlist state
+      setWishlist([...wishlist, productId]);
+
+      toast.success('Product added to wishlist');
+    } catch (error) {
+      console.error('Error adding product to wishlist:', error);
+      toast.error(error.message);
+    }
+  };
   return (
     <>
       <TopHeader />
@@ -44,14 +82,14 @@ const Kids = () => {
           <div className="container pl-5 pb-5 mt-0">
             <div>
               <h1 className="title">
-                <i>Kids</i>
+                <i>Seprate's</i>
               </h1>
               <div
                 className="description mt-2 transition collapsed"
                 data-target="plp--description.content"
               >
                 <div className="trix-content">
-                Discover Circular's adorable kids' collection, featuring eco-friendly and comfortable clothing for the little ones. From playful prints to cozy essentials, dress your children sustainably with style and care.
+                Discover Circular's adorable Seprate' collection, featuring eco-friendly and comfortable clothing for the little ones. From playful prints to cozy essentials, dress your children sustainably with style and care.
                 </div>
               </div>
             </div>
@@ -97,6 +135,32 @@ const Kids = () => {
                               </div>
                             </div>
                           </Link>
+                          <button
+                            className="wishlist-icon"
+                            onClick={() => toggleWishlist(product.id)}
+                            style={{
+                              position: "absolute",
+                              top: "10px",
+                              right: "10px",
+                              zIndex: "3",
+                              cursor: "pointer",
+                              background: "transparent",
+                              border: "none",
+                            }}
+                          >
+                            {wishlist.includes(product.id) ? (
+                              <img
+                                alt="An icon of a heart"
+                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/shaded-heart-72ef5d386ff6a38664ff1bb60bfdddff.svg"
+                                style={{ fill: 'red' }}
+                              />
+                            ) : (
+                              <img
+                                alt="An icon of a heart"
+                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
+                              />
+                            )}
+                          </button>
                         </div>
                       ))}
                     </div>

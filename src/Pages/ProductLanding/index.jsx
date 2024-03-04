@@ -8,9 +8,14 @@ import TopHeader from "../../Components/TopHeader";
 import NowTrending from "../../Components/NowTrending";
 import GetEdits from "../../Components/GetEdits";
 import Reviews from "../../Components/Reviews";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { getUserFromLocalStorage } from '../../storage/loggedInUserLocalSt';
 const ProductLanding = () => {
 
   const [showMap, setShowMap] = useState(false);
+  const [wishlist, setWishlist] = useState([]);
+  const [user, setUser] = useState(null);
 
   function handleRadioChange(event) {
     setShowMap(event.target.checked);
@@ -26,10 +31,46 @@ const ProductLanding = () => {
     );
 
     setReturnDate(newReturnDate);
+    setUser(getUserFromLocalStorage());   
   }, [receiveDate]);
 
   const handleReceiveDateChange = (event) => {
     setReceiveDate(new Date(event.target.value));
+  };
+
+  const toggleWishlist = async (productId) => {
+    if (!user) {
+      toast.error('Please login first');
+      return;
+    }
+
+    try {
+      const response = await fetch('https://localhost:7220/api/wishlist-products', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          productId: productId,
+          userId: user.id,
+          deleted: true,
+          createdDate: new Date().toISOString()
+        })
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to add product to wishlist');
+      }
+
+      // Update wishlist state
+      setWishlist([...wishlist, productId]);
+
+      toast.success('Product added to wishlist');
+    } catch (error) {
+      console.error('Error adding product to wishlist:', error);
+      toast.error(error.message);
+    }
   };
 
   const { productId, productName } = useParams();
@@ -109,16 +150,45 @@ const ProductLanding = () => {
       <TopHeader />
       <section className="container  d-flex flex-grow mx-auto max-w-[1200px] border-b py-5 lg:grid lg:grid-cols-2 lg:py-10 product-landing-detail-section">
         {/* image gallery */}
-         <div className="container mx-auto px-4 w-40">
-          <ReactImageGallery
-            showBullets={false}
-            showFullscreenButton={false}
-            showPlayButton={false}
-            items={thumbnails || []}
-            className={"w-auto"}
-            onSlide={(index) => setMainImage(productImages[index].url)} // Set main image on slide change
+        <div className="container mx-auto px-4 w-40">
+  <ReactImageGallery
+    showBullets={false}
+    showFullscreenButton={false}
+    showPlayButton={false}
+    items={thumbnails || []}
+    className={"w-auto"}
+    onSlide={(index) => setMainImage(productImages[index].url)} // Set main image on slide change
+    renderCustomControls={() => (
+      <button
+        className="wishlist-icon"
+        onClick={() => toggleWishlist(product.id)}
+        style={{
+          position: "absolute",
+          top: "10px",
+          right: "10px",
+          zIndex: "3",
+          cursor: "pointer",
+          background: "transparent",
+          border: "none",
+        }}
+      >
+        {wishlist.includes(product.id) ? (
+          <img
+            alt="An icon of a heart"
+            src="https://res.cloudinary.com/dcaptnlz3/image/asset/shaded-heart-72ef5d386ff6a38664ff1bb60bfdddff.svg"
+            style={{ fill: 'red' }}
           />
-        </div>  
+        ) : (
+          <img
+            alt="An icon of a heart"
+            src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
+          />
+        )}
+      </button>
+    )}
+  />
+</div>
+  
         {/* description  */}
 
         <div className="mx-auto px-5 lg:px-5 w-60 ">
@@ -375,7 +445,12 @@ const ProductLanding = () => {
 
     <ProductLandingMoreInfo />
     <NowTrending />
-
+    <div className="title d-flex align-items-center justify-content-between pe-5">
+                    <h4>Edits</h4>
+                    <span>
+                        <i className="fa-solid fa-arrow-right" />
+                    </span>
+                </div>
     <GetEdits />
     <Reviews />
     </div>

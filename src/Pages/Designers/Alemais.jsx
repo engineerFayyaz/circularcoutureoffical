@@ -4,12 +4,16 @@ import "../../css/footer-pages.css";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
 import EditFilter from "../../Components/EditFilter";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { getUserFromLocalStorage } from '../../storage/loggedInUserLocalSt';
 
 const Alemais = () => {
     const { designerId, designerName } = useParams();
     const [products, setProducts] = useState([]);
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [wishlist, setWishlist] = useState([]);
+    const [user, setUser] = useState(null);
 
     useEffect(() => {
         // Fetch data from the API endpoint using the designerId
@@ -22,16 +26,42 @@ const Alemais = () => {
             .catch(error => {
                 console.error("Error fetching data:", error);
             });
+            setUser(getUserFromLocalStorage());
     }, [designerId]); // Add designerId as a dependency to re-fetch data when it changes
 
     // Function to handle adding/removing products from wishlist
-    const toggleWishlist = (productId) => {
-        if (wishlist.includes(productId)) {
-            // If product already in wishlist, remove it
-            setWishlist(wishlist.filter(id => id !== productId));
-        } else {
-            // If product not in wishlist, add it
+    const toggleWishlist = async (productId) => {
+        if (!user) {
+            toast.error('Please login first');
+            return;
+        }
+    
+        try {
+            const response = await fetch('https://localhost:7220/api/wishlist-products', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    productId: productId,
+                    userId: user.id,
+                    deleted: true,
+                    createdDate: new Date().toISOString()
+                })
+            });
+    
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Failed to add product to wishlist');
+            }
+
+            // Update wishlist state
             setWishlist([...wishlist, productId]);
+
+            toast.success('Product added to wishlist');
+        } catch (error) {
+            console.error('Error adding product to wishlist:', error);
+            toast.error(error.message);
         }
     };
 
@@ -109,14 +139,15 @@ const Alemais = () => {
                                                     >
                                                         {wishlist.includes(product.id) ? (
                                                             <img
-                                                                alt="An icon of a heart"
-                                                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-filled.svg"
-                                                            />
-                                                        ) : (
-                                                            <img
-                                                                alt="An icon of a heart"
-                                                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
-                                                            />
+                                                            alt="An icon of a heart"
+                                                            src="https://res.cloudinary.com/dcaptnlz3/image/asset/shaded-heart-72ef5d386ff6a38664ff1bb60bfdddff.svg"
+                                                            style={{ fill: 'red' }} 
+                                                        />
+                                                    ) : (
+                                                        <img
+                                                            alt="An icon of a heart"
+                                                            src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
+                                                        />
                                                         )}
                                                     </button>
                                                 </div>
