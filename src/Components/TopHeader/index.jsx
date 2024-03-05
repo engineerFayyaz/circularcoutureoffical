@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import UserHeader from "../../Components/UserHeader";
 import MainHeader from "../MainHeader";
 import MainHeaderAdmin from "../MainHeaderAdmin";
-import {getUserFromLocalStorage} from "../../storage/loggedInUserLocalSt"
+import {getUserFromLocalStorage} from "../../storage/loggedInUserLocalSt";
 
 
 const TopHeader = () => {
@@ -21,28 +21,47 @@ const TopHeader = () => {
 
   }, []);
 
+  const [dropdownTimeoutId1, setDropdownTimeoutId1] = useState(null);
+  const [dropdownTimeoutId2, setDropdownTimeoutId2] = useState(null);
+  const [dropdownTimeoutId3, setDropdownTimeoutId3] = useState(null);
+
   const handleDropdownOpen1 = () => {
+    clearTimeout(dropdownTimeoutId1);
     setIsDropdownOpen1(true);
   };
 
   const handleDropdownClose1 = () => {
-    setIsDropdownOpen1(false);
+    setDropdownTimeoutId1(
+      setTimeout(() => {
+        setIsDropdownOpen1(false);
+      }, 500)
+    );
   };
 
   const handleDropdownOpen2 = () => {
+    clearTimeout(dropdownTimeoutId2);
     setIsDropdownOpen2(true);
   };
 
   const handleDropdownClose2 = () => {
-    setIsDropdownOpen2(false);
+    setDropdownTimeoutId2(
+      setTimeout(() => {
+        setIsDropdownOpen2(false);
+      }, 500)
+    );
   };
 
   const handleDropdownOpen3 = () => {
+    clearTimeout(dropdownTimeoutId3);
     setIsDropdownOpen3(true);
   };
 
   const handleDropdownClose3 = () => {
-    setIsDropdownOpen3(false);
+    setDropdownTimeoutId3(
+      setTimeout(() => {
+        setIsDropdownOpen3(false);
+      }, 500)
+    );
   };
 
   return (

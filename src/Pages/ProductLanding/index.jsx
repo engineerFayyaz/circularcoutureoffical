@@ -354,7 +354,7 @@ const ProductLanding = () => {
               <button className="MultiButton" tabindex="0" type="submit">
                 <span className="MultiButton-label">Rent Now</span>
               </button>
-
+              
               <button
                 className="MultiButton mt-3  MultiButton2"
                 tabindex="0"
