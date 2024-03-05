@@ -64,8 +64,8 @@ const RegisterWithEmail = () => {
         <>
             <div className="container signIn-form-container">
                 <div className="row d-flex align-items-center justify-content-center signIn-form-row">
-                <div className="col-lg-6 text-center px-3" >
-                        <img  src="/images/CC TM Logo cheetaa.png" width={"480px"} />
+                <div className="col-lg-6 text-center px-3 mb-sm-3" >
+                        <img  src="/images/CC TM Logo cheetaa.png" className="w-100" />
                          </div>
                     <div className="col-lg-6 model-first-div text-center">
                         <div className="col-lg-7 mx-auto mt-5 d-flex justify-content-center text-uppercase fs-5 align-items-center  mt-4">

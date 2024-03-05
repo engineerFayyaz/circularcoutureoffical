@@ -11,16 +11,16 @@ import { Link } from "react-router-dom";
 const UserHeader = () => {
   return (
     <>
-      <div className="top-header bg-dark text-dark mt-4">
-        <div
-          className=" w-100 d-flex align-items-center justify-content-center py-2"
-          
-        >
-            <Link className="pt-2" to="/SubscriptionForm">
-              <span>SIGN UP FOR £20 OFF YOUR FIRST RENTAL</span>
-            </Link>
+      <div className="container-fluid top-header bg-dark text-dark mt-4">
+            <div className="row  d-flex align-items-center justify-content-center ">
+                <div className="col mt-lg-3 mt-3 mt-sm-5 text-center">
+                    <Link to="/SubscriptionForm" className="text-dark">
+                        <span>SIGN UP FOR £20 OFF YOUR FIRST RENTAL</span>
+                    </Link>
+                </div>
+            </div>
         </div>
-      </div>
+
     </>
   );
 };

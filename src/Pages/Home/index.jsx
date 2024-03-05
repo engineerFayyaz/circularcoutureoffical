@@ -157,8 +157,9 @@ const Home = () => {
                     <img
                       src="images/background-images/collage3.png"
                       alt=""
-                      height={400}
-                      width="100%"
+                      
+                      
+                      className="w-100 h-lg-70 h-80 h-md-70 object-fit-fill"
                     />
                   </Link>
                 </div>
@@ -167,9 +168,10 @@ const Home = () => {
                     <img
                       src="images/background-images/collage2.png"
                       alt=""
-                      height={400}
-                      width="100%"
+                     
+                      
                       loading="lazy"
+                      className="w-100 h-lg-70 h-80 h-md-70 object-fit-fill"
                     />
                   </Link>
                 </div>
