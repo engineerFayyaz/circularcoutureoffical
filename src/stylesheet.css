@@ -3207,185 +3207,7 @@ tbody.collapse.show {
     transition: height 0.35s ease
 }
 
-.dropup,
-.dropdown {
-    position: relative
-}
 
-.dropdown-toggle::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent
-}
-
-.dropdown-toggle:empty::after {
-    margin-left: 0
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    z-index: 1000;
-    display: none;
-    float: right;
-    min-width: 10rem;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    font-size: 1rem;
-    color: #212529;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 0.25rem
-}
-
-.dropup .dropdown-menu {
-    margin-top: 0;
-    margin-bottom: 0.125rem
-}
-
-.dropup .dropdown-toggle::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0.3em solid;
-    border-left: 0.3em solid transparent
-}
-
-.dropup .dropdown-toggle:empty::after {
-    margin-left: 0
-}
-
-.dropright .dropdown-menu {
-    margin-top: 0;
-    margin-left: 0.125rem
-}
-
-.dropright .dropdown-toggle::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid transparent;
-    border-bottom: 0.3em solid transparent;
-    border-left: 0.3em solid
-}
-
-.dropright .dropdown-toggle:empty::after {
-    margin-left: 0
-}
-
-.dropright .dropdown-toggle::after {
-    vertical-align: 0
-}
-
-.dropleft .dropdown-menu {
-    margin-top: 0;
-    margin-right: 0.125rem
-}
-
-.dropleft .dropdown-toggle::after {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: ""
-}
-
-.dropleft .dropdown-toggle::after {
-    display: none
-}
-
-.dropleft .dropdown-toggle::before {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-right: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid transparent;
-    border-right: 0.3em solid;
-    border-bottom: 0.3em solid transparent
-}
-
-.dropleft .dropdown-toggle:empty::after {
-    margin-left: 0
-}
-
-.dropleft .dropdown-toggle::before {
-    vertical-align: 0
-}
-
-.dropdown-divider {
-    height: 0;
-    margin: 0.5rem 0;
-    overflow: hidden;
-    border-top: 1px solid #e9ecef
-}
-
-.dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 0.25rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-    color: #16181b;
-    text-decoration: none;
-    background-color: #f8f9fa
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-    color: #fff;
-    text-decoration: none;
-    background-color: #007bff
-}
-
-.dropdown-item.disabled,
-.dropdown-item:disabled {
-    color: #6c757d;
-    background-color: transparent
-}
-
-.dropdown-menu.show {
-    display: block
-}
-
-.dropdown-header {
-    display: block;
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 0;
-    font-size: 0.875rem;
-    color: #6c757d;
-    white-space: nowrap
-}
 
 .btn-group,
 .btn-group-vertical {
@@ -3604,7 +3426,34 @@ tbody.collapse.show {
 .input-group-append .input-group-text+.btn {
     margin-left: -1px
 }
-
+.offcanvas .dropdown-menu{
+    position: relative !important;
+    border: none !important;
+    padding-left: 15px;
+    box-shadow: none !important;
+}
+.offcanvas  .offcanvas-body .nav .nav-item, .offcanvas  .offcanvas-body .nav .dropdown{
+    width: 100%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.427);
+    margin-bottom: 10px;
+}
+.offcanvas  .offcanvas-body .nav .dropdown-menu .dropdown-item{
+    font-size: 16px !important;
+    color: #000000a6;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.offcanvas  .offcanvas-body .nav  .nav-link{
+    color: black !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-family: sans-serif;
+    /* line-height: 12px; */
+    /* padding: 0; */
+    transition: all 300ms;
+}
 .input-group-prepend {
     margin-right: -1px
 }
@@ -10464,12 +10313,6 @@ body.component-based-page h4 {
     padding: 0 8px
 }
 
-@media screen and (max-width: 600px) {
-    .noUi-target {
-        position: relative;
-        padding: 0
-    }
-}
 
 .noUi-base,
 .noUi-connects {
@@ -15449,11 +15292,7 @@ p {
     transition: all 300ms
 }
 
-@media (max-width: 1500.98px) {
-    .main-container {
-        margin-top: 136px;
-    }
-}
+
 
 @media (max-width: 992.98px) {
     .main-container {
@@ -37946,7 +37785,44 @@ div#uk-mobile-input span.mobile-input-system-requirement {
         min-width: 250px
     }
 }
-
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 .mobile-nav-search {
     padding-top: 86px
 }
@@ -59485,7 +59361,7 @@ button:focus {
 }
 
 .sign-button-platform a button {
-    width: 430px;
+    /* width: 430px; */
     text-decoration: none;
 }
 
@@ -59525,7 +59401,7 @@ button:focus {
     font-weight: 600;
     width: 80%;
     text-align: start;
-    margin-left: 49px !important;
+    margin-left: 30px !important;
 }
 
 .set-email-width input {

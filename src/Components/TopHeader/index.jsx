@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import UserHeader from "../../Components/UserHeader";
 import MainHeader from "../MainHeader";
 import MainHeaderAdmin from "../MainHeaderAdmin";
-import {getUserFromLocalStorage} from "../../storage/loggedInUserLocalSt"
-
+import { getUserFromLocalStorage } from "../../storage/loggedInUserLocalSt";
 
 const TopHeader = () => {
   const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
@@ -15,32 +14,37 @@ const TopHeader = () => {
   const [loggedInUser, setLoggedInUser] = useState(null);
 
   useEffect(() => {
-   let u=getUserFromLocalStorage();
-   
-   setLoggedInUser(u)
+    let u = getUserFromLocalStorage();
 
+    setLoggedInUser(u);
   }, []);
 
   const handleDropdownOpen1 = () => {
-    setIsDropdownOpen1(true);
+    setTimeout(() => {
+      setIsDropdownOpen1(true);
+    }, 500); // 1000 milliseconds delay (1 second)
   };
-
+  
   const handleDropdownClose1 = () => {
     setIsDropdownOpen1(false);
   };
-
+  
   const handleDropdownOpen2 = () => {
-    setIsDropdownOpen2(true);
+    setTimeout(() => {
+      setIsDropdownOpen2(true);
+    }, 500); // 1000 milliseconds delay (1 second)
   };
-
+  
   const handleDropdownClose2 = () => {
     setIsDropdownOpen2(false);
   };
-
+  
   const handleDropdownOpen3 = () => {
-    setIsDropdownOpen3(true);
+    setTimeout(() => {
+      setIsDropdownOpen3(true);
+    }, 500); // 1000 milliseconds delay (1 second)
   };
-
+  
   const handleDropdownClose3 = () => {
     setIsDropdownOpen3(false);
   };
@@ -54,41 +58,44 @@ const TopHeader = () => {
         data-action="scroll@window->header#hideAnnouncementBanner"
       >
         <UserHeader />
-        
         {/* <MainHeader /> */}
-        {loggedInUser ? <MainHeaderAdmin /> : <MainHeader />} {/* Conditional rendering based on authentication state */}
-
+        {loggedInUser ? <MainHeaderAdmin /> : <MainHeader />}{" "}
+        {/* Conditional rendering based on authentication state */}
         <div className="container-fluid main-mobile-header-section">
-          <div className="row h-100 align-items-center">
-            <div className="col-4">
-              <Link to="#" data-toggle="modal" data-target="#mobile_nav_modal">
-                <FontAwesomeIcon icon={faBars} className="mb-1" />
-              </Link>
-              <span style={{ marginLeft: 10 }}>
-                <turbo-frame id="account_credit_balance_header" />
-              </span>
-            </div>
-            <div className="col-4 text-center">
-              <Link to="/">
-                <img
-                  alt="CIRCULAR COUTURE Logo"
-                  width={100}
-                  height={21}
-                  className="img img-responsive circular-couture-logo"
-                  src="/images/CC TM Logo.png"
-                />
-              </Link>
-            </div>
-            <div className="col-4 text-right">
-              <turbo-frame id="mobile_header_bag_frame" />
+            <div className="row h-100 align-items-center m-sm-0">
+                <div className="col-3 col-lg-3 col-md-3">
+                    <Link
+                        to="#"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas"
+                    >
+                        <FontAwesomeIcon icon={faBars} className="mb-1" />
+                    </Link>
+                    <span style={{ marginLeft: 10 }}>
+                        <turbo-frame id="account_credit_balance_header" />
+                    </span>
+                </div>
+                <div className="col-6 col-lg-6 col-md-6 text-sm-start text-center">
+                    <Link to="/">
+                        <img
+                            alt="CIRCULAR COUTURE Logo"
+                            width={200}
+                            height={21}
+                            className="img img-responsive circular-couture-logo"
+                            src="/images/CC TM Logo.png"
+                        />
+                    </Link>
+                </div>
+                <div className="col-3 col-lg-3 col-md-3 text-right">
+                    <turbo-frame id="mobile_header_bag_frame" />
 
-              <FontAwesomeIcon
-                icon={faSearch}
-                className="search-image"
-                style={{ color: "black" }}
-              />
+                    <FontAwesomeIcon
+                        icon={faSearch}
+                        className="search-image"
+                        style={{ color: "black" }}
+                    />
+                </div>
             </div>
-          </div>
         </div>
         <nav
           className="navbar navbar-menu-section border-bottom border-1 border-secondary"
@@ -106,6 +113,7 @@ const TopHeader = () => {
                 >
                   New In
                 </Link>
+                
                 <Link
                   target="_top"
                   className="nav-link with-mega-menu-content"
@@ -115,6 +123,7 @@ const TopHeader = () => {
                 >
                   Designers
                 </Link>
+                
                 <Link
                   target="_top"
                   className="nav-link with-mega-menu-content new-menu-hover"
@@ -428,16 +437,8 @@ const TopHeader = () => {
               className={`dropdown-content ${isDropdownOpen3 ? "active" : ""}`}
               style={{ display: isDropdownOpen3 ? "block" : "none" }}
             >
-              <div
-                className="link-content -designers "
-              
-              >
-                <turbo-frame
-                  loading="lazy"
-                  id="designers"
-                 
-                  complete=""
-                >
+              <div className="link-content -designers ">
+                <turbo-frame loading="lazy" id="designers" complete="">
                   <div className="row">
                     <div className="col-md-4 col-xl-3">
                       <div className="links">
@@ -544,235 +545,277 @@ const TopHeader = () => {
         </nav>
       </div>
 
-      <div className="models">
-        <div data-controller="mobile-nav">
-          <div
-            className="modal filter-modal mobile-menu-modal left fade"
-            id="mobile_nav_modal"
-            tabIndex={-1}
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
+      <div
+        className="offcanvas offcanvas-start w-60"
+        tabIndex="-1"
+        id="offcanvas"
+        data-bs-keyboard="false"
+        data-bs-backdrop="false"
+      >
+        <div className="offcanvas-header">
+          <h6 className="offcanvas-title d-sm-block" id="offcanvas">
+          <Link
+                  to={"/Signin"}
+                  style={{ fontSize: "11px !important", cursor: "pointer" }}
+                  data-toggle="modal"
+                  data-target="#signin-modal"
+                >
+                  <b>SIGN IN/ REGISTER</b>
+                </Link>
+          </h6>
+          <button
+            type="button"
+            className="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div className="offcanvas-body px-0">
+          <ul
+            className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start"
+            id="menu"
           >
-            <div className="modal-dialog m-0 " role="document">
-              <div className="modal-content rounded-0 border-0">
-                <div className="modal-body">
-                  <div className="content -main">
-                    <ul className="list-unstyled text-uppercase">
-                      <li>
-                        <Link
-                          to="/Collections/NewArrival"
-                          className=" d-block w-100"
-                        >
-                          New In
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/Designer" className=" d-block w-100">
-                          Designers
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="#"
-                          className="arrow d-block w-100"
-                          data-toggle="modal"
-                          data-target="#clothing_menu"
-                        >
-                          Clothing
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="arrow d-block w-100"
-                          to="/Collections/Dresses"
-                          data-toggle="modal"
-                          data-target="#designers_menu"
-                        >
-                          Dresses
-                        </Link>
-                      </li>
-                      {/* <li><Link class="d-block w-100" to="/collections/bags">Bags</Link></li> */}
-                      <li>
-                        <Link
-                          to="/Collections/Accessories"
-                          className="arrow d-block w-100"
-                        >
-                          Accessories
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="d-block w-100" to="/Edits">
-                          Edits
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="d-block  text-circular-couture-ligh w-100"
-                          to="/Collections/Resale"
-                        >
-                          Resale
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="d-block w-100" to="/Lender">
-                          Lenders
-                        </Link>
-                      </li>
-                      <li className="devider" />
-                      <li>
-                        <Link className="d-block w-100" to="/HowToLend">
-                          How it works
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="d-block w-100" to="/Sustainability">
-                          Sustainability
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="d-block w-100" to="/About">
-                          About Us
-                        </Link>
-                      </li>
-                      <li className="devider" />
-                      <li>
-                        <Link
-                          data-dismiss="modal"
-                          data-toggle="modal"
-                          data-target="#signin-modal"
-                          className="d-block w-100"
-                          to="/Signin"
-                        >
-                          Sign In/Register
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div
-                    className="closer"
-                    data-action="click->mobile-nav#closeAllModals"
-                  >
-                    <span className="text-uppercase text-center close-text">
-                      tap to close
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="modal filter-modal mobile-menu-modal left fade -sub-modal"
-            id="just_in_menu"
-            tabIndex={-1}
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div className="modal-dialog m-0 " role="document">
-              <div className="modal-content rounded-0 border-0">
-                <div className="modal-body text-uppercase">
-                  <div className="content">
-                    <div
-                      className="text-center menu-header position-relative"
-                      data-dismiss="modal"
-                      data-toggle="modal"
-                      data-target="#mobile_nav_modal"
+            <li className="nav-item">
+              <Link to="/Collections/NewArrival" className="nav-link text-truncate">
+                <span className="ms-1  d-md-inline">New In</span>
+              </Link>
+            </li>
+            <li className="dropdown w-100">
+              <Link
+                to="/Designer"
+                className="nav-link dropdown-toggle text-truncate"
+                id="dropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className="ms-1  d-md-inline">Designer</span>
+              </Link>
+              <ul
+                className="dropdown-menu w-100 text-small shadow"
+                aria-labelledby="dropdown"
+              >
+                <li className="w-100">
+                  <Link className="dropdown-item" to="/Designer">
+                    <b>Rent All Designer</b>
+                  </Link>
+                </li>
+                <li className="w-100">
+                  <Link className="dropdown-item" to="/Designers/Alemais">
+                    THE VAMPIRES WIFE
+                  </Link>
+                </li>
+                <li className="w-100">
+                  <Link className="dropdown-item" to="/Designers/Alemais">
+                    RIXO
+                  </Link>
+                </li>
+                <li className="w-100">
+                  <Link className="dropdown-item" to="/Designers/Alemais">
+                    SELF-PORTRAIT
+                  </Link>
+                </li>
+                <li className="w-100">
+                  <Link className="dropdown-item" to="/Designers/Alemais">
+                    SALONI
+                  </Link>
+                </li>
+                <li className="w-100">
+                  <Link className="dropdown-item" to="/Designers/Alemais">
+                    16ARLINGTON
+                  </Link>
+                </li>
+                <li className="w-100">
+                  <Link className="dropdown-item view-all" to="/Designer">
+                    VIEW ALL
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item w-100">
+              <Link to="/Collections/Accessories" className="nav-link text-truncate">
+                <span className="ms-1  d-md-inline">Accessories</span>
+              </Link>
+            </li>
+            <li className="dropdown w-100">
+            <Link
+                to="#"
+                className="nav-link dropdown-toggle text-truncate"
+                id="dropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <span className="ms-1 d-md-inline">Clothing</span>
+            </Link>
+            <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
+                <li className="dropdown w-100">
+                    <Link
+                        to="#"
+                        className="nav-link dropdown-toggle text-truncate"
+                        id="dropdown1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                     >
-                      Just In
-                    </div>
-                    <ul className="list-unstyled">
-                      <li>
-                        <Link to="/collections/clothing">New clothing</Link>
-                      </li>
-                      <li>
-                        <Link to="/collections/accessories">
-                          New accessories
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/collections/shoes">New shoes</Link>
-                      </li>
-                      <li>
-                        <Link to="/collections/bags">New bags</Link>
-                      </li>
-                      <li>
-                        <Link
-                          className="with-border-bottom"
-                          to="/collections/new_arrivals"
-                        >
-                          view all
-                        </Link>
-                      </li>
+                        <span className="ms-1 d-md-inline"><b>CLOTHINGS</b></span>
+                    </Link>
+                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Clothing">ALL CLOTHINGS</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Dresses">DRESSES</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Tops">TOPS</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Skirts">SKIRTS</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Trousers">TROUSERS</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Sweaters">SWEATERS</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/OuterWear">OUTERWEAR</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Jumpsuits">JUMPSUITS</Link>
+                        </li>
                     </ul>
-                  </div>
-                  <div
-                    className="closer"
-                    data-action="click->mobile-nav#closeAllModals"
-                  >
-                    <span className="text-uppercase text-center close-text">
-                      tap to close
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="modal filter-modal mobile-menu-modal left fade -sub-modal"
-            id="designers_menu"
-            tabIndex={-1}
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div className="modal-dialog m-0 " role="document">
-              <div className="modal-content rounded-0 border-0">
-                <div className="modal-body text-uppercase">
-                  <div className="content">
-                    <div
-                      className="text-center menu-header position-relative"
-                      data-dismiss="modal"
-                      data-toggle="modal"
-                      data-target="#mobile_nav_modal"
+                </li>
+                <li className="dropdown w-100">
+                    <Link
+                        to="#"
+                        className="nav-link dropdown-toggle text-truncate"
+                        id="dropdown2"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
                     >
-                      DRESSES
-                    </div>
-                    <ul className="list-unstyled">
-                      <li>
-                        <Link to="/Collections/Dresses">ALL DRESSES</Link>
-                      </li>
-                      <li>
-                        <Link to="/Collections/DressMini">MINI </Link>
-                      </li>
-                      <li>
-                        <Link to="/Collections/DressKneeLength">
-                          KEE LENGTH
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/Collections/DressMidi">MIDI</Link>
-                      </li>
-                      <li>
-                        <Link to="/Collections/DressMaxi">MAXI</Link>
-                      </li>
-                      <li>
-                        <Link to="/Collections/DressGowns">GOWNS</Link>
-                      </li>
+                        <span className="ms-1 d-md-inline"><b>DRESSES</b></span>
+                    </Link>
+                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                    <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Dresses">ALL DRESSES</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/DressMini">MINI</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/Dresskneelength">KNEE LENGTH</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/DressMaxi">MAXI</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/DressMidi">MIDI</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Collections/DressGowns">GOWNS</Link>
+                        </li>
                     </ul>
-                  </div>
-                  <div
-                    className="closer"
-                    data-action="click->mobile-nav#closeAllModals"
-                  >
-                    <span className="text-uppercase text-center close-text">
-                      tap to close
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                </li>
+            </ul>
+        </li>
+        <li className="nav-item w-100">
+              <Link to="/Collections/Resale" className="nav-link text-truncate">
+                <span className="ms-1  d-md-inline">RESALE</span>
+              </Link>
+            </li>
+            <li className="nav-item w-100">
+              <Link to="/Collections/Separates" className="nav-link text-truncate">
+                <span className="ms-1  d-md-inline">SEPARATES</span>
+              </Link>
+            </li>
+            <li className="nav-item w-100">
+              <Link to="/Collections/Occassion" className="nav-link text-truncate">
+                <span className="ms-1  d-md-inline">OCCASIONS</span>
+              </Link>
+            </li>
+            <li className="nav-item w-100">
+              <Link to="/Kids" className="nav-link text-truncate">
+                <span className="ms-1  d-md-inline">KIDS</span>
+              </Link>
+            </li>
+            <li className="dropdown w-100">
+            <Link
+                to="#"
+                className="nav-link dropdown-toggle text-truncate"
+                id="dropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <span className="ms-1 d-md-inline">HELP & INFO</span>
+            </Link>
+            <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
+                <li className="dropdown w-100">
+                    <Link
+                        to="#"
+                        className="nav-link dropdown-toggle text-truncate"
+                        id="dropdown1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <span className="ms-1 d-md-inline"><b>CUSTOMER SERVICES</b></span>
+                    </Link>
+                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/HowToLend">HOW IT WORKS</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Faq">FAQ</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Return">RETURN & REFUNDS</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/RentalArguments">RENTAL AGREEMANT</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/ATDReward">ATD REWARD</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Enquiry">MAKE AN INQUIRY</Link>
+                        </li>
+                       
+                    </ul>
+                </li>
+                <li className="dropdown w-100">
+                    <Link
+                        to="#"
+                        className="nav-link dropdown-toggle text-truncate"
+                        id="dropdown2"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <span className="ms-1 d-md-inline"><b>ABOUT ATD</b></span>
+                    </Link>
+                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                    <li className="w-100">
+                            <Link className="dropdown-item" to="/About">ABOUT US</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Sustainability">SUSTAINABILITY</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/TermsOfService">TERMS OF SEFRVICES</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Privacy-Policy">PRIVACY POLICY</Link>
+                        </li>
+                        <li className="w-100">
+                            <Link className="dropdown-item" to="/Contact">CONTACT</Link>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+            <li className="nav-item w-100">
+              <Link to="/Edits" className="nav-link text-truncate">
+                <span className="ms-1  d-md-inline">Edits</span>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </>

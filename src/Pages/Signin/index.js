@@ -52,12 +52,12 @@ const Signin = () => {
                 <FontAwesomeIcon icon={faXmark}  style={{color:"white",fontSize:"35px"}}/>
                 </Link>
                 <div className="row d-flex align-items-center justify-content-center signIn-form-row">
-                    <div className="col-lg-6 text-center px-3" >
-                        <img  src="/images/CC TM Logo cheetaa.png" width={"480px"} />
+                    <div className="col-lg-6  text-center px-3 logo-box mb-sm-3" >
+                        <img  src="/images/CC TM Logo cheetaa.png" className="w-100" />
                          </div>
-                    <div className="col-lg-6  model-first-div text-center">
+                    <div className="col-lg-6   model-first-div text-center">
                         <div className="row">
-                            <div className="col-lg-6 d-flex justify-content-center signIn-form-column">
+                            <div className="col-6 col-md-6 col-lg-6 d-flex justify-content-center signIn-form-column">
                                 <Link
                                     to="/Signin"
                                     className="text-decoration-none"
@@ -66,7 +66,7 @@ const Signin = () => {
                                     <h2 style={{color: "white",fontSize:"20px"}} >SIGN IN</h2>
                                 </Link>
                             </div>
-                            <div className="col-lg-6 d-flex justify-content-center">
+                            <div className="col-6 col-md-6 col-lg-6 d-flex justify-content-center">
                                 <Link
                                     to="/Signup"
                                     className="text-decoration-none "
