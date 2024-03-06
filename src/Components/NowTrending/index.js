@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
-import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { getUserFromLocalStorage } from '../../storage/loggedInUserLocalSt';
-import "../../Components/NowTrending/NowTrending.css";
+import '../../Components/NowTrending/NowTrending.css';
 
 const NowTrending = () => {
     const [products, setProducts] = useState([]);
@@ -24,10 +26,12 @@ const NowTrending = () => {
                 throw new Error('Failed to fetch products');
             }
             const data = await response.json();
-            setProducts(data.results.map(product => ({
-                ...product,
-                hovered: false
-            })));
+            setProducts(
+                data.results.map((product) => ({
+                    ...product,
+                    hovered: false,
+                }))
+            );
         } catch (error) {
             console.error('Error fetching products:', error);
         }
@@ -38,21 +42,21 @@ const NowTrending = () => {
             toast.error('Please login first');
             return;
         }
-    
+
         try {
             const response = await fetch('https://localhost:7220/api/wishlist-products', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
                     productId: productId,
                     userId: user.id,
                     deleted: true,
-                    createdDate: new Date().toISOString()
-                })
+                    createdDate: new Date().toISOString(),
+                }),
             });
-    
+
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message || 'Failed to add product to wishlist');
@@ -67,7 +71,39 @@ const NowTrending = () => {
             toast.error(error.message);
         }
     };
+
+    const sliderSettings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4, // Show 4 products per slide
+        slidesToScroll: 1, // Scroll 1 product at a time
+        // autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2, // Show 2 products per slide on smaller screens
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3, // Show 3 products per slide on medium screens
+                },
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4, // Show 4 products per slide on larger screens
+                },
+            },
+        ],
+    };
     
+
     return (
         <section>
             <div className="container product-section">
@@ -78,82 +114,76 @@ const NowTrending = () => {
                     </span>
                 </div>
                 <div className="container p-3">
-                    <Carousel indicators={false} controls={false} interval={3000} pause={false} nextIcon={<span className="carousel-control-next-icon" aria-hidden="true" />} prevIcon={<span className="carousel-control-prev-icon" aria-hidden="true" />}>
-                        <Carousel.Item>
-                            <div className="row">
-                                {products.slice(0, 4).map((product, index) => (
-                                    <div 
-                                        key={index} 
-                                        className="col-md-3 col-6 col-8"
-                                        onMouseEnter={() => setHoveredIndex(index)}
-                                        onMouseLeave={() => setHoveredIndex(null)}
-                                    >
-                                        <div className="product-item">
-                                            <Link
-                                                to={{
-                                                    pathname: `/ProductLanding/${product.id}/${product.name}`,
-                                                    state: { productId: product.id }
-                                                }}
-                                            >
+                    <Slider {...sliderSettings}>
+                        {products.map((product, index) => (
+                            <div
+                                key={index}
+                                className="product-item"
+                                onMouseEnter={() => setHoveredIndex(index)}
+                                onMouseLeave={() => setHoveredIndex(null)}
+                            >
+                                <Link
+                                    to={{
+                                        pathname: `/ProductLanding/${product.id}/${product.name}`,
+                                        state: { productId: product.id },
+                                    }}
+                                >
+                                    <img
+                                        src={product.productImages[0].url}
+                                        className="img-fluid main-image"
+                                        alt={`Product ${index + 1}`}
+                                        loading="lazy"
+                                    />
+                                    {hoveredIndex === index && (
+                                        <img
+                                            src={product.productImages[1].url}
+                                            className="img-fluid second-image"
+                                            alt={`Second Product ${index + 1}`}
+                                            loading="lazy"
+                                        />
+                                    )}
+                                </Link>
+                                <div className="product-description p-2">
+                                    <h5 className="d-flex align-items-center justify-content-between">
+                                        {product.brand}
+                                        <span
+                                            className="wishlist-icon"
+                                            onClick={() => toggleWishlist(product.id)}
+                                            style={{
+                                                position: 'absolute',
+                                                top: '10px',
+                                                right: '50px',
+                                                zIndex: '3',
+                                                cursor: 'pointer',
+                                                background: 'transparent !important',
+                                                border: 'none',
+                                            }}
+                                        >
+                                            {wishlist.includes(product.id) ? (
                                                 <img
-                                                    src={product.productImages[0].url}
-                                                    className="img-fluid main-image"
-                                                    alt={`Product ${index + 1}`}
-                                                    loading="lazy"
+                                                    alt="An icon of a heart"
+                                                    src="https://res.cloudinary.com/dcaptnlz3/image/asset/shaded-heart-72ef5d386ff6a38664ff1bb60bfdddff.svg"
+                                                    style={{ fill: 'red' }}
                                                 />
-                                                {hoveredIndex === index && (
-                                                    <img
-                                                        src={product.productImages[1].url}
-                                                        className="img-fluid second-image"
-                                                        alt={`Second Product ${index + 1}`}
-                                                        loading="lazy"
-                                                    />
-                                                )}
-                                            </Link>
-                                            <div className="product-description p-2">
-                                                <h5 className="d-flex align-items-center justify-content-between">
-                                                    {product.brand}
-                                                    <span 
-                                                        className="wishlist-icon"
-                                                        onClick={() => toggleWishlist(product.id)}
-                                                        style={{
-                                                            position: "absolute",
-                                                            top: "10px",
-                                                            right: "10px",
-                                                            zIndex: "3",
-                                                            cursor: "pointer",
-                                                            background: "transparent",
-                                                            border: "none",
-                                                        }}
-                                                    >
-                                                        {wishlist.includes(product.id) ? (
-                                                            <img
-                                                            alt="An icon of a heart"
-                                                            src="https://res.cloudinary.com/dcaptnlz3/image/asset/shaded-heart-72ef5d386ff6a38664ff1bb60bfdddff.svg"
-                                                            style={{ fill: 'red' }} 
-                                                        />
-                                                    ) : (
-                                                        <img
-                                                            alt="An icon of a heart"
-                                                            src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
-                                                        />
-                                                        )}
-                                                    </span>
-                                                </h5>
-                                                <p className="catagory">{product.category}</p>
-                                                <p className="price">
-                                                    <strike>{`RRP ${product.sellPrice}`}</strike>
-                                                </p>
-                                                <p className="rent-buy d-flex align-items-center justify-content-between">
-                                                    {`RENT ${product.rrp}`} <span>{`BUY ${product.sellPrice}`}</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
+                                            ) : (
+                                                <img
+                                                    alt="An icon of a heart"
+                                                    src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
+                                                />
+                                            )}
+                                        </span>
+                                    </h5>
+                                    <p className="catagory">{product.category}</p>
+                                    <p className="price">
+                                        <strike>{`RRP ${product.sellPrice}`}</strike>
+                                    </p>
+                                    <p className="rent-buy d-flex align-items-center justify-content-between">
+                                        {`RENT ${product.rrp}`} <span>{`BUY ${product.sellPrice}`}</span>
+                                    </p>
+                                </div>
                             </div>
-                        </Carousel.Item>
-                    </Carousel>
+                        ))}
+                    </Slider>
                 </div>
             </div>
         </section>

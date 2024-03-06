@@ -7,6 +7,7 @@ import NowTrending from "../../Components/NowTrending/index";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { PopupProvider } from "../../PopupContext";
+import CollectionsHomeClothes from "../../Components/CollectionsHomeClothes/Index";
 
 const Home = () => {
   return (
@@ -70,71 +71,7 @@ const Home = () => {
             </div>
           </section>
           {/* collections */}
-          <section>
-            <div className="container collections">
-              <div className="row">
-                <div className="col">
-                  <div className="img-fluid">
-                    <img
-                      src="/web-images/LIS_028 _. _DIVINITY WHEEL_ RUFFLE EMBROIDERED COTTON DRESS IN WHITE/0D0A0584.jpg"
-                      alt=""
-                      width={250}
-                      loading="lazy"
-                    />
-                    <div className="collection-title text-center mt-3">
-                      <h4>ZIMMERMANN</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="img-fluid">
-                    <img
-                      src="/web-images/LIS_008 _ REBECCA VALLENCE Dominique Puff-sleeves Mini Dress In Pink_black/0D0A0619.jpg"
-                      alt=""
-                      width={250}
-                      loading="lazy"
-                    />
-                    <div className="collection-title text-center mt-3">
-                      <h4>Rebecca</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="img-fluid">
-                    <img
-                      src="/web-images/LIS_006 _ Rebecca Vallance Low bow dress/0D0A0651.jpg"
-                      alt=""
-                      width={250}
-                      loading="lazy"
-                    />
-                    <div className="collection-title text-center mt-3">
-                      <h4>Isabel marant</h4>
-                    </div>
-                  </div>
-                </div>
-                <div className="col">
-                  <div className="img-fluid">
-                    <img
-                      src="/web-images/LIS_07 _ ISABEL MARANT Getya short dress/0D0A0599.jpg"
-                      alt=""
-                      width={250}
-                      loading="lazy"
-                    />
-                    <div className="collection-title text-center mt-3">
-                      <h4>emilio pucci</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="row text-center my-5 mx-auto d-flex align-items-center justify-content-center">
-                <div className="shop-all text-center mt-5">
-                  <Link to="/Collections/NewArrival">
-                    <button className="btn bg-light py-2 px-5">Shop All</button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </section>
+         <CollectionsHomeClothes/>
           {/* collage images */}
           <section>
             <div className="container collage-main my-5">

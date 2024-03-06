@@ -18,8 +18,6 @@ const MainHeaderAdmin = () =>{
       storeUserToLocalStorage(null);
   };
 
-     console.log("logedin User",loggedInUser)
-
     return (
         <>
         <div className="main-header-section d-lg-flex justify-content-between">
@@ -138,7 +136,7 @@ const MainHeaderAdmin = () =>{
           <span id="js-unread-message-indicator"> {loggedInUser && loggedInUser.name.substring(0, 2)}</span>
         </button>
         <div
-          className={`dropdown-menu dropdown-menu-right header-dropdown ${dropdownOpen ? 'show' : ''}`}
+          className={`dropdown-menu dropdown-menu-left header-dropdown ${dropdownOpen ? 'show' : ''}`}
           aria-labelledby="userNavDropdownLink"
         >
           <Link className="link mt-0 give-get" to="/Panel/referral">

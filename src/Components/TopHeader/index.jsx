@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import UserHeader from "../../Components/UserHeader";
 import MainHeader from "../MainHeader";
 import MainHeaderAdmin from "../MainHeaderAdmin";
-import {getUserFromLocalStorage} from "../../storage/loggedInUserLocalSt";
+import { getUserFromLocalStorage } from "../../storage/loggedInUserLocalSt";
+import axios from "axios";
 
 
 const TopHeader = () => {
@@ -13,12 +14,27 @@ const TopHeader = () => {
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
   const [isDropdownOpen3, setIsDropdownOpen3] = useState(false);
   const [loggedInUser, setLoggedInUser] = useState(null);
+  const [products, setProducts] = useState({ results: [] }); // Initialize products state with an empty results array
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     let u = getUserFromLocalStorage();
 
+    axios.get("https://localhost:7220/api/products")
+      .then((response) => {
+        // console.log("response data",response.data)
+        setProducts(response.data);
+        setFilteredProducts(response.data); // Initialize filtered products with all products
+      })
+      .catch((error) => {
+        console.error("Error fetching products: ", error);
+      });
+
     setLoggedInUser(u);
-  }, []);
+
+  }, [filteredProducts]);
+
 
   const [dropdownTimeoutId1, setDropdownTimeoutId1] = useState(null);
   const [dropdownTimeoutId2, setDropdownTimeoutId2] = useState(null);
@@ -28,7 +44,7 @@ const TopHeader = () => {
     clearTimeout(dropdownTimeoutId1);
     setIsDropdownOpen1(true);
   };
-  
+
   const handleDropdownClose1 = () => {
     setDropdownTimeoutId1(
       setTimeout(() => {
@@ -36,12 +52,12 @@ const TopHeader = () => {
       }, 500)
     );
   };
-  
+
   const handleDropdownOpen2 = () => {
     clearTimeout(dropdownTimeoutId2);
     setIsDropdownOpen2(true);
   };
-  
+
   const handleDropdownClose2 = () => {
     setDropdownTimeoutId2(
       setTimeout(() => {
@@ -49,12 +65,12 @@ const TopHeader = () => {
       }, 500)
     );
   };
-  
+
   const handleDropdownOpen3 = () => {
     clearTimeout(dropdownTimeoutId3);
     setIsDropdownOpen3(true);
   };
-  
+
   const handleDropdownClose3 = () => {
     setDropdownTimeoutId3(
       setTimeout(() => {
@@ -62,6 +78,34 @@ const TopHeader = () => {
       }, 500)
     );
   };
+
+  const handleSearch = (event) => {
+    const searchTerm = event.target.value;
+    setSearchTerm(searchTerm);
+    filterProducts(searchTerm);
+  };
+  
+  // Inside filterProducts function
+ // Inside filterProducts function
+const filterProducts = (searchTerm) => {
+  const filtered = products.results.filter((product) => {
+    return product.name.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+  setFilteredProducts(filtered); // Update filtered products directly with the filtered array
+};
+
+  
+
+  
+  
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      // Trigger filtering logic when Enter key is pressed
+      filterProducts(searchTerm);
+    }
+  };
+  
 
   return (
     <>
@@ -76,40 +120,60 @@ const TopHeader = () => {
         {loggedInUser ? <MainHeaderAdmin /> : <MainHeader />}{" "}
         {/* Conditional rendering based on authentication state */}
         <div className="container-fluid main-mobile-header-section">
-            <div className="row h-100 align-items-center m-sm-0">
-                <div className="col-3 col-lg-3 col-md-3">
-                    <Link
-                        to="#"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvas"
-                    >
-                        <FontAwesomeIcon icon={faBars} className="mb-1" />
-                    </Link>
-                    <span style={{ marginLeft: 10 }}>
-                        <turbo-frame id="account_credit_balance_header" />
-                    </span>
-                </div>
-                <div className="col-6 col-lg-6 col-md-6 text-sm-start text-center">
-                    <Link to="/">
-                        <img
-                            alt="CIRCULAR COUTURE Logo"
-                            width={200}
-                            height={21}
-                            className="img img-responsive circular-couture-logo"
-                            src="/images/CC TM Logo.png"
-                        />
-                    </Link>
-                </div>
-                <div className="col-3 col-lg-3 col-md-3 text-right">
-                    <turbo-frame id="mobile_header_bag_frame" />
-
-                    <FontAwesomeIcon
-                        icon={faSearch}
-                        className="search-image"
-                        style={{ color: "black" }}
-                    />
-                </div>
+          <div className="row h-100 align-items-center m-sm-0">
+            <div className="col-3 col-lg-3 col-md-3">
+              <Link
+                to="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas"
+              >
+                <FontAwesomeIcon icon={faBars} className="mb-1" />
+              </Link>
+              <span style={{ marginLeft: 10 }}>
+                <turbo-frame id="account_credit_balance_header" />
+              </span>
             </div>
+            <div className="col-6 col-lg-6 col-md-6 text-sm-start text-center">
+              <Link to="/">
+                <img
+                  alt="CIRCULAR COUTURE Logo"
+                  width={200}
+                  height={21}
+                  className="img img-responsive circular-couture-logo"
+                  src="/images/CC TM Logo.png"
+                />
+              </Link>
+            </div>
+            <div className="col-3 col-lg-3 col-md-3 text-right">
+  <turbo-frame id="mobile_header_bag_frame" />
+  <div style={{ position: "relative" }}>
+  <input
+  type="text"
+  placeholder="Search products"
+  value={searchTerm}
+  onChange={handleSearch} // Ensure that handleSearch is correctly bound
+  className="search-input"
+  onKeyPress={handleKeyPress} // Add this event listener
+/>
+    <FontAwesomeIcon
+      icon={faSearch}
+      className="search-image"
+      style={{ color: "black", position: "absolute", top: 10, right: 10 }}
+    />
+  </div>
+  <ul>
+    {filteredProducts.length > 0 ? (
+      filteredProducts.map((product) => (
+        <li key={product.id}>{product.name}</li>
+      ))
+    ) : (
+      <li>No products found</li>
+    )}
+  </ul>
+</div>
+
+
+          </div>
         </div>
         <nav
           className="navbar navbar-menu-section border-bottom border-1 border-secondary"
@@ -122,12 +186,12 @@ const TopHeader = () => {
                   to="/Collections/NewArrival"
                   className="nav-link with-mega-menu-content"
 
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                // onMouseEnter={handleDropdownOpen}
+                // onMouseLeave={handleDropdownClose}
                 >
                   New In
                 </Link>
-                
+
                 <Link
                   target="_top"
                   className="nav-link with-mega-menu-content"
@@ -137,7 +201,7 @@ const TopHeader = () => {
                 >
                   Designers
                 </Link>
-                
+
                 <Link
                   target="_top"
                   className="nav-link with-mega-menu-content new-menu-hover"
@@ -151,8 +215,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link with-mega-menu-content accessories-menu-hover"
                   to="/Collections/Accessories"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                // onMouseEnter={handleDropdownOpen}
+                // onMouseLeave={handleDropdownClose}
                 >
                   Accessories
                 </Link>
@@ -160,8 +224,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Resale"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                // onMouseEnter={handleDropdownOpen}
+                // onMouseLeave={handleDropdownClose}
                 >
                   Resale
                 </Link>
@@ -169,8 +233,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Separates"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                // onMouseEnter={handleDropdownOpen}
+                // onMouseLeave={handleDropdownClose}
                 >
                   SEPARATES
                 </Link>
@@ -178,8 +242,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Occasions"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                // onMouseEnter={handleDropdownOpen}
+                // onMouseLeave={handleDropdownClose}
                 >
                   OCCASIONS
                 </Link>
@@ -187,8 +251,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Kids"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                // onMouseEnter={handleDropdownOpen}
+                // onMouseLeave={handleDropdownClose}
                 >
                   KIDS
                 </Link>
@@ -206,8 +270,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link"
                   to="/Edits"
-                  // onMouseEnter={handleDropdownOpen}
-                  // onMouseLeave={handleDropdownClose}
+                // onMouseEnter={handleDropdownOpen}
+                // onMouseLeave={handleDropdownClose}
                 >
                   Edits
                 </Link>
@@ -240,7 +304,7 @@ const TopHeader = () => {
             className="links-content-wrapper"
             onMouseEnter={handleDropdownOpen1}
             onMouseLeave={handleDropdownClose1}
-            // Add some styling for visualization
+          // Add some styling for visualization
           >
             <div
               className={`dropdown-content ${isDropdownOpen1 ? "active" : ""}`}
@@ -344,7 +408,7 @@ const TopHeader = () => {
             className="links-content-wrapper"
             onMouseEnter={handleDropdownOpen2}
             onMouseLeave={handleDropdownClose2}
-            // Add some styling for visualization
+          // Add some styling for visualization
           >
             <div
               className={`dropdown-content ${isDropdownOpen2 ? "active" : ""}`}
@@ -568,14 +632,14 @@ const TopHeader = () => {
       >
         <div className="offcanvas-header">
           <h6 className="offcanvas-title d-sm-block" id="offcanvas">
-          <Link
-                  to={"/Signin"}
-                  style={{ fontSize: "11px !important", cursor: "pointer" }}
-                  data-toggle="modal"
-                  data-target="#signin-modal"
-                >
-                  <b>SIGN IN/ REGISTER</b>
-                </Link>
+            <Link
+              to={"/Signin"}
+              style={{ fontSize: "11px !important", cursor: "pointer" }}
+              data-toggle="modal"
+              data-target="#signin-modal"
+            >
+              <b>SIGN IN/ REGISTER</b>
+            </Link>
           </h6>
           <button
             type="button"
@@ -651,87 +715,87 @@ const TopHeader = () => {
               </Link>
             </li>
             <li className="dropdown w-100">
-            <Link
+              <Link
                 to="#"
                 className="nav-link dropdown-toggle text-truncate"
                 id="dropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-            >
+              >
                 <span className="ms-1 d-md-inline">Clothing</span>
-            </Link>
-            <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
+              </Link>
+              <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
                 <li className="dropdown w-100">
-                    <Link
-                        to="#"
-                        className="nav-link dropdown-toggle text-truncate"
-                        id="dropdown1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        <span className="ms-1 d-md-inline"><b>CLOTHINGS</b></span>
-                    </Link>
-                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Clothing">ALL CLOTHINGS</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Dresses">DRESSES</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Tops">TOPS</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Skirts">SKIRTS</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Trousers">TROUSERS</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Sweaters">SWEATERS</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/OuterWear">OUTERWEAR</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Jumpsuits">JUMPSUITS</Link>
-                        </li>
-                    </ul>
-                </li>
-                <li className="dropdown w-100">
-                    <Link
-                        to="#"
-                        className="nav-link dropdown-toggle text-truncate"
-                        id="dropdown2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        <span className="ms-1 d-md-inline"><b>DRESSES</b></span>
-                    </Link>
-                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                  <Link
+                    to="#"
+                    className="nav-link dropdown-toggle text-truncate"
+                    id="dropdown1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className="ms-1 d-md-inline"><b>CLOTHINGS</b></span>
+                  </Link>
+                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
                     <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Dresses">ALL DRESSES</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/DressMini">MINI</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/Dresskneelength">KNEE LENGTH</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/DressMaxi">MAXI</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/DressMidi">MIDI</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Collections/DressGowns">GOWNS</Link>
-                        </li>
-                    </ul>
+                      <Link className="dropdown-item" to="/Collections/Clothing">ALL CLOTHINGS</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Dresses">DRESSES</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Tops">TOPS</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Skirts">SKIRTS</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Trousers">TROUSERS</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Sweaters">SWEATERS</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/OuterWear">OUTERWEAR</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Jumpsuits">JUMPSUITS</Link>
+                    </li>
+                  </ul>
                 </li>
-            </ul>
-        </li>
-        <li className="nav-item w-100">
+                <li className="dropdown w-100">
+                  <Link
+                    to="#"
+                    className="nav-link dropdown-toggle text-truncate"
+                    id="dropdown2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className="ms-1 d-md-inline"><b>DRESSES</b></span>
+                  </Link>
+                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Dresses">ALL DRESSES</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/DressMini">MINI</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/Dresskneelength">KNEE LENGTH</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/DressMaxi">MAXI</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/DressMidi">MIDI</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Collections/DressGowns">GOWNS</Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item w-100">
               <Link to="/Collections/Resale" className="nav-link text-truncate">
                 <span className="ms-1  d-md-inline">RESALE</span>
               </Link>
@@ -752,78 +816,78 @@ const TopHeader = () => {
               </Link>
             </li>
             <li className="dropdown w-100">
-            <Link
+              <Link
                 to="#"
                 className="nav-link dropdown-toggle text-truncate"
                 id="dropdown"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-            >
+              >
                 <span className="ms-1 d-md-inline">HELP & INFO</span>
-            </Link>
-            <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
+              </Link>
+              <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
                 <li className="dropdown w-100">
-                    <Link
-                        to="#"
-                        className="nav-link dropdown-toggle text-truncate"
-                        id="dropdown1"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        <span className="ms-1 d-md-inline"><b>CUSTOMER SERVICES</b></span>
-                    </Link>
-                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/HowToLend">HOW IT WORKS</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Faq">FAQ</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Return">RETURN & REFUNDS</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/RentalArguments">RENTAL AGREEMANT</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/ATDReward">ATD REWARD</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Enquiry">MAKE AN INQUIRY</Link>
-                        </li>
-                       
-                    </ul>
-                </li>
-                <li className="dropdown w-100">
-                    <Link
-                        to="#"
-                        className="nav-link dropdown-toggle text-truncate"
-                        id="dropdown2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        <span className="ms-1 d-md-inline"><b>ABOUT ATD</b></span>
-                    </Link>
-                    <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                  <Link
+                    to="#"
+                    className="nav-link dropdown-toggle text-truncate"
+                    id="dropdown1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className="ms-1 d-md-inline"><b>CUSTOMER SERVICES</b></span>
+                  </Link>
+                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
                     <li className="w-100">
-                            <Link className="dropdown-item" to="/About">ABOUT US</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Sustainability">SUSTAINABILITY</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/TermsOfService">TERMS OF SEFRVICES</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Privacy-Policy">PRIVACY POLICY</Link>
-                        </li>
-                        <li className="w-100">
-                            <Link className="dropdown-item" to="/Contact">CONTACT</Link>
-                        </li>
-                    </ul>
+                      <Link className="dropdown-item" to="/HowToLend">HOW IT WORKS</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Faq">FAQ</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Return">RETURN & REFUNDS</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/RentalArguments">RENTAL AGREEMANT</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/ATDReward">ATD REWARD</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Enquiry">MAKE AN INQUIRY</Link>
+                    </li>
+
+                  </ul>
                 </li>
-            </ul>
-        </li>
+                <li className="dropdown w-100">
+                  <Link
+                    to="#"
+                    className="nav-link dropdown-toggle text-truncate"
+                    id="dropdown2"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <span className="ms-1 d-md-inline"><b>ABOUT ATD</b></span>
+                  </Link>
+                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/About">ABOUT US</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Sustainability">SUSTAINABILITY</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/TermsOfService">TERMS OF SEFRVICES</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Privacy-Policy">PRIVACY POLICY</Link>
+                    </li>
+                    <li className="w-100">
+                      <Link className="dropdown-item" to="/Contact">CONTACT</Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
             <li className="nav-item w-100">
               <Link to="/Edits" className="nav-link text-truncate">
                 <span className="ms-1  d-md-inline">Edits</span>
