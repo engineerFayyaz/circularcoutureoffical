@@ -210,7 +210,7 @@ const ProductLanding = () => {
             className="text-gray-400 mt-0"
             style={{ fontSize: "17px", lineHeight: "0px" }}
           >
-            Retail Price: {rrp}
+            Retail Price: AU$ {rrp}
           </p>
           <p
             className="pt-3 text-sm leading-5 text-gray-500 "

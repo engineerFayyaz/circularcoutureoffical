@@ -64,7 +64,7 @@ const MainHeaderAdmin = () =>{
                   <turbo-frame id="account_credit_balance_header" />{" "}
                 </li>
                 <li className="list-inline-item ml-1 mr-1">
-                  <Link to="/wishlist">
+                  <Link to="/Panel/Wishlist">
                     <img
                       alt="Empty Heart Button"
                       width={24}

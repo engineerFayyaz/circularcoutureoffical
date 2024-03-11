@@ -72,6 +72,38 @@ const NowTrending = () => {
         }
     };
 
+    const CustomPrevArrow = (props) => {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, left: '20px', zIndex: '3', cursor: 'pointer', position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}
+                onClick={onClick}
+            >
+                <img
+                    alt="Previous Arrow"
+                    src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg"
+                />
+            </div>
+        );
+    };
+
+    const CustomNextArrow = (props) => {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, right: '20px', zIndex: '3', cursor: 'pointer', position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}
+                onClick={onClick}
+            >
+                <img
+                    alt="Next Arrow"
+                    src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-right-4d9dc1896a4765e272ce510a3e1d363f.svg"
+                />
+            </div>
+        );
+    };
+
     const sliderSettings = {
         dots: false,
         infinite: true,
@@ -80,7 +112,9 @@ const NowTrending = () => {
         slidesToScroll: 1, // Scroll 1 product at a time
         autoplay: true,
         autoplaySpeed: 5000,
-        arrows: true,
+        // arrows: true,
+        prevArrow: <CustomPrevArrow />,
+        nextArrow: <CustomNextArrow />,
         responsive: [
             {
                 breakpoint: 768,
@@ -102,7 +136,6 @@ const NowTrending = () => {
             },
         ],
     };
-    
 
     return (
         <section>
