@@ -78,8 +78,8 @@ const NowTrending = () => {
         speed: 500,
         slidesToShow: 4, // Show 4 products per slide
         slidesToScroll: 1, // Scroll 1 product at a time
-        // autoplay: true,
-        autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         arrows: true,
         responsive: [
             {

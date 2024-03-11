@@ -32,6 +32,7 @@ const TopHeader = () => {
       });
 
     setLoggedInUser(u);
+    fetchDesigners();
 
   }, [filteredProducts]);
 
@@ -39,6 +40,20 @@ const TopHeader = () => {
   const [dropdownTimeoutId1, setDropdownTimeoutId1] = useState(null);
   const [dropdownTimeoutId2, setDropdownTimeoutId2] = useState(null);
   const [dropdownTimeoutId3, setDropdownTimeoutId3] = useState(null);
+  const [designers, setDesigners] = useState([]);
+
+  const fetchDesigners = async () => {
+    try {
+      const response = await fetch("https://localhost:7220/api/product-designers");
+      if (!response.ok) {
+        throw new Error("Failed to fetch designers");
+      }
+      const data = await response.json();
+      setDesigners(data.results.sort((a, b) => a.name.localeCompare(b.name))); // Sort designers by name
+    } catch (error) {
+      console.error("Error fetching designers:", error);
+    }
+  };
 
   const handleDropdownOpen1 = () => {
     clearTimeout(dropdownTimeoutId1);
@@ -84,20 +99,20 @@ const TopHeader = () => {
     setSearchTerm(searchTerm);
     filterProducts(searchTerm);
   };
-  
+
   // Inside filterProducts function
- // Inside filterProducts function
-const filterProducts = (searchTerm) => {
-  const filtered = products.results.filter((product) => {
-    return product.name.toLowerCase().includes(searchTerm.toLowerCase());
-  });
-  setFilteredProducts(filtered); // Update filtered products directly with the filtered array
-};
+  // Inside filterProducts function
+  const filterProducts = (searchTerm) => {
+    const filtered = products.results.filter((product) => {
+      return product.name.toLowerCase().includes(searchTerm.toLowerCase());
+    });
+    setFilteredProducts(filtered); // Update filtered products directly with the filtered array
+  };
 
-  
 
-  
-  
+
+
+
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -105,7 +120,7 @@ const filterProducts = (searchTerm) => {
       filterProducts(searchTerm);
     }
   };
-  
+
 
   return (
     <>
@@ -145,32 +160,32 @@ const filterProducts = (searchTerm) => {
               </Link>
             </div>
             <div className="col-3 col-lg-3 col-md-3 text-right">
-  <turbo-frame id="mobile_header_bag_frame" />
-  <div style={{ position: "relative" }}>
-  <input
-  type="text"
-  placeholder="Search products"
-  value={searchTerm}
-  onChange={handleSearch} // Ensure that handleSearch is correctly bound
-  className="search-input"
-  onKeyPress={handleKeyPress} // Add this event listener
-/>
-    <FontAwesomeIcon
-      icon={faSearch}
-      className="search-image"
-      style={{ color: "black", position: "absolute", top: 10, right: 10 }}
-    />
-  </div>
-  <ul>
-    {filteredProducts.length > 0 ? (
-      filteredProducts.map((product) => (
-        <li key={product.id}>{product.name}</li>
-      ))
-    ) : (
-      <li>No products found</li>
-    )}
-  </ul>
-</div>
+              <turbo-frame id="mobile_header_bag_frame" />
+              <div style={{ position: "relative" }}>
+                <input
+                  type="text"
+                  placeholder="Search products"
+                  value={searchTerm}
+                  onChange={handleSearch} // Ensure that handleSearch is correctly bound
+                  className="search-input"
+                  onKeyPress={handleKeyPress} // Add this event listener
+                />
+                <FontAwesomeIcon
+                  icon={faSearch}
+                  className="search-image"
+                  style={{ color: "black", position: "absolute", top: 10, right: 10 }}
+                />
+              </div>
+              <ul>
+                {filteredProducts.length > 0 ? (
+                  filteredProducts.map((product) => (
+                    <li key={product.id}>{product.name}</li>
+                  ))
+                ) : (
+                  <li>No products found</li>
+                )}
+              </ul>
+            </div>
 
 
           </div>
@@ -284,7 +299,7 @@ const filterProducts = (searchTerm) => {
                 >
                   List By Wardrobe
                 </Link> */}
-                <a className="" style={{ width: "fit-content" }}>
+                <Link className="" style={{ width: "fit-content" }}>
                   <FontAwesomeIcon
                     className="search-icon-main-nav"
                     icon={faSearch}
@@ -295,7 +310,7 @@ const filterProducts = (searchTerm) => {
                     placeholder="search..."
                     className="nav-link"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -521,48 +536,55 @@ const filterProducts = (searchTerm) => {
                     <div className="col-md-4 col-xl-3">
                       <div className="links">
                         <div className="header">
-                          <a target="_top" href="/designer">
+                          <Link target="_top" to="/designer">
                             RENT ALL DESIGNERS
-                          </a>
+                          </Link>
                         </div>
                         <div className="body">
-                          <a target="_top" href="/Designers/Alemais">
+                          {/* <Link target="_top" to="/Designers/Alemais">
                             THE VAMPIRE'S WIFE
-                          </a>
-                          <a target="_top" href="/Designers/Alemais">
+                          </Link>
+                          <Link target="_top" to="/Designers/Alemais">
                             RIXO
-                          </a>
-                          <a target="_top" href="/Designers/Alemais">
+                          </Link>
+                          <Link target="_top" to="/Designers/Alemais">
                             SELF-PORTRAIT
-                          </a>
-                          <a target="_top" href="/Designers/Alemais">
+                          </Link>
+                          <Link target="_top" to="/Designers/Alemais">
                             SALONI
-                          </a>
-                          <a target="_top" href="/Designers/Alemais">
+                          </Link>
+                          <Link target="_top" to="/Designers/Alemais">
                             16ARLINGTON
-                          </a>
+                          </Link> */}
+                          {designers.slice(0, 5).map((designer, index) => (
+                            <li key={index} className="footer__menu-list" style={{alignItems:"center",fontSize:"15px"}}>
+                              <Link to={`/designers/${designer.id}/${encodeURIComponent(designer.name)}`}>
+                                {designer.name}
+                              </Link>
+                            </li>
+                          ))}
                         </div>
                         <div className="footer">
-                          <a target="_top" href="/designer">
+                          <Link target="_top" to="/designer">
                             VIEW ALL
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
                     <div className="col-md-8 col-xl-9">
                       <div className="content">
                         <div className="header">
-                          <a target="_top" href="/designer">
+                          <Link target="_top" to="/designer">
                             FEATURED DESIGNERS
-                          </a>
+                          </Link>
                         </div>
                         <div className="body">
                           <div className="row">
                             <div className="col-md-6 col-xl-4">
-                              <a
+                              <Link
                                 className="photo-link"
                                 target="_top"
-                                href="/Designers/Alemais"
+                                to="/Designer"
                               >
                                 <div className="title">SS24</div>
                                 <img
@@ -573,13 +595,13 @@ const filterProducts = (searchTerm) => {
                                   src="/images/gallery-images/designer-dropdown-1.webp"
                                 />
                                 <div className="sub-title">SAU LEE</div>
-                              </a>
+                              </Link>
                             </div>
                             <div className="col-md-6 col-xl-4">
-                              <a
+                              <Link
                                 className="photo-link"
                                 target="_top"
-                                href="/Designers/Alemais"
+                                to="/Designer"
                               >
                                 <div className="title">NEW IN</div>
                                 <img
@@ -590,13 +612,13 @@ const filterProducts = (searchTerm) => {
                                   src="/images/gallery-images/designer-dropdown-2.webp"
                                 />
                                 <div className="sub-title">NET-A-PORTER</div>
-                              </a>
+                              </Link>
                             </div>
                             <div className="col-md-6 col-xl-4">
-                              <a
+                              <Link
                                 className="photo-link"
                                 target="_top"
-                                href="/Designers/Alemais"
+                                to="/Designer"
                               >
                                 <div className="title">JUST ARRIVED</div>
                                 <img
@@ -607,7 +629,7 @@ const filterProducts = (searchTerm) => {
                                   src="/images/gallery-images/designer-dropdown-3.webp"
                                 />
                                 <div className="sub-title">ACLER</div>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
