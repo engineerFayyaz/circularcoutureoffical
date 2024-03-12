@@ -18,7 +18,7 @@ const Accessories = () => {
   useEffect(() => {
       const fetchProducts = async () => {
           try {
-              const response = await fetch(`https://localhost:7220/api/products/catogery-Gen/5`, {
+              const response = await fetch(`https://circularclientapi.azurewebsites.net/api/products/catogery-Gen/5`, {
                   method: 'GET',
                   headers: {
                       'Accept': 'application/json'
@@ -44,7 +44,7 @@ const Accessories = () => {
     }
 
     try {
-      const response = await fetch('https://localhost:7220/api/wishlist-products', {
+      const response = await fetch('https://circularclientapi.azurewebsites.net/api/wishlist-products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

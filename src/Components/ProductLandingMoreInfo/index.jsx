@@ -11,7 +11,7 @@ const ProductLandingMoreInfo = () => {
   useEffect(() => {
       const fetchData = async () => {
           try {
-              const response = await fetch(`https://localhost:7220/api/products/${productId}`);
+              const response = await fetch(`https://circularclientapi.azurewebsites.net/api/products/${productId}`);
               if (!response.ok) {
                   throw new Error('Failed to fetch data');
               }

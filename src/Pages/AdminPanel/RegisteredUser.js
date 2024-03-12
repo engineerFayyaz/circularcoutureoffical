@@ -12,7 +12,7 @@ const RegisteredUser = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch("https://localhost:7220/api/users");
+      const response = await fetch("https://circularclientapi.azurewebsites.net/api/users");
       if (!response.ok) {
         throw new Error("Failed to fetch users");
       }

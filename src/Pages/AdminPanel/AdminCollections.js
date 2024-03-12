@@ -15,7 +15,7 @@ const Collections = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get("https://localhost:7220/api/product-gen-categories");
+      const response = await axios.get("https://circularclientapi.azurewebsites.net/api/product-gen-categories");
       setCategories(response.data.results);
     } catch (error) {
       console.error("Error fetching categories:", error);
@@ -25,7 +25,7 @@ const Collections = () => {
 
   const handleCreateCategory = async () => {
     try {
-      const response = await axios.post("https://localhost:7220/api/product-gen-categories", {
+      const response = await axios.post("https://circularclientapi.azurewebsites.net/api/product-gen-categories", {
         type: newCategory
       });
       if (response.status === 200) {
@@ -43,7 +43,7 @@ const Collections = () => {
 
   const handleDelete = async (categoryId) => {
     try {
-      const response = await axios.delete(`https://localhost:7220/api/product-gen-categories/${categoryId}`);
+      const response = await axios.delete(`https://circularclientapi.azurewebsites.net/api/product-gen-categories/${categoryId}`);
       if (response.status === 200) {
         setCategories(categories.filter((category) => category.id !== categoryId));
         toast.success("Category deleted successfully!");
@@ -58,7 +58,7 @@ const Collections = () => {
 
   const handleEdit = async (categoryId, newType) => {
     try {
-      const response = await axios.put("https://localhost:7220/api/product-gen-categories", {
+      const response = await axios.put("https://circularclientapi.azurewebsites.net/api/product-gen-categories", {
         id: categoryId,
         type: newType,
       });

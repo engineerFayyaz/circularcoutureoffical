@@ -21,7 +21,7 @@ const Footer = () => {
 
   const fetchDesigners = async () => {
     try {
-      const response = await fetch("https://localhost:7220/api/product-designers");
+      const response = await fetch("https://circularclientapi.azurewebsites.net/api/product-designers");
       if (!response.ok) {
         throw new Error("Failed to fetch designers");
       }

@@ -21,7 +21,7 @@ const TopHeader = () => {
   useEffect(() => {
     let u = getUserFromLocalStorage();
 
-    axios.get("https://localhost:7220/api/products")
+    axios.get("https://circularclientapi.azurewebsites.net/api/products")
       .then((response) => {
         // console.log("response data",response.data)
         setProducts(response.data);
@@ -44,7 +44,7 @@ const TopHeader = () => {
 
   const fetchDesigners = async () => {
     try {
-      const response = await fetch("https://localhost:7220/api/product-designers");
+      const response = await fetch("https://circularclientapi.azurewebsites.net/api/product-designers");
       if (!response.ok) {
         throw new Error("Failed to fetch designers");
       }

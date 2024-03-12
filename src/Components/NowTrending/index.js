@@ -21,7 +21,7 @@ const NowTrending = () => {
 
     const fetchProducts = async () => {
         try {
-            const response = await fetch('https://localhost:7220/api/products');
+            const response = await fetch('https://circularclientapi.azurewebsites.net/api/products');
             if (!response.ok) {
                 throw new Error('Failed to fetch products');
             }
@@ -44,7 +44,7 @@ const NowTrending = () => {
         }
 
         try {
-            const response = await fetch('https://localhost:7220/api/wishlist-products', {
+            const response = await fetch('https://circularclientapi.azurewebsites.net/api/wishlist-products', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

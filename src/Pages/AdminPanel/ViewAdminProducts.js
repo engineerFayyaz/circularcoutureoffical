@@ -16,7 +16,7 @@ const ViewAdminProducts = () => {
 
     const fetchProducts = async () => {
         try {
-            const response = await fetch("https://localhost:7220/api/products");
+            const response = await fetch("https://circularclientapi.azurewebsites.net/api/products");
             if (response.ok) {
                 const data = await response.json();
                 setProducts(data.results);
@@ -46,7 +46,7 @@ const ViewAdminProducts = () => {
         const requestBody = updatedProduct;
 
         try {
-            const response = await fetch(`https://localhost:7220/api/products/${editId}`, {
+            const response = await fetch(`https://circularclientapi.azurewebsites.net/api/products/${editId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const ViewAdminProducts = () => {
 
     const handleDelete = async (productId) => {
         try {
-            const response = await fetch(`https://localhost:7220/api/products/${productId}`, {
+            const response = await fetch(`https://circularclientapi.azurewebsites.net/api/products/${productId}`, {
                 method: "DELETE",
                 headers: {
                     accept: "*/*",

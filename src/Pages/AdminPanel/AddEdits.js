@@ -30,7 +30,7 @@ function AddEdits() {
 
     const fetchEdits = async () => {
         try {
-            const response = await axios.get("https://localhost:7220/api/product-edits");
+            const response = await axios.get("https://circularclientapi.azurewebsites.net/api/product-edits");
             setEdits(response.data.results);
         } catch (error) {
             console.error("Error:", error);
@@ -65,7 +65,7 @@ function AddEdits() {
 
         try {
             const response = await axios.post(
-                "https://localhost:7220/api/product-edits",
+                "https://circularclientapi.azurewebsites.net/api/product-edits",
                 {
                     name: name,
                     detail: detail,
@@ -110,7 +110,7 @@ function AddEdits() {
 
     const handleDelete = async (editId) => {
         try {
-            const response = await axios.delete(`https://localhost:7220/api/product-edits/${editId}`);
+            const response = await axios.delete(`https://circularclientapi.azurewebsites.net/api/product-edits/${editId}`);
             if (response.status === 200) {
                 setEdits(edits.filter(edit => edit.id !== editId));
                 setSuccessMessage("Product Edit deleted successfully!");
