@@ -22,7 +22,7 @@ const TopHeader = () => {
   const handleDropdownOpen1 = () => {
     setTimeout(() => {
       setIsDropdownOpen1(true);
-    }, 500); // 1000 milliseconds delay (1 second)
+    }, 1000); // 1000 milliseconds delay (1 second)
   };
   
   const handleDropdownClose1 = () => {
@@ -32,7 +32,7 @@ const TopHeader = () => {
   const handleDropdownOpen2 = () => {
     setTimeout(() => {
       setIsDropdownOpen2(true);
-    }, 500); // 1000 milliseconds delay (1 second)
+    }, 1000); // 1000 milliseconds delay (1 second)
   };
   
   const handleDropdownClose2 = () => {
@@ -42,7 +42,7 @@ const TopHeader = () => {
   const handleDropdownOpen3 = () => {
     setTimeout(() => {
       setIsDropdownOpen3(true);
-    }, 500); // 1000 milliseconds delay (1 second)
+    }, 1000); // 1000 milliseconds delay (1 second)
   };
   
   const handleDropdownClose3 = () => {
@@ -91,7 +91,7 @@ const TopHeader = () => {
 
                     <FontAwesomeIcon
                         icon={faSearch}
-                        className="search-image"
+                        className="search-image text-dark"
                         style={{ color: "black" }}
                     />
                 </div>
