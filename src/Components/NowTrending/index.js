@@ -13,6 +13,7 @@ const NowTrending = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [wishlist, setWishlist] = useState([]);
     const [user, setUser] = useState(null);
+    
 
     useEffect(() => {
         fetchProducts();
