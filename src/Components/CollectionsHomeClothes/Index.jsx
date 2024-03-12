@@ -109,7 +109,7 @@ const CollectionsHomeClothes =()=>{
     return(
         <>
          <section>
-            <div className="container collections">
+            <div className="container collections p-3">
               <div className="row">
               <Slider {...sliderSettings}>
               {products.map((product,index) => (

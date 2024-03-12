@@ -7,16 +7,19 @@ const AdminHeader = () => {
   return (
     <header>
       <nav className="navbar-admin navbar-expand-sm">
-        <div className="container-fluid">
-          <div className="main-nav-brand-admin">
+        <div className="container-fluid d-flex align-items-center">
+          <div className="row w-100">
+          <div className="col-md-4 main-nav-brand-admin">
             <Link className="navbar-brand-admin" to="/AdminPanel/AdminMainPage">
              <img src="/images/CC TM Logo.png" width={"300px"}/>
             </Link>
-            <input type="search" name="" id="" placeholder="Search" />
+          </div>
+          <div className="col-12 col-sm-5 text-center main-nav-brand-admin justify-content-center">
+          <input type="search" name="" id="" placeholder="Search" />
             <FontAwesomeIcon icon={faMagnifyingGlass} style={{fontSize:"20px",position:"relative",right:"4.5rem",cursor:"pointer"}}/>
           </div>
           <div
-            className="collapse navbar-collapse d-flex justify-content-end"
+            className="collapse col-md-3 navbar-collapse d-flex justify-content-end"
             id="collapsibleNavId"
           >
             <form className="d-flex  nav-icon align-items-end">
@@ -46,6 +49,7 @@ const AdminHeader = () => {
                 </div>
               </div>
             </form>
+          </div>
           </div>
         </div>
       </nav>

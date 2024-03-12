@@ -8,7 +8,6 @@ import MainHeaderAdmin from "../MainHeaderAdmin";
 import { getUserFromLocalStorage } from "../../storage/loggedInUserLocalSt";
 import axios from "axios";
 
-
 const TopHeader = () => {
   const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
@@ -21,7 +20,8 @@ const TopHeader = () => {
   useEffect(() => {
     let u = getUserFromLocalStorage();
 
-    axios.get("https://localhost:7220/api/products")
+    axios
+      .get("https://localhost:7220/api/products")
       .then((response) => {
         // console.log("response data",response.data)
         setProducts(response.data);
@@ -33,9 +33,7 @@ const TopHeader = () => {
 
     setLoggedInUser(u);
     fetchDesigners();
-
   }, [filteredProducts]);
-
 
   const [dropdownTimeoutId1, setDropdownTimeoutId1] = useState(null);
   const [dropdownTimeoutId2, setDropdownTimeoutId2] = useState(null);
@@ -44,7 +42,9 @@ const TopHeader = () => {
 
   const fetchDesigners = async () => {
     try {
-      const response = await fetch("https://circularclientapi.azurewebsites.net/api/product-designers");
+      const response = await fetch(
+        "https://circularclientapi.azurewebsites.net/api/product-designers"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch designers");
       }
@@ -109,18 +109,12 @@ const TopHeader = () => {
     setFilteredProducts(filtered); // Update filtered products directly with the filtered array
   };
 
-
-
-
-
-
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
       // Trigger filtering logic when Enter key is pressed
       filterProducts(searchTerm);
     }
   };
-
 
   return (
     <>
@@ -136,7 +130,7 @@ const TopHeader = () => {
         {/* Conditional rendering based on authentication state */}
         <div className="container-fluid main-mobile-header-section">
           <div className="row h-100 align-items-center m-sm-0">
-            <div className="col-3 col-lg-3 col-md-3">
+            <div className="col-2 col-lg-2 col-md-2">
               <Link
                 to="#"
                 data-bs-toggle="offcanvas"
@@ -148,7 +142,7 @@ const TopHeader = () => {
                 <turbo-frame id="account_credit_balance_header" />
               </span>
             </div>
-            <div className="col-6 col-lg-6 col-md-6 text-sm-start text-center">
+            <div className="col-7 col-lg-7 col-md-7 text-sm-start text-center">
               <Link to="/">
                 <img
                   alt="CIRCULAR COUTURE Logo"
@@ -160,23 +154,16 @@ const TopHeader = () => {
               </Link>
             </div>
             <div className="col-3 col-lg-3 col-md-3 text-right">
-              <turbo-frame id="mobile_header_bag_frame" />
-              <div style={{ position: "relative" }}>
-                <input
-                  type="text"
-                  placeholder="Search products"
-                  value={searchTerm}
-                  onChange={handleSearch} // Ensure that handleSearch is correctly bound
-                  className="search-input"
-                  onKeyPress={handleKeyPress} // Add this event listener
-                />
+              <div >
                 <FontAwesomeIcon
                   icon={faSearch}
                   className="search-image"
-                  style={{ color: "black", position: "absolute", top: 10, right: 10 }}
+                  data-bs-toggle="collapse"
+                  data-bs-target="#demo"
                 />
               </div>
-              <ul>
+              
+              {/* <ul>
                 {filteredProducts.length > 0 ? (
                   filteredProducts.map((product) => (
                     <li key={product.id}>{product.name}</li>
@@ -184,11 +171,31 @@ const TopHeader = () => {
                 ) : (
                   <li>No products found</li>
                 )}
-              </ul>
+              </ul> */}
             </div>
-
-
           </div>
+          <div id="demo" class="row collapse"
+          style={{
+            position: "absolute",
+            left: "0",
+            padding: "0px",
+            margin: "0px ",
+            width: "100%",
+            top: "9rem",
+          }}>
+                  <input
+                    type="text"
+                    placeholder="Search products"
+                    value={searchTerm}
+                    onChange={handleSearch} // Ensure that handleSearch is correctly bound
+                    className="search-input py-2"
+                    onKeyPress={handleKeyPress} // Add this event listener
+                    style={{
+                      border: "1px solid black",
+                      filter: "drop-shadow(2px 4px 6px black)",
+                    }}
+                  />
+                </div>
         </div>
         <nav
           className="navbar navbar-menu-section border-bottom border-1 border-secondary"
@@ -201,8 +208,8 @@ const TopHeader = () => {
                   to="/Collections/NewArrival"
                   className="nav-link with-mega-menu-content"
 
-                // onMouseEnter={handleDropdownOpen}
-                // onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   New In
                 </Link>
@@ -230,8 +237,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link with-mega-menu-content accessories-menu-hover"
                   to="/Collections/Accessories"
-                // onMouseEnter={handleDropdownOpen}
-                // onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   Accessories
                 </Link>
@@ -239,8 +246,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Resale"
-                // onMouseEnter={handleDropdownOpen}
-                // onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   Resale
                 </Link>
@@ -248,8 +255,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Separates"
-                // onMouseEnter={handleDropdownOpen}
-                // onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   SEPARATES
                 </Link>
@@ -257,8 +264,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Collections/Occasions"
-                // onMouseEnter={handleDropdownOpen}
-                // onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   OCCASIONS
                 </Link>
@@ -266,8 +273,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link "
                   to="/Kids"
-                // onMouseEnter={handleDropdownOpen}
-                // onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   KIDS
                 </Link>
@@ -285,8 +292,8 @@ const TopHeader = () => {
                   target="_top"
                   className="nav-link"
                   to="/Edits"
-                // onMouseEnter={handleDropdownOpen}
-                // onMouseLeave={handleDropdownClose}
+                  // onMouseEnter={handleDropdownOpen}
+                  // onMouseLeave={handleDropdownClose}
                 >
                   Edits
                 </Link>
@@ -319,7 +326,7 @@ const TopHeader = () => {
             className="links-content-wrapper"
             onMouseEnter={handleDropdownOpen1}
             onMouseLeave={handleDropdownClose1}
-          // Add some styling for visualization
+            // Add some styling for visualization
           >
             <div
               className={`dropdown-content ${isDropdownOpen1 ? "active" : ""}`}
@@ -423,7 +430,7 @@ const TopHeader = () => {
             className="links-content-wrapper"
             onMouseEnter={handleDropdownOpen2}
             onMouseLeave={handleDropdownClose2}
-          // Add some styling for visualization
+            // Add some styling for visualization
           >
             <div
               className={`dropdown-content ${isDropdownOpen2 ? "active" : ""}`}
@@ -541,24 +548,17 @@ const TopHeader = () => {
                           </Link>
                         </div>
                         <div className="body">
-                          {/* <Link target="_top" to="/Designers/Alemais">
-                            THE VAMPIRE'S WIFE
-                          </Link>
-                          <Link target="_top" to="/Designers/Alemais">
-                            RIXO
-                          </Link>
-                          <Link target="_top" to="/Designers/Alemais">
-                            SELF-PORTRAIT
-                          </Link>
-                          <Link target="_top" to="/Designers/Alemais">
-                            SALONI
-                          </Link>
-                          <Link target="_top" to="/Designers/Alemais">
-                            16ARLINGTON
-                          </Link> */}
                           {designers.slice(0, 5).map((designer, index) => (
-                            <li key={index} className="footer__menu-list" style={{alignItems:"center",fontSize:"15px"}}>
-                              <Link to={`/designers/${designer.id}/${encodeURIComponent(designer.name)}`}>
+                            <li
+                              key={index}
+                              className="footer__menu-list"
+                              style={{ alignItems: "center", fontSize: "15px" }}
+                            >
+                              <Link
+                                to={`/designers/${
+                                  designer.id
+                                }/${encodeURIComponent(designer.name)}`}
+                              >
                                 {designer.name}
                               </Link>
                             </li>
@@ -676,7 +676,10 @@ const TopHeader = () => {
             id="menu"
           >
             <li className="nav-item">
-              <Link to="/Collections/NewArrival" className="nav-link text-truncate">
+              <Link
+                to="/Collections/NewArrival"
+                className="nav-link text-truncate"
+              >
                 <span className="ms-1  d-md-inline">New In</span>
               </Link>
             </li>
@@ -732,7 +735,10 @@ const TopHeader = () => {
               </ul>
             </li>
             <li className="nav-item w-100">
-              <Link to="/Collections/Accessories" className="nav-link text-truncate">
+              <Link
+                to="/Collections/Accessories"
+                className="nav-link text-truncate"
+              >
                 <span className="ms-1  d-md-inline">Accessories</span>
               </Link>
             </li>
@@ -746,7 +752,10 @@ const TopHeader = () => {
               >
                 <span className="ms-1 d-md-inline">Clothing</span>
               </Link>
-              <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
+              <ul
+                className="dropdown-menu w-100 text-small shadow"
+                aria-labelledby="dropdown"
+              >
                 <li className="dropdown w-100">
                   <Link
                     to="#"
@@ -755,32 +764,68 @@ const TopHeader = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <span className="ms-1 d-md-inline"><b>CLOTHINGS</b></span>
+                    <span className="ms-1 d-md-inline">
+                      <b>CLOTHINGS</b>
+                    </span>
                   </Link>
-                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
+                  <ul
+                    className="dropdown-menu w-100 text-small shadow"
+                    aria-labelledby="dropdown1"
+                  >
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Clothing">ALL CLOTHINGS</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/Clothing"
+                      >
+                        ALL CLOTHINGS
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Dresses">DRESSES</Link>
+                      <Link className="dropdown-item" to="/Collections/Dresses">
+                        DRESSES
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Tops">TOPS</Link>
+                      <Link className="dropdown-item" to="/Collections/Tops">
+                        TOPS
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Skirts">SKIRTS</Link>
+                      <Link className="dropdown-item" to="/Collections/Skirts">
+                        SKIRTS
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Trousers">TROUSERS</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/Trousers"
+                      >
+                        TROUSERS
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Sweaters">SWEATERS</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/Sweaters"
+                      >
+                        SWEATERS
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/OuterWear">OUTERWEAR</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/OuterWear"
+                      >
+                        OUTERWEAR
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Jumpsuits">JUMPSUITS</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/Jumpsuits"
+                      >
+                        JUMPSUITS
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -792,26 +837,58 @@ const TopHeader = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <span className="ms-1 d-md-inline"><b>DRESSES</b></span>
+                    <span className="ms-1 d-md-inline">
+                      <b>DRESSES</b>
+                    </span>
                   </Link>
-                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                  <ul
+                    className="dropdown-menu w-100 text-small shadow"
+                    aria-labelledby="dropdown2"
+                  >
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Dresses">ALL DRESSES</Link>
+                      <Link className="dropdown-item" to="/Collections/Dresses">
+                        ALL DRESSES
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/DressMini">MINI</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/DressMini"
+                      >
+                        MINI
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/Dresskneelength">KNEE LENGTH</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/Dresskneelength"
+                      >
+                        KNEE LENGTH
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/DressMaxi">MAXI</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/DressMaxi"
+                      >
+                        MAXI
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/DressMidi">MIDI</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/DressMidi"
+                      >
+                        MIDI
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Collections/DressGowns">GOWNS</Link>
+                      <Link
+                        className="dropdown-item"
+                        to="/Collections/DressGowns"
+                      >
+                        GOWNS
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -823,12 +900,18 @@ const TopHeader = () => {
               </Link>
             </li>
             <li className="nav-item w-100">
-              <Link to="/Collections/Separates" className="nav-link text-truncate">
+              <Link
+                to="/Collections/Separates"
+                className="nav-link text-truncate"
+              >
                 <span className="ms-1  d-md-inline">SEPARATES</span>
               </Link>
             </li>
             <li className="nav-item w-100">
-              <Link to="/Collections/Occassion" className="nav-link text-truncate">
+              <Link
+                to="/Collections/Occassion"
+                className="nav-link text-truncate"
+              >
                 <span className="ms-1  d-md-inline">OCCASIONS</span>
               </Link>
             </li>
@@ -847,7 +930,10 @@ const TopHeader = () => {
               >
                 <span className="ms-1 d-md-inline">HELP & INFO</span>
               </Link>
-              <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown">
+              <ul
+                className="dropdown-menu w-100 text-small shadow"
+                aria-labelledby="dropdown"
+              >
                 <li className="dropdown w-100">
                   <Link
                     to="#"
@@ -856,28 +942,44 @@ const TopHeader = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <span className="ms-1 d-md-inline"><b>CUSTOMER SERVICES</b></span>
+                    <span className="ms-1 d-md-inline">
+                      <b>CUSTOMER SERVICES</b>
+                    </span>
                   </Link>
-                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown1">
+                  <ul
+                    className="dropdown-menu w-100 text-small shadow"
+                    aria-labelledby="dropdown1"
+                  >
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/HowToLend">HOW IT WORKS</Link>
+                      <Link className="dropdown-item" to="/HowToLend">
+                        HOW IT WORKS
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Faq">FAQ</Link>
+                      <Link className="dropdown-item" to="/Faq">
+                        FAQ
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Return">RETURN & REFUNDS</Link>
+                      <Link className="dropdown-item" to="/Return">
+                        RETURN & REFUNDS
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/RentalArguments">RENTAL AGREEMANT</Link>
+                      <Link className="dropdown-item" to="/RentalArguments">
+                        RENTAL AGREEMANT
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/ATDReward">ATD REWARD</Link>
+                      <Link className="dropdown-item" to="/ATDReward">
+                        ATD REWARD
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Enquiry">MAKE AN INQUIRY</Link>
+                      <Link className="dropdown-item" to="/Enquiry">
+                        MAKE AN INQUIRY
+                      </Link>
                     </li>
-
                   </ul>
                 </li>
                 <li className="dropdown w-100">
@@ -888,23 +990,38 @@ const TopHeader = () => {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <span className="ms-1 d-md-inline"><b>ABOUT ATD</b></span>
+                    <span className="ms-1 d-md-inline">
+                      <b>ABOUT ATD</b>
+                    </span>
                   </Link>
-                  <ul className="dropdown-menu w-100 text-small shadow" aria-labelledby="dropdown2">
+                  <ul
+                    className="dropdown-menu w-100 text-small shadow"
+                    aria-labelledby="dropdown2"
+                  >
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/About">ABOUT US</Link>
+                      <Link className="dropdown-item" to="/About">
+                        ABOUT US
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Sustainability">SUSTAINABILITY</Link>
+                      <Link className="dropdown-item" to="/Sustainability">
+                        SUSTAINABILITY
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/TermsOfService">TERMS OF SEFRVICES</Link>
+                      <Link className="dropdown-item" to="/TermsOfService">
+                        TERMS OF SEFRVICES
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Privacy-Policy">PRIVACY POLICY</Link>
+                      <Link className="dropdown-item" to="/Privacy-Policy">
+                        PRIVACY POLICY
+                      </Link>
                     </li>
                     <li className="w-100">
-                      <Link className="dropdown-item" to="/Contact">CONTACT</Link>
+                      <Link className="dropdown-item" to="/Contact">
+                        CONTACT
+                      </Link>
                     </li>
                   </ul>
                 </li>

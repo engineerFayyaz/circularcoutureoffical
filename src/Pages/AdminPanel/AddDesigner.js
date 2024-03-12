@@ -148,8 +148,11 @@ function AddDesigner() {
               {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
             </Form>
             <div>
-              <h2>All Designers</h2>
-              <table className="table">
+              <div className="mt-5">
+              <div className="text-center">
+              <h2 className="text-light">All Designers</h2>
+              </div>
+              <table className="table bg-light">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -160,7 +163,7 @@ function AddDesigner() {
                 <tbody>
                   {designers.map((designer) => (
                     <tr key={designer.id}>
-                      <td>
+                      <td className="w-25">
                         {editableRows[designer.id] ? (
                           <Form.Control
                             type="text"
@@ -171,7 +174,7 @@ function AddDesigner() {
                           designer.name
                         )}
                       </td>
-                      <td>
+                      <td className="w-50">
                         {editableRows[designer.id] ? (
                           <Form.Control
                             as="textarea"
@@ -183,7 +186,10 @@ function AddDesigner() {
                           designer.detail
                         )}
                       </td>
-                      <td>
+                      <td className="w-25 bg-light d-flex align-items-center gap-2 w-100"
+                      
+                      
+                      >
                         {editableRows[designer.id] ? (
                           <>
                             <Button onClick={() => handleSave()} variant="success">
@@ -204,7 +210,7 @@ function AddDesigner() {
 
                           
                         )}
-                         <Button onClick={() => handleDelete(designer.id)} variant="danger">
+                         <Button onClick={() => handleDelete(designer.id)} variant="danger" className="ml-3">
                             Delete
                           </Button>
                       </td>
@@ -212,6 +218,7 @@ function AddDesigner() {
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           </div>
         </div>

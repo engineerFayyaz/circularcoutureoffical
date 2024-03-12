@@ -29,10 +29,8 @@ const RegisteredUser = () => {
       <div className="container-fluid">
         {/* <div className="row"> */}
         <div className="row text-light" style={{ backgroundColor: "black", color: "white" }}>
-          <div className="col-md-3">
-            <AdminSideHeader />
-          </div>
-          <div className="col-md-9">
+            <AdminSideHeader /> 
+          <div className="col-lg-10">
             <h1 className="my-4" style={{color:'white'}}>Registered Users</h1>
             <Table striped bordered hover responsive>
               <thead>

@@ -150,7 +150,7 @@ const AdminCategory = () => {
               <hr />
               <form onSubmit={handleSubmit}>
                 <div className="row mt-2">
-                  <div className="form-group-admin col-lg-6">
+                  <div className="form-group-admin col-lg-12">
                     <label htmlFor="type">Type:</label>
                     <input
                       type="text"
@@ -174,7 +174,7 @@ const AdminCategory = () => {
                   </div> */}
                 </div>
                 <div className="form-group-admin col-lg-12 text-center mt-4 mb-3">
-                  <button type="submit" className="btn btn-light category-btn">
+                  <button type="submit" className="btn btn-primary category-btn p-3 ">
                     Create Category
                   </button>
                 </div>
@@ -215,14 +215,14 @@ const AdminCategory = () => {
                             </button>
                           ) : (
                             <button
-                              className="btn btn-sm btn-primary mr-2"
+                              className="btn  btn-primary mr-2"
                               onClick={() => handleEdit(category.id)}
                             >
                               Edit
                             </button>
                           )}
                           <button
-                            className="btn btn-sm btn-danger"
+                            className="btn  btn-danger"
                             onClick={() => handleDelete(category.id)}
                           >
                             Delete

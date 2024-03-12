@@ -149,12 +149,16 @@ function AddEdits() {
                                         <FontAwesomeIcon icon={faCamera} size="lg" />
                                     </Button>
                                 </div>
+                            <Button type="submit" className="my-3">Submit</Button>
                             </Form.Group>
 
-                            <Button type="submit">Submit</Button>
                             {error && <p style={{ color: "red" }}>{error}</p>}
                             {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
                         </Form>
+
+                        <div className="text-center">
+              <h2 className="text-light">All Edits</h2>
+              </div>
                         <table className="table">
                             <thead>
                                 <tr>
@@ -173,7 +177,7 @@ function AddEdits() {
                                         <td>
                                             {editingId === edit.id ? (
                                                 <>
-                                                    <Button variant="primary" onClick={() => handleSaveEdit(edit.id)}>
+                                                    <Button variant="primary" onClick={() => handleSaveEdit(edit.id)} className="my-3">
                                                         Save
                                                     </Button>
                                                     <Button variant="danger" onClick={handleCancelEdit}>
@@ -182,10 +186,10 @@ function AddEdits() {
                                                 </>
                                             ) : (
                                                 <>
-                                                    <Button variant="primary" onClick={() => handleEdit(edit.id)}>
+                                                    <Button variant="primary" onClick={() => handleEdit(edit.id)} className="my-3">
                                                         <FontAwesomeIcon icon={faEdit} />
                                                     </Button>
-                                                    <Button variant="danger" onClick={() => handleDelete(edit.id)}>
+                                                    <Button variant="danger" onClick={() => handleDelete(edit.id)} >
                                                         <FontAwesomeIcon icon={faTrash} />
                                                     </Button>
                                                 </>
