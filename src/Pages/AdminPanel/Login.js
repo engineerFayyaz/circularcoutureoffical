@@ -62,7 +62,7 @@ const Login = () => {
             <span />
           </div>
           <div className="content__forgot-buttons">
-            <button>
+            {/* <button>
               <span>
                 <svg
                   className=""
@@ -90,7 +90,7 @@ const Login = () => {
               <span>
                 Log in with Facebook
               </span>
-            </button>
+            </button> */}
             <button>
               Forgot password?
             </button>

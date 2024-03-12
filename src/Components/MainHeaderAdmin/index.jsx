@@ -16,6 +16,10 @@ const MainHeaderAdmin = () =>{
 
      const handleSignout = () => {
       storeUserToLocalStorage(null);
+      setLoggedInUser(null); // Force re-render after signout
+      window.location.reload(); // Reload the window after signout
+
+
   };
 
     return (
