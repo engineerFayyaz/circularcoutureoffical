@@ -18,7 +18,7 @@ const AdminCategory = () => {
   }, []);
 
   const fetchCategories = () => {
-    fetch("https://localhost:7220/api/product-categories")
+    fetch("https://circularclientapi.azurewebsites.net/api/product-categories")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch categories");
@@ -46,7 +46,7 @@ const AdminCategory = () => {
       toast.error("Please enter a category type");
       return;
     }
-    fetch("https://localhost:7220/api/product-categories", {
+    fetch("https://circularclientapi.azurewebsites.net/api/product-categories", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -80,7 +80,7 @@ const AdminCategory = () => {
   };
   const handleUpdate = (categoryId) => {
     console.log("Updating category with ID:", categoryId);
-    fetch(`https://localhost:7220/api/product-categories/${categoryId}`, {
+    fetch(`https://circularclientapi.azurewebsites.net/api/product-categories/${categoryId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -107,7 +107,7 @@ const AdminCategory = () => {
   };
  
   const handleDelete = (categoryId) => {
-    fetch(`https://localhost:7220/api/product-categories/${categoryId}`, {
+    fetch(`https://circularclientapi.azurewebsites.net/api/product-categories/${categoryId}`, {
       method: "DELETE",
     })
       .then((response) => {

@@ -29,7 +29,7 @@ const Wishlist = () => {
   const fetchWishlistProducts = async (userId) => {
     try {
       const response = await fetch(
-        `https://localhost:7220/api/wishlist-products/user/${userId}`
+        `https://circularclientapi.azurewebsites.net/api/wishlist-products/user/${userId}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch wishlist products");
@@ -45,7 +45,7 @@ const Wishlist = () => {
     try {
       const promises = wishlistProducts.map(async (wishlistProduct) => {
         const response = await fetch(
-          `https://localhost:7220/api/products/${wishlistProduct.productId}`
+          `https://circularclientapi.azurewebsites.net/api/products/${wishlistProduct.productId}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch product details");

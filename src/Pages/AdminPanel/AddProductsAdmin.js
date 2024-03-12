@@ -61,7 +61,7 @@ const AddProductsAdmin = () => {
   const fetchCataGenId = async () => {
     try {
       const response = await fetch(
-        "https://localhost:7220/api/product-gen-categories"
+        "https://circularclientapi.azurewebsites.net/api/product-gen-categories"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch Category Gen");
@@ -76,7 +76,7 @@ const AddProductsAdmin = () => {
 
   const fetchEdits = async () => {
     try {
-      const response = await fetch("https://localhost:7220/api/product-edits");
+      const response = await fetch("https://circularclientapi.azurewebsites.net/api/product-edits");
       if (!response.ok) {
         throw new Error("Failed to fetch edits");
       }
@@ -91,7 +91,7 @@ const AddProductsAdmin = () => {
   const fetchCategories = async () => {
     try {
       const response = await fetch(
-        "https://localhost:7220/api/product-categories"
+        "https://circularclientapi.azurewebsites.net/api/product-categories"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch categories");
@@ -109,7 +109,7 @@ const AddProductsAdmin = () => {
   const fetchDesigners = async () => {
     try {
       const response = await fetch(
-        "https://localhost:7220/api/product-designers"
+        "https://circularclientapi.azurewebsites.net/api/product-designers"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch designers");
@@ -124,7 +124,7 @@ const AddProductsAdmin = () => {
 
   const fetchProductTypes = async () => {
     try {
-      const response = await fetch("https://localhost:7220/api/product-types");
+      const response = await fetch("https://circularclientapi.azurewebsites.net/api/product-types");
       if (!response.ok) {
         throw new Error("Failed to fetch product types");
       }
@@ -265,7 +265,7 @@ const AddProductsAdmin = () => {
       };
 
       // Send data to backend API...
-      const response = await fetch("https://localhost:7220/api/products", {
+      const response = await fetch("https://circularclientapi.azurewebsites.net/api/products", {
         method: "POST",
         body: JSON.stringify(requestData),
         headers: {

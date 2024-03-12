@@ -26627,7 +26627,9 @@ div.filter-bar select {
     text-align: center;
     padding: 15px 1em 25px 1em;
     z-index: 1050;
-    margin-top: 10px
+    margin-top: 19px;
+    margin-left: -15rem !important;
+    
 }
 
 .header-dropdown .divider {
@@ -26680,6 +26682,7 @@ div.filter-bar select {
     margin-top: 11px
 }
 
+
 .rental-bag-dropdown-btn {
     text-decoration: none
 }
@@ -26722,6 +26725,7 @@ div.filter-bar select {
     border: 1px solid #DEDEDE;
     border-radius: 0;
     margin-top: 11.51px;
+    margin-left: -20rem !important;
     padding: 15px 25px 32px
 }
 

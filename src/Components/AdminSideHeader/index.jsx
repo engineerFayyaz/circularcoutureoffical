@@ -148,9 +148,9 @@ const AdminSideHeader = () => {
                             User
                         </a>
                         <div className="dropdown-menu">
-                            <a className="dropdown-item" href="#tab2Id">
-                                User Overview
-                            </a>
+                            <Link className="dropdown-item" to="/AdminPanel/Registred-user">
+                                Registered User's
+                            </Link>
                             <a className="dropdown-item" href="/AdminPanel/login">
                                 Login
                             </a>

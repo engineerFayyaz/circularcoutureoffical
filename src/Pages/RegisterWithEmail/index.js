@@ -45,7 +45,7 @@ const RegisterWithEmail = () => {
                 id:1,
             };
 
-            const response = await axios.post('https://localhost:7220/api/users', dataWithIds);
+            const response = await axios.post('https://circularclientapi.azurewebsites.net/api/users', dataWithIds);
 
             console.log('Registration successful:', response.data);
             toast.success('Registration successful');
