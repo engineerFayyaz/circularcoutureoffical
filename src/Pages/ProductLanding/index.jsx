@@ -45,7 +45,7 @@ const ProductLanding = () => {
     }
 
     try {
-      const response = await fetch('https://localhost:7220/api/wishlist-products', {
+      const response = await fetch('https://circularclientapi.azurewebsites.net/api/wishlist-products', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -81,7 +81,7 @@ const ProductLanding = () => {
   useEffect(() => {
       const fetchData = async () => {
           try {
-              const response = await fetch(`https://localhost:7220/api/products/${productId}`);
+              const response = await fetch(`https://circularclientapi.azurewebsites.net/api/products/${productId}`);
               if (!response.ok) {
                   throw new Error('Failed to fetch data');
               }
@@ -210,7 +210,7 @@ const ProductLanding = () => {
             className="text-gray-400 mt-0"
             style={{ fontSize: "17px", lineHeight: "0px" }}
           >
-            Retail Price: {rrp}
+            Retail Price: AU$ {rrp}
           </p>
           <p
             className="pt-3 text-sm leading-5 text-gray-500 "
@@ -354,7 +354,7 @@ const ProductLanding = () => {
               <button className="MultiButton" tabindex="0" type="submit">
                 <span className="MultiButton-label">Rent Now</span>
               </button>
-
+              
               <button
                 className="MultiButton mt-3  MultiButton2"
                 tabindex="0"

@@ -22,7 +22,7 @@ function AddDesigner() {
   const fetchDesigners = async () => {
     try {
       const response = await axios.get(
-        "https://localhost:7220/api/product-designers"
+        "https://circularclientapi.azurewebsites.net/api/product-designers"
       );
       console.log("Response data:", response.data); // Log the response data
       const designersData = response.data.results || []; // Extract designers array from the results property
@@ -40,7 +40,7 @@ function AddDesigner() {
       if (editingDesignerId) {
         // If editingDesignerId is set, it means we are updating an existing designer
         response = await axios.put(
-          `https://localhost:7220/api/product-designers/${editingDesignerId}`,
+          `https://circularclientapi.azurewebsites.net/api/product-designers/${editingDesignerId}`,
           {
             name: name,
             detail: detail,
@@ -49,7 +49,7 @@ function AddDesigner() {
       } else {
         // Otherwise, we are adding a new designer
         response = await axios.post(
-          "https://localhost:7220/api/product-designers",
+          "https://circularclientapi.azurewebsites.net/api/product-designers",
           {
             name: name,
             detail: detail,
@@ -110,7 +110,7 @@ function AddDesigner() {
   const handleDelete = async (designerId) => {
     try {
       const response = await axios.delete(
-        `https://localhost:7220/api/product-designers/${designerId}`
+        `https://circularclientapi.azurewebsites.net/api/product-designers/${designerId}`
       );
   
       if (response.status === 200) {

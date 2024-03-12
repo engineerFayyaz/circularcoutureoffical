@@ -20,7 +20,7 @@ function ProductsType() {
 
   const fetchTypes = async () => {
     try {
-      const response = await axios.get("https://localhost:7220/api/product-types");
+      const response = await axios.get("https://circularclientapi.azurewebsites.net/api/product-types");
       console.log("Response data:", response.data);
       const typesData = response.data.results || [];
       setTypes(typesData);
@@ -36,13 +36,13 @@ function ProductsType() {
       let response;
       if (editingTypeId) {
         response = await axios.put(
-          `https://localhost:7220/api/product-types/${editingTypeId}`,
+          `https://circularclientapi.azurewebsites.net/api/product-types/${editingTypeId}`,
           {
             type: type,
           }
         );
       } else {
-        response = await axios.post("https://localhost:7220/api/product-types", {
+        response = await axios.post("https://circularclientapi.azurewebsites.net/api/product-types", {
           type: type,
         });
       }
@@ -75,7 +75,7 @@ function ProductsType() {
 
   const handleDelete = async (typeId) => {
     try {
-      const response = await axios.delete(`https://localhost:7220/api/product-types/${typeId}`);
+      const response = await axios.delete(`https://circularclientapi.azurewebsites.net/api/product-types/${typeId}`);
       if (response.status === 200) {
         setSuccessMessage("Product type deleted successfully!");
         fetchTypes();

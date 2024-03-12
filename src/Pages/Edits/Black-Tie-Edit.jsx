@@ -16,7 +16,7 @@ const BlackTie = () => {
         const fetchProducts = async () => {
             try {
                 if (editId) {
-                    const response = await fetch(`https://localhost:7220/api/products/edit/${editId}`);
+                    const response = await fetch(`https://circularclientapi.azurewebsites.net/api/products/edit/${editId}`);
                     if (!response.ok) {
                         throw new Error('Failed to fetch products');
                     }

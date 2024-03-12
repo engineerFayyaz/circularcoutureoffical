@@ -1,6 +1,11 @@
-import React from "react";
+import React,{useState} from "react";
 
 const SubscriptionForm = () => {
+  const [showForm, setShowForm] = useState(true);
+
+  const handleClose = () => {
+    setShowForm(false);
+  };
   return (
     <>
       <div

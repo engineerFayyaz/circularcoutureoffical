@@ -17,7 +17,7 @@ const Alemais = () => {
 
     useEffect(() => {
         // Fetch data from the API endpoint using the designerId
-        fetch(`https://localhost:7220/api/products/designer/${designerId}`)
+        fetch(`https://circularclientapi.azurewebsites.net/api/products/designer/${designerId}`)
             .then(response => response.json())
             .then(data => {
                 // Update the state with the fetched products
@@ -37,7 +37,7 @@ const Alemais = () => {
         }
     
         try {
-            const response = await fetch('https://localhost:7220/api/wishlist-products', {
+            const response = await fetch('https://circularclientapi.azurewebsites.net/api/wishlist-products', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -10,7 +10,7 @@ const GetEdits = () => {
   useEffect(() => {
     const fetchEdits = async () => {
       try {
-        const response = await fetch('https://localhost:7220/api/product-edits');
+        const response = await fetch('https://circularclientapi.azurewebsites.net/api/product-edits');
         if (!response.ok) {
           throw new Error('Failed to fetch edits');
         }

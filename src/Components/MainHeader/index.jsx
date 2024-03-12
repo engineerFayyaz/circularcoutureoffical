@@ -48,6 +48,7 @@ const MainHeader = () => {
                   style={{ fontSize: "11px !important", cursor: "pointer" }}
                   data-toggle="modal"
                   data-target="#signin-modal"
+                  className="text-dark"
                 >
                   <b>SIGN IN/ REGISTER</b>
                 </Link>

@@ -11,7 +11,7 @@ const AdminDeleteProducts = () => {
   const handleDelete = async () => {
     try {
       const response = await fetch(
-        `https://localhost:7220/api/products/${productId}`,
+        `https://circularclientapi.azurewebsites.net/api/products/${productId}`,
         {
           method: "DELETE",
           headers: {
