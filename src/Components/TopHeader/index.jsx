@@ -130,19 +130,19 @@ const TopHeader = () => {
         {/* Conditional rendering based on authentication state */}
         <div className="container-fluid main-mobile-header-section">
           <div className="row h-100 align-items-center m-sm-0">
-            <div className="col-2 col-lg-2 col-md-2">
+            <div className="col-3 col-lg-3 col-md-3">
               <Link
                 to="#"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvas"
               >
-                <FontAwesomeIcon icon={faBars} className="mb-1" />
+                <FontAwesomeIcon icon={faBars} className="mb-1 text-dark" />
               </Link>
               <span style={{ marginLeft: 10 }}>
                 <turbo-frame id="account_credit_balance_header" />
               </span>
             </div>
-            <div className="col-7 col-lg-7 col-md-7 text-sm-start text-center">
+            <div className="col-6 col-lg-6 col-md-6 text-sm-start text-center px-0">
               <Link to="/">
                 <img
                   alt="CIRCULAR COUTURE Logo"
@@ -157,7 +157,7 @@ const TopHeader = () => {
               <div >
                 <FontAwesomeIcon
                   icon={faSearch}
-                  className="search-image"
+                  className="search-image text-dark"
                   data-bs-toggle="collapse"
                   data-bs-target="#demo"
                 />
@@ -181,7 +181,7 @@ const TopHeader = () => {
             padding: "0px",
             margin: "0px ",
             width: "100%",
-            top: "9rem",
+            top: "8rem",
           }}>
                   <input
                     type="text"

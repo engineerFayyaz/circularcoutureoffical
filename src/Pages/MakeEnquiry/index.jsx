@@ -2,7 +2,7 @@ import React from "react";
 import "../../css/footer-pages.css";
 import TopHeader from "../../Components/TopHeader";
 import Footer from "../../Components/Footer";
-
+import { Link } from "react-router-dom";
 
 const MakeEnquiry = () => {
   return (
@@ -25,9 +25,9 @@ const MakeEnquiry = () => {
                     itemScope=""
                     itemType="http://schema.org/ListItem"
                   >
-                    <a href="index.html" itemProp="item">
+                    <Link to={"/"} itemProp="item">
                       <span itemProp="name">Home</span>
-                    </a>
+                    </Link>
                     <meta itemProp="position" content={1} />
                   </li>
                   <li
@@ -45,30 +45,30 @@ const MakeEnquiry = () => {
                 <p>Please choose from one of the options below:</p>
                 <ul>
                   <li>
-                    <a href="return-request.html">
+                    <Link to={"#"}>
                       Return for an issue with fit or suitability
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="return-request.html">
+                    <Link to={"#"}>
                       Return for items that have been delivered to you but could not
                       be worn due to a snap COVID-19 lockdown
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="#enquiry">
+                    <Link to={"#enquiry"}>
                       Cancellations due to events cancelled/postponed because of
                       COVID-19 lockdowns or restrictions
-                    </a>{" "}
+                    </Link>{" "}
                     (use the form below)
                   </li>
                   <li>
-                    <a href="#enquiry">All other enquiries</a> (use the form below)
+                    <Link to={"#"}>All other enquiries</Link> (use the form below)
                   </li>
                 </ul>
               </div>
               <div className="regular-content">
-                <a name="enquiry" />
+                <Link  name="enquiry" />
                 <h2>Product or Order Enquiry</h2>
                 <p>
                   Got an enquiry about an existing order, or a new order you're
@@ -94,7 +94,7 @@ const MakeEnquiry = () => {
               <br />
               <p className="p-small regular-text">
                 This page can also be found via{" "}
-                <a href="https://bit.ly/atdhelp">bit.ly/atdhelp</a>.
+                <Link to={"#"}>bit.ly/atdhelp</Link>.
               </p>
             </div>
           </div>

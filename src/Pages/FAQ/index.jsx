@@ -11,11 +11,13 @@ const FAQ = () =>{
   <div className="fixed-header contact-navbar">
     <div className="navbar p-4 px-5 d-flex align-items-center justify-content-between">
       <div className="logo">
+        <Link to={'/'} >
         <img
           alt=""
           src="images/CC TM Logo.png"
           width="350"
         />
+        </Link>
       </div>
       <div className="link">
         <Link to="#">
@@ -35,7 +37,7 @@ const FAQ = () =>{
       </div>
     </div>
   </div>
-  <div className="container">
+  <div className="container mt-5">
     <section className="section knowledge-base">
       <h2 className="visibility-hidden">
         Categories

@@ -23,7 +23,7 @@ const ListHeader = () =>{
             width={320}
             className="header-logo"
             alt="CIRCULAR logo"
-            src="/images/CC TM logo.png"
+            src="/images/CC TM Logo.png"
           />
         </a>{" "}
       </div>

@@ -1,48 +1,4 @@
-.insta-media-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-  }
-  
-  .insta-media-item {
-    width: 100%;
-  }
-  
-  .insta-media {
-    width: 100%;
-    height: auto;
-  }
-
-  .insta-media {
-    width: 200px; /* Set the fixed size for both images and videos */
-    height: 200px;
-    object-fit: cover; /* Maintain aspect ratio */
-    cursor: pointer;
-  }
-  
-  .thumb-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    color: white;
-    font-size: 24px;
-  }
-  
-  .insta-media-item {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .insta-media-item:hover .thumb-icon {
-    opacity: 1;
-  }
-  
-  /* .zoomed-image-overlay {
+/* .zoomed-image-overlay {
     position: fixed;
     top: 78PX;
     left: 0;
@@ -54,25 +10,6 @@
     align-items: center;
     z-index: 1000;
   } */
-  
-  .zoomed-image-overlay {
-    position: fixed;
-    top: 0;
-    z-index: 1500;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    /* padding: 3rem; */
-    /* overflow: scroll; */
-}
-.zoomed-image-container {
-  max-width: 40%;
-  max-height: 100%;
-}
   
   /* .zoomed-image-container {
     max-width: 90%;
@@ -86,22 +23,5 @@
     max-height: 100%;
     object-fit: contain;
   } */
-  .zoomed-image {
-    width: 100%;
-    height: 70%;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-  .close-btn {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
   
   

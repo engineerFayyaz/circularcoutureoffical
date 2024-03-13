@@ -37,7 +37,7 @@ const Footer = () => {
       <footer className="footer">
 
         <div className="container-fluid footer__wrapper footer__main">
-          <div className="row footer__menus p-4 px-5">
+          <div className="row footer__menus p-4 px-5 ">
             <div className="col-12 footer__menu">
               <div className="footer__menu-title">CUSTOMER SERVICE</div>
               <ul className="footer__menu-list">
