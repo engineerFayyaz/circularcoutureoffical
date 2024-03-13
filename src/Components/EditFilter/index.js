@@ -15,7 +15,7 @@ import DesignerApi from "../DesignerApi";
 const EditFilter =()=>{
     return(
         <>
-        <div className="col-md-5 col-lg-4 d-none d-md-block">
+        <div className="col-md-5 col-lg-4 d-none d-md-block p-4 ">
                 <div class="filter-number-results-v2">
                   <p
                     class="text text-uppercase"

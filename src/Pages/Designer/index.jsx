@@ -38,7 +38,7 @@ const Designer = () => {
     <>
       <TopHeader />
 
-      <div className="main-container pt-0 -with-cta-banner">
+      <div className="main-container pt-3 -with-cta-banner">
         <div
           className="designers-section"
           data-controller="designers-letter-bar"
