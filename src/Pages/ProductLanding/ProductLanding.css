@@ -13,50 +13,6 @@
     }
 }
 
-.image-gallery-slide-wrapper.image-gallery-thumbnails-bottom {
-    height: 580px;
-
-    .image-gallery-swipe,
-    .image-gallery-slides,
-    .image-gallery-slide {
-        height: 100%;
-    }
-
-}
-
-.image-gallery-slide-wrapper .image-gallery-slide img {
-    height: 100% !important;
-    /* width: 100%; */
-    /* object-fit: fill; */
-}
-
-.image-gallery-content .image-gallery-slide .image-gallery-image {
-    max-height: 100%;
-}
-
-img.image-gallery-thumbnail-image {
-
-    height: 100px;
-    /* object-fit: fill; */
-    width: 100%;
-    opacity: 0.4;
-    transition: all .3s ease-in-out;
-}
-
-img.image-gallery-thumbnail-image:hover {
-    opacity: 1;
-}
-
-img.image-gallery-thumbnail-image:focus-visible {
-    opacity: 1;
-}
-
-.image-gallery-left-nav .image-gallery-svg,
-.image-gallery-right-nav .image-gallery-svg {
-    height: 50px;
-    width: 28px;
-}
-
 .product-landing-detail-section{
     margin-top: 10rem;
 }

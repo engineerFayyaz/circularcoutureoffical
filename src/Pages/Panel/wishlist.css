@@ -1,134 +1,133 @@
 /* Add responsive styles for Wishlist component */
 .main-container.-with-cta-banner {
-    padding-bottom: 100px; /* Adjust as needed */
-  }
-  
-  .dashboard-layout.-wishlist {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  
+  padding-bottom: 100px; /* Adjust as needed */
+}
+
+.dashboard-layout.-wishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.second-section.-responsive {
+  padding: 0 20px; /* Adjust padding for mobile devices */
+}
+
+.dashboard-header {
+  margin-bottom: 20px;
+}
+
+.item-card-container {
+  margin-bottom: 20px;
+}
+
+.item-card.-wishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.item-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-container {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #666; /* Dark gray text */
+}
+
+.item-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-size {
+  margin-bottom: 5px;
+}
+
+.separator {
+  width: 50px; /* Adjust width as needed */
+  height: 2px;
+  background-color: #ccc; /* Light gray color */
+  margin: 10px auto;
+}
+
+.item-price {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-rrp {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
   .second-section.-responsive {
-    padding: 0 20px; /* Adjust padding for mobile devices */
+    padding: 0;
   }
-  
+
   .dashboard-header {
-    margin-bottom: 20px;
-  }
-  
-  .item-card-container {
-    margin-bottom: 20px;
-  }
-  
-  .item-card.-wishlist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .item-link {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .image-container {
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    overflow: hidden;
     margin-bottom: 10px;
   }
-  
-  .item-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+  .item-card.-wishlist {
+    padding: 15px;
   }
-  
+
+  .image-container {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+
   .placeholder-image {
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #666; /* Dark gray text */
+    height: 150px; /* Adjust height for smaller screens */
   }
-  
+}
+
+/* Additional styles for smaller mobile devices */
+@media screen and (max-width: 480px) {
+  .item-card.-wishlist {
+    padding: 10px;
+  }
+
   .item-name {
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 16px; /* Decrease font size for smaller screens */
   }
-  
+
   .item-size {
-    margin-bottom: 5px;
+    font-size: 14px; /* Decrease font size for smaller screens */
   }
-  
-  .separator {
-    width: 50px; /* Adjust width as needed */
-    height: 2px;
-    background-color: #ccc; /* Light gray color */
-    margin: 10px auto;
-  }
-  
+
   .item-price {
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 18px; /* Decrease font size for smaller screens */
   }
-  
+
   .item-rrp {
-    text-transform: uppercase;
-    margin-bottom: 0;
+    font-size: 14px; /* Decrease font size for smaller screens */
   }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-    .second-section.-responsive {
-      padding: 0;
-    }
-  
-    .dashboard-header {
-      margin-bottom: 10px;
-    }
-  
-    .item-card.-wishlist {
-      padding: 15px;
-    }
-  
-    .image-container {
-      height: 150px; /* Adjust height for smaller screens */
-    }
-  
-    .placeholder-image {
-      height: 150px; /* Adjust height for smaller screens */
-    }
+
+  .separator {
+    width: 40px; /* Adjust width for smaller screens */
   }
-  
-  /* Additional styles for smaller mobile devices */
-  @media screen and (max-width: 480px) {
-    .item-card.-wishlist {
-      padding: 10px;
-    }
-  
-    .item-name {
-      font-size: 16px; /* Decrease font size for smaller screens */
-    }
-  
-    .item-size {
-      font-size: 14px; /* Decrease font size for smaller screens */
-    }
-  
-    .item-price {
-      font-size: 18px; /* Decrease font size for smaller screens */
-    }
-  
-    .item-rrp {
-      font-size: 14px; /* Decrease font size for smaller screens */
-    }
-  
-    .separator {
-      width: 40px; /* Adjust width for smaller screens */
-    }
-  }
-  
+}

@@ -23,7 +23,7 @@ const PrrivacyAndPolicy =()=>{
                                         itemScope=""
                                         itemType="http://schema.org/ListItem"
                                     >
-                                        <a href="index.html" itemProp="item">
+                                        <a href="/" itemProp="item">
                                             <span itemProp="name">Home</span>
                                         </a>
                                         <meta itemProp="position" content={1} />
