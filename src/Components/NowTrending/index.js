@@ -150,7 +150,8 @@ const NowTrending = () => {
                         {products.map((product, index) => (
                             <div
                                 key={index}
-                                className="product-item"
+                                className="product-item "
+                              
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                             >
@@ -162,14 +163,14 @@ const NowTrending = () => {
                                 >
                                     <img
                                         src={product.productImages[0].url}
-                                        className="img-fluid main-image"
+                                        className="img-fluid main-image w-100 object-fit-fill"
                                         alt={`Product ${index + 1}`}
                                         loading="lazy"
                                     />
                                     {hoveredIndex === index && (
                                         <img
                                             src={product.productImages[1].url}
-                                            className="img-fluid second-image"
+                                            className="img-fluid second-image w-100 object-fit-fill"
                                             alt={`Second Product ${index + 1}`}
                                             loading="lazy"
                                         />

@@ -97,15 +97,15 @@ const AdminMainPage = () => {
             style={{ backgroundColor: "black", color: "white" }}
           >
             <AdminSideHeader />
-            <div className="col-lg-5 d-flex justify-content-center p-4">
+            <div className="col-lg-5 d-flex justify-content-center p-5">
               {/* Canvas for Product Chart */}
               <canvas ref={productChartRef}></canvas>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 p-5">
               {/* Canvas for Revenue Chart */}
               <canvas ref={revenueChartRef}></canvas>
             </div>
-            <div className="col-lg-3"></div>
+            {/* <div className="col-lg-3"></div> */}
           </div>
         </div>
       </div>

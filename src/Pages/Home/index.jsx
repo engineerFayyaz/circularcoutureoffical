@@ -88,27 +88,29 @@ const Home = () => {
                   </Link>
                 </div>
               </div>
-              <div className="row d-flex justify-content-between gap-4 mt-3">
-                <div className="col px-0">
+              <div className="row d-flex justify-content-between mt-3">
+                <div className="col-md-6 px-0" style={{height:"380px"}}>
                   <Link to="#">
                     <img
                       src="images/background-images/collage3.png"
                       alt=""
-                      
-                      
-                      className="w-100 h-lg-70 h-80 h-md-70 object-fit-fill"
+                      style={{
+                        height:"100%"
+                      }}
+                      className="w-100 h-lg-60 h-60 h-md-60 object-fit-fill"
                     />
                   </Link>
                 </div>
-                <div className="col px-0">
+                <div className="col-md-6 px-0" style={{height:"380px"}}>
                   <Link to="#">
                     <img
                       src="images/background-images/collage2.png"
                       alt=""
-                     
-                      
                       loading="lazy"
-                      className="w-100 h-lg-70 h-80 h-md-70 object-fit-fill"
+                      className="w-100 h-lg-60  h-md-60 object-fit-fill"
+                      style={{
+                        height:"100%"
+                      }}
                     />
                   </Link>
                 </div>
@@ -171,9 +173,9 @@ const Home = () => {
                 <div className="follow-us">
                   <button className="bg-light py-2 px-5">Follow US</button>
                   <div className="icons mt-3">
-                  <FontAwesomeIcon icon={faFacebook} className={"ms-2"}/>
-                  <FontAwesomeIcon icon={faInstagram} className={"ms-2"}/>
-                  <FontAwesomeIcon icon={faTwitter} className={"ms-2"}/>
+                  <FontAwesomeIcon icon={faFacebook} className={"ms-2 icon-social"}/>
+                  <FontAwesomeIcon icon={faInstagram} className={"ms-2 icon-social"}/>
+                  <FontAwesomeIcon icon={faTwitter} className={"ms-2 icon-social"}/>
 
                   </div>
                 </div>

@@ -116,8 +116,10 @@ function ProductsType() {
               {error && <p style={{ color: "red" }}>{error}</p>}
               {successMessage && <p style={{ color: "green" }}>{successMessage}</p>}
             </Form>
-            <div>
-              <h2>All Product Types</h2>
+            <div className="mt-4">
+              <div className="text-center">
+              <h2 className="text-light">All Product Types</h2>
+              </div>
               <Table striped bordered hover>
                 <thead>
                   <tr>
@@ -144,13 +146,13 @@ function ProductsType() {
                       <td>
                         {editableRows[type.id] ? (
                           <>
-                            <Button onClick={() => handleSave()}>Save</Button>
-                            <Button onClick={() => handleCancel()}>Cancel</Button>
+                            <Button onClick={() => handleSave()} variant="success">Save</Button>
+                            <Button onClick={() => handleCancel()} variant="secondary" className="ml-3">Cancel</Button>
                           </>
                         ) : (
                           <>
-                            <Button onClick={() => handleEdit(type.id)}>Edit</Button>
-                            <Button onClick={() => handleDelete(type.id)}>Delete</Button>
+                            <Button onClick={() => handleEdit(type.id)} variant="success" className="ml-3">Edit</Button>
+                            <Button onClick={() => handleDelete(type.id)} variant="danger" className="ml-3">Delete</Button>
                           </>
                         )}
                       </td>

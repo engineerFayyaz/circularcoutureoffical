@@ -309,7 +309,7 @@ const AddProductsAdmin = () => {
             style={{ backgroundColor: "black", color: "white" }}
           >
             <AdminSideHeader />
-            <Col lg={5} className="mt-4">
+            <Col lg={10} className="mt-4">
               <Row className="order-page-admin">
                 <Form onSubmit={handleSubmit}>
                   <Form.Group className="mb-3 mt-3 Category-admin">
