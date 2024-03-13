@@ -77,12 +77,13 @@ const NowTrending = () => {
         return (
             <div
                 className={className}
-                style={{ ...style, left: '20px', zIndex: '3', cursor: 'pointer', position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}
+                style={{ ...style, left: '20px', zIndex: '3', cursor: 'pointer', position: 'absolute', top: '30%', transform: 'translateY(-50%)' }}
                 onClick={onClick}
             >
                 <img
                     alt="Previous Arrow"
                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-left-218bf512919cbc55739cb2f87ee19df1.svg"
+                    style={{width:"15px"}}
                 />
             </div>
         );
@@ -93,12 +94,13 @@ const NowTrending = () => {
         return (
             <div
                 className={className}
-                style={{ ...style, right: '20px', zIndex: '3', cursor: 'pointer', position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}
+                style={{ ...style, right: '20px', zIndex: '3', cursor: 'pointer', position: 'absolute', top: '25%', transform: 'translateY(-50%)' }}
                 onClick={onClick}
             >
                 <img
                     alt="Next Arrow"
                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-right-4d9dc1896a4765e272ce510a3e1d363f.svg"
+                    style={{width:"15px"}}
                 />
             </div>
         );
