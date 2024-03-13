@@ -100,7 +100,7 @@ const NowTrending = () => {
                 <img
                     alt="Next Arrow"
                     src="https://res.cloudinary.com/dcaptnlz3/image/asset/chevron-right-4d9dc1896a4765e272ce510a3e1d363f.svg"
-                    style={{width:"15px"}}
+                    style={{width:"40px"}}
                 />
             </div>
         );
