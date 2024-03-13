@@ -13,7 +13,6 @@ const NowTrending = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [wishlist, setWishlist] = useState([]);
     const [user, setUser] = useState(null);
-    
 
     useEffect(() => {
         fetchProducts();
@@ -109,30 +108,29 @@ const NowTrending = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 4, // Show 4 products per slide
-        slidesToScroll: 1, // Scroll 1 product at a time
+        slidesToShow: 4,
+        slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
-        // arrows: true,
         prevArrow: <CustomPrevArrow />,
         nextArrow: <CustomNextArrow />,
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2, // Show 2 products per slide on smaller screens
+                    slidesToShow: 2,
                 },
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3, // Show 3 products per slide on medium screens
+                    slidesToShow: 3,
                 },
             },
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 4, // Show 4 products per slide on larger screens
+                    slidesToShow: 4,
                 },
             },
         ],
