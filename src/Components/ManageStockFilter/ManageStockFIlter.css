@@ -1,0 +1,47 @@
+/* ManageStockFilter.css */
+
+/* Custom styles for the modal dialog */
+.custom-modal-dialog {
+    max-width: 45%; /* Set the maximum width of the modal */
+    margin: 1.75rem auto; /* Center the modal horizontally */
+}
+
+/* Custom styles for the modal header */
+.custom-modal-header {
+    background-color: #f8f9fa; /* Set background color */
+    border-bottom: none; /* Remove bottom border */
+    padding: 20px; /* Add padding */
+}
+
+/* Custom styles for the modal title */
+.custom-modal-title {
+    font-size: 20px; /* Set font size */
+}
+
+/* Custom styles for the modal body */
+.custom-modal-body {
+    padding: 20px; /* Add padding */
+}
+
+/* Custom styles for the modal footer */
+.custom-modal-footer {
+    background-color: #f8f9fa; /* Set background color */
+    border-top: none; /* Remove top border */
+    padding: 20px; /* Add padding */
+}
+
+/* Custom styles for the close button */
+.custom-close {
+    font-size: 24px; /* Set font size */
+    color: #000; /* Set text color */
+}
+.modal-backdrop {
+    background-color: transparent;
+}
+
+.fade.modal.show {
+    display: block;
+    padding-right: 169px;
+    padding-left: 354px;
+    /* padding-top: 80px; */
+}

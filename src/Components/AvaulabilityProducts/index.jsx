@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Calendar from "react-calendar";
 import 'react-calendar/dist/Calendar.css';
 
-const DateCalendar = () =>{
+const AvaulabilityProducts = () =>{
 
     const [date, changeDate] = useState(new Date());
 
@@ -17,4 +17,4 @@ const DateCalendar = () =>{
        </div>
     );
 }
-export default DateCalendar;
+export default AvaulabilityProducts;

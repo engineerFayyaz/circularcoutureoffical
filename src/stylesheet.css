@@ -8687,7 +8687,7 @@ div.filter-bar select {
 .colours-wrapper-v2 .checkbox .checkbox-label {
     display: flex;
     width: 100%;
-    border: 1px solid #E6E6E6;
+    /* border: 1px solid #E6E6E6; */
     padding: 16px;
     gap: 8px;
     margin: 0;
@@ -8706,7 +8706,7 @@ div.filter-bar select {
 .colours-wrapper-v2 .checkbox .checkbox-label .--fa-border {
     height: 16px;
     width: 16px;
-    border: 1px solid #E6E6E6;
+    /* border: 1px solid #E6E6E6; */
     border-radius: 50%
 }
 
