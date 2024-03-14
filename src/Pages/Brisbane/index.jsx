@@ -95,7 +95,7 @@ const Brisbane = () => {
                     </div>
                     {/* plp results*/}
                     <div className="row no-gutters">
-                      <EditFilter className="p-3" />
+                      <EditFilter/>
 
 
                         <div className="col-sm-12 col-md-7 col-lg-8">

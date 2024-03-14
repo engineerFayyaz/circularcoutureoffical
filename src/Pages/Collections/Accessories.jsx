@@ -114,18 +114,18 @@ const Accessories = () => {
                     id="33216"
                   >
                     <div
-                      className="row d-flex flex-row position-relative wishlist-heart-33216"
+                      className="row d-flex flex-row position-relative wishlist-heart-33216 justify-content-between"
                       data-controller="wishlisting"
                       data-target="wishlisting.heartMainContainer"
                     >
                       {products.map(product => (
-                        <div key={product.id} className="col-md-3 mb-4">
+                        <div key={product.id} className="col-5 col-lg-3 col-md-3 mb-4">
                           <Link to={`/ProductLanding/${product.id}/${encodeURIComponent(product.name)}`} className="card-link">
                             <div className="">
-                              {product.productImages.length > 0 && <img src={product.productImages[0].url} className="card-img-top" alt={product.name} width={100} height={250} style={{objectFit:"contain"}}/>}
+                              {product.productImages.length > 0 && <img src={product.productImages[0].url} className="card-img-top" alt={product.name.length > 20 ? `${product.name.substring(0, 20)}...` : product.name} width={100} height={250} style={{objectFit:"contain"}}/>}
                   
                               <div className="product-card__info p-2">
-                                <p className="brand mb-1">{product.name}</p>
+                                <p className="brand mb-1">{product.name.length > 20 ? `${product.name.substring(0, 20)}...` : product.name}</p>
                                 <p className="product-card__brand">Brand: <b style={{ fontSize: "11px !important" }}>{product.brand}</b></p>
                                 <p className="break my-2" />
                                 <p className="start-price mb-1">Sell Price: {product.sellPrice}</p>

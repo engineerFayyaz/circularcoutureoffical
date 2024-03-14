@@ -316,7 +316,8 @@ html {
 @media only screen and (max-width:576px) {
     .container {
         padding-left: 20px;
-        padding-right: 20px
+        padding-right: 20px;
+        margin-top: 3rem !important;
     }
     .page__content{
         margin-top: 5rem !important;
