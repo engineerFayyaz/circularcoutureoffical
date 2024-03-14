@@ -26,7 +26,7 @@ const Alemais = () => {
             .catch(error => {
                 console.error("Error fetching data:", error);
             });
-            setUser(getUserFromLocalStorage());
+        setUser(getUserFromLocalStorage());
     }, [designerId]); // Add designerId as a dependency to re-fetch data when it changes
 
     // Function to handle adding/removing products from wishlist
@@ -35,7 +35,7 @@ const Alemais = () => {
             toast.error('Please login first');
             return;
         }
-    
+
         try {
             const response = await fetch('https://circularclientapi.azurewebsites.net/api/wishlist-products', {
                 method: 'POST',
@@ -49,7 +49,7 @@ const Alemais = () => {
                     createdDate: new Date().toISOString()
                 })
             });
-    
+
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message || 'Failed to add product to wishlist');
@@ -82,7 +82,7 @@ const Alemais = () => {
                                 }}
                             >
                                 <div
-                                  className="col-12 col-md-12 col-lg-12 col-xl-12 mb-4 mb-xl-3 item-container"
+                                    className="col-12 col-md-12 col-lg-12 col-xl-12 mb-4 mb-xl-3 item-container"
                                     data-app-search--listing-filters-target="item"
                                 >
                                     <div
@@ -95,50 +95,50 @@ const Alemais = () => {
                                             data-controller="wishlisting"
                                             data-target="wishlisting.heartMainContainer"
                                         >
-                                             {products.map(product => (
-                        <div key={product.id} className="col-md-3 mb-4">
-                          <Link to={`/ProductLanding/${product.id}/${encodeURIComponent(product.name)}`} className="card-link">
-                            <div className="">
-                              {product.productImages.length > 0 && <img src={product.productImages[0].url} className="card-img-top" alt={product.name} width={100} height={250} style={{ objectFit: "contain" }} />}
+                                            {products.map(product => (
+                                                <div key={product.id} className="col-md-3 mb-4">
+                                                    <Link to={`/ProductLanding/${product.id}/${encodeURIComponent(product.name)}`} className="card-link">
+                                                        <div className="">
+                                                            {product.productImages.length > 0 && <img src={product.productImages[0].url} className="card-img-top" alt={product.name} width={100} height={250} style={{ objectFit: "contain" }} />}
 
-                              <div className="product-card__info p-2">
-                                <p className="brand mb-1">{product.name}</p>
-                                <p className="product-card__brand">Brand: <b style={{ fontSize: "11px !important" }}>{product.brand}</b></p>
-                                <p className="break my-2" />
-                                <p className="start-price mb-1">Sell Price: {product.sellPrice}</p>
-                                <p className="retail-price mb-1 pb-3"><b>R-Price (4 days):{product.rentPrice4Days}</b></p>
-                              </div>
-                            </div>
+                                                            <div className="product-card__info p-2">
+                                                                <p className="brand mb-1">{product.name}</p>
+                                                                <p className="product-card__brand">Brand: <b style={{ fontSize: "11px !important" }}>{product.brand}</b></p>
+                                                                <p className="break my-2" />
+                                                                <p className="start-price mb-1">Sell Price: {product.sellPrice}</p>
+                                                                <p className="retail-price mb-1 pb-3"><b>R-Price (4 days):{product.rentPrice4Days}</b></p>
+                                                            </div>
+                                                        </div>
 
-                          </Link>
-                          <button
-                            className="wishlist-icon"
-                            onClick={() => toggleWishlist(product.id)}
-                            style={{
-                              position: "absolute",
-                              top: "10px",
-                              right: "10px",
-                              zIndex: "3",
-                              cursor: "pointer",
-                              background: "transparent",
-                              border: "none",
-                            }}
-                          >
-                            {wishlist.includes(product.id) ? (
-                              <img
-                                alt="An icon of a heart"
-                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/shaded-heart-72ef5d386ff6a38664ff1bb60bfdddff.svg"
-                                style={{ fill: 'red' }}
-                              />
-                            ) : (
-                              <img
-                                alt="An icon of a heart"
-                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
-                              />
-                            )}
-                          </button>
-                        </div>
-                      ))}
+                                                    </Link>
+                                                    <button
+                                                        className="wishlist-icon"
+                                                        onClick={() => toggleWishlist(product.id)}
+                                                        style={{
+                                                            position: "absolute",
+                                                            top: "10px",
+                                                            right: "10px",
+                                                            zIndex: "3",
+                                                            cursor: "pointer",
+                                                            background: "transparent",
+                                                            border: "none",
+                                                        }}
+                                                    >
+                                                        {wishlist.includes(product.id) ? (
+                                                            <img
+                                                                alt="An icon of a heart"
+                                                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/shaded-heart-72ef5d386ff6a38664ff1bb60bfdddff.svg"
+                                                                style={{ fill: 'red' }}
+                                                            />
+                                                        ) : (
+                                                            <img
+                                                                alt="An icon of a heart"
+                                                                src="https://res.cloudinary.com/dcaptnlz3/image/asset/heart-7dd5f36c98ccda2c8242b92c95914d6e.svg"
+                                                            />
+                                                        )}
+                                                    </button>
+                                                </div>
+                                            ))}
                                         </div>
                                     </div>
                                 </div>

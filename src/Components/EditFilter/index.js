@@ -11,6 +11,8 @@ import { faCircle, faCircleCheck, faInfoCircle, faToggleOff } from "@fortawesome
 import PopularDesignersCarousel from "../../Components/PopularDesignersCarousel";
 import Designer from "../../Pages/Designer";
 import DesignerApi from "../DesignerApi";
+import CatagoryApi from "../CatogeryApi/Index";
+import PriceRange from "../PriceRangeApi/Index";
 
 const EditFilter =()=>{
     return(
@@ -1149,193 +1151,35 @@ const EditFilter =()=>{
                         {
                           title: (
                             <>
-                              <input type="checkbox" />
-                              <span className="ml-2">Dresses</span>
+                              <div className="card designers-filter ">
+                               <CatagoryApi className="p-0 mt-0" />
+                              </div>
                             </>
                           ),
                           itemId: "/management/dresses",
                         },
-                        {
-                          title: (
-                            <>
-                              <input type="checkbox" />
-                              <span className="ml-2">Tops</span>
-                            </>
-                          ),
-                          itemId: "/management/Tops",
-                        },
-                        {
-                          title: (
-                            <>
-                              <input type="checkbox" />
-                              <span className="ml-2">Bottoms</span>
-                            </>
-                          ),
-                          itemId: "/management/bottoms",
-                        },
-                        {
-                          title: (
-                            <>
-                              <input type="checkbox" />
-                              <span className="ml-2">OuterWear</span>
-                            </>
-                          ),
-                          itemId: "/management/outerwear",
-                        },
-                        {
-                          title: (
-                            <>
-                              <input type="checkbox" />
-                              <span className="ml-2">Accessories</span>
-                            </>
-                          ),
-                          itemId: "/management/accessories",
-                        },
-                        {
-                          title: (
-                            <>
-                              <input type="checkbox" />
-                              <span className="ml-2">Bags</span>
-                            </>
-                          ),
-                          itemId: "/management/bags",
-                        },
-                        {
-                          title: (
-                            <>
-                              <input type="checkbox" />
-                              <span className="ml-2">Shoes</span>
-                            </>
-                          ),
-                          itemId: "/management/shoes",
-                        },
-                        {
-                          title: (
-                            <>
-                              <input type="checkbox" />
-                              <span className="ml-2">Jumpsuits</span>
-                            </>
-                          ),
-                          itemId: "/management/jumpsuits",
-                        },
+                        
                       ],
                     },
-                    {
-                      title: "Rental Price (1)",
-                      itemId: "/management/rentalprice",
 
+                    {
+                      title: "PriceRange",
+                      itemId: "/priceRange",
                       subNav: [
                         {
                           title: (
                             <>
-                              <div
-                                className="price-slider"
-                                data-app-search--rental-price-filters-target="priceSliderWrapper"
-                              >
-                                <div className="price-slider-div mt-2 mt-md-auto"></div>
-                                <div className="nouislider px-2">
-                                  <div
-                                    className="rounded-slider noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"
-                                    data-app-search--rental-price-filters-target="rentalPriceSlider"
-                                    id="js-slider"
-                                  >
-                                    <div className="noUi-base">
-                                      <div className="noUi-connects">
-                                        <div
-                                          className="noUi-connect"
-                                          style={{
-                                            transform:
-                                              "translate(0.225989%, 0px) scale(0.99774, 1)",
-                                          }}
-                                        />
-                                      </div>
-                                      <div
-                                        className="noUi-origin"
-                                        style={{
-                                          transform: "translate(-99.774%, 0px)",
-                                          zIndex: "5",
-                                        }}
-                                      >
-                                        <div
-                                          aria-orientation="horizontal"
-                                          aria-valuemax="900.0"
-                                          aria-valuemin="15.0"
-                                          aria-valuenow="17.0"
-                                          aria-valuetext="17.00"
-                                          className="noUi-handle noUi-handle-lower"
-                                          data-handle="0"
-                                          role="slider"
-                                          tabIndex="0"
-                                        >
-                                          <div className="noUi-touch-area" />
-                                          <div className="noUi-tooltip">
-                                            £ 17
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div
-                                        className="noUi-origin"
-                                        style={{
-                                          transform: "translate(0%, 0px)",
-                                          zIndex: "4",
-                                        }}
-                                      >
-                                        <div
-                                          aria-orientation="horizontal"
-                                          aria-valuemax="900.0"
-                                          aria-valuemin="17.0"
-                                          aria-valuenow="900.0"
-                                          aria-valuetext="900.00"
-                                          className="noUi-handle noUi-handle-upper"
-                                          data-handle="1"
-                                          role="slider"
-                                          tabIndex="0"
-                                        >
-                                          <div className="noUi-touch-area" />
-                                          <div className="noUi-tooltip">
-                                            £ 900
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="mt-5">
-                                  <div className="row">
-                                    <div className="col-6">
-                                      <div className="component input icon -pounds">
-                                        <input
-                                          className="component input"
-                                          data-action="change->app-search--rental-price-filters#setSliderValue"
-                                          data-app-search--rental-price-filters-target="minPrice"
-                                          defaultValue="15"
-                                          id="minPriceRange"
-                                          name=""
-                                          type="number"
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="col-6">
-                                      <div className="component input icon -pounds">
-                                        <input
-                                          className="component input default-colour"
-                                          data-action="change->app-search--rental-price-filters#setSliderValue"
-                                          data-app-search--rental-price-filters-target="maxPrice"
-                                          defaultValue="900"
-                                          id="maxPriceRange"
-                                          name=""
-                                          type="number"
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                              <div className="card designers-filter ">
+                               <PriceRange className="p-0 mt-0" />
                               </div>
                             </>
                           ),
+                          itemId: "/management/priceRange",
                         },
+                        
                       ],
                     },
+                    
                   ]}
                 />
               </div>
